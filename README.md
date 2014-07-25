@@ -1,7 +1,7 @@
-Event Mention Detection and Conversion
+Event Mention Evaluation (EvmEval)
 =========
 
-This repostory contains 2 things:
+This repostory conducts Event Mention Detection and Conversion
 1. A simple 2-way converter between CMU detection format and Brat annotation tool format
 2. A scorer that can score system performance based on CMU detection format
 

@@ -1,7 +1,9 @@
-emdf2brat
+Event Mention Detection and Conversion
 =========
 
-A simple 2-way converter between Event Mention Detection Format(EMDF) and Brat
+This repostory contains 2 things:
+1. A simple 2-way converter between CMU detection format and Brat annotation tool format
+2. A scorer that can score system performance based on CMU detection format
 
 brat2emdf.py:
 

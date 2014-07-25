@@ -31,14 +31,14 @@ def main():
     global outExt
     global engineId
 
-    parser = argparse.ArgumentParser(description="Brat to EMDF converter")
+    parser = argparse.ArgumentParser(description="The converter that convert from Brat to EMDF (CMU format) , requires at least the input file name/directory/list")
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("-d","--dir",help="directory of the annotations")
     group.add_argument("-f","--file",help="name of one annotation file")
     group.add_argument("-l","--filelist",help="a file that each line is a file that will be processed")
     parser.add_argument("-o","--out",help="output directory, current directory by default")
-    parser.add_argument("-e","--ext",help="output extension")
-    parser.add_argument("-i","--eid",help="engine id")
+    parser.add_argument("-e","--ext",help="output extension, emdf by default")
+    parser.add_argument("-i","--eid",help="an engine id that will appears at each line of the output file")
 
     args = parser.parse_args() 
     stream_handler = logging.StreamHandler(sys.stderr)  

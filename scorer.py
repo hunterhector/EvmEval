@@ -5,6 +5,7 @@
     data and produce F-Scores
 """
 import math
+import errno
 import argparse
 import logging
 import sys
@@ -39,8 +40,16 @@ def main():
     
     stream_handler=None 
     if args.output != None:   
-        evalOut = open(args.out)
-        stream_handler = logging.StreamHandler(args.out)
+        outPath = args.output
+        try:
+            head,tail = os.path.split(outPath)
+            if head != "":
+                os.makedirs(head)
+        except OSError as exception:
+            if exception.errno != errno.EEXIST:
+                raise
+        evalOut = open(outPath,'w')
+        stream_handler = logging.StreamHandler(evalOut)
     else:
         stream_handler = logging.StreamHandler(sys.stdout)
     logger.addHandler(stream_handler)
@@ -49,13 +58,13 @@ def main():
     if os.path.isfile(args.gold):
         gf = open(args.gold)
     else:
-        logger.error("Cannot find gold standard file at "+gold)
-        system.exit(1)
+        logger.error("Cannot find gold standard file at "+args.gold)
+        sys.exit(1)
     if os.path.isfile(args.system):
         sf = open(args.system)
     else:
-        logger.error("Cannot find system file at "+ system)
-        system.exit(1)
+        logger.error("Cannot find system file at "+ args.system)
+        sys.exit(1)
   
     while True:
         res = evaluate()
@@ -141,7 +150,7 @@ def getNextDoc():
 
     if gdocId != sdocId:
         logger.error("System document IDs are not aligned with gold standard IDs")
-        system.exit(1)
+        sys.exit(1)
     return (gLines,sLines,gdocId)
     
 def parseSpans(s):
@@ -171,10 +180,10 @@ def validateSpans(spans):
             pass
         else:
             logger.error(span+" is not a valid span")    
-            system.exit(1)
+            sys.exit(1)
         if span[0] < lastEnd:
             logger.error("Spans cannot overlaps")
-            system.exit(1)
+            sys.exit(1)
 
 def spanOverlap(span1, span2):
     '''

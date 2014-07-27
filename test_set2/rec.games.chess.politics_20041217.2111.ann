@@ -1,0 +1,135 @@
+T1	Start-Position 197 203	hiring
+E1	Start-Position:T1 
+A1	Realis E1 Other
+T2	End-Position 540 545	leave
+E2	End-Position:T2 
+A2	Realis E2 Other
+T3	Start-Position 583 588	hired
+E3	Start-Position:T3 
+A3	Realis E3 Other
+T4	Transfer-Money 790 795	given
+E4	Transfer-Money:T4 
+A4	Realis E4 Other
+T5	Transfer-Money 882 887	given
+E5	Transfer-Money:T5 
+A5	Realis E5 Other
+T6	End-Position 1058 1065	leaving
+E6	End-Position:T6 
+A6	Realis E6 Other
+T7	Transfer-Money 1170 1175	given
+E7	Transfer-Money:T7 
+A7	Realis E7 Other
+T8	End-Position 1193 1203	expiration
+E8	End-Position:T8 
+A8	Realis E8 Other
+T9	Transfer-Money 1329 1333	give
+E9	Transfer-Money:T9 
+A9	Realis E9 Other
+T10	Transfer-Money 1380 1384	give
+E10	Transfer-Money:T10 
+A10	Realis E10 Other
+T11	Meet 1523 1533	discussion
+E11	Meet:T11 
+A11	Questionable E11 Mention
+A12	Realis E11 Other
+#1	AnnotatorNotes E11	Is discussion within a meeting event taggable?
+T12	Meet 1577 1584	meeting
+E12	Meet:T12 
+A13	Realis E12 Other
+T13	Transfer-Money 1778 1790	arrangements
+E13	Transfer-Money:T13 
+A14	Questionable E13 Mention
+A15	Realis E13 Other
+#2	AnnotatorNotes E13	Anaphoric reference to taggable event - itself taggable?
+T14	Elect 2231 2236	elect
+E14	Elect:T14 
+A16	Realis E14 Other
+T15	End-Position 2336 2341	leave
+E15	End-Position:T15 
+A17	Realis E15 Other
+T16	Meet 2374 2383	discussed
+E16	Meet:T16 
+A18	Realis E16 Other
+T17	Transfer-Money 2390 2401	compensated
+E17	Transfer-Money:T17 
+A19	Realis E17 Other
+T18	Start-Position 2490 2494	hire
+E18	Start-Position:T18 
+A20	Realis E18 Other
+T19	Meet 3007 3018	discussions
+E19	Meet:T19 
+A21	Realis E19 Actual
+T20	End-Position 3296 3306	steps down
+E20	End-Position:T20 
+A22	Realis E20 Other
+T21	Transfer-Money 3491 3494	get
+E21	Transfer-Money:T21 
+A23	Realis E21 Other
+T22	Start-Position 3182 3189	drafted
+E22	Start-Position:T22 
+A24	Realis E22 Actual
+T23	Start-Position 3841 3847	retain
+E23	Start-Position:T23 
+A25	Realis E23 Other
+T24	Start-Position 4365 4369	hire
+E24	Start-Position:T24 
+A26	Realis E24 Other
+T25	Start-Position 4265 4274	designate
+E25	Start-Position:T25 
+A27	Questionable E25 Mention
+A28	Realis E25 Other
+#3	AnnotatorNotes E25	Is designating someone to do a job a Personnel.Start-Position event?
+T26	Elect 5317 5324	elected
+E26	Elect:T26 
+A29	Realis E26 Actual
+T27	Elect 5459 5466	elected
+E27	Elect:T27 
+A30	Questionable E27 Mention
+A31	Realis E27 Generic
+#4	AnnotatorNotes E27	Adjectives marked? Also, can an entire "board" qualify as a Personnel.Elect event, or does the argument have to be PER?
+T28	Transfer-Ownership 5869 5872	pay
+E28	Transfer-Ownership:T28 
+A32	Questionable E28 Mention
+A33	Realis E28 Other
+#5	AnnotatorNotes E28	Is paying legal expenses Transfer-Ownership?
+T29	Transfer-Money 5974 5978	loan
+E29	Transfer-Money:T29 
+A34	Realis E29 Other
+T30	End-Position 6575 6582	resigns
+E30	End-Position:T30 
+A35	Realis E30 Other
+T31	Start-Position 6603 6608	hired
+E31	Start-Position:T31 
+A36	Realis E31 Other
+T32	Sue 6695 6702	lawsuit
+E32	Sue:T32 
+A37	Realis E32 Other
+T33	Sue 6725 6734	complaint
+E33	Sue:T33 
+A38	Realis E33 Actual
+T34	Charge-Indict 6736 6744	charging
+E34	Charge-Indict:T34 
+A39	Realis E34 Other
+T35	Transfer-Money 6920 6924	paid
+E35	Transfer-Money:T35 
+A41	Realis E35 Other
+T36	Communicate 6971 6984	communication
+E36	Communicate:T36 
+A42	Realis E36 Other
+T37	Sue 7062 7069	lawsuit
+E37	Sue:T37 
+A43	Realis E37 Other
+T38	Sue 7199 7206	lawsuit
+E38	Sue:T38 
+A44	Realis E38 Other
+T39	Sue 7515 7519	sued
+E39	Sue:T39 
+A45	Realis E39 Actual
+T40	Sue 7576 7580	sued
+E40	Sue:T40 
+A46	Realis E40 Other
+A47	Questionable E26 Mention
+#7	AnnotatorNotes E26	Can a Personnel.Elect event be for an entire "board", not a PER?
+T41	Meet 6541 6548	meeting
+E41	Meet:T41 
+A48	Realis E41 Other

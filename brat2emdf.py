@@ -9,17 +9,22 @@ import argparse
 import logging
 import sys
 import os
+import errno
 
 spanMarker = "T"
 eventMarker = "E"
 attMarker = "A"
 attMarkerBack = "M" # for backward compatibility
 noteMarker = "#"
+bodMarker = "#BeginOfDocument" #mark begin of a document
+eodMarker = "#EndOfDocument" #mark end of a document
+
 
 textBounds = {} # all text bounds
 events = {} # all events 
 atts = {} # all attributes 
 
+out = "converted"
 outExt = "emdf"
 engineId = "brat_conversion"
 spanSeperator = ";"
@@ -28,6 +33,7 @@ spanJonier = "_"
 logger = logging.getLogger()
 
 def main():
+    global out
     global outExt
     global engineId
 
@@ -36,37 +42,48 @@ def main():
     group.add_argument("-d","--dir",help="directory of the annotations")
     group.add_argument("-f","--file",help="name of one annotation file")
     group.add_argument("-l","--filelist",help="a file that each line is a file that will be processed")
-    parser.add_argument("-o","--out",help="output directory, current directory by default")
-    parser.add_argument("-e","--ext",help="output extension, emdf by default")
+    parser.add_argument("-o","--out",help="output path, '"+out+"' by default")
+    parser.add_argument("-e","--ext",help="output extension, '"+outExt+"' by default")
     parser.add_argument("-i","--eid",help="an engine id that will appears at each line of the output file")
 
     args = parser.parse_args() 
     stream_handler = logging.StreamHandler(sys.stderr)  
     logger.addHandler(stream_handler)  
 
-    outDir = "."
     if args.out != None:
-        outDir = args.out 
+        out = args.out
     if args.ext != None:
         outExt = args.ext
     if args.eid != None:
         engineId = args.eid
 
+    #ensure output directory exists
+    
+    try:
+        head,tail = os.path.split(out)
+        if head != "":
+            os.makedirs(head)
+    except OSError as exception:
+        if exception.errno != errno.EEXIST:
+            raise
+
+    outFile = open(out+"."+outExt,'w')
+
     if args.dir != None:
         #parse directory
         for f in os.listdir(args.dir):
             if f.endswith(".ann"):
-                parse_annotation_file(args.dir+os.sep+f,outDir+os.sep+f+"."+outExt)
+                parse_annotation_file(args.dir+os.sep+f,outFile)
     elif args.file != None:
         #parse one annotation file
         if args.file.endswith(".ann"):
-            parse_annotation_file(args.file,outDir+os.sep+args.file+"."+outExt)
+            parse_annotation_file(args.file,outFile)
     elif args.filelist != None:
         #parse the filelist
         lst = open(args.filelist)
         for line in lst:
             l = line.rstrip()
-            parse_annotation_file(l,outDir+os.sep+l+"."+outExt)
+            parse_annotation_file(l,outFile)
 
 def clear():
     textBounds = {} # all text bounds
@@ -82,16 +99,16 @@ def span2Text(spans):
         sep = spanSeperator
     return s
 
-def parse_annotation_file(filePath,outFilePath):
+def parse_annotation_file(filePath,of):
     if os.path.isfile(filePath):
         f = open(filePath)
-        of = open(outFilePath,'w')
         textId = os.path.splitext(os.path.basename(f.name))[0]
         read_all_anno(f)
         
         eids = events.keys()
         eids.sort(key=lambda x: int(x[1:]) )
 
+        of.write(bodMarker+" "+textId+"\n")
         for eid in eids:
             eventType = events[eid][0][0]
             textBoundId = events[eid][0][1]
@@ -100,9 +117,8 @@ def parse_annotation_file(filePath,outFilePath):
             spans = textBound[1]
             text = textBound[2]
 
-            of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n"%(eid,engineId,textId,span2Text(spans),text,eventType,att["Realis"][1],1))
-        of.close()
-
+            of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n"%(engineId,textId,eid,span2Text(spans),text,eventType,att["Realis"][1],1))
+        of.write(eodMarker+"\n")
         clear()
     else:
         logger.error("Cannot find file specified : %s"%(filePath))

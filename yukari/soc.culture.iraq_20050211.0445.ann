@@ -1,0 +1,30 @@
+T1	Transfer-Money 768 774	funded
+E1	Transfer-Money:T1 
+A1	Realis E1 Actual
+T2	Communicate 1176 1180	talk
+E2	Communicate:T2 
+A2	Realis E2 Other
+A3	Questionable E2 Mention
+T3	Attack 1372 1375	war
+E3	Attack:T3 
+A4	Questionable E3 Realis
+A5	Realis E3 Other
+#1	AnnotatorNotes E3	on-going event: Is this ACTUAL or OTHER? 
+T4	Attack 2051 2054	war
+E4	Attack:T4 
+A6	Realis E4 Other
+T5	Attack 2106 2109	War
+E5	Attack:T5 
+A7	Realis E5 Generic
+T6	Die 2256 2262	killed
+E6	Die:T6 
+A8	Realis E6 Actual
+A9	Questionable E5 Realis
+T7	Attack 3082 3085	war
+E7	Attack:T7 
+A10	Realis E7 Actual
+A11	Questionable E7 Realis
+#2	AnnotatorNotes E7	Realis can be Generic. 
+T8	End-Org 4040 4050	close down
+E8	End-Org:T8 
+A12	Realis E8 Other

@@ -1,5 +1,3 @@
-package cmu.arktweetnlp;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -32,12 +30,12 @@ import org.apache.commons.lang.StringEscapeUtils;
  * There have been at least 2 other Java ports, but they are not in the lineage for the code here.
  */
 public class Twokenize {
-    static Pattern Contractions = Pattern.compile("(?i)(\\w+)(n['’′]t|['’′]ve|['’′]ll|['’′]d|['’′]re|['’′]s|['’′]m)$");
+    static Pattern Contractions = Pattern.compile("(?i)(\\w+)(n['â€™â€²]t|['â€™â€²]ve|['â€™â€²]ll|['â€™â€²]d|['â€™â€²]re|['â€™â€²]s|['â€™â€²]m)$");
     static Pattern Whitespace = Pattern.compile("[\\s\\p{Zs}]+");
 
-    static String punctChars = "['\"“”‘’.?!…,:;]"; 
+    static String punctChars = "['\"â€œâ€�â€˜â€™.?!â€¦,:;]"; 
     //static String punctSeq   = punctChars+"+";	//'anthem'. => ' anthem '.
-    static String punctSeq   = "['\"“”‘’]+|[.?!,…]+|[:;]+";	//'anthem'. => ' anthem ' .
+    static String punctSeq   = "['\"â€œâ€�â€˜â€™]+|[.?!,â€¦]+|[:;]+";	//'anthem'. => ' anthem ' .
     static String entity     = "&(?:amp|lt|gt|quot);";
     //  URLs
 
@@ -69,15 +67,15 @@ public class Twokenize {
     static String numComb	 = "\\p{Sc}?\\d+(?:\\.\\d+)+%?";
 
     // Abbreviations
-    static String boundaryNotDot = "(?:$|\\s|[“\\u0022?!,:;]|" + entity + ")";
+    static String boundaryNotDot = "(?:$|\\s|[â€œ\\u0022?!,:;]|" + entity + ")";
     static String aa1  = "(?:[A-Za-z]\\.){2,}(?=" + boundaryNotDot + ")";
     static String aa2  = "[^A-Za-z](?:[A-Za-z]\\.){1,}[A-Za-z](?=" + boundaryNotDot + ")";
     static String standardAbbreviations = "\\b(?:[Mm]r|[Mm]rs|[Mm]s|[Dd]r|[Ss]r|[Jj]r|[Rr]ep|[Ss]en|[Ss]t)\\.";
     static String arbitraryAbbrev = "(?:" + aa1 +"|"+ aa2 + "|" + standardAbbreviations + ")";
-    static String separators  = "(?:--+|―|—|~|–|=)";
-    static String decorations = "(?:[♫♪]+|[★☆]+|[♥❤♡]+|[\\u2639-\\u263b]+|[\\ue001-\\uebbb]+)";
+    static String separators  = "(?:--+|â€•|â€”|~|â€“|=)";
+    static String decorations = "(?:[â™«â™ª]+|[â˜…â˜†]+|[â™¥â�¤â™¡]+|[\\u2639-\\u263b]+|[\\ue001-\\uebbb]+)";
     static String thingsThatSplitWords = "[^\\s\\.,?\"]";
-    static String embeddedApostrophe = thingsThatSplitWords+"+['’′]" + thingsThatSplitWords + "*";
+    static String embeddedApostrophe = thingsThatSplitWords+"+['â€™â€²]" + thingsThatSplitWords + "*";
     
     public static String OR(String... parts) {
         String prefix="(?:";
@@ -104,7 +102,7 @@ public class Twokenize {
     // @aliciakeys Put it in a love song :-))
     // @hellocalyclops =))=))=)) Oh well
 
-    static String bfLeft = "(♥|0|o|°|v|\\$|t|x|;|\\u0CA0|@|ʘ|•|・|◕|\\^|¬|\\*)";
+    static String bfLeft = "(â™¥|0|o|Â°|v|\\$|t|x|;|\\u0CA0|@|Ê˜|â€¢|ãƒ»|â—•|\\^|Â¬|\\*)";
     static String bfCenter = "(?:[\\.]|[_-]+)";
     static String bfRight = "\\2";
     static String s3 = "(?:--['\"])";
@@ -112,8 +110,8 @@ public class Twokenize {
     static String s5 = "(?:[.][_]+[.])";
     static String basicface = "(?:(?i)" +bfLeft+bfCenter+bfRight+ ")|" +s3+ "|" +s4+ "|" + s5;
 
-    static String eeLeft = "[＼\\\\ƪԄ\\(（<>;ヽ\\-=~\\*]+";
-    static String eeRight= "[\\-=\\);'\\u0022<>ʃ）/／ノﾉ丿╯σっµ~\\*]+";
+    static String eeLeft = "[ï¼¼\\\\ÆªÔ„\\(ï¼ˆ<>;ãƒ½\\-=~\\*]+";
+    static String eeRight= "[\\-=\\);'\\u0022<>Êƒï¼‰/ï¼�ãƒŽï¾‰ä¸¿â•¯Ïƒã�£Âµ~\\*]+";
     static String eeSymbol = "[^A-Za-z0-9\\s\\(\\)\\*:=-]";
     static String eastEmote = eeLeft + "(?:"+basicface+"|" +eeSymbol+")+" + eeRight;
 
@@ -135,7 +133,7 @@ public class Twokenize {
 
     static String Hearts = "(?:<+/?3+)+"; //the other hearts are in decorations
 
-    static String Arrows = "(?:<*[-―—=]*>+|<+[-―—=]*>*)|\\p{InArrows}+";
+    static String Arrows = "(?:<*[-â€•â€”=]*>+|<+[-â€•â€”=]*>*)|\\p{InArrows}+";
 
     // BTO 2011-06: restored Hashtag, AtMention protection (dropped in original scala port) because it fixes
     // "hello (#hashtag)" ==> "hello (#hashtag )"  WRONG
@@ -149,7 +147,7 @@ public class Twokenize {
     // If you want good hashtag identification, use a different regex.
     static String Hashtag = "#[a-zA-Z0-9_]+";  //optional: lookbehind for \b
     //optional: lookbehind for \b, max length 15
-    static String AtMention = "[@＠][a-zA-Z0-9_]+"; 
+    static String AtMention = "[@ï¼ ][a-zA-Z0-9_]+"; 
 
     // I was worried this would conflict with at-mentions
     // but seems ok in sample of 5800: 7 changes all email fixes
@@ -189,7 +187,7 @@ public class Twokenize {
     // I remember it causing lots of trouble in the past as well.  Would be good to revisit or eliminate.
 
     // Note the 'smart quotes' (http://en.wikipedia.org/wiki/Smart_quotes)
-    static String edgePunctChars    = "'\"“”‘’«»{}\\(\\)\\[\\]\\*&"; //add \\p{So}? (symbols)
+    static String edgePunctChars    = "'\"â€œâ€�â€˜â€™Â«Â»{}\\(\\)\\[\\]\\*&"; //add \\p{So}? (symbols)
     static String edgePunct    = "[" + edgePunctChars + "]";
     static String notEdgePunct = "[a-zA-Z0-9]"; // content characters
     static String offEdge = "(^|$|:|;|\\s|\\.|,)";  // colon here gets "(hello):" ==> "( hello ):"

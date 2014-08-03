@@ -1,0 +1,54 @@
+<post author="Mr Phitch" datetime="2004-11-18T22:22:00" id="p1">
+I am working on a project that involves combustion of flammable gas and containment of the pressure to do a little work. The scale is not very large, I would like to use lexan for the pressure/combustion vessel.
+
+I have thought of using a lexan nalgene bottle. Does anyone have experience in pressurizing lexan bottles such as these (or similar lexan tubes)? What sort of max allowable working pressure can I expect from lexan?
+
+Thank you.
+</post>
+<post author="Mr Phitch" datetime="2004-12-06T18:37:00" id="p2">
+Rethinking the use of a water bottle to contain an explosion... Has anyone had experience with pressure vessels made of a transparent material?
+
+In my project, for educational clarity and coolness factor, we'd like to combust gas so that onlookers can (safely) see the reaction.
+
+Any reccomendations? Safety is first. I don't anticipate that the vessel will get too hot becuase the batch of gas to be burned will be small, so it need not be intended for high-temperature use. We anticipate that the pressure ballpark will be around 250 psi. Let me know if you think I'm way off
+
+If you think I'm crazy to think that we could safely do what I've described, that would be helpful too. Please explain why though <img src="http://cdn2.able2know.org/images/v5/emoticons/icon_smile.gif" alt="Smile"/>, thank you.
+</post>
+<post author="roger" datetime="2004-12-06T21:08:00" id="p3">
+I saw your question when originally posted, but passed it over for lack of an answer. I still cannot anticipate a safe working pressure, but if the capacity is even as low as 10 fl oz, 250 psi would be murderous if the container failed. If you procede with this, definately test it with massive over pressure in a safe container before exposing spectators to it.
+</post>
+<post author="Adrian" datetime="2004-12-06T21:47:00" id="p4">
+There are air filter assemblies for pneumatic applications that are rated to 250psi. They use a screw on polycarbonate bowl.
+
+Three problems;
+
+1. Max working temperature is 50degC. (Lexan would be higher.)
+
+2. Polycarbonate doesn't much like being exposed to chemicals. (Lexan is better in this regardbut only a little.)
+
+3. The failure mode would be rather explosive. (Same with Lexan.)
+
+You would REALLY want it to be overengineered if you plan on spectators.
+</post>
+<post author="Mr Phitch" datetime="2004-12-06T22:10:00" id="p5">
+I agree that overengineering and extensive testing are definitely required.
+
+Adrian, am I wrong in my understanding that lexan is a trade name for polycarbonate? The pneumatic filter housing sounds like a good lead to look into. Thank you.
+</post>
+<post author="Adrian" datetime="2004-12-06T22:19:00" id="p6">
+Lexan is Duponts version of polycarbonate. Basically the same but not exactly. Different companies use different fillers and I think that Lexan has more glass in it than most other brands. (Don't quote me though.)
+</post>
+<post author="Adrian" datetime="2004-12-06T22:23:00" id="p7">
+<img src="http://cdn2.able2know.org/images/v5/emoticons/icon_redface.gif" alt="Embarrassed"/>
+
+Sorry, I meant GE, not Dupont.
+</post>
+<post author="neil" datetime="2004-12-07T06:18:00" id="p8">
+You might want to look for Timothy O'Neal cylinder colonies in space analysis. These were HUGE transparent cylinders. I suspect relability with existing materials has cooled interest in this alternative for living off Earth.
+A waterfilled concentric container would have a good shot at containing scrapenel in case the inner container failed explosively. Neil
+</post>
+<post author="CBB44" datetime="2004-12-10T17:52:00" id="p9">
+Lexan pressure vessels
+Hi there, I'd just like to say that I have used Lexan pressure vessels in the past and i have to say they are my favorite pressure vessels ever. This is simply because when studying, they just clean so well and are CRYSTAL clear. I love the stuff! Happy microns!
+Candice Debleu
+</post>

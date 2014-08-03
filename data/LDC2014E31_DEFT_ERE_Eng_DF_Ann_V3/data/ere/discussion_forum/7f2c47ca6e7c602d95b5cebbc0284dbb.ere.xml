@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="7f2c47ca6e7c602d95b5cebbc0284dbb" source_type="multi_post" kit_id="535764f60000000000000001">
+  <entities>
+    <entity id="ent-70132571589460" name="entity-PER-2" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="121" length="7">topspin</entity_mention>
+    </entity>
+    <entity id="ent-70132571585640" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="87" length="11">NYcarbineer</entity_mention>
+    </entity>
+    <entity id="ent-70132571582660" name="entity-PER-4" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="14" length="10">Nonelitist</entity_mention>
+    </entity>
+    <entity id="ent-70132571579560" name="entity-PER-5" type="PER">
+      <entity_mention id="m-242" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="511" length="7">Oreilly</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="533" length="2">he</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="557" length="2">He</entity_mention>
+      <entity_mention id="m-281" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="563" length="32">a commentator giving his opinion</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="584" length="3">his</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="597" length="2">He</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="630" length="3">his</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="647" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571543380" name="entity-PER-6" type="PER">
+      <entity_mention id="m-372" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="799" length="5">rdean</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1103" length="3">you</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1249" length="3">you</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1280" length="3">you</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1530" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571529940" name="entity-PER-7" type="PER">
+      <entity_mention id="m-346" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="692" length="11">DiamondDave</entity_mention>
+    </entity>
+    <entity id="ent-70132571518400" name="entity-PER-8" type="PER">
+      <entity_mention id="m-359" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="766" length="10">Avatar4321</entity_mention>
+    </entity>
+    <entity id="ent-70132571514900" name="entity-PER-9" type="PER">
+      <entity_mention id="m-385" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="807" length="15">Shirley Sherrod</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="841" length="3">her</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="919" length="7">Shirley</entity_mention>
+      <entity_mention id="m-463" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1009" length="19">an "innocent" woman</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1058" length="3">she</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1194" length="3">her</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1582" length="3">her</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1631" length="3">her</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1760" length="17">this racist bitch</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1786" length="3">she</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1839" length="3">she</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1884" length="3">her</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1975" length="3">she</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2032" length="3">her</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2050" length="3">she</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2444" length="7">Sherrod</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2532" length="7">Sherrod</entity_mention>
+      <entity_mention id="m-1490" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4921" length="7">Sherrod</entity_mention>
+      <entity_mention id="m-1100" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3229" length="12">the official</entity_mention>
+      <entity_mention id="m-2046" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5096" length="13">USDA Official</entity_mention>
+      <entity_mention id="m-2072" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5117" length="3">She</entity_mention>
+    </entity>
+    <entity id="ent-70132571407160" name="entity-PER-10" type="PER">
+      <entity_mention id="m-450" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="997" length="5">Obama</entity_mention>
+    </entity>
+    <entity id="ent-70132571361500" name="entity-PER-11" type="PER">
+      <entity_mention id="m-658" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1734" length="8">a caller</entity_mention>
+    </entity>
+    <entity id="ent-70132571358060" name="entity-PER-12" type="PER">
+      <entity_mention id="m-710" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1913" length="17">this white farmer</entity_mention>
+      <entity_mention id="m-2085" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5157" length="12">White Farmer</entity_mention>
+    </entity>
+    <entity id="ent-70132571335400" name="entity-PER-13" type="PER">
+      <entity_mention id="m-801" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2338" length="9">Claudette</entity_mention>
+    </entity>
+    <entity id="ent-70132571331220" name="entity-PER-14" type="PER">
+      <entity_mention id="m-788" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2302" length="13">PoliticalChic</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3292" length="3">You</entity_mention>
+    </entity>
+    <entity id="ent-70132571325020" name="entity-PER-15" type="PER">
+      <entity_mention id="m-775" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2230" length="9">MaggieMae</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3795" length="9">MaggieMae</entity_mention>
+      <entity_mention id="m-1568" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5524" length="9">MaggieMae</entity_mention>
+    </entity>
+    <entity id="ent-70132571266120" name="entity-PER-16" type="PER">
+      <entity_mention id="m-1581" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5596" length="12">Truthmatters</entity_mention>
+    </entity>
+    <entity id="ent-70132571262340" name="entity-PER-17" type="PER">
+      <entity_mention id="m-983" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2841" length="9">Tea Party</entity_mention>
+    </entity>
+    <entity id="ent-70132570251220" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1009" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3054" length="10">Anita Dunn</entity_mention>
+    </entity>
+    <entity id="ent-70132570244180" name="entity-PER-19" type="PER">
+      <entity_mention id="m-1022" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3073" length="3">Mao</entity_mention>
+    </entity>
+    <entity id="ent-70132570222960" name="entity-PER-20" type="PER">
+      <entity_mention id="m-1035" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3082" length="9">Van Jones</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3497" length="9">Van Jones</entity_mention>
+    </entity>
+    <entity id="ent-70132570171700" name="entity-PER-21" type="PER">
+      <entity_mention id="m-1048" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3138" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132570165940" name="entity-PER-22" type="PER">
+      <entity_mention id="m-1061" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3184" length="10">Glenn Beck</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3211" length="2">He</entity_mention>
+      <entity_mention id="m-1542" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5382" length="10">Glenn Beck</entity_mention>
+      <entity_mention id="m-1555" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5485" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132570146520" name="entity-PER-23" type="PER">
+      <entity_mention id="m-1074" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3205" length="4">them</entity_mention>
+    </entity>
+    <entity id="ent-70132570108840" name="entity-PER-24" type="PER">
+      <entity_mention id="m-1204" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3867" length="13">PoliticalChic</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3934" length="13">PoliticalChic</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4153" length="1">I</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4166" length="1">I</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4325" length="2">my</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4405" length="1">I</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4710" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132569940640" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1256" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4074" length="3">you</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4122" length="3">you</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4193" length="3">you</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4213" length="4">your</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4307" length="3">you</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4423" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132569677520" name="entity-PER-26" type="PER">
+      <entity_mention id="m-1230" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3903" length="8">Care4all</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5244" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132569626360" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-151" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="131" length="8">fox news</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="296" length="7">Foxnews</entity_mention>
+      <entity_mention id="m-1412" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4728" length="8">FOX NEWS</entity_mention>
+      <entity_mention id="m-1425" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4739" length="8">FOX news</entity_mention>
+      <entity_mention id="m-1438" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4769" length="4">they</entity_mention>
+      <entity_mention id="m-1464" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4861" length="11">FoxNews.com</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4883" length="3">its</entity_mention>
+      <entity_mention id="m-1516" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5306" length="8">Fox News</entity_mention>
+      <entity_mention id="m-1594" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5611" length="8">Fox news</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5648" length="4">they</entity_mention>
+      <entity_mention id="m-1620" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5687" length="5">Their</entity_mention>
+    </entity>
+    <entity id="ent-70132569364380" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-177" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="231" length="18">the administration</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="274" length="5">their</entity_mention>
+      <entity_mention id="m-203" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="365" length="18">the administration</entity_mention>
+      <entity_mention id="m-528" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1168" length="18">the Administration</entity_mention>
+      <entity_mention id="m-996" noun_type="NOM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2922" length="18">the administration</entity_mention>
+    </entity>
+    <entity id="ent-70132569264260" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-216" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="404" length="3">Fox</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="462" length="3">its</entity_mention>
+      <entity_mention id="m-411" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="884" length="3">Fox</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1049" length="3">Fox</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="949" length="3">Fox</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1131" length="3">Fox</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1235" length="3">Fox</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1559" length="3">Fox</entity_mention>
+      <entity_mention id="m-1126" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3407" length="3">FOX</entity_mention>
+      <entity_mention id="m-1139" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3422" length="3">Fox</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3522" length="5">THEIR</entity_mention>
+      <entity_mention id="m-1178" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="3635" length="3">Fox</entity_mention>
+      <entity_mention id="m-1360" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4384" length="3">Fox</entity_mention>
+      <entity_mention id="m-1633" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="131" length="3">fox</entity_mention>
+      <entity_mention id="m-1646" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4728" length="3">FOX</entity_mention>
+      <entity_mention id="m-1659" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4739" length="3">FOX</entity_mention>
+      <entity_mention id="m-1672" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5306" length="3">Fox</entity_mention>
+      <entity_mention id="m-1685" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5611" length="3">Fox</entity_mention>
+    </entity>
+    <entity id="ent-70132568737320" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-762" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2106" length="5">NAACP</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2367" length="5">NAACP</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2784" length="5">NAACP</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2798" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568715640" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-840" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2411" length="4">they</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2468" length="4">They</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2495" length="4">they</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2567" length="4">they</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2665" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132568677100" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-814" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2354" length="4">USDA</entity_mention>
+      <entity_mention id="m-1451" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4806" length="22">Agriculture Department</entity_mention>
+      <entity_mention id="m-2059" noun_type="NAM" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5096" length="4">USDA</entity_mention>
+    </entity>
+    <entity id="ent-70132568654720" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-853" noun_type="NA" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2441" length="2">Ms</entity_mention>
+      <entity_mention id="m-905" noun_type="NA" source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="2528" length="3">Ms.</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132567448740" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-40">
+        <arg type="suborg" entity_id="ent-70132569626360" entity_mention_id="m-151">fox news</arg>
+        <arg type="parent" entity_id="ent-70132569264260" entity_mention_id="m-1633">fox</arg>
+      </relation_mention>
+      <relation_mention id="relm-1753">
+        <arg type="suborg" entity_id="ent-70132569626360" entity_mention_id="m-1412">FOX NEWS</arg>
+        <arg type="parent" entity_id="ent-70132569264260" entity_mention_id="m-1646">FOX</arg>
+      </relation_mention>
+      <relation_mention id="relm-1783">
+        <arg type="suborg" entity_id="ent-70132569626360" entity_mention_id="m-1425">FOX news</arg>
+        <arg type="parent" entity_id="ent-70132569264260" entity_mention_id="m-1659">FOX</arg>
+      </relation_mention>
+      <relation_mention id="relm-1813">
+        <arg type="suborg" entity_id="ent-70132569626360" entity_mention_id="m-1516">Fox News</arg>
+        <arg type="parent" entity_id="ent-70132569264260" entity_mention_id="m-1672">Fox</arg>
+      </relation_mention>
+      <relation_mention id="relm-1843">
+        <arg type="suborg" entity_id="ent-70132569626360" entity_mention_id="m-1594">Fox news</arg>
+        <arg type="parent" entity_id="ent-70132569264260" entity_mention_id="m-1685">Fox</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567448580" type="social" subtype="role">
+      <relation_mention id="relm-1693">
+        <arg type="role" entity_id="ent-70132568654720" entity_mention_id="m-853">Ms</arg>
+        <arg type="per" entity_id="ent-70132571514900" entity_mention_id="m-866">Sherrod</arg>
+      </relation_mention>
+      <relation_mention id="relm-1723">
+        <arg type="role" entity_id="ent-70132568654720" entity_mention_id="m-905">Ms.</arg>
+        <arg type="per" entity_id="ent-70132571514900" entity_mention_id="m-918">Sherrod</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567448520" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2106">
+        <arg type="employeemember" entity_id="ent-70132571514900" entity_mention_id="m-2046">USDA Official</arg>
+        <arg type="org" entity_id="ent-70132568677100" entity_mention_id="m-2059">USDA</arg>
+        <trigger source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="5101" length="8">Official</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132574013360" name="entity-EVENT-2">
+      <event_mention id="evm-1879" type="personnel" subtype="endposition">
+        <trigger source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="941" length="6">resign</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-424" entity_id="ent-70132571514900">Shirley</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1921" type="personnel" subtype="endposition">
+        <trigger source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1201" length="6">resign</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-541" entity_id="ent-70132571514900">her</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1963" type="personnel" subtype="endposition">
+        <trigger source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="1625" length="5">fired</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-632" entity_id="ent-70132571514900">her</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2005" type="personnel" subtype="endposition">
+        <trigger source="7f2c47ca6e7c602d95b5cebbc0284dbb" offset="4933" length="8">resigned</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1490" entity_id="ent-70132571514900">Sherrod</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

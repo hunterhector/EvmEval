@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="40f1f697a457e39c30ad94b7cc712c96" source_type="multi_post" kit_id="535837e70000000000000001">
+  <entities>
+    <entity id="ent-70132569365700" name="entity-PER-2" type="PER">
+      <entity_mention id="m-814" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2157" length="4">POWs</entity_mention>
+      <entity_mention id="m-1402" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="2187" length="4">them</entity_mention>
+    </entity>
+    <entity id="ent-70132569294560" name="entity-PER-3" type="PER">
+      <entity_mention id="m-827" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1858" length="13">American POWs</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="1906" length="4">They</entity_mention>
+    </entity>
+    <entity id="ent-70132569276280" name="entity-PER-4" type="PER">
+      <entity_mention id="m-619" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1588" length="5">Daddy</entity_mention>
+    </entity>
+    <entity id="ent-70132569176720" name="entity-PER-5" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="83" length="15">Baruch Menachem</entity_mention>
+    </entity>
+    <entity id="ent-70132569170400" name="entity-PER-7" type="PER">
+      <entity_mention id="m-437" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1102" length="8">Dr Gregg</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="1510" length="1">I</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="1309" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568811000" name="entity-PER-8" type="PER">
+      <entity_mention id="m-450" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1173" length="8">Madeline</entity_mention>
+    </entity>
+    <entity id="ent-70132568806320" name="entity-PER-11" type="PER">
+      <entity_mention id="m-918" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2434" length="11">rightwinger</entity_mention>
+    </entity>
+    <entity id="ent-70132568792760" name="entity-PER-12" type="PER">
+      <entity_mention id="m-905" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2359" length="12">RetiredGySgt</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="2599" length="1">I</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="2543" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568777020" name="entity-PER-13" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="14" length="6">namvet</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="446" length="1">I</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1349" length="6">namvet</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="1665" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132568752320" name="entity-PER-17" type="PER">
+      <entity_mention id="m-151" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="101" length="6">Truman</entity_mention>
+      <entity_mention id="m-1428" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="114" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132568735240" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1035" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2986" length="7">Emperor</entity_mention>
+      <entity_mention id="m-1022" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2881" length="7">Emperor</entity_mention>
+    </entity>
+    <entity id="ent-70132568734960" name="entity-PER-16" type="PER">
+      <entity_mention id="m-788" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2043" length="19">the german soldiers</entity_mention>
+    </entity>
+    <entity id="ent-70132568714220" name="entity-PER-1" type="PER">
+      <entity_mention id="m-996" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2818" length="36">the Generals that ran the Government</entity_mention>
+    </entity>
+    <entity id="ent-70132568699920" name="entity-PER-6" type="PER">
+      <entity_mention id="m-866" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2220" length="17">so many civilians</entity_mention>
+    </entity>
+    <entity id="ent-70132568694480" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-1198" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1497" length="10">their army</entity_mention>
+      <entity_mention id="m-658" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1683" length="17">the Japanese Army</entity_mention>
+      <entity_mention id="m-554" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1374" length="17">the Japanese Army</entity_mention>
+    </entity>
+    <entity id="ent-70132568660080" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-489" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1260" length="3">HBO</entity_mention>
+      <entity_mention id="m-1441" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="1275" length="3">its</entity_mention>
+    </entity>
+    <entity id="ent-70132568615800" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-1454" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1430" length="4">Nazi</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1242" length="4">Nazi</entity_mention>
+    </entity>
+    <entity id="ent-70132568569800" name="entity-ORG-1" type="ORG">
+      <entity_mention id="m-411" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="926" length="23">the Japanese government</entity_mention>
+      <entity_mention id="m-1009" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2840" length="14">the Government</entity_mention>
+    </entity>
+    <entity id="ent-70132568551280" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-580" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1426" length="13">the Nazi Army</entity_mention>
+      <entity_mention id="m-684" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1746" length="15">the German Army</entity_mention>
+    </entity>
+    <entity id="ent-70132568455560" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-983" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2737" length="8">Nagasaki</entity_mention>
+    </entity>
+    <entity id="ent-70132568449980" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-970" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2725" length="9">Hiroshima</entity_mention>
+    </entity>
+    <entity id="ent-70132568444940" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-645" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1687" length="8">Japanese</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="930" length="8">Japanese</entity_mention>
+      <entity_mention id="m-229" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="275" length="8">Japanese</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1378" length="8">Japanese</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="149" length="8">Japanese</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1211" length="4">Japs</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1008" length="4">Japs</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1445" length="8">Japanese</entity_mention>
+      <entity_mention id="m-1211" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="1497" length="5">their</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2128" length="8">Japanese</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="2193" length="4">THey</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="2266" length="4">They</entity_mention>
+      <entity_mention id="m-1480" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="2251" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132567463900" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-177" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="161" length="7">okinawa</entity_mention>
+    </entity>
+    <entity id="ent-70132567457380" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-294" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="520" length="7">Germany</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="706" length="7">Germany</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2047" length="6">german</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1750" length="6">German</entity_mention>
+      <entity_mention id="m-307" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="573" length="7">Germans</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1897" length="7">Germans</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="624" length="3">The</entity_mention>
+      <entity_mention id="m-892" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2312" length="7">germans</entity_mention>
+    </entity>
+    <entity id="ent-70132567393740" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-372" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="766" length="9">Manhatten</entity_mention>
+    </entity>
+    <entity id="ent-70132567388660" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-671" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1729" length="2">US</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="692" length="2">us</entity_mention>
+      <entity_mention id="m-216" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="243" length="2">US</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="418" length="2">US</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1858" length="8">American</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="2690" length="2">We</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="1365" length="2">we</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="40f1f697a457e39c30ad94b7cc712c96" offset="612" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132574157080" name="entity-GPE-9" type="GPE">
+      <entity_mention id="m-1467" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="1557" length="6">Bataan</entity_mention>
+    </entity>
+    <entity id="ent-70132574153120" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-203" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="179" length="6">Tarawa</entity_mention>
+    </entity>
+    <entity id="ent-70132574018960" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-1415" noun_type="NOM" source="40f1f697a457e39c30ad94b7cc712c96" offset="2241" length="23">the lands they captured</entity_mention>
+    </entity>
+    <entity id="ent-70132574015040" name="entity-LOC-1" type="LOC">
+      <entity_mention id="m-190" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="170" length="3">Iwo</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="40f1f697a457e39c30ad94b7cc712c96" offset="336" length="3">Iwo</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132572924820" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1103">
+        <arg type="suborg" entity_id="ent-70132568569800" entity_mention_id="m-411">the Japanese government</arg>
+        <arg type="parent" entity_id="ent-70132568444940" entity_mention_id="m-398">Japanese</arg>
+        <trigger source="40f1f697a457e39c30ad94b7cc712c96" offset="930" length="8">Japanese</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572925280" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1133">
+        <arg type="suborg" entity_id="ent-70132568694480" entity_mention_id="m-554">the Japanese Army</arg>
+        <arg type="parent" entity_id="ent-70132568444940" entity_mention_id="m-541">Japanese</arg>
+        <trigger source="40f1f697a457e39c30ad94b7cc712c96" offset="1378" length="8">Japanese</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1219">
+        <arg type="suborg" entity_id="ent-70132568694480" entity_mention_id="m-658">the Japanese Army</arg>
+        <arg type="parent" entity_id="ent-70132568444940" entity_mention_id="m-645">Japanese</arg>
+        <trigger source="40f1f697a457e39c30ad94b7cc712c96" offset="1687" length="8">Japanese</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572926540" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1249">
+        <arg type="suborg" entity_id="ent-70132568551280" entity_mention_id="m-684">the German Army</arg>
+        <arg type="parent" entity_id="ent-70132567457380" entity_mention_id="m-697">German</arg>
+        <trigger source="40f1f697a457e39c30ad94b7cc712c96" offset="1757" length="4">Army</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927320" type="physical" subtype="origin">
+      <relation_mention id="relm-1309">
+        <arg type="entity" entity_id="ent-70132568734960" entity_mention_id="m-788">the german soldiers</arg>
+        <arg type="loc" entity_id="ent-70132567457380" entity_mention_id="m-775">german</arg>
+        <trigger source="40f1f697a457e39c30ad94b7cc712c96" offset="2047" length="6">german</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132575499380" name="entity-EVENT-2">
+      <event_mention id="evm-1353" type="life" subtype="injure">
+        <trigger source="40f1f697a457e39c30ad94b7cc712c96" offset="2137" length="8">tortured</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-801" entity_id="ent-70132568444940">Japanese</arg>
+          <arg type="victim" entity_mention_id="m-814" entity_id="ent-70132569365700">POWs</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132575498100" name="entity-EVENT-3">
+      <event_mention id="evm-84" type="life" subtype="die">
+        <trigger source="40f1f697a457e39c30ad94b7cc712c96" offset="2198" length="6">killed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-866" entity_id="ent-70132568699920">so many civilians</arg>
+          <arg type="agent" entity_mention_id="m-853" entity_id="ent-70132568444940">THey</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1415">the lands they captured</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

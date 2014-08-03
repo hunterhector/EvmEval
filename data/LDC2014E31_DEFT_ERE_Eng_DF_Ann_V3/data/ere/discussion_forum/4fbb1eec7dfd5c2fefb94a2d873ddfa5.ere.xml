@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="4fbb1eec7dfd5c2fefb94a2d873ddfa5" source_type="multi_post" kit_id="5355f7d80000000000000087">
+  <entities>
+    <entity id="ent-70132567475360" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="90" length="6">Nash24</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="99" length="1">I</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="208" length="2">me</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="274" length="1">I</entity_mention>
+      <entity_mention id="m-177" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="278" length="19">a British Pakistani</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="338" length="1">I</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="350" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="379" length="2">my</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="392" length="2">my</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="467" length="1">I</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="598" length="1">I</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="702" length="1">I</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="712" length="1">I</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="873" length="1">I</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="898" length="1">I</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="918" length="1">I</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1003" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1216" length="1">I</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1302" length="2">my</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1523" length="1">I</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1723" length="1">I</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1824" length="2">my</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2146" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132577268780" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="14" length="12">Perseveranze</entity_mention>
+    </entity>
+    <entity id="ent-70132577265680" name="entity-PER-4" type="PER">
+      <entity_mention id="m-281" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="494" length="10">Saira Khan</entity_mention>
+    </entity>
+    <entity id="ent-70132576517040" name="entity-PER-5" type="PER">
+      <entity_mention id="m-307" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="517" length="2">my</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="527" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576511440" name="entity-PER-6" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="517" length="9">my Mother</entity_mention>
+    </entity>
+    <entity id="ent-70132576270700" name="entity-PER-7" type="PER">
+      <entity_mention id="m-580" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1302" length="14">my grandfather</entity_mention>
+    </entity>
+    <entity id="ent-70132576267640" name="entity-PER-8" type="PER">
+      <entity_mention id="m-710" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2114" length="21">Blue &amp;amp; Red Lights</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2249" length="2">me</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2293" length="4">your</entity_mention>
+    </entity>
+    <entity id="ent-70132576038060" name="entity-PER-9" type="PER">
+      <entity_mention id="m-814" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2539" length="7">Steevee</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2869" length="2">my</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="3334" length="1">I</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="3667" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132572643940" name="entity-PER-10" type="PER">
+      <entity_mention id="m-801" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2470" length="5">dogra</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="3509" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132571799780" name="entity-PER-11" type="PER">
+      <entity_mention id="m-905" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4540" length="11">J. A. Scott</entity_mention>
+      <entity_mention id="m-918" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4553" length="58">Deputy Inspector-General of Police in the Rawalpindi range</entity_mention>
+    </entity>
+    <entity id="ent-70132571762660" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1035" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4891" length="25">the Muslim League leaders</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4918" length="4">They</entity_mention>
+      <entity_mention id="m-1074" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="5137" length="18">the League leaders</entity_mention>
+    </entity>
+    <entity id="ent-70132571640840" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-944" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4581" length="6">Police</entity_mention>
+    </entity>
+    <entity id="ent-70132571635800" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-1048" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4895" length="13">Muslim League</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="5141" length="6">League</entity_mention>
+    </entity>
+    <entity id="ent-70132571587740" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-190" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="280" length="7">British</entity_mention>
+    </entity>
+    <entity id="ent-70132571584440" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-203" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="322" length="6">London</entity_mention>
+    </entity>
+    <entity id="ent-70132571580980" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-333" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="535" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="624" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-372" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="686" length="11">the country</entity_mention>
+      <entity_mention id="m-411" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="744" length="11">the country</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="771" length="2">it</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="864" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="938" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-515" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1017" length="11">the country</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1048" length="2">it</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1439" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1565" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2058" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2081" length="3">its</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2181" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4335" length="8">Pakistan</entity_mention>
+    </entity>
+    <entity id="ent-70132571517420" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-567" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1277" length="7">England</entity_mention>
+      <entity_mention id="m-775" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2293" length="15">your own nation</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2157" length="4">here</entity_mention>
+    </entity>
+    <entity id="ent-70132571509120" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-970" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4595" length="10">Rawalpindi</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4757" length="10">Rawalpindi</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4757" length="19">Rawalpindi Division</entity_mention>
+    </entity>
+    <entity id="ent-70132571500600" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-957" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4591" length="20">the Rawalpindi range</entity_mention>
+    </entity>
+    <entity id="ent-70132571497240" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-983" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4738" length="38">rural areas of the Rawalpindi Division</entity_mention>
+    </entity>
+    <entity id="ent-70132571486200" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-1022" noun_type="NOM" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4798" length="10">the Punjab</entity_mention>
+    </entity>
+    <entity id="ent-70132571482860" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-931" noun_type="NA" source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4560" length="17">Inspector-General</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132569359640" type="physical" subtype="origin">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132567475360" entity_mention_id="m-177">a British Pakistani</arg>
+        <arg type="loc" entity_id="ent-70132571587740" entity_mention_id="m-190">British</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="280" length="7">British</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569359580" type="physical" subtype="located">
+      <relation_mention id="relm-1095">
+        <arg type="entity" entity_id="ent-70132567475360" entity_mention_id="m-177">a British Pakistani</arg>
+        <arg type="loc" entity_id="ent-70132571584440" entity_mention_id="m-203">London</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="319" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569359320" type="social" subtype="family">
+      <relation_mention id="relm-1125">
+        <arg type="per" entity_id="ent-70132576511440" entity_mention_id="m-294">my Mother</arg>
+        <arg type="per" entity_id="ent-70132576517040" entity_mention_id="m-307">my</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="520" length="6">Mother</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569359180" type="physical" subtype="located">
+      <relation_mention id="relm-1155">
+        <arg type="entity" entity_id="ent-70132576517040" entity_mention_id="m-320">I</arg>
+        <arg type="loc" entity_id="ent-70132571580980" entity_mention_id="m-333">Pakistan</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="532" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569359100" type="physical" subtype="located">
+      <relation_mention id="relm-1215">
+        <arg type="entity" entity_id="ent-70132567475360" entity_mention_id="m-346">I</arg>
+        <arg type="loc" entity_id="ent-70132571580980" entity_mention_id="m-359">Pakistan</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="621" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569359380" type="physical" subtype="located">
+      <relation_mention id="relm-1245">
+        <arg type="entity" entity_id="ent-70132576270700" entity_mention_id="m-580">my grandfather</arg>
+        <arg type="loc" entity_id="ent-70132571517420" entity_mention_id="m-567">England</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1274" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569360560" type="social" subtype="family">
+      <relation_mention id="relm-1275">
+        <arg type="per" entity_id="ent-70132576270700" entity_mention_id="m-580">my grandfather</arg>
+        <arg type="per" entity_id="ent-70132567475360" entity_mention_id="m-593">my</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1305" length="11">grandfather</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569362000" type="physical" subtype="located">
+      <relation_mention id="relm-1305">
+        <arg type="entity" entity_id="ent-70132567475360" entity_mention_id="m-723">you</arg>
+        <arg type="loc" entity_id="ent-70132571517420" entity_mention_id="m-736">here</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569363000" type="physical" subtype="origin">
+      <relation_mention id="relm-1335">
+        <arg type="entity" entity_id="ent-70132576267640" entity_mention_id="m-788">your</arg>
+        <arg type="loc" entity_id="ent-70132571517420" entity_mention_id="m-775">your own nation</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="2293" length="4">your</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569364900" type="social" subtype="role">
+      <relation_mention id="relm-1365">
+        <arg type="role" entity_id="ent-70132571482860" entity_mention_id="m-931">Inspector-General</arg>
+        <arg type="per" entity_id="ent-70132571799780" entity_mention_id="m-918">Deputy Inspector-General of Police in the Rawalpindi range</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569366400" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1395">
+        <arg type="employeemember" entity_id="ent-70132571799780" entity_mention_id="m-918">Deputy Inspector-General of Police in the Rawalpindi range</arg>
+        <arg type="org" entity_id="ent-70132571640840" entity_mention_id="m-944">Police</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4578" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569300900" type="physical" subtype="located">
+      <relation_mention id="relm-1425">
+        <arg type="entity" entity_id="ent-70132571799780" entity_mention_id="m-918">Deputy Inspector-General of Police in the Rawalpindi range</arg>
+        <arg type="loc" entity_id="ent-70132571500600" entity_mention_id="m-957">the Rawalpindi range</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4588" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569300740" type="physical" subtype="located">
+      <relation_mention id="relm-1455">
+        <arg type="entity" entity_id="ent-70132571497240" entity_mention_id="m-983">rural areas of the Rawalpindi Division</arg>
+        <arg type="loc" entity_id="ent-70132571509120" entity_mention_id="m-1009">Rawalpindi Division</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4750" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569300600" type="physical" subtype="located">
+      <relation_mention id="relm-1485">
+        <arg type="entity" entity_id="ent-70132571509120" entity_mention_id="m-996">Rawalpindi</arg>
+        <arg type="loc" entity_id="ent-70132571509120" entity_mention_id="m-1009">Rawalpindi Division</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569300540" type="physical" subtype="located">
+      <relation_mention id="relm-1515">
+        <arg type="entity" entity_id="ent-70132571509120" entity_mention_id="m-1009">Rawalpindi Division</arg>
+        <arg type="loc" entity_id="ent-70132571486200" entity_mention_id="m-1022">the Punjab</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4795" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569300260" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1545">
+        <arg type="leader" entity_id="ent-70132571762660" entity_mention_id="m-1035">the Muslim League leaders</arg>
+        <arg type="entity" entity_id="ent-70132571635800" entity_mention_id="m-1048">Muslim League</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="4909" length="7">leaders</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1575">
+        <arg type="leader" entity_id="ent-70132571762660" entity_mention_id="m-1074">the League leaders</arg>
+        <arg type="entity" entity_id="ent-70132571635800" entity_mention_id="m-1087">League</arg>
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="5148" length="7">leaders</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132568805060" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="beborn">
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="299" length="4">born</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-177" entity_id="ent-70132567475360">a British Pakistani</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-203">London</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132568803460" name="entity-EVENT-3">
+      <event_mention id="evm-1611" type="movement" subtype="transportperson">
+        <trigger source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1268" length="5">moved</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-580" entity_id="ent-70132576270700">my grandfather</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-567">England</place>
+        </places>
+        <date>
+          <date_extent source="4fbb1eec7dfd5c2fefb94a2d873ddfa5" offset="1288" length="8">the 60's</date_extent>
+          <normalized_date>196X-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

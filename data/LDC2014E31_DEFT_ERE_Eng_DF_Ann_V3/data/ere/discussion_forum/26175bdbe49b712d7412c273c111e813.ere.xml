@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="26175bdbe49b712d7412c273c111e813" source_type="multi_post" kit_id="537ccd8d0000000000000015">
+  <entities>
+    <entity id="ent-70132576265300" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="14" length="15">A Laughing Baby</entity_mention>
+      <entity_mention id="m-151" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="129" length="3">ALB</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="615" length="1">I</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="646" length="1">I</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1377" length="1">I</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1786" length="3">you</entity_mention>
+      <entity_mention id="m-1503" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="4964" length="15">A Laughing Baby</entity_mention>
+      <entity_mention id="m-1295" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="3698" length="15">A Laughing Baby</entity_mention>
+      <entity_mention id="m-1139" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="3193" length="15">A Laughing Baby</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="4982" length="1">I</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3757" length="1">I</entity_mention>
+      <entity_mention id="m-1282" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="3541" length="5">buddy</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3453" length="4">Your</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3354" length="3">you</entity_mention>
+      <entity_mention id="m-1191" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3319" length="3">you</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3242" length="1">I</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3211" length="1">I</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2825" length="6">myself</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2715" length="6">myself</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2888" length="1">I</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2963" length="1">I</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2836" length="1">I</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2757" length="1">I</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2662" length="1">I</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2495" length="1">I</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2464" length="1">I</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2436" length="1">I</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2387" length="1">I</entity_mention>
+      <entity_mention id="m-1652" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3410" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571520260" name="entity-PER-3" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="93" length="10">slingblade</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="125" length="2">me</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="477" length="2">my</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="175" length="1">I</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="213" length="1">I</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="347" length="2">my</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="367" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="437" length="1">I</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="502" length="1">I</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="675" length="1">I</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="682" length="1">I</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="702" length="1">I</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="761" length="1">I</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="814" length="1">I</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="898" length="2">my</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1044" length="2">me</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1048" length="1">I</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1058" length="2">my</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1076" length="1">I</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1083" length="1">I</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1102" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1182" length="1">I</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1193" length="1">I</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1214" length="1">I</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1243" length="1">I</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1262" length="1">I</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1277" length="1">I</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1284" length="1">I</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1327" length="3">you</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1359" length="3">you</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1404" length="3">you</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1494" length="1">I</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1529" length="1">I</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1536" length="1">I</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1578" length="1">I</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1591" length="2">my</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1653" length="1">I</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1689" length="2">my</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1701" length="1">I</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1723" length="1">I</entity_mention>
+      <entity_mention id="m-1490" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="4890" length="10">slingblade</entity_mention>
+      <entity_mention id="m-1126" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="3119" length="10">slingblade</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3485" length="1">I</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3401" length="1">I</entity_mention>
+      <entity_mention id="m-1230" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3387" length="1">I</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3328" length="1">I</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3284" length="1">I</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3004" length="1">I</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2180" length="2">my</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2301" length="1">I</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2145" length="2">My</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="641" length="3">you</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1984" length="1">I</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2015" length="1">I</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2085" length="1">I</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2123" length="1">I</entity_mention>
+      <entity_mention id="m-1665" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="134" length="1">I</entity_mention>
+      <entity_mention id="m-1704" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="575" length="1">I</entity_mention>
+      <entity_mention id="m-1824" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3037" length="3">you</entity_mention>
+      <entity_mention id="m-1811" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="3023" length="3">you</entity_mention>
+      <entity_mention id="m-1798" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2450" length="3">you</entity_mention>
+      <entity_mention id="m-1785" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="2415" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132569514480" name="entity-PER-4" type="PER">
+      <entity_mention id="m-203" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="225" length="10">that child</entity_mention>
+      <entity_mention id="m-216" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="325" length="9">The child</entity_mention>
+      <entity_mention id="m-307" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="514" length="9">the child</entity_mention>
+      <entity_mention id="m-411" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="784" length="10">that child</entity_mention>
+      <entity_mention id="m-450" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="953" length="10">that child</entity_mention>
+      <entity_mention id="m-879" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="2060" length="10">that child</entity_mention>
+    </entity>
+    <entity id="ent-70132569370020" name="entity-PER-5" type="PER">
+      <entity_mention id="m-801" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="1744" length="8">McQueary</entity_mention>
+      <entity_mention id="m-1035" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="2742" length="9">MacQueary</entity_mention>
+      <entity_mention id="m-1360" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="4113" length="8">McQueary</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1836" length="3">him</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="4230" length="2">he</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="4157" length="2">he</entity_mention>
+      <entity_mention id="m-1555" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="4353" length="3">him</entity_mention>
+    </entity>
+    <entity id="ent-70132569173120" name="entity-PER-6" type="PER">
+      <entity_mention id="m-255" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="389" length="15">the perpetrator</entity_mention>
+      <entity_mention id="m-320" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="554" length="8">the perp</entity_mention>
+      <entity_mention id="m-1373" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="4145" length="8">Sandusky</entity_mention>
+    </entity>
+    <entity id="ent-70132568814300" name="entity-PER-8" type="PER">
+      <entity_mention id="m-1477" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="4812" length="5">their</entity_mention>
+      <entity_mention id="m-1837" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="4769" length="32">most of this people on this site</entity_mention>
+    </entity>
+    <entity id="ent-70132568804980" name="entity-PER-9" type="PER">
+      <entity_mention id="m-1334" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="4017" length="10">The Shrike</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="4056" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568785560" name="entity-PER-10" type="PER">
+      <entity_mention id="m-1321" noun_type="NAM" source="26175bdbe49b712d7412c273c111e813" offset="3943" length="10">ZirconBlue</entity_mention>
+      <entity_mention id="m-1451" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="4761" length="1">I</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="4205" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132568763560" name="entity-PER-11" type="PER">
+      <entity_mention id="m-1425" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="4261" length="10">the police</entity_mention>
+    </entity>
+    <entity id="ent-70132568759100" name="entity-PER-1" type="PER">
+      <entity_mention id="m-1759" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="1876" length="11">a few of us</entity_mention>
+      <entity_mention id="m-1772" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="1914" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132568742340" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1464" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="4777" length="24">this people on this site</entity_mention>
+    </entity>
+    <entity id="ent-70132568736760" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-1529" noun_type="NOM" source="26175bdbe49b712d7412c273c111e813" offset="243" length="10">that place</entity_mention>
+      <entity_mention id="m-1691" noun_type="PRO" source="26175bdbe49b712d7412c273c111e813" offset="531" length="5">there</entity_mention>
+    </entity>
+  </entities>
+  <relations/>
+  <events>
+    <event id="e-70132568671680" name="entity-EVENT-2">
+      <event_mention id="evm-1569" type="conflict" subtype="attack">
+        <trigger source="26175bdbe49b712d7412c273c111e813" offset="2077" length="5">raped</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-879" entity_id="ent-70132569514480">that child</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

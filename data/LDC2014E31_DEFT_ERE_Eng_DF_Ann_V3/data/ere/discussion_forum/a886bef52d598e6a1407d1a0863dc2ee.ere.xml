@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="a886bef52d598e6a1407d1a0863dc2ee" source_type="multi_post" kit_id="5346f3680000000000000100">
+  <entities>
+    <entity id="ent-70132577467360" name="entity-PER-2" type="PER">
+      <entity_mention id="m-151" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="142" length="5">kwc57</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3812" length="5">kwc57</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3909" length="5">kwc57</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4367" length="1">I</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4464" length="1">I</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4772" length="2">my</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4798" length="2">Me</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4809" length="1">I</entity_mention>
+      <entity_mention id="m-658" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5082" length="5">kwc57</entity_mention>
+    </entity>
+    <entity id="ent-70132575367120" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="14" length="6">Syphon</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="113" length="6">Syphon</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="805" length="1">i</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="2160" length="6">Syphon</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3266" length="3">you</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3315" length="5">Idiot</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3570" length="3">you</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3880" length="6">Syphon</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3937" length="6">Syphon</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4635" length="1">i</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4724" length="3">you</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4780" length="3">you</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1198" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576765760" name="entity-PER-4" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="83" length="7">Jarhead</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1732" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576634540" name="entity-PER-5" type="PER">
+      <entity_mention id="m-229" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1503" length="6">Obamas</entity_mention>
+    </entity>
+    <entity id="ent-70132576394220" name="entity-PER-6" type="PER">
+      <entity_mention id="m-320" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="2048" length="11">Wry Catcher</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5017" length="11">Wry Catcher</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5225" length="3">Wry</entity_mention>
+      <entity_mention id="m-762" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5461" length="3">Wry</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5625" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132575911780" name="entity-PER-7" type="PER">
+      <entity_mention id="m-333" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="2122" length="15">California Girl</entity_mention>
+    </entity>
+    <entity id="ent-70132575908020" name="entity-PER-8" type="PER">
+      <entity_mention id="m-359" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="2189" length="9">Firehorse</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="2506" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132575770700" name="entity-PER-9" type="PER">
+      <entity_mention id="m-424" noun_type="NOM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3593" length="10">the couple</entity_mention>
+    </entity>
+    <entity id="ent-70132575766940" name="entity-PER-10" type="PER">
+      <entity_mention id="m-437" noun_type="NOM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="3722" length="14">a dying infant</entity_mention>
+    </entity>
+    <entity id="ent-70132575632520" name="entity-PER-11" type="PER">
+      <entity_mention id="m-619" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4945" length="8">Dr.Drock</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5051" length="8">Dr.Drock</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5090" length="3">You</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5190" length="3">you</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5209" length="3">you</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5258" length="2">me</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5515" length="3">you</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5552" length="3">you</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5564" length="4">your</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5602" length="1">I</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5755" length="1">I</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5771" length="1">I</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5781" length="1">I</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5810" length="1">I</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5847" length="2">my</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5874" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132574561980" name="entity-PER-12" type="PER">
+      <entity_mention id="m-775" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5502" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132574427880" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-190" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1215" length="3">GOP</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1255" length="4">They</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1415" length="4">they</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1646" length="3">GOP</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1760" length="3">GOP</entity_mention>
+    </entity>
+    <entity id="ent-70132574293780" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-281" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1844" length="6">kaiser</entity_mention>
+    </entity>
+    <entity id="ent-70132574155280" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-294" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1852" length="18">united health care</entity_mention>
+    </entity>
+    <entity id="ent-70132574151220" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-307" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="1874" length="24">blue cross / blue shield</entity_mention>
+    </entity>
+    <entity id="ent-70132574016760" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-515" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="4445" length="8">Catholic</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5148" length="15">Catholic church</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5354" length="14">cathlic church</entity_mention>
+    </entity>
+    <entity id="ent-70132573876420" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-177" noun_type="NAM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="879" length="2">US</entity_mention>
+    </entity>
+    <entity id="ent-70132573872260" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-957" noun_type="NOM" source="a886bef52d598e6a1407d1a0863dc2ee" offset="5172" length="29">each of the areas you mention</entity_mention>
+    </entity>
+  </entities>
+  <relations/>
+  <events>
+    <event id="e-70132573196540" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="justice" subtype="convict">
+        <trigger source="a886bef52d598e6a1407d1a0863dc2ee" offset="3618" length="12">found guilty</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-424" entity_id="ent-70132575770700">the couple</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573195140" name="entity-EVENT-3">
+      <event_mention id="evm-971" type="justice" subtype="arrestjail">
+        <trigger source="a886bef52d598e6a1407d1a0863dc2ee" offset="3664" length="6">prison</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-424" entity_id="ent-70132575770700">the couple</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

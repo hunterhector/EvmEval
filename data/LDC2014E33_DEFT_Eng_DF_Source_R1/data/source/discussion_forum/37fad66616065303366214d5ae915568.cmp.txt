@@ -1,0 +1,77 @@
+<post author="ican711nm" datetime="2005-09-24T17:25:00" id="p369">
+<quote orig_author="parados">
+<quote orig_author="ican711nm">
+...
+Dilemma: Increasing CO2 in the atmosphere increases the percentage of the sun's radiation that is deflected by the atmosphere away from Earth's surface; increasing CO2 in the atmosphere increases the percentage of the heat radiated from Earth's surface that is deflected back to Earth's surface.
+
+Why are the polar ice caps on Mars melting?
+
+...
+
+</quote>
+
+Considering CO2 is a greenhouse gas it doesn't REFLECT the sun's radiation back into space. When you start with something that is so obviously wrong scientifically it punches holes in your entire argument.
+</quote>
+
+You are correct. I should have written:
+
+Dilemma: Increasing some emissions in the atmosphere increases the percentage of the sun's radiation that is deflected by the atmosphere away from Earth's surface; increasing CO2 in the atmosphere increases the percentage of the heat radiated from Earth's surface that is deflected back to Earth's surface.
+
+(Both CO2 and those other emissions are emitted by industry, electric power plants, vehicles and other burners of carbon-based fuels. Decreasing CO2 emissions will probably require decreasing those other emissions as well.)
+
+<quote>
+<a href="http://www.gcrio.org/CONSEQUENCES/winter96/sunclimate.html">www.gcrio.org/CONSEQUENCES/winter96/sunclimate.html</a>
+[ boldface added by ican ]
+
+The Sun and Climate
+by Judith Lean and David Rind
+...
+In global average, increases in greenhouse gas concentrations or in solar radiation bring warmer surface temperatures since they add energy to the climate system. In contrast, increased industrial and volcanic aerosols restrict the penetration of solar radiation to the Earth's surface and lead to surface cooling. A drop in the concentration of ozone in the lower stratosphere should also produce a net cooling at the surface. Changes in albedo that increase the planet's reflectivity will lead to cooling, and those that make it less reflective and more absorbing, to a temperature rise.
+...
+The Earth receives most of its direct heat from the visible and near- infrared spectrum of sunlight, retaining about 70 percent of what pours down on its day-lit hemisphere. The rest is returned, by reflection, back into the cold of space. A part of what the ground and oceans and lower atmosphere absorb also leaks outward through the atmosphere in the form of infrared radiation. The remaining fraction--trapped in part by greenhouse gases--sustains the habitable environment to which we are accustomed. Any variation in total radiation from the Sun will force an accompanying change in mean-surface temperature.
+...
+
+</quote>
+
+<quote orig_author="parados">
+As for your Mars argument..
+
+<quote>
+Like Earth, Mars has seasons that cause its polar caps to wax and wane. "It's late spring at the south pole of Mars," says planetary scientist Dave Smith of the Goddard Space Flight Center. "The polar cap is receding because the springtime sun is shining on it."
+</quote>
+
+</quote>
+
+The reported melting of the polar ice caps on Mars is more than a seasonal melt just as it is on earth now. It is allegedly a general trend throughout all of Mar's seasons.
+</post>
+<post author="Walter Hinteler" datetime="2005-09-25T02:28:00" id="p370">
+Seems that the UK's prime minister has changed his mind on global warming, and has decided to follow his supervisor's lead:
+
+<quote>
+Blair falls into line with Bush view on global warming
+
+By Geoffrey Lean and Christopher Silvester
+
+Published: 25 September 2005
+
+Tony Blair has admitted that he is changing his views on combating global warming to mirror those of President Bush - and oppose negotiating international treaties such as the Kyoto Protocol.
+
+His admission, which has outraged environmentalists on both sides of the Atlantic, flies in the face of his promises made in the past two years and undermines the agreement he masterminded at this summer's Gleneagles Summit. And it endangers talks that opened in Ottawa this weekend on a new treaty to combat climate change.
+
+The U-turn will inevitably bring accusations that he has, once again, sold out to Mr Bush, just at the time that the US President is coming under unprecedented pressure to change his policy in the wake of hurricanes Katrina and Rita. Last week the UK Government's chief scientific advisor, Sir David King, said that global warming might have increased their severity.
+
+Over the past two years Mr Blair has consistently claimed global leadership in tackling what he described as "long term, the single most important issue we face as a global community" and has stressed that it "can only properly be addressed through international agreements". President Bush repeatedly expressed anger at his position.
+Sharing a platform with the US Secretary of State, Condoleezza Rice, in New York this month, Mr Blair confessed: "Probably I'm changing my thinking about this", adding that he hoped the world's nations would "not negotiate international treaties".
+
+This contradicts his assertion in a speech a year ago - which drew a private rebuke from the Bush administration - that "a problem that is global in cause and scope can only be fully addressed through international agreement".
+
+It also denies what his ministers claimed to be his main achievement on global warming at Gleneagles. He had succeeded in getting all the leaders except Mr Bush to sign up to negotiating a successor to the Kyoto treaty, and in arranging a meeting between the G8 and leading developing countries to discuss it.
+
+But instead of endorsing agreed limits on the pollution that causes climate change, Mr Blair told this month's meeting at the Clinton Global Initiative that he was putting his faith in "developing science and technology" - precisely Mr Bush's position.
+
+He justified his change of heart by saying that countries would not negotiate environmental treaties that cut their growth or consumption - another of the President's main contentions. But in another speech last April he said it was "quite false" to suppose that environmental protection would inhibit growth.
+
+Last night, Tony Juniper, executive director of Friends of the Earth, called the Prime Minister's volte-face "unbelievable": "Having failed to practise what he preaches, he is now changing his preaching to match his practice."
+</quote>
+<a href="http://news.independent.co.uk/world/environment/article314991.ece">Source</a>
+</post>

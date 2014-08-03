@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" source_type="multi_post" kit_id="5346f3680000000000000066">
+  <entities>
+    <entity id="ent-70132568716100" name="entity-PER-2" type="PER">
+      <entity_mention id="m-2627" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="5408" length="1">I</entity_mention>
+      <entity_mention id="m-2601" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="5238" length="12">TaylorGang_4</entity_mention>
+    </entity>
+    <entity id="ent-70132568693680" name="entity-PER-3" type="PER">
+      <entity_mention id="m-2562" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="5028" length="4">Rant</entity_mention>
+    </entity>
+    <entity id="ent-70132568688740" name="entity-PER-4" type="PER">
+      <entity_mention id="m-2549" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4983" length="3">VOR</entity_mention>
+      <entity_mention id="m-2510" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4858" length="38">such an ignorant and racist individual</entity_mention>
+      <entity_mention id="m-2536" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4978" length="15">that VOR person</entity_mention>
+      <entity_mention id="m-2471" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4695" length="3">VOR</entity_mention>
+      <entity_mention id="m-2445" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4587" length="1">i</entity_mention>
+      <entity_mention id="m-2432" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4573" length="1">i</entity_mention>
+      <entity_mention id="m-2393" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4481" length="1">i</entity_mention>
+      <entity_mention id="m-2367" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4467" length="2">My</entity_mention>
+      <entity_mention id="m-2341" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4462" length="3">VOR</entity_mention>
+      <entity_mention id="m-2302" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4401" length="3">you</entity_mention>
+      <entity_mention id="m-2276" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4362" length="3">You</entity_mention>
+      <entity_mention id="m-2016" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3989" length="3">VOR</entity_mention>
+      <entity_mention id="m-1912" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3797" length="3">VOR</entity_mention>
+      <entity_mention id="m-1808" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3523" length="2">me</entity_mention>
+      <entity_mention id="m-1782" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3498" length="2">My</entity_mention>
+      <entity_mention id="m-1756" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3493" length="3">VOR</entity_mention>
+      <entity_mention id="m-1457" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2453" length="1">i</entity_mention>
+      <entity_mention id="m-1431" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2421" length="3">VOR</entity_mention>
+      <entity_mention id="m-1379" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2386" length="3">you</entity_mention>
+      <entity_mention id="m-1353" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2343" length="3">you</entity_mention>
+      <entity_mention id="m-1236" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2137" length="3">VOR</entity_mention>
+      <entity_mention id="m-1132" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1875" length="3">VOR</entity_mention>
+      <entity_mention id="m-1002" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1697" length="3">VOR</entity_mention>
+      <entity_mention id="m-911" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1465" length="3">VOR</entity_mention>
+      <entity_mention id="m-677" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="897" length="3">VOR</entity_mention>
+      <entity_mention id="m-664" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="859" length="3">you</entity_mention>
+      <entity_mention id="m-651" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="882" length="3">you</entity_mention>
+      <entity_mention id="m-586" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="766" length="3">VOR</entity_mention>
+      <entity_mention id="m-456" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="650" length="1">I</entity_mention>
+      <entity_mention id="m-417" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="645" length="3">VOR</entity_mention>
+      <entity_mention id="m-391" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="558" length="3">VOR</entity_mention>
+      <entity_mention id="m-378" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="541" length="15">Voice of reason</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="349" length="6">myself</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="341" length="1">i</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="287" length="1">i</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="132" length="11">Libertarian</entity_mention>
+      <entity_mention id="m-1210" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2100" length="3">you</entity_mention>
+      <entity_mention id="m-1223" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2131" length="3">you</entity_mention>
+      <entity_mention id="m-1587" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2932" length="3">VOR</entity_mention>
+      <entity_mention id="m-1691" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3082" length="3">VOR</entity_mention>
+    </entity>
+    <entity id="ent-70132567416520" name="entity-PER-5" type="PER">
+      <entity_mention id="m-2419" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4568" length="3">you</entity_mention>
+      <entity_mention id="m-2406" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4515" length="3">you</entity_mention>
+      <entity_mention id="m-2354" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4467" length="12">My dear lady</entity_mention>
+      <entity_mention id="m-2328" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4455" length="1">i</entity_mention>
+      <entity_mention id="m-2315" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4439" length="2">my</entity_mention>
+      <entity_mention id="m-2289" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4393" length="2">me</entity_mention>
+      <entity_mention id="m-2263" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4356" length="4">RSLW</entity_mention>
+      <entity_mention id="m-2237" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4314" length="4">your</entity_mention>
+      <entity_mention id="m-2211" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4251" length="3">you</entity_mention>
+      <entity_mention id="m-2172" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4225" length="3">you</entity_mention>
+      <entity_mention id="m-2159" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4207" length="4">your</entity_mention>
+      <entity_mention id="m-2094" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4101" length="3">you</entity_mention>
+      <entity_mention id="m-2055" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4048" length="3">you</entity_mention>
+      <entity_mention id="m-2042" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4002" length="3">you</entity_mention>
+      <entity_mention id="m-2029" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3994" length="3">You</entity_mention>
+      <entity_mention id="m-1899" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3751" length="1">i</entity_mention>
+      <entity_mention id="m-1873" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3675" length="1">I</entity_mention>
+      <entity_mention id="m-1860" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3654" length="2">Me</entity_mention>
+      <entity_mention id="m-1847" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3648" length="4">RSLW</entity_mention>
+      <entity_mention id="m-1834" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3571" length="8">yourself</entity_mention>
+      <entity_mention id="m-1821" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3552" length="3">you</entity_mention>
+      <entity_mention id="m-1795" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3507" length="3">you</entity_mention>
+      <entity_mention id="m-1769" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3498" length="7">My dear</entity_mention>
+      <entity_mention id="m-1704" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3156" length="3">you</entity_mention>
+      <entity_mention id="m-1652" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3000" length="1">I</entity_mention>
+      <entity_mention id="m-1639" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2991" length="1">i</entity_mention>
+      <entity_mention id="m-1626" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2974" length="4">RSLW</entity_mention>
+      <entity_mention id="m-1600" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2942" length="3">you</entity_mention>
+      <entity_mention id="m-1574" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2871" length="4">RSLW</entity_mention>
+      <entity_mention id="m-1444" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2444" length="3">you</entity_mention>
+      <entity_mention id="m-1366" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2376" length="2">my</entity_mention>
+      <entity_mention id="m-1340" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2331" length="4">RSLW</entity_mention>
+      <entity_mention id="m-1327" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2316" length="4">your</entity_mention>
+      <entity_mention id="m-1275" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2221" length="4">your</entity_mention>
+      <entity_mention id="m-1197" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2076" length="4">RSLW</entity_mention>
+      <entity_mention id="m-1184" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2026" length="4">your</entity_mention>
+      <entity_mention id="m-1145" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1886" length="3">you</entity_mention>
+      <entity_mention id="m-1093" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1806" length="4">RSLW</entity_mention>
+      <entity_mention id="m-1041" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1739" length="3">you</entity_mention>
+      <entity_mention id="m-1015" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1708" length="3">you</entity_mention>
+      <entity_mention id="m-950" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1544" length="3">you</entity_mention>
+      <entity_mention id="m-872" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1424" length="4">RSLW</entity_mention>
+      <entity_mention id="m-638" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="825" length="4">RSLW</entity_mention>
+      <entity_mention id="m-599" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="771" length="3">You</entity_mention>
+      <entity_mention id="m-560" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="752" length="1">i</entity_mention>
+      <entity_mention id="m-534" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="732" length="4">RSLW</entity_mention>
+      <entity_mention id="m-508" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="712" length="3">you</entity_mention>
+      <entity_mention id="m-469" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="669" length="4">your</entity_mention>
+      <entity_mention id="m-404" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="585" length="4">RSLW</entity_mention>
+      <entity_mention id="m-352" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="521" length="3">she</entity_mention>
+      <entity_mention id="m-339" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="503" length="4">RSLW</entity_mention>
+      <entity_mention id="m-326" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="473" length="28">a rather silly looking woman</entity_mention>
+      <entity_mention id="m-164" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="218" length="9">a liberal</entity_mention>
+      <entity_mention id="m-963" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1604" length="4">RSLW</entity_mention>
+      <entity_mention id="m-1730" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3338" length="4">RSLW</entity_mention>
+      <entity_mention id="m-2003" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3969" length="4">RSLW</entity_mention>
+      <entity_mention id="m-3087" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2776" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571520860" name="entity-PER-6" type="PER">
+      <entity_mention id="m-2250" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4331" length="22">murderous racist thugs</entity_mention>
+      <entity_mention id="m-1106" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1816" length="4">they</entity_mention>
+      <entity_mention id="m-1067" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1774" length="5">their</entity_mention>
+      <entity_mention id="m-989" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1675" length="4">they</entity_mention>
+      <entity_mention id="m-976" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1637" length="4">they</entity_mention>
+      <entity_mention id="m-430" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="599" length="4">they</entity_mention>
+      <entity_mention id="m-1522" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2692" length="78">a group of people who have murdered no one, and who wish to defend the country</entity_mention>
+      <entity_mention id="m-2198" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4247" length="3">who</entity_mention>
+      <entity_mention id="m-2911" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1513" length="17">murderous racists</entity_mention>
+    </entity>
+    <entity id="ent-70132571497120" name="entity-PER-7" type="PER">
+      <entity_mention id="m-2497" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4822" length="11">all of then</entity_mention>
+      <entity_mention id="m-2484" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4718" length="20">The earnest liberals</entity_mention>
+    </entity>
+    <entity id="ent-70132571483120" name="entity-PER-8" type="PER">
+      <entity_mention id="m-2068" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4059" length="5">Islam</entity_mention>
+      <entity_mention id="m-1951" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3896" length="5">Islam</entity_mention>
+      <entity_mention id="m-1548" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2840" length="5">Islam</entity_mention>
+      <entity_mention id="m-1509" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2584" length="13">that religion</entity_mention>
+      <entity_mention id="m-1496" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2517" length="141">followers of a religion called Islam, who murder us in the name of that religion and inform us that their ultimate ambition is to conquer us,</entity_mention>
+      <entity_mention id="m-1483" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2548" length="5">Islam</entity_mention>
+      <entity_mention id="m-1470" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2530" length="10">a religion</entity_mention>
+      <entity_mention id="m-885" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1434" length="5">Islam</entity_mention>
+      <entity_mention id="m-859" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1392" length="5">Islam</entity_mention>
+      <entity_mention id="m-846" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1344" length="5">Islam</entity_mention>
+      <entity_mention id="m-820" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1253" length="5">Islam</entity_mention>
+      <entity_mention id="m-794" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1160" length="5">Islam</entity_mention>
+      <entity_mention id="m-755" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1091" length="5">Islam</entity_mention>
+      <entity_mention id="m-742" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1028" length="5">Islam</entity_mention>
+      <entity_mention id="m-2666" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2555" length="3">who</entity_mention>
+    </entity>
+    <entity id="ent-70132571358040" name="entity-PER-9" type="PER">
+      <entity_mention id="m-2120" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4150" length="5">their</entity_mention>
+      <entity_mention id="m-2107" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4111" length="4">they</entity_mention>
+      <entity_mention id="m-1301" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2293" length="4">they</entity_mention>
+      <entity_mention id="m-1288" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2261" length="25">the fundamentalist muslim</entity_mention>
+      <entity_mention id="m-1158" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1899" length="26">the fundamentalist muslims</entity_mention>
+      <entity_mention id="m-612" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="790" length="4">them</entity_mention>
+      <entity_mention id="m-573" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="759" length="4">them</entity_mention>
+      <entity_mention id="m-521" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="721" length="4">them</entity_mention>
+      <entity_mention id="m-482" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="685" length="22">muslim fundamentalists</entity_mention>
+    </entity>
+    <entity id="ent-70132571264640" name="entity-PER-10" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="14" length="7">IRSP044</entity_mention>
+    </entity>
+    <entity id="ent-70132571261100" name="entity-PER-11" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="85" length="9">nicknick1</entity_mention>
+    </entity>
+    <entity id="ent-70132570248620" name="entity-PER-12" type="PER">
+      <entity_mention id="m-313" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="377" length="33">some rather earnest liberal types</entity_mention>
+    </entity>
+    <entity id="ent-70132570225320" name="entity-PER-13" type="PER">
+      <entity_mention id="m-690" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="990" length="61">the 52 people murdered in the name of Islam in London in 2005</entity_mention>
+    </entity>
+    <entity id="ent-70132570221120" name="entity-PER-14" type="PER">
+      <entity_mention id="m-703" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1057" length="58">the 2,973 murdered in the name of Islam in America on 9/11</entity_mention>
+    </entity>
+    <entity id="ent-70132570174820" name="entity-PER-15" type="PER">
+      <entity_mention id="m-716" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1121" length="57">over 1,000,000 murdered in the name of Islam in the Sudan</entity_mention>
+    </entity>
+    <entity id="ent-70132570167580" name="entity-PER-16" type="PER">
+      <entity_mention id="m-1613" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2951" length="13">George Orwell</entity_mention>
+    </entity>
+    <entity id="ent-70132570162660" name="entity-PER-17" type="PER">
+      <entity_mention id="m-1717" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3317" length="18">Emmanuel Goldstein</entity_mention>
+    </entity>
+    <entity id="ent-70132570154740" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1743" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3470" length="17">Margaret Thatcher</entity_mention>
+    </entity>
+    <entity id="ent-70132570149640" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-2588" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="5102" length="3">BNP</entity_mention>
+      <entity_mention id="m-2185" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4242" length="3">BNP</entity_mention>
+      <entity_mention id="m-1990" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3940" length="26">a party of violent racists</entity_mention>
+      <entity_mention id="m-1977" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3933" length="3">BNP</entity_mention>
+      <entity_mention id="m-1535" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2795" length="3">BNP</entity_mention>
+      <entity_mention id="m-1249" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2171" length="3">BNP</entity_mention>
+      <entity_mention id="m-1028" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1725" length="3">BNP</entity_mention>
+      <entity_mention id="m-924" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1478" length="3">BNP</entity_mention>
+      <entity_mention id="m-729" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="935" length="3">BNP</entity_mention>
+      <entity_mention id="m-365" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="535" length="3">BNP</entity_mention>
+      <entity_mention id="m-2759" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="967" length="3">BNP</entity_mention>
+      <entity_mention id="m-937" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1591" length="5">their</entity_mention>
+      <entity_mention id="m-2898" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1485" length="14">a violent sect</entity_mention>
+      <entity_mention id="m-1054" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1755" length="4">them</entity_mention>
+      <entity_mention id="m-2640" noun_type="PRO" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2186" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132569687380" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-1665" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3060" length="19">University of Leeds</entity_mention>
+    </entity>
+    <entity id="ent-70132569674460" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-2575" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="5095" length="3">EDL</entity_mention>
+    </entity>
+    <entity id="ent-70132569627100" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-2614" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="5370" length="13">the countries</entity_mention>
+      <entity_mention id="m-2224" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4314" length="12">your country</entity_mention>
+      <entity_mention id="m-2146" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4207" length="12">your country</entity_mention>
+      <entity_mention id="m-1938" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3845" length="7">British</entity_mention>
+      <entity_mention id="m-1925" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3841" length="17">the British state</entity_mention>
+      <entity_mention id="m-1314" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2316" length="12">your country</entity_mention>
+      <entity_mention id="m-1262" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2221" length="12">your country</entity_mention>
+      <entity_mention id="m-1171" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2026" length="12">your country</entity_mention>
+      <entity_mention id="m-3074" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2759" length="11">the country</entity_mention>
+      <entity_mention id="m-1080" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1774" length="13">their country</entity_mention>
+    </entity>
+    <entity id="ent-70132569370820" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-768" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1037" length="6">London</entity_mention>
+    </entity>
+    <entity id="ent-70132569363860" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-781" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1100" length="7">America</entity_mention>
+    </entity>
+    <entity id="ent-70132569300040" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-807" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1173" length="5">Sudan</entity_mention>
+    </entity>
+    <entity id="ent-70132569293080" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-1678" noun_type="NAM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3074" length="5">Leeds</entity_mention>
+    </entity>
+    <entity id="ent-70132569271480" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-2458" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4637" length="17">the near vicinity</entity_mention>
+    </entity>
+    <entity id="ent-70132569265620" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-833" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1266" length="9">the world</entity_mention>
+    </entity>
+    <entity id="ent-70132569175440" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-190" noun_type="NOM" source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="296" length="5">a pub</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132567501340" type="physical" subtype="located">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132568688740" entity_mention_id="m-177">i</arg>
+        <arg type="loc" entity_id="ent-70132569175440" entity_mention_id="m-190">a pub</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="293" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567501240" type="physical" subtype="origin">
+      <relation_mention id="relm-2919">
+        <arg type="entity" entity_id="ent-70132571520860" entity_mention_id="m-1067">their</arg>
+        <arg type="loc" entity_id="ent-70132569627100" entity_mention_id="m-1080">their country</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1774" length="5">their</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567501140" type="physical" subtype="origin">
+      <relation_mention id="relm-2949">
+        <arg type="entity" entity_id="ent-70132567416520" entity_mention_id="m-1184">your</arg>
+        <arg type="loc" entity_id="ent-70132569627100" entity_mention_id="m-1171">your country</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2026" length="4">your</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2979">
+        <arg type="entity" entity_id="ent-70132567416520" entity_mention_id="m-1275">your</arg>
+        <arg type="loc" entity_id="ent-70132569627100" entity_mention_id="m-1262">your country</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2221" length="4">your</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3009">
+        <arg type="entity" entity_id="ent-70132567416520" entity_mention_id="m-1327">your</arg>
+        <arg type="loc" entity_id="ent-70132569627100" entity_mention_id="m-1314">your country</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2316" length="4">your</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3185">
+        <arg type="entity" entity_id="ent-70132567416520" entity_mention_id="m-2159">your</arg>
+        <arg type="loc" entity_id="ent-70132569627100" entity_mention_id="m-2146">your country</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4207" length="4">your</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3215">
+        <arg type="entity" entity_id="ent-70132567416520" entity_mention_id="m-2237">your</arg>
+        <arg type="loc" entity_id="ent-70132569627100" entity_mention_id="m-2224">your country</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4314" length="4">your</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567501060" type="social" subtype="membership">
+      <relation_mention id="relm-3039">
+        <arg type="member" entity_id="ent-70132571483120" entity_mention_id="m-1496">followers of a religion called Islam, who murder us in the name of that religion and inform us that their ultimate ambition is to conquer us,</arg>
+        <arg type="group" entity_id="ent-70132571483120" entity_mention_id="m-1470">a religion</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="2517" length="9">followers</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567500940" type="physical" subtype="origin">
+      <relation_mention id="relm-3095">
+        <arg type="entity" entity_id="ent-70132569687380" entity_mention_id="m-1665">University of Leeds</arg>
+        <arg type="loc" entity_id="ent-70132569293080" entity_mention_id="m-1678">Leeds</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3071" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567500860" type="social" subtype="unspecified">
+      <relation_mention id="relm-3125">
+        <arg type="per" entity_id="ent-70132567416520" entity_mention_id="m-1769">My dear</arg>
+        <arg type="per" entity_id="ent-70132568688740" entity_mention_id="m-1782">My</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="3501" length="4">dear</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3245">
+        <arg type="per" entity_id="ent-70132567416520" entity_mention_id="m-2354">My dear lady</arg>
+        <arg type="per" entity_id="ent-70132568688740" entity_mention_id="m-2367">My</arg>
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="4470" length="4">dear</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132575904120" name="entity-EVENT-2">
+      <event_mention id="evm-230" type="contact" subtype="meet">
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="200" length="12">conversation</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-164" entity_id="ent-70132567416520">a liberal</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2680" type="contact" subtype="meet">
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="509" length="6">saying</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-326" entity_id="ent-70132567416520">a rather silly looking woman</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132576149240" name="entity-EVENT-3">
+      <event_mention id="evm-272" type="contact" subtype="meet">
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="359" length="12">conversation</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-216" entity_id="ent-70132568688740">myself</arg>
+          <arg type="entity" entity_mention_id="m-313" entity_id="ent-70132570248620">some rather earnest liberal types</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132576148380" name="entity-EVENT-4">
+      <event_mention id="evm-2773" type="life" subtype="die">
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1004" length="8">murdered</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-690" entity_id="ent-70132570225320">the 52 people murdered in the name of Islam in London in 2005</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-768">London</place>
+        </places>
+        <date>
+          <date_extent source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1047" length="4">2005</date_extent>
+          <normalized_date>2005-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132576147300" name="entity-EVENT-5">
+      <event_mention id="evm-2815" type="life" subtype="die">
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1067" length="8">murdered</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-703" entity_id="ent-70132570221120">the 2,973 murdered in the name of Islam in America on 9/11</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-781">America</place>
+        </places>
+        <date>
+          <date_extent source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1111" length="4">9/11</date_extent>
+          <normalized_date>2001-09-11</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132576146240" name="entity-EVENT-6">
+      <event_mention id="evm-2857" type="life" subtype="die">
+        <trigger source="8b2aa6cb7e34c1d7ae01aa9ed4ec10a0" offset="1136" length="8">murdered</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-716" entity_id="ent-70132570174820">over 1,000,000 murdered in the name of Islam in the Sudan</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-807">Sudan</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

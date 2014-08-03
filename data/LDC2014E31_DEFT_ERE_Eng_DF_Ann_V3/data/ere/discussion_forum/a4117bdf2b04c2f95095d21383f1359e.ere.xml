@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="a4117bdf2b04c2f95095d21383f1359e" source_type="multi_post" kit_id="5346f3680000000000000076">
+  <entities>
+    <entity id="ent-70132571561500" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="14" length="14">Uncensored2008</entity_mention>
+    </entity>
+    <entity id="ent-70132571558300" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="184" length="7">Mustang</entity_mention>
+    </entity>
+    <entity id="ent-70132571555140" name="entity-PER-4" type="PER">
+      <entity_mention id="m-151" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="359" length="9">Marc Rich</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="456" length="2">he</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="491" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132571539320" name="entity-PER-5" type="PER">
+      <entity_mention id="m-164" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="394" length="13">Bernie Madoff</entity_mention>
+    </entity>
+    <entity id="ent-70132571536800" name="entity-PER-6" type="PER">
+      <entity_mention id="m-177" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="430" length="12">Bill Clinton</entity_mention>
+      <entity_mention id="m-294" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="776" length="12">Bill Clinton</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="856" length="2">he</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="917" length="2">he</entity_mention>
+      <entity_mention id="m-411" noun_type="NOM" source="a4117bdf2b04c2f95095d21383f1359e" offset="923" length="19">a powerful democrat</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="944" length="2">he</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="1147" length="7">Clinton</entity_mention>
+    </entity>
+    <entity id="ent-70132571511160" name="entity-PER-7" type="PER">
+      <entity_mention id="m-216" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="616" length="11">Ted Kennedy</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="677" length="3">his</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="737" length="3">his</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="750" length="2">he</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="1272" length="7">Kennedy</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="1340" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571488060" name="entity-PER-8" type="PER">
+      <entity_mention id="m-229" noun_type="NOM" source="a4117bdf2b04c2f95095d21383f1359e" offset="637" length="23">a girl who was pregnant</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="1354" length="7">Mary Jo</entity_mention>
+    </entity>
+    <entity id="ent-70132571482320" name="entity-PER-9" type="PER">
+      <entity_mention id="m-255" noun_type="NOM" source="a4117bdf2b04c2f95095d21383f1359e" offset="677" length="9">his child</entity_mention>
+    </entity>
+    <entity id="ent-70132571479700" name="entity-PER-10" type="PER">
+      <entity_mention id="m-307" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="807" length="12">Betty Currie</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="828" length="3">she</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="848" length="7">herself</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="870" length="3">her</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="885" length="3">she</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="894" length="3">her</entity_mention>
+    </entity>
+    <entity id="ent-70132571461060" name="entity-PER-11" type="PER">
+      <entity_mention id="m-515" noun_type="NOM" source="a4117bdf2b04c2f95095d21383f1359e" offset="2312" length="7">a woman</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="2348" length="3">her</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="a4117bdf2b04c2f95095d21383f1359e" offset="2400" length="3">she</entity_mention>
+    </entity>
+    <entity id="ent-70132571453060" name="entity-PER-12" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="2660" length="5">Obama</entity_mention>
+    </entity>
+    <entity id="ent-70132571410300" name="entity-PER-13" type="PER">
+      <entity_mention id="m-697" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="2865" length="8">blastoff</entity_mention>
+    </entity>
+    <entity id="ent-70132571406860" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-138" noun_type="NOM" source="a4117bdf2b04c2f95095d21383f1359e" offset="279" length="11">this nation</entity_mention>
+      <entity_mention id="m-489" noun_type="NOM" source="a4117bdf2b04c2f95095d21383f1359e" offset="1550" length="11">This nation</entity_mention>
+    </entity>
+    <entity id="ent-70132571358860" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-502" noun_type="NAM" source="a4117bdf2b04c2f95095d21383f1359e" offset="2301" length="10">California</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571266400" type="social" subtype="family">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132571482320" entity_mention_id="m-255">his child</arg>
+        <arg type="per" entity_id="ent-70132571511160" entity_mention_id="m-242">his</arg>
+        <trigger source="a4117bdf2b04c2f95095d21383f1359e" offset="681" length="5">child</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571266340" type="physical" subtype="located">
+      <relation_mention id="relm-562">
+        <arg type="entity" entity_id="ent-70132571461060" entity_mention_id="m-515">a woman</arg>
+        <arg type="loc" entity_id="ent-70132571358860" entity_mention_id="m-502">California</arg>
+        <trigger source="a4117bdf2b04c2f95095d21383f1359e" offset="2298" length="2">In</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132570085160" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="die">
+        <trigger source="a4117bdf2b04c2f95095d21383f1359e" offset="628" length="8">murdered</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-216" entity_id="ent-70132571511160">Ted Kennedy</arg>
+          <arg type="victim" entity_mention_id="m-229" entity_id="ent-70132571488060">a girl who was pregnant</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-606" type="life" subtype="die">
+        <trigger source="a4117bdf2b04c2f95095d21383f1359e" offset="1347" length="6">murder</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-463" entity_id="ent-70132571511160">he</arg>
+          <arg type="victim" entity_mention_id="m-476" entity_id="ent-70132571488060">Mary Jo</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132570052900" name="entity-EVENT-3">
+      <event_mention id="evm-656" type="justice" subtype="fine">
+        <trigger source="a4117bdf2b04c2f95095d21383f1359e" offset="2408" length="5">fined</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-541" entity_id="ent-70132571461060">she</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

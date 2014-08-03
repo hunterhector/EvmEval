@@ -1,0 +1,64 @@
+<post author="goldcatt" datetime="2010-10-07T07:22:00" id="p18">
+<quote orig_author="Gadawg73">
+<quote orig_author="goldcatt">
+<quote orig_author="Madeline">
+I can see mebbe clarifying when someone becomes a "public figure" for purposes of libel and slander law -- but even that is a stretch, as I am not persuaded anything the WBC wrote on its signs or shouted at passers by could be legally regarded as libelous.
+
+Beyond that, I am not convinced the SCOTUS can find anything new to say about the First Amendment on these facts. "Harrassment" is a matter of criminalizing conduct, not speech.....I doubt the Synder family could have filed a police report on the WBC for any harrassment type crime in connection with their son's funeral.
+
+How can a reasonable person be "put in fear, etc." by a protest they were not aware of until the paper reported on it the next day?
+
+</quote>
+
+Actually if you read the decision the Snyders were awarded $2.9 million (reduced to $2.1million) not because of the newspaper coverage, but because Mr. Snyder sought out and watched the WBC's "documentary" video of the protest on their website. True story. <img src="http://www.usmessageboard.com/images/smilies/thup.gif"/>
+
+The 4th Circuit used Milkovich as their primary case with Cantwell quoted as the secondary.
+
+But what they actually overturned the District on was sending the question of law as to whether the speech should have First Amendment protection to the jury rather than deciding it from the bench - which is what they did by focusing on type of speech rather than nature of speaker and audience and concluded it was protected. The only problem may be that they used New York Times in their tort analysis after saying public v. private didn't matter.
+
+The concurrence at the Circuit level also raises the (valid, IMO) point of lack of sufficient evidence to prove harm but on an amicus waiver, over which there seems to be some confusion. That's an interesting side issue that may be addressed.
+
+Cool stuff. Here's the 4th Circuit decision if you haven't read it. It's a pdf but you don't need PACER access:
+
+<a href="http://pacer.ca4.uscourts.gov/opinion.pdf/081026.P.pdf">http://pacer.ca4.uscourts.gov/opinion.pdf/081026.P.pdf</a>
+
+</quote>
+
+Excellent.
+The court must take into consideration the technology of the times in their ruling. I just had a case where a youth committed suicide and the bullies posted more negative crap about this kid on the web site dedicated to a memorial for the youth. The parents of the youth would go on the web site to see all the kind remarks about their child and then see the negative crap also.
+
+Usually free speech cases like these take a long time to rule on and do not have split decisions.
+
+</quote>
+
+The problem I have here is that the WBC's site isn't a memorial site for Matthew Snyder, it is their own property to disseminate their point of view. By the time Mr. Snyder did his google search he knew from media sources WBC had been present, but he chose voluntarily to view it anyway.
+
+IIED is a very narrow and hard to win tort for a reason, you don't want to open the door to multi million dollar judgments for anyone who says something that hurts a person's feelings, whether directed at them or not, whether made in their presence or not, whether intent to harm that individual is real or whether it is a promotional piece for their movement and the intent to harm is simply imputed because the offended party went out of his way to find it.
+
+If this were any group other than WBC, would you feel the same way? Think about that, because whatever ruling comes down will affect all religious, quasi-political and groups out there as far as whether they can picket, protest, or use any material on their website or in their publications naming groups or individuals or that could be considered offensive to named groups or individuals.
+
+It's the voluntary and knowing nature of Mr. Snyder's exposure that bugs me. I just don't feel comfortable with expanding IIED that far, WBC assholes or no.
+</post>
+<post author="Madeline" datetime="2010-10-07T07:23:00" id="p19">
+<quote orig_author="Gadawg73">
+<quote orig_author="goldcatt">
+<quote orig_author="Gadawg73">
+The attorney for the church is the daughter of the nut case pastor.
+The public v. private nature is THE argument for the church as the ruling in the Jerry Fallwell v. Hustler case is what they are hanging their entire argument on.
+How they can claim the father of the soldier is a public figure is absurd. That is the entire case. The father IS NOT a public figure and is a private citizen.
+The jury verdict must stand.
+
+</quote>
+
+Actually what they're arguing if you read it closely is that Hustler should be expanded to private individuals, or conversely that the definition of public figure should be changed to include anyone who has personal information available publicly - in this case, through the deceased's obituary. Why they dropped the sufficient evidence objection and it had to be raised on amicus is beyond me, that's the key to the entire case. The WBC people were never suspected to be all that bright though.
+
+ETA: On the other hand, the Snyders are arguing they were a captive audience at the funeral, when they testified they never even knew the WBC was there during the funeral. Both sides could have used better attorneys on this, the arguments dance around the real issues and ignore the facts - on both sides.
+
+</quote>
+
+Of course they are because without the "expansion" they have no argument. However, they argued yesterday that TV interviews the father gave "expanded" the father to a piblic figure from a private one de facto.
+
+</quote>
+
+I am surprised the ACLU is not representing the WBC. Doubtless they'll file an amicus brief. If the parties' lawyers have fucked up the law and the facts, this is one more reason why SCOTUS normally would not grant cert.
+</post>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="d0dee1a63da001fed35d90e2becf102a" source_type="multi_post" kit_id="5355f7d70000000000000041">
+  <entities>
+    <entity id="ent-70132575770680" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="87" length="8">9thIDdoc</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="149" length="8">9thIDdoc</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="221" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="719" length="3">you</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1361" length="3">you</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1339" length="4">your</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1458" length="3">you</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1858" length="2">ya</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2138" length="4">your</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2160" length="3">you</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2212" length="2">my</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2876" length="2">me</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2931" length="1">I</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2996" length="1">I</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="3065" length="2">me</entity_mention>
+      <entity_mention id="m-1484" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="3569" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576512660" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="14" length="9">The Rabbi</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="3388" length="2">my</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="3300" length="1">I</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="3309" length="1">I</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="3338" length="1">I</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="3740" length="9">The Rabbi</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="5243" length="8">yourself</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="5228" length="3">you</entity_mention>
+      <entity_mention id="m-1230" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="5014" length="3">You</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="4515" length="9">The Rabbi</entity_mention>
+      <entity_mention id="m-1471" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="3561" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571802140" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="118" length="8">Sunshine</entity_mention>
+      <entity_mention id="m-229" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="507" length="26">who finished the BSN at 41</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="454" length="2">my</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="443" length="2">me</entity_mention>
+      <entity_mention id="m-216" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="503" length="3">one</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="485" length="2">my</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="535" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="542" length="1">I</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="749" length="1">I</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1298" length="2">me</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1235" length="6">myself</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1008" length="2">my</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1112" length="1">I</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1252" length="2">my</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1209" length="1">I</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1693" length="1">I</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1717" length="6">myself</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1599" length="6">myself</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1778" length="2">me</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1729" length="1">I</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1682" length="2">me</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1514" length="1">I</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1619" length="1">I</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1569" length="1">I</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1963" length="1">I</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2706" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571515820" name="entity-PER-5" type="PER">
+      <entity_mention id="m-307" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="763" length="20">who work the bedside</entity_mention>
+      <entity_mention id="m-294" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="756" length="6">nurses</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="875" length="4">they</entity_mention>
+      <entity_mention id="m-892" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="2720" length="20">who work the bedside</entity_mention>
+      <entity_mention id="m-905" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="2742" length="34">who have always worked the bedside</entity_mention>
+      <entity_mention id="m-879" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="2713" length="6">nurses</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2832" length="4">they</entity_mention>
+      <entity_mention id="m-320" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="785" length="34">who have always worked the bedside</entity_mention>
+    </entity>
+    <entity id="ent-70132571484820" name="entity-PER-6" type="PER">
+      <entity_mention id="m-346" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="986" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132571481220" name="entity-PER-7" type="PER">
+      <entity_mention id="m-372" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="1008" length="10">my husband</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1038" length="2">he</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1059" length="2">He</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1161" length="2">he</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1130" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571458600" name="entity-PER-8" type="PER">
+      <entity_mention id="m-671" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="1628" length="24">a good staff level nurse</entity_mention>
+      <entity_mention id="m-684" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="1653" length="31">who knew how to take care of me</entity_mention>
+    </entity>
+    <entity id="ent-70132571452480" name="entity-PER-9" type="PER">
+      <entity_mention id="m-697" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="1740" length="22">good nursing assistant</entity_mention>
+      <entity_mention id="m-710" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="1763" length="72">who would help me wash my hair, bathe, and feel like a human being again</entity_mention>
+    </entity>
+    <entity id="ent-70132571413580" name="entity-PER-11" type="PER">
+      <entity_mention id="m-775" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="2002" length="9">employees</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2048" length="4">they</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2020" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132571361000" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1100" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="3666" length="10">Nic_Driver</entity_mention>
+    </entity>
+    <entity id="ent-70132571340480" name="entity-PER-13" type="PER">
+      <entity_mention id="m-1178" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="4406" length="12">High_Gravity</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="5305" length="1">I</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="5273" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571329620" name="entity-PER-14" type="PER">
+      <entity_mention id="m-1191" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="4482" length="10">Two Thumbs</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="5189" length="2">My</entity_mention>
+    </entity>
+    <entity id="ent-70132571297740" name="entity-PER-1" type="PER">
+      <entity_mention id="m-723" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="1837" length="4">They</entity_mention>
+    </entity>
+    <entity id="ent-70132571293280" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-762" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="1985" length="10">Vanderbilt</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="3018" length="11">Vanderbuilt</entity_mention>
+      <entity_mention id="m-1074" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="3532" length="10">Vanderbilt</entity_mention>
+      <entity_mention id="m-1510" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="3590" length="19">a teaching hospital</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="3548" length="11">Vanderbuilt</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="2070" length="5">there</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="d0dee1a63da001fed35d90e2becf102a" offset="3049" length="5">there</entity_mention>
+      <entity_mention id="m-1497" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="3580" length="5">there</entity_mention>
+    </entity>
+    <entity id="ent-70132570164920" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-1048" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="3371" length="9">the state</entity_mention>
+    </entity>
+    <entity id="ent-70132570156440" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-1165" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="4370" length="9">the party</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="4268" length="3">GOP</entity_mention>
+    </entity>
+    <entity id="ent-70132570146260" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-1126" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="3928" length="12">this country</entity_mention>
+      <entity_mention id="m-1139" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="4295" length="7">America</entity_mention>
+      <entity_mention id="m-1217" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="4703" length="12">this country</entity_mention>
+    </entity>
+    <entity id="ent-70132570080240" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-1243" noun_type="NAM" source="d0dee1a63da001fed35d90e2becf102a" offset="5111" length="2">EU</entity_mention>
+    </entity>
+    <entity id="ent-70132570048920" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-554" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="1523" length="12">the hospital</entity_mention>
+      <entity_mention id="m-1523" noun_type="NOM" source="d0dee1a63da001fed35d90e2becf102a" offset="1847" length="5">there</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132569170900" type="social" subtype="unspecified">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132571802140" entity_mention_id="m-281">I</arg>
+        <arg type="per" entity_id="ent-70132571515820" entity_mention_id="m-294">nurses</arg>
+        <trigger source="d0dee1a63da001fed35d90e2becf102a" offset="751" length="4">know</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1406">
+        <arg type="per" entity_id="ent-70132571802140" entity_mention_id="m-866">I</arg>
+        <arg type="per" entity_id="ent-70132571515820" entity_mention_id="m-879">nurses</arg>
+        <trigger source="d0dee1a63da001fed35d90e2becf102a" offset="2708" length="4">know</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569170820" type="social" subtype="family">
+      <relation_mention id="relm-1316">
+        <arg type="per" entity_id="ent-70132571802140" entity_mention_id="m-359">my</arg>
+        <arg type="per" entity_id="ent-70132571481220" entity_mention_id="m-372">my husband</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569170720" type="physical" subtype="located">
+      <relation_mention id="relm-1346">
+        <arg type="entity" entity_id="ent-70132571802140" entity_mention_id="m-541">I</arg>
+        <arg type="loc" entity_id="ent-70132570048920" entity_mention_id="m-554">the hospital</arg>
+        <trigger source="d0dee1a63da001fed35d90e2becf102a" offset="1520" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569170600" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1376">
+        <arg type="employeemember" entity_id="ent-70132571413580" entity_mention_id="m-775">employees</arg>
+        <arg type="org" entity_id="ent-70132571293280" entity_mention_id="m-762">Vanderbilt</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569170500" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1436">
+        <arg type="employeemember" entity_id="ent-70132575770680" entity_mention_id="m-957">I</arg>
+        <arg type="org" entity_id="ent-70132571293280" entity_mention_id="m-970">Vanderbuilt</arg>
+        <trigger source="d0dee1a63da001fed35d90e2becf102a" offset="3008" length="6">worked</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132568791700" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="personnel" subtype="startposition">
+        <trigger source="d0dee1a63da001fed35d90e2becf102a" offset="1019" length="3">got</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-372" entity_id="ent-70132571481220">my husband</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

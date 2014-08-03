@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="178e7de35eccad0df800f0c7539cf614" source_type="multi_post" kit_id="5346f3670000000000000013">
+  <entities>
+    <entity id="ent-70132577145860" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="14" length="5">TCD23</entity_mention>
+      <entity_mention id="m-125" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="88" length="1">I</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="300" length="2">me</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="669" length="1">I</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="879" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577362760" name="entity-PER-3" type="PER">
+      <entity_mention id="m-190" noun_type="NOM" source="178e7de35eccad0df800f0c7539cf614" offset="250" length="24">our respective Diplomats</entity_mention>
+    </entity>
+    <entity id="ent-70132577467140" name="entity-PER-4" type="PER">
+      <entity_mention id="m-203" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="250" length="3">our</entity_mention>
+    </entity>
+    <entity id="ent-70132577463720" name="entity-PER-6" type="PER">
+      <entity_mention id="m-346" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="976" length="4">Aj12</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="1050" length="1">I</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1233" length="4">Aj12</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="1268" length="1">I</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1488" length="4">Aj12</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="1672" length="1">I</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2215" length="4">Aj12</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="2222" length="1">I</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="3102" length="4">Aj12</entity_mention>
+    </entity>
+    <entity id="ent-70132577810920" name="entity-PER-7" type="PER">
+      <entity_mention id="m-411" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1163" length="8">Ferdowsi</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1554" length="8">Ferdowsi</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2145" length="8">Ferdowsi</entity_mention>
+      <entity_mention id="m-957" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="3168" length="8">Ferdowsi</entity_mention>
+    </entity>
+    <entity id="ent-70132577700720" name="entity-PER-8" type="PER">
+      <entity_mention id="m-671" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2101" length="8">Ron Paul</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2651" length="8">Ron Paul</entity_mention>
+    </entity>
+    <entity id="ent-70132577465220" name="entity-PER-9" type="PER">
+      <entity_mention id="m-853" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2798" length="12">Perseveranze</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="2901" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577368720" name="entity-PER-1" type="PER">
+      <entity_mention id="m-281" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="525" length="4">Arab</entity_mention>
+    </entity>
+    <entity id="ent-70132577365320" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-151" noun_type="NOM" source="178e7de35eccad0df800f0c7539cf614" offset="200" length="19">the British Embassy</entity_mention>
+    </entity>
+    <entity id="ent-70132577148720" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-138" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="132" length="7">Iranian</entity_mention>
+      <entity_mention id="m-255" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="410" length="4">Iran</entity_mention>
+      <entity_mention id="m-294" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="583" length="4">Iran</entity_mention>
+      <entity_mention id="m-385" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1086" length="4">Iran</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1304" length="4">Iran</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1460" length="4">Iran</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1732" length="4">Iran</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1737" length="4">Iran</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1891" length="4">Iran</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="1911" length="2">it</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2282" length="4">Iran</entity_mention>
+      <entity_mention id="m-762" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2287" length="4">Iran</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2441" length="4">Iran</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="2461" length="2">it</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="2855" length="4">they</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2894" length="4">Iran</entity_mention>
+      <entity_mention id="m-931" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="3063" length="4">Iran</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="3396" length="4">Iran</entity_mention>
+      <entity_mention id="m-1065" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1655" length="4">Iran</entity_mention>
+    </entity>
+    <entity id="ent-70132576146540" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-242" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="343" length="5">U.S.A</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2022" length="8">American</entity_mention>
+      <entity_mention id="m-658" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2045" length="8">American</entity_mention>
+      <entity_mention id="m-814" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2572" length="8">American</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2595" length="8">American</entity_mention>
+    </entity>
+    <entity id="ent-70132575771600" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-359" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1032" length="7">Israeli</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="1114" length="4">they</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1250" length="7">Israeli</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="1332" length="4">they</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1431" length="6">Israel</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1688" length="6">Israel</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="1720" length="4">they</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1983" length="6">Israel</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2238" length="6">Israel</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="178e7de35eccad0df800f0c7539cf614" offset="2270" length="4">they</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2533" length="6">Israel</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="2938" length="6">Israel</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="3339" length="6">Israel</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="3533" length="6">Israel</entity_mention>
+      <entity_mention id="m-1052" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="1626" length="6">Israel</entity_mention>
+    </entity>
+    <entity id="ent-70132577598200" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-177" noun_type="NOM" source="178e7de35eccad0df800f0c7539cf614" offset="225" length="14">both countries</entity_mention>
+    </entity>
+    <entity id="ent-70132577594480" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-918" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="3009" length="9">Palastine</entity_mention>
+    </entity>
+    <entity id="ent-70132577597080" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-164" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="204" length="7">British</entity_mention>
+    </entity>
+    <entity id="ent-70132577268500" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-229" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="335" length="3">U.K</entity_mention>
+    </entity>
+    <entity id="ent-70132577264900" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-320" noun_type="NAM" source="178e7de35eccad0df800f0c7539cf614" offset="844" length="11">Middle East</entity_mention>
+    </entity>
+    <entity id="ent-70132576516340" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-996" noun_type="NOM" source="178e7de35eccad0df800f0c7539cf614" offset="3487" length="5">world</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132576040860" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1017">
+        <arg type="suborg" entity_id="ent-70132577365320" entity_mention_id="m-151">the British Embassy</arg>
+        <arg type="parent" entity_id="ent-70132577597080" entity_mention_id="m-164">British</arg>
+        <trigger source="178e7de35eccad0df800f0c7539cf614" offset="204" length="7">British</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571800840" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="conflict" subtype="attack">
+        <trigger source="178e7de35eccad0df800f0c7539cf614" offset="189" length="7">attacks</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-151" entity_id="ent-70132577365320">the British Embassy</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

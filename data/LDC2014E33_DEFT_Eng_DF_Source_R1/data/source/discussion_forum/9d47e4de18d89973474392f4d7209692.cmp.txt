@@ -1,0 +1,50 @@
+<post author="Aepervius" datetime="2011-03-17T12:35:00" id="p997">
+<quote orig_author="Kestrel">
+The evacuation zone was precautionary. So far, nothing has happened to require a complete survey before letting people return to their homes after the crisis is over.
+
+</quote>
+Case in point if it is 300 micro Sv per hour at the plant outside perimeter, it can't be that high 1km, 5km, or even 30 km away.
+</post>
+<post author="bobdroege7" datetime="2011-03-17T12:36:00" id="p998">
+<quote orig_author="sts60">
+The explosions were from hydrogen gas generated when the reactor cores, and apparently in at least one case, a spent fuel rod pool, were partially uncovered by falling (evaporating, maybe leaking) water levels. The steam was dissociated into its components hydrogen and oxygen.
+
+</quote>
+This is not true.
+
+The hydrogen comes from the zirc-water reaction.
+
+Zr + 2H2O -&gt; ZrO2 + 2H2
+</post>
+<post author="Aepervius" datetime="2011-03-17T12:37:00" id="p999">
+<quote orig_author="r-j">
+If they kept the pumps running, then why did three reactor buildings blow up? Building that had fuel rods on top of the buildings?
+
+Why did they run out of power after 8 hours? That doesn't make any sense at all. And if something doesn't make sense, it probably isn't true.
+
+If you lost your power supply, and you know that if the pumps stop it is disaster, why would they not fly in power for pumps? Before they fail?
+
+This is wrong. There is something wrong here.
+
+</quote>
+READ.
+
+The.
+
+Previous.
+
+Post.
+
+In.
+
+The.
+
+Thread.
+</post>
+<post author="Belz..." datetime="2011-03-17T12:38:00" id="p1000">
+<quote orig_author="r-j">
+If that is true, then the design of the back up system is terrible.
+
+</quote>
+Hindsight is 20/20, especially for armchair analysts.
+</post>

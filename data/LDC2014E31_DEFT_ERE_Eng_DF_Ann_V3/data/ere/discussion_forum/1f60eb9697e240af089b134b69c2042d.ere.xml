@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="1f60eb9697e240af089b134b69c2042d" source_type="multi_post" kit_id="537ccd8d0000000000000014">
+  <entities>
+    <entity id="ent-70132577699040" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="86" length="16">Police Automaton</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="105" length="1">I</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="182" length="1">I</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="443" length="2">my</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="549" length="1">I</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="577" length="2">my</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="830" length="1">I</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="915" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="1571" length="16">Police Automaton</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="1590" length="1">I</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="1667" length="1">I</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="1928" length="2">my</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2034" length="1">I</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2062" length="2">my</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2315" length="1">I</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2400" length="1">I</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2736" length="3">you</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2761" length="3">you</entity_mention>
+      <entity_mention id="m-1750" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5915" length="3">you</entity_mention>
+      <entity_mention id="m-1763" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5940" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576890220" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="14" length="8">Mr.Radar</entity_mention>
+    </entity>
+    <entity id="ent-70132576890140" name="entity-PER-4" type="PER">
+      <entity_mention id="m-190" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="306" length="7">the guy</entity_mention>
+      <entity_mention id="m-606" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="1791" length="7">the guy</entity_mention>
+    </entity>
+    <entity id="ent-70132576765260" name="entity-PER-5" type="PER">
+      <entity_mention id="m-476" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="1341" length="15">Onions For Sale</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="1359" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576635900" name="entity-PER-6" type="PER">
+      <entity_mention id="m-463" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="1268" length="9">redmercer</entity_mention>
+    </entity>
+    <entity id="ent-70132576394420" name="entity-PER-7" type="PER">
+      <entity_mention id="m-502" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="1390" length="13">Dennis Miller</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="1458" length="13">Dennis Miller</entity_mention>
+    </entity>
+    <entity id="ent-70132576387740" name="entity-PER-8" type="PER">
+      <entity_mention id="m-528" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="1495" length="12">Mr. Beefhead</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2440" length="2">me</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2618" length="1">I</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2696" length="1">I</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2718" length="1">I</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2849" length="2">me</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2856" length="1">I</entity_mention>
+      <entity_mention id="m-1685" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="5587" length="12">Mr. Beefhead</entity_mention>
+      <entity_mention id="m-1698" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5619" length="2">me</entity_mention>
+      <entity_mention id="m-1711" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5797" length="1">I</entity_mention>
+      <entity_mention id="m-1724" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5875" length="1">I</entity_mention>
+      <entity_mention id="m-1737" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5897" length="1">I</entity_mention>
+      <entity_mention id="m-1776" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="6028" length="2">me</entity_mention>
+      <entity_mention id="m-1789" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="6035" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132574707640" name="entity-PER-9" type="PER">
+      <entity_mention id="m-957" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="2892" length="12">Dead Pikachu</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2948" length="1">I</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2988" length="1">I</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="3169" length="1">I</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="3181" length="1">I</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3399" length="12">Dead Pikachu</entity_mention>
+    </entity>
+    <entity id="ent-70132577597340" name="entity-PER-10" type="PER">
+      <entity_mention id="m-1074" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3495" length="8">Dog Case</entity_mention>
+    </entity>
+    <entity id="ent-70132577593540" name="entity-PER-11" type="PER">
+      <entity_mention id="m-1100" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3687" length="14">Haruharuharuko</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="3815" length="2">my</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3929" length="14">Haruharuharuko</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="3986" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576516360" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1347" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4492" length="7">someone</entity_mention>
+      <entity_mention id="m-1386" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="4584" length="23">the person we sent over</entity_mention>
+    </entity>
+    <entity id="ent-70132576272220" name="entity-PER-13" type="PER">
+      <entity_mention id="m-1412" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4816" length="7">someone</entity_mention>
+    </entity>
+    <entity id="ent-70132576268560" name="entity-PER-14" type="PER">
+      <entity_mention id="m-1152" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3856" length="9">Lord Ryan</entity_mention>
+      <entity_mention id="m-1451" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4893" length="1">I</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4916" length="1">I</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4926" length="1">I</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5107" length="1">I</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5133" length="2">my</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5210" length="2">me</entity_mention>
+      <entity_mention id="m-1555" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5220" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571801560" name="entity-PER-15" type="PER">
+      <entity_mention id="m-1529" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="5148" length="19">that 350 pound lady</entity_mention>
+      <entity_mention id="m-1581" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5259" length="3">her</entity_mention>
+    </entity>
+    <entity id="ent-70132571762580" name="entity-PER-16" type="PER">
+      <entity_mention id="m-1568" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="5240" length="11">armed guard</entity_mention>
+    </entity>
+    <entity id="ent-70132571706880" name="entity-PER-17" type="PER">
+      <entity_mention id="m-1672" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="5516" length="7">CPL593H</entity_mention>
+    </entity>
+    <entity id="ent-70132571701740" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-255" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="560" length="24">a supermarket in my area</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="623" length="5">their</entity_mention>
+      <entity_mention id="m-671" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="2045" length="24">a supermarket in my area</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2108" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132571587020" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-307" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="729" length="7">walmart</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="758" length="4">they</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="800" length="5">their</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="2214" length="7">walmart</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2243" length="4">they</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2285" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132571561080" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-346" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="800" length="12">their stores</entity_mention>
+      <entity_mention id="m-762" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="2285" length="12">their stores</entity_mention>
+    </entity>
+    <entity id="ent-70132571554440" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-372" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="816" length="12">local chains</entity_mention>
+      <entity_mention id="m-788" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="2301" length="12">local chains</entity_mention>
+    </entity>
+    <entity id="ent-70132571539660" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-983" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="2981" length="5">Kmart</entity_mention>
+    </entity>
+    <entity id="ent-70132571536520" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-1009" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3109" length="18">Disney/Nickelodeon</entity_mention>
+    </entity>
+    <entity id="ent-70132571532700" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-1048" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3256" length="5">Hanes</entity_mention>
+    </entity>
+    <entity id="ent-70132571533860" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-1178" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3959" length="8">Wal-Mart</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4330" length="2">We</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4378" length="2">We</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4485" length="2">we</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4595" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132571505300" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-1243" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="4001" length="9">Corporate</entity_mention>
+    </entity>
+    <entity id="ent-70132571502220" name="entity-ORG-11" type="ORG">
+      <entity_mention id="m-1269" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="4315" length="7">Walmart</entity_mention>
+      <entity_mention id="m-1308" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="4466" length="15">the Bedford one</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4528" length="5">their</entity_mention>
+      <entity_mention id="m-1425" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="4834" length="10">That store</entity_mention>
+    </entity>
+    <entity id="ent-70132571481700" name="entity-ORG-12" type="ORG">
+      <entity_mention id="m-1360" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="4528" length="28">their electronics department</entity_mention>
+    </entity>
+    <entity id="ent-70132571478560" name="entity-ORG-13" type="ORG">
+      <entity_mention id="m-1230" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="4037" length="10">that store</entity_mention>
+    </entity>
+    <entity id="ent-70132571474660" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-177" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="227" length="2">US</entity_mention>
+      <entity_mention id="m-229" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="545" length="2">US</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="945" length="2">US</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="1712" length="2">US</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="2030" length="2">US</entity_mention>
+      <entity_mention id="m-1802" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="6078" length="11">our country</entity_mention>
+      <entity_mention id="m-1815" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="6095" length="13">United States</entity_mention>
+    </entity>
+    <entity id="ent-70132571413040" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-203" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="443" length="10">my country</entity_mention>
+      <entity_mention id="m-619" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="1928" length="10">my country</entity_mention>
+    </entity>
+    <entity id="ent-70132571364780" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-1256" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="4307" length="7">Bedford</entity_mention>
+      <entity_mention id="m-1321" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="4470" length="7">Bedford</entity_mention>
+    </entity>
+    <entity id="ent-70132571340640" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-151" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="130" length="22">the Building #13 store</entity_mention>
+      <entity_mention id="m-567" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="1615" length="22">the Building #13 store</entity_mention>
+    </entity>
+    <entity id="ent-70132571333520" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-268" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="577" length="7">my area</entity_mention>
+      <entity_mention id="m-684" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="2062" length="7">my area</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2337" length="4">here</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="2222" length="4">here</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="852" length="4">here</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="737" length="4">here</entity_mention>
+    </entity>
+    <entity id="ent-70132571292840" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-814" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="2329" length="7">walmart</entity_mention>
+      <entity_mention id="m-411" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="844" length="7">walmart</entity_mention>
+    </entity>
+    <entity id="ent-70132571260780" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-1087" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3557" length="8">Rite Aid</entity_mention>
+    </entity>
+    <entity id="ent-70132570249160" name="entity-LOC-6" type="LOC">
+      <entity_mention id="m-1126" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="3818" length="8">Wal-Mart</entity_mention>
+    </entity>
+    <entity id="ent-70132570226460" name="entity-LOC-8" type="LOC">
+      <entity_mention id="m-1191" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="3971" length="14">the NEO region</entity_mention>
+    </entity>
+    <entity id="ent-70132570222280" name="entity-LOC-9" type="LOC">
+      <entity_mention id="m-1204" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="3975" length="3">NEO</entity_mention>
+    </entity>
+    <entity id="ent-70132570177200" name="entity-LOC-10" type="LOC">
+      <entity_mention id="m-1438" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="4883" length="8">downtown</entity_mention>
+    </entity>
+    <entity id="ent-70132570169660" name="entity-LOC-11" type="LOC">
+      <entity_mention id="m-1490" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="4947" length="9">stealyard</entity_mention>
+    </entity>
+    <entity id="ent-70132570165620" name="entity-LOC-12" type="LOC">
+      <entity_mention id="m-1594" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="5067" length="4">Avon</entity_mention>
+      <entity_mention id="m-1620" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="5295" length="8">out here</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="5062" length="4">here</entity_mention>
+    </entity>
+    <entity id="ent-70132570152200" name="entity-LOC-13" type="LOC">
+      <entity_mention id="m-1633" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="5386" length="13">B.A. Sweeties</entity_mention>
+      <entity_mention id="m-1659" noun_type="NOM" source="1f60eb9697e240af089b134b69c2042d" offset="5487" length="5">there</entity_mention>
+    </entity>
+    <entity id="ent-70132570109840" name="entity-LOC-14" type="LOC">
+      <entity_mention id="m-1646" noun_type="NAM" source="1f60eb9697e240af089b134b69c2042d" offset="5403" length="13">Brookpark rd.</entity_mention>
+    </entity>
+    <entity id="ent-70132570086900" name="entity-LOC-1" type="LOC">
+      <entity_mention id="m-2428" noun_type="PRO" source="1f60eb9697e240af089b134b69c2042d" offset="4508" length="5">there</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132567454720" type="physical" subtype="origin">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132577699040" entity_mention_id="m-216">my</arg>
+        <arg type="loc" entity_id="ent-70132571413040" entity_mention_id="m-203">my country</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="443" length="2">my</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2003">
+        <arg type="entity" entity_id="ent-70132577699040" entity_mention_id="m-632">my</arg>
+        <arg type="loc" entity_id="ent-70132571413040" entity_mention_id="m-619">my country</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="1928" length="2">my</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567454520" type="physical" subtype="origin">
+      <relation_mention id="relm-1823">
+        <arg type="entity" entity_id="ent-70132571701740" entity_mention_id="m-255">a supermarket in my area</arg>
+        <arg type="loc" entity_id="ent-70132571333520" entity_mention_id="m-268">my area</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="574" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2033">
+        <arg type="entity" entity_id="ent-70132571701740" entity_mention_id="m-671">a supermarket in my area</arg>
+        <arg type="loc" entity_id="ent-70132571333520" entity_mention_id="m-684">my area</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="2059" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567454420" type="physical" subtype="origin">
+      <relation_mention id="relm-1853">
+        <arg type="entity" entity_id="ent-70132577699040" entity_mention_id="m-281">my</arg>
+        <arg type="loc" entity_id="ent-70132571333520" entity_mention_id="m-268">my area</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="577" length="2">my</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2063">
+        <arg type="entity" entity_id="ent-70132577699040" entity_mention_id="m-697">my</arg>
+        <arg type="loc" entity_id="ent-70132571333520" entity_mention_id="m-684">my area</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="2062" length="2">my</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567454360" type="physical" subtype="origin">
+      <relation_mention id="relm-1883">
+        <arg type="entity" entity_id="ent-70132571587020" entity_mention_id="m-307">walmart</arg>
+        <arg type="loc" entity_id="ent-70132571333520" entity_mention_id="m-320">here</arg>
+      </relation_mention>
+      <relation_mention id="relm-2093">
+        <arg type="entity" entity_id="ent-70132571587020" entity_mention_id="m-723">walmart</arg>
+        <arg type="loc" entity_id="ent-70132571333520" entity_mention_id="m-736">here</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567454200" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1913">
+        <arg type="suborg" entity_id="ent-70132571561080" entity_mention_id="m-346">their stores</arg>
+        <arg type="parent" entity_id="ent-70132571587020" entity_mention_id="m-359">their</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="800" length="5">their</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2123">
+        <arg type="suborg" entity_id="ent-70132571561080" entity_mention_id="m-762">their stores</arg>
+        <arg type="parent" entity_id="ent-70132571587020" entity_mention_id="m-775">their</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="2285" length="5">their</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567454100" type="physical" subtype="located">
+      <relation_mention id="relm-1943">
+        <arg type="entity" entity_id="ent-70132577699040" entity_mention_id="m-385">I</arg>
+        <arg type="loc" entity_id="ent-70132571292840" entity_mention_id="m-411">walmart</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="837" length="4">into</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2153">
+        <arg type="entity" entity_id="ent-70132577699040" entity_mention_id="m-801">I</arg>
+        <arg type="loc" entity_id="ent-70132571292840" entity_mention_id="m-814">walmart</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="2322" length="4">into</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567453800" type="physical" subtype="located">
+      <relation_mention id="relm-1973">
+        <arg type="entity" entity_id="ent-70132571292840" entity_mention_id="m-411">walmart</arg>
+        <arg type="loc" entity_id="ent-70132571333520" entity_mention_id="m-424">here</arg>
+      </relation_mention>
+      <relation_mention id="relm-2183">
+        <arg type="entity" entity_id="ent-70132571292840" entity_mention_id="m-814">walmart</arg>
+        <arg type="loc" entity_id="ent-70132571333520" entity_mention_id="m-827">here</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567453400" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2213">
+        <arg type="employeemember" entity_id="ent-70132574707640" entity_mention_id="m-970">I</arg>
+        <arg type="org" entity_id="ent-70132571539660" entity_mention_id="m-983">Kmart</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="2976" length="2">at</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567453280" type="physical" subtype="origin">
+      <relation_mention id="relm-2303">
+        <arg type="entity" entity_id="ent-70132571533860" entity_mention_id="m-1178">Wal-Mart</arg>
+        <arg type="loc" entity_id="ent-70132570226460" entity_mention_id="m-1191">the NEO region</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="3968" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567452920" type="physical" subtype="located">
+      <relation_mention id="relm-2333">
+        <arg type="entity" entity_id="ent-70132570226460" entity_mention_id="m-1191">the NEO region</arg>
+        <arg type="loc" entity_id="ent-70132570222280" entity_mention_id="m-1204">NEO</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567452820" type="physical" subtype="origin">
+      <relation_mention id="relm-2363">
+        <arg type="entity" entity_id="ent-70132571502220" entity_mention_id="m-1269">Walmart</arg>
+        <arg type="loc" entity_id="ent-70132571364780" entity_mention_id="m-1256">Bedford</arg>
+      </relation_mention>
+      <relation_mention id="relm-2393">
+        <arg type="entity" entity_id="ent-70132571502220" entity_mention_id="m-1308">the Bedford one</arg>
+        <arg type="loc" entity_id="ent-70132571364780" entity_mention_id="m-1321">Bedford</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567452700" type="physical" subtype="located">
+      <relation_mention id="relm-2436">
+        <arg type="entity" entity_id="ent-70132576516360" entity_mention_id="m-1347">someone</arg>
+        <arg type="loc" entity_id="ent-70132570086900" entity_mention_id="m-2428">there</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567452620" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-2466">
+        <arg type="suborg" entity_id="ent-70132571481700" entity_mention_id="m-1360">their electronics department</arg>
+        <arg type="parent" entity_id="ent-70132571502220" entity_mention_id="m-1373">their</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="4528" length="5">their</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567452540" type="physical" subtype="located">
+      <relation_mention id="relm-2496">
+        <arg type="entity" entity_id="ent-70132576268560" entity_mention_id="m-1477">I</arg>
+        <arg type="loc" entity_id="ent-70132570169660" entity_mention_id="m-1490">stealyard</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="4944" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567452480" type="physical" subtype="located">
+      <relation_mention id="relm-2526">
+        <arg type="entity" entity_id="ent-70132570152200" entity_mention_id="m-1633">B.A. Sweeties</arg>
+        <arg type="loc" entity_id="ent-70132570109840" entity_mention_id="m-1646">Brookpark rd.</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="5400" length="2">on</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567452420" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2824">
+        <arg type="employeemember" entity_id="ent-70132577593540" entity_mention_id="m-1217">I</arg>
+        <arg type="org" entity_id="ent-70132571533860" entity_mention_id="m-1178">Wal-Mart</arg>
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="3946" length="7">Working</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132573878060" name="entity-EVENT-4">
+      <event_mention id="evm-2654" type="movement" subtype="transportperson">
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="832" length="4">went</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-385" entity_id="ent-70132577699040">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-411">walmart</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-2788" type="movement" subtype="transportperson">
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="2317" length="4">went</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-801" entity_id="ent-70132577699040">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-814">walmart</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132573876940" name="entity-EVENT-6">
+      <event_mention id="evm-2902" type="movement" subtype="transportperson">
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="4934" length="9">head down</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1477" entity_id="ent-70132576268560">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1490">stealyard</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132573875320" name="entity-EVENT-1">
+      <event_mention id="evm-2738" type="transaction" subtype="transferownership">
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="2280" length="4">sold</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-775" entity_id="ent-70132571587020">their</arg>
+          <arg type="buyer" entity_mention_id="m-788" entity_id="ent-70132571554440">local chains</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2604" type="transaction" subtype="transferownership">
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="795" length="4">sold</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-359" entity_id="ent-70132571587020">their</arg>
+          <arg type="buyer" entity_mention_id="m-372" entity_id="ent-70132571554440">local chains</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573874220" name="entity-EVENT-5">
+      <event_mention id="evm-2860" type="movement" subtype="transportperson">
+        <trigger source="1f60eb9697e240af089b134b69c2042d" offset="4500" length="2">go</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1347" entity_id="ent-70132576516360">someone</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-2428">there</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

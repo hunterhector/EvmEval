@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="80977022f2e7d6ae989444366c8f0d6c" source_type="multi_post" kit_id="5392b8830000000000000017">
+  <entities>
+    <entity id="ent-70132571636520" name="entity-PER-2" type="PER">
+      <entity_mention id="m-502" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1040" length="15">Barry Goldwater</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1165" length="9">Goldwater</entity_mention>
+      <entity_mention id="m-1295" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3773" length="15">Barry Goldwater</entity_mention>
+      <entity_mention id="m-1347" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3898" length="9">Goldwater</entity_mention>
+      <entity_mention id="m-1490" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4220" length="9">Goldwater</entity_mention>
+    </entity>
+    <entity id="ent-70132571579980" name="entity-PER-3" type="PER">
+      <entity_mention id="m-515" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1060" length="13">Ronald Reagan</entity_mention>
+      <entity_mention id="m-1308" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3793" length="13">Ronald Reagan</entity_mention>
+    </entity>
+    <entity id="ent-70132571566080" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="128" length="2">he</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="200" length="5">Perry</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="258" length="3">him</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="323" length="3">his</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="374" length="10">Rick Perry</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="410" length="2">He</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="503" length="3">his</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="600" length="3">him</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1255" length="5">Perry</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1312" length="2">he</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1327" length="3">his</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1368" length="7">himself</entity_mention>
+      <entity_mention id="m-658" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1411" length="5">Perry</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1435" length="2">he</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1932" length="5">Perry</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="2093" length="7">Perrys</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2113" length="3">his</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2324" length="2">he</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2386" length="2">he</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2446" length="2">He</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2508" length="2">he</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2554" length="2">He</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2571" length="7">himself</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="2819" length="5">Perry</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2858" length="2">he</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2999" length="2">He</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="3057" length="2">He</entity_mention>
+      <entity_mention id="m-1113" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3127" length="14">a good speaker</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3190" length="10">Rick Perry</entity_mention>
+      <entity_mention id="m-1386" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3988" length="5">Perry</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4045" length="2">he</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4060" length="3">his</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4101" length="7">himself</entity_mention>
+      <entity_mention id="m-1451" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4144" length="5">Perry</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4168" length="2">he</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4563" length="2">He</entity_mention>
+      <entity_mention id="m-1672" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4769" length="5">Perry</entity_mention>
+      <entity_mention id="m-1685" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4833" length="5">Perry</entity_mention>
+      <entity_mention id="m-1711" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4855" length="2">he</entity_mention>
+      <entity_mention id="m-1802" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="5158" length="3">him</entity_mention>
+    </entity>
+    <entity id="ent-70132571339160" name="entity-PER-5" type="PER">
+      <entity_mention id="m-1165" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3211" length="6">Perrys</entity_mention>
+    </entity>
+    <entity id="ent-70132571335900" name="entity-PER-6" type="PER">
+      <entity_mention id="m-801" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1833" length="42">the left wing media arm of the White House</entity_mention>
+    </entity>
+    <entity id="ent-70132571332100" name="entity-PER-7" type="PER">
+      <entity_mention id="m-1503" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4294" length="5">Nixon</entity_mention>
+    </entity>
+    <entity id="ent-70132571328600" name="entity-PER-8" type="PER">
+      <entity_mention id="m-684" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1459" length="4">Bush</entity_mention>
+      <entity_mention id="m-1477" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4192" length="4">Bush</entity_mention>
+    </entity>
+    <entity id="ent-70132571297320" name="entity-PER-9" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="14" length="12">freedombecki</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="235" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="285" length="1">I</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="2206" length="12">freedombecki</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2828" length="1">I</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2849" length="1">I</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2887" length="1">I</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2895" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132570175820" name="entity-PER-10" type="PER">
+      <entity_mention id="m-879" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="2281" length="11">geauxtohell</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="2497" length="5">geaux</entity_mention>
+    </entity>
+    <entity id="ent-70132570163260" name="entity-PER-11" type="PER">
+      <entity_mention id="m-528" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1078" length="32">the modern conservative movement</entity_mention>
+      <entity_mention id="m-1321" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3811" length="32">the modern conservative movement</entity_mention>
+    </entity>
+    <entity id="ent-70132570151900" name="entity-PER-12" type="PER">
+      <entity_mention id="m-580" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1241" length="6">Romney</entity_mention>
+      <entity_mention id="m-1373" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3974" length="6">Romney</entity_mention>
+      <entity_mention id="m-1828" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5227" length="63">a frontrunner who only has about 30% support in a four man race</entity_mention>
+      <entity_mention id="m-1841" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5216" length="7">Mittens</entity_mention>
+      <entity_mention id="m-1906" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="5747" length="2">He</entity_mention>
+      <entity_mention id="m-1919" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="5786" length="2">He</entity_mention>
+    </entity>
+    <entity id="ent-70132570047100" name="entity-PER-13" type="PER">
+      <entity_mention id="m-2153" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5426" length="19">Cardboard Pizza Man</entity_mention>
+    </entity>
+    <entity id="ent-70132569998700" name="entity-PER-14" type="PER">
+      <entity_mention id="m-2140" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5277" length="8">four man</entity_mention>
+      <entity_mention id="m-2166" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5573" length="11">four person</entity_mention>
+    </entity>
+    <entity id="ent-70132569887340" name="entity-PER-15" type="PER">
+      <entity_mention id="m-2049" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="6231" length="2">he</entity_mention>
+      <entity_mention id="m-2088" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="6303" length="20">an average candidate</entity_mention>
+    </entity>
+    <entity id="ent-70132569826580" name="entity-PER-16" type="PER">
+      <entity_mention id="m-1958" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5936" length="4">Newt</entity_mention>
+    </entity>
+    <entity id="ent-70132569769580" name="entity-PER-17" type="PER">
+      <entity_mention id="m-1984" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5964" length="8">Santorum</entity_mention>
+    </entity>
+    <entity id="ent-70132569689540" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1997" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="5987" length="2">he</entity_mention>
+      <entity_mention id="m-2023" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="6106" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132569669760" name="entity-PER-19" type="PER">
+      <entity_mention id="m-2010" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="6008" length="10">these guys</entity_mention>
+    </entity>
+    <entity id="ent-70132569618140" name="entity-PER-20" type="PER">
+      <entity_mention id="m-1893" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5685" length="49">your candidate who doesnt have close to that much</entity_mention>
+    </entity>
+    <entity id="ent-70132569535980" name="entity-PER-21" type="PER">
+      <entity_mention id="m-411" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="695" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="705" length="1">I</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="890" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="900" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1154" length="3">You</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1225" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-1178" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3330" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3428" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="3438" length="1">I</entity_mention>
+      <entity_mention id="m-1256" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3623" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="3633" length="1">I</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="3887" length="3">You</entity_mention>
+      <entity_mention id="m-1360" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3958" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-1750" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4986" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-1776" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5089" length="7">JoeB131</entity_mention>
+      <entity_mention id="m-1815" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="5174" length="1">I</entity_mention>
+      <entity_mention id="m-1880" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="5685" length="4">your</entity_mention>
+      <entity_mention id="m-1945" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="5919" length="1">I</entity_mention>
+      <entity_mention id="m-1971" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="5946" length="1">I</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4317" length="1">I</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4380" length="1">I</entity_mention>
+      <entity_mention id="m-1555" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4423" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132568785080" name="entity-PER-22" type="PER">
+      <entity_mention id="m-1594" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4554" length="6">Zander</entity_mention>
+    </entity>
+    <entity id="ent-70132568780140" name="entity-PER-23" type="PER">
+      <entity_mention id="m-398" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="627" length="5">g5000</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3400" length="5">g5000</entity_mention>
+    </entity>
+    <entity id="ent-70132568762660" name="entity-PER-24" type="PER">
+      <entity_mention id="m-710" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1553" length="3">You</entity_mention>
+    </entity>
+    <entity id="ent-70132568758600" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1581" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4476" length="15">California Girl</entity_mention>
+      <entity_mention id="m-2036" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="6151" length="15">California Girl</entity_mention>
+    </entity>
+    <entity id="ent-70132568741540" name="entity-PER-26" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="89" length="14">R.C. Christian</entity_mention>
+    </entity>
+    <entity id="ent-70132568740420" name="entity-PER-27" type="PER">
+      <entity_mention id="m-723" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1568" length="1">I</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1674" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568729080" name="entity-PER-28" type="PER">
+      <entity_mention id="m-1763" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5056" length="10">Avatar4321</entity_mention>
+      <entity_mention id="m-1789" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5119" length="10">Avatar4321</entity_mention>
+    </entity>
+    <entity id="ent-70132568701560" name="entity-PER-29" type="PER">
+      <entity_mention id="m-697" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1487" length="15">C_Clayton_Jones</entity_mention>
+    </entity>
+    <entity id="ent-70132568695700" name="entity-PER-30" type="PER">
+      <entity_mention id="m-762" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="1627" length="4">They</entity_mention>
+      <entity_mention id="m-736" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1591" length="16">these candidates</entity_mention>
+    </entity>
+    <entity id="ent-70132568677460" name="entity-PER-31" type="PER">
+      <entity_mention id="m-1854" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5361" length="20">the other candidates</entity_mention>
+    </entity>
+    <entity id="ent-70132568661900" name="entity-PER-32" type="PER">
+      <entity_mention id="m-1867" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5497" length="10">candidates</entity_mention>
+    </entity>
+    <entity id="ent-70132568656500" name="entity-PER-33" type="PER">
+      <entity_mention id="m-346" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="419" length="3">our</entity_mention>
+    </entity>
+    <entity id="ent-70132568617280" name="entity-PER-34" type="PER">
+      <entity_mention id="m-2075" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="6278" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132568596420" name="entity-PER-35" type="PER">
+      <entity_mention id="m-437" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="756" length="13">the TEA Party</entity_mention>
+      <entity_mention id="m-489" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="932" length="16">the TEA Movement</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="787" length="2">It</entity_mention>
+      <entity_mention id="m-1230" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3489" length="13">the TEA Party</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="3520" length="2">It</entity_mention>
+      <entity_mention id="m-1282" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="3665" length="16">the TEA Movement</entity_mention>
+      <entity_mention id="m-1529" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4340" length="16">the TEA Movement</entity_mention>
+      <entity_mention id="m-1568" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4432" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568451240" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-788" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1698" length="10">Republican</entity_mention>
+      <entity_mention id="m-1620" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4682" length="13">conservatives</entity_mention>
+      <entity_mention id="m-1633" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4697" length="4">They</entity_mention>
+      <entity_mention id="m-1646" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4716" length="4">they</entity_mention>
+      <entity_mention id="m-1659" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4738" length="4">they</entity_mention>
+      <entity_mention id="m-1932" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="5849" length="3">GOP</entity_mention>
+      <entity_mention id="m-2101" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1977" length="12">conservative</entity_mention>
+    </entity>
+    <entity id="ent-70132567505540" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-1698" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4845" length="8">Democrat</entity_mention>
+      <entity_mention id="m-1724" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="4863" length="5">their</entity_mention>
+      <entity_mention id="m-2127" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="2083" length="7">oneself</entity_mention>
+    </entity>
+    <entity id="ent-70132567490220" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-814" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1864" length="11">White House</entity_mention>
+    </entity>
+    <entity id="ent-70132567483980" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-151" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="176" length="6">Texans</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="228" length="5">Texan</entity_mention>
+      <entity_mention id="m-333" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="419" length="9">our state</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="3177" length="3">our</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="80977022f2e7d6ae989444366c8f0d6c" offset="244" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132567465620" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-359" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="476" length="10">key states</entity_mention>
+    </entity>
+    <entity id="ent-70132567450260" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-229" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="275" length="8">American</entity_mention>
+      <entity_mention id="m-255" noun_type="NOM" source="80977022f2e7d6ae989444366c8f0d6c" offset="294" length="10">the nation</entity_mention>
+      <entity_mention id="m-307" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="396" length="8">American</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="1383" length="8">American</entity_mention>
+      <entity_mention id="m-1438" noun_type="NAM" source="80977022f2e7d6ae989444366c8f0d6c" offset="4116" length="8">American</entity_mention>
+    </entity>
+    <entity id="ent-70132567416740" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-1139" noun_type="NA" source="80977022f2e7d6ae989444366c8f0d6c" offset="3181" length="8">governor</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132574700980" type="physical" subtype="origin">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132571566080" entity_mention_id="m-281">Rick Perry</arg>
+        <arg type="loc" entity_id="ent-70132567450260" entity_mention_id="m-307">American</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574700860" type="social" subtype="role">
+      <relation_mention id="relm-2217">
+        <arg type="role" entity_id="ent-70132567416740" entity_mention_id="m-1139">governor</arg>
+        <arg type="per" entity_id="ent-70132571566080" entity_mention_id="m-1152">Rick Perry</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574700800" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2247">
+        <arg type="leader" entity_id="ent-70132571566080" entity_mention_id="m-1152">Rick Perry</arg>
+        <arg type="entity" entity_id="ent-70132567483980" entity_mention_id="m-1126">our</arg>
+        <trigger source="80977022f2e7d6ae989444366c8f0d6c" offset="3181" length="8">governor</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574700740" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2277">
+        <arg type="employeemember" entity_id="ent-70132570151900" entity_mention_id="m-1919">He</arg>
+        <arg type="org" entity_id="ent-70132568451240" entity_mention_id="m-1932">GOP</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132573733300" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="beborn">
+        <trigger source="80977022f2e7d6ae989444366c8f0d6c" offset="135" length="4">born</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-138" entity_id="ent-70132571566080">he</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573609400" name="entity-EVENT-3">
+      <event_mention id="evm-2313" type="personnel" subtype="nominate">
+        <trigger source="80977022f2e7d6ae989444366c8f0d6c" offset="3925" length="10">nomination</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1347" entity_id="ent-70132571636520">Goldwater</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2397" type="personnel" subtype="nominate">
+        <trigger source="80977022f2e7d6ae989444366c8f0d6c" offset="1192" length="10">nomination</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-554" entity_id="ent-70132571636520">Goldwater</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573608200" name="entity-EVENT-4">
+      <event_mention id="evm-2355" type="personnel" subtype="nominate">
+        <trigger source="80977022f2e7d6ae989444366c8f0d6c" offset="4283" length="10">renominate</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1503" entity_id="ent-70132571332100">Nixon</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="48dafc1e3678fa7b13cb467ab3eed071" source_type="multi_post" kit_id="5355f7d80000000000000068">
+  <entities>
+    <entity id="ent-70132568444420" name="entity-PER-2" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="139" length="4">BUSH</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="199" length="4">BUSH</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="471" length="3">his</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="495" length="3">His</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="938" length="4">Bush</entity_mention>
+      <entity_mention id="m-1100" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4295" length="4">bush</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4413" length="4">bush</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4475" length="3">his</entity_mention>
+      <entity_mention id="m-1178" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4610" length="4">bush</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="438" length="4">Bush</entity_mention>
+    </entity>
+    <entity id="ent-70132567490280" name="entity-PER-3" type="PER">
+      <entity_mention id="m-1191" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4721" length="15">The tea baggers</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4760" length="4">they</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4838" length="4">they</entity_mention>
+      <entity_mention id="m-1087" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4234" length="21">all those tea baggers</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4872" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132567466240" name="entity-PER-4" type="PER">
+      <entity_mention id="m-489" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1138" length="7">Obamas</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2853" length="5">Obama</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3555" length="7">Obamas</entity_mention>
+      <entity_mention id="m-1217" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4795" length="24">the Democratic President</entity_mention>
+      <entity_mention id="m-1269" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4909" length="34">The Black Muslim Man Born in Kenya</entity_mention>
+    </entity>
+    <entity id="ent-70132567442580" name="entity-PER-5" type="PER">
+      <entity_mention id="m-1009" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3963" length="10">Bush-Obama</entity_mention>
+    </entity>
+    <entity id="ent-70132567437160" name="entity-PER-6" type="PER">
+      <entity_mention id="m-359" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="858" length="12">Nancy Pelosi</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1216" length="6">Pelosi</entity_mention>
+    </entity>
+    <entity id="ent-70132567414440" name="entity-PER-7" type="PER">
+      <entity_mention id="m-411" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="898" length="10">Harry Reid</entity_mention>
+    </entity>
+    <entity id="ent-70132567402880" name="entity-PER-9" type="PER">
+      <entity_mention id="m-736" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2318" length="12">Hank Paulson</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2341" length="2">he</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2748" length="13">Henry Paulson</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3122" length="9">Paulsons</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3278" length="9">Paulsons</entity_mention>
+    </entity>
+    <entity id="ent-70132567380100" name="entity-PER-10" type="PER">
+      <entity_mention id="m-879" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2938" length="16">Timothy Geithner</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2969" length="3">his</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3005" length="3">his</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3063" length="8">Geithner</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3086" length="3">his</entity_mention>
+      <entity_mention id="m-957" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3241" length="8">Geithner</entity_mention>
+    </entity>
+    <entity id="ent-70132574158700" name="entity-PER-11" type="PER">
+      <entity_mention id="m-333" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="707" length="19">some in this thread</entity_mention>
+    </entity>
+    <entity id="ent-70132574154920" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1308" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5060" length="5">elvis</entity_mention>
+    </entity>
+    <entity id="ent-70132574151460" name="entity-PER-13" type="PER">
+      <entity_mention id="m-1334" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5116" length="4">Dude</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5123" length="1">I</entity_mention>
+      <entity_mention id="m-1360" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5168" length="2">my</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5244" length="2">my</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5307" length="1">I</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5221" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132573739760" name="entity-PER-14" type="PER">
+      <entity_mention id="m-1022" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4063" length="5">Queen</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4197" length="5">queen</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4211" length="2">me</entity_mention>
+      <entity_mention id="m-1321" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5088" length="5">Queen</entity_mention>
+      <entity_mention id="m-1451" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5464" length="2">my</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5517" length="2">me</entity_mention>
+      <entity_mention id="m-1490" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5531" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132573464420" name="entity-PER-15" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="559" length="14">the new regime</entity_mention>
+    </entity>
+    <entity id="ent-70132573337680" name="entity-PER-17" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="84" length="13">Cold Fusion38</entity_mention>
+      <entity_mention id="m-1035" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4132" length="13">Cold Fusion38</entity_mention>
+      <entity_mention id="m-1295" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4983" length="13">Cold Fusion38</entity_mention>
+    </entity>
+    <entity id="ent-70132573196880" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1139" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4511" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132573193180" name="entity-PER-19" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="14" length="6">Ragnar</entity_mention>
+      <entity_mention id="m-1048" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4168" length="6">ragnar</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="106" length="3">you</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="275" length="1">I</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="412" length="1">I</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4546" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132572790220" name="entity-PER-20" type="PER">
+      <entity_mention id="m-177" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="211" length="3">you</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="308" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132572784220" name="entity-PER-21" type="PER">
+      <entity_mention id="m-1412" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5354" length="3">you</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5372" length="3">you</entity_mention>
+      <entity_mention id="m-1438" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5412" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132577805620" name="entity-PER-22" type="PER">
+      <entity_mention id="m-1464" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5485" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132577703880" name="entity-PER-23" type="PER">
+      <entity_mention id="m-1503" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5747" length="4">YOUR</entity_mention>
+    </entity>
+    <entity id="ent-70132577700600" name="entity-PER-1" type="PER">
+      <entity_mention id="m-320" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="648" length="4">they</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="48dafc1e3678fa7b13cb467ab3eed071" offset="631" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132577465140" name="entity-PER-8" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1449" length="12">David Broder</entity_mention>
+    </entity>
+    <entity id="ent-70132577461880" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-515" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1276" length="10">Fannie Mae</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1570" length="6">Fannie</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1896" length="6">Fannie</entity_mention>
+    </entity>
+    <entity id="ent-70132577363200" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-385" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="872" length="1">D</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="910" length="1">D</entity_mention>
+      <entity_mention id="m-1230" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4799" length="10">Democratic</entity_mention>
+    </entity>
+    <entity id="ent-70132575495040" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-775" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2603" length="14">General Motors</entity_mention>
+    </entity>
+    <entity id="ent-70132575368920" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-788" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2622" length="8">Chrysler</entity_mention>
+    </entity>
+    <entity id="ent-70132575365620" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-619" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1855" length="19">Treasury Department</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2729" length="8">Treasury</entity_mention>
+    </entity>
+    <entity id="ent-70132577145680" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-216" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="382" length="14">the government</entity_mention>
+      <entity_mention id="m-996" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="3743" length="10">government</entity_mention>
+      <entity_mention id="m-541" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1351" length="10">government</entity_mention>
+      <entity_mention id="m-671" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1947" length="10">government</entity_mention>
+    </entity>
+    <entity id="ent-70132577011700" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-580" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1581" length="7">Freddie</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1907" length="7">Freddie</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1291" length="11">Freddie Mac</entity_mention>
+    </entity>
+    <entity id="ent-70132576888680" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-268" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="458" length="12">the congress</entity_mention>
+      <entity_mention id="m-593" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1485" length="8">Congress</entity_mention>
+    </entity>
+    <entity id="ent-70132576768200" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-606" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1663" length="3">FHA</entity_mention>
+    </entity>
+    <entity id="ent-70132576764980" name="entity-ORG-12" type="ORG">
+      <entity_mention id="m-762" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2368" length="24">non-bank financial firms</entity_mention>
+    </entity>
+    <entity id="ent-70132576638780" name="entity-ORG-14" type="ORG">
+      <entity_mention id="m-710" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2280" length="17">select U.S. banks</entity_mention>
+    </entity>
+    <entity id="ent-70132576635540" name="entity-ORG-15" type="ORG">
+      <entity_mention id="m-1998" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="5141" length="19">trust organizations</entity_mention>
+    </entity>
+    <entity id="ent-70132576394700" name="entity-ORG-1" type="ORG">
+      <entity_mention id="m-658" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1941" length="35">those government sponsored entities</entity_mention>
+    </entity>
+    <entity id="ent-70132576391440" name="entity-ORG-11" type="ORG">
+      <entity_mention id="m-840" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2763" length="10">the Senate</entity_mention>
+    </entity>
+    <entity id="ent-70132576388200" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-476" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="1088" length="4">U.S.</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2069" length="8">American</entity_mention>
+      <entity_mention id="m-1152" noun_type="NOM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4530" length="14">a 50/50 nation</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2287" length="4">U.S.</entity_mention>
+    </entity>
+    <entity id="ent-70132575631700" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-372" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="874" length="2">CA</entity_mention>
+    </entity>
+    <entity id="ent-70132575628520" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-424" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="912" length="2">NV</entity_mention>
+    </entity>
+    <entity id="ent-70132575625280" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1282" noun_type="NAM" source="48dafc1e3678fa7b13cb467ab3eed071" offset="4938" length="5">Kenya</entity_mention>
+    </entity>
+    <entity id="ent-70132575097740" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-814" noun_type="NA" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2738" length="9">Secretary</entity_mention>
+      <entity_mention id="m-723" noun_type="NA" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2308" length="9">Secretary</entity_mention>
+    </entity>
+    <entity id="ent-70132574968020" name="entity-TITLE-3" type="TITLE">
+      <entity_mention id="m-398" noun_type="NA" source="48dafc1e3678fa7b13cb467ab3eed071" offset="882" length="15">Majority Leader</entity_mention>
+    </entity>
+    <entity id="ent-70132574964360" name="entity-TITLE-4" type="TITLE">
+      <entity_mention id="m-346" noun_type="NA" source="48dafc1e3678fa7b13cb467ab3eed071" offset="850" length="7">Speaker</entity_mention>
+    </entity>
+    <entity id="ent-70132574837740" name="entity-TITLE-5" type="TITLE">
+      <entity_mention id="m-853" noun_type="NA" source="48dafc1e3678fa7b13cb467ab3eed071" offset="2843" length="9">President</entity_mention>
+      <entity_mention id="m-450" noun_type="NA" source="48dafc1e3678fa7b13cb467ab3eed071" offset="928" length="9">President</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571581560" type="social" subtype="role">
+      <relation_mention id="relm-40">
+        <arg type="role" entity_id="ent-70132574964360" entity_mention_id="m-346">Speaker</arg>
+        <arg type="per" entity_id="ent-70132567437160" entity_mention_id="m-359">Nancy Pelosi</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571582400" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1511">
+        <arg type="employeemember" entity_id="ent-70132567437160" entity_mention_id="m-359">Nancy Pelosi</arg>
+        <arg type="org" entity_id="ent-70132577363200" entity_mention_id="m-385">D</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571582980" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1541">
+        <arg type="employeemember" entity_id="ent-70132567437160" entity_mention_id="m-359">Nancy Pelosi</arg>
+        <arg type="org" entity_id="ent-70132575631700" entity_mention_id="m-372">CA</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571583780" type="social" subtype="role">
+      <relation_mention id="relm-1571">
+        <arg type="role" entity_id="ent-70132574968020" entity_mention_id="m-398">Majority Leader</arg>
+        <arg type="per" entity_id="ent-70132567414440" entity_mention_id="m-411">Harry Reid</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571584680" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1601">
+        <arg type="employeemember" entity_id="ent-70132567414440" entity_mention_id="m-411">Harry Reid</arg>
+        <arg type="org" entity_id="ent-70132577363200" entity_mention_id="m-437">D</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571586000" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1631">
+        <arg type="employeemember" entity_id="ent-70132567414440" entity_mention_id="m-411">Harry Reid</arg>
+        <arg type="org" entity_id="ent-70132575628520" entity_mention_id="m-424">NV</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571570100" type="social" subtype="role">
+      <relation_mention id="relm-1661">
+        <arg type="role" entity_id="ent-70132574837740" entity_mention_id="m-450">President</arg>
+        <arg type="per" entity_id="ent-70132568444420" entity_mention_id="m-463">Bush</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571570040" type="physical" subtype="origin">
+      <relation_mention id="relm-1691">
+        <arg type="entity" entity_id="ent-70132576638780" entity_mention_id="m-710">select U.S. banks</arg>
+        <arg type="loc" entity_id="ent-70132576388200" entity_mention_id="m-697">U.S.</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571569940" type="social" subtype="role">
+      <relation_mention id="relm-1721">
+        <arg type="role" entity_id="ent-70132575097740" entity_mention_id="m-723">Secretary</arg>
+        <arg type="per" entity_id="ent-70132567402880" entity_mention_id="m-736">Hank Paulson</arg>
+      </relation_mention>
+      <relation_mention id="relm-1751">
+        <arg type="role" entity_id="ent-70132575097740" entity_mention_id="m-814">Secretary</arg>
+        <arg type="per" entity_id="ent-70132567402880" entity_mention_id="m-827">Henry Paulson</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571569880" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1781">
+        <arg type="employeemember" entity_id="ent-70132567402880" entity_mention_id="m-827">Henry Paulson</arg>
+        <arg type="org" entity_id="ent-70132575365620" entity_mention_id="m-801">Treasury</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571569820" type="social" subtype="role">
+      <relation_mention id="relm-1811">
+        <arg type="role" entity_id="ent-70132574837740" entity_mention_id="m-853">President</arg>
+        <arg type="per" entity_id="ent-70132567466240" entity_mention_id="m-866">Obama</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571569760" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1841">
+        <arg type="employeemember" entity_id="ent-70132567466240" entity_mention_id="m-1217">the Democratic President</arg>
+        <arg type="org" entity_id="ent-70132577363200" entity_mention_id="m-1230">Democratic</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571569700" type="physical" subtype="origin">
+      <relation_mention id="relm-1871">
+        <arg type="entity" entity_id="ent-70132567466240" entity_mention_id="m-1269">The Black Muslim Man Born in Kenya</arg>
+        <arg type="loc" entity_id="ent-70132575625280" entity_mention_id="m-1282">Kenya</arg>
+        <trigger source="48dafc1e3678fa7b13cb467ab3eed071" offset="4930" length="4">Born</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571481880" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="beborn">
+        <trigger source="48dafc1e3678fa7b13cb467ab3eed071" offset="4930" length="4">Born</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1269" entity_id="ent-70132567466240">The Black Muslim Man Born in Kenya</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1282">Kenya</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571480600" name="entity-EVENT-3">
+      <event_mention id="evm-1957" type="personnel" subtype="startposition">
+        <trigger source="48dafc1e3678fa7b13cb467ab3eed071" offset="4820" length="11">took office</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1217" entity_id="ent-70132567466240">the Democratic President</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571480000" name="entity-EVENT-4">
+      <event_mention id="evm-2012" type="business" subtype="startorg">
+        <trigger source="48dafc1e3678fa7b13cb467ab3eed071" offset="5125" length="7">created</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-1998" entity_id="ent-70132576635540">trust organizations</arg>
+          <arg type="agent" entity_mention_id="m-1347" entity_id="ent-70132574151460">I</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571478600" name="entity-EVENT-5">
+      <event_mention id="evm-1907" type="transaction" subtype="transfermoney">
+        <trigger source="48dafc1e3678fa7b13cb467ab3eed071" offset="2566" length="9">swallowed</trigger>
+        <args>
+          <arg type="recipient" entity_mention_id="m-788" entity_id="ent-70132575368920">Chrysler</arg>
+          <arg type="recipient" entity_mention_id="m-775" entity_id="ent-70132575495040">General Motors</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

@@ -1,0 +1,78 @@
+<post author="AvalonXQ" datetime="2012-02-29T10:41:00" id="p10">
+<quote orig_author="Beelzebuddy">
+There have been other cases. The answer is "yes."
+
+</quote>
+Do you have any references for this?
+</post>
+<post author="AvalonXQ" datetime="2012-02-29T10:45:00" id="p11">
+<quote orig_author="Baloney">
+<a href="http://www.npr.org/blogs/thesalt/2012/02/27/147506542/judge-dismisses-organic-farmers-case-against-monsanto?sc=fb&amp;cc=fp">Judge Dismisses Organic Farmers' Case Against Monsanto</a>
+
+</quote>
+Eh, that's a basic patent DJ case-or-controversy decision, not a decision on the merits.
+
+It's a general rule that courts won't let you bring a patent case to trial just because the patent holder might later sue you. The case isn't considered "ripe" if you can't show that a lawsuit is imminent.
+
+To put it another way, it's Monsanto's choice whether to sue the farmers or leave them alone, and only then will the court get involved.
+</post>
+<post author="Horatius" datetime="2012-02-29T10:55:00" id="p12">
+<quote orig_author="ugot2bekidding">
+But, is there a chance it can naturally breed with a farmer's current strain? Will Monasanto have a right to profit from the future generations of that farmer's crop? That's one of the things my friend was ranting about. I don't know enough about the subject yet to form a real opinion.
+
+</quote>
+
+<quote orig_author="AvalonXQ">
+This is a legitimate concern. There was a high-profile case where it turned out the farmer had deliberately used Monsanto's seed, but it is still an open question as to whether the farmer would have been liable if Monsanto genes had entered the farmer's crop without any action on the part of the farmer.
+
+</quote>
+
+<quote orig_author="Beelzebuddy">
+There have been other cases. The answer is "yes."
+
+</quote>
+
+I'd like to see some cites on this as well, as the article linked here:
+
+<quote orig_author="Baloney">
+One of the biggest complaints I've heard locally is that Monsanto is suing (some organic) farmers for patent-infringement due to their crops being pollinated by neighboring farms using patented Monsanto GM-seed stock. These farmers are counter-suing for crop contamination (or something, I haven't really paid too much attention <img src="http://forums.randi.org/images/smilies/redface.gif"/> ).
+
+<a href="http://www.npr.org/blogs/thesalt/2012/02/27/147506542/judge-dismisses-organic-farmers-case-against-monsanto?sc=fb&amp;cc=fp">Judge Dismisses Organic Farmers' Case Against Monsanto</a>
+
+</quote>
+
+...doesn't really support the allegations.
+
+<quote>
+The Organic Seed Growers and Trade Association and several other growers and organizations do not use Monsanto seeds. But they were betting that the judge would agree that Monsanto should not be allowed to sue them if pollen from the company's patented crops happened to drift into their fields.
+
+Instead, the judge found that plaintiffs' allegations were "unsubstantiated... given that not one single plaintiff claims to have been so threatened." The ruling also found that the plaintiffs had "overstate[d] the magnitude of [Monsanto's] patent enforcement." Monsanto brings an average of 13 patent-enforcement lawsuits per year, which, the judge said, "is hardly significant when compared to the number of farms in the United States, approximately two million."
+
+The company, meanwhile, asserts that it doesn't exercise its patent rights when trace amounts of its patented traits inadvertently end up in farmers' fields.
+
+</quote>
+
+And this:
+
+<quote>
+But organic farmers say that GMO contamination could hurt the value of their crop, and they fear lawsuits from Monsanto for possessing their GM genes without paying for them. The documentary Food Inc. portrayed the company as aggressively suing farmers who save its patented seed.
+
+</quote>
+
+Relates to cases like AvalonXQ mentioned. Here in Canada, the big one was <a href="http://en.wikipedia.org/wiki/Monsanto_Canada_Inc._v._Schmeiser">Monsanto Canada Inc. v. Schmeiser</a>, which if you look into without listening to the anti-Monsanto ranters, Mr. Schmeiser really doesn't come out looking very innocent.
+
+<quote>
+As established in the original Federal Court trial decision, Schmeiser first discovered Roundup-resistant canola in his crops in 1997.[2] He had used Roundup herbicide to clear weeds around power poles and in ditches adjacent to a public road running beside one of his fields, and noticed that some of the canola which had been sprayed had survived. Schmeiser then performed a test by applying Roundup to an additional 3 acres (12,000 m2) to 4 acres (16,000 m2) of the same field. He found that 60% of the canola plants survived. At harvest time, Schmeiser instructed a farmhand to harvest the test field. That seed was stored separately from the rest of the harvest, and used the next year to seed approximately 1,000 acres (4 km²) of canola.
+
+</quote>
+
+<quote>
+All claims relating to Roundup Ready canola in Schmeiser's 1997 canola crop were dropped prior to trial and the court only considered the canola in Schmeiser's 1998 fields. Regarding his 1998 crop, Schmeiser did not put forward any defence of accidental contamination. The evidence showed that the level of Roundup Ready canola in Mr. Schmeiser's 1998 fields was 95-98% (See paragraph 53 of the trial ruling). Evidence was presented indicating that such a level of purity could not occur by accidental means. On the basis of this the court found that Schmeiser had either known "or ought to have known" that he had planted Roundup Ready canola in 1998. Given this, the question of whether the canola in his fields in 1997 arrived there accidentally was ruled to be irrelevant. Nonetheless, at trial, Monsanto was able to present evidence sufficient to persuade the Court that Roundup Ready canola had probably not appeared in Schmeiser's 1997 field by such accidental means (paragraph 118). The court said it was persuaded "on the balance of probabilities" (the standard of proof in civil cases, meaning "more probable than not" i.e. strictly greater than 50% probability) that the Roundup Ready canola in Mr. Schmeiser's 1997 field had not arrived there by any of the accidental means, such as spillage from a truck or pollen travelling on the wind, that Mr. Schmeiser had proposed.
+
+</quote>
+</post>
+<post author="geni" datetime="2012-02-29T13:33:00" id="p13">
+Err welcome to the 90s.
+
+Monsanto (and others) patent certian genes in certain contexts. If you buy non GM grain this is a non issue. If you do buy their stuff you gain the advantages of the genetic modifications but they can put certain restrictions on what you do with it.
+</post>

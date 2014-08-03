@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="705f7ae677ec62ada81eded90f90423c" source_type="multi_post" kit_id="533486f60000000000000008">
+  <entities>
+    <entity id="ent-70132575368140" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="705f7ae677ec62ada81eded90f90423c" offset="14" length="17">Esperanza Xochitl</entity_mention>
+      <entity_mention id="m-125" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="76" length="1">I</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="154" length="1">I</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="190" length="1">I</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="272" length="2">me</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="283" length="2">me</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="308" length="2">me</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="340" length="2">my</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="421" length="2">me</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="382" length="4">mine</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="453" length="2">me</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="477" length="2">me</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="569" length="2">me</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="585" length="3">his</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="597" length="2">me</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="858" length="1">I</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="930" length="2">me</entity_mention>
+      <entity_mention id="m-515" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="934" length="39">the woman he was in a relationship with</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="975" length="1">I</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1091" length="1">I</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1849" length="3">she</entity_mention>
+      <entity_mention id="m-814" noun_type="NAM" source="705f7ae677ec62ada81eded90f90423c" offset="1923" length="9">Esperanza</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1967" length="3">you</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1980" length="3">you</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2013" length="3">you</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2063" length="3">you</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2216" length="3">you</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2242" length="3">you</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2357" length="3">you</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2460" length="3">you</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2476" length="8">yourself</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2594" length="3">you</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2641" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132575632120" name="entity-PER-3" type="PER">
+      <entity_mention id="m-190" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="182" length="36">the man I was in a relationship with</entity_mention>
+      <entity_mention id="m-216" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="240" length="8">this man</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="322" length="2">he</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="893" length="2">he</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="944" length="2">he</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2384" length="3">him</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2406" length="2">he</entity_mention>
+      <entity_mention id="m-346" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="457" length="8">This man</entity_mention>
+      <entity_mention id="m-879" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="2039" length="7">the guy</entity_mention>
+    </entity>
+    <entity id="ent-70132574836640" name="entity-PER-4" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="628" length="35">the people who run camp take notice</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="693" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132574707460" name="entity-PER-5" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="367" length="46">two friends of mine who happen to be feminists</entity_mention>
+    </entity>
+    <entity id="ent-70132574704060" name="entity-PER-6" type="PER">
+      <entity_mention id="m-450" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="777" length="8">many men</entity_mention>
+    </entity>
+    <entity id="ent-70132574700680" name="entity-PER-7" type="PER">
+      <entity_mention id="m-463" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="847" length="9">other men</entity_mention>
+    </entity>
+    <entity id="ent-70132575909580" name="entity-PER-10" type="PER">
+      <entity_mention id="m-606" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1128" length="2">we</entity_mention>
+      <entity_mention id="m-632" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="1185" length="22">the homeless community</entity_mention>
+    </entity>
+    <entity id="ent-70132575772280" name="entity-PER-11" type="PER">
+      <entity_mention id="m-645" noun_type="NAM" source="705f7ae677ec62ada81eded90f90423c" offset="1231" length="6">Mari3L</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1678" length="4">your</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1757" length="3">you</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1778" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132575236600" name="entity-PER-12" type="PER">
+      <entity_mention id="m-658" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="1428" length="50">people volunteering as 'safe person' or 'security'</entity_mention>
+    </entity>
+    <entity id="ent-70132575232980" name="entity-PER-13" type="PER">
+      <entity_mention id="m-671" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="1508" length="27">camp councils or assemblies</entity_mention>
+    </entity>
+    <entity id="ent-70132577597540" name="entity-PER-14" type="PER">
+      <entity_mention id="m-697" noun_type="NAM" source="705f7ae677ec62ada81eded90f90423c" offset="1609" length="14">hindsight20/20</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1665" length="1">I</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1722" length="1">I</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1836" length="1">I</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="1894" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577266100" name="entity-PER-15" type="PER">
+      <entity_mention id="m-905" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="2200" length="9">these men</entity_mention>
+    </entity>
+    <entity id="ent-70132576514880" name="entity-PER-17" type="PER">
+      <entity_mention id="m-957" noun_type="NAM" source="705f7ae677ec62ada81eded90f90423c" offset="2307" length="5">Rafiq</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2525" length="1">I</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2564" length="1">I</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2615" length="1">I</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2683" length="1">I</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2692" length="1">I</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2801" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576036560" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1165" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="2817" length="10">the police</entity_mention>
+      <entity_mention id="m-1178" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="2843" length="12">the bastards</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="705f7ae677ec62ada81eded90f90423c" offset="2861" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132572644480" name="entity-PER-19" type="PER">
+      <entity_mention id="m-1191" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="2861" length="14">their partners</entity_mention>
+    </entity>
+    <entity id="ent-70132571803320" name="entity-PER-20" type="PER">
+      <entity_mention id="m-1139" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="2786" length="13">the violators</entity_mention>
+    </entity>
+    <entity id="ent-70132571806280" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-684" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="1508" length="4">camp</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="705f7ae677ec62ada81eded90f90423c" offset="647" length="16">camp take notice</entity_mention>
+    </entity>
+    <entity id="ent-70132571708400" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-151" noun_type="NAM" source="705f7ae677ec62ada81eded90f90423c" offset="140" length="9">Ann Arbor</entity_mention>
+    </entity>
+    <entity id="ent-70132571702900" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-138" noun_type="NAM" source="705f7ae677ec62ada81eded90f90423c" offset="120" length="16">camp take notice</entity_mention>
+      <entity_mention id="m-164" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="92" length="57">a homeless tent city called camp take notice in Ann Arbor</entity_mention>
+      <entity_mention id="m-580" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="1029" length="8">the camp</entity_mention>
+      <entity_mention id="m-853" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="1991" length="8">the camp</entity_mention>
+      <entity_mention id="m-1126" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="2654" length="8">the camp</entity_mention>
+    </entity>
+    <entity id="ent-70132571586220" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-619" noun_type="NOM" source="705f7ae677ec62ada81eded90f90423c" offset="170" length="6">a tent</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571298840" type="physical" subtype="located">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132571702900" entity_mention_id="m-164">a homeless tent city called camp take notice in Ann Arbor</arg>
+        <arg type="loc" entity_id="ent-70132571708400" entity_mention_id="m-151">Ann Arbor</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="137" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298780" type="social" subtype="unspecified">
+      <relation_mention id="relm-1277">
+        <arg type="per" entity_id="ent-70132575632120" entity_mention_id="m-190">the man I was in a relationship with</arg>
+        <arg type="per" entity_id="ent-70132575368140" entity_mention_id="m-203">I</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="201" length="12">relationship</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298680" type="social" subtype="unspecified">
+      <relation_mention id="relm-1307">
+        <arg type="per" entity_id="ent-70132574707460" entity_mention_id="m-294">two friends of mine who happen to be feminists</arg>
+        <arg type="per" entity_id="ent-70132575368140" entity_mention_id="m-320">mine</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="371" length="7">friends</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298620" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1337">
+        <arg type="employeemember" entity_id="ent-70132574836640" entity_mention_id="m-411">the people who run camp take notice</arg>
+        <arg type="org" entity_id="ent-70132571806280" entity_mention_id="m-424">camp take notice</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="643" length="3">run</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298480" type="social" subtype="unspecified">
+      <relation_mention id="relm-1367">
+        <arg type="per" entity_id="ent-70132575368140" entity_mention_id="m-515">the woman he was in a relationship with</arg>
+        <arg type="per" entity_id="ent-70132575632120" entity_mention_id="m-528">he</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="956" length="12">relationship</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298400" type="physical" subtype="located">
+      <relation_mention id="relm-1397">
+        <arg type="entity" entity_id="ent-70132575368140" entity_mention_id="m-125">I</arg>
+        <arg type="loc" entity_id="ent-70132571702900" entity_mention_id="m-164">a homeless tent city called camp take notice in Ann Arbor</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="89" length="2">at</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1487">
+        <arg type="entity" entity_id="ent-70132575368140" entity_mention_id="m-840">you</arg>
+        <arg type="loc" entity_id="ent-70132571702900" entity_mention_id="m-853">the camp</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="1988" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298340" type="physical" subtype="located">
+      <relation_mention id="relm-1427">
+        <arg type="entity" entity_id="ent-70132575368140" entity_mention_id="m-177">I</arg>
+        <arg type="loc" entity_id="ent-70132571586220" entity_mention_id="m-619">a tent</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="167" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298260" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1457">
+        <arg type="employeemember" entity_id="ent-70132575232980" entity_mention_id="m-671">camp councils or assemblies</arg>
+        <arg type="org" entity_id="ent-70132571806280" entity_mention_id="m-684">camp</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298200" type="social" subtype="unspecified">
+      <relation_mention id="relm-1667">
+        <arg type="per" entity_id="ent-70132572644480" entity_mention_id="m-1191">their partners</arg>
+        <arg type="per" entity_id="ent-70132576036560" entity_mention_id="m-1204">their</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="2867" length="8">partners</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571298100" type="physical" subtype="located">
+      <relation_mention id="relm-1705">
+        <arg type="entity" entity_id="ent-70132575632120" entity_mention_id="m-190">the man I was in a relationship with</arg>
+        <arg type="loc" entity_id="ent-70132571586220" entity_mention_id="m-619">a tent</arg>
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="167" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132569943780" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="injure">
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="275" length="7">beating</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-216" entity_id="ent-70132575632120">this man</arg>
+          <arg type="victim" entity_mention_id="m-242" entity_id="ent-70132575368140">me</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569942180" name="entity-EVENT-3">
+      <event_mention id="evm-1531" type="life" subtype="injure">
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="300" length="7">hurting</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-216" entity_id="ent-70132575632120">this man</arg>
+          <arg type="victim" entity_mention_id="m-255" entity_id="ent-70132575368140">me</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569940560" name="entity-EVENT-4">
+      <event_mention id="evm-1581" type="life" subtype="injure">
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="265" length="6">abused</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-216" entity_id="ent-70132575632120">this man</arg>
+          <arg type="victim" entity_mention_id="m-229" entity_id="ent-70132575368140">me</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569889060" name="entity-EVENT-5">
+      <event_mention id="evm-1631" type="life" subtype="injure">
+        <trigger source="705f7ae677ec62ada81eded90f90423c" offset="2856" length="4">beat</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1178" entity_id="ent-70132576036560">the bastards</arg>
+          <arg type="victim" entity_mention_id="m-1191" entity_id="ent-70132572644480">their partners</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

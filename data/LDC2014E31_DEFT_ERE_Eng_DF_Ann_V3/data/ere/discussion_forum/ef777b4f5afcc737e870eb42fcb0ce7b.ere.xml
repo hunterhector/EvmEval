@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="ef777b4f5afcc737e870eb42fcb0ce7b" source_type="multi_post" kit_id="5346f3680000000000000084">
+  <entities>
+    <entity id="ent-70132574423060" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="14" length="7">Jackson</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="126" length="1">I</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="250" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132574291300" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="71" length="5">Obama</entity_mention>
+      <entity_mention id="m-216" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="402" length="5">Obama</entity_mention>
+    </entity>
+    <entity id="ent-70132574153580" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="101" length="10">our people</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="457" length="9">Americans</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1562" length="9">Americans</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1609" length="5">their</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1663" length="4">they</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1709" length="4">them</entity_mention>
+    </entity>
+    <entity id="ent-70132573874680" name="entity-PER-5" type="PER">
+      <entity_mention id="m-255" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="490" length="13">abitirritated</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="545" length="1">I</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="766" length="1">I</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="946" length="2">My</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1091" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132573606560" name="entity-PER-6" type="PER">
+      <entity_mention id="m-281" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="552" length="6">family</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="599" length="4">They</entity_mention>
+      <entity_mention id="m-489" noun_type="NA" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="946" length="9">My family</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1068" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132573463940" name="entity-PER-7" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1158" length="11">saveliberty</entity_mention>
+    </entity>
+    <entity id="ent-70132573337780" name="entity-PER-8" type="PER">
+      <entity_mention id="m-580" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1261" length="20">Christianne Omanpour</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1283" length="3">She</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1327" length="3">She</entity_mention>
+    </entity>
+    <entity id="ent-70132573197960" name="entity-PER-9" type="PER">
+      <entity_mention id="m-645" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1399" length="11">The rioters</entity_mention>
+    </entity>
+    <entity id="ent-70132573194560" name="entity-PER-10" type="PER">
+      <entity_mention id="m-658" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1433" length="10">the police</entity_mention>
+    </entity>
+    <entity id="ent-70132573060100" name="entity-PER-11" type="PER">
+      <entity_mention id="m-671" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1448" length="13">the President</entity_mention>
+    </entity>
+    <entity id="ent-70132573056660" name="entity-PER-12" type="PER">
+      <entity_mention id="m-684" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1485" length="7">Jackson</entity_mention>
+    </entity>
+    <entity id="ent-70132573053160" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-346" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="721" length="8">NY times</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="775" length="4">them</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="793" length="4">they</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="824" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132572787600" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-437" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="834" length="11">the embassy</entity_mention>
+      <entity_mention id="m-450" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="888" length="29">the American Embassy in Cairo</entity_mention>
+    </entity>
+    <entity id="ent-70132577811400" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-515" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="973" length="16">State Department</entity_mention>
+    </entity>
+    <entity id="ent-70132577808060" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-567" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1211" length="3">ABC</entity_mention>
+    </entity>
+    <entity id="ent-70132577804660" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-151" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="101" length="3">our</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="743" length="2">we</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="892" length="8">American</entity_mention>
+    </entity>
+    <entity id="ent-70132577468140" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-164" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="119" length="5">Egypt</entity_mention>
+      <entity_mention id="m-229" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="428" length="5">there</entity_mention>
+    </entity>
+    <entity id="ent-70132577461980" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-307" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="574" length="5">Cairo</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="912" length="5">Cairo</entity_mention>
+    </entity>
+    <entity id="ent-70132577365680" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-359" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="721" length="2">NY</entity_mention>
+    </entity>
+    <entity id="ent-70132577362260" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-203" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="356" length="4">Suez</entity_mention>
+    </entity>
+    <entity id="ent-70132575499280" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-294" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="570" length="17">the Cairo Airport</entity_mention>
+      <entity_mention id="m-333" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="704" length="11">the airport</entity_mention>
+      <entity_mention id="m-632" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1375" length="11">The airport</entity_mention>
+      <entity_mention id="m-710" noun_type="NOM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1585" length="11">the airport</entity_mention>
+    </entity>
+    <entity id="ent-70132575364960" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-606" noun_type="NAM" source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1314" length="11">Middel East</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571707300" type="physical" subtype="origin">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132574153580" entity_mention_id="m-138">our people</arg>
+        <arg type="loc" entity_id="ent-70132577804660" entity_mention_id="m-151">our</arg>
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="101" length="3">our</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571707200" type="physical" subtype="located">
+      <relation_mention id="relm-757">
+        <arg type="entity" entity_id="ent-70132574153580" entity_mention_id="m-138">our people</arg>
+        <arg type="loc" entity_id="ent-70132577468140" entity_mention_id="m-164">Egypt</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571707000" type="social" subtype="family">
+      <relation_mention id="relm-787">
+        <arg type="per" entity_id="ent-70132573874680" entity_mention_id="m-268">I</arg>
+        <arg type="per" entity_id="ent-70132573606560" entity_mention_id="m-281">family</arg>
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="552" length="6">family</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571706900" type="physical" subtype="located">
+      <relation_mention id="relm-817">
+        <arg type="entity" entity_id="ent-70132573606560" entity_mention_id="m-281">family</arg>
+        <arg type="loc" entity_id="ent-70132575499280" entity_mention_id="m-294">the Cairo Airport</arg>
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="567" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571706820" type="physical" subtype="located">
+      <relation_mention id="relm-847">
+        <arg type="entity" entity_id="ent-70132575499280" entity_mention_id="m-294">the Cairo Airport</arg>
+        <arg type="loc" entity_id="ent-70132577461980" entity_mention_id="m-307">Cairo</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571706720" type="physical" subtype="origin">
+      <relation_mention id="relm-877">
+        <arg type="entity" entity_id="ent-70132573053160" entity_mention_id="m-346">NY times</arg>
+        <arg type="loc" entity_id="ent-70132577365680" entity_mention_id="m-359">NY</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571706600" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-907">
+        <arg type="suborg" entity_id="ent-70132572787600" entity_mention_id="m-450">the American Embassy in Cairo</arg>
+        <arg type="parent" entity_id="ent-70132577804660" entity_mention_id="m-463">American</arg>
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="892" length="8">American</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571706480" type="physical" subtype="origin">
+      <relation_mention id="relm-937">
+        <arg type="entity" entity_id="ent-70132572787600" entity_mention_id="m-450">the American Embassy in Cairo</arg>
+        <arg type="loc" entity_id="ent-70132577461980" entity_mention_id="m-476">Cairo</arg>
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="909" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571706400" type="social" subtype="family">
+      <relation_mention id="relm-967">
+        <arg type="per" entity_id="ent-70132573606560" entity_mention_id="m-489">My family</arg>
+        <arg type="per" entity_id="ent-70132573874680" entity_mention_id="m-502">My</arg>
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="949" length="6">family</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571706320" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-997">
+        <arg type="employeemember" entity_id="ent-70132573337780" entity_mention_id="m-580">Christianne Omanpour</arg>
+        <arg type="org" entity_id="ent-70132577808060" entity_mention_id="m-567">ABC</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571706200" type="physical" subtype="located">
+      <relation_mention id="relm-1027">
+        <arg type="entity" entity_id="ent-70132573337780" entity_mention_id="m-593">She</arg>
+        <arg type="loc" entity_id="ent-70132575364960" entity_mention_id="m-606">Middel East</arg>
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1307" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571537840" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="contact" subtype="communicate">
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="768" length="6">called</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-385" entity_id="ent-70132573874680">I</arg>
+          <arg type="entity" entity_mention_id="m-398" entity_id="ent-70132573053160">them</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571536920" name="entity-EVENT-3">
+      <event_mention id="evm-1071" type="movement" subtype="transportperson">
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1331" length="7">flew in</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-619" entity_id="ent-70132573337780">She</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-632">The airport</place>
+        </places>
+        <date>
+          <date_extent source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1339" length="9">yesterday</date_extent>
+          <normalized_date>2011-01-29</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571535600" name="entity-EVENT-4">
+      <event_mention id="evm-1113" type="conflict" subtype="demonstrate">
+        <trigger source="ef777b4f5afcc737e870eb42fcb0ce7b" offset="1403" length="7">rioters</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-645" entity_id="ent-70132573197960">The rioters</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

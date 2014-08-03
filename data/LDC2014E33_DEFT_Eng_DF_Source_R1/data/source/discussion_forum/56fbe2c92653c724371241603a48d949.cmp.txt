@@ -1,0 +1,76 @@
+<post author="DeiRenDopa" datetime="2010-06-07T08:11:00" id="p818">
+<quote orig_author="Bjarne">
+When I talk about energy, it is KE, and thermal energy due to friction, as well as energy to overcome resistance against motion.
+This is not the main point, but rather that; to keep a object in orbit energy must be converted to another kind of energy.
+But it can also just be transferred to KE in the other end of the string.
+The point is that you MUST have a energy LOST and in space you even MUST create the resistance against motion, to get "footing" for staying in orbit.
+
+A astronomic body must rotate, in order for resistance / "footing" can be established.
+If the orbit speed is too low and hence the achived resistance / footing to weak, - &gt; the result is this &gt; <a href="http://www.newscientist.com/article/dn13411-earths-rotation-may-account-for-wayward-spacecraft.html">http://www.newscientist.com/article/...pacecraft.html</a>
+
+Off course a force is not energy.
+But energy can create a force (to prevent a orbiting object to move too fast). This is what the Moon need, and this is what its own transfer of KE to the Earth provides.
+
+A force can transfer energy; this is what the force of mass attraction does..
+
+The discussion we had have the last few days can mainly be simplified to how matter and space is connected. We know matter affects space so we should try to understand a bit more, at least abstract, mathematical.
+
+The problem is that spaces seem to be nothing, this confuses us, and this leads to especially 2 HUGE wrong conclusions.
+
+The day we will be force to accept matter consumes space, (coming soon) this day will bring light to these two historical mistakes.
+
+One consequence is that it is much easier to understand how matter and space is connected. Hence it will also be easy to understand how the mass attraction of the Earth/Moon can pull the Earth rotation. This is easy when we understand that matter sucks space. Space stretching therefore can be used in the same sense as a (elastic) string.
+
+Another consequence of the same simple thought is that; because of matter sucks space is: - deformed space must move when matter moves.
+This cans not surprisingly only mean resistance from motion, simply because (deformed elastic) space does not want to move. Hence we are force to realize that of course resistance against motion is permanent ; there is no reason to believe something else.
+
+This conclusion will be further emphasizes when we understand and respect the simple fact that the energy lost, when a object is forced to change direction, off course also MUST comprehend motion-direction-change in a orbit. It is silly and lazy and illogical to believe orbits should be an exception from that law.
+
+These simply &amp; pretty innocent corrected errors is enough to understand that energy from orbiting objects MUST be lost / transferred / converted also even though we not see it.
+The KE represented by the object in motion, is only a small part of the total KE.
+
+As a bonus by accepting these corrected errors, the Pioneer and the gravity assist anomalies solves it self, - and we will begin to understand why planets sometimes are too close or to far from their mother stars.
+For example why Jupiters atmosphere cant have been created where Jupiter is now.
+
+But yes there is a small crackpot price to pay, BUT a much more contradictions free Universe in return.
+
+</quote>
+(bold added)
+
+So, what is "KE"?
+
+And how do you determine the KE of something, an object say?
+
+What is "thermal energy due to friction"?
+
+And how do you determine the thermal energy due to friction in a particular process, or environment, say?
+
+What is "energy to overcome resistance against motion"?
+
+And how do you determine the energy to overcome resistance against motion of a particular object in motion?
+</post>
+<post author="Paulhoff" datetime="2010-06-07T08:18:00" id="p819">
+<quote orig_author="Bjarne">
+I think Storm P could have given a better explanation.
+<a href="http://www.scorpmeister.dk/gammel/billeder/stormp.gif">http://www.scorpmeister.dk/gammel/billeder/stormp.gif</a>
+
+</quote>
+You have no learning curve do you.
+
+Paul
+
+<img src="http://forums.randi.org/images/smilies/smile.gif"/> <img src="http://forums.randi.org/images/smilies/smile.gif"/> <img src="http://forums.randi.org/images/smilies/smile.gif"/>
+</post>
+<post author="Paulhoff" datetime="2010-06-07T11:46:00" id="p820">
+It is sooooo easy using a Scientific Calculator. At what percent of the speed of light would an object weight double its weight?
+
+2 divided into 1 or hit the 1/x function =.5
+
+Then all you have to do is hit the Arc (INV) Sin = (30) and than the Cos = (0.8660 etc) x 100 you have the answer in percent (86.60%) the speed of light.
+
+So let it be written, so let it be done.
+
+Paul
+
+<img src="http://forums.randi.org/images/smilies/smile.gif"/> <img src="http://forums.randi.org/images/smilies/smile.gif"/> <img src="http://forums.randi.org/images/smilies/smile.gif"/>
+</post>

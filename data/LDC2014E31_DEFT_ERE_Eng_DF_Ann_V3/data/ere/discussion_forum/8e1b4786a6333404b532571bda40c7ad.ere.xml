@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="8e1b4786a6333404b532571bda40c7ad" source_type="multi_post" kit_id="537144670000000000000002">
+  <entities>
+    <entity id="ent-70132574012100" name="entity-PER-2" type="PER">
+      <entity_mention id="m-801" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="6287" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5981" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5644" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5462" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5257" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5776" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5352" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3978" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4448" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-411" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4197" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4830" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6682" length="2">he</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6638" length="2">he</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6577" length="2">he</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6496" length="2">He</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6442" length="2">he</entity_mention>
+      <entity_mention id="m-814" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="6376" length="9">Nietzsche</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6152" length="3">his</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6166" length="2">He</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6083" length="2">He</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6048" length="2">he</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="5715" length="3">his</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="5421" length="3">his</entity_mention>
+      <entity_mention id="m-991" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3798" length="19">Friedrich Nietzsche</entity_mention>
+      <entity_mention id="m-1095" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6015" length="2">he</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="6207" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132571766540" name="entity-PER-3" type="PER">
+      <entity_mention id="m-788" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="6269" length="16">Bernhard Forster</entity_mention>
+    </entity>
+    <entity id="ent-70132571763640" name="entity-PER-4" type="PER">
+      <entity_mention id="m-775" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="6231" length="9">Elizabeth</entity_mention>
+      <entity_mention id="m-762" noun_type="NOM" source="8e1b4786a6333404b532571bda40c7ad" offset="6207" length="22">his weak-minded sister</entity_mention>
+    </entity>
+    <entity id="ent-70132571704720" name="entity-PER-5" type="PER">
+      <entity_mention id="m-385" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4111" length="15">Herbert Spencer</entity_mention>
+      <entity_mention id="m-320" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3892" length="15">Herbert Spencer</entity_mention>
+      <entity_mention id="m-978" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3777" length="15">Herbert Spencer</entity_mention>
+    </entity>
+    <entity id="ent-70132571636940" name="entity-PER-6" type="PER">
+      <entity_mention id="m-450" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4558" length="8">ZFBoxcar</entity_mention>
+      <entity_mention id="m-307" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3841" length="8">ZFBoxcar</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3066" length="8">ZFBoxcar</entity_mention>
+      <entity_mention id="m-255" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="2735" length="8">ZFBoxcar</entity_mention>
+      <entity_mention id="m-372" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4100" length="8">ZFBoxcar</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="4996" length="1">I</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="4972" length="1">I</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="4935" length="1">I</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="3960" length="1">I</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="4179" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571561080" name="entity-PER-7" type="PER">
+      <entity_mention id="m-437" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4462" length="14">Francis Galton</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4844" length="14">Francis Galton</entity_mention>
+    </entity>
+    <entity id="ent-70132571555760" name="entity-PER-8" type="PER">
+      <entity_mention id="m-359" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4027" length="10">BenRoethig</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="2993" length="10">BenRoethig</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="3752" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571539880" name="entity-PER-9" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="14" length="8">barrowaj</entity_mention>
+      <entity_mention id="m-190" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="2541" length="8">barrowaj</entity_mention>
+    </entity>
+    <entity id="ent-70132571534560" name="entity-PER-10" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="85" length="7">highsea</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="2604" length="7">highsea</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="871" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571518480" name="entity-PER-11" type="PER">
+      <entity_mention id="m-164" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="1233" length="5">Pauli</entity_mention>
+    </entity>
+    <entity id="ent-70132571515220" name="entity-PER-12" type="PER">
+      <entity_mention id="m-177" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="2473" length="5">dalem</entity_mention>
+    </entity>
+    <entity id="ent-70132571512480" name="entity-PER-13" type="PER">
+      <entity_mention id="m-229" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="2712" length="5">Rahul</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="2720" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571506760" name="entity-PER-14" type="PER">
+      <entity_mention id="m-216" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="2642" length="7">Ballguy</entity_mention>
+    </entity>
+    <entity id="ent-70132571504140" name="entity-PER-15" type="PER">
+      <entity_mention id="m-567" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5290" length="13">Bulgaroctonus</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="5445" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="5230" length="1">I</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="5177" length="1">I</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="8e1b4786a6333404b532571bda40c7ad" offset="5346" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571481660" name="entity-PER-16" type="PER">
+      <entity_mention id="m-900" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="1383" length="9">Euclidian</entity_mention>
+    </entity>
+    <entity id="ent-70132571478460" name="entity-PER-17" type="PER">
+      <entity_mention id="m-913" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="1590" length="9">Newtonian</entity_mention>
+    </entity>
+    <entity id="ent-70132571474640" name="entity-PER-18" type="PER">
+      <entity_mention id="m-926" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="1736" length="10">Copernican</entity_mention>
+    </entity>
+    <entity id="ent-70132571463320" name="entity-PER-19" type="PER">
+      <entity_mention id="m-939" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="1771" length="9">Ptolemaic</entity_mention>
+    </entity>
+    <entity id="ent-70132571459800" name="entity-PER-20" type="PER">
+      <entity_mention id="m-1069" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5912" length="14">Gautama Buddha</entity_mention>
+    </entity>
+    <entity id="ent-70132571455980" name="entity-PER-21" type="PER">
+      <entity_mention id="m-952" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3116" length="9">Darwinism</entity_mention>
+      <entity_mention id="m-965" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3134" length="9">Darwinism</entity_mention>
+      <entity_mention id="m-1004" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="3933" length="9">Darwinism</entity_mention>
+      <entity_mention id="m-1017" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4152" length="9">Darwinism</entity_mention>
+      <entity_mention id="m-1030" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4242" length="9">Darwinism</entity_mention>
+      <entity_mention id="m-1043" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="4624" length="9">Darwinism</entity_mention>
+      <entity_mention id="m-1056" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="5024" length="9">Darwinism</entity_mention>
+    </entity>
+    <entity id="ent-70132571360820" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-1138" noun_type="NAM" source="8e1b4786a6333404b532571bda40c7ad" offset="6192" length="6">Nazism</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571265140" type="social" subtype="family">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132574012100" entity_mention_id="m-749">his</arg>
+        <arg type="per" entity_id="ent-70132571763640" entity_mention_id="m-762">his weak-minded sister</arg>
+        <trigger source="8e1b4786a6333404b532571bda40c7ad" offset="6223" length="6">sister</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571265060" type="social" subtype="family">
+      <relation_mention id="relm-1103">
+        <arg type="per" entity_id="ent-70132571763640" entity_mention_id="m-775">Elizabeth</arg>
+        <arg type="per" entity_id="ent-70132571766540" entity_mention_id="m-788">Bernhard Forster</arg>
+        <trigger source="8e1b4786a6333404b532571bda40c7ad" offset="6242" length="7">married</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132570173000" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="marry">
+        <trigger source="8e1b4786a6333404b532571bda40c7ad" offset="6242" length="7">married</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-775" entity_id="ent-70132571763640">Elizabeth</arg>
+          <arg type="person" entity_mention_id="m-788" entity_id="ent-70132571766540">Bernhard Forster</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

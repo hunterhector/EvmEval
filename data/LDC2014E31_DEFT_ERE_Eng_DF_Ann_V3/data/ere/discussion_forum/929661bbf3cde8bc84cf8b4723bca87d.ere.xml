@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="929661bbf3cde8bc84cf8b4723bca87d" source_type="multi_post" kit_id="5392b8830000000000000026">
+  <entities>
+    <entity id="ent-70132567459400" name="entity-PER-1" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="95" length="11">CyclopsRock</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="130" length="11">CyclopsRock</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="364" length="1">I</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="372" length="1">I</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="381" length="1">I</entity_mention>
+      <entity_mention id="m-333" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="836" length="11">CyclopsRock</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="871" length="11">CyclopsRock</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1096" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="635" length="3">you</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2518" length="11">CyclopsRock</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2553" length="11">CyclopsRock</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="3274" length="1">I</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="3669" length="2">me</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="3673" length="1">I</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="3713" length="1">I</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4530" length="1">I</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4569" length="1">I</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4673" length="1">I</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4705" length="1">I</entity_mention>
+      <entity_mention id="m-1230" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4981" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577271280" name="entity-PER-4" type="PER">
+      <entity_mention id="m-359" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="883" length="3">You</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1113" length="3">you</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1425" length="3">you</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1678" length="1">I</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1899" length="1">I</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2089" length="1">I</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2201" length="1">I</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4122" length="3">you</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4142" length="3">you</entity_mention>
+      <entity_mention id="m-1191" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4848" length="3">you</entity_mention>
+      <entity_mention id="m-23" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="14" length="18">Andy the Anarchist</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="425" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="523" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="607" length="1">I</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="164" length="3">you</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="336" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571807680" name="entity-PER-2" type="PER">
+      <entity_mention id="m-281" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="684" length="12">Lloyd George</entity_mention>
+    </entity>
+    <entity id="ent-70132571801400" name="entity-PER-5" type="PER">
+      <entity_mention id="m-736" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2288" length="12">pre-Thatcher</entity_mention>
+    </entity>
+    <entity id="ent-70132571765440" name="entity-PER-6" type="PER">
+      <entity_mention id="m-918" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="3222" length="8">everyone</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="3248" length="8">everyone</entity_mention>
+    </entity>
+    <entity id="ent-70132571706820" name="entity-PER-7" type="PER">
+      <entity_mention id="m-1256" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5272" length="9">fire2burn</entity_mention>
+      <entity_mention id="m-1269" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5305" length="9">fire2burn</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5511" length="3">you</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5557" length="5">yours</entity_mention>
+    </entity>
+    <entity id="ent-70132571593740" name="entity-PER-8" type="PER">
+      <entity_mention id="m-1243" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5203" length="6">Aeolus</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5522" length="2">me</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5632" length="6">myself</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5699" length="1">I</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5715" length="1">i</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5816" length="1">i</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5826" length="1">i</entity_mention>
+      <entity_mention id="m-1438" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5894" length="4">mine</entity_mention>
+    </entity>
+    <entity id="ent-70132571562700" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-229" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="488" length="10">Republican</entity_mention>
+    </entity>
+    <entity id="ent-70132571559440" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-294" noun_type="NOM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="703" length="20">a liberal government</entity_mention>
+      <entity_mention id="m-307" noun_type="NOM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="786" length="10">government</entity_mention>
+      <entity_mention id="m-905" noun_type="NOM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="3177" length="14">the government</entity_mention>
+      <entity_mention id="m-996" noun_type="NOM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4031" length="15">the governments</entity_mention>
+      <entity_mention id="m-1048" noun_type="NOM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4150" length="14">the government</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4240" length="3">its</entity_mention>
+      <entity_mention id="m-1074" noun_type="NOM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4334" length="14">the government</entity_mention>
+    </entity>
+    <entity id="ent-70132571532220" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-398" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1143" length="3">NHS</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1180" length="2">it</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1310" length="2">it</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1349" length="2">it</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1391" length="2">it</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1452" length="2">it</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1539" length="2">it</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1650" length="2">it</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2081" length="3">NHS</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2132" length="3">NHS</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2140" length="2">it</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2277" length="2">it</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2344" length="2">it</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2423" length="3">NHS</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2430" length="2">it</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2595" length="3">NHS</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2785" length="3">NHS</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2797" length="2">it</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="3110" length="3">NHS</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4097" length="3">NHS</entity_mention>
+      <entity_mention id="m-1087" noun_type="NOM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4334" length="38">the government owned and run operation</entity_mention>
+      <entity_mention id="m-1100" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4403" length="3">NHS</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4525" length="3">NHS</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4875" length="3">NHS</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4887" length="2">it</entity_mention>
+      <entity_mention id="m-1282" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5340" length="3">NHS</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5354" length="2">it</entity_mention>
+      <entity_mention id="m-1360" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="5682" length="3">NHS</entity_mention>
+    </entity>
+    <entity id="ent-70132571357600" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-424" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1281" length="13">Conservatives</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1952" length="13">Conservatives</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1972" length="4">they</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2042" length="5">their</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2104" length="4">they</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1499" length="6">Tories</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2301" length="4">Tory</entity_mention>
+    </entity>
+    <entity id="ent-70132571297880" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-697" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2163" length="6">Labour</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="2451" length="6">Labour</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="1995" length="12">Labour party</entity_mention>
+    </entity>
+    <entity id="ent-70132571263720" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-320" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="811" length="2">UK</entity_mention>
+    </entity>
+    <entity id="ent-70132571260120" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-1178" noun_type="NAM" source="929661bbf3cde8bc84cf8b4723bca87d" offset="4735" length="2">US</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132570153340" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-40">
+        <arg type="suborg" entity_id="ent-70132571559440" entity_mention_id="m-307">government</arg>
+        <arg type="parent" entity_id="ent-70132571263720" entity_mention_id="m-320">UK</arg>
+        <trigger source="929661bbf3cde8bc84cf8b4723bca87d" offset="804" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132570153280" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1472">
+        <arg type="suborg" entity_id="ent-70132571532220" entity_mention_id="m-1087">the government owned and run operation</arg>
+        <arg type="parent" entity_id="ent-70132571559440" entity_mention_id="m-1074">the government</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132569888100" name="entity-EVENT-2">
+      <event_mention id="evm-1538" type="business" subtype="startorg">
+        <trigger source="929661bbf3cde8bc84cf8b4723bca87d" offset="1464" length="9">initiated</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-489" entity_id="ent-70132571532220">it</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="929661bbf3cde8bc84cf8b4723bca87d" offset="1477" length="16">the late forties</date_extent>
+          <normalized_date>194X-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+      <event_mention id="evm-1580" type="business" subtype="startorg">
+        <trigger source="929661bbf3cde8bc84cf8b4723bca87d" offset="2437" length="7">created</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-788" entity_id="ent-70132571532220">it</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

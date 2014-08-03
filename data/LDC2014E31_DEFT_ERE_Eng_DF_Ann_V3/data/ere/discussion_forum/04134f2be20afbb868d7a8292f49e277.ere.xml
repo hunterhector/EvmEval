@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="04134f2be20afbb868d7a8292f49e277" source_type="multi_post" kit_id="537ccd8d0000000000000010">
+  <entities>
+    <entity id="ent-70132568735240" name="entity-PER-2" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="85" length="6">Nash24</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="94" length="1">I</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="203" length="2">me</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="269" length="1">I</entity_mention>
+      <entity_mention id="m-271" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="333" length="1">I</entity_mention>
+      <entity_mention id="m-284" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="345" length="1">I</entity_mention>
+      <entity_mention id="m-297" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="374" length="2">my</entity_mention>
+      <entity_mention id="m-310" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="387" length="2">my</entity_mention>
+      <entity_mention id="m-401" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="593" length="1">I</entity_mention>
+      <entity_mention id="m-440" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="697" length="1">I</entity_mention>
+      <entity_mention id="m-492" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="868" length="1">I</entity_mention>
+      <entity_mention id="m-505" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="893" length="1">I</entity_mention>
+      <entity_mention id="m-518" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="913" length="1">I</entity_mention>
+      <entity_mention id="m-544" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="998" length="1">I</entity_mention>
+      <entity_mention id="m-583" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="1211" length="1">I</entity_mention>
+      <entity_mention id="m-763" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="1518" length="1">I</entity_mention>
+      <entity_mention id="m-789" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="1718" length="1">I</entity_mention>
+      <entity_mention id="m-802" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="1819" length="2">my</entity_mention>
+      <entity_mention id="m-815" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="1885" length="3">you</entity_mention>
+      <entity_mention id="m-841" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="2961" length="3">you</entity_mention>
+      <entity_mention id="m-932" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="3296" length="3">you</entity_mention>
+      <entity_mention id="m-958" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="3360" length="3">you</entity_mention>
+      <entity_mention id="m-635" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="1297" length="2">my</entity_mention>
+      <entity_mention id="m-323" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="462" length="1">I</entity_mention>
+      <entity_mention id="m-997" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="3549" length="6">Nash24</entity_mention>
+      <entity_mention id="m-1101" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4654" length="1">I</entity_mention>
+      <entity_mention id="m-1114" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4672" length="1">I</entity_mention>
+      <entity_mention id="m-1283" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="5546" length="6">Nash24</entity_mention>
+      <entity_mention id="m-1036" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="3864" length="4">your</entity_mention>
+      <entity_mention id="m-1231" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="5117" length="3">you</entity_mention>
+      <entity_mention id="m-1179" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4952" length="4">your</entity_mention>
+      <entity_mention id="m-1592" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="707" length="1">I</entity_mention>
+      <entity_mention id="m-1218" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="5104" length="1">I</entity_mention>
+      <entity_mention id="m-1205" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="5065" length="1">I</entity_mention>
+      <entity_mention id="m-1127" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4720" length="1">I</entity_mention>
+      <entity_mention id="m-1153" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4790" length="1">I</entity_mention>
+      <entity_mention id="m-1166" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4842" length="1">I</entity_mention>
+      <entity_mention id="m-1192" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4964" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132567450700" name="entity-PER-3" type="PER">
+      <entity_mention id="m-336" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="489" length="10">Saira Khan</entity_mention>
+      <entity_mention id="m-919" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="3271" length="10">Saira Khan</entity_mention>
+      <entity_mention id="m-971" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="3384" length="3">She</entity_mention>
+    </entity>
+    <entity id="ent-70132567422140" name="entity-PER-4" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="14" length="8">lonely14</entity_mention>
+      <entity_mention id="m-906" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="3256" length="1">I</entity_mention>
+      <entity_mention id="m-945" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="3334" length="1">I</entity_mention>
+      <entity_mention id="m-867" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="3145" length="1">I</entity_mention>
+      <entity_mention id="m-1244" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="5280" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132567388820" name="entity-PER-6" type="PER">
+      <entity_mention id="m-596" noun_type="NOM" source="04134f2be20afbb868d7a8292f49e277" offset="1245" length="66">most families who moved to England in the 60's like my grandfather</entity_mention>
+    </entity>
+    <entity id="ent-70132567380720" name="entity-PER-7" type="PER">
+      <entity_mention id="m-622" noun_type="NOM" source="04134f2be20afbb868d7a8292f49e277" offset="1297" length="14">my grandfather</entity_mention>
+    </entity>
+    <entity id="ent-70132575910940" name="entity-PER-8" type="PER">
+      <entity_mention id="m-1010" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="3618" length="12">VeniViciVidi</entity_mention>
+      <entity_mention id="m-1023" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="3847" length="1">I</entity_mention>
+      <entity_mention id="m-1075" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4380" length="1">I</entity_mention>
+      <entity_mention id="m-1088" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4589" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132575765600" name="entity-PER-9" type="PER">
+      <entity_mention id="m-1309" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="5655" length="1">i</entity_mention>
+      <entity_mention id="m-1296" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="5615" length="11">oh-my-diddy</entity_mention>
+    </entity>
+    <entity id="ent-70132574562900" name="entity-PER-10" type="PER">
+      <entity_mention id="m-1049" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="4027" length="8">Fukuyama</entity_mention>
+    </entity>
+    <entity id="ent-70132574428520" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-203" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="283" length="9">Pakistani</entity_mention>
+      <entity_mention id="m-375" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="530" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-414" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="619" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-427" noun_type="NOM" source="04134f2be20afbb868d7a8292f49e277" offset="681" length="11">the country</entity_mention>
+      <entity_mention id="m-453" noun_type="NOM" source="04134f2be20afbb868d7a8292f49e277" offset="739" length="22">the country as a whole</entity_mention>
+      <entity_mention id="m-479" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="859" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-531" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="933" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-557" noun_type="NOM" source="04134f2be20afbb868d7a8292f49e277" offset="1012" length="11">the country</entity_mention>
+      <entity_mention id="m-570" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="1043" length="2">it</entity_mention>
+      <entity_mention id="m-750" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="1434" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-776" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="1560" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-828" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="2801" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-880" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="3134" length="9">Pakistani</entity_mention>
+      <entity_mention id="m-893" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="3204" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-984" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="3446" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-1348" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="5904" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-1335" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="5739" length="4">they</entity_mention>
+      <entity_mention id="m-1322" noun_type="NOM" source="04134f2be20afbb868d7a8292f49e277" offset="5663" length="11">the country</entity_mention>
+      <entity_mention id="m-1270" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="5440" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-1257" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="5294" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-1140" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="4735" length="3">our</entity_mention>
+      <entity_mention id="m-466" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="766" length="2">it</entity_mention>
+      <entity_mention id="m-1361" noun_type="PRO" source="04134f2be20afbb868d7a8292f49e277" offset="5968" length="2">it</entity_mention>
+    </entity>
+    <entity id="ent-70132573339480" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-190" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="275" length="7">British</entity_mention>
+    </entity>
+    <entity id="ent-70132573335400" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-258" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="317" length="6">London</entity_mention>
+    </entity>
+    <entity id="ent-70132573331880" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-609" noun_type="NAM" source="04134f2be20afbb868d7a8292f49e277" offset="1272" length="7">England</entity_mention>
+    </entity>
+    <entity id="ent-70132573197620" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-1062" noun_type="NOM" source="04134f2be20afbb868d7a8292f49e277" offset="4081" length="81">the sovereign states whom are conformed to Islamic teachings as their rule of law</entity_mention>
+    </entity>
+    <entity id="ent-70132573193920" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-1579" noun_type="NOM" source="04134f2be20afbb868d7a8292f49e277" offset="2893" length="5">world</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132575497080" type="physical" subtype="located">
+      <relation_mention id="relm-685">
+        <arg type="entity" entity_id="ent-70132567388820" entity_mention_id="m-596">most families who moved to England in the 60's like my grandfather</arg>
+        <arg type="loc" entity_id="ent-70132573331880" entity_mention_id="m-609">England</arg>
+        <trigger source="04134f2be20afbb868d7a8292f49e277" offset="1269" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575497020" type="social" subtype="family">
+      <relation_mention id="relm-715">
+        <arg type="per" entity_id="ent-70132567380720" entity_mention_id="m-622">my grandfather</arg>
+        <arg type="per" entity_id="ent-70132568735240" entity_mention_id="m-635">my</arg>
+        <trigger source="04134f2be20afbb868d7a8292f49e277" offset="1300" length="11">grandfather</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575496900" type="physical" subtype="origin">
+      <relation_mention id="relm-1429">
+        <arg type="entity" entity_id="ent-70132568735240" entity_mention_id="m-177">I</arg>
+        <arg type="loc" entity_id="ent-70132573339480" entity_mention_id="m-190">British</arg>
+        <trigger source="04134f2be20afbb868d7a8292f49e277" offset="275" length="7">British</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575496760" type="physical" subtype="origin">
+      <relation_mention id="relm-1459">
+        <arg type="entity" entity_id="ent-70132568735240" entity_mention_id="m-177">I</arg>
+        <arg type="loc" entity_id="ent-70132574428520" entity_mention_id="m-203">Pakistani</arg>
+        <trigger source="04134f2be20afbb868d7a8292f49e277" offset="283" length="9">Pakistani</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575496700" type="physical" subtype="origin">
+      <relation_mention id="relm-1489">
+        <arg type="entity" entity_id="ent-70132567422140" entity_mention_id="m-867">I</arg>
+        <arg type="loc" entity_id="ent-70132574428520" entity_mention_id="m-880">Pakistani</arg>
+        <trigger source="04134f2be20afbb868d7a8292f49e277" offset="3134" length="9">Pakistani</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132576889240" name="entity-EVENT-2">
+      <event_mention id="evm-649" type="movement" subtype="transportperson">
+        <trigger source="04134f2be20afbb868d7a8292f49e277" offset="1263" length="5">moved</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-596" entity_id="ent-70132567388820">most families who moved to England in the 60's like my grandfather</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-609">England</place>
+        </places>
+        <date>
+          <date_extent source="04134f2be20afbb868d7a8292f49e277" offset="1283" length="8">the 60's</date_extent>
+          <normalized_date>196X-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132576888020" name="entity-EVENT-3">
+      <event_mention id="evm-217" type="life" subtype="beborn">
+        <trigger source="04134f2be20afbb868d7a8292f49e277" offset="294" length="4">born</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-177" entity_id="ent-70132568735240">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-258">London</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

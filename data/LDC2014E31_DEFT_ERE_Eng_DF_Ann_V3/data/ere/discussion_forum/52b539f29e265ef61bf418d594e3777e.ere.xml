@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="52b539f29e265ef61bf418d594e3777e" source_type="multi_post" kit_id="5392b8820000000000000013">
+  <entities>
+    <entity id="ent-70132575629440" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="87" length="13">I-Am-A-Tripod</entity_mention>
+      <entity_mention id="m-307" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="1288" length="13">I-Am-A-Tripod</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5038" length="13">I-Am-A-Tripod</entity_mention>
+      <entity_mention id="m-2585" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="878" length="3">you</entity_mention>
+      <entity_mention id="m-2611" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="1740" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576145900" name="entity-PER-3" type="PER">
+      <entity_mention id="m-320" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="1365" length="9">Inzamam99</entity_mention>
+      <entity_mention id="m-23" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="14" length="9">Inzamam99</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="3271" length="9">Inzamam99</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4965" length="9">Inzamam99</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6003" length="9">Inzamam99</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5907" length="2">me</entity_mention>
+      <entity_mention id="m-1724" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="1877" length="1">I</entity_mention>
+      <entity_mention id="m-3075" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5727" length="2">my</entity_mention>
+      <entity_mention id="m-2598" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="1015" length="1">I</entity_mention>
+      <entity_mention id="m-2663" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="2360" length="4">your</entity_mention>
+      <entity_mention id="m-2676" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="2391" length="4">your</entity_mention>
+      <entity_mention id="m-2689" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="2429" length="3">you</entity_mention>
+      <entity_mention id="m-2702" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="2471" length="3">you</entity_mention>
+      <entity_mention id="m-2832" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="4203" length="3">you</entity_mention>
+      <entity_mention id="m-2884" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5275" length="4">your</entity_mention>
+      <entity_mention id="m-2897" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5306" length="4">your</entity_mention>
+      <entity_mention id="m-2910" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5344" length="3">you</entity_mention>
+      <entity_mention id="m-2923" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5386" length="3">you</entity_mention>
+      <entity_mention id="m-3114" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="6126" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576891880" name="entity-PER-4" type="PER">
+      <entity_mention id="m-333" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="1455" length="20">around 90,000 people</entity_mention>
+      <entity_mention id="m-190" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="593" length="20">around 90,000 people</entity_mention>
+      <entity_mention id="m-580" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="3478" length="34">the 90,000+ mostly innocent people</entity_mention>
+    </entity>
+    <entity id="ent-70132577015440" name="entity-PER-5" type="PER">
+      <entity_mention id="m-268" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="1165" length="14">around 300,000</entity_mention>
+      <entity_mention id="m-385" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="2027" length="14">around 300,000</entity_mention>
+      <entity_mention id="m-983" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="5560" length="13">about 300,000</entity_mention>
+    </entity>
+    <entity id="ent-70132577147280" name="entity-PER-6" type="PER">
+      <entity_mention id="m-346" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="1525" length="17">over 10,000 Sikhs</entity_mention>
+    </entity>
+    <entity id="ent-70132577143860" name="entity-PER-7" type="PER">
+      <entity_mention id="m-203" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="663" length="17">over 10,000 Sikhs</entity_mention>
+    </entity>
+    <entity id="ent-70132577143980" name="entity-PER-9" type="PER">
+      <entity_mention id="m-255" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="1142" length="18">neutral historians</entity_mention>
+    </entity>
+    <entity id="ent-70132575369180" name="entity-PER-10" type="PER">
+      <entity_mention id="m-216" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="684" length="4">mobs</entity_mention>
+      <entity_mention id="m-359" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="1546" length="4">mobs</entity_mention>
+    </entity>
+    <entity id="ent-70132575364500" name="entity-PER-1" type="PER">
+      <entity_mention id="m-1126" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="6353" length="27">Pakistani backed terrorists</entity_mention>
+      <entity_mention id="m-736" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="4430" length="27">Pakistani backed terrorists</entity_mention>
+    </entity>
+    <entity id="ent-70132575497920" name="entity-PER-11" type="PER">
+      <entity_mention id="m-1152" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6395" length="16">Kashmiri Pandits</entity_mention>
+      <entity_mention id="m-762" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4472" length="16">Kashmiri Pandits</entity_mention>
+    </entity>
+    <entity id="ent-70132577369020" name="entity-PER-12" type="PER">
+      <entity_mention id="m-164" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="238" length="32">millions of unarmed bangladeshis</entity_mention>
+    </entity>
+    <entity id="ent-70132577365800" name="entity-PER-13" type="PER">
+      <entity_mention id="m-632" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="3590" length="18">thousands of women</entity_mention>
+    </entity>
+    <entity id="ent-70132577362660" name="entity-PER-14" type="PER">
+      <entity_mention id="m-645" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="3652" length="20">many thousands Sikhs</entity_mention>
+    </entity>
+    <entity id="ent-70132577466460" name="entity-PER-15" type="PER">
+      <entity_mention id="m-788" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="4559" length="6">Hindus</entity_mention>
+      <entity_mention id="m-1178" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="6482" length="6">Hindus</entity_mention>
+    </entity>
+    <entity id="ent-70132577461040" name="entity-PER-16" type="PER">
+      <entity_mention id="m-1100" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="6329" length="15">Indian soldiers</entity_mention>
+      <entity_mention id="m-697" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="4406" length="15">Indian soldiers</entity_mention>
+    </entity>
+    <entity id="ent-70132577701780" name="entity-PER-19" type="PER">
+      <entity_mention id="m-541" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="3202" length="5">dogra</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="2508" length="5">dogra</entity_mention>
+      <entity_mention id="m-1074" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6076" length="5">dogra</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="2849" length="1">I</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="3283" length="1">I</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="3901" length="1">I</entity_mention>
+      <entity_mention id="m-2741" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="3373" length="3">you</entity_mention>
+      <entity_mention id="m-2754" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="3385" length="4">your</entity_mention>
+      <entity_mention id="m-2767" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="3442" length="3">you</entity_mention>
+      <entity_mention id="m-2793" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="3917" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132572926860" name="entity-PER-20" type="PER">
+      <entity_mention id="m-489" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="2577" length="7">Steevee</entity_mention>
+    </entity>
+    <entity id="ent-70132572923760" name="entity-PER-21" type="PER">
+      <entity_mention id="m-515" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="2980" length="5">kidoo</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="3029" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132573058000" name="entity-PER-22" type="PER">
+      <entity_mention id="m-463" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="2253" length="8">millions</entity_mention>
+      <entity_mention id="m-1479" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="5168" length="8">millions</entity_mention>
+      <entity_mention id="m-2624" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="2181" length="11">the victims</entity_mention>
+    </entity>
+    <entity id="ent-70132573197980" name="entity-PER-23" type="PER">
+      <entity_mention id="m-1286" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="2078" length="11">authorities</entity_mention>
+    </entity>
+    <entity id="ent-70132573194860" name="entity-PER-24" type="PER">
+      <entity_mention id="m-1913" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="3635" length="8">suspects</entity_mention>
+    </entity>
+    <entity id="ent-70132573336860" name="entity-PER-8" type="PER">
+      <entity_mention id="m-1022" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="5832" length="41">the number of Sikhs killed in Delhi alone</entity_mention>
+    </entity>
+    <entity id="ent-70132573336480" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-151" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="209" length="15">pakistan armies</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="2200" length="14">pakistani army</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5115" length="14">pakistani army</entity_mention>
+    </entity>
+    <entity id="ent-70132573468300" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-606" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="3540" length="11">Indian Army</entity_mention>
+    </entity>
+    <entity id="ent-70132573464940" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-944" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5463" length="6">US DOD</entity_mention>
+    </entity>
+    <entity id="ent-70132573605140" name="entity-ORG-1" type="ORG">
+      <entity_mention id="m-229" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="725" length="10">the police</entity_mention>
+      <entity_mention id="m-372" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="1587" length="10">the police</entity_mention>
+      <entity_mention id="m-2780" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="3714" length="10">the police</entity_mention>
+    </entity>
+    <entity id="ent-70132573603940" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-3088" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="5771" length="20">The Ahuja commission</entity_mention>
+    </entity>
+    <entity id="ent-70132573738780" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-138" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="209" length="8">pakistan</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="446" length="9">pakistans</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="1081" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="1190" length="9">Pakistani</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="2052" length="9">Pakistani</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="2200" length="9">pakistani</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4007" length="9">Pakistani</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5115" length="9">pakistani</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6353" length="9">Pakistani</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4430" length="9">Pakistani</entity_mention>
+      <entity_mention id="m-2806" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="4053" length="2">We</entity_mention>
+    </entity>
+    <entity id="ent-70132574294200" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-294" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="1204" length="11">Bangladeshi</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="2143" length="12">bangledeshis</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6460" length="10">Bangladesh</entity_mention>
+      <entity_mention id="m-957" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5475" length="12">Bangladeshis</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="258" length="12">bangladeshis</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5058" length="12">bangledeshis</entity_mention>
+      <entity_mention id="m-411" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="2066" length="11">Bangladeshi</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4537" length="10">Bangladesh</entity_mention>
+      <entity_mention id="m-2936" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5488" length="10">themselves</entity_mention>
+      <entity_mention id="m-2637" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="2169" length="4">they</entity_mention>
+      <entity_mention id="m-2650" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="2222" length="4">they</entity_mention>
+      <entity_mention id="m-2858" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5084" length="4">they</entity_mention>
+      <entity_mention id="m-2871" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5137" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132574706320" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-684" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4100" length="5">India</entity_mention>
+      <entity_mention id="m-1217" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6587" length="5">India</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4406" length="6">Indian</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5806" length="7">Indians</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6329" length="6">Indian</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4664" length="5">India</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="3540" length="6">Indian</entity_mention>
+      <entity_mention id="m-2819" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="4134" length="3">its</entity_mention>
+      <entity_mention id="m-3101" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="5814" length="10">themselves</entity_mention>
+    </entity>
+    <entity id="ent-70132574962580" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1230" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6744" length="5">Swiss</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4821" length="5">Swiss</entity_mention>
+    </entity>
+    <entity id="ent-70132575097120" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-1204" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6573" length="12">Balouchistan</entity_mention>
+      <entity_mention id="m-814" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4650" length="12">Balouchistan</entity_mention>
+    </entity>
+    <entity id="ent-70132575099940" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-801" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="4634" length="11">Balwaristan</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="6557" length="11">Balwaristan</entity_mention>
+    </entity>
+    <entity id="ent-70132575093320" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-1035" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5862" length="5">Delhi</entity_mention>
+    </entity>
+    <entity id="ent-70132574966960" name="entity-GPE-9" type="GPE">
+      <entity_mention id="m-931" noun_type="NAM" source="52b539f29e265ef61bf418d594e3777e" offset="5463" length="2">US</entity_mention>
+    </entity>
+    <entity id="ent-70132574963620" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-1139" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="6395" length="8">Kashmiri</entity_mention>
+      <entity_mention id="m-593" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="3525" length="7">Kashmir</entity_mention>
+      <entity_mention id="m-749" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="4472" length="8">Kashmiri</entity_mention>
+      <entity_mention id="m-2220" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="4514" length="6">valley</entity_mention>
+      <entity_mention id="m-3211" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="6437" length="6">valley</entity_mention>
+    </entity>
+    <entity id="ent-70132574703620" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-2715" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="3137" length="8">the West</entity_mention>
+      <entity_mention id="m-2728" noun_type="PRO" source="52b539f29e265ef61bf418d594e3777e" offset="3160" length="4">they</entity_mention>
+      <entity_mention id="m-2845" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="4700" length="7">Western</entity_mention>
+      <entity_mention id="m-3224" noun_type="NOM" source="52b539f29e265ef61bf418d594e3777e" offset="6623" length="7">Western</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132577699700" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-40">
+        <arg type="suborg" entity_id="ent-70132573336480" entity_mention_id="m-151">pakistan armies</arg>
+        <arg type="parent" entity_id="ent-70132573738780" entity_mention_id="m-138">pakistan</arg>
+      </relation_mention>
+      <relation_mention id="relm-1324">
+        <arg type="suborg" entity_id="ent-70132573336480" entity_mention_id="m-450">pakistani army</arg>
+        <arg type="parent" entity_id="ent-70132573738780" entity_mention_id="m-437">pakistani</arg>
+      </relation_mention>
+      <relation_mention id="relm-1444">
+        <arg type="suborg" entity_id="ent-70132573336480" entity_mention_id="m-905">pakistani army</arg>
+        <arg type="parent" entity_id="ent-70132573738780" entity_mention_id="m-892">pakistani</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577699640" type="physical" subtype="origin">
+      <relation_mention id="relm-1251">
+        <arg type="entity" entity_id="ent-70132573197980" entity_mention_id="m-1286">authorities</arg>
+        <arg type="loc" entity_id="ent-70132573738780" entity_mention_id="m-398">Pakistani</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577699580" type="physical" subtype="origin">
+      <relation_mention id="relm-1294">
+        <arg type="entity" entity_id="ent-70132573197980" entity_mention_id="m-1286">authorities</arg>
+        <arg type="loc" entity_id="ent-70132574294200" entity_mention_id="m-411">Bangladeshi</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577699520" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1354">
+        <arg type="suborg" entity_id="ent-70132573468300" entity_mention_id="m-606">Indian Army</arg>
+        <arg type="parent" entity_id="ent-70132574706320" entity_mention_id="m-619">Indian</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577699460" type="physical" subtype="origin">
+      <relation_mention id="relm-1384">
+        <arg type="entity" entity_id="ent-70132577461040" entity_mention_id="m-697">Indian soldiers</arg>
+        <arg type="loc" entity_id="ent-70132574706320" entity_mention_id="m-710">Indian</arg>
+      </relation_mention>
+      <relation_mention id="relm-1517">
+        <arg type="entity" entity_id="ent-70132577461040" entity_mention_id="m-1100">Indian soldiers</arg>
+        <arg type="loc" entity_id="ent-70132574706320" entity_mention_id="m-1087">Indian</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577699380" type="physical" subtype="origin">
+      <relation_mention id="relm-1414">
+        <arg type="entity" entity_id="ent-70132575364500" entity_mention_id="m-736">Pakistani backed terrorists</arg>
+        <arg type="loc" entity_id="ent-70132573738780" entity_mention_id="m-723">Pakistani</arg>
+      </relation_mention>
+      <relation_mention id="relm-1547">
+        <arg type="entity" entity_id="ent-70132575364500" entity_mention_id="m-1126">Pakistani backed terrorists</arg>
+        <arg type="loc" entity_id="ent-70132573738780" entity_mention_id="m-1113">Pakistani</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577699300" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1487">
+        <arg type="suborg" entity_id="ent-70132573464940" entity_mention_id="m-944">US DOD</arg>
+        <arg type="parent" entity_id="ent-70132574966960" entity_mention_id="m-931">US</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577699240" type="physical" subtype="origin">
+      <relation_mention id="relm-3232">
+        <arg type="entity" entity_id="ent-70132575497920" entity_mention_id="m-1152">Kashmiri Pandits</arg>
+        <arg type="loc" entity_id="ent-70132574963620" entity_mention_id="m-1139">Kashmiri</arg>
+      </relation_mention>
+      <relation_mention id="relm-3262">
+        <arg type="entity" entity_id="ent-70132575497920" entity_mention_id="m-762">Kashmiri Pandits</arg>
+        <arg type="loc" entity_id="ent-70132574963620" entity_mention_id="m-749">Kashmiri</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132570079840" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="justice" subtype="execute">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="225" length="9">execution</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-151" entity_id="ent-70132573336480">pakistan armies</arg>
+          <arg type="person" entity_mention_id="m-164" entity_id="ent-70132577369020">millions of unarmed bangladeshis</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="52b539f29e265ef61bf418d594e3777e" offset="274" length="4">1970</date_extent>
+          <normalized_date>1970-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132570051260" name="entity-EVENT-3">
+      <event_mention id="evm-1591" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="583" length="6">murder</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-190" entity_id="ent-70132576891880">around 90,000 people</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2452" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="1445" length="6">murder</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-333" entity_id="ent-70132576891880">around 90,000 people</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1822" type="justice" subtype="execute">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="3513" length="8">murdered</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-580" entity_id="ent-70132576891880">the 90,000+ mostly innocent people</arg>
+          <arg type="agent" entity_mention_id="m-606" entity_id="ent-70132573468300">Indian Army</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-593">Kashmir</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132570049220" name="entity-EVENT-4">
+      <event_mention id="evm-2179" type="conflict" subtype="attack">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="3582" length="4">rape</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-632" entity_id="ent-70132577365800">thousands of women</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132570005340" name="entity-EVENT-6">
+      <event_mention id="evm-2137" type="conflict" subtype="attack">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="2278" length="5">raped</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-463" entity_id="ent-70132573058000">millions</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2276" type="conflict" subtype="attack">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="5193" length="5">raped</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-1479" entity_id="ent-70132573058000">millions</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132570003020" name="entity-EVENT-7">
+      <event_mention id="evm-2011" type="conflict" subtype="attack">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="3683" length="5">raped</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-645" entity_id="ent-70132577362660">many thousands Sikhs</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569999160" name="entity-EVENT-8">
+      <event_mention id="evm-1675" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="644" length="7">killing</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-203" entity_id="ent-70132577143860">over 10,000 Sikhs</arg>
+          <arg type="agent" entity_mention_id="m-216" entity_id="ent-70132575369180">mobs</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2536" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="1506" length="7">killing</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-346" entity_id="ent-70132577147280">over 10,000 Sikhs</arg>
+          <arg type="agent" entity_mention_id="m-359" entity_id="ent-70132575369180">mobs</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569944400" name="entity-EVENT-1">
+      <event_mention id="evm-1738" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="2042" length="4">dead</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-385" entity_id="ent-70132577015440">around 300,000</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2494" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="1180" length="4">dead</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-268" entity_id="ent-70132577015440">around 300,000</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-3034" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="5542" length="6">killed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-983" entity_id="ent-70132577015440">about 300,000</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569941920" name="entity-EVENT-10">
+      <event_mention id="evm-1872" type="life" subtype="injure">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="3624" length="7">torture</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1913" entity_id="ent-70132573194860">suspects</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569890340" name="entity-EVENT-5">
+      <event_mention id="evm-3170" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="6518" length="8">cleansed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1178" entity_id="ent-70132577466460">Hindus</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1165">Bangladesh</place>
+        </places>
+        <date>
+          <date_extent source="52b539f29e265ef61bf418d594e3777e" offset="6471" length="4">1971</date_extent>
+          <normalized_date>1971-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+      <event_mention id="evm-2992" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="4595" length="8">cleansed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-788" entity_id="ent-70132577466460">Hindus</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-775">Bangladesh</place>
+        </places>
+        <date>
+          <date_extent source="52b539f29e265ef61bf418d594e3777e" offset="4548" length="4">1971</date_extent>
+          <normalized_date>1971-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132569886480" name="entity-EVENT-12">
+      <event_mention id="evm-3128" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="6423" length="8">cleansed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1152" entity_id="ent-70132575497920">Kashmiri Pandits</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-3211">valley</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-2950" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="4500" length="8">cleansed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-762" entity_id="ent-70132575497920">Kashmiri Pandits</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-2220">valley</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132569884400" name="entity-EVENT-15">
+      <event_mention id="evm-1927" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="3673" length="8">murdered</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-645" entity_id="ent-70132577362660">many thousands Sikhs</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569832800" name="entity-EVENT-16">
+      <event_mention id="evm-2234" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="5180" length="8">murdered</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1479" entity_id="ent-70132573058000">millions</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1780" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="2265" length="8">murdered</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-463" entity_id="ent-70132573058000">millions</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569830580" name="entity-EVENT-17">
+      <event_mention id="evm-1969" type="life" subtype="injure">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="3693" length="8">tortured</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-645" entity_id="ent-70132577362660">many thousands Sikhs</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569828680" name="entity-EVENT-9">
+      <event_mention id="evm-2360" type="life" subtype="die">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="5852" length="6">killed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1022" entity_id="ent-70132573336860">the number of Sikhs killed in Delhi alone</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1035">Delhi</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132569775600" name="entity-EVENT-11">
+      <event_mention id="evm-2410" type="life" subtype="injure">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="1433" length="7">torture</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-333" entity_id="ent-70132576891880">around 90,000 people</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1633" type="life" subtype="injure">
+        <trigger source="52b539f29e265ef61bf418d594e3777e" offset="571" length="7">torture</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-190" entity_id="ent-70132576891880">around 90,000 people</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

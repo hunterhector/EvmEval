@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="2a54459212636289034af844f8634e37" source_type="multi_post" kit_id="5346f3680000000000000026">
+  <entities>
+    <entity id="ent-70132573470360" name="entity-PER-2" type="PER">
+      <entity_mention id="m-775" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1866" length="8">kopchoir</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="1916" length="1">i</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="2047" length="1">i</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="2142" length="3">kop</entity_mention>
+    </entity>
+    <entity id="ent-70132573607660" name="entity-PER-3" type="PER">
+      <entity_mention id="m-736" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="1762" length="1">I</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="1753" length="1">I</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1576" length="5">DD147</entity_mention>
+    </entity>
+    <entity id="ent-70132573739600" name="entity-PER-4" type="PER">
+      <entity_mention id="m-593" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="1486" length="1">i</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1287" length="6">DrWise</entity_mention>
+    </entity>
+    <entity id="ent-70132573733500" name="entity-PER-5" type="PER">
+      <entity_mention id="m-528" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1057" length="5">addyb</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="1164" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132573876320" name="entity-PER-6" type="PER">
+      <entity_mention id="m-697" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="1706" length="2">he</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1670" length="4">Pacs</entity_mention>
+      <entity_mention id="m-658" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1658" length="5">Manny</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1389" length="8">Pacquiao</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="604" length="14">Manny Pacquiao</entity_mention>
+      <entity_mention id="m-229" noun_type="NOM" source="2a54459212636289034af844f8634e37" offset="279" length="20">the Filipino fighter</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1768" length="5">Manny</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="167" length="14">Manny Pacquiao</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="1694" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132574297800" name="entity-PER-7" type="PER">
+      <entity_mention id="m-502" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="827" length="1">i</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="519" length="1">I</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="464" length="1">I</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="442" length="1">I</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="422" length="1">I</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="14" length="6">DrWise</entity_mention>
+    </entity>
+    <entity id="ent-70132574421920" name="entity-PER-8" type="PER">
+      <entity_mention id="m-762" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1821" length="7">Marquez</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1517" length="7">marquez</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1171" length="7">marquez</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="745" length="7">marquez</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="835" length="7">marquez</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="661" length="2">my</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="652" length="1">I</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="642" length="1">I</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="593" length="1">I</entity_mention>
+      <entity_mention id="m-385" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="557" length="7">Marquez</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="356" length="2">he</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="239" length="7">Marquez</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="262" length="3">his</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="144" length="3">his</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="2a54459212636289034af844f8634e37" offset="122" length="2">he</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="62" length="19">Juan Manuel Marquez</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="337" length="7">Mexican</entity_mention>
+    </entity>
+    <entity id="ent-70132575094660" name="entity-PER-9" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="2a54459212636289034af844f8634e37" offset="383" length="8">the pair</entity_mention>
+    </entity>
+    <entity id="ent-70132575100080" name="entity-PER-10" type="PER">
+      <entity_mention id="m-632" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1623" length="5">Arums</entity_mention>
+    </entity>
+    <entity id="ent-70132575096640" name="entity-PER-11" type="PER">
+      <entity_mention id="m-645" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1650" length="4">Diaz</entity_mention>
+    </entity>
+    <entity id="ent-70132574969780" name="entity-PER-12" type="PER">
+      <entity_mention id="m-801" noun_type="NOM" source="2a54459212636289034af844f8634e37" offset="1998" length="8">the kids</entity_mention>
+    </entity>
+    <entity id="ent-70132574966440" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-827" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="2112" length="3">sky</entity_mention>
+    </entity>
+    <entity id="ent-70132574963080" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-190" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="198" length="3">WBC</entity_mention>
+    </entity>
+    <entity id="ent-70132574836700" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-307" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="404" length="9">Las Vegas</entity_mention>
+    </entity>
+    <entity id="ent-70132574833440" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-242" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="283" length="8">Filipino</entity_mention>
+    </entity>
+    <entity id="ent-70132574707180" name="entity-GPE-1" type="GPE">
+      <entity_mention id="m-710" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="1727" length="6">states</entity_mention>
+    </entity>
+    <entity id="ent-70132574703900" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-489" noun_type="NOM" source="2a54459212636289034af844f8634e37" offset="773" length="9">the floor</entity_mention>
+    </entity>
+    <entity id="ent-70132574700440" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-255" noun_type="NAM" source="2a54459212636289034af844f8634e37" offset="303" length="12">Mandalay Bay</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132574014420" type="physical" subtype="origin">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132573876320" entity_mention_id="m-229">the Filipino fighter</arg>
+        <arg type="loc" entity_id="ent-70132574833440" entity_mention_id="m-242">Filipino</arg>
+        <trigger source="2a54459212636289034af844f8634e37" offset="283" length="8">Filipino</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574014360" type="physical" subtype="located">
+      <relation_mention id="relm-1016">
+        <arg type="entity" entity_id="ent-70132574421920" entity_mention_id="m-476">marquez</arg>
+        <arg type="loc" entity_id="ent-70132574703900" entity_mention_id="m-489">the floor</arg>
+        <trigger source="2a54459212636289034af844f8634e37" offset="770" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574014300" type="physical" subtype="located">
+      <relation_mention id="relm-1046">
+        <arg type="entity" entity_id="ent-70132573876320" entity_mention_id="m-697">he</arg>
+        <arg type="loc" entity_id="ent-70132574707180" entity_mention_id="m-710">states</arg>
+        <trigger source="2a54459212636289034af844f8634e37" offset="1720" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132577699660" name="entity-EVENT-3">
+      <event_mention id="evm-980" type="conflict" subtype="attack">
+        <trigger source="2a54459212636289034af844f8634e37" offset="864" length="5">fight</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-515" entity_id="ent-70132574421920">marquez</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-938" type="conflict" subtype="attack">
+        <trigger source="2a54459212636289034af844f8634e37" offset="717" length="5">fight</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-476" entity_id="ent-70132574421920">marquez</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-896" type="conflict" subtype="attack">
+        <trigger source="2a54459212636289034af844f8634e37" offset="685" length="5">fight</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-463" entity_id="ent-70132574421920">my</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-854" type="conflict" subtype="attack">
+        <trigger source="2a54459212636289034af844f8634e37" offset="587" length="5">fight</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-424" entity_id="ent-70132573876320">Manny Pacquiao</arg>
+          <arg type="attacker" entity_mention_id="m-411" entity_id="ent-70132574421920">I</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-84" type="conflict" subtype="attack">
+        <trigger source="2a54459212636289034af844f8634e37" offset="154" length="4">bout</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-177" entity_id="ent-70132573876320">Manny Pacquiao</arg>
+          <arg type="attacker" entity_mention_id="m-164" entity_id="ent-70132574421920">his</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132577698540" name="entity-EVENT-1">
+      <event_mention id="evm-1082" type="movement" subtype="transportperson">
+        <trigger source="2a54459212636289034af844f8634e37" offset="1715" length="4">went</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-697" entity_id="ent-70132573876320">he</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-710">states</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

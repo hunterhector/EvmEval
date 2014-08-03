@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="ec29ffe8fef56a4823f9697834b6ef1e" source_type="multi_post" kit_id="5346f3680000000000000074">
+  <entities>
+    <entity id="ent-70132571472780" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="14" length="8">KaseiJin</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="76" length="1">I</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="962" length="1">I</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2533" length="2">KJ</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2540" length="3">you</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2656" length="3">you</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2678" length="4">your</entity_mention>
+    </entity>
+    <entity id="ent-70132571412040" name="entity-PER-3" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="66" length="7">William</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="94" length="3">you</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="136" length="7">william</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="861" length="7">William</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="993" length="3">you</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="1055" length="4">your</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2523" length="7">William</entity_mention>
+    </entity>
+    <entity id="ent-70132571339900" name="entity-PER-4" type="PER">
+      <entity_mention id="m-255" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2473" length="6">salima</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2627" length="1">i</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2779" length="1">i</entity_mention>
+    </entity>
+    <entity id="ent-70132571299500" name="entity-PER-5" type="PER">
+      <entity_mention id="m-307" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2555" length="13">thomas beatie</entity_mention>
+      <entity_mention id="m-320" noun_type="NOM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2570" length="55">the transgender man who has given birth to two children</entity_mention>
+    </entity>
+    <entity id="ent-70132571292440" name="entity-PER-6" type="PER">
+      <entity_mention id="m-333" noun_type="NOM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2613" length="12">two children</entity_mention>
+    </entity>
+    <entity id="ent-70132571264460" name="entity-PER-7" type="PER">
+      <entity_mention id="m-398" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2796" length="12">david reimer</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2813" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132570250820" name="entity-PER-8" type="PER">
+      <entity_mention id="m-424" noun_type="NAM" source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2881" length="14">john colapinto</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132570166600" type="social" subtype="family">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132571299500" entity_mention_id="m-320">the transgender man who has given birth to two children</arg>
+        <arg type="per" entity_id="ent-70132571292440" entity_mention_id="m-333">two children</arg>
+        <trigger source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2617" length="8">children</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132570003840" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="beborn">
+        <trigger source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2604" length="5">birth</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-333" entity_id="ent-70132571292440">two children</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132570001400" name="entity-EVENT-3">
+      <event_mention id="evm-438" type="life" subtype="die">
+        <trigger source="ec29ffe8fef56a4823f9697834b6ef1e" offset="2826" length="7">suicide</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-411" entity_id="ent-70132571264460">he</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

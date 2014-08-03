@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="4743a10c1d5f1ad35c31646049acb9db" source_type="multi_post" kit_id="536888770000000000000001">
+  <entities>
+    <entity id="ent-70132571541960" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="86" length="10">slingblade</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="355" length="1">I</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="394" length="1">I</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="429" length="1">I</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="688" length="1">I</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="940" length="10">slingblade</entity_mention>
+      <entity_mention id="m-1568" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5285" length="10">slingblade</entity_mention>
+    </entity>
+    <entity id="ent-70132571516440" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="14" length="8">halides1</entity_mention>
+      <entity_mention id="m-1555" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5274" length="8">halides1</entity_mention>
+      <entity_mention id="m-320" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1387" length="8">halides1</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="1538" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="2540" length="3">MOO</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="2743" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571501580" name="entity-PER-4" type="PER">
+      <entity_mention id="m-190" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="856" length="2">he</entity_mention>
+      <entity_mention id="m-554" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2564" length="7">the man</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="2588" length="2">he</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3005" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3079" length="2">he</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3092" length="7">himself</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3152" length="3">his</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3302" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3377" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3425" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3548" length="3">him</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3552" length="2">he</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3598" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3651" length="2">he</entity_mention>
+      <entity_mention id="m-1048" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3682" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1100" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3865" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1139" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3941" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3956" length="3">his</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4096" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1230" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4130" length="3">him</entity_mention>
+      <entity_mention id="m-1347" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4376" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4407" length="2">he</entity_mention>
+      <entity_mention id="m-1451" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4740" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4753" length="3">his</entity_mention>
+      <entity_mention id="m-1490" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4881" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1503" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4985" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1646" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5665" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1659" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="5691" length="3">his</entity_mention>
+      <entity_mention id="m-1698" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="5855" length="2">He</entity_mention>
+      <entity_mention id="m-1711" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="5863" length="2">he</entity_mention>
+      <entity_mention id="m-1737" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="5918" length="2">he</entity_mention>
+      <entity_mention id="m-1750" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="5932" length="2">he</entity_mention>
+      <entity_mention id="m-1763" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="5947" length="2">he</entity_mention>
+      <entity_mention id="m-1776" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="5955" length="2">he</entity_mention>
+      <entity_mention id="m-1789" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="6027" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132570249380" name="entity-PER-5" type="PER">
+      <entity_mention id="m-216" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="974" length="10">The author</entity_mention>
+      <entity_mention id="m-1581" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5319" length="10">The author</entity_mention>
+    </entity>
+    <entity id="ent-70132570223680" name="entity-PER-6" type="PER">
+      <entity_mention id="m-229" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1043" length="9">Geiselman</entity_mention>
+      <entity_mention id="m-1594" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5388" length="9">Geiselman</entity_mention>
+    </entity>
+    <entity id="ent-70132570175240" name="entity-PER-7" type="PER">
+      <entity_mention id="m-255" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1061" length="10">Paul Ekman</entity_mention>
+      <entity_mention id="m-294" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1179" length="5">Ekman</entity_mention>
+      <entity_mention id="m-268" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1073" length="83">another researcher who has devoted his career to identifying the signs of deception</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="1108" length="3">his</entity_mention>
+      <entity_mention id="m-1620" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5406" length="10">Paul Ekman</entity_mention>
+      <entity_mention id="m-1633" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5439" length="5">Ekman</entity_mention>
+    </entity>
+    <entity id="ent-70132570148780" name="entity-PER-8" type="PER">
+      <entity_mention id="m-307" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1315" length="8">stilicho</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3189" length="8">stilicho</entity_mention>
+      <entity_mention id="m-1438" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4666" length="3">IMO</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4768" length="1">I</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="5063" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132570052860" name="entity-PER-9" type="PER">
+      <entity_mention id="m-333" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1398" length="14">Skeptical Greg</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="2240" length="3">You</entity_mention>
+    </entity>
+    <entity id="ent-70132570000700" name="entity-PER-10" type="PER">
+      <entity_mention id="m-346" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1419" length="14">Knox/Sollecito</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2407" length="14">Knox/Sollecito</entity_mention>
+    </entity>
+    <entity id="ent-70132569890480" name="entity-PER-11" type="PER">
+      <entity_mention id="m-372" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1585" length="4">Knox</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2697" length="4">Knox</entity_mention>
+    </entity>
+    <entity id="ent-70132569830600" name="entity-PER-12" type="PER">
+      <entity_mention id="m-385" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1594" length="9">Sollecito</entity_mention>
+    </entity>
+    <entity id="ent-70132569774200" name="entity-PER-13" type="PER">
+      <entity_mention id="m-398" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1654" length="6">police</entity_mention>
+    </entity>
+    <entity id="ent-70132569768200" name="entity-PER-14" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1665" length="11">prosecutors</entity_mention>
+    </entity>
+    <entity id="ent-70132569686520" name="entity-PER-15" type="PER">
+      <entity_mention id="m-424" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1726" length="20">the three defendants</entity_mention>
+    </entity>
+    <entity id="ent-70132569674000" name="entity-PER-16" type="PER">
+      <entity_mention id="m-450" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2108" length="8">McQueary</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="2156" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132569618140" name="entity-PER-17" type="PER">
+      <entity_mention id="m-476" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2196" length="12">the Governor</entity_mention>
+      <entity_mention id="m-645" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2755" length="7">the Gov</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="2786" length="2">He</entity_mention>
+      <entity_mention id="m-671" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2791" length="76">one of the trustees who is absolutely responsible for the mess at Penn State</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="2869" length="2">He</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="2886" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132569418160" name="entity-PER-18" type="PER">
+      <entity_mention id="m-606" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2705" length="28">liar what's-her-face at Duke</entity_mention>
+    </entity>
+    <entity id="ent-70132569395660" name="entity-PER-19" type="PER">
+      <entity_mention id="m-723" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2970" length="29">the Penn State administration</entity_mention>
+    </entity>
+    <entity id="ent-70132569373060" name="entity-PER-20" type="PER">
+      <entity_mention id="m-814" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3261" length="10">Number Six</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3274" length="1">I</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3339" length="1">I</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3664" length="1">I</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3895" length="1">I</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4047" length="1">I</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4144" length="1">I</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4341" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132569173040" name="entity-PER-21" type="PER">
+      <entity_mention id="m-840" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3290" length="7">Paterno</entity_mention>
+      <entity_mention id="m-957" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3535" length="7">Paterno</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3710" length="7">Paterno</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3826" length="7">Paterno</entity_mention>
+      <entity_mention id="m-1126" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3911" length="7">Paterno</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3973" length="2">he</entity_mention>
+      <entity_mention id="m-1191" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4084" length="3">him</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4115" length="2">he</entity_mention>
+      <entity_mention id="m-1386" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4416" length="7">Paterno</entity_mention>
+    </entity>
+    <entity id="ent-70132568781500" name="entity-PER-22" type="PER">
+      <entity_mention id="m-905" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3402" length="4">they</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="3784" length="4">they</entity_mention>
+      <entity_mention id="m-1399" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4462" length="81">guys that didn't get along personally but who tolerated each other professionally</entity_mention>
+    </entity>
+    <entity id="ent-70132568761300" name="entity-PER-23" type="PER">
+      <entity_mention id="m-931" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3511" length="18">one of the victims</entity_mention>
+    </entity>
+    <entity id="ent-70132568756860" name="entity-PER-24" type="PER">
+      <entity_mention id="m-944" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3518" length="11">the victims</entity_mention>
+    </entity>
+    <entity id="ent-70132568752260" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1269" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4181" length="101">a guy that was an assistant coach at PSU in the 1980s and a victim of sexual abuse himself as a child</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4264" length="7">himself</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4363" length="2">he</entity_mention>
+      <entity_mention id="m-1360" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4398" length="3">him</entity_mention>
+    </entity>
+    <entity id="ent-70132568728640" name="entity-PER-26" type="PER">
+      <entity_mention id="m-1412" noun_type="PRO" source="4743a10c1d5f1ad35c31646049acb9db" offset="4518" length="10">each other</entity_mention>
+    </entity>
+    <entity id="ent-70132568716260" name="entity-PER-27" type="PER">
+      <entity_mention id="m-1529" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5110" length="14">Theoren Fleury</entity_mention>
+    </entity>
+    <entity id="ent-70132568702340" name="entity-PER-28" type="PER">
+      <entity_mention id="m-1542" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5204" length="6">Resume</entity_mention>
+    </entity>
+    <entity id="ent-70132568696760" name="entity-PER-29" type="PER">
+      <entity_mention id="m-1672" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5730" length="9">Checkmite</entity_mention>
+    </entity>
+    <entity id="ent-70132568692580" name="entity-PER-30" type="PER">
+      <entity_mention id="m-1685" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5803" length="17">Schrodinger's Cat</entity_mention>
+    </entity>
+    <entity id="ent-70132568689060" name="entity-PER-31" type="PER">
+      <entity_mention id="m-1724" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="5890" length="7">the kid</entity_mention>
+    </entity>
+    <entity id="ent-70132568670980" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-437" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="1754" length="4">Duke</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2363" length="2">DL</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2729" length="4">Duke</entity_mention>
+    </entity>
+    <entity id="ent-70132568616640" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-684" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2857" length="10">Penn State</entity_mention>
+      <entity_mention id="m-736" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2974" length="10">Penn State</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3391" length="10">Penn State</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="3590" length="3">PSU</entity_mention>
+      <entity_mention id="m-1282" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4218" length="3">PSU</entity_mention>
+      <entity_mention id="m-1308" noun_type="NAM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4313" length="3">PSU</entity_mention>
+    </entity>
+    <entity id="ent-70132568548840" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-1425" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="4568" length="20">the football program</entity_mention>
+    </entity>
+    <entity id="ent-70132568468340" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-580" noun_type="NOM" source="4743a10c1d5f1ad35c31646049acb9db" offset="2632" length="10">the shower</entity_mention>
+    </entity>
+    <entity id="ent-70132568453920" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-242" noun_type="NA" source="4743a10c1d5f1ad35c31646049acb9db" offset="1057" length="3">Dr.</entity_mention>
+      <entity_mention id="m-1607" noun_type="NA" source="4743a10c1d5f1ad35c31646049acb9db" offset="5402" length="3">Dr.</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132567390180" type="social" subtype="role">
+      <relation_mention id="relm-40">
+        <arg type="role" entity_id="ent-70132568453920" entity_mention_id="m-242">Dr.</arg>
+        <arg type="per" entity_id="ent-70132570175240" entity_mention_id="m-255">Paul Ekman</arg>
+      </relation_mention>
+      <relation_mention id="relm-1977">
+        <arg type="role" entity_id="ent-70132568453920" entity_mention_id="m-1607">Dr.</arg>
+        <arg type="per" entity_id="ent-70132570175240" entity_mention_id="m-1620">Paul Ekman</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567390120" type="physical" subtype="located">
+      <relation_mention id="relm-1797">
+        <arg type="entity" entity_id="ent-70132571501580" entity_mention_id="m-567">he</arg>
+        <arg type="loc" entity_id="ent-70132568468340" entity_mention_id="m-580">the shower</arg>
+        <trigger source="4743a10c1d5f1ad35c31646049acb9db" offset="2629" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567390040" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1857">
+        <arg type="employeemember" entity_id="ent-70132569618140" entity_mention_id="m-671">one of the trustees who is absolutely responsible for the mess at Penn State</arg>
+        <arg type="org" entity_id="ent-70132568616640" entity_mention_id="m-684">Penn State</arg>
+        <trigger source="4743a10c1d5f1ad35c31646049acb9db" offset="2802" length="8">trustees</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567389920" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1887">
+        <arg type="employeemember" entity_id="ent-70132569395660" entity_mention_id="m-723">the Penn State administration</arg>
+        <arg type="org" entity_id="ent-70132568616640" entity_mention_id="m-736">Penn State</arg>
+        <trigger source="4743a10c1d5f1ad35c31646049acb9db" offset="2985" length="14">administration</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567389840" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1917">
+        <arg type="employeemember" entity_id="ent-70132571501580" entity_mention_id="m-879">Sandusky</arg>
+        <arg type="org" entity_id="ent-70132568616640" entity_mention_id="m-892">Penn State</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567389760" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1947">
+        <arg type="employeemember" entity_id="ent-70132568752260" entity_mention_id="m-1269">a guy that was an assistant coach at PSU in the 1980s and a victim of sexual abuse himself as a child</arg>
+        <arg type="org" entity_id="ent-70132568616640" entity_mention_id="m-1282">PSU</arg>
+        <trigger source="4743a10c1d5f1ad35c31646049acb9db" offset="4199" length="15">assistant coach</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132575768040" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="personnel" subtype="endposition">
+        <trigger source="4743a10c1d5f1ad35c31646049acb9db" offset="3386" length="4">left</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-879" entity_id="ent-70132571501580">Sandusky</arg>
+          <arg type="entity" entity_mention_id="m-892" entity_id="ent-70132568616640">Penn State</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2021" type="personnel" subtype="endposition">
+        <trigger source="4743a10c1d5f1ad35c31646049acb9db" offset="3654" length="7">retired</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1022" entity_id="ent-70132571501580">he</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2063" type="personnel" subtype="endposition">
+        <trigger source="4743a10c1d5f1ad35c31646049acb9db" offset="3693" length="10">retirement</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1048" entity_id="ent-70132571501580">Sandusky</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132575766940" name="entity-EVENT-3">
+      <event_mention id="evm-2105" type="conflict" subtype="attack">
+        <trigger source="4743a10c1d5f1ad35c31646049acb9db" offset="4251" length="12">sexual abuse</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-1295" entity_id="ent-70132568752260">himself</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

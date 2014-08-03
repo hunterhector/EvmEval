@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="3eb834d9a5d9c9fcad258087b5c2794a" source_type="multi_post" kit_id="536493f70000000000000010">
+  <entities>
+    <entity id="ent-70132574011800" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="14" length="8">aeroegnr</entity_mention>
+      <entity_mention id="m-125" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="65" length="1">I</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="88" length="2">my</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="144" length="1">I</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="167" length="2">my</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="765" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="966" length="1">I</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3435" length="8">aeroegnr</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3446" length="1">I</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3469" length="2">my</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3582" length="1">I</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3605" length="2">my</entity_mention>
+    </entity>
+    <entity id="ent-70132573339440" name="entity-PER-3" type="PER">
+      <entity_mention id="m-138" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="88" length="7">my kids</entity_mention>
+      <entity_mention id="m-177" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="167" length="7">my kids</entity_mention>
+      <entity_mention id="m-723" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3469" length="7">my kids</entity_mention>
+      <entity_mention id="m-775" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3605" length="7">my kids</entity_mention>
+    </entity>
+    <entity id="ent-70132573195960" name="entity-PER-4" type="PER">
+      <entity_mention id="m-203" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="342" length="12">russ_watters</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="613" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132573058620" name="entity-PER-5" type="PER">
+      <entity_mention id="m-567" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3072" length="16">Averagesupernova</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3091" length="1">I</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3147" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132572927880" name="entity-PER-6" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3007" length="2">EL</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3184" length="4">Your</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3223" length="4">your</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3253" length="2">me</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3309" length="2">me</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3370" length="2">EL</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3552" length="1">I</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3773" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577806140" name="entity-PER-7" type="PER">
+      <entity_mention id="m-333" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1804" length="37">Jean Francois Revel, Anti-Americanism</entity_mention>
+    </entity>
+    <entity id="ent-70132577705120" name="entity-PER-8" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2075" length="25">one to two million people</entity_mention>
+    </entity>
+    <entity id="ent-70132577701800" name="entity-PER-9" type="PER">
+      <entity_mention id="m-424" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2144" length="34">a population of twenty-two million</entity_mention>
+    </entity>
+    <entity id="ent-70132577698300" name="entity-PER-10" type="PER">
+      <entity_mention id="m-593" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3129" length="10">the poster</entity_mention>
+    </entity>
+    <entity id="ent-70132577466060" name="entity-PER-11" type="PER">
+      <entity_mention id="m-619" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3155" length="27">the one who picked it apart</entity_mention>
+    </entity>
+    <entity id="ent-70132577462640" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-294" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1525" length="15">your government</entity_mention>
+    </entity>
+    <entity id="ent-70132577369880" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-463" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2437" length="4">E.U.</entity_mention>
+    </entity>
+    <entity id="ent-70132577366500" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-255" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1078" length="14">their military</entity_mention>
+      <entity_mention id="m-528" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2789" length="12">The military</entity_mention>
+      <entity_mention id="m-904" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2658" length="21">the regime's military</entity_mention>
+    </entity>
+    <entity id="ent-70132575498760" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-476" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2658" length="10">the regime</entity_mention>
+    </entity>
+    <entity id="ent-70132575495420" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-281" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1204" length="7">England</entity_mention>
+    </entity>
+    <entity id="ent-70132575370020" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-307" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1639" length="11">North Korea</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1923" length="11">North Korea</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2727" length="11">North Korea</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2972" length="11">North Korea</entity_mention>
+      <entity_mention id="m-372" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1938" length="26">one of the weakest nations</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1078" length="5">their</entity_mention>
+      <entity_mention id="m-437" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2320" length="11">the country</entity_mention>
+      <entity_mention id="m-320" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1664" length="11">the country</entity_mention>
+    </entity>
+    <entity id="ent-70132577012040" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-346" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1873" length="15">Soviet-supplied</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2771" length="6">Russia</entity_mention>
+    </entity>
+    <entity id="ent-70132576891820" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-450" noun_type="NAM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2376" length="10">Washington</entity_mention>
+    </entity>
+    <entity id="ent-70132576888300" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-385" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1945" length="19">the weakest nations</entity_mention>
+    </entity>
+    <entity id="ent-70132576770100" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-398" noun_type="NOM" source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1968" length="9">the world</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132575906800" type="social" subtype="family">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132573339440" entity_mention_id="m-138">my kids</arg>
+        <arg type="per" entity_id="ent-70132574011800" entity_mention_id="m-151">my</arg>
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="91" length="4">kids</trigger>
+      </relation_mention>
+      <relation_mention id="relm-972">
+        <arg type="per" entity_id="ent-70132573339440" entity_mention_id="m-723">my kids</arg>
+        <arg type="per" entity_id="ent-70132574011800" entity_mention_id="m-736">my</arg>
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3472" length="4">kids</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575906740" type="social" subtype="family">
+      <relation_mention id="relm-809">
+        <arg type="per" entity_id="ent-70132574011800" entity_mention_id="m-190">my</arg>
+        <arg type="per" entity_id="ent-70132573339440" entity_mention_id="m-177">my kids</arg>
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="170" length="4">kids</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1002">
+        <arg type="per" entity_id="ent-70132574011800" entity_mention_id="m-788">my</arg>
+        <arg type="per" entity_id="ent-70132573339440" entity_mention_id="m-775">my kids</arg>
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="3608" length="4">kids</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575906660" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-839">
+        <arg type="suborg" entity_id="ent-70132577366500" entity_mention_id="m-255">their military</arg>
+        <arg type="parent" entity_id="ent-70132575370020" entity_mention_id="m-268">their</arg>
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1084" length="8">military</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575906540" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-869">
+        <arg type="suborg" entity_id="ent-70132577366500" entity_mention_id="m-904">the regime's military</arg>
+        <arg type="parent" entity_id="ent-70132575498760" entity_mention_id="m-476">the regime</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575906480" type="physical" subtype="located">
+      <relation_mention id="relm-912">
+        <arg type="entity" entity_id="ent-70132575370020" entity_mention_id="m-372">one of the weakest nations</arg>
+        <arg type="loc" entity_id="ent-70132576770100" entity_mention_id="m-398">the world</arg>
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1965" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575906380" type="physical" subtype="located">
+      <relation_mention id="relm-942">
+        <arg type="entity" entity_id="ent-70132576888300" entity_mention_id="m-385">the weakest nations</arg>
+        <arg type="loc" entity_id="ent-70132576770100" entity_mention_id="m-398">the world</arg>
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="1965" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132572649280" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="die">
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2106" length="4">died</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-411" entity_id="ent-70132577705120">one to two million people</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-359">North Korea</place>
+        </places>
+        <date>
+          <date_extent source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2125" length="10">since 1990</date_extent>
+          <normalized_date>199X-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132572648060" name="entity-EVENT-3">
+      <event_mention id="evm-1088" type="transaction" subtype="transfermoney">
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2446" length="5">spent</trigger>
+        <args>
+          <arg type="giver" entity_mention_id="m-463" entity_id="ent-70132577369880">E.U.</arg>
+          <arg type="beneficiary" entity_mention_id="m-437" entity_id="ent-70132575370020">the country</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-437">the country</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132572646640" name="entity-EVENT-4">
+      <event_mention id="evm-1138" type="transaction" subtype="transferownership">
+        <trigger source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2739" length="9">purchased</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-515" entity_id="ent-70132577012040">Russia</arg>
+          <arg type="buyer" entity_mention_id="m-502" entity_id="ent-70132575370020">North Korea</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="3eb834d9a5d9c9fcad258087b5c2794a" offset="2692" length="4">1994</date_extent>
+          <normalized_date>1994-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

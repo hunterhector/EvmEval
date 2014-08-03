@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="648fc5834f73b4196b4ceb3daad954f9" source_type="multi_post" kit_id="533486f60000000000000064">
+  <entities>
+    <entity id="ent-70132568699620" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="14" length="12">pelastration</entity_mention>
+      <entity_mention id="m-814" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3607" length="12">Pelastration</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3918" length="12">pelastration</entity_mention>
+      <entity_mention id="m-1035" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4036" length="12">Pelastration</entity_mention>
+      <entity_mention id="m-1334" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="5047" length="12">pelastration</entity_mention>
+      <entity_mention id="m-1217" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4548" length="12">pelastration</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3586" length="3">you</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3594" length="4">your</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3648" length="3">you</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3661" length="4">your</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3792" length="3">you</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3838" length="4">your</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4015" length="3">you</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4023" length="4">your</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4077" length="3">you</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4090" length="4">your</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4221" length="3">you</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4267" length="4">your</entity_mention>
+    </entity>
+    <entity id="ent-70132567509900" name="entity-PER-3" type="PER">
+      <entity_mention id="m-775" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3524" length="14">Robert Zaleski</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3992" length="14">Robert Zaleski</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4335" length="6">Robert</entity_mention>
+      <entity_mention id="m-1230" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4563" length="6">Robert</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3769" length="1">I</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4198" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132567474820" name="entity-PER-4" type="PER">
+      <entity_mention id="m-125" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="108" length="48">a majority of the respondents to the Gallup poll</entity_mention>
+    </entity>
+    <entity id="ent-70132567467000" name="entity-PER-5" type="PER">
+      <entity_mention id="m-164" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="228" length="10">44 percent</entity_mention>
+      <entity_mention id="m-138" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="159" length="10">54 percent</entity_mention>
+    </entity>
+    <entity id="ent-70132567451800" name="entity-PER-6" type="PER">
+      <entity_mention id="m-177" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="308" length="23">29 percent of Americans</entity_mention>
+    </entity>
+    <entity id="ent-70132567443500" name="entity-PER-7" type="PER">
+      <entity_mention id="m-203" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="369" length="10">68 percent</entity_mention>
+    </entity>
+    <entity id="ent-70132567435660" name="entity-PER-8" type="PER">
+      <entity_mention id="m-320" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1260" length="4">Bush</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1551" length="4">Bush</entity_mention>
+      <entity_mention id="m-411" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1707" length="4">Bush</entity_mention>
+      <entity_mention id="m-1360" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="1561" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132567392440" name="entity-PER-9" type="PER">
+      <entity_mention id="m-619" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2653" length="13">Larry Lindsey</entity_mention>
+    </entity>
+    <entity id="ent-70132567385760" name="entity-PER-10" type="PER">
+      <entity_mention id="m-723" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3373" length="9">phatmonky</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4477" length="9">phatmonky</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3424" length="1">I</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4797" length="1">I</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4933" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577596420" name="entity-PER-11" type="PER">
+      <entity_mention id="m-1321" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4980" length="5">motai</entity_mention>
+    </entity>
+    <entity id="ent-70132577593280" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1269" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4870" length="6">Iraqis</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="4920" length="3">own</entity_mention>
+    </entity>
+    <entity id="ent-70132577268040" name="entity-PER-13" type="PER">
+      <entity_mention id="m-515" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2198" length="13">the taxpayers</entity_mention>
+    </entity>
+    <entity id="ent-70132577264980" name="entity-PER-14" type="PER">
+      <entity_mention id="m-281" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1098" length="9">lawmakers</entity_mention>
+    </entity>
+    <entity id="ent-70132576516460" name="entity-PER-15" type="PER">
+      <entity_mention id="m-190" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="322" length="9">Americans</entity_mention>
+    </entity>
+    <entity id="ent-70132576513200" name="entity-PER-17" type="PER">
+      <entity_mention id="m-671" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="2884" length="3">you</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="2947" length="3">you</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3060" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576267380" name="entity-PER-18" type="PER">
+      <entity_mention id="m-710" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3231" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576042880" name="entity-PER-19" type="PER">
+      <entity_mention id="m-1256" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4728" length="14">those in power</entity_mention>
+    </entity>
+    <entity id="ent-70132576039600" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-268" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1016" length="8">Congress</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1371" length="8">Congress</entity_mention>
+      <entity_mention id="m-372" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1460" length="8">Congress</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1894" length="8">Congress</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="1491" length="3">its</entity_mention>
+    </entity>
+    <entity id="ent-70132571807360" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-866" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3689" length="26">Department of the Treasury</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4118" length="26">Department of the Treasury</entity_mention>
+    </entity>
+    <entity id="ent-70132571765640" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-632" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2684" length="11">White House</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="955" length="2">it</entity_mention>
+      <entity_mention id="m-216" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="777" length="11">White House</entity_mention>
+    </entity>
+    <entity id="ent-70132571702820" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-567" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2416" length="32">the new interim Iraqi government</entity_mention>
+    </entity>
+    <entity id="ent-70132571641900" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-1373" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="1736" length="2">it</entity_mention>
+      <entity_mention id="m-762" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3466" length="20">our whole government</entity_mention>
+      <entity_mention id="m-424" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1703" length="23">The Bush administration</entity_mention>
+    </entity>
+    <entity id="ent-70132571589460" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-229" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="841" length="8">military</entity_mention>
+    </entity>
+    <entity id="ent-70132571585600" name="entity-ORG-1" type="ORG">
+      <entity_mention id="m-307" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1179" length="8">the Army</entity_mention>
+    </entity>
+    <entity id="ent-70132571582140" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-151" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="187" length="4">Iraq</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="864" length="4">Iraq</entity_mention>
+      <entity_mention id="m-333" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1340" length="4">Iraq</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1929" length="4">Iraq</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2060" length="5">Iraqi</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2118" length="4">Iraq</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2213" length="4">Iraq</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2432" length="5">Iraqi</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2562" length="4">Iraq</entity_mention>
+      <entity_mention id="m-658" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2756" length="4">Iraq</entity_mention>
+      <entity_mention id="m-1295" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4914" length="17">their own country</entity_mention>
+      <entity_mention id="m-1399" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2929" length="5">Iraqi</entity_mention>
+    </entity>
+    <entity id="ent-70132571533620" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-1100" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4173" length="17">Washington, D. C.</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3744" length="17">Washington, D. C.</entity_mention>
+    </entity>
+    <entity id="ent-70132571519660" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-255" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="873" length="11">Afghanistan</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1349" length="11">Afghanistan</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="1938" length="11">Afghanistan</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2571" length="11">Afghanistan</entity_mention>
+    </entity>
+    <entity id="ent-70132571508440" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-853" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3683" length="5">U. S.</entity_mention>
+      <entity_mention id="m-931" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3814" length="3">USA</entity_mention>
+      <entity_mention id="m-1074" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4112" length="5">U. S.</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4243" length="3">USA</entity_mention>
+      <entity_mention id="m-476" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2017" length="10">The nation</entity_mention>
+      <entity_mention id="m-1386" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2905" length="8">American</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="2478" length="2">we</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="648fc5834f73b4196b4ceb3daad954f9" offset="3466" length="3">our</entity_mention>
+    </entity>
+    <entity id="ent-70132571479380" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-944" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3838" length="31">your postage stamp size country</entity_mention>
+      <entity_mention id="m-1178" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4267" length="31">your postage stamp size country</entity_mention>
+    </entity>
+    <entity id="ent-70132571472960" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-541" noun_type="NOM" source="648fc5834f73b4196b4ceb3daad954f9" offset="2314" length="14">the oil fields</entity_mention>
+    </entity>
+    <entity id="ent-70132571461860" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-1113" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="4145" length="27">1500 Pennslvania Avenue, NW</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="648fc5834f73b4196b4ceb3daad954f9" offset="3716" length="27">1500 Pennslvania Avenue, NW</entity_mention>
+    </entity>
+    <entity id="ent-70132571455680" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-645" noun_type="NA" source="648fc5834f73b4196b4ceb3daad954f9" offset="2696" length="16">economic adviser</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132569672080" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1407">
+        <arg type="leader" entity_id="ent-70132567435660" entity_mention_id="m-411">Bush</arg>
+        <arg type="entity" entity_id="ent-70132571641900" entity_mention_id="m-424">The Bush administration</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569672000" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1437">
+        <arg type="suborg" entity_id="ent-70132571702820" entity_mention_id="m-567">the new interim Iraqi government</arg>
+        <arg type="parent" entity_id="ent-70132571582140" entity_mention_id="m-554">Iraqi</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569671800" type="social" subtype="role">
+      <relation_mention id="relm-1467">
+        <arg type="role" entity_id="ent-70132571455680" entity_mention_id="m-645">economic adviser</arg>
+        <arg type="per" entity_id="ent-70132567392440" entity_mention_id="m-619">Larry Lindsey</arg>
+        <trigger source="648fc5834f73b4196b4ceb3daad954f9" offset="2681" length="2">as</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569671600" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1497">
+        <arg type="employeemember" entity_id="ent-70132567392440" entity_mention_id="m-619">Larry Lindsey</arg>
+        <arg type="org" entity_id="ent-70132571765640" entity_mention_id="m-632">White House</arg>
+        <trigger source="648fc5834f73b4196b4ceb3daad954f9" offset="2696" length="16">economic adviser</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569671380" type="physical" subtype="origin">
+      <relation_mention id="relm-1527">
+        <arg type="entity" entity_id="ent-70132571807360" entity_mention_id="m-866">Department of the Treasury</arg>
+        <arg type="loc" entity_id="ent-70132571461860" entity_mention_id="m-892">1500 Pennslvania Avenue, NW</arg>
+      </relation_mention>
+      <relation_mention id="relm-1647">
+        <arg type="entity" entity_id="ent-70132571807360" entity_mention_id="m-1087">Department of the Treasury</arg>
+        <arg type="loc" entity_id="ent-70132571461860" entity_mention_id="m-1113">1500 Pennslvania Avenue, NW</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569671240" type="physical" subtype="located">
+      <relation_mention id="relm-1557">
+        <arg type="entity" entity_id="ent-70132571461860" entity_mention_id="m-892">1500 Pennslvania Avenue, NW</arg>
+        <arg type="loc" entity_id="ent-70132571533620" entity_mention_id="m-879">Washington, D. C.</arg>
+      </relation_mention>
+      <relation_mention id="relm-1677">
+        <arg type="entity" entity_id="ent-70132571461860" entity_mention_id="m-1113">1500 Pennslvania Avenue, NW</arg>
+        <arg type="loc" entity_id="ent-70132571533620" entity_mention_id="m-1100">Washington, D. C.</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569671140" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1587">
+        <arg type="suborg" entity_id="ent-70132571807360" entity_mention_id="m-866">Department of the Treasury</arg>
+        <arg type="parent" entity_id="ent-70132571508440" entity_mention_id="m-853">U. S.</arg>
+      </relation_mention>
+      <relation_mention id="relm-1617">
+        <arg type="suborg" entity_id="ent-70132571807360" entity_mention_id="m-1087">Department of the Treasury</arg>
+        <arg type="parent" entity_id="ent-70132571508440" entity_mention_id="m-1074">U. S.</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569670940" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1803">
+        <arg type="suborg" entity_id="ent-70132571641900" entity_mention_id="m-762">our whole government</arg>
+        <arg type="parent" entity_id="ent-70132571508440" entity_mention_id="m-749">our</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569670840" type="physical" subtype="origin">
+      <relation_mention id="relm-1833">
+        <arg type="entity" entity_id="ent-70132568699620" entity_mention_id="m-957">your</arg>
+        <arg type="loc" entity_id="ent-70132571479380" entity_mention_id="m-944">your postage stamp size country</arg>
+      </relation_mention>
+      <relation_mention id="relm-1863">
+        <arg type="entity" entity_id="ent-70132568699620" entity_mention_id="m-1165">your</arg>
+        <arg type="loc" entity_id="ent-70132571479380" entity_mention_id="m-1178">your postage stamp size country</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132569297280" name="entity-EVENT-3">
+      <event_mention id="evm-1751" type="personnel" subtype="endposition">
+        <trigger source="648fc5834f73b4196b4ceb3daad954f9" offset="2675" length="5">fired</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-619" entity_id="ent-70132567392440">Larry Lindsey</arg>
+          <arg type="entity" entity_mention_id="m-632" entity_id="ent-70132571765640">White House</arg>
+          <arg type="position" entity_mention_id="m-645" entity_id="ent-70132571455680">economic adviser</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569294580" name="entity-EVENT-1">
+      <event_mention id="evm-84" type="contact" subtype="communicate">
+        <trigger source="648fc5834f73b4196b4ceb3daad954f9" offset="965" length="7">request</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-216" entity_id="ent-70132571765640">White House</arg>
+          <arg type="entity" entity_mention_id="m-268" entity_id="ent-70132576039600">Congress</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

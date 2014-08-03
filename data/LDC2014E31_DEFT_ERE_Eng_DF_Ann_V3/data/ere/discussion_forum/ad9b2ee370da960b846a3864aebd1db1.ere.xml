@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="ad9b2ee370da960b846a3864aebd1db1" source_type="multi_post" kit_id="533486f60000000000000043">
+  <entities>
+    <entity id="ent-70132573333040" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="14" length="15">Cloaking Device</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="109" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="519" length="1">I</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="2383" length="1">I</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3181" length="3">you</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="3471" length="15">Cloaking Device</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3528" length="1">i</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3787" length="1">i</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3867" length="2">me</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="4763" length="1">I</entity_mention>
+      <entity_mention id="m-1126" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4324" length="15">Cloaking Device</entity_mention>
+    </entity>
+    <entity id="ent-70132572785760" name="entity-PER-3" type="PER">
+      <entity_mention id="m-268" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="557" length="11">the victims</entity_mention>
+    </entity>
+    <entity id="ent-70132577812220" name="entity-PER-4" type="PER">
+      <entity_mention id="m-385" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="936" length="7">victims</entity_mention>
+    </entity>
+    <entity id="ent-70132577808720" name="entity-PER-5" type="PER">
+      <entity_mention id="m-411" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="996" length="8">Hirohito</entity_mention>
+    </entity>
+    <entity id="ent-70132577805320" name="entity-PER-6" type="PER">
+      <entity_mention id="m-489" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1313" length="24">the people who are dying</entity_mention>
+    </entity>
+    <entity id="ent-70132577703560" name="entity-PER-7" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1550" length="13">Robert Mugabe</entity_mention>
+    </entity>
+    <entity id="ent-70132577700160" name="entity-PER-8" type="PER">
+      <entity_mention id="m-619" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1803" length="9">Somalians</entity_mention>
+      <entity_mention id="m-632" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1731" length="37">a bunch of poor Africans with no food</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="1716" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132577461360" name="entity-PER-9" type="PER">
+      <entity_mention id="m-658" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1905" length="10">Bob Geldof</entity_mention>
+    </entity>
+    <entity id="ent-70132577367840" name="entity-PER-10" type="PER">
+      <entity_mention id="m-684" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1999" length="8">Africans</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="3088" length="8">Africans</entity_mention>
+    </entity>
+    <entity id="ent-70132575502100" name="entity-PER-11" type="PER">
+      <entity_mention id="m-697" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2064" length="12">Kevin Carter</entity_mention>
+    </entity>
+    <entity id="ent-70132575498720" name="entity-PER-12" type="PER">
+      <entity_mention id="m-710" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2089" length="52">children dying and being eaten by flies and vultures</entity_mention>
+    </entity>
+    <entity id="ent-70132575495160" name="entity-PER-13" type="PER">
+      <entity_mention id="m-840" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2634" length="7">relaxxx</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="2964" length="2">me</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="2979" length="1">I</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3054" length="1">I</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="3779" length="7">relaxxx</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3820" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132577141260" name="entity-PER-14" type="PER">
+      <entity_mention id="m-957" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3614" length="2">we</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3629" length="2">We</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="3727" length="2">we</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="2535" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132576891820" name="entity-PER-15" type="PER">
+      <entity_mention id="m-1178" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4645" length="7">Libyans</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4194" length="7">Libyans</entity_mention>
+    </entity>
+    <entity id="ent-70132576771300" name="entity-PER-16" type="PER">
+      <entity_mention id="m-1074" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4137" length="9">Americans</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4588" length="9">Americans</entity_mention>
+    </entity>
+    <entity id="ent-70132576765140" name="entity-PER-17" type="PER">
+      <entity_mention id="m-1048" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="3911" length="10">midgardsun</entity_mention>
+      <entity_mention id="m-1139" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4401" length="10">midgardsun</entity_mention>
+    </entity>
+    <entity id="ent-70132576636200" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1230" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4826" length="9">robrg1836</entity_mention>
+    </entity>
+    <entity id="ent-70132576395060" name="entity-PER-19" type="PER">
+      <entity_mention id="m-1243" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4913" length="9">orison319</entity_mention>
+    </entity>
+    <entity id="ent-70132576391680" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-580" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1622" length="25">the government in the 90s</entity_mention>
+    </entity>
+    <entity id="ent-70132576388280" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-1100" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4218" length="4">NATO</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4669" length="4">NATO</entity_mention>
+    </entity>
+    <entity id="ent-70132576144320" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-151" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="157" length="5">Japan</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="283" length="5">their</entity_mention>
+      <entity_mention id="m-216" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="360" length="5">Japan</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="673" length="5">their</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="874" length="5">Japan</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="908" length="5">their</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="972" length="5">their</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="1051" length="5">their</entity_mention>
+      <entity_mention id="m-762" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2284" length="36">the 3rd richest country in the world</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2275" length="5">Japan</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="2351" length="4">they</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2453" length="5">Japan</entity_mention>
+    </entity>
+    <entity id="ent-70132574833300" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-164" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="210" length="12">a whole city</entity_mention>
+    </entity>
+    <entity id="ent-70132574706980" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-281" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="673" length="25">their traditional enemies</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="764" length="5">their</entity_mention>
+      <entity_mention id="m-346" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="827" length="69">countries who still have a bad feeling towards Japan during normality</entity_mention>
+    </entity>
+    <entity id="ent-70132575910540" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-307" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="699" length="5">Korea</entity_mention>
+    </entity>
+    <entity id="ent-70132575907160" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-320" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="709" length="5">China</entity_mention>
+      <entity_mention id="m-788" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2341" length="5">China</entity_mention>
+    </entity>
+    <entity id="ent-70132575769900" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-450" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1118" length="7">Somalia</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="1137" length="2">it</entity_mention>
+      <entity_mention id="m-502" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1430" length="11">the country</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1464" length="7">Somalia</entity_mention>
+      <entity_mention id="m-528" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1502" length="33">one of the worst places in Africa</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="1587" length="4">them</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="1648" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132575233900" name="entity-GPE-9" type="GPE">
+      <entity_mention id="m-723" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2164" length="18">The rich countries</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="ad9b2ee370da960b846a3864aebd1db1" offset="2243" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132577595200" name="entity-GPE-10" type="GPE">
+      <entity_mention id="m-775" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2333" length="3">USA</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4116" length="3">USA</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4567" length="3">USA</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1067" length="7">America</entity_mention>
+    </entity>
+    <entity id="ent-70132577263960" name="entity-GPE-11" type="GPE">
+      <entity_mention id="m-1113" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4231" length="5">Libya</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="4682" length="5">Libya</entity_mention>
+    </entity>
+    <entity id="ent-70132576512320" name="entity-GPE-12" type="GPE">
+      <entity_mention id="m-1256" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="2239" length="13">who they like</entity_mention>
+    </entity>
+    <entity id="ent-70132576271240" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-190" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="283" length="17">their power plant</entity_mention>
+    </entity>
+    <entity id="ent-70132576267920" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-203" noun_type="NOM" source="ad9b2ee370da960b846a3864aebd1db1" offset="340" length="40">a populated part of Japan's north island</entity_mention>
+    </entity>
+    <entity id="ent-70132576264620" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-541" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1529" length="6">Africa</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="1897" length="6">Africa</entity_mention>
+      <entity_mention id="m-1821" noun_type="NAM" source="ad9b2ee370da960b846a3864aebd1db1" offset="3846" length="7">african</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571504980" type="physical" subtype="located">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132574833300" entity_mention_id="m-164">a whole city</arg>
+        <arg type="loc" entity_id="ent-70132576144320" entity_mention_id="m-151">Japan</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571504920" type="physical" subtype="located">
+      <relation_mention id="relm-1290">
+        <arg type="entity" entity_id="ent-70132576271240" entity_mention_id="m-190">their power plant</arg>
+        <arg type="loc" entity_id="ent-70132576144320" entity_mention_id="m-151">Japan</arg>
+        <trigger source="ad9b2ee370da960b846a3864aebd1db1" offset="283" length="5">their</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571504840" type="physical" subtype="located">
+      <relation_mention id="relm-1320">
+        <arg type="entity" entity_id="ent-70132576267920" entity_mention_id="m-203">a populated part of Japan's north island</arg>
+        <arg type="loc" entity_id="ent-70132576144320" entity_mention_id="m-216">Japan</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571504780" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1380">
+        <arg type="suborg" entity_id="ent-70132576391680" entity_mention_id="m-580">the government in the 90s</arg>
+        <arg type="parent" entity_id="ent-70132575769900" entity_mention_id="m-593">they</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571504720" type="physical" subtype="origin">
+      <relation_mention id="relm-1470">
+        <arg type="entity" entity_id="ent-70132576771300" entity_mention_id="m-1074">Americans</arg>
+        <arg type="loc" entity_id="ent-70132577595200" entity_mention_id="m-1061">USA</arg>
+      </relation_mention>
+      <relation_mention id="relm-1530">
+        <arg type="entity" entity_id="ent-70132576771300" entity_mention_id="m-1165">Americans</arg>
+        <arg type="loc" entity_id="ent-70132577595200" entity_mention_id="m-1152">USA</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571505200" type="physical" subtype="origin">
+      <relation_mention id="relm-1500">
+        <arg type="entity" entity_id="ent-70132576891820" entity_mention_id="m-1087">Libyans</arg>
+        <arg type="loc" entity_id="ent-70132577263960" entity_mention_id="m-1113">Libya</arg>
+      </relation_mention>
+      <relation_mention id="relm-1560">
+        <arg type="entity" entity_id="ent-70132576891820" entity_mention_id="m-1178">Libyans</arg>
+        <arg type="loc" entity_id="ent-70132577263960" entity_mention_id="m-1204">Libya</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571506780" type="physical" subtype="located">
+      <relation_mention id="relm-1829">
+        <arg type="entity" entity_id="ent-70132575769900" entity_mention_id="m-528">one of the worst places in Africa</arg>
+        <arg type="loc" entity_id="ent-70132576264620" entity_mention_id="m-541">Africa</arg>
+        <trigger source="ad9b2ee370da960b846a3864aebd1db1" offset="1526" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571263040" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="die">
+        <trigger source="ad9b2ee370da960b846a3864aebd1db1" offset="1332" length="5">dying</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-489" entity_id="ent-70132577805320">the people who are dying</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-450">Somalia</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571261520" name="entity-EVENT-3">
+      <event_mention id="evm-1596" type="life" subtype="die">
+        <trigger source="ad9b2ee370da960b846a3864aebd1db1" offset="2098" length="5">dying</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-710" entity_id="ent-70132575498720">children dying and being eaten by flies and vultures</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-645">Africa</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571260120" name="entity-EVENT-4">
+      <event_mention id="evm-1638" type="business" subtype="endorg">
+        <trigger source="ad9b2ee370da960b846a3864aebd1db1" offset="1610" length="8">collapse</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-580" entity_id="ent-70132576391680">the government in the 90s</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-515">Somalia</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571260460" name="entity-EVENT-5">
+      <event_mention id="evm-1680" type="conflict" subtype="attack">
+        <trigger source="ad9b2ee370da960b846a3864aebd1db1" offset="1683" length="3">war</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-593" entity_id="ent-70132575769900">they</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-515">Somalia</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132570249640" name="entity-EVENT-6">
+      <event_mention id="evm-1722" type="transaction" subtype="transferownership">
+        <trigger source="ad9b2ee370da960b846a3864aebd1db1" offset="715" length="11">contributed</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-320" entity_id="ent-70132575907160">China</arg>
+          <arg type="beneficiary" entity_mention_id="m-359" entity_id="ent-70132576144320">Japan</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

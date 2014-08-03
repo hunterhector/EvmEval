@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="8a650be65e9a21400cc2e37208495906" source_type="multi_post" kit_id="5346f3680000000000000099">
+  <entities>
+    <entity id="ent-70132576142600" name="entity-PER-2" type="PER">
+      <entity_mention id="m-151" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="149" length="15">Dont Taz Me Bro</entity_mention>
+    </entity>
+    <entity id="ent-70132576148260" name="entity-PER-3" type="PER">
+      <entity_mention id="m-164" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="191" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132576144640" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="116" length="10">WillowTree</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="291" length="3">You</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3392" length="3">you</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3408" length="3">you</entity_mention>
+      <entity_mention id="m-1360" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3478" length="4">your</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3519" length="4">your</entity_mention>
+      <entity_mention id="m-1464" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3884" length="10">WillowTree</entity_mention>
+      <entity_mention id="m-1776" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="5365" length="10">WillowTree</entity_mention>
+    </entity>
+    <entity id="ent-70132575630420" name="entity-PER-5" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="14" length="7">Meister</entity_mention>
+      <entity_mention id="m-1568" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="4793" length="7">Meister</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="4879" length="4">your</entity_mention>
+      <entity_mention id="m-1620" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="4917" length="7">Meister</entity_mention>
+      <entity_mention id="m-1646" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="5018" length="7">Meister</entity_mention>
+      <entity_mention id="m-1685" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="5104" length="4">your</entity_mention>
+      <entity_mention id="m-1698" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="5139" length="2">my</entity_mention>
+      <entity_mention id="m-1737" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="5229" length="7">Meister</entity_mention>
+      <entity_mention id="m-1906" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="6401" length="7">Meister</entity_mention>
+      <entity_mention id="m-1932" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="6462" length="7">Meister</entity_mention>
+      <entity_mention id="m-1971" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="6548" length="4">your</entity_mention>
+      <entity_mention id="m-1984" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="6583" length="2">my</entity_mention>
+    </entity>
+    <entity id="ent-70132574704480" name="entity-PER-6" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="84" length="9">Sail Away</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3571" length="4">your</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3629" length="4">Your</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3663" length="4">your</entity_mention>
+      <entity_mention id="m-1425" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3674" length="5">sonny</entity_mention>
+      <entity_mention id="m-1438" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3778" length="9">Sail Away</entity_mention>
+      <entity_mention id="m-1529" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="4663" length="1">I</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="4670" length="1">I</entity_mention>
+      <entity_mention id="m-1750" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="5299" length="9">Sail Away</entity_mention>
+      <entity_mention id="m-1841" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="6144" length="1">I</entity_mention>
+      <entity_mention id="m-1854" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="6151" length="1">I</entity_mention>
+      <entity_mention id="m-1867" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="6195" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132574154840" name="entity-PER-7" type="PER">
+      <entity_mention id="m-229" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="368" length="6">Police</entity_mention>
+    </entity>
+    <entity id="ent-70132574151360" name="entity-PER-8" type="PER">
+      <entity_mention id="m-242" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="391" length="9">a suspect</entity_mention>
+      <entity_mention id="m-281" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="474" length="7">the man</entity_mention>
+    </entity>
+    <entity id="ent-70132574014080" name="entity-PER-9" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="455" length="13">Investigators</entity_mention>
+    </entity>
+    <entity id="ent-70132573879480" name="entity-PER-10" type="PER">
+      <entity_mention id="m-307" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="523" length="6">Police</entity_mention>
+      <entity_mention id="m-333" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="582" length="21">3 or 4 cops with 9mms</entity_mention>
+    </entity>
+    <entity id="ent-70132573873420" name="entity-PER-11" type="PER">
+      <entity_mention id="m-320" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="535" length="27">a drunk, knife wielding man</entity_mention>
+      <entity_mention id="m-346" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="612" length="25">a mentally distraught man</entity_mention>
+    </entity>
+    <entity id="ent-70132573736020" name="entity-PER-12" type="PER">
+      <entity_mention id="m-359" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="656" length="6">Police</entity_mention>
+    </entity>
+    <entity id="ent-70132573609660" name="entity-PER-13" type="PER">
+      <entity_mention id="m-372" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="668" length="5">a man</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="759" length="2">is</entity_mention>
+    </entity>
+    <entity id="ent-70132573603440" name="entity-PER-14" type="PER">
+      <entity_mention id="m-385" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="759" length="9">is cousin</entity_mention>
+    </entity>
+    <entity id="ent-70132573468940" name="entity-PER-15" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="778" length="6">Police</entity_mention>
+    </entity>
+    <entity id="ent-70132573465480" name="entity-PER-16" type="PER">
+      <entity_mention id="m-424" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="795" length="51">resident who was chasing an intruder with a shotgun</entity_mention>
+    </entity>
+    <entity id="ent-70132573339180" name="entity-PER-17" type="PER">
+      <entity_mention id="m-437" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="820" length="11">an intruder</entity_mention>
+    </entity>
+    <entity id="ent-70132573335620" name="entity-PER-18" type="PER">
+      <entity_mention id="m-450" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="856" length="26">A 56 year old homeless man</entity_mention>
+    </entity>
+    <entity id="ent-70132573332220" name="entity-PER-19" type="PER">
+      <entity_mention id="m-463" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="938" length="8">sheriffs</entity_mention>
+      <entity_mention id="m-502" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="977" length="17">the five officers</entity_mention>
+    </entity>
+    <entity id="ent-70132573195300" name="entity-PER-20" type="PER">
+      <entity_mention id="m-515" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1066" length="55">A 62-year-old man who was threatening to commit suicide</entity_mention>
+    </entity>
+    <entity id="ent-70132575239940" name="entity-PER-21" type="PER">
+      <entity_mention id="m-528" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1139" length="22">Denver police officers</entity_mention>
+    </entity>
+    <entity id="ent-70132575236280" name="entity-PER-22" type="PER">
+      <entity_mention id="m-554" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1171" length="13">Denver police</entity_mention>
+      <entity_mention id="m-632" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1325" length="10">The police</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="1370" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132577595140" name="entity-PER-23" type="PER">
+      <entity_mention id="m-580" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1228" length="5">A man</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="1296" length="2">he</entity_mention>
+      <entity_mention id="m-645" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1346" length="11">the witness</entity_mention>
+    </entity>
+    <entity id="ent-70132577267020" name="entity-PER-24" type="PER">
+      <entity_mention id="m-619" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="1303" length="3">him</entity_mention>
+      <entity_mention id="m-593" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1258" length="31">the driver that was pulled over</entity_mention>
+    </entity>
+    <entity id="ent-70132576515840" name="entity-PER-25" type="PER">
+      <entity_mention id="m-671" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1395" length="14">a third person</entity_mention>
+    </entity>
+    <entity id="ent-70132576512340" name="entity-PER-26" type="PER">
+      <entity_mention id="m-710" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="1755" length="6">Latino</entity_mention>
+    </entity>
+    <entity id="ent-70132576271860" name="entity-PER-27" type="PER">
+      <entity_mention id="m-723" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1773" length="18">additional witness</entity_mention>
+    </entity>
+    <entity id="ent-70132576268420" name="entity-PER-28" type="PER">
+      <entity_mention id="m-749" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1825" length="16">a distraught man</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="1898" length="3">him</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="1909" length="2">he</entity_mention>
+      <entity_mention id="m-801" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1984" length="7">The man</entity_mention>
+    </entity>
+    <entity id="ent-70132576036420" name="entity-PER-29" type="PER">
+      <entity_mention id="m-762" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1860" length="8">officers</entity_mention>
+    </entity>
+    <entity id="ent-70132572649860" name="entity-PER-30" type="PER">
+      <entity_mention id="m-866" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2157" length="40">University of Colorado business graduate</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="2218" length="3">his</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="2250" length="3">him</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="2260" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571800180" name="entity-PER-31" type="PER">
+      <entity_mention id="m-853" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2145" length="6">Police</entity_mention>
+      <entity_mention id="m-957" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2269" length="12">the officers</entity_mention>
+    </entity>
+    <entity id="ent-70132571758600" name="entity-PER-32" type="PER">
+      <entity_mention id="m-983" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2455" length="17">a department head</entity_mention>
+    </entity>
+    <entity id="ent-70132571704140" name="entity-PER-33" type="PER">
+      <entity_mention id="m-1035" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2589" length="17">a robbery suspect</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="2624" length="2">he</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2728" length="6">Berlin</entity_mention>
+      <entity_mention id="m-1139" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2793" length="29">The Twenty-seven-year-old man</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="2870" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571587140" name="entity-PER-34" type="PER">
+      <entity_mention id="m-1061" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2650" length="17">SWAT team members</entity_mention>
+      <entity_mention id="m-1100" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2698" length="17">SWAT team members</entity_mention>
+    </entity>
+    <entity id="ent-70132571581000" name="entity-PER-35" type="PER">
+      <entity_mention id="m-1152" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2852" length="13">Investigators</entity_mention>
+    </entity>
+    <entity id="ent-70132571569580" name="entity-PER-36" type="PER">
+      <entity_mention id="m-1178" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="3025" length="38">the officers of the Denver Police Dept</entity_mention>
+    </entity>
+    <entity id="ent-70132571566560" name="entity-PER-37" type="PER">
+      <entity_mention id="m-1217" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="3120" length="20">DOZENs of protestors</entity_mention>
+      <entity_mention id="m-1230" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="3163" length="6">Dozens</entity_mention>
+    </entity>
+    <entity id="ent-70132571561140" name="entity-PER-38" type="PER">
+      <entity_mention id="m-1451" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3850" length="11">Wry Catcher</entity_mention>
+      <entity_mention id="m-1763" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="5331" length="11">Wry Catcher</entity_mention>
+      <entity_mention id="m-1880" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="6220" length="3">Wry</entity_mention>
+    </entity>
+    <entity id="ent-70132571545220" name="entity-PER-39" type="PER">
+      <entity_mention id="m-1477" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="3906" length="19">a little black thug</entity_mention>
+      <entity_mention id="m-1789" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="5387" length="19">a little black thug</entity_mention>
+    </entity>
+    <entity id="ent-70132571539940" name="entity-PER-40" type="PER">
+      <entity_mention id="m-1490" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="3933" length="5">a cop</entity_mention>
+      <entity_mention id="m-1516" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="3976" length="7">the cop</entity_mention>
+      <entity_mention id="m-1802" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="5414" length="5">a cop</entity_mention>
+      <entity_mention id="m-1828" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="5457" length="7">the cop</entity_mention>
+    </entity>
+    <entity id="ent-70132571529780" name="entity-PER-41" type="PER">
+      <entity_mention id="m-1555" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="4722" length="8">Dr Grump</entity_mention>
+      <entity_mention id="m-1633" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="4987" length="8">Dr Grump</entity_mention>
+      <entity_mention id="m-1724" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="5200" length="5">Grump</entity_mention>
+      <entity_mention id="m-1893" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="6330" length="8">Dr Grump</entity_mention>
+      <entity_mention id="m-1919" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="6431" length="8">Dr Grump</entity_mention>
+      <entity_mention id="m-2010" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="6644" length="5">Grump</entity_mention>
+      <entity_mention id="m-2023" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="6662" length="1">I</entity_mention>
+      <entity_mention id="m-2036" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="6674" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571501920" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-684" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="1512" length="24">Denver Police Department</entity_mention>
+      <entity_mention id="m-736" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="1814" length="6">Police</entity_mention>
+      <entity_mention id="m-840" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2073" length="6">Police</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="2484" length="3">Our</entity_mention>
+      <entity_mention id="m-1009" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2559" length="6">Police</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3045" length="18">Denver Police Dept</entity_mention>
+    </entity>
+    <entity id="ent-70132571478820" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-879" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2157" length="22">University of Colorado</entity_mention>
+    </entity>
+    <entity id="ent-70132571475780" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-1074" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2673" length="11">Denver Post</entity_mention>
+    </entity>
+    <entity id="ent-70132571472720" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-2975" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2698" length="9">SWAT team</entity_mention>
+      <entity_mention id="m-2962" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2650" length="9">SWAT team</entity_mention>
+    </entity>
+    <entity id="ent-70132571459200" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-216" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="352" length="6">Denver</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="950" length="6">Denver</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="1139" length="6">Denver</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="1171" length="6">Denver</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="1512" length="6">Denver</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2023" length="6">Denver</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2334" length="6">Denver</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2673" length="6">Denver</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3045" length="6">Denver</entity_mention>
+      <entity_mention id="m-190" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="335" length="15">one the US city</entity_mention>
+      <entity_mention id="m-2049" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2578" length="6">Denver</entity_mention>
+    </entity>
+    <entity id="ent-70132571339620" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-203" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="343" length="2">US</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3191" length="2">US</entity_mention>
+      <entity_mention id="m-1256" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3233" length="2">US</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3251" length="2">we</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="8a650be65e9a21400cc2e37208495906" offset="3282" length="2">we</entity_mention>
+      <entity_mention id="m-1581" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="4803" length="12">this country</entity_mention>
+      <entity_mention id="m-1659" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="5028" length="12">this country</entity_mention>
+      <entity_mention id="m-1945" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="6472" length="12">this country</entity_mention>
+    </entity>
+    <entity id="ent-70132571292760" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-892" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2171" length="8">Colorado</entity_mention>
+    </entity>
+    <entity id="ent-70132571264360" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1503" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="3942" length="10">New Jersey</entity_mention>
+      <entity_mention id="m-1815" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="5423" length="10">New Jersey</entity_mention>
+    </entity>
+    <entity id="ent-70132570250340" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-255" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="404" length="49">a neighborhood a few blocks from the Country Club</entity_mention>
+    </entity>
+    <entity id="ent-70132570243480" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-268" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="441" length="12">Country Club</entity_mention>
+    </entity>
+    <entity id="ent-70132570222860" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-476" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="950" length="11">Denver jail</entity_mention>
+    </entity>
+    <entity id="ent-70132570218700" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-814" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="2023" length="28">Denver Health Medical Center</entity_mention>
+    </entity>
+    <entity id="ent-70132570170760" name="entity-LOC-6" type="LOC">
+      <entity_mention id="m-905" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2218" length="22">his apartment building</entity_mention>
+    </entity>
+    <entity id="ent-70132570165660" name="entity-LOC-7" type="LOC">
+      <entity_mention id="m-1022" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2569" length="15">suburban Denver</entity_mention>
+    </entity>
+    <entity id="ent-70132570159900" name="entity-LOC-8" type="LOC">
+      <entity_mention id="m-1126" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="2754" length="21">an apartment building</entity_mention>
+    </entity>
+    <entity id="ent-70132570154120" name="entity-LOC-9" type="LOC">
+      <entity_mention id="m-1594" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="4857" length="5">Earth</entity_mention>
+      <entity_mention id="m-1672" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="5082" length="5">Earth</entity_mention>
+      <entity_mention id="m-1958" noun_type="NAM" source="8a650be65e9a21400cc2e37208495906" offset="6526" length="5">Earth</entity_mention>
+    </entity>
+    <entity id="ent-70132570108840" name="entity-LOC-10" type="LOC">
+      <entity_mention id="m-1711" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="5189" length="9">the world</entity_mention>
+      <entity_mention id="m-1997" noun_type="NOM" source="8a650be65e9a21400cc2e37208495906" offset="6633" length="9">the world</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132575496180" type="physical" subtype="located">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132571459200" entity_mention_id="m-190">one the US city</arg>
+        <arg type="loc" entity_id="ent-70132571339620" entity_mention_id="m-203">US</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575496120" type="physical" subtype="located">
+      <relation_mention id="relm-2057">
+        <arg type="entity" entity_id="ent-70132574154840" entity_mention_id="m-229">Police</arg>
+        <arg type="loc" entity_id="ent-70132570250340" entity_mention_id="m-255">a neighborhood a few blocks from the Country Club</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="401" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575496020" type="physical" subtype="located">
+      <relation_mention id="relm-2087">
+        <arg type="entity" entity_id="ent-70132574151360" entity_mention_id="m-242">a suspect</arg>
+        <arg type="loc" entity_id="ent-70132570250340" entity_mention_id="m-255">a neighborhood a few blocks from the Country Club</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="401" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495960" type="physical" subtype="located">
+      <relation_mention id="relm-2117">
+        <arg type="entity" entity_id="ent-70132570250340" entity_mention_id="m-255">a neighborhood a few blocks from the Country Club</arg>
+        <arg type="loc" entity_id="ent-70132570243480" entity_mention_id="m-268">Country Club</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="419" length="17">a few blocks from</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495900" type="social" subtype="family">
+      <relation_mention id="relm-2147">
+        <arg type="per" entity_id="ent-70132573603440" entity_mention_id="m-385">is cousin</arg>
+        <arg type="per" entity_id="ent-70132573609660" entity_mention_id="m-398">is</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="762" length="6">cousin</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495840" type="physical" subtype="located">
+      <relation_mention id="relm-2177">
+        <arg type="entity" entity_id="ent-70132573335620" entity_mention_id="m-450">A 56 year old homeless man</arg>
+        <arg type="loc" entity_id="ent-70132570222860" entity_mention_id="m-476">Denver jail</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="947" length="2">at</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495780" type="physical" subtype="located">
+      <relation_mention id="relm-2207">
+        <arg type="entity" entity_id="ent-70132573332220" entity_mention_id="m-463">sheriffs</arg>
+        <arg type="loc" entity_id="ent-70132570222860" entity_mention_id="m-476">Denver jail</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="947" length="2">at</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495720" type="physical" subtype="located">
+      <relation_mention id="relm-2237">
+        <arg type="entity" entity_id="ent-70132570222860" entity_mention_id="m-476">Denver jail</arg>
+        <arg type="loc" entity_id="ent-70132571459200" entity_mention_id="m-489">Denver</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495660" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2267">
+        <arg type="employeemember" entity_id="ent-70132575239940" entity_mention_id="m-528">Denver police officers</arg>
+        <arg type="org" entity_id="ent-70132571459200" entity_mention_id="m-541">Denver</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495560" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2297">
+        <arg type="employeemember" entity_id="ent-70132575236280" entity_mention_id="m-554">Denver police</arg>
+        <arg type="org" entity_id="ent-70132571459200" entity_mention_id="m-567">Denver</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495500" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-2327">
+        <arg type="suborg" entity_id="ent-70132571501920" entity_mention_id="m-684">Denver Police Department</arg>
+        <arg type="parent" entity_id="ent-70132571459200" entity_mention_id="m-697">Denver</arg>
+      </relation_mention>
+      <relation_mention id="relm-2747">
+        <arg type="suborg" entity_id="ent-70132571501920" entity_mention_id="m-1191">Denver Police Dept</arg>
+        <arg type="parent" entity_id="ent-70132571459200" entity_mention_id="m-1204">Denver</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495440" type="physical" subtype="located">
+      <relation_mention id="relm-2357">
+        <arg type="entity" entity_id="ent-70132576268420" entity_mention_id="m-801">The man</arg>
+        <arg type="loc" entity_id="ent-70132570218700" entity_mention_id="m-814">Denver Health Medical Center</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2020" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495380" type="physical" subtype="located">
+      <relation_mention id="relm-2387">
+        <arg type="entity" entity_id="ent-70132570218700" entity_mention_id="m-814">Denver Health Medical Center</arg>
+        <arg type="loc" entity_id="ent-70132571459200" entity_mention_id="m-827">Denver</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495320" type="physical" subtype="origin">
+      <relation_mention id="relm-2417">
+        <arg type="entity" entity_id="ent-70132571478820" entity_mention_id="m-879">University of Colorado</arg>
+        <arg type="loc" entity_id="ent-70132571292760" entity_mention_id="m-892">Colorado</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2168" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495220" type="physical" subtype="located">
+      <relation_mention id="relm-2477">
+        <arg type="entity" entity_id="ent-70132571800180" entity_mention_id="m-853">Police</arg>
+        <arg type="loc" entity_id="ent-70132570170760" entity_mention_id="m-905">his apartment building</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2198" length="4">into</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495160" type="physical" subtype="located">
+      <relation_mention id="relm-2507">
+        <arg type="entity" entity_id="ent-70132572649860" entity_mention_id="m-918">his</arg>
+        <arg type="loc" entity_id="ent-70132570170760" entity_mention_id="m-905">his apartment building</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2198" length="4">into</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495100" type="physical" subtype="origin">
+      <relation_mention id="relm-2537">
+        <arg type="entity" entity_id="ent-70132572649860" entity_mention_id="m-918">his</arg>
+        <arg type="loc" entity_id="ent-70132570170760" entity_mention_id="m-905">his apartment building</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2218" length="3">his</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575495040" type="physical" subtype="origin">
+      <relation_mention id="relm-2567">
+        <arg type="entity" entity_id="ent-70132571501920" entity_mention_id="m-1009">Police</arg>
+        <arg type="loc" entity_id="ent-70132570165660" entity_mention_id="m-1022">suburban Denver</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2566" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494980" type="physical" subtype="located">
+      <relation_mention id="relm-2597">
+        <arg type="entity" entity_id="ent-70132570165660" entity_mention_id="m-1022">suburban Denver</arg>
+        <arg type="loc" entity_id="ent-70132571459200" entity_mention_id="m-2049">Denver</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494860" type="physical" subtype="origin">
+      <relation_mention id="relm-2627">
+        <arg type="entity" entity_id="ent-70132571475780" entity_mention_id="m-1074">Denver Post</arg>
+        <arg type="loc" entity_id="ent-70132571459200" entity_mention_id="m-1087">Denver</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494800" type="physical" subtype="located">
+      <relation_mention id="relm-2657">
+        <arg type="entity" entity_id="ent-70132571587140" entity_mention_id="m-1100">SWAT team members</arg>
+        <arg type="loc" entity_id="ent-70132570159900" entity_mention_id="m-1126">an apartment building</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2735" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494740" type="physical" subtype="located">
+      <relation_mention id="relm-2687">
+        <arg type="entity" entity_id="ent-70132571704140" entity_mention_id="m-1113">Berlin</arg>
+        <arg type="loc" entity_id="ent-70132570159900" entity_mention_id="m-1126">an apartment building</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2735" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494660" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2717">
+        <arg type="employeemember" entity_id="ent-70132571569580" entity_mention_id="m-1178">the officers of the Denver Police Dept</arg>
+        <arg type="org" entity_id="ent-70132571501920" entity_mention_id="m-1191">Denver Police Dept</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="3038" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494600" type="physical" subtype="located">
+      <relation_mention id="relm-2777">
+        <arg type="entity" entity_id="ent-70132571545220" entity_mention_id="m-1477">a little black thug</arg>
+        <arg type="loc" entity_id="ent-70132571264360" entity_mention_id="m-1503">New Jersey</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="3939" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2897">
+        <arg type="entity" entity_id="ent-70132571545220" entity_mention_id="m-1789">a little black thug</arg>
+        <arg type="loc" entity_id="ent-70132571264360" entity_mention_id="m-1815">New Jersey</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="5420" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494540" type="physical" subtype="located">
+      <relation_mention id="relm-2807">
+        <arg type="entity" entity_id="ent-70132571539940" entity_mention_id="m-1490">a cop</arg>
+        <arg type="loc" entity_id="ent-70132571264360" entity_mention_id="m-1503">New Jersey</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="3939" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2927">
+        <arg type="entity" entity_id="ent-70132571539940" entity_mention_id="m-1802">a cop</arg>
+        <arg type="loc" entity_id="ent-70132571264360" entity_mention_id="m-1815">New Jersey</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="5420" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494480" type="physical" subtype="located">
+      <relation_mention id="relm-2837">
+        <arg type="entity" entity_id="ent-70132571339620" entity_mention_id="m-1581">this country</arg>
+        <arg type="loc" entity_id="ent-70132570154120" entity_mention_id="m-1594">Earth</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="4854" length="2">on</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2867">
+        <arg type="entity" entity_id="ent-70132571339620" entity_mention_id="m-1659">this country</arg>
+        <arg type="loc" entity_id="ent-70132570154120" entity_mention_id="m-1672">Earth</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="5079" length="2">on</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3043">
+        <arg type="entity" entity_id="ent-70132571339620" entity_mention_id="m-1945">this country</arg>
+        <arg type="loc" entity_id="ent-70132570154120" entity_mention_id="m-1958">Earth</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="6523" length="2">on</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132575494400" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2983">
+        <arg type="employeemember" entity_id="ent-70132571587140" entity_mention_id="m-1061">SWAT team members</arg>
+        <arg type="org" entity_id="ent-70132571472720" entity_mention_id="m-2962">SWAT team</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2660" length="7">members</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3013">
+        <arg type="employeemember" entity_id="ent-70132571587140" entity_mention_id="m-1100">SWAT team members</arg>
+        <arg type="org" entity_id="ent-70132571472720" entity_mention_id="m-2975">SWAT team</arg>
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2708" length="7">members</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571588640" name="entity-EVENT-2">
+      <event_mention id="evm-4205" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="3926" length="6">killed</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1477" entity_id="ent-70132571545220">a little black thug</arg>
+          <arg type="victim" entity_mention_id="m-1490" entity_id="ent-70132571539940">a cop</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1503">New Jersey</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="3953" length="5">today</date_extent>
+          <normalized_date>2011-01-16</normalized_date>
+        </date>
+      </event_mention>
+      <event_mention id="evm-4255" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="5407" length="6">killed</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1789" entity_id="ent-70132571545220">a little black thug</arg>
+          <arg type="victim" entity_mention_id="m-1802" entity_id="ent-70132571539940">a cop</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1815">New Jersey</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="5434" length="5">today</date_extent>
+          <normalized_date>2011-01-16</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571592600" name="entity-EVENT-3">
+      <event_mention id="evm-3637" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1341" length="4">beat</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-632" entity_id="ent-70132575236280">The police</arg>
+          <arg type="target" entity_mention_id="m-645" entity_id="ent-70132577595140">the witness</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-567">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1164" length="4">8/20</date_extent>
+          <normalized_date>XXXX-08-20</normalized_date>
+        </date>
+      </event_mention>
+      <event_mention id="evm-3687" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1673" length="7">beating</trigger>
+        <args/>
+        <places>
+          <place entity_mention_id="m-697">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1668" length="4">8/20</date_extent>
+          <normalized_date>XXXX-08-20</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571585520" name="entity-EVENT-4">
+      <event_mention id="evm-84" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="375" length="4">shot</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-229" entity_id="ent-70132574154840">Police</arg>
+          <arg type="target" entity_mention_id="m-242" entity_id="ent-70132574151360">a suspect</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-255">a neighborhood a few blocks from the Country Club</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="361" length="4">2/27</date_extent>
+          <normalized_date>XXXX-02-27</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571584320" name="entity-EVENT-5">
+      <event_mention id="evm-3079" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="384" length="6">killed</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-229" entity_id="ent-70132574154840">Police</arg>
+          <arg type="victim" entity_mention_id="m-242" entity_id="ent-70132574151360">a suspect</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-255">a neighborhood a few blocks from the Country Club</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="361" length="4">2/27</date_extent>
+          <normalized_date>XXXX-02-27</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571583000" name="entity-EVENT-6">
+      <event_mention id="evm-3137" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="530" length="4">kill</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-307" entity_id="ent-70132573879480">Police</arg>
+          <arg type="victim" entity_mention_id="m-320" entity_id="ent-70132573873420">a drunk, knife wielding man</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-216">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="516" length="4">4/28</date_extent>
+          <normalized_date>XXXX-04-28</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571581800" name="entity-EVENT-7">
+      <event_mention id="evm-3187" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="663" length="4">kill</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-359" entity_id="ent-70132573736020">Police</arg>
+          <arg type="victim" entity_mention_id="m-372" entity_id="ent-70132573609660">a man</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-216">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="650" length="3">6/2</date_extent>
+          <normalized_date>XXXX-06-02</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571580300" name="entity-EVENT-8">
+      <event_mention id="evm-3237" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="785" length="4">shot</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-411" entity_id="ent-70132573468940">Police</arg>
+          <arg type="target" entity_mention_id="m-424" entity_id="ent-70132573465480">resident who was chasing an intruder with a shotgun</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-216">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="771" length="4">6/23</date_extent>
+          <normalized_date>XXXX-06-23</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571579040" name="entity-EVENT-9">
+      <event_mention id="evm-3279" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="790" length="4">kill</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-411" entity_id="ent-70132573468940">Police</arg>
+          <arg type="victim" entity_mention_id="m-424" entity_id="ent-70132573465480">resident who was chasing an intruder with a shotgun</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-216">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="771" length="4">6/23</date_extent>
+          <normalized_date>XXXX-06-23</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571585860" name="entity-EVENT-10">
+      <event_mention id="evm-3387" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1010" length="8">Tasering</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-502" entity_id="ent-70132573332220">the five officers</arg>
+          <arg type="target" entity_mention_id="m-450" entity_id="ent-70132573335620">A 56 year old homeless man</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-476">Denver jail</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="849" length="4">7/23</date_extent>
+          <normalized_date>XXXX-07-23</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571568820" name="entity-EVENT-11">
+      <event_mention id="evm-3337" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="887" length="6">killed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-450" entity_id="ent-70132573335620">A 56 year old homeless man</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-476">Denver jail</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="849" length="4">7/23</date_extent>
+          <normalized_date>XXXX-07-23</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571567700" name="entity-EVENT-12">
+      <event_mention id="evm-3487" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1126" length="4">shot</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-528" entity_id="ent-70132575239940">Denver police officers</arg>
+          <arg type="target" entity_mention_id="m-515" entity_id="ent-70132573195300">A 62-year-old man who was threatening to commit suicide</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-541">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1061" length="3">8/2</date_extent>
+          <normalized_date>XXXX-08-02</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571566420" name="entity-EVENT-13">
+      <event_mention id="evm-3529" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1131" length="4">dead</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-528" entity_id="ent-70132575239940">Denver police officers</arg>
+          <arg type="victim" entity_mention_id="m-515" entity_id="ent-70132573195300">A 62-year-old man who was threatening to commit suicide</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-541">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1061" length="3">8/2</date_extent>
+          <normalized_date>XXXX-08-02</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571565160" name="entity-EVENT-14">
+      <event_mention id="evm-3587" type="contact" subtype="communicate">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1252" length="5">tells</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-580" entity_id="ent-70132577595140">A man</arg>
+          <arg type="entity" entity_mention_id="m-593" entity_id="ent-70132577267020">the driver that was pulled over</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-567">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1164" length="4">8/20</date_extent>
+          <normalized_date>XXXX-08-20</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571564060" name="entity-EVENT-15">
+      <event_mention id="evm-3729" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1886" length="8">stun gun</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-762" entity_id="ent-70132576036420">officers</arg>
+          <arg type="target" entity_mention_id="m-775" entity_id="ent-70132576268420">him</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-827">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1807" length="4">9/10</date_extent>
+          <normalized_date>XXXX-09-10</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571562800" name="entity-EVENT-16">
+      <event_mention id="evm-3779" type="justice" subtype="arrestjail">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1921" length="10">handcuffed</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-762" entity_id="ent-70132576036420">officers</arg>
+          <arg type="person" entity_mention_id="m-788" entity_id="ent-70132576268420">he</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-827">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1807" length="4">9/10</date_extent>
+          <normalized_date>XXXX-09-10</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571561680" name="entity-EVENT-17">
+      <event_mention id="evm-3829" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="1969" length="7">Taseded</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-762" entity_id="ent-70132576036420">officers</arg>
+          <arg type="target" entity_mention_id="m-788" entity_id="ent-70132576268420">he</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-827">Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1807" length="4">9/10</date_extent>
+          <normalized_date>XXXX-09-10</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571560420" name="entity-EVENT-18">
+      <event_mention id="evm-3879" type="movement" subtype="transportperson">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2001" length="5">taken</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-801" entity_id="ent-70132576268420">The man</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-814">Denver Health Medical Center</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1807" length="4">9/10</date_extent>
+          <normalized_date>XXXX-09-10</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571559240" name="entity-EVENT-19">
+      <event_mention id="evm-3921" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2067" length="4">dead</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-801" entity_id="ent-70132576268420">The man</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-814">Denver Health Medical Center</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="1807" length="4">9/10</date_extent>
+          <normalized_date>XXXX-09-10</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571558080" name="entity-EVENT-20">
+      <event_mention id="evm-3963" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2245" length="4">beat</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-853" entity_id="ent-70132571800180">Police</arg>
+          <arg type="target" entity_mention_id="m-931" entity_id="ent-70132572649860">him</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-905">his apartment building</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="2138" length="4">9/23</date_extent>
+          <normalized_date>XXXX-09-23</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571556920" name="entity-EVENT-21">
+      <event_mention id="evm-4013" type="conflict" subtype="attack">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2631" length="4">shot</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-1061" entity_id="ent-70132571587140">SWAT team members</arg>
+          <arg type="target" entity_mention_id="m-1048" entity_id="ent-70132571704140">he</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1022">suburban Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="2553" length="4">12/4</date_extent>
+          <normalized_date>XXXX-12-04</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571555740" name="entity-EVENT-22">
+      <event_mention id="evm-4063" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2640" length="6">killed</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1061" entity_id="ent-70132571587140">SWAT team members</arg>
+          <arg type="victim" entity_mention_id="m-1048" entity_id="ent-70132571704140">he</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1022">suburban Denver</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="2553" length="4">12/4</date_extent>
+          <normalized_date>XXXX-12-04</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571554580" name="entity-EVENT-23">
+      <event_mention id="evm-4113" type="life" subtype="die">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="2823" length="4">died</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1100" entity_id="ent-70132571587140">SWAT team members</arg>
+          <arg type="victim" entity_mention_id="m-1139" entity_id="ent-70132571704140">The Twenty-seven-year-old man</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1126">an apartment building</place>
+        </places>
+        <date>
+          <date_extent source="8a650be65e9a21400cc2e37208495906" offset="2553" length="4">12/4</date_extent>
+          <normalized_date>XXXX-12-04</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571545080" name="entity-EVENT-24">
+      <event_mention id="evm-4163" type="conflict" subtype="demonstrate">
+        <trigger source="8a650be65e9a21400cc2e37208495906" offset="3154" length="7">protest</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-1217" entity_id="ent-70132571566560">DOZENs of protestors</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1204">Denver</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

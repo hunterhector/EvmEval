@@ -1,0 +1,80 @@
+<post author="Alferd_Packer" datetime="2011-03-15T10:22:00" id="p566">
+<quote orig_author="MarkCorrigan">
+For the lurkers, since DC appears to be trollin' away to the hills now:
+
+The problem at Fukushima is a serious one. No one doubts that, and no one expects anyone to ignore it like it's a small car crash. Nuclear facilities going into meltdown is a big thing, and if the worst case scenario happens, will be a dangerous thing too. However, as has been pointed out time and time again, meltdown doesn't mean nuclear waste/fuel/radiation being pumped into the atmosphere. Nuclear meltdown doesn't mean the ground will be poisoned for decades. Nuclear meltdown with intact and fairly stable containment means a big mess and a lot of expensive cleaning up.
+
+If the containment was absent as it was in Chernobyl, yes, we would be seeing radiation entering the air at a fairly alarming rate, and if the containment is destroyed we might also see some smallscale but highly dangerous leakage. As it happens though, at worst one reactor containment area has been mildly damaged. This sounds alarming as hell, but all it means is a small amount of radiation is being leaked. So far this has peaked at a level that is not dangerous for small scale exposure, but prolonged and continuous exposure could well be harmful. However, it is notable that this peak was short lived, as far as I am aware, although if anyone wants to contradict me, show your sources.
+
+All this means is that in order to be in any danger whatsoever, you would have to stand in the affected area (between two reactors mark you, so not somewhere John Q Public is likely to be) for a prolonged time without a protective suit.
+
+Further to this, as it stands the radiation levels are dropping and plant cooling is occurring. A couple of the reactors have already gone into cold shut-down, meaning that they are now safe, and only one other reactor, Fukushima reactor 2, is still being cooled. This procedure seems to be going as smoothly as it can given the devastation wrought upon the area by the natural disasters that occurred. The same can not be said for the petrochemical plants in the area.
+
+</quote>
+That is not the way I udnerstand what is happening.
+
+The current issue now is not so much the reactors themselves, which are still at risk, but the spent fuel pools.
+
+The last explosion was caused by one of those pools in a reactor building where the reactor was not even in operation.
+
+They don't even know the status of the pools at reactor's 1 and 2.
+
+Those pools are NOT in containment like the reactors are.
+</post>
+<post author="DGM" datetime="2011-03-15T10:28:00" id="p567">
+<quote orig_author="Belz...">
+I think they're talking about Fukushima Daini, not Fukushima Daiichi. <img src="http://forums.randi.org/images/smilies/frown.gif"/>
+
+</quote>
+Damn, All their words look alike to me.
+
+<img src="http://forums.randi.org/images/smilies/biggrin.gif"/>
+
+<img src="http://forums.randi.org/images/smilies/mazeguyemotions/duck.gif"/>
+</post>
+<post author="MarkCorrigan" datetime="2011-03-15T10:30:00" id="p568">
+Ah, damn. Not so good then.
+
+Still good news.
+</post>
+<post author="BenBurch" datetime="2011-03-15T10:32:00" id="p569">
+<quote orig_author="Alferd_Packer">
+That is diffusion, not decay.
+
+{/semantic nit pick}
+
+</quote>
+It's both due to half-life being so short. Some of the gases have half-lives in the minutes, some in the hours. So dose drops quickly.
+</post>
+<post author="timhau" datetime="2011-03-15T10:33:00" id="p570">
+<quote orig_author="H'ethetheth">
+About the 400 mSv/hr figure:
+
+The JAIF reports 400 mSv "beside Unit 3" and about 500 μSv/hr at the NPS (I assume nuclear power station) border.
+
+<a href="http://www.jaif.or.jp/english/news_images/pdf/ENGNEWS01_1300189582P.pdf">http://www.jaif.or.jp/english/news_i...300189582P.pdf</a>
+
+On the other hand, they quote the "chief cabinet secretary" as saying "400 mSv/hr in the vicinity of unit-3"
+
+<a href="http://www.jaif.or.jp/english/news_images/pdf/ENGNEWS01_1300191989P.pdf">http://www.jaif.or.jp/english/news_i...300191989P.pdf</a>
+
+I'm not sure, but my guess is that the cabinet secretary misquoted the numbers.
+
+</quote>
+That could well be. The media here is confusing milli- and microsieverts all the time; it's not fear-mongering (the errors go both ways), it's just scientific illiteracy plain and simple.
+</post>
+<post author="Corsair 115" datetime="2011-03-15T10:34:00" id="p571">
+<quote orig_author="DC">
+well i am not so sure if i would want to be living death sick or rather death.
+
+</quote>
+
+An in-depth IAEA study, described as a "three-volume, 600-page report and incorporating the work of hundreds of scientists, economists and health experts, assesses the 20-year impact of the largest nuclear accident in history" had this to say about the health effects on humans:
+
+<quote>
+Approximately 1 000 on-site reactor staff and emergency workers were heavily exposed to high-level radiation on the first day of the accident; among the more than 200,000 emergency and recovery operation workers exposed during the period from 1986-1987, an estimated 2,200 radiation-caused deaths can be expected during their lifetime. An estimated five million people currently live in areas of Belarus, Russia and Ukraine that are contaminated with radionuclides due to the accident; about 100,000 of them live in areas classified in the past by government authorities as areas of "strict control". The existing "zoning" definitions need to be revisited and relaxed in light of the new findings. About 4,000 cases of thyroid cancer, mainly in children and adolescents at the time of the accident, have resulted from the accident's contamination and at least nine children died of thyroid cancer; however the survival rate among such cancer victims, judging from experience in Belarus, has been almost 99%. Most emergency workers and people living in contaminated areas received relatively low whole body radiation doses, comparable to natural background levels. As a consequence, no evidence or likelihood of decreased fertility among the affected population has been found, nor has there been any evidence of increases in congenital malformations that can be attributed to radiation exposure. Poverty, "lifestyle" diseases now rampant in the former Soviet Union and mental health problems pose a far greater threat to local communities than does radiation exposure.
+
+</quote>
+
+Not quite the radiological disaster on human health as one might have thought given the seriousness of the accident.
+</post>

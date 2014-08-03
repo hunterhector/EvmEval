@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="c61797246ae097dc5f5b4b86f4f9239a" source_type="multi_post" kit_id="536102c70000000000000011">
+  <entities>
+    <entity id="ent-70132569768060" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="14" length="8">d'Albert</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="830" length="1">I</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="680" length="1">I</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1028" length="8">d'Albert</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1043" length="1">I</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1193" length="1">I</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1324" length="3">you</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1413" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132569422980" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="85" length="6">John S</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="94" length="1">I</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="155" length="1">I</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="428" length="1">I</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="599" length="2">My</entity_mention>
+    </entity>
+    <entity id="ent-70132569295680" name="entity-PER-4" type="PER">
+      <entity_mention id="m-164" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="179" length="12">Michael Vick</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="278" length="2">He</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="365" length="2">he</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="376" length="2">he</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="440" length="2">He</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="483" length="2">He</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="911" length="3">him</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="858" length="3">his</entity_mention>
+      <entity_mention id="m-385" noun_type="NOM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="700" length="3">one</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="808" length="2">he</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1274" length="3">him</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1221" length="3">his</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1171" length="2">he</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1063" length="3">one</entity_mention>
+    </entity>
+    <entity id="ent-70132568762580" name="entity-PER-5" type="PER">
+      <entity_mention id="m-463" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="954" length="11">Jerry Horse</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1308" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568753040" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-177" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="223" length="15">Atlanta Falcons</entity_mention>
+    </entity>
+    <entity id="ent-70132568739080" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-346" noun_type="NOM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="589" length="8">New York</entity_mention>
+    </entity>
+    <entity id="ent-70132568733800" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-281" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="397" length="19">Philadelphia Eagles</entity_mention>
+      <entity_mention id="m-437" noun_type="NOM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="891" length="23">the team that hired him</entity_mention>
+      <entity_mention id="m-554" noun_type="NOM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="1254" length="23">the team that hired him</entity_mention>
+    </entity>
+    <entity id="ent-70132568702440" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-216" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="272" length="3">NFL</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="246" length="24">National Football League</entity_mention>
+      <entity_mention id="m-333" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="565" length="3">NFL</entity_mention>
+    </entity>
+    <entity id="ent-70132568677500" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-190" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="223" length="7">Atlanta</entity_mention>
+    </entity>
+    <entity id="ent-70132568660880" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-268" noun_type="NAM" source="c61797246ae097dc5f5b4b86f4f9239a" offset="397" length="12">Philadelphia</entity_mention>
+    </entity>
+    <entity id="ent-70132568654560" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-619" noun_type="NA" source="c61797246ae097dc5f5b4b86f4f9239a" offset="203" length="11">quarterback</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132567383680" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-40">
+        <arg type="employeemember" entity_id="ent-70132569295680" entity_mention_id="m-164">Michael Vick</arg>
+        <arg type="org" entity_id="ent-70132568753040" entity_mention_id="m-177">Atlanta Falcons</arg>
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="215" length="3">for</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567383480" type="social" subtype="role">
+      <relation_mention id="relm-627">
+        <arg type="role" entity_id="ent-70132568654560" entity_mention_id="m-619">quarterback</arg>
+        <arg type="per" entity_id="ent-70132569295680" entity_mention_id="m-164">Michael Vick</arg>
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="192" length="3">was</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567383120" type="physical" subtype="origin">
+      <relation_mention id="relm-657">
+        <arg type="entity" entity_id="ent-70132568753040" entity_mention_id="m-177">Atlanta Falcons</arg>
+        <arg type="loc" entity_id="ent-70132568677500" entity_mention_id="m-190">Atlanta</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567382740" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-687">
+        <arg type="suborg" entity_id="ent-70132568753040" entity_mention_id="m-177">Atlanta Falcons</arg>
+        <arg type="parent" entity_id="ent-70132568702440" entity_mention_id="m-203">National Football League</arg>
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="239" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567382540" type="physical" subtype="origin">
+      <relation_mention id="relm-717">
+        <arg type="entity" entity_id="ent-70132568733800" entity_mention_id="m-281">Philadelphia Eagles</arg>
+        <arg type="loc" entity_id="ent-70132568660880" entity_mention_id="m-268">Philadelphia</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567382400" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-747">
+        <arg type="employeemember" entity_id="ent-70132569295680" entity_mention_id="m-255">he</arg>
+        <arg type="org" entity_id="ent-70132568733800" entity_mention_id="m-281">Philadelphia Eagles</arg>
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="383" length="6">signed</trigger>
+      </relation_mention>
+      <relation_mention id="relm-777">
+        <arg type="employeemember" entity_id="ent-70132569295680" entity_mention_id="m-450">him</arg>
+        <arg type="org" entity_id="ent-70132568733800" entity_mention_id="m-437">the team that hired him</arg>
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="905" length="5">hired</trigger>
+      </relation_mention>
+      <relation_mention id="relm-807">
+        <arg type="employeemember" entity_id="ent-70132569295680" entity_mention_id="m-567">him</arg>
+        <arg type="org" entity_id="ent-70132568733800" entity_mention_id="m-554">the team that hired him</arg>
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="1268" length="5">hired</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571707380" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="justice" subtype="convict">
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="285" length="9">convicted</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-229" entity_id="ent-70132569295680">He</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571705960" name="entity-EVENT-3">
+      <event_mention id="evm-843" type="justice" subtype="arrestjail">
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="354" length="4">jail</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-229" entity_id="ent-70132569295680">He</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571703020" name="entity-EVENT-4">
+      <event_mention id="evm-885" type="personnel" subtype="startposition">
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="383" length="6">signed</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-255" entity_id="ent-70132569295680">he</arg>
+          <arg type="entity" entity_mention_id="m-281" entity_id="ent-70132568733800">Philadelphia Eagles</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-935" type="personnel" subtype="startposition">
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="905" length="5">hired</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-437" entity_id="ent-70132568733800">the team that hired him</arg>
+          <arg type="person" entity_mention_id="m-450" entity_id="ent-70132569295680">him</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-985" type="personnel" subtype="startposition">
+        <trigger source="c61797246ae097dc5f5b4b86f4f9239a" offset="1268" length="5">hired</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-554" entity_id="ent-70132568733800">the team that hired him</arg>
+          <arg type="person" entity_mention_id="m-567" entity_id="ent-70132569295680">him</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

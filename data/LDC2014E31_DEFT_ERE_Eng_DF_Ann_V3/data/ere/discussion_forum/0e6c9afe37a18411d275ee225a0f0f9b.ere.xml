@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="0e6c9afe37a18411d275ee225a0f0f9b" source_type="multi_post" kit_id="5357b9550000000000000001">
+  <entities>
+    <entity id="ent-70132571477040" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="14" length="13">Clayton Moore</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3836" length="13">Clayton Moore</entity_mention>
+      <entity_mention id="m-1594" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6208" length="13">Clayton Moore</entity_mention>
+    </entity>
+    <entity id="ent-70132571459960" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="92" length="10">Not Scooby</entity_mention>
+      <entity_mention id="m-1269" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4828" length="10">Not Scooby</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5160" length="3">you</entity_mention>
+      <entity_mention id="m-1360" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5171" length="4">your</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5339" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571413520" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="127" length="8">everyone</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="311" length="4">your</entity_mention>
+      <entity_mention id="m-190" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="475" length="8">everyone</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="502" length="5">their</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="525" length="8">everyone</entity_mention>
+      <entity_mention id="m-1308" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4846" length="8">everyone</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5030" length="4">your</entity_mention>
+    </entity>
+    <entity id="ent-70132571333000" name="entity-PER-5" type="PER">
+      <entity_mention id="m-151" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="212" length="8">an adult</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2184" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3937" length="8">Sandusky</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3999" length="3">his</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4015" length="2">he</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4124" length="2">he</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4166" length="3">him</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4198" length="3">his</entity_mention>
+      <entity_mention id="m-1282" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4931" length="8">an adult</entity_mention>
+    </entity>
+    <entity id="ent-70132570250060" name="entity-PER-6" type="PER">
+      <entity_mention id="m-164" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="237" length="7">a minor</entity_mention>
+      <entity_mention id="m-593" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2321" length="13">a 10-year-old</entity_mention>
+      <entity_mention id="m-1295" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4956" length="7">a minor</entity_mention>
+    </entity>
+    <entity id="ent-70132570219540" name="entity-PER-7" type="PER">
+      <entity_mention id="m-1191" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4497" length="15">a freshman girl</entity_mention>
+      <entity_mention id="m-1230" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4599" length="18">the alleged victim</entity_mention>
+      <entity_mention id="m-1646" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6353" length="10">the victim</entity_mention>
+    </entity>
+    <entity id="ent-70132570163760" name="entity-PER-8" type="PER">
+      <entity_mention id="m-242" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="791" length="6">Mary_H</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="800" length="1">I</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1157" length="3">You</entity_mention>
+    </entity>
+    <entity id="ent-70132570148380" name="entity-PER-9" type="PER">
+      <entity_mention id="m-281" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="878" length="6">We all</entity_mention>
+    </entity>
+    <entity id="ent-70132570111440" name="entity-PER-10" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="991" length="10">Most of us</entity_mention>
+    </entity>
+    <entity id="ent-70132570109760" name="entity-PER-11" type="PER">
+      <entity_mention id="m-502" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1865" length="7">Paterno</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2350" length="7">Paterno</entity_mention>
+      <entity_mention id="m-736" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2909" length="7">Paterno</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3141" length="6">Joe Pa</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3503" length="7">Paterno</entity_mention>
+      <entity_mention id="m-957" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3601" length="11">Joe Paterno</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2929" length="2">He</entity_mention>
+    </entity>
+    <entity id="ent-70132569889080" name="entity-PER-12" type="PER">
+      <entity_mention id="m-333" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1292" length="17">Schrodinger's Cat</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1331" length="1">I</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1363" length="1">I</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1674" length="1">I</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1714" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132569690780" name="entity-PER-13" type="PER">
+      <entity_mention id="m-866" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3463" length="24">several hundred students</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3576" length="2">We</entity_mention>
+    </entity>
+    <entity id="ent-70132569672080" name="entity-PER-14" type="PER">
+      <entity_mention id="m-1425" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5607" length="13">rjblaskiewicz</entity_mention>
+      <entity_mention id="m-1438" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5676" length="2">me</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5776" length="2">my</entity_mention>
+      <entity_mention id="m-1490" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5815" length="1">I</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5822" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132569488140" name="entity-PER-15" type="PER">
+      <entity_mention id="m-1256" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4755" length="9">Checkmite</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5152" length="1">I</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5184" length="1">I</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5318" length="1">I</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5532" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132569373520" name="entity-PER-16" type="PER">
+      <entity_mention id="m-996" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3913" length="7">WildCat</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4381" length="1">I</entity_mention>
+      <entity_mention id="m-1581" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6137" length="7">WildCat</entity_mention>
+      <entity_mention id="m-1685" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6467" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132569295440" name="entity-PER-17" type="PER">
+      <entity_mention id="m-320" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1214" length="14">Tsukasa Buddha</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1905" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132569266760" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1451" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5684" length="39">people up and down the chain of command</entity_mention>
+    </entity>
+    <entity id="ent-70132569176120" name="entity-PER-19" type="PER">
+      <entity_mention id="m-1178" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4438" length="23">an unidentified athlete</entity_mention>
+    </entity>
+    <entity id="ent-70132569170020" name="entity-PER-20" type="PER">
+      <entity_mention id="m-619" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2365" length="10">the police</entity_mention>
+    </entity>
+    <entity id="ent-70132569164380" name="entity-PER-21" type="PER">
+      <entity_mention id="m-489" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1817" length="4">fans</entity_mention>
+    </entity>
+    <entity id="ent-70132568815900" name="entity-PER-22" type="PER">
+      <entity_mention id="m-450" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1543" length="5">Jesus</entity_mention>
+    </entity>
+    <entity id="ent-70132568809920" name="entity-PER-23" type="PER">
+      <entity_mention id="m-398" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1410" length="7">Donahue</entity_mention>
+    </entity>
+    <entity id="ent-70132568805180" name="entity-PER-24" type="PER">
+      <entity_mention id="m-385" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1380" length="24">the Catholic apologetics</entity_mention>
+    </entity>
+    <entity id="ent-70132568792500" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-411" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1437" length="3">RCC</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1462" length="3">RCC</entity_mention>
+      <entity_mention id="m-437" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1532" length="10">the Church</entity_mention>
+    </entity>
+    <entity id="ent-70132568777780" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-580" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2234" length="17">the football team</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2505" length="13">Nittany Lions</entity_mention>
+      <entity_mention id="m-632" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2404" length="18">a football program</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2574" length="4">They</entity_mention>
+      <entity_mention id="m-697" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2672" length="47">the most valuable team in the Big 10 conference</entity_mention>
+      <entity_mention id="m-762" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2937" length="15">a football team</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2964" length="2">it</entity_mention>
+      <entity_mention id="m-788" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2972" length="51">an economic life raft for a university and a region</entity_mention>
+      <entity_mention id="m-827" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3099" length="8">the team</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3157" length="13">Nittany Lions</entity_mention>
+    </entity>
+    <entity id="ent-70132568716760" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-684" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2623" length="14">the University</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2761" length="10">Penn State</entity_mention>
+      <entity_mention id="m-801" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2998" length="12">a university</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3583" length="10">Penn State</entity_mention>
+      <entity_mention id="m-1048" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4115" length="3">PSU</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4153" length="4">they</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4177" length="5">their</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4695" length="3">PSU</entity_mention>
+      <entity_mention id="m-1542" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6008" length="10">Penn State</entity_mention>
+      <entity_mention id="m-1659" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6372" length="3">PSU</entity_mention>
+      <entity_mention id="m-1698" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6475" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568594660" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-1152" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4323" length="10">Notre Dame</entity_mention>
+      <entity_mention id="m-1204" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4514" length="14">The university</entity_mention>
+      <entity_mention id="m-1607" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6279" length="2">ND</entity_mention>
+      <entity_mention id="m-1620" noun_type="PRO" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6291" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568551620" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-1217" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4566" length="17">South Bend police</entity_mention>
+      <entity_mention id="m-1633" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6321" length="10">the police</entity_mention>
+    </entity>
+    <entity id="ent-70132568467120" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-541" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2022" length="10">conference</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2702" length="6">Big 10</entity_mention>
+    </entity>
+    <entity id="ent-70132568449080" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-528" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="1995" length="24">Bowl Championship Series</entity_mention>
+    </entity>
+    <entity id="ent-70132568445100" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-1139" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4198" length="39">his football camp for troubled children</entity_mention>
+    </entity>
+    <entity id="ent-70132567540160" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-1516" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5840" length="17">the campus police</entity_mention>
+    </entity>
+    <entity id="ent-70132567523760" name="entity-ORG-11" type="ORG">
+      <entity_mention id="m-1555" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6037" length="22">Chronicle of Higher Ed</entity_mention>
+    </entity>
+    <entity id="ent-70132567518560" name="entity-ORG-12" type="ORG">
+      <entity_mention id="m-1568" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6073" length="19">the Education Dept.</entity_mention>
+    </entity>
+    <entity id="ent-70132567513260" name="entity-ORG-13" type="ORG">
+      <entity_mention id="m-1672" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6442" length="10">Grand Jury</entity_mention>
+    </entity>
+    <entity id="ent-70132567507360" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-1711" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2761" length="4">Penn</entity_mention>
+      <entity_mention id="m-1724" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3583" length="4">Penn</entity_mention>
+      <entity_mention id="m-1990" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="6008" length="4">Penn</entity_mention>
+    </entity>
+    <entity id="ent-70132567493000" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-1917" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4566" length="10">South Bend</entity_mention>
+    </entity>
+    <entity id="ent-70132567488600" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-658" noun_type="NAM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2560" length="12">Happy Valley</entity_mention>
+      <entity_mention id="m-814" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3015" length="8">a region</entity_mention>
+    </entity>
+    <entity id="ent-70132567479180" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-892" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3503" length="15">Paterno's house</entity_mention>
+      <entity_mention id="m-905" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3533" length="30">a couple of blocks from campus</entity_mention>
+    </entity>
+    <entity id="ent-70132567467240" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-970" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3622" length="35">an otherwise quiet, darkened street</entity_mention>
+    </entity>
+    <entity id="ent-70132567461600" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-255" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="860" length="7">western</entity_mention>
+    </entity>
+    <entity id="ent-70132567456680" name="entity-LOC-6" type="LOC">
+      <entity_mention id="m-1464" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5776" length="9">my campus</entity_mention>
+      <entity_mention id="m-1529" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="5844" length="6">campus</entity_mention>
+    </entity>
+    <entity id="ent-70132567445740" name="entity-LOC-7" type="LOC">
+      <entity_mention id="m-918" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3557" length="6">campus</entity_mention>
+    </entity>
+    <entity id="ent-70132567439900" name="entity-LOC-8" type="LOC">
+      <entity_mention id="m-1113" noun_type="NOM" source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4177" length="16">their facilities</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132576393220" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-40">
+        <arg type="employeemember" entity_id="ent-70132568777780" entity_mention_id="m-697">the most valuable team in the Big 10 conference</arg>
+        <arg type="org" entity_id="ent-70132568467120" entity_mention_id="m-710">Big 10</arg>
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2695" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576393160" type="physical" subtype="origin">
+      <relation_mention id="relm-1732">
+        <arg type="entity" entity_id="ent-70132568716760" entity_mention_id="m-723">Penn State</arg>
+        <arg type="loc" entity_id="ent-70132567507360" entity_mention_id="m-1711">Penn</arg>
+      </relation_mention>
+      <relation_mention id="relm-1852">
+        <arg type="entity" entity_id="ent-70132568716760" entity_mention_id="m-944">Penn State</arg>
+        <arg type="loc" entity_id="ent-70132567507360" entity_mention_id="m-1724">Penn</arg>
+      </relation_mention>
+      <relation_mention id="relm-1998">
+        <arg type="entity" entity_id="ent-70132568716760" entity_mention_id="m-1542">Penn State</arg>
+        <arg type="loc" entity_id="ent-70132567507360" entity_mention_id="m-1990">Penn</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576393100" type="physical" subtype="located">
+      <relation_mention id="relm-1762">
+        <arg type="entity" entity_id="ent-70132567479180" entity_mention_id="m-892">Paterno's house</arg>
+        <arg type="loc" entity_id="ent-70132567479180" entity_mention_id="m-905">a couple of blocks from campus</arg>
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3520" length="7">located</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576393040" type="physical" subtype="located">
+      <relation_mention id="relm-1792">
+        <arg type="entity" entity_id="ent-70132569690780" entity_mention_id="m-866">several hundred students</arg>
+        <arg type="loc" entity_id="ent-70132567479180" entity_mention_id="m-892">Paterno's house</arg>
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3496" length="6">around</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576392980" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1822">
+        <arg type="employeemember" entity_id="ent-70132569690780" entity_mention_id="m-931">We</arg>
+        <arg type="org" entity_id="ent-70132568716760" entity_mention_id="m-944">Penn State</arg>
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3579" length="3">are</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576392920" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1882">
+        <arg type="leader" entity_id="ent-70132571333000" entity_mention_id="m-1126">his</arg>
+        <arg type="entity" entity_id="ent-70132568445100" entity_mention_id="m-1139">his football camp for troubled children</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576392860" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1925">
+        <arg type="suborg" entity_id="ent-70132568551620" entity_mention_id="m-1217">South Bend police</arg>
+        <arg type="parent" entity_id="ent-70132567493000" entity_mention_id="m-1917">South Bend</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576392800" type="physical" subtype="origin">
+      <relation_mention id="relm-1955">
+        <arg type="entity" entity_id="ent-70132567540160" entity_mention_id="m-1516">the campus police</arg>
+        <arg type="loc" entity_id="ent-70132567456680" entity_mention_id="m-1529">campus</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132572783680" name="entity-EVENT-2">
+      <event_mention id="evm-2084" type="transaction" subtype="transfermoney">
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2612" length="6">profit</trigger>
+        <args>
+          <arg type="beneficiary" entity_mention_id="m-684" entity_id="ent-70132568716760">the University</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132572782680" name="entity-EVENT-3">
+      <event_mention id="evm-2126" type="conflict" subtype="demonstrate">
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3488" length="7">crowded</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-866" entity_id="ent-70132569690780">several hundred students</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-892">Paterno's house</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132572929540" name="entity-EVENT-4">
+      <event_mention id="evm-2168" type="personnel" subtype="endposition">
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="3947" length="7">retired</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1009" entity_id="ent-70132571333000">Sandusky</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132572928460" name="entity-EVENT-5">
+      <event_mention id="evm-2210" type="contact" subtype="communicate">
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4551" length="10">contacting</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-1204" entity_id="ent-70132568594660">The university</arg>
+          <arg type="entity" entity_mention_id="m-1217" entity_id="ent-70132568551620">South Bend police</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132572927420" name="entity-EVENT-6">
+      <event_mention id="evm-2260" type="life" subtype="die">
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4632" length="7">suicide</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1230" entity_id="ent-70132570219540">the alleged victim</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132572925380" name="entity-EVENT-7">
+      <event_mention id="evm-84" type="conflict" subtype="attack">
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="161" length="7">assault</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-151" entity_id="ent-70132571333000">an adult</arg>
+          <arg type="attacker" entity_mention_id="m-164" entity_id="ent-70132570250060">a minor</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2042" type="conflict" subtype="attack">
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="2310" length="7">assault</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-593" entity_id="ent-70132570250060">a 10-year-old</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2302" type="conflict" subtype="attack">
+        <trigger source="0e6c9afe37a18411d275ee225a0f0f9b" offset="4880" length="7">assault</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-1282" entity_id="ent-70132571333000">an adult</arg>
+          <arg type="target" entity_mention_id="m-1295" entity_id="ent-70132570250060">a minor</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="36b12cef6f7a805e3e74a4f430129028" source_type="multi_post" kit_id="5346f3680000000000000036">
+  <entities>
+    <entity id="ent-70132576888720" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="36b12cef6f7a805e3e74a4f430129028" offset="14" length="13">vlscott@li...</entity_mention>
+      <entity_mention id="m-125" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="74" length="1">I</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="111" length="1">I</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="151" length="2">my</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="166" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="403" length="2">me</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="452" length="1">I</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="582" length="1">I</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="636" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576633920" name="entity-PER-3" type="PER">
+      <entity_mention id="m-164" noun_type="NOM" source="36b12cef6f7a805e3e74a4f430129028" offset="151" length="10">my husband</entity_mention>
+    </entity>
+    <entity id="ent-70132576393120" name="entity-PER-4" type="PER">
+      <entity_mention id="m-216" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="195" length="3">our</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="410" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132576387120" name="entity-PER-5" type="PER">
+      <entity_mention id="m-320" noun_type="NAM" source="36b12cef6f7a805e3e74a4f430129028" offset="705" length="13">MyAlterEgo...</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="1011" length="2">me</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="1538" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132575911460" name="entity-PER-6" type="PER">
+      <entity_mention id="m-333" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="760" length="2">We</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="792" length="3">our</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="902" length="3">our</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="916" length="2">We</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="964" length="2">we</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="1053" length="2">We</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="1092" length="3">our</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="1257" length="2">we</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="1327" length="3">our</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="1365" length="2">We</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="36b12cef6f7a805e3e74a4f430129028" offset="1555" length="3">our</entity_mention>
+    </entity>
+    <entity id="ent-70132575234480" name="entity-PER-7" type="PER">
+      <entity_mention id="m-756" noun_type="NOM" source="36b12cef6f7a805e3e74a4f430129028" offset="1308" length="10">The notary</entity_mention>
+    </entity>
+    <entity id="ent-70132577599380" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-151" noun_type="NAM" source="36b12cef6f7a805e3e74a4f430129028" offset="143" length="2">VA</entity_mention>
+      <entity_mention id="m-229" noun_type="NAM" source="36b12cef6f7a805e3e74a4f430129028" offset="248" length="2">VA</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="36b12cef6f7a805e3e74a4f430129028" offset="523" length="2">VA</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="36b12cef6f7a805e3e74a4f430129028" offset="772" length="2">VA</entity_mention>
+      <entity_mention id="m-385" noun_type="NAM" source="36b12cef6f7a805e3e74a4f430129028" offset="835" length="2">VA</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="36b12cef6f7a805e3e74a4f430129028" offset="1595" length="2">VA</entity_mention>
+    </entity>
+    <entity id="ent-70132577264860" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-398" noun_type="NOM" source="36b12cef6f7a805e3e74a4f430129028" offset="872" length="42">the bank that currently holds our mortgage</entity_mention>
+      <entity_mention id="m-476" noun_type="NOM" source="36b12cef6f7a805e3e74a4f430129028" offset="1092" length="23">our regular institution</entity_mention>
+      <entity_mention id="m-567" noun_type="NOM" source="36b12cef6f7a805e3e74a4f430129028" offset="1555" length="9">our banks</entity_mention>
+    </entity>
+    <entity id="ent-70132576511920" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-203" noun_type="NOM" source="36b12cef6f7a805e3e74a4f430129028" offset="195" length="16">our current home</entity_mention>
+    </entity>
+    <entity id="ent-70132576271820" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-359" noun_type="NOM" source="36b12cef6f7a805e3e74a4f430129028" offset="792" length="9">our house</entity_mention>
+      <entity_mention id="m-515" noun_type="NOM" source="36b12cef6f7a805e3e74a4f430129028" offset="1327" length="9">our house</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571531180" type="social" subtype="family">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132576633920" entity_mention_id="m-164">my husband</arg>
+        <arg type="per" entity_id="ent-70132576888720" entity_mention_id="m-177">my</arg>
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="154" length="7">husband</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571531120" type="physical" subtype="origin">
+      <relation_mention id="relm-601">
+        <arg type="entity" entity_id="ent-70132576393120" entity_mention_id="m-216">our</arg>
+        <arg type="loc" entity_id="ent-70132576511920" entity_mention_id="m-203">our current home</arg>
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="195" length="3">our</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571531060" type="physical" subtype="origin">
+      <relation_mention id="relm-631">
+        <arg type="entity" entity_id="ent-70132575911460" entity_mention_id="m-372">our</arg>
+        <arg type="loc" entity_id="ent-70132576271820" entity_mention_id="m-359">our house</arg>
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="792" length="3">our</trigger>
+      </relation_mention>
+      <relation_mention id="relm-721">
+        <arg type="entity" entity_id="ent-70132575911460" entity_mention_id="m-528">our</arg>
+        <arg type="loc" entity_id="ent-70132576271820" entity_mention_id="m-515">our house</arg>
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="1327" length="3">our</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571530960" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-661">
+        <arg type="employeemember" entity_id="ent-70132575911460" entity_mention_id="m-411">our</arg>
+        <arg type="org" entity_id="ent-70132577264860" entity_mention_id="m-398">the bank that currently holds our mortgage</arg>
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="902" length="3">our</trigger>
+      </relation_mention>
+      <relation_mention id="relm-691">
+        <arg type="employeemember" entity_id="ent-70132575911460" entity_mention_id="m-489">our</arg>
+        <arg type="org" entity_id="ent-70132577264860" entity_mention_id="m-476">our regular institution</arg>
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="1092" length="3">our</trigger>
+      </relation_mention>
+      <relation_mention id="relm-794">
+        <arg type="employeemember" entity_id="ent-70132575911460" entity_mention_id="m-580">our</arg>
+        <arg type="org" entity_id="ent-70132577264860" entity_mention_id="m-567">our banks</arg>
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="1555" length="3">our</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571530900" type="physical" subtype="located">
+      <relation_mention id="relm-764">
+        <arg type="entity" entity_id="ent-70132575234480" entity_mention_id="m-756">The notary</arg>
+        <arg type="loc" entity_id="ent-70132576271820" entity_mention_id="m-515">our house</arg>
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="1324" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571455360" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="transaction" subtype="transfermoney">
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="146" length="4">loan</trigger>
+        <args>
+          <arg type="giver" entity_mention_id="m-151" entity_id="ent-70132577599380">VA</arg>
+          <arg type="recipient" entity_mention_id="m-164" entity_id="ent-70132576633920">my husband</arg>
+          <arg type="recipient" entity_mention_id="m-190" entity_id="ent-70132576888720">I</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="36b12cef6f7a805e3e74a4f430129028" offset="173" length="9">last year</date_extent>
+          <normalized_date>2011-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571454240" name="entity-EVENT-3">
+      <event_mention id="evm-846" type="transaction" subtype="transfermoney">
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="775" length="4">loan</trigger>
+        <args>
+          <arg type="giver" entity_mention_id="m-346" entity_id="ent-70132577599380">VA</arg>
+          <arg type="recipient" entity_mention_id="m-333" entity_id="ent-70132575911460">We</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="36b12cef6f7a805e3e74a4f430129028" offset="805" length="4">2008</date_extent>
+          <normalized_date>2008-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571453100" name="entity-EVENT-4">
+      <event_mention id="evm-896" type="movement" subtype="transportperson">
+        <trigger source="36b12cef6f7a805e3e74a4f430129028" offset="1319" length="4">came</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-756" entity_id="ent-70132575234480">The notary</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-515">our house</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

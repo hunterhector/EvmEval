@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="5cd7d603e1cf8d2c134d039dc90112f0" source_type="multi_post" kit_id="5355f7d70000000000000061">
+  <entities>
+    <entity id="ent-70132575366500" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="14" length="9">MaggieMae</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1460" length="9">MaggieMae</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2506" length="1">I</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2823" length="9">MaggieMae</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4599" length="1">I</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5350" length="3">you</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5292" length="4">your</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5234" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576892980" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="86" length="13">theDoctorisIn</entity_mention>
+    </entity>
+    <entity id="ent-70132576889220" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="122" length="10">mudwhistle</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="307" length="1">I</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="887" length="3">You</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1104" length="5">Muddy</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1297" length="2">he</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1532" length="10">mudwhistle</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2289" length="2">me</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2465" length="3">you</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2440" length="3">You</entity_mention>
+    </entity>
+    <entity id="ent-70132576389760" name="entity-PER-5" type="PER">
+      <entity_mention id="m-151" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="155" length="9">uscitizen</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="286" length="3">You</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="695" length="3">you</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1565" length="9">uscitizen</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2163" length="3">you</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2624" length="9">uscitizen</entity_mention>
+    </entity>
+    <entity id="ent-70132575627780" name="entity-PER-6" type="PER">
+      <entity_mention id="m-177" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="207" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132575100740" name="entity-PER-7" type="PER">
+      <entity_mention id="m-164" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="167" length="2">He</entity_mention>
+      <entity_mention id="m-320" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="896" length="5">Obama</entity_mention>
+      <entity_mention id="m-645" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2204" length="11">one of them</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2272" length="2">he</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2292" length="2">he</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2331" length="2">he</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2379" length="2">he</entity_mention>
+      <entity_mention id="m-879" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2929" length="14">the Presidents</entity_mention>
+      <entity_mention id="m-918" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3039" length="13">the President</entity_mention>
+    </entity>
+    <entity id="ent-70132574837600" name="entity-PER-8" type="PER">
+      <entity_mention id="m-502" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1597" length="11">rightwinger</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1633" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132574701300" name="entity-PER-9" type="PER">
+      <entity_mention id="m-606" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1965" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132575910820" name="entity-PER-10" type="PER">
+      <entity_mention id="m-840" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2752" length="8">Navy1960</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2855" length="8">Navy1960</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5082" length="2">me</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4917" length="1">I</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4982" length="1">I</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5334" length="1">I</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5283" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132574564340" name="entity-PER-11" type="PER">
+      <entity_mention id="m-996" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3476" length="19">the program manager</entity_mention>
+    </entity>
+    <entity id="ent-70132574560720" name="entity-PER-12" type="PER">
+      <entity_mention id="m-983" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3454" length="5">Gates</entity_mention>
+    </entity>
+    <entity id="ent-70132575237960" name="entity-PER-13" type="PER">
+      <entity_mention id="m-1347" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5432" length="27">the former director of NASA</entity_mention>
+    </entity>
+    <entity id="ent-70132575234220" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-216" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="373" length="7">defense</entity_mention>
+      <entity_mention id="m-333" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="920" length="7">defense</entity_mention>
+      <entity_mention id="m-398" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1169" length="7">defense</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3026" length="3">DoD</entity_mention>
+    </entity>
+    <entity id="ent-70132577271540" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-359" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1138" length="17">the space program</entity_mention>
+      <entity_mention id="m-411" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1202" length="17">the space program</entity_mention>
+      <entity_mention id="m-450" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1326" length="17">the space program</entity_mention>
+    </entity>
+    <entity id="ent-70132576517440" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-385" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1160" length="8">military</entity_mention>
+      <entity_mention id="m-814" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2707" length="8">military</entity_mention>
+    </entity>
+    <entity id="ent-70132576510920" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-554" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1716" length="9">Naval Air</entity_mention>
+    </entity>
+    <entity id="ent-70132576270580" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-541" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1701" length="9">Air Force</entity_mention>
+    </entity>
+    <entity id="ent-70132576266960" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-1230" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5147" length="8">our Govt</entity_mention>
+    </entity>
+    <entity id="ent-70132576042900" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-892" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3013" length="4">NASA</entity_mention>
+      <entity_mention id="m-1360" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5455" length="4">NASA</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5267" length="4">NASA</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4741" length="4">NASA</entity_mention>
+    </entity>
+    <entity id="ent-70132572648220" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-931" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3091" length="11">Republicans</entity_mention>
+    </entity>
+    <entity id="ent-70132572644780" name="entity-ORG-11" type="ORG">
+      <entity_mention id="m-944" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3358" length="7">US Navy</entity_mention>
+    </entity>
+    <entity id="ent-70132571803280" name="entity-ORG-1" type="ORG">
+      <entity_mention id="m-1269" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5246" length="25">the research part of NASA</entity_mention>
+      <entity_mention id="m-1256" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5273" length="4">Ames</entity_mention>
+    </entity>
+    <entity id="ent-70132571763740" name="entity-ORG-13" type="ORG">
+      <entity_mention id="m-1191" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4954" length="7">Space-X</entity_mention>
+    </entity>
+    <entity id="ent-70132571707800" name="entity-ORG-15" type="ORG">
+      <entity_mention id="m-658" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2243" length="11">Oval Office</entity_mention>
+    </entity>
+    <entity id="ent-70132571702820" name="entity-ORG-14" type="ORG">
+      <entity_mention id="m-1373" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5411" length="10">Huntsville</entity_mention>
+    </entity>
+    <entity id="ent-70132571640740" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-1386" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5399" length="7">Johnson</entity_mention>
+    </entity>
+    <entity id="ent-70132571594660" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-255" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="568" length="8">Russians</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1644" length="8">Russians</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1888" length="8">Russians</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3668" length="7">Russian</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3838" length="6">Russia</entity_mention>
+    </entity>
+    <entity id="ent-70132571570100" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-229" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="460" length="4">Iran</entity_mention>
+    </entity>
+    <entity id="ent-70132571566580" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-268" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="654" length="12">this country</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2061" length="7">America</entity_mention>
+      <entity_mention id="m-710" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2301" length="12">this country</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2364" length="2">it</entity_mention>
+      <entity_mention id="m-957" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3358" length="2">US</entity_mention>
+      <entity_mention id="m-1022" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3677" length="8">American</entity_mention>
+      <entity_mention id="m-1048" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3775" length="2">US</entity_mention>
+      <entity_mention id="m-1139" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4341" length="8">American</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3928" length="2">US</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4080" length="2">it</entity_mention>
+      <entity_mention id="m-1100" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3955" length="2">US</entity_mention>
+    </entity>
+    <entity id="ent-70132571519040" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1035" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3691" length="2">EU</entity_mention>
+    </entity>
+    <entity id="ent-70132571515500" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-242" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="489" length="5">space</entity_mention>
+      <entity_mention id="m-294" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="755" length="5">space</entity_mention>
+      <entity_mention id="m-372" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1142" length="5">space</entity_mention>
+      <entity_mention id="m-827" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2716" length="5">space</entity_mention>
+      <entity_mention id="m-1126" noun_type="NOM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4287" length="5">space</entity_mention>
+    </entity>
+    <entity id="ent-70132571501200" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-424" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1248" length="4">moon</entity_mention>
+    </entity>
+    <entity id="ent-70132571497680" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-567" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1730" length="5">earth</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="1877" length="5">earth</entity_mention>
+    </entity>
+    <entity id="ent-70132571483680" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-1074" noun_type="NAM" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3890" length="3">ISS</entity_mention>
+    </entity>
+    <entity id="ent-70132571480100" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-970" noun_type="NA" source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3449" length="3">Sec</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571260500" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-40">
+        <arg type="employeemember" entity_id="ent-70132575100740" entity_mention_id="m-645">one of them</arg>
+        <arg type="org" entity_id="ent-70132571707800" entity_mention_id="m-658">Oval Office</arg>
+        <trigger source="5cd7d603e1cf8d2c134d039dc90112f0" offset="2226" length="5">works</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571262160" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1394">
+        <arg type="suborg" entity_id="ent-70132572644780" entity_mention_id="m-944">US Navy</arg>
+        <arg type="parent" entity_id="ent-70132571566580" entity_mention_id="m-957">US</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571262820" type="social" subtype="role">
+      <relation_mention id="relm-1424">
+        <arg type="role" entity_id="ent-70132571480100" entity_mention_id="m-970">Sec</arg>
+        <arg type="per" entity_id="ent-70132574560720" entity_mention_id="m-983">Gates</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571263360" type="social" subtype="business">
+      <relation_mention id="relm-1454">
+        <arg type="per" entity_id="ent-70132574560720" entity_mention_id="m-983">Gates</arg>
+        <arg type="per" entity_id="ent-70132574564340" entity_mention_id="m-996">the program manager</arg>
+        <trigger source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3470" length="5">fired</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571264840" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1484">
+        <arg type="suborg" entity_id="ent-70132571803280" entity_mention_id="m-1269">the research part of NASA</arg>
+        <arg type="parent" entity_id="ent-70132576042900" entity_mention_id="m-1243">NASA</arg>
+        <trigger source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5264" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571265580" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1514">
+        <arg type="leader" entity_id="ent-70132575237960" entity_mention_id="m-1347">the former director of NASA</arg>
+        <arg type="entity" entity_id="ent-70132576042900" entity_mention_id="m-1360">NASA</arg>
+        <trigger source="5cd7d603e1cf8d2c134d039dc90112f0" offset="5443" length="8">director</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132570111740" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="personnel" subtype="endposition">
+        <trigger source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3470" length="5">fired</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-996" entity_id="ent-70132574564340">the program manager</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="5cd7d603e1cf8d2c134d039dc90112f0" offset="3460" length="9">yesterday</date_extent>
+          <normalized_date>2010-02-03</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132570109460" name="entity-EVENT-3">
+      <event_mention id="evm-1550" type="transaction" subtype="transferownership">
+        <trigger source="5cd7d603e1cf8d2c134d039dc90112f0" offset="4945" length="5">given</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-1191" entity_id="ent-70132571763740">Space-X</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

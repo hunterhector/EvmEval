@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="0e0abbf0da91d9e34750441c08d5d262" source_type="multi_post" kit_id="537ccd8d0000000000000012">
+  <entities>
+    <entity id="ent-70132571806840" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="86" length="15">Antagonist_Love</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="118" length="1">I</entity_mention>
+      <entity_mention id="m-1529" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5613" length="15">Antagonist_Love</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="5631" length="1">I</entity_mention>
+      <entity_mention id="m-1620" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="5854" length="1">I</entity_mention>
+      <entity_mention id="m-1659" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="5896" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571637180" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="14" length="8">TheCount</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="1356" length="2">My</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="2030" length="1">I</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="2080" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132571579980" name="entity-PER-4" type="PER">
+      <entity_mention id="m-229" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="266" length="6">Mugabe</entity_mention>
+      <entity_mention id="m-255" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="281" length="22">an African Nationalist</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="586" length="2">he</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1828" length="6">Mugabe</entity_mention>
+    </entity>
+    <entity id="ent-70132571557780" name="entity-PER-5" type="PER">
+      <entity_mention id="m-372" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="596" length="16">the white people</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="638" length="5">there</entity_mention>
+    </entity>
+    <entity id="ent-70132571542540" name="entity-PER-6" type="PER">
+      <entity_mention id="m-450" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="900" length="15">the royal guard</entity_mention>
+    </entity>
+    <entity id="ent-70132571538300" name="entity-PER-7" type="PER">
+      <entity_mention id="m-463" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="923" length="23">some violent protesters</entity_mention>
+    </entity>
+    <entity id="ent-70132571534260" name="entity-PER-9" type="PER">
+      <entity_mention id="m-658" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1802" length="16">their protesters</entity_mention>
+    </entity>
+    <entity id="ent-70132571530240" name="entity-PER-10" type="PER">
+      <entity_mention id="m-697" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1849" length="10">opposition</entity_mention>
+    </entity>
+    <entity id="ent-70132571517660" name="entity-PER-11" type="PER">
+      <entity_mention id="m-723" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1961" length="6">Stalin</entity_mention>
+    </entity>
+    <entity id="ent-70132571513860" name="entity-PER-12" type="PER">
+      <entity_mention id="m-736" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1969" length="10">Mao ZeDong</entity_mention>
+    </entity>
+    <entity id="ent-70132571509920" name="entity-PER-13" type="PER">
+      <entity_mention id="m-749" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1981" length="7">Pol Pot</entity_mention>
+    </entity>
+    <entity id="ent-70132571506360" name="entity-PER-14" type="PER">
+      <entity_mention id="m-762" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1990" length="8">Idi Amin</entity_mention>
+    </entity>
+    <entity id="ent-70132571502480" name="entity-PER-15" type="PER">
+      <entity_mention id="m-814" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2173" length="5">amsie</entity_mention>
+      <entity_mention id="m-1516" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5544" length="5">amsie</entity_mention>
+      <entity_mention id="m-1737" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="6092" length="1">I</entity_mention>
+      <entity_mention id="m-1750" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="6109" length="1">I</entity_mention>
+      <entity_mention id="m-1763" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="6128" length="1">I</entity_mention>
+      <entity_mention id="m-1776" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="6183" length="1">I</entity_mention>
+      <entity_mention id="m-1815" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="6278" length="1">I</entity_mention>
+      <entity_mention id="m-1841" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="6408" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571460020" name="entity-PER-16" type="PER">
+      <entity_mention id="m-801" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2106" length="4">Aj12</entity_mention>
+      <entity_mention id="m-1438" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5184" length="4">Aj12</entity_mention>
+      <entity_mention id="m-1477" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5342" length="4">Aj12</entity_mention>
+      <entity_mention id="m-1867" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6682" length="4">Aj12</entity_mention>
+    </entity>
+    <entity id="ent-70132571413940" name="entity-PER-17" type="PER">
+      <entity_mention id="m-879" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2491" length="9">Relaxicat</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4952" length="1">i</entity_mention>
+    </entity>
+    <entity id="ent-70132571364560" name="entity-PER-18" type="PER">
+      <entity_mention id="m-892" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2563" length="12">DavidJenkins</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="2605" length="1">i</entity_mention>
+    </entity>
+    <entity id="ent-70132571339960" name="entity-PER-19" type="PER">
+      <entity_mention id="m-957" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2712" length="10">the leader</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2859" length="8">Kim Jong</entity_mention>
+    </entity>
+    <entity id="ent-70132571332360" name="entity-PER-21" type="PER">
+      <entity_mention id="m-1048" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="3344" length="10">a defector</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="3358" length="3">him</entity_mention>
+    </entity>
+    <entity id="ent-70132571325120" name="entity-PER-22" type="PER">
+      <entity_mention id="m-1074" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="3405" length="8">a family</entity_mention>
+    </entity>
+    <entity id="ent-70132571296180" name="entity-PER-23" type="PER">
+      <entity_mention id="m-1087" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="3421" length="10">scientists</entity_mention>
+    </entity>
+    <entity id="ent-70132571266980" name="entity-PER-24" type="PER">
+      <entity_mention id="m-1100" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="3903" length="10">an escapee</entity_mention>
+    </entity>
+    <entity id="ent-70132571261980" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1347" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4796" length="10">its people</entity_mention>
+    </entity>
+    <entity id="ent-70132570249600" name="entity-PER-26" type="PER">
+      <entity_mention id="m-1425" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5111" length="10">lamejohnny</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="5262" length="1">i</entity_mention>
+      <entity_mention id="m-1490" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5409" length="10">lamejohnny</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="5431" length="1">i</entity_mention>
+      <entity_mention id="m-1854" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6609" length="10">lamejohnny</entity_mention>
+    </entity>
+    <entity id="ent-70132570164300" name="entity-PER-28" type="PER">
+      <entity_mention id="m-1646" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="5873" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132570155880" name="entity-PER-29" type="PER">
+      <entity_mention id="m-1828" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6294" length="7">Gaddafi</entity_mention>
+    </entity>
+    <entity id="ent-70132570150260" name="entity-PER-1" type="PER">
+      <entity_mention id="m-1022" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="3151" length="17">200,000 prisoners</entity_mention>
+    </entity>
+    <entity id="ent-70132570149620" name="entity-PER-8" type="PER">
+      <entity_mention id="m-606" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1704" length="12">Tamil Tigers</entity_mention>
+    </entity>
+    <entity id="ent-70132570111380" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-177" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="150" length="22">The Chinese government</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="197" length="2">it</entity_mention>
+    </entity>
+    <entity id="ent-70132570052540" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-294" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="406" length="16">there government</entity_mention>
+    </entity>
+    <entity id="ent-70132570004420" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-476" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="961" length="14">the government</entity_mention>
+    </entity>
+    <entity id="ent-70132569947340" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-580" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1656" length="25">the Sri Lankan government</entity_mention>
+    </entity>
+    <entity id="ent-70132569943060" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-645" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1758" length="35">the Yemen/Syrian/Bahrain government</entity_mention>
+    </entity>
+    <entity id="ent-70132569883180" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-944" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2624" length="4">Nazi</entity_mention>
+      <entity_mention id="m-1139" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4151" length="4">Nazi</entity_mention>
+    </entity>
+    <entity id="ent-70132569771380" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-1009" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="3121" length="7">Amnesty</entity_mention>
+    </entity>
+    <entity id="ent-70132569690860" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-1685" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5970" length="4">NATO</entity_mention>
+      <entity_mention id="m-1802" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6244" length="4">NATO</entity_mention>
+    </entity>
+    <entity id="ent-70132569670040" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-1711" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6032" length="10">government</entity_mention>
+    </entity>
+    <entity id="ent-70132569618600" name="entity-ORG-11" type="ORG">
+      <entity_mention id="m-1789" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6203" length="2">UN</entity_mention>
+    </entity>
+    <entity id="ent-70132569536300" name="entity-ORG-12" type="ORG">
+      <entity_mention id="m-1880" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6739" length="3">CIA</entity_mention>
+    </entity>
+    <entity id="ent-70132569505160" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-138" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="104" length="9">Sri Lanka</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1660" length="10">Sri Lankan</entity_mention>
+    </entity>
+    <entity id="ent-70132569432160" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-164" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="140" length="5">China</entity_mention>
+      <entity_mention id="m-190" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="154" length="7">Chinese</entity_mention>
+      <entity_mention id="m-1217" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4390" length="5">China</entity_mention>
+      <entity_mention id="m-1230" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4397" length="4">whom</entity_mention>
+      <entity_mention id="m-1256" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4420" length="5">China</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4480" length="4">they</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4533" length="5">their</entity_mention>
+      <entity_mention id="m-1321" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4679" length="7">Chinese</entity_mention>
+      <entity_mention id="m-1334" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4731" length="7">chinese</entity_mention>
+      <entity_mention id="m-1360" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4796" length="3">its</entity_mention>
+    </entity>
+    <entity id="ent-70132569172560" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-216" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="253" length="8">Zimbabwe</entity_mention>
+      <entity_mention id="m-268" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="305" length="11">The country</entity_mention>
+      <entity_mention id="m-320" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="566" length="8">Zimbabwe</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="618" length="8">Zimbabwe</entity_mention>
+    </entity>
+    <entity id="ent-70132568808680" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-281" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="359" length="27">almost all Africa countries</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="406" length="5">there</entity_mention>
+    </entity>
+    <entity id="ent-70132568790700" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-398" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="651" length="5">Yeman</entity_mention>
+      <entity_mention id="m-411" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="661" length="5">Yemen</entity_mention>
+    </entity>
+    <entity id="ent-70132568779060" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-424" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="872" length="6">Russia</entity_mention>
+    </entity>
+    <entity id="ent-70132568764600" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-437" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="882" length="7">Bahrain</entity_mention>
+    </entity>
+    <entity id="ent-70132568764180" name="entity-GPE-9" type="GPE">
+      <entity_mention id="m-515" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="1385" length="2">we</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="1480" length="2">we</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="1526" length="2">we</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="1631" length="2">We</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="1943" length="3">our</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="2205" length="4">they</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="2265" length="4">they</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="2294" length="3">our</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="2341" length="4">they</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4136" length="2">we</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4231" length="7">America</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4306" length="7">America</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4870" length="2">we</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4910" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132568654160" name="entity-GPE-10" type="GPE">
+      <entity_mention id="m-541" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1496" length="11">North Korea</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2578" length="11">North Korea</entity_mention>
+      <entity_mention id="m-970" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2724" length="11">the country</entity_mention>
+      <entity_mention id="m-996" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2872" length="11">the country</entity_mention>
+      <entity_mention id="m-1178" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4202" length="11">North Korea</entity_mention>
+      <entity_mention id="m-1412" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5020" length="11">North Korea</entity_mention>
+      <entity_mention id="m-1451" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5191" length="11">North Korea</entity_mention>
+      <entity_mention id="m-1893" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="6751" length="4">they</entity_mention>
+      <entity_mention id="m-1906" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="6763" length="4">they</entity_mention>
+      <entity_mention id="m-1919" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6772" length="27">110th supplier in the world</entity_mention>
+    </entity>
+    <entity id="ent-70132568446120" name="entity-GPE-11" type="GPE">
+      <entity_mention id="m-619" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1732" length="7">Rwandan</entity_mention>
+    </entity>
+    <entity id="ent-70132567539720" name="entity-GPE-12" type="GPE">
+      <entity_mention id="m-632" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1762" length="20">Yemen/Syrian/Bahrain</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="1802" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132567517520" name="entity-GPE-13" type="GPE">
+      <entity_mention id="m-931" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="2629" length="7">Germany</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4156" length="7">Germany</entity_mention>
+    </entity>
+    <entity id="ent-70132567505240" name="entity-GPE-14" type="GPE">
+      <entity_mention id="m-1165" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4180" length="4">Iraq</entity_mention>
+    </entity>
+    <entity id="ent-70132567502500" name="entity-GPE-15" type="GPE">
+      <entity_mention id="m-1295" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4587" length="11">south Korea</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="0e0abbf0da91d9e34750441c08d5d262" offset="4600" length="5">which</entity_mention>
+    </entity>
+    <entity id="ent-70132567486720" name="entity-GPE-16" type="GPE">
+      <entity_mention id="m-1568" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5650" length="6">French</entity_mention>
+    </entity>
+    <entity id="ent-70132567480740" name="entity-GPE-17" type="GPE">
+      <entity_mention id="m-1594" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5762" length="19">One African country</entity_mention>
+    </entity>
+    <entity id="ent-70132567473640" name="entity-GPE-18" type="GPE">
+      <entity_mention id="m-1672" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5904" length="6">Libyan</entity_mention>
+    </entity>
+    <entity id="ent-70132567465300" name="entity-GPE-19" type="GPE">
+      <entity_mention id="m-1724" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6068" length="5">Sabha</entity_mention>
+    </entity>
+    <entity id="ent-70132567458240" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-359" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="638" length="10">there land</entity_mention>
+    </entity>
+    <entity id="ent-70132567451060" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-489" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="1315" length="8">he world</entity_mention>
+      <entity_mention id="m-1932" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="6790" length="9">the world</entity_mention>
+    </entity>
+    <entity id="ent-70132567438080" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-1035" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="3177" length="19">concentration camps</entity_mention>
+    </entity>
+    <entity id="ent-70132567419820" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-1113" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="3956" length="15">the prison camp</entity_mention>
+    </entity>
+    <entity id="ent-70132567406780" name="entity-LOC-6" type="LOC">
+      <entity_mention id="m-1243" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="4409" length="9">the North</entity_mention>
+    </entity>
+    <entity id="ent-70132567397760" name="entity-LOC-7" type="LOC">
+      <entity_mention id="m-1607" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5766" length="7">African</entity_mention>
+      <entity_mention id="m-1633" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="370" length="6">Africa</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="0e0abbf0da91d9e34750441c08d5d262" offset="284" length="7">African</entity_mention>
+    </entity>
+    <entity id="ent-70132567379520" name="entity-LOC-8" type="LOC">
+      <entity_mention id="m-1698" noun_type="NOM" source="0e0abbf0da91d9e34750441c08d5d262" offset="5985" length="30">the second major power station</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571758800" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-40">
+        <arg type="suborg" entity_id="ent-70132570111380" entity_mention_id="m-177">The Chinese government</arg>
+        <arg type="parent" entity_id="ent-70132569432160" entity_mention_id="m-190">Chinese</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="154" length="7">Chinese</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571758740" type="physical" subtype="origin">
+      <relation_mention id="relm-1940">
+        <arg type="entity" entity_id="ent-70132571579980" entity_mention_id="m-255">an African Nationalist</arg>
+        <arg type="loc" entity_id="ent-70132567397760" entity_mention_id="m-242">African</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="284" length="7">African</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571758680" type="physical" subtype="located">
+      <relation_mention id="relm-1970">
+        <arg type="entity" entity_id="ent-70132568808680" entity_mention_id="m-281">almost all Africa countries</arg>
+        <arg type="loc" entity_id="ent-70132567397760" entity_mention_id="m-1633">Africa</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571758620" type="physical" subtype="located">
+      <relation_mention id="relm-2030">
+        <arg type="entity" entity_id="ent-70132571557780" entity_mention_id="m-372">the white people</arg>
+        <arg type="loc" entity_id="ent-70132569172560" entity_mention_id="m-346">Zimbabwe</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="613" length="4">from</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571762020" type="physical" subtype="origin">
+      <relation_mention id="relm-2060">
+        <arg type="entity" entity_id="ent-70132571557780" entity_mention_id="m-385">there</arg>
+        <arg type="loc" entity_id="ent-70132567458240" entity_mention_id="m-359">there land</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="638" length="5">there</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571763260" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-2090">
+        <arg type="suborg" entity_id="ent-70132569947340" entity_mention_id="m-580">the Sri Lankan government</arg>
+        <arg type="parent" entity_id="ent-70132569505160" entity_mention_id="m-593">Sri Lankan</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="1660" length="10">Sri Lankan</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571763840" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-2120">
+        <arg type="suborg" entity_id="ent-70132569883180" entity_mention_id="m-944">Nazi</arg>
+        <arg type="parent" entity_id="ent-70132567517520" entity_mention_id="m-931">Germany</arg>
+      </relation_mention>
+      <relation_mention id="relm-2240">
+        <arg type="suborg" entity_id="ent-70132569883180" entity_mention_id="m-1139">Nazi</arg>
+        <arg type="parent" entity_id="ent-70132567517520" entity_mention_id="m-1152">Germany</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571764760" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2150">
+        <arg type="leader" entity_id="ent-70132571339960" entity_mention_id="m-957">the leader</arg>
+        <arg type="entity" entity_id="ent-70132568654160" entity_mention_id="m-970">the country</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="2716" length="6">leader</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571765260" type="physical" subtype="located">
+      <relation_mention id="relm-2180">
+        <arg type="entity" entity_id="ent-70132570150260" entity_mention_id="m-1022">200,000 prisoners</arg>
+        <arg type="loc" entity_id="ent-70132567438080" entity_mention_id="m-1035">concentration camps</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="3174" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571766720" type="physical" subtype="located">
+      <relation_mention id="relm-2210">
+        <arg type="entity" entity_id="ent-70132571266980" entity_mention_id="m-1100">an escapee</arg>
+        <arg type="loc" entity_id="ent-70132567419820" entity_mention_id="m-1113">the prison camp</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571709340" type="physical" subtype="located">
+      <relation_mention id="relm-2270">
+        <arg type="entity" entity_id="ent-70132569432160" entity_mention_id="m-1230">whom</arg>
+        <arg type="loc" entity_id="ent-70132567406780" entity_mention_id="m-1243">the North</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="4402" length="6">border</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571709220" type="physical" subtype="origin">
+      <relation_mention id="relm-2300">
+        <arg type="entity" entity_id="ent-70132571261980" entity_mention_id="m-1347">its people</arg>
+        <arg type="loc" entity_id="ent-70132569432160" entity_mention_id="m-1360">its</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="4796" length="3">its</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571709160" type="physical" subtype="located">
+      <relation_mention id="relm-2360">
+        <arg type="entity" entity_id="ent-70132567480740" entity_mention_id="m-1594">One African country</arg>
+        <arg type="loc" entity_id="ent-70132567397760" entity_mention_id="m-1607">African</arg>
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="5766" length="7">African</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571336700" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="movement" subtype="transportperson">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="589" length="6">exiled</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-372" entity_id="ent-70132571557780">the white people</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-346">Zimbabwe</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571335520" name="entity-EVENT-3">
+      <event_mention id="evm-2434" type="transaction" subtype="transferownership">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="631" length="6">ceased</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-385" entity_id="ent-70132571557780">there</arg>
+          <arg type="buyer" entity_mention_id="m-333" entity_id="ent-70132571579980">he</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-346">Zimbabwe</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571334340" name="entity-EVENT-4">
+      <event_mention id="evm-2484" type="life" subtype="die">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="916" length="6">killed</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-450" entity_id="ent-70132571542540">the royal guard</arg>
+          <arg type="victim" entity_mention_id="m-463" entity_id="ent-70132571538300">some violent protesters</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-437">Bahrain</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571332540" name="entity-EVENT-6">
+      <event_mention id="evm-2584" type="life" subtype="die">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="1740" length="8">Genocide</trigger>
+        <args/>
+        <places>
+          <place entity_mention_id="m-619">Rwandan</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571331380" name="entity-EVENT-1">
+      <event_mention id="evm-2668" type="life" subtype="die">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="1841" length="7">killing</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-684" entity_id="ent-70132571579980">Mugabe</arg>
+          <arg type="victim" entity_mention_id="m-697" entity_id="ent-70132571530240">opposition</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571330280" name="entity-EVENT-8">
+      <event_mention id="evm-2760" type="conflict" subtype="attack">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="3379" length="9">nerve gas</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-1074" entity_id="ent-70132571325120">a family</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571329180" name="entity-EVENT-12">
+      <event_mention id="evm-2928" type="conflict" subtype="demonstrate">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="6051" length="13">demonstration</trigger>
+        <args/>
+        <places>
+          <place entity_mention_id="m-1724">Sabha</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571328080" name="entity-EVENT-10">
+      <event_mention id="evm-2626" type="conflict" subtype="attack">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="1794" length="4">shot</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-658" entity_id="ent-70132571534260">their protesters</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571326940" name="entity-EVENT-5">
+      <event_mention id="evm-2534" type="conflict" subtype="attack">
+        <trigger source="0e0abbf0da91d9e34750441c08d5d262" offset="1687" length="12">slaughtering</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-580" entity_id="ent-70132569947340">the Sri Lankan government</arg>
+          <arg type="target" entity_mention_id="m-606" entity_id="ent-70132570149620">Tamil Tigers</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-593">Sri Lankan</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

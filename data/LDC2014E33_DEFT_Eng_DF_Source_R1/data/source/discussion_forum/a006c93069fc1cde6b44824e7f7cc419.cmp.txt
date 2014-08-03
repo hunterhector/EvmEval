@@ -1,0 +1,52 @@
+<post author="IbrahimFahim" datetime="2010-12-31T10:54:00" id="p51">
+<quote orig_author="IbrahimFahim">
+A few days ago RETS, Christian rapper, historian, and general polymath proposed Thorium as the wave of the future, the new fuel that would produce " <a href="http://www.christianforums.com/t7517631-17/">a miniaturized level- A reactor the size of an average car's engine can supply a constant power flow large enough to power the vehicle for a hundred years.</a> "
+
+Thoughts like this come along every once in a while, usually in Popular Science, or some other magazine, and while interesting, they never really pan out. A while back is was the <a href="http://en.wikipedia.org/wiki/Pebble_bed_reactor">pebble bed reactor</a>, which was going to be a form of the gaseous cooled reactor. The pool ball sized "pebbles" could be cycled through the fuel columns, the gas would provide no threat should leakage occur (helium would be used), it was smooth, sexy, and the "Wave Of The Future". Naturally it went nowhere. People are still building the two loop pressurized water reactors that we all know and love.
+
+Now Throium is taking up the mantle of the "Wave Of The Future", but there are again significant problems here with Thorium.
+
+For one, Thorium is not a fissile material. Some elements are great for fission, others not. Uranium-235 and 233 are good. Throrium is not. In order for Throium to be considered "good" it must first be put through a breeder reactor to expose it to neutron flux to create U-233. This is sort of like having to grow your own flower and grind it before making a pizza when you have flour in the pantry already.
+
+This brings up a whole slew of issues. Breeder reactors are not good, sort of. People use breeder reactors to breed fissile material. Predominantly they have been used for producing Plutonium, which is either used for making your redesigned Delorean go back in time at 88 mph, or for making nuclear weapons. Breeders themselves are not necessarily bad, but it is like putting up a shed in your backyard to grind your new pizza flour that looks just like a shed used for making crystal meth. It is going to make your neighbors nervous.
+
+If Iran builds an AP1000 Westinghouse nuclear plant for power, this is one thing, if they build a breeder because they "want to enrich Thorium" is the US going to be super happy with the idea? I suspect not. Just imagine off of the countries making their own "fuel" in the world.
+
+Now every reactor makes plutonium, but the reactors used in power handle everything differently. Breeders are simply too opaque at the moment.
+
+I personally think breeders have a place in the future, but more engineering needs to be accomplished first.
+
+Oddly enough <a href="http://en.wikipedia.org/wiki/THTR-300"> Germany had a Thorium breeder built</a>, but shut it down due to rising costs.
+
+There are other issues with Thorium. The nuclear characteristics are not ideal. The relative barn levels are off, Thorium-232 at ~7, U-235 at ~1000. You are burning a LOT more neutrons to get your Th-232 to U-233, when you already have U-235.
+
+The other issue is one waste. The biggest problem is that we still have worldwide stockpiles of spent fuel that is still contains significant amounts of good fissile material sitting in storage. Why should we be looking for a new fuel source when we have good fuel we do not want to store or keep that we could burn up in more reactors?
+
+It is like having a whole refrigerator full of partly eaten pizzas, and having someone tell you that you need to plant some wheat in your backyard, build a processing shed that looks just like a crystal meth lab, and grind your own wheat for new pizza. Why not heat up what you already have and eat that instead (assuming the pizza remained fresh in your fridge).
+
+The other problem with RETS claims is the engineering he is referring to is grossly simplified. A reactor the size of a car engine would still require extensive shielding, a rod control mechanism, three cooling loops (which requires an outside source of makeup water), a boron addition system (I assume it is a PWR), and significant education and training for continuous operation.
+
+Do not be fooled by the "reactors" in the space program. These are not reactors in the sense that nuclear power plants are reactors, though sometimes people use the same words.
+
+And lastly some questions for RETS about his proposed design.
+
+What is the graphical trend of the temperature coefficient of reactivity over core life in a Throium reactor? This is important.
+
+How would you deal with the Tritium production?
+
+What would the temperature of the reaction be?
+
+How would you control rod insertion?
+
+I have more, but this starts the discussion.
+
+</quote>
+Bumping this in case RETS wants to defend his Thorium advocacy.
+</post>
+<post author="IbrahimFahim" datetime="2010-12-31T10:56:00" id="p52">
+<quote orig_author="chaz345">
+I would absolutely agree that the anti-nuclear crowd in the US is operating almost entirely in the realm of irrational fear.
+
+</quote>
+This is completely incorrect, there are plenty of rational, legitimate concerns with nuclear power. The concerns can be addressed however. Simply labeling them as "irrational" is to misunderstand the concerns in the first place, and create an unnecessary impediment to an actual conversation concerning nuclear power.
+</post>

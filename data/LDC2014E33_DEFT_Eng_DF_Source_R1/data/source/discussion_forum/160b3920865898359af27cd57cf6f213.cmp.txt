@@ -1,0 +1,24 @@
+<post author="TheCorrectResponse" datetime="2008-02-19T08:06:00" id="p35">
+Hi,
+Yes the article is a bit lengthy but as you can imagine it is hard to do justice to this subject in any detail without some length. I like it because I think Davies did a good job of keeping it readable by interested non-specialists without losing the real flavor and content of the subject.
+
+Yes the theory's creators had Kalusa in mind. In the 60-70s timeframe it was resurrected in a different way to describe strong force interactions. They envisioned a little elastic string holding the hadrons together. This failed because they couldn't get the real particles to come out of the theory but got super-massive particles, a group many, many times more massive than the ones that we see and another group (at the plank scale) that seemed then (and to many even now) absurd. Quantum chromodynamics was at the same time being invented and with the idea of gluons described strong force interactions nicely, fit with quantum electrodynamics and the weak theory, and allowed the unification of all three particle forces.
+
+All that remained left was to add gravity and a "theory of everything" could be contemplated. Two guys, Green and Weinberg, went back to the old "string theory" because it contained a spin 2 particle which they thought might be a model of the graviton and a new string "theory" was begun. For all the hype it has really led nowhere in particular, so "M-theory" has evolved from it. That is the theory in a nutshell.
+
+I'll answer your other questions as best I can laterclient work calls.
+</post>
+<post author="TheCorrectResponse" datetime="2008-02-19T13:07:00" id="p36">
+If I understand your other questions:
+
+The FRW model of the universe is the basic standard theory. Inflation has been added to it and is now generally considered within the "standard" model but there is enough disagreement on this that the term is usually added to denote uncertainty. For example the hot BB model vs. the inflationary hot BB model, etc.
+
+The BB causes an expansion of space and the further objects are separated from each other the faster they are moving away. There would by now be objects (under most interpretations of the BB scenario) that are moving away from us at the speed of light or greater. This is possible because space is not analogous to matter in these theories in that in can exceed the speed of light in its expansion rate. In an inflationary model it exceeds the speed of light by many, many orders of magnitude. Since communication between space-like separated objects is not possible they can be said to be outside the universe (for those objects that have that separation with them). The concept of the "universe" in astronomy is a fluid concept, which is why we often see new terms like the multi-universe; Webster's definition of the universe (for example) is colloquial.
+
+Depending upon which analysis of Guth's inflationary model you choose (there are several at least) the only way to keep inflation consistent with all the other physical laws is if the inflation took place in such a way as the separation of parts of the universe that were space like remained space-like forever.
+
+BTW: Space-like separation is a short hand for two objects not within each others light-cone, i.e. for a signal from one to reach the other it would need to travel faster than the speed of light.
+</post>
+<post author="OGIONIK" datetime="2008-02-19T14:18:00" id="p37">
+humans are gods in training.
+</post>

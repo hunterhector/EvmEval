@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="087f58983ef5e94e54024bc9f0f009ae" source_type="multi_post" kit_id="536493f70000000000000014">
+  <entities>
+    <entity id="ent-70132575497500" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="90" length="10">Pale Rider</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="159" length="10">Pale Rider</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="562" length="3">You</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="1131" length="2">me</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="1723" length="4">Your</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="1763" length="3">You</entity_mention>
+      <entity_mention id="m-762" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1870" length="10">Pale Rider</entity_mention>
+    </entity>
+    <entity id="ent-70132577141620" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="14" length="13">ClosedCaption</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="123" length="13">ClosedCaption</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="179" length="4">liar</entity_mention>
+      <entity_mention id="m-333" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="595" length="4">liar</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="603" length="3">You</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="1139" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576888300" name="entity-PER-4" type="PER">
+      <entity_mention id="m-190" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="288" length="11">Eric Holder</entity_mention>
+      <entity_mention id="m-385" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="735" length="20">the attorney general</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="758" length="3">who</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1190" length="6">Holder</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="1225" length="3">his</entity_mention>
+      <entity_mention id="m-1373" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3931" length="73">the same man who got Marc Rich off for a lump sum payment to the Clintons</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="952" length="11">Eric Holder</entity_mention>
+    </entity>
+    <entity id="ent-70132576394860" name="entity-PER-5" type="PER">
+      <entity_mention id="m-242" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="316" length="4">Bush</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1680" length="4">Bush</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2593" length="4">Bush</entity_mention>
+      <entity_mention id="m-1282" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3239" length="12">the last guy</entity_mention>
+      <entity_mention id="m-1906" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5532" length="4">Bush</entity_mention>
+      <entity_mention id="m-2179" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="6178" length="12">the last guy</entity_mention>
+    </entity>
+    <entity id="ent-70132575911840" name="entity-PER-6" type="PER">
+      <entity_mention id="m-255" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="367" length="5">Obama</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="821" length="12">Barack Obama</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1984" length="5">Obama</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2278" length="5">Obama</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2375" length="2">He</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2424" length="5">Obama</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2438" length="2">He</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2523" length="2">He</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2558" length="2">He</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2732" length="2">He</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2884" length="2">he</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2950" length="2">He</entity_mention>
+      <entity_mention id="m-1191" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="3038" length="3">his</entity_mention>
+      <entity_mention id="m-1230" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="3086" length="3">him</entity_mention>
+      <entity_mention id="m-1256" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3130" length="5">Obama</entity_mention>
+      <entity_mention id="m-1269" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3224" length="5">Obama</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="3573" length="2">he</entity_mention>
+      <entity_mention id="m-1334" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3602" length="28">the first American President</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4008" length="3">his</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4160" length="3">his</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4216" length="3">his</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4353" length="3">his</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4649" length="2">he</entity_mention>
+      <entity_mention id="m-1633" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4878" length="3">his</entity_mention>
+      <entity_mention id="m-1646" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4953" length="9">President</entity_mention>
+      <entity_mention id="m-1659" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4986" length="2">he</entity_mention>
+      <entity_mention id="m-1737" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5217" length="5">Obama</entity_mention>
+      <entity_mention id="m-1789" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5314" length="2">He</entity_mention>
+      <entity_mention id="m-1802" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5363" length="5">Obama</entity_mention>
+      <entity_mention id="m-1815" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5377" length="2">He</entity_mention>
+      <entity_mention id="m-1841" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5462" length="2">He</entity_mention>
+      <entity_mention id="m-1867" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5497" length="2">He</entity_mention>
+      <entity_mention id="m-1997" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5671" length="2">He</entity_mention>
+      <entity_mention id="m-2049" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5823" length="2">he</entity_mention>
+      <entity_mention id="m-2075" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5889" length="2">He</entity_mention>
+      <entity_mention id="m-2088" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5977" length="3">his</entity_mention>
+      <entity_mention id="m-2127" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="6025" length="3">him</entity_mention>
+      <entity_mention id="m-2153" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="6069" length="5">Obama</entity_mention>
+      <entity_mention id="m-2166" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="6163" length="5">Obama</entity_mention>
+    </entity>
+    <entity id="ent-70132573875520" name="entity-PER-7" type="PER">
+      <entity_mention id="m-268" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="447" length="38">members of the New Black Panther Party</entity_mention>
+      <entity_mention id="m-476" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="986" length="73">hate-mongering thugs who harassed and bullied precinct workers and voters</entity_mention>
+    </entity>
+    <entity id="ent-70132573738140" name="entity-PER-8" type="PER">
+      <entity_mention id="m-489" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1032" length="16">precinct workers</entity_mention>
+    </entity>
+    <entity id="ent-70132573734800" name="entity-PER-9" type="PER">
+      <entity_mention id="m-502" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1053" length="6">voters</entity_mention>
+    </entity>
+    <entity id="ent-70132575238880" name="entity-PER-10" type="PER">
+      <entity_mention id="m-632" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1256" length="68">two of three defendants charged with violating the Voting Rights Act</entity_mention>
+    </entity>
+    <entity id="ent-70132575235320" name="entity-PER-11" type="PER">
+      <entity_mention id="m-645" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1343" length="64">a billy club-wielding militant in military-style boots and beret</entity_mention>
+    </entity>
+    <entity id="ent-70132575232060" name="entity-PER-12" type="PER">
+      <entity_mention id="m-684" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1453" length="27">a similarly dressed partner</entity_mention>
+    </entity>
+    <entity id="ent-70132577596040" name="entity-PER-13" type="PER">
+      <entity_mention id="m-749" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1794" length="13">CrusaderFrank</entity_mention>
+    </entity>
+    <entity id="ent-70132577592480" name="entity-PER-14" type="PER">
+      <entity_mention id="m-801" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2163" length="7">MarcATL</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="3122" length="1">I</entity_mention>
+      <entity_mention id="m-1672" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5003" length="4">Marc</entity_mention>
+      <entity_mention id="m-1698" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5102" length="7">MarcATL</entity_mention>
+      <entity_mention id="m-2140" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="6061" length="1">I</entity_mention>
+      <entity_mention id="m-2192" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="6480" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132576510920" name="entity-PER-15" type="PER">
+      <entity_mention id="m-788" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2092" length="8">Oldstyle</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="3537" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576266740" name="entity-PER-16" type="PER">
+      <entity_mention id="m-814" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2223" length="12">Cain'n'Palin</entity_mention>
+      <entity_mention id="m-1711" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5162" length="12">Cain'n'Palin</entity_mention>
+    </entity>
+    <entity id="ent-70132576038940" name="entity-PER-17" type="PER">
+      <entity_mention id="m-866" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2344" length="13">Bush'n'Cheney</entity_mention>
+      <entity_mention id="m-1763" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5283" length="13">Bush'n'Cheney</entity_mention>
+    </entity>
+    <entity id="ent-70132572649600" name="entity-PER-18" type="PER">
+      <entity_mention id="m-983" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2565" length="9">Bin Laden</entity_mention>
+      <entity_mention id="m-1880" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5504" length="9">Bin Laden</entity_mention>
+    </entity>
+    <entity id="ent-70132572649540" name="entity-PER-19" type="PER">
+      <entity_mention id="m-1022" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2622" length="9">Khaddaffi</entity_mention>
+      <entity_mention id="m-1919" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5561" length="9">Khaddaffi</entity_mention>
+    </entity>
+    <entity id="ent-70132571765520" name="entity-PER-20" type="PER">
+      <entity_mention id="m-1035" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2640" length="19">Pirates of the seas</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2665" length="4">they</entity_mention>
+      <entity_mention id="m-1932" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5579" length="19">Pirates of the seas</entity_mention>
+      <entity_mention id="m-1958" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5604" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132571641720" name="entity-PER-21" type="PER">
+      <entity_mention id="m-1126" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2769" length="8">a tyrant</entity_mention>
+      <entity_mention id="m-2023" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5708" length="8">a tyrant</entity_mention>
+    </entity>
+    <entity id="ent-70132571592080" name="entity-PER-22" type="PER">
+      <entity_mention id="m-1204" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3038" length="24">his opponents in the GOP</entity_mention>
+      <entity_mention id="m-2101" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5977" length="24">his opponents in the GOP</entity_mention>
+    </entity>
+    <entity id="ent-70132571584500" name="entity-PER-23" type="PER">
+      <entity_mention id="m-1386" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3952" length="9">Marc Rich</entity_mention>
+    </entity>
+    <entity id="ent-70132571580420" name="entity-PER-24" type="PER">
+      <entity_mention id="m-1399" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3996" length="8">Clintons</entity_mention>
+    </entity>
+    <entity id="ent-70132571569020" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1438" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4041" length="38">a man who couldn't figure out TurboTax</entity_mention>
+    </entity>
+    <entity id="ent-70132571565200" name="entity-PER-26" type="PER">
+      <entity_mention id="m-1685" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5033" length="6">namvet</entity_mention>
+    </entity>
+    <entity id="ent-70132571561760" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-177" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="235" length="3">NBP</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="462" length="23">New Black Panther Party</entity_mention>
+    </entity>
+    <entity id="ent-70132571555180" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-203" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="312" length="23">The Bush administration</entity_mention>
+    </entity>
+    <entity id="ent-70132571543980" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-216" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="338" length="18">Justice Department</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="625" length="26">U.S. Department of Justice</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="856" length="3">DOJ</entity_mention>
+      <entity_mention id="m-606" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1225" length="14">his department</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1685" length="3">DOJ</entity_mention>
+    </entity>
+    <entity id="ent-70132571537300" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-229" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="363" length="24">the Obama administration</entity_mention>
+    </entity>
+    <entity id="ent-70132571517160" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-931" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2467" length="10">the Office</entity_mention>
+      <entity_mention id="m-1828" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5406" length="10">the Office</entity_mention>
+    </entity>
+    <entity id="ent-70132571510640" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-957" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2532" length="2">GM</entity_mention>
+      <entity_mention id="m-1854" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5471" length="2">GM</entity_mention>
+    </entity>
+    <entity id="ent-70132571512580" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-1217" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3059" length="3">GOP</entity_mention>
+      <entity_mention id="m-2114" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5998" length="3">GOP</entity_mention>
+    </entity>
+    <entity id="ent-70132571497620" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-1477" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4121" length="8">Solyndra</entity_mention>
+      <entity_mention id="m-1490" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4139" length="2">it</entity_mention>
+    </entity>
+    <entity id="ent-70132571482980" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-307" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="540" length="12">Philadelphia</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1079" length="12">Philadelphia</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1424" length="6">Philly</entity_mention>
+    </entity>
+    <entity id="ent-70132571473860" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-372" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="625" length="4">U.S.</entity_mention>
+      <entity_mention id="m-827" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2236" length="11">the country</entity_mention>
+      <entity_mention id="m-853" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2295" length="11">the country</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2367" length="2">it</entity_mention>
+      <entity_mention id="m-1074" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2693" length="9">Americans</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="2713" length="5">their</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2938" length="6">Murrka</entity_mention>
+      <entity_mention id="m-1347" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="3612" length="8">American</entity_mention>
+      <entity_mention id="m-1360" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="3639" length="3">our</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4083" length="3">our</entity_mention>
+      <entity_mention id="m-1555" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4420" length="9">Americans</entity_mention>
+      <entity_mention id="m-1568" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4451" length="2">us</entity_mention>
+      <entity_mention id="m-1581" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="4589" length="3">our</entity_mention>
+      <entity_mention id="m-1724" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5175" length="11">the country</entity_mention>
+      <entity_mention id="m-1750" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5234" length="11">the country</entity_mention>
+      <entity_mention id="m-1776" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5306" length="2">it</entity_mention>
+      <entity_mention id="m-1971" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5632" length="9">Americans</entity_mention>
+      <entity_mention id="m-1984" noun_type="PRO" source="087f58983ef5e94e54024bc9f0f009ae" offset="5652" length="5">their</entity_mention>
+      <entity_mention id="m-2062" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5877" length="6">Murrka</entity_mention>
+    </entity>
+    <entity id="ent-70132571293720" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-996" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2580" length="40">a place that Bush didn't dare to go into</entity_mention>
+      <entity_mention id="m-1893" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5519" length="40">a place that Bush didn't dare to go into</entity_mention>
+    </entity>
+    <entity id="ent-70132571261940" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1113" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2754" length="9">a country</entity_mention>
+      <entity_mention id="m-2010" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5693" length="9">a country</entity_mention>
+    </entity>
+    <entity id="ent-70132570244680" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-1594" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4611" length="6">Israel</entity_mention>
+    </entity>
+    <entity id="ent-70132570223220" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-1620" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4675" length="4">Iran</entity_mention>
+    </entity>
+    <entity id="ent-70132570221160" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-294" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="520" length="32">a polling center in Philadelphia</entity_mention>
+      <entity_mention id="m-658" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1422" length="25">a Philly polling location</entity_mention>
+    </entity>
+    <entity id="ent-70132570166020" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-515" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="1032" length="8">precinct</entity_mention>
+    </entity>
+    <entity id="ent-70132570159920" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-1048" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2651" length="8">the seas</entity_mention>
+      <entity_mention id="m-1945" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5590" length="8">the seas</entity_mention>
+    </entity>
+    <entity id="ent-70132570149000" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-1139" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="2849" length="9">the world</entity_mention>
+      <entity_mention id="m-2036" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="5788" length="9">the world</entity_mention>
+    </entity>
+    <entity id="ent-70132570107740" name="entity-LOC-6" type="LOC">
+      <entity_mention id="m-1529" noun_type="NAM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4316" length="4">Gulf</entity_mention>
+    </entity>
+    <entity id="ent-70132570083840" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-411" noun_type="NA" source="087f58983ef5e94e54024bc9f0f009ae" offset="811" length="9">President</entity_mention>
+    </entity>
+    <entity id="ent-70132570053420" name="entity-TITLE-3" type="TITLE">
+      <entity_mention id="m-450" noun_type="NA" source="087f58983ef5e94e54024bc9f0f009ae" offset="935" length="16">Attorney General</entity_mention>
+      <entity_mention id="m-1412" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4012" length="16">Attorney General</entity_mention>
+    </entity>
+    <entity id="ent-70132569998780" name="entity-TITLE-4" type="TITLE">
+      <entity_mention id="m-1451" noun_type="NOM" source="087f58983ef5e94e54024bc9f0f009ae" offset="4087" length="18">Treasury Secretary</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132567382340" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-40">
+        <arg type="leader" entity_id="ent-70132576394860" entity_mention_id="m-242">Bush</arg>
+        <arg type="entity" entity_id="ent-70132571555180" entity_mention_id="m-203">The Bush administration</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567382100" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2230">
+        <arg type="leader" entity_id="ent-70132575911840" entity_mention_id="m-255">Obama</arg>
+        <arg type="entity" entity_id="ent-70132571537300" entity_mention_id="m-229">the Obama administration</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567381920" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2260">
+        <arg type="employeemember" entity_id="ent-70132573875520" entity_mention_id="m-268">members of the New Black Panther Party</arg>
+        <arg type="org" entity_id="ent-70132571561760" entity_mention_id="m-281">New Black Panther Party</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="447" length="7">members</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567381740" type="physical" subtype="located">
+      <relation_mention id="relm-2290">
+        <arg type="entity" entity_id="ent-70132573875520" entity_mention_id="m-268">members of the New Black Panther Party</arg>
+        <arg type="loc" entity_id="ent-70132570221160" entity_mention_id="m-294">a polling center in Philadelphia</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="517" length="2">at</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567381640" type="physical" subtype="located">
+      <relation_mention id="relm-2320">
+        <arg type="entity" entity_id="ent-70132570221160" entity_mention_id="m-294">a polling center in Philadelphia</arg>
+        <arg type="loc" entity_id="ent-70132571482980" entity_mention_id="m-307">Philadelphia</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="537" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2590">
+        <arg type="entity" entity_id="ent-70132570221160" entity_mention_id="m-658">a Philly polling location</arg>
+        <arg type="loc" entity_id="ent-70132571482980" entity_mention_id="m-671">Philly</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567381400" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-2350">
+        <arg type="suborg" entity_id="ent-70132571543980" entity_mention_id="m-359">U.S. Department of Justice</arg>
+        <arg type="parent" entity_id="ent-70132571473860" entity_mention_id="m-372">U.S.</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567381260" type="social" subtype="role">
+      <relation_mention id="relm-2380">
+        <arg type="role" entity_id="ent-70132570083840" entity_mention_id="m-411">President</arg>
+        <arg type="per" entity_id="ent-70132575911840" entity_mention_id="m-424">Barack Obama</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567381140" type="social" subtype="role">
+      <relation_mention id="relm-2410">
+        <arg type="role" entity_id="ent-70132570053420" entity_mention_id="m-450">Attorney General</arg>
+        <arg type="per" entity_id="ent-70132576888300" entity_mention_id="m-463">Eric Holder</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567381060" type="physical" subtype="located">
+      <relation_mention id="relm-2440">
+        <arg type="entity" entity_id="ent-70132573875520" entity_mention_id="m-476">hate-mongering thugs who harassed and bullied precinct workers and voters</arg>
+        <arg type="loc" entity_id="ent-70132571482980" entity_mention_id="m-541">Philadelphia</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="1076" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380980" type="physical" subtype="located">
+      <relation_mention id="relm-2470">
+        <arg type="entity" entity_id="ent-70132573738140" entity_mention_id="m-489">precinct workers</arg>
+        <arg type="loc" entity_id="ent-70132571482980" entity_mention_id="m-541">Philadelphia</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="1076" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380900" type="physical" subtype="located">
+      <relation_mention id="relm-2500">
+        <arg type="entity" entity_id="ent-70132573734800" entity_mention_id="m-502">voters</arg>
+        <arg type="loc" entity_id="ent-70132571482980" entity_mention_id="m-541">Philadelphia</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="1076" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380840" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2530">
+        <arg type="employeemember" entity_id="ent-70132576888300" entity_mention_id="m-619">his</arg>
+        <arg type="org" entity_id="ent-70132571543980" entity_mention_id="m-606">his department</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="1225" length="3">his</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380740" type="physical" subtype="located">
+      <relation_mention id="relm-2560">
+        <arg type="entity" entity_id="ent-70132575235320" entity_mention_id="m-645">a billy club-wielding militant in military-style boots and beret</arg>
+        <arg type="loc" entity_id="ent-70132570221160" entity_mention_id="m-658">a Philly polling location</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="1414" length="7">outside</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380620" type="physical" subtype="located">
+      <relation_mention id="relm-2620">
+        <arg type="entity" entity_id="ent-70132572649600" entity_mention_id="m-983">Bin Laden</arg>
+        <arg type="loc" entity_id="ent-70132571293720" entity_mention_id="m-996">a place that Bush didn't dare to go into</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="2575" length="4">from</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2800">
+        <arg type="entity" entity_id="ent-70132572649600" entity_mention_id="m-1880">Bin Laden</arg>
+        <arg type="loc" entity_id="ent-70132571293720" entity_mention_id="m-1893">a place that Bush didn't dare to go into</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="5514" length="4">from</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380520" type="physical" subtype="located">
+      <relation_mention id="relm-2650">
+        <arg type="entity" entity_id="ent-70132571765520" entity_mention_id="m-1035">Pirates of the seas</arg>
+        <arg type="loc" entity_id="ent-70132570159920" entity_mention_id="m-1048">the seas</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="2648" length="2">of</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2830">
+        <arg type="entity" entity_id="ent-70132571765520" entity_mention_id="m-1932">Pirates of the seas</arg>
+        <arg type="loc" entity_id="ent-70132570159920" entity_mention_id="m-1945">the seas</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="5587" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380460" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2680">
+        <arg type="employeemember" entity_id="ent-70132571592080" entity_mention_id="m-1204">his opponents in the GOP</arg>
+        <arg type="org" entity_id="ent-70132571512580" entity_mention_id="m-1217">GOP</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="3052" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2920">
+        <arg type="employeemember" entity_id="ent-70132571592080" entity_mention_id="m-2101">his opponents in the GOP</arg>
+        <arg type="org" entity_id="ent-70132571512580" entity_mention_id="m-2114">GOP</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="5991" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380200" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2710">
+        <arg type="leader" entity_id="ent-70132575911840" entity_mention_id="m-1334">the first American President</arg>
+        <arg type="entity" entity_id="ent-70132571473860" entity_mention_id="m-1347">American</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="3621" length="9">President</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132567380140" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2860">
+        <arg type="leader" entity_id="ent-70132571641720" entity_mention_id="m-2023">a tyrant</arg>
+        <arg type="entity" entity_id="ent-70132571261940" entity_mention_id="m-2010">a country</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="5710" length="6">tyrant</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2890">
+        <arg type="leader" entity_id="ent-70132571641720" entity_mention_id="m-1126">a tyrant</arg>
+        <arg type="entity" entity_id="ent-70132571261940" entity_mention_id="m-1113">a country</arg>
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="2771" length="6">tyrant</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132577365260" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="justice" subtype="chargeindict">
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="1280" length="7">charged</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-632" entity_id="ent-70132575238880">two of three defendants charged with violating the Voting Rights Act</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132577363380" name="entity-EVENT-3">
+      <event_mention id="evm-2964" type="life" subtype="die">
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="2634" length="4">gone</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1022" entity_id="ent-70132572649540">Khaddaffi</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-3148" type="life" subtype="die">
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="5573" length="4">gone</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1919" entity_id="ent-70132572649540">Khaddaffi</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132577362140" name="entity-EVENT-4">
+      <event_mention id="evm-3006" type="personnel" subtype="startposition">
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="3921" length="9">appointed</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1373" entity_id="ent-70132576888300">the same man who got Marc Rich off for a lump sum payment to the Clintons</arg>
+          <arg type="position" entity_mention_id="m-1412" entity_id="ent-70132570053420">Attorney General</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132575501740" name="entity-EVENT-5">
+      <event_mention id="evm-3056" type="personnel" subtype="startposition">
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="4031" length="9">appointed</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1438" entity_id="ent-70132571569020">a man who couldn't figure out TurboTax</arg>
+          <arg type="position" entity_mention_id="m-1451" entity_id="ent-70132569998780">Treasury Secretary</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132575500600" name="entity-EVENT-6">
+      <event_mention id="evm-3106" type="transaction" subtype="transfermoney">
+        <trigger source="087f58983ef5e94e54024bc9f0f009ae" offset="4188" length="5">spent</trigger>
+        <args>
+          <arg type="giver" entity_mention_id="m-1516" entity_id="ent-70132575911840">his</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

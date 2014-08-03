@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="9279a2e3130ed7f3a460dc4c069e92f4" source_type="multi_post" kit_id="533486f60000000000000072">
+  <entities>
+    <entity id="ent-70132570156120" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="14" length="4">nimh</entity_mention>
+      <entity_mention id="m-1516" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5157" length="4">nimh</entity_mention>
+    </entity>
+    <entity id="ent-70132570111220" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="62" length="5">Brown</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1484" length="8">Mr Brown</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1985" length="5">Brown</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1827" length="8">Mr Brown</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1515" length="2">he</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1541" length="3">his</entity_mention>
+      <entity_mention id="m-658" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2162" length="14">the chancellor</entity_mention>
+    </entity>
+    <entity id="ent-70132569943340" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="71" length="5">Blair</entity_mention>
+      <entity_mention id="m-372" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1401" length="8">Mr Blair</entity_mention>
+      <entity_mention id="m-1529" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5363" length="10">Tony Blair</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5383" length="2">he</entity_mention>
+      <entity_mention id="m-1594" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5504" length="3">him</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5520" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132569690660" name="entity-PER-5" type="PER">
+      <entity_mention id="m-632" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2052" length="10">Mr Prentis</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2178" length="2">He</entity_mention>
+      <entity_mention id="m-1295" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4511" length="12">Dave Prentis</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4747" length="2">He</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4819" length="3">his</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4904" length="1">I</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4954" length="2">he</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5091" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132569450180" name="entity-PER-6" type="PER">
+      <entity_mention id="m-151" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="95" length="4">they</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="134" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132569417480" name="entity-PER-7" type="PER">
+      <entity_mention id="m-346" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1307" length="13">Union leaders</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1454" length="5">Their</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1579" length="4">They</entity_mention>
+    </entity>
+    <entity id="ent-70132569368240" name="entity-PER-8" type="PER">
+      <entity_mention id="m-476" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1693" length="14">Brendan Barber</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3049" length="14">Brendan Barber</entity_mention>
+      <entity_mention id="m-853" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2853" length="25">The TUC general secretary</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3069" length="3">his</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3324" length="2">He</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3465" length="2">me</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3771" length="2">He</entity_mention>
+    </entity>
+    <entity id="ent-70132569173340" name="entity-PER-9" type="PER">
+      <entity_mention id="m-502" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1759" length="19">other union leaders</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1779" length="3">who</entity_mention>
+    </entity>
+    <entity id="ent-70132569163860" name="entity-PER-10" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1862" length="13">Mark Serwotka</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1908" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132568810060" name="entity-PER-11" type="PER">
+      <entity_mention id="m-801" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2534" length="20">almost 1,000 workers</entity_mention>
+    </entity>
+    <entity id="ent-70132568805580" name="entity-PER-13" type="PER">
+      <entity_mention id="m-1672" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5855" length="20">1,504 British adults</entity_mention>
+    </entity>
+    <entity id="ent-70132568792560" name="entity-PER-14" type="PER">
+      <entity_mention id="m-1425" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4819" length="11">his members</entity_mention>
+    </entity>
+    <entity id="ent-70132568785460" name="entity-PER-15" type="PER">
+      <entity_mention id="m-1178" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4298" length="63">Unison members working for the supply arm of the health service</entity_mention>
+    </entity>
+    <entity id="ent-70132568780880" name="entity-PER-16" type="PER">
+      <entity_mention id="m-1490" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4981" length="3">our</entity_mention>
+    </entity>
+    <entity id="ent-70132568768260" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-177" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="153" length="10">the unions</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="178" length="5">those</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="222" length="4">they</entity_mention>
+      <entity_mention id="m-1685" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="440" length="10">the unions</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4008" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132568741140" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-242" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="567" length="3">NHS</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2122" length="3">NHS</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2455" length="3">NHS</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2558" length="3">NHS</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2683" length="3">NHS</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3838" length="3">NHS</entity_mention>
+      <entity_mention id="m-1074" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3917" length="3">NHS</entity_mention>
+      <entity_mention id="m-1126" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4048" length="3">NHS</entity_mention>
+      <entity_mention id="m-1204" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4343" length="18">the health service</entity_mention>
+      <entity_mention id="m-1230" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4363" length="3">NHS</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4435" length="2">it</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2192" length="3">NHS</entity_mention>
+    </entity>
+    <entity id="ent-70132568659160" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-814" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2558" length="13">NHS Logistics</entity_mention>
+      <entity_mention id="m-1217" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4363" length="13">NHS Logistics</entity_mention>
+    </entity>
+    <entity id="ent-70132568616280" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-762" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2471" length="27">German-owned logistics firm</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2499" length="3">DHL</entity_mention>
+      <entity_mention id="m-1256" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4445" length="24">German logistics company</entity_mention>
+      <entity_mention id="m-1282" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4471" length="3">DHL</entity_mention>
+    </entity>
+    <entity id="ent-70132568564440" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-229" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="464" length="10">New Labour</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1371" length="6">Labour</entity_mention>
+      <entity_mention id="m-463" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1650" length="9">the party</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2309" length="6">Labour</entity_mention>
+      <entity_mention id="m-1022" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3675" length="6">Labour</entity_mention>
+      <entity_mention id="m-1399" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4783" length="12">Labour party</entity_mention>
+      <entity_mention id="m-1451" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4862" length="6">Labour</entity_mention>
+      <entity_mention id="m-1568" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5404" length="12">Labour party</entity_mention>
+      <entity_mention id="m-1646" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5605" length="12">Labour party</entity_mention>
+      <entity_mention id="m-697" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2248" length="30">the very party that created it</entity_mention>
+    </entity>
+    <entity id="ent-70132567520480" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-216" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="401" length="3">TUC</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3122" length="20">Trade Union Congress</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4222" length="3">TUC</entity_mention>
+      <entity_mention id="m-1139" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4121" length="3">TUC</entity_mention>
+      <entity_mention id="m-1827" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1713" length="3">TUC</entity_mention>
+      <entity_mention id="m-1990" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2857" length="3">TUC</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4265" length="3">its</entity_mention>
+    </entity>
+    <entity id="ent-70132567488760" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-281" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="770" length="6">Unison</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2355" length="6">Unison</entity_mention>
+      <entity_mention id="m-1087" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3995" length="6">Unions</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4298" length="6">Unison</entity_mention>
+      <entity_mention id="m-1321" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4529" length="6">Unison</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="780" length="5">their</entity_mention>
+      <entity_mention id="m-1438" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4842" length="44">one of the big four Labour affiliated unions</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2376" length="2">it</entity_mention>
+    </entity>
+    <entity id="ent-70132567451060" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-255" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="572" length="9">Whitehall</entity_mention>
+    </entity>
+    <entity id="ent-70132567445340" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-268" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="718" length="27">British Medical Association</entity_mention>
+    </entity>
+    <entity id="ent-70132567439260" name="entity-ORG-11" type="ORG">
+      <entity_mention id="m-1659" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5758" length="10">Parliament</entity_mention>
+    </entity>
+    <entity id="ent-70132567423500" name="entity-ORG-12" type="ORG">
+      <entity_mention id="m-307" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="800" length="10">government</entity_mention>
+      <entity_mention id="m-320" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="844" length="10">government</entity_mention>
+      <entity_mention id="m-450" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1608" length="14">the government</entity_mention>
+      <entity_mention id="m-866" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2893" length="14">the government</entity_mention>
+      <entity_mention id="m-944" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3174" length="14">the government</entity_mention>
+      <entity_mention id="m-1113" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4031" length="14">the government</entity_mention>
+      <entity_mention id="m-1334" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4568" length="14">the government</entity_mention>
+      <entity_mention id="m-1360" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4647" length="35">A government that has lost the plot</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2949" length="3">its</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3196" length="3">its</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4626" length="3">its</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4729" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132573192320" name="entity-ORG-13" type="ORG">
+      <entity_mention id="m-580" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1898" length="3">PCS</entity_mention>
+    </entity>
+    <entity id="ent-70132573337640" name="entity-ORG-14" type="ORG">
+      <entity_mention id="m-1728" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1307" length="5">Union</entity_mention>
+    </entity>
+    <entity id="ent-70132573334340" name="entity-ORG-15" type="ORG">
+      <entity_mention id="m-1771" noun_type="NOM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1765" length="5">union</entity_mention>
+    </entity>
+    <entity id="ent-70132573336980" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-333" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="917" length="12">South Africa</entity_mention>
+    </entity>
+    <entity id="ent-70132573468120" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-931" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3157" length="8">Brighton</entity_mention>
+    </entity>
+    <entity id="ent-70132573464800" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-996" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3562" length="7">Britain</entity_mention>
+    </entity>
+    <entity id="ent-70132573607360" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1009" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3577" length="13">United States</entity_mention>
+    </entity>
+    <entity id="ent-70132573606860" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-788" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2471" length="6">German</entity_mention>
+      <entity_mention id="m-1269" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4445" length="6">German</entity_mention>
+    </entity>
+    <entity id="ent-70132573736440" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-1035" noun_type="NAM" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3756" length="6">Europe</entity_mention>
+    </entity>
+    <entity id="ent-70132573738000" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-567" noun_type="NA" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1877" length="17">general secretary</entity_mention>
+    </entity>
+    <entity id="ent-70132573734160" name="entity-TITLE-3" type="TITLE">
+      <entity_mention id="m-1308" noun_type="NA" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4536" length="17">general secretary</entity_mention>
+    </entity>
+    <entity id="ent-70132573879000" name="entity-TITLE-4" type="TITLE">
+      <entity_mention id="m-1814" noun_type="NA" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1717" length="17">general secretary</entity_mention>
+    </entity>
+    <entity id="ent-70132573875180" name="entity-TITLE-6" type="TITLE">
+      <entity_mention id="m-1581" noun_type="NA" source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5428" length="14">prime minister</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132577368040" type="social" subtype="role">
+      <relation_mention id="relm-40">
+        <arg type="role" entity_id="ent-70132573879000" entity_mention_id="m-1814">general secretary</arg>
+        <arg type="per" entity_id="ent-70132569368240" entity_mention_id="m-476">Brendan Barber</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1717" length="17">general secretary</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367980" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1693">
+        <arg type="leader" entity_id="ent-70132569417480" entity_mention_id="m-346">Union leaders</arg>
+        <arg type="entity" entity_id="ent-70132573337640" entity_mention_id="m-1728">Union</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1313" length="7">leaders</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367920" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1736">
+        <arg type="leader" entity_id="ent-70132569173340" entity_mention_id="m-502">other union leaders</arg>
+        <arg type="entity" entity_id="ent-70132573334340" entity_mention_id="m-1771">union</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1771" length="7">leaders</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367860" type="social" subtype="role">
+      <relation_mention id="relm-1779">
+        <arg type="role" entity_id="ent-70132573738000" entity_mention_id="m-567">general secretary</arg>
+        <arg type="per" entity_id="ent-70132569163860" entity_mention_id="m-554">Mark Serwotka</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1877" length="17">general secretary</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367800" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1835">
+        <arg type="employeemember" entity_id="ent-70132569368240" entity_mention_id="m-476">Brendan Barber</arg>
+        <arg type="org" entity_id="ent-70132573192320" entity_mention_id="m-580">PCS</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="1895" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367740" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1865">
+        <arg type="suborg" entity_id="ent-70132568741140" entity_mention_id="m-684">NHS</arg>
+        <arg type="parent" entity_id="ent-70132568564440" entity_mention_id="m-697">the very party that created it</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367680" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1925">
+        <arg type="suborg" entity_id="ent-70132568659160" entity_mention_id="m-814">NHS Logistics</arg>
+        <arg type="parent" entity_id="ent-70132568741140" entity_mention_id="m-827">NHS</arg>
+      </relation_mention>
+      <relation_mention id="relm-2148">
+        <arg type="suborg" entity_id="ent-70132568659160" entity_mention_id="m-1217">NHS Logistics</arg>
+        <arg type="parent" entity_id="ent-70132568741140" entity_mention_id="m-1230">NHS</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367620" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1955">
+        <arg type="employeemember" entity_id="ent-70132568810060" entity_mention_id="m-801">almost 1,000 workers</arg>
+        <arg type="org" entity_id="ent-70132568659160" entity_mention_id="m-814">NHS Logistics</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2547" length="7">workers</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367540" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1998">
+        <arg type="employeemember" entity_id="ent-70132569368240" entity_mention_id="m-853">The TUC general secretary</arg>
+        <arg type="org" entity_id="ent-70132567520480" entity_mention_id="m-1990">TUC</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367480" type="physical" subtype="origin">
+      <relation_mention id="relm-2028">
+        <arg type="entity" entity_id="ent-70132567520480" entity_mention_id="m-918">Trade Union Congress</arg>
+        <arg type="loc" entity_id="ent-70132573468120" entity_mention_id="m-931">Brighton</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3154" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367420" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-2058">
+        <arg type="suborg" entity_id="ent-70132568741140" entity_mention_id="m-1126">NHS</arg>
+        <arg type="parent" entity_id="ent-70132567423500" entity_mention_id="m-1113">the government</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367360" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2088">
+        <arg type="employeemember" entity_id="ent-70132568785460" entity_mention_id="m-1178">Unison members working for the supply arm of the health service</arg>
+        <arg type="org" entity_id="ent-70132567488760" entity_mention_id="m-1191">Unison</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4305" length="7">members</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367300" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2118">
+        <arg type="employeemember" entity_id="ent-70132568785460" entity_mention_id="m-1178">Unison members working for the supply arm of the health service</arg>
+        <arg type="org" entity_id="ent-70132568659160" entity_mention_id="m-1217">NHS Logistics</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4313" length="7">working</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367240" type="social" subtype="role">
+      <relation_mention id="relm-2178">
+        <arg type="role" entity_id="ent-70132573734160" entity_mention_id="m-1308">general secretary</arg>
+        <arg type="per" entity_id="ent-70132569690660" entity_mention_id="m-1295">Dave Prentis</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4536" length="17">general secretary</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367180" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2208">
+        <arg type="employeemember" entity_id="ent-70132569690660" entity_mention_id="m-1295">Dave Prentis</arg>
+        <arg type="org" entity_id="ent-70132567488760" entity_mention_id="m-1321">Unison</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4536" length="17">general secretary</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367120" type="social" subtype="unspecified">
+      <relation_mention id="relm-2238">
+        <arg type="per" entity_id="ent-70132569690660" entity_mention_id="m-1412">his</arg>
+        <arg type="per" entity_id="ent-70132568792560" entity_mention_id="m-1425">his members</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367060" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2268">
+        <arg type="leader" entity_id="ent-70132569943340" entity_mention_id="m-1542">he</arg>
+        <arg type="entity" entity_id="ent-70132568564440" entity_mention_id="m-1568">Labour party</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5417" length="6">leader</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577367000" type="social" subtype="role">
+      <relation_mention id="relm-2328">
+        <arg type="role" entity_id="ent-70132573875180" entity_mention_id="m-1581">prime minister</arg>
+        <arg type="per" entity_id="ent-70132569943340" entity_mention_id="m-1529">Tony Blair</arg>
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="5428" length="14">prime minister</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132573060440" name="entity-EVENT-2">
+      <event_mention id="evm-2372" type="contact" subtype="meet">
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="3143" length="10">conference</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-905" entity_id="ent-70132569368240">his</arg>
+          <arg type="entity" entity_mention_id="m-944" entity_id="ent-70132567423500">the government</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-931">Brighton</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132573058980" name="entity-EVENT-3">
+      <event_mention id="evm-84" type="transaction" subtype="transfermoney">
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="2440" length="5">award</trigger>
+        <args>
+          <arg type="recipient" entity_mention_id="m-762" entity_id="ent-70132568616280">German-owned logistics firm</arg>
+          <arg type="giver" entity_mention_id="m-749" entity_id="ent-70132568741140">NHS</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2422" type="transaction" subtype="transferownership">
+        <trigger source="9279a2e3130ed7f3a460dc4c069e92f4" offset="4430" length="4">sell</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-1230" entity_id="ent-70132568741140">NHS</arg>
+          <arg type="buyer" entity_mention_id="m-1256" entity_id="ent-70132568616280">German logistics company</arg>
+          <arg type="seller" entity_mention_id="m-1204" entity_id="ent-70132568741140">the health service</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

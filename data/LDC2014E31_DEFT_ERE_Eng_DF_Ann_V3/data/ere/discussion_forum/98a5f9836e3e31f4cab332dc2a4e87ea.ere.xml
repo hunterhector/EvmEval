@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="98a5f9836e3e31f4cab332dc2a4e87ea" source_type="multi_post" kit_id="5355f7d80000000000000075">
+  <entities>
+    <entity id="ent-70132571639360" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="14" length="15">California Girl</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="277" length="3">her</entity_mention>
+      <entity_mention id="m-229" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="421" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="490" length="3">her</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="507" length="3">her</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1359" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1386" length="3">she</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1411" length="3">she</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1451" length="3">she</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1607" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1619" length="3">who</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="128" length="15">California Girl</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="194" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-1867" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5545" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-1841" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5389" length="3">she</entity_mention>
+      <entity_mention id="m-1802" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5297" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-1815" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5324" length="3">she</entity_mention>
+      <entity_mention id="m-1828" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5349" length="3">she</entity_mention>
+      <entity_mention id="m-1880" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5557" length="3">who</entity_mention>
+      <entity_mention id="m-1750" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5005" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-1451" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4197" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-1360" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3879" length="15">California Girl</entity_mention>
+      <entity_mention id="m-1334" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3805" length="15">California Girl</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2115" length="9">Cali-Girl</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1874" length="1">I</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1933" length="2">my</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2130" length="3">you</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2267" length="3">you</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2330" length="3">you</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2339" length="3">you</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2393" length="3">you</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2474" length="3">you</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2542" length="3">you</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2597" length="8">yourself</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2626" length="3">you</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2660" length="3">you</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2734" length="3">you</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2797" length="1">I</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3956" length="1">I</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4015" length="2">my</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4037" length="3">you</entity_mention>
+      <entity_mention id="m-1490" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4349" length="3">you</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4412" length="3">you</entity_mention>
+      <entity_mention id="m-1529" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4421" length="3">you</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4475" length="3">you</entity_mention>
+      <entity_mention id="m-1555" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4556" length="3">you</entity_mention>
+      <entity_mention id="m-1581" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4611" length="3">you</entity_mention>
+      <entity_mention id="m-1594" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4624" length="3">you</entity_mention>
+      <entity_mention id="m-1620" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4679" length="8">yourself</entity_mention>
+      <entity_mention id="m-1633" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4708" length="3">you</entity_mention>
+      <entity_mention id="m-2192" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4843" length="8">muchacha</entity_mention>
+      <entity_mention id="m-1659" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4742" length="3">you</entity_mention>
+      <entity_mention id="m-1685" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4816" length="3">you</entity_mention>
+      <entity_mention id="m-1698" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4879" length="1">I</entity_mention>
+      <entity_mention id="m-2179" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4145" length="34">a defeated neocon/teabagger toadie</entity_mention>
+      <entity_mention id="m-2140" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2063" length="34">a defeated neocon/teabagger toadie</entity_mention>
+      <entity_mention id="m-2153" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2761" length="8">muchacha</entity_mention>
+      <entity_mention id="m-1932" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5695" length="15">the little fool</entity_mention>
+      <entity_mention id="m-1945" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5782" length="3">you</entity_mention>
+      <entity_mention id="m-788" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1757" length="15">the little fool</entity_mention>
+    </entity>
+    <entity id="ent-70132571262420" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="92" length="13">taichiliberal</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="373" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="463" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="474" length="2">my</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1651" length="2">my</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1699" length="2">my</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="166" length="13">taichiliberal</entity_mention>
+      <entity_mention id="m-1178" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2900" length="13">taichiliberal</entity_mention>
+      <entity_mention id="m-1321" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3729" length="13">taichiliberal</entity_mention>
+      <entity_mention id="m-1347" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3843" length="13">taichiliberal</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1815" length="3">You</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1955" length="3">you</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2106" length="2">me</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2251" length="1">I</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2509" length="2">me</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2579" length="2">me</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2642" length="2">my</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2695" length="1">I</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2830" length="4">your</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3897" length="3">You</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4212" length="3">you</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4333" length="1">I</entity_mention>
+      <entity_mention id="m-1438" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4188" length="2">me</entity_mention>
+      <entity_mention id="m-1568" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4591" length="2">me</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4661" length="2">me</entity_mention>
+      <entity_mention id="m-1646" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4724" length="2">my</entity_mention>
+      <entity_mention id="m-1672" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4777" length="1">I</entity_mention>
+      <entity_mention id="m-1711" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4912" length="4">your</entity_mention>
+      <entity_mention id="m-2166" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2872" length="4">Twit</entity_mention>
+      <entity_mention id="m-2205" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4954" length="4">Twit</entity_mention>
+      <entity_mention id="m-1893" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5589" length="2">my</entity_mention>
+    </entity>
+    <entity id="ent-70132569538280" name="entity-PER-4" type="PER">
+      <entity_mention id="m-294" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="528" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-307" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="537" length="28">the son of Sir Keith Murdoch</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="765" length="2">he</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="876" length="3">his</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="903" length="3">His</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="927" length="2">he</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="973" length="3">his</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1196" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1296" length="3">his</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1904" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-1230" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3260" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-1243" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3271" length="36">an incredibly successful businessman</entity_mention>
+      <entity_mention id="m-1399" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3986" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-1763" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5134" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-1789" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5234" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132569176280" name="entity-PER-5" type="PER">
+      <entity_mention id="m-346" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="552" length="13">Keith Murdoch</entity_mention>
+      <entity_mention id="m-359" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="579" length="51">a famous Australian war correspondent and publisher</entity_mention>
+      <entity_mention id="m-502" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="903" length="10">His father</entity_mention>
+    </entity>
+    <entity id="ent-70132569161800" name="entity-PER-6" type="PER">
+      <entity_mention id="m-437" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="723" length="11">Beaverbrook</entity_mention>
+    </entity>
+    <entity id="ent-70132568811780" name="entity-PER-7" type="PER">
+      <entity_mention id="m-1191" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2976" length="11">paulitician</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3309" length="1">I</entity_mention>
+      <entity_mention id="m-1269" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3389" length="11">Paulitician</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3441" length="3">who</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2529" length="3">you</entity_mention>
+      <entity_mention id="m-1295" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3595" length="10">this clown</entity_mention>
+    </entity>
+    <entity id="ent-70132568778160" name="entity-PER-8" type="PER">
+      <entity_mention id="m-931" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2310" length="8">Limbaugh</entity_mention>
+      <entity_mention id="m-1503" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4392" length="8">Limbaugh</entity_mention>
+    </entity>
+    <entity id="ent-70132568761320" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-190" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="297" length="11">Sunday Mail</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="994" length="11">Sunday Mail</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1540" length="11">Sunday Mail</entity_mention>
+      <entity_mention id="m-1854" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5478" length="11">Sunday Mail</entity_mention>
+      <entity_mention id="m-320" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="312" length="22">a standard MAJOR paper</entity_mention>
+    </entity>
+    <entity id="ent-70132568733640" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-463" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="744" length="13">Daily Express</entity_mention>
+    </entity>
+    <entity id="ent-70132568729500" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-580" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1014" length="4">News</entity_mention>
+    </entity>
+    <entity id="ent-70132568716900" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-1204" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3024" length="8">Fox News</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3173" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568698800" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-619" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1252" length="25">TWO successful newspapers</entity_mention>
+      <entity_mention id="m-1776" noun_type="NOM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5190" length="25">TWO successful newspapers</entity_mention>
+    </entity>
+    <entity id="ent-70132568690360" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-372" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="588" length="10">Australian</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="942" length="9">Australia</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1671" length="9">Australia</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2848" length="9">Australia</entity_mention>
+      <entity_mention id="m-1724" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4930" length="9">Australia</entity_mention>
+      <entity_mention id="m-1906" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5609" length="9">Australia</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="338" length="9">Australia</entity_mention>
+    </entity>
+    <entity id="ent-70132568590860" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-411" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="662" length="6">Oxford</entity_mention>
+    </entity>
+    <entity id="ent-70132568568460" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-450" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="737" length="6">London</entity_mention>
+    </entity>
+    <entity id="ent-70132568564820" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-593" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1028" length="8">Adelaide</entity_mention>
+    </entity>
+    <entity id="ent-70132568550620" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-762" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1688" length="2">UK</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2868" length="2">UK</entity_mention>
+      <entity_mention id="m-1737" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4950" length="2">UK</entity_mention>
+      <entity_mention id="m-1919" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5626" length="2">UK</entity_mention>
+    </entity>
+    <entity id="ent-70132568449300" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-1958" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="14" length="10">California</entity_mention>
+      <entity_mention id="m-1971" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="128" length="10">California</entity_mention>
+      <entity_mention id="m-1984" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="194" length="4">Cali</entity_mention>
+      <entity_mention id="m-1997" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="421" length="4">Cali</entity_mention>
+      <entity_mention id="m-2010" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1359" length="4">Cali</entity_mention>
+      <entity_mention id="m-2023" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="1607" length="4">Cali</entity_mention>
+      <entity_mention id="m-2036" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="2115" length="4">Cali</entity_mention>
+      <entity_mention id="m-2049" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3805" length="10">California</entity_mention>
+      <entity_mention id="m-2062" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="3879" length="10">California</entity_mention>
+      <entity_mention id="m-2075" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="4197" length="4">Cali</entity_mention>
+      <entity_mention id="m-2088" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5005" length="4">Cali</entity_mention>
+      <entity_mention id="m-2101" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5297" length="4">Cali</entity_mention>
+      <entity_mention id="m-2114" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="5545" length="4">Cali</entity_mention>
+    </entity>
+    <entity id="ent-70132567483540" name="entity-GPE-1" type="GPE">
+      <entity_mention id="m-398" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="643" length="9">Worcester</entity_mention>
+    </entity>
+    <entity id="ent-70132567477780" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-385" noun_type="NAM" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="643" length="17">Worcester College</entity_mention>
+    </entity>
+    <entity id="ent-70132567472000" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-333" noun_type="NA" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="548" length="3">Sir</entity_mention>
+    </entity>
+    <entity id="ent-70132567465020" name="entity-TITLE-3" type="TITLE">
+      <entity_mention id="m-424" noun_type="NA" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="718" length="4">Lord</entity_mention>
+    </entity>
+    <entity id="ent-70132567458260" name="entity-TITLE-4" type="TITLE">
+      <entity_mention id="m-2437" noun_type="NA" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="708" length="6">editor</entity_mention>
+      <entity_mention id="m-2450" noun_type="NA" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="892" length="9">publisher</entity_mention>
+      <entity_mention id="m-2424" noun_type="NA" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="621" length="9">publisher</entity_mention>
+    </entity>
+    <entity id="ent-70132567440580" name="entity-TITLE-5" type="TITLE">
+      <entity_mention id="m-2411" noun_type="NA" source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="603" length="13">correspondent</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132577015340" type="social" subtype="family">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132569538280" entity_mention_id="m-294">Murdoch</arg>
+        <arg type="per" entity_id="ent-70132569538280" entity_mention_id="m-307">the son of Sir Keith Murdoch</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="541" length="3">son</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577015240" type="physical" subtype="origin">
+      <relation_mention id="relm-2226">
+        <arg type="entity" entity_id="ent-70132569176280" entity_mention_id="m-359">a famous Australian war correspondent and publisher</arg>
+        <arg type="loc" entity_id="ent-70132568690360" entity_mention_id="m-372">Australian</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="588" length="10">Australian</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577015180" type="physical" subtype="located">
+      <relation_mention id="relm-2286">
+        <arg type="entity" entity_id="ent-70132567477780" entity_mention_id="m-385">Worcester College</arg>
+        <arg type="loc" entity_id="ent-70132568590860" entity_mention_id="m-411">Oxford</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577015100" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2316">
+        <arg type="leader" entity_id="ent-70132569161800" entity_mention_id="m-437">Beaverbrook</arg>
+        <arg type="entity" entity_id="ent-70132568733640" entity_mention_id="m-463">Daily Express</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="723" length="13">Beaverbrook's</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577015040" type="social" subtype="role">
+      <relation_mention id="relm-2346">
+        <arg type="role" entity_id="ent-70132567465020" entity_mention_id="m-424">Lord</arg>
+        <arg type="per" entity_id="ent-70132569161800" entity_mention_id="m-437">Beaverbrook</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577014980" type="social" subtype="role">
+      <relation_mention id="relm-2376">
+        <arg type="role" entity_id="ent-70132567440580" entity_mention_id="m-2411">correspondent</arg>
+        <arg type="per" entity_id="ent-70132569176280" entity_mention_id="m-359">a famous Australian war correspondent and publisher</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577014920" type="social" subtype="role">
+      <relation_mention id="relm-2458">
+        <arg type="role" entity_id="ent-70132567458260" entity_mention_id="m-2424">publisher</arg>
+        <arg type="per" entity_id="ent-70132569176280" entity_mention_id="m-359">a famous Australian war correspondent and publisher</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577014860" type="social" subtype="role">
+      <relation_mention id="relm-2488">
+        <arg type="role" entity_id="ent-70132567458260" entity_mention_id="m-2437">editor</arg>
+        <arg type="per" entity_id="ent-70132569538280" entity_mention_id="m-294">Murdoch</arg>
+      </relation_mention>
+      <relation_mention id="relm-2518">
+        <arg type="role" entity_id="ent-70132567458260" entity_mention_id="m-2450">publisher</arg>
+        <arg type="per" entity_id="ent-70132569538280" entity_mention_id="m-489">his</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="880" length="6">career</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577014760" type="social" subtype="family">
+      <relation_mention id="relm-2548">
+        <arg type="per" entity_id="ent-70132569538280" entity_mention_id="m-515">His</arg>
+        <arg type="per" entity_id="ent-70132569176280" entity_mention_id="m-502">His father</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="907" length="6">father</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577014700" type="physical" subtype="located">
+      <relation_mention id="relm-2578">
+        <arg type="entity" entity_id="ent-70132569538280" entity_mention_id="m-528">he</arg>
+        <arg type="loc" entity_id="ent-70132568690360" entity_mention_id="m-541">Australia</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="930" length="8">returned</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577014640" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2608">
+        <arg type="leader" entity_id="ent-70132569538280" entity_mention_id="m-554">his</arg>
+        <arg type="entity" entity_id="ent-70132568761320" entity_mention_id="m-567">Sunday Mail</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="963" length="9">take over</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577014560" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2638">
+        <arg type="leader" entity_id="ent-70132569538280" entity_mention_id="m-554">his</arg>
+        <arg type="entity" entity_id="ent-70132568729500" entity_mention_id="m-580">News</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="963" length="9">take over</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577014480" type="physical" subtype="origin">
+      <relation_mention id="relm-2916">
+        <arg type="entity" entity_id="ent-70132568761320" entity_mention_id="m-320">a standard MAJOR paper</arg>
+        <arg type="loc" entity_id="ent-70132568690360" entity_mention_id="m-203">Australia</arg>
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="335" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132573057440" name="entity-EVENT-4">
+      <event_mention id="evm-2825" type="life" subtype="die">
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="921" length="4">died</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-502" entity_id="ent-70132569176280">His father</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-3024" type="life" subtype="die">
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="567" length="9">18861952</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-346" entity_id="ent-70132569176280">Keith Murdoch</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="572" length="4">1952</date_extent>
+          <normalized_date>1952-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132573056320" name="entity-EVENT-5">
+      <event_mention id="evm-2982" type="life" subtype="beborn">
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="567" length="9">18861952</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-346" entity_id="ent-70132569176280">Keith Murdoch</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="567" length="4">1886</date_extent>
+          <normalized_date>1886-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132573054600" name="entity-EVENT-1">
+      <event_mention id="evm-2775" type="transaction" subtype="transferownership">
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="963" length="9">take over</trigger>
+        <args>
+          <arg type="beneficiary" entity_mention_id="m-554" entity_id="ent-70132569538280">his</arg>
+          <arg type="org" entity_mention_id="m-580" entity_id="ent-70132568729500">News</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-593">Adelaide</place>
+        </places>
+        <date>
+          <date_extent source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="955" length="4">1954</date_extent>
+          <normalized_date>1954-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+      <event_mention id="evm-2725" type="transaction" subtype="transferownership">
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="963" length="9">take over</trigger>
+        <args>
+          <arg type="beneficiary" entity_mention_id="m-554" entity_id="ent-70132569538280">his</arg>
+          <arg type="org" entity_mention_id="m-567" entity_id="ent-70132568761320">Sunday Mail</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-593">Adelaide</place>
+        </places>
+        <date>
+          <date_extent source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="955" length="4">1954</date_extent>
+          <normalized_date>1954-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132573053500" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="movement" subtype="transportperson">
+        <trigger source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="930" length="8">returned</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-528" entity_id="ent-70132569538280">he</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-541">Australia</place>
+        </places>
+        <date>
+          <date_extent source="98a5f9836e3e31f4cab332dc2a4e87ea" offset="955" length="4">1954</date_extent>
+          <normalized_date>1954-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

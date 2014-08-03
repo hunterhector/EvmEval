@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="e215a8c415c28c01afb318c5a52a1754" source_type="multi_post" kit_id="5355f7d80000000000000079">
+  <entities>
+    <entity id="ent-70132573338820" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="92" length="13">taichiliberal</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="166" length="13">taichiliberal</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="195" length="1">I</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1384" length="1">I</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2157" length="1">I</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1989" length="3">you</entity_mention>
+      <entity_mention id="m-1620" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3802" length="3">you</entity_mention>
+      <entity_mention id="m-1672" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="3960" length="7">tai chi</entity_mention>
+    </entity>
+    <entity id="ent-70132573054680" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="14" length="15">Quantum Windbag</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="128" length="15">Quantum Windbag</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1776" length="1">I</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2044" length="1">I</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2100" length="4">your</entity_mention>
+      <entity_mention id="m-1269" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="3257" length="15">Quantum Windbag</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3336" length="1">I</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3356" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577808000" name="entity-PER-4" type="PER">
+      <entity_mention id="m-203" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="278" length="11">The co-host</entity_mention>
+      <entity_mention id="m-333" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="915" length="7">co-host</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="923" length="10">Greg Kelly</entity_mention>
+      <entity_mention id="m-541" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="1411" length="11">Fox flunkie</entity_mention>
+      <entity_mention id="m-580" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="1574" length="7">co-host</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1582" length="10">Greg Kelly</entity_mention>
+    </entity>
+    <entity id="ent-70132577463260" name="entity-PER-5" type="PER">
+      <entity_mention id="m-216" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="308" length="56">a guy who is part of the on-going occupation of Wall St.</entity_mention>
+      <entity_mention id="m-242" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="436" length="7">the man</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="521" length="3">his</entity_mention>
+      <entity_mention id="m-268" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="535" length="7">the man</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="815" length="2">He</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="881" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132575496220" name="entity-PER-6" type="PER">
+      <entity_mention id="m-294" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="830" length="11">Al Sharpton</entity_mention>
+      <entity_mention id="m-307" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="843" length="40">a self made man from the streets like me</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="964" length="11">Al Sharpton</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1282" length="11">Al Sharpton</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1333" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132577144700" name="entity-PER-7" type="PER">
+      <entity_mention id="m-372" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="977" length="14">Rupert Murdoch</entity_mention>
+      <entity_mention id="m-385" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="995" length="15">a self made man</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1097" length="14">Rupert Murdoch</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1122" length="3">HIS</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1188" length="2">He</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1260" length="3">his</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1537" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-658" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1792" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1840" length="2">he</entity_mention>
+      <entity_mention id="m-710" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="1863" length="50">an editor for a different paper in another country</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="1915" length="2">He</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2169" length="3">his</entity_mention>
+      <entity_mention id="m-840" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="2258" length="61">head of one of Australia's leading news paper The Sunday Mail</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2324" length="2">he</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2347" length="3">his</entity_mention>
+      <entity_mention id="m-931" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2365" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-944" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="2374" length="28">the son of Sir Keith Murdoch</entity_mention>
+      <entity_mention id="m-983" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="2416" length="51">a famous Australian war correspondent and publisher</entity_mention>
+      <entity_mention id="m-1048" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="2542" length="52">an editor on Lord Beaverbrook's London Daily Express</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2602" length="2">he</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2713" length="3">his</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2740" length="3">His</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2764" length="2">he</entity_mention>
+      <entity_mention id="m-1191" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2810" length="3">his</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2893" length="7">Murdoch</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2963" length="2">he</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3372" length="2">he</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3409" length="3">his</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3426" length="2">He</entity_mention>
+      <entity_mention id="m-1438" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3514" length="2">He</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3611" length="3">his</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3683" length="2">he</entity_mention>
+      <entity_mention id="m-1529" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3696" length="2">he</entity_mention>
+      <entity_mention id="m-1555" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3724" length="3">him</entity_mention>
+      <entity_mention id="m-1568" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="3728" length="15">a self made man</entity_mention>
+      <entity_mention id="m-1581" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3763" length="2">he</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3785" length="2">he</entity_mention>
+      <entity_mention id="m-1646" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="3878" length="7">Murdoch</entity_mention>
+    </entity>
+    <entity id="ent-70132574705600" name="entity-PER-8" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="1122" length="10">HIS FATHER</entity_mention>
+      <entity_mention id="m-905" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="2347" length="10">his father</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2389" length="13">Keith Murdoch</entity_mention>
+      <entity_mention id="m-1139" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="2740" length="10">His father</entity_mention>
+      <entity_mention id="m-1321" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="3409" length="10">his father</entity_mention>
+    </entity>
+    <entity id="ent-70132574560440" name="entity-PER-9" type="PER">
+      <entity_mention id="m-606" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="1628" length="23">the Wall St. protesters</entity_mention>
+    </entity>
+    <entity id="ent-70132574426280" name="entity-PER-10" type="PER">
+      <entity_mention id="m-1074" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2560" length="11">Beaverbrook</entity_mention>
+    </entity>
+    <entity id="ent-70132574422800" name="entity-PER-11" type="PER">
+      <entity_mention id="m-1659" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="3909" length="8">Unkotare</entity_mention>
+    </entity>
+    <entity id="ent-70132574296500" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-177" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="233" length="9">Channel 5</entity_mention>
+    </entity>
+    <entity id="ent-70132574293420" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-190" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="265" length="3">FOX</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1411" length="3">Fox</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1704" length="3">Fox</entity_mention>
+    </entity>
+    <entity id="ent-70132574153400" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-437" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="1148" length="38">TWO NEWSPAPERS IN THE U.K. (Australia)</entity_mention>
+      <entity_mention id="m-671" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="1810" length="29">those tow papers in Australia</entity_mention>
+      <entity_mention id="m-736" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="1929" length="16">those tow papers</entity_mention>
+      <entity_mention id="m-1373" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="3439" length="73">two papers in Adelaide, the capital of South Australia (which is a state)</entity_mention>
+      <entity_mention id="m-1451" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="3528" length="16">those two papers</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3581" length="4">them</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3709" length="4">them</entity_mention>
+      <entity_mention id="m-1594" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3776" length="4">them</entity_mention>
+      <entity_mention id="m-1633" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="3806" length="12">those papers</entity_mention>
+    </entity>
+    <entity id="ent-70132573735580" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-814" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="2192" length="16">a London tabloid</entity_mention>
+    </entity>
+    <entity id="ent-70132575239580" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-866" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="2266" length="37">one of Australia's leading news paper</entity_mention>
+    </entity>
+    <entity id="ent-70132575235960" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-1009" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2480" length="17">Worcester College</entity_mention>
+    </entity>
+    <entity id="ent-70132575232540" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-1087" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2574" length="20">London Daily Express</entity_mention>
+      <entity_mention id="m-2315" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="2596" length="5">where</entity_mention>
+    </entity>
+    <entity id="ent-70132577594240" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-1204" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2831" length="11">Sunday Mail</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2308" length="11">Sunday Mail</entity_mention>
+    </entity>
+    <entity id="ent-70132577268760" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-1217" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2851" length="4">News</entity_mention>
+    </entity>
+    <entity id="ent-70132577265280" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-450" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1170" length="4">U.K.</entity_mention>
+      <entity_mention id="m-1503" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="3667" length="2">UK</entity_mention>
+    </entity>
+    <entity id="ent-70132576513920" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-463" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1176" length="9">Australia</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1830" length="9">Australia</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2273" length="9">Australia</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2425" length="10">Australian</entity_mention>
+      <entity_mention id="m-1178" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2779" length="9">Australia</entity_mention>
+      <entity_mention id="m-1490" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="3643" length="9">Australia</entity_mention>
+    </entity>
+    <entity id="ent-70132576038820" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-827" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2194" length="6">London</entity_mention>
+      <entity_mention id="m-1100" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2574" length="6">London</entity_mention>
+    </entity>
+    <entity id="ent-70132572649900" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1035" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2499" length="6">Oxford</entity_mention>
+    </entity>
+    <entity id="ent-70132572646220" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-1230" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="2865" length="8">Adelaide</entity_mention>
+      <entity_mention id="m-1386" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="3453" length="8">Adelaide</entity_mention>
+      <entity_mention id="m-1399" noun_type="NOM" source="e215a8c415c28c01afb318c5a52a1754" offset="3463" length="49">the capital of South Australia (which is a state)</entity_mention>
+    </entity>
+    <entity id="ent-70132571766460" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-1412" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="3478" length="15">South Australia</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="e215a8c415c28c01afb318c5a52a1754" offset="3495" length="5">which</entity_mention>
+    </entity>
+    <entity id="ent-70132571707460" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-229" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="356" length="8">Wall St.</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="e215a8c415c28c01afb318c5a52a1754" offset="1632" length="8">Wall St.</entity_mention>
+    </entity>
+    <entity id="ent-70132571641640" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-957" noun_type="NA" source="e215a8c415c28c01afb318c5a52a1754" offset="2385" length="3">Sir</entity_mention>
+    </entity>
+    <entity id="ent-70132571635900" name="entity-TITLE-3" type="TITLE">
+      <entity_mention id="m-1061" noun_type="NA" source="e215a8c415c28c01afb318c5a52a1754" offset="2555" length="4">Lord</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132568811040" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-40">
+        <arg type="suborg" entity_id="ent-70132574296500" entity_mention_id="m-177">Channel 5</arg>
+        <arg type="parent" entity_id="ent-70132574293420" entity_mention_id="m-190">FOX</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="253" length="7">part of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568812420" type="physical" subtype="located">
+      <relation_mention id="relm-1680">
+        <arg type="entity" entity_id="ent-70132577463260" entity_mention_id="m-216">a guy who is part of the on-going occupation of Wall St.</arg>
+        <arg type="loc" entity_id="ent-70132571707460" entity_mention_id="m-229">Wall St.</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568814020" type="social" subtype="family">
+      <relation_mention id="relm-1710">
+        <arg type="per" entity_id="ent-70132574705600" entity_mention_id="m-411">HIS FATHER</arg>
+        <arg type="per" entity_id="ent-70132577144700" entity_mention_id="m-424">HIS</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="1126" length="6">FATHER</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2010">
+        <arg type="per" entity_id="ent-70132574705600" entity_mention_id="m-905">his father</arg>
+        <arg type="per" entity_id="ent-70132577144700" entity_mention_id="m-918">his</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2351" length="6">father</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2323">
+        <arg type="per" entity_id="ent-70132574705600" entity_mention_id="m-1139">His father</arg>
+        <arg type="per" entity_id="ent-70132577144700" entity_mention_id="m-1152">His</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2744" length="6">father</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2443">
+        <arg type="per" entity_id="ent-70132574705600" entity_mention_id="m-1321">his father</arg>
+        <arg type="per" entity_id="ent-70132577144700" entity_mention_id="m-1334">his</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="3413" length="6">father</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568815980" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1740">
+        <arg type="leader" entity_id="ent-70132574705600" entity_mention_id="m-411">HIS FATHER</arg>
+        <arg type="entity" entity_id="ent-70132574153400" entity_mention_id="m-437">TWO NEWSPAPERS IN THE U.K. (Australia)</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="1135" length="9">OWNERSHIP</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568816800" type="physical" subtype="origin">
+      <relation_mention id="relm-1770">
+        <arg type="entity" entity_id="ent-70132574153400" entity_mention_id="m-437">TWO NEWSPAPERS IN THE U.K. (Australia)</arg>
+        <arg type="loc" entity_id="ent-70132577265280" entity_mention_id="m-450">U.K.</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="1163" length="2">IN</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568809420" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1830">
+        <arg type="employeemember" entity_id="ent-70132577808000" entity_mention_id="m-541">Fox flunkie</arg>
+        <arg type="org" entity_id="ent-70132574293420" entity_mention_id="m-554">Fox</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568809200" type="physical" subtype="located">
+      <relation_mention id="relm-1860">
+        <arg type="entity" entity_id="ent-70132574560440" entity_mention_id="m-606">the Wall St. protesters</arg>
+        <arg type="loc" entity_id="ent-70132571707460" entity_mention_id="m-619">Wall St.</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568809060" type="physical" subtype="origin">
+      <relation_mention id="relm-1890">
+        <arg type="entity" entity_id="ent-70132574153400" entity_mention_id="m-671">those tow papers in Australia</arg>
+        <arg type="loc" entity_id="ent-70132576513920" entity_mention_id="m-684">Australia</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="1827" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808960" type="physical" subtype="origin">
+      <relation_mention id="relm-1920">
+        <arg type="entity" entity_id="ent-70132573735580" entity_mention_id="m-814">a London tabloid</arg>
+        <arg type="loc" entity_id="ent-70132576038820" entity_mention_id="m-827">London</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808860" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1950">
+        <arg type="leader" entity_id="ent-70132577144700" entity_mention_id="m-840">head of one of Australia's leading news paper The Sunday Mail</arg>
+        <arg type="entity" entity_id="ent-70132575239580" entity_mention_id="m-866">one of Australia's leading news paper</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2258" length="4">head</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808740" type="physical" subtype="origin">
+      <relation_mention id="relm-1980">
+        <arg type="entity" entity_id="ent-70132575239580" entity_mention_id="m-866">one of Australia's leading news paper</arg>
+        <arg type="loc" entity_id="ent-70132576513920" entity_mention_id="m-853">Australia</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2273" length="11">Australia's</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808660" type="social" subtype="family">
+      <relation_mention id="relm-2040">
+        <arg type="per" entity_id="ent-70132577144700" entity_mention_id="m-944">the son of Sir Keith Murdoch</arg>
+        <arg type="per" entity_id="ent-70132574705600" entity_mention_id="m-970">Keith Murdoch</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2378" length="3">son</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808540" type="social" subtype="role">
+      <relation_mention id="relm-2070">
+        <arg type="role" entity_id="ent-70132571641640" entity_mention_id="m-957">Sir</arg>
+        <arg type="per" entity_id="ent-70132574705600" entity_mention_id="m-970">Keith Murdoch</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808440" type="physical" subtype="origin">
+      <relation_mention id="relm-2100">
+        <arg type="entity" entity_id="ent-70132577144700" entity_mention_id="m-983">a famous Australian war correspondent and publisher</arg>
+        <arg type="loc" entity_id="ent-70132576513920" entity_mention_id="m-996">Australian</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2425" length="10">Australian</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808340" type="physical" subtype="origin">
+      <relation_mention id="relm-2160">
+        <arg type="entity" entity_id="ent-70132575235960" entity_mention_id="m-1009">Worcester College</arg>
+        <arg type="loc" entity_id="ent-70132572649900" entity_mention_id="m-1035">Oxford</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808240" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2190">
+        <arg type="employeemember" entity_id="ent-70132577144700" entity_mention_id="m-1048">an editor on Lord Beaverbrook's London Daily Express</arg>
+        <arg type="org" entity_id="ent-70132575232540" entity_mention_id="m-1087">London Daily Express</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2545" length="6">editor</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808100" type="social" subtype="role">
+      <relation_mention id="relm-2220">
+        <arg type="role" entity_id="ent-70132571635900" entity_mention_id="m-1061">Lord</arg>
+        <arg type="per" entity_id="ent-70132574426280" entity_mention_id="m-1074">Beaverbrook</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808020" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2250">
+        <arg type="leader" entity_id="ent-70132574426280" entity_mention_id="m-1074">Beaverbrook</arg>
+        <arg type="entity" entity_id="ent-70132575232540" entity_mention_id="m-1087">London Daily Express</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2560" length="13">Beaverbrook's</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568807900" type="physical" subtype="origin">
+      <relation_mention id="relm-2280">
+        <arg type="entity" entity_id="ent-70132575232540" entity_mention_id="m-1087">London Daily Express</arg>
+        <arg type="loc" entity_id="ent-70132576038820" entity_mention_id="m-1100">London</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568807840" type="physical" subtype="located">
+      <relation_mention id="relm-2353">
+        <arg type="entity" entity_id="ent-70132577144700" entity_mention_id="m-1165">he</arg>
+        <arg type="loc" entity_id="ent-70132576513920" entity_mention_id="m-1178">Australia</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2776" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568807720" type="physical" subtype="origin">
+      <relation_mention id="relm-2383">
+        <arg type="entity" entity_id="ent-70132577594240" entity_mention_id="m-1204">Sunday Mail</arg>
+        <arg type="loc" entity_id="ent-70132572646220" entity_mention_id="m-1230">Adelaide</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2862" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568807640" type="physical" subtype="origin">
+      <relation_mention id="relm-2413">
+        <arg type="entity" entity_id="ent-70132577268760" entity_mention_id="m-1217">News</arg>
+        <arg type="loc" entity_id="ent-70132572646220" entity_mention_id="m-1230">Adelaide</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2862" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568807520" type="physical" subtype="origin">
+      <relation_mention id="relm-2473">
+        <arg type="entity" entity_id="ent-70132574153400" entity_mention_id="m-1373">two papers in Adelaide, the capital of South Australia (which is a state)</arg>
+        <arg type="loc" entity_id="ent-70132572646220" entity_mention_id="m-1386">Adelaide</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="3450" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568807420" type="physical" subtype="located">
+      <relation_mention id="relm-2503">
+        <arg type="entity" entity_id="ent-70132572646220" entity_mention_id="m-1399">the capital of South Australia (which is a state)</arg>
+        <arg type="loc" entity_id="ent-70132571766460" entity_mention_id="m-1412">South Australia</arg>
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="3475" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132577700000" name="entity-EVENT-3">
+      <event_mention id="evm-2589" type="transaction" subtype="transferownership">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="1112" length="9">INHERITED</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-411" entity_id="ent-70132574705600">HIS FATHER</arg>
+          <arg type="buyer" entity_mention_id="m-398" entity_id="ent-70132577144700">Rupert Murdoch</arg>
+          <arg type="org" entity_mention_id="m-437" entity_id="ent-70132574153400">TWO NEWSPAPERS IN THE U.K. (Australia)</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-450">U.K.</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-2689" type="transaction" subtype="transferownership">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="1800" length="9">inherited</trigger>
+        <args>
+          <arg type="buyer" entity_mention_id="m-658" entity_id="ent-70132577144700">Murdoch</arg>
+          <arg type="org" entity_mention_id="m-671" entity_id="ent-70132574153400">those tow papers in Australia</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-684">Australia</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-2923" type="transaction" subtype="transferownership">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2814" length="11">inheritance</trigger>
+        <args>
+          <arg type="buyer" entity_mention_id="m-1191" entity_id="ent-70132577144700">his</arg>
+          <arg type="seller" entity_mention_id="m-1139" entity_id="ent-70132574705600">His father</arg>
+          <arg type="org" entity_mention_id="m-1204" entity_id="ent-70132577594240">Sunday Mail</arg>
+          <arg type="org" entity_mention_id="m-1217" entity_id="ent-70132577268760">News</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1230">Adelaide</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-3031" type="transaction" subtype="transferownership">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="3429" length="9">inherited</trigger>
+        <args>
+          <arg type="buyer" entity_mention_id="m-1347" entity_id="ent-70132577144700">He</arg>
+          <arg type="org" entity_mention_id="m-1373" entity_id="ent-70132574153400">two papers in Adelaide, the capital of South Australia (which is a state)</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1386">Adelaide</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-3081" type="transaction" subtype="transferownership">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="3699" length="9">inherited</trigger>
+        <args>
+          <arg type="buyer" entity_mention_id="m-1529" entity_id="ent-70132577144700">he</arg>
+          <arg type="org" entity_mention_id="m-1542" entity_id="ent-70132574153400">them</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-3131" type="transaction" subtype="transferownership">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="3766" length="9">inherited</trigger>
+        <args>
+          <arg type="buyer" entity_mention_id="m-1581" entity_id="ent-70132577144700">he</arg>
+          <arg type="org" entity_mention_id="m-1594" entity_id="ent-70132574153400">them</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132577697860" name="entity-EVENT-4">
+      <event_mention id="evm-2797" type="life" subtype="die">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2358" length="4">died</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-905" entity_id="ent-70132574705600">his father</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2839" type="life" subtype="die">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2758" length="4">died</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-1139" entity_id="ent-70132574705600">His father</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2989" type="life" subtype="die">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="3420" length="4">died</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1321" entity_id="ent-70132574705600">his father</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132577467320" name="entity-EVENT-5">
+      <event_mention id="evm-2881" type="movement" subtype="transportperson">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2767" length="8">returned</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1165" entity_id="ent-70132577144700">he</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1100" type="origin">London</place>
+          <place entity_mention_id="m-1178" type="destination">Australia</place>
+        </places>
+        <date>
+          <date_extent source="e215a8c415c28c01afb318c5a52a1754" offset="2792" length="4">1954</date_extent>
+          <normalized_date>1954-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132577465680" name="entity-EVENT-6">
+      <event_mention id="evm-2547" type="conflict" subtype="demonstrate">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="342" length="10">occupation</trigger>
+        <args/>
+        <places>
+          <place entity_mention_id="m-229">Wall St.</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-2647" type="conflict" subtype="demonstrate">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="1641" length="10">protesters</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-606" entity_id="ent-70132574560440">the Wall St. protesters</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-619">Wall St.</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132577464560" name="entity-EVENT-7">
+      <event_mention id="evm-84" type="contact" subtype="communicate">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="295" length="12">interviewing</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-203" entity_id="ent-70132577808000">The co-host</arg>
+          <arg type="entity" entity_mention_id="m-216" entity_id="ent-70132577463260">a guy who is part of the on-going occupation of Wall St.</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132577463400" name="entity-EVENT-1">
+      <event_mention id="evm-2739" type="transaction" subtype="transferownership">
+        <trigger source="e215a8c415c28c01afb318c5a52a1754" offset="2327" length="9">INHERITED</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-905" entity_id="ent-70132574705600">his father</arg>
+          <arg type="buyer" entity_mention_id="m-892" entity_id="ent-70132577144700">he</arg>
+          <arg type="org" entity_mention_id="m-879" entity_id="ent-70132577594240">Sunday Mail</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-853">Australia</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="51d64c51a2363954454ee9e921b590ce" source_type="multi_post" kit_id="5385897e0000000000000001">
+  <entities>
+    <entity id="ent-70132568660100" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="85" length="9">NabilKhan</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="97" length="1">I</entity_mention>
+      <entity_mention id="m-1100" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3861" length="9">NabilKhan</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="4610" length="1">I</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="4629" length="1">i</entity_mention>
+      <entity_mention id="m-1789" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="6928" length="9">NabilKhan</entity_mention>
+    </entity>
+    <entity id="ent-70132568566240" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="14" length="7">Jim-Jam</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="152" length="3">you</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="112" length="3">you</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="911" length="1">I</entity_mention>
+      <entity_mention id="m-385" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="1060" length="7">Jim-Jam</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1351" length="1">i</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="1749" length="7">Jim-Jam</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="2200" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568441080" name="entity-PER-4" type="PER">
+      <entity_mention id="m-281" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="656" length="20">EDL's common members</entity_mention>
+      <entity_mention id="m-333" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="827" length="11">the members</entity_mention>
+    </entity>
+    <entity id="ent-70132567521340" name="entity-PER-5" type="PER">
+      <entity_mention id="m-320" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="819" length="19">some of the members</entity_mention>
+    </entity>
+    <entity id="ent-70132567518800" name="entity-PER-6" type="PER">
+      <entity_mention id="m-372" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="987" length="9">de_monies</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1453" length="2">me</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="1820" length="9">de_monies</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1912" length="2">me</entity_mention>
+      <entity_mention id="m-1451" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5117" length="9">de_monies</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="5401" length="1">I</entity_mention>
+      <entity_mention id="m-1555" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5547" length="9">de_monies</entity_mention>
+      <entity_mention id="m-1698" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="5960" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132567479120" name="entity-PER-7" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="1105" length="101">people who (rightly) didn't want to be taken over in their own towns and have them converted to Islam</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1158" length="5">their</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1219" length="4">they</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1236" length="4">they</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1460" length="4">they</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1919" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132567449400" name="entity-PER-8" type="PER">
+      <entity_mention id="m-515" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="1522" length="12">their leader</entity_mention>
+      <entity_mention id="m-632" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="1981" length="12">their leader</entity_mention>
+      <entity_mention id="m-1672" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5916" length="5">Tommy</entity_mention>
+    </entity>
+    <entity id="ent-70132567425940" name="entity-PER-9" type="PER">
+      <entity_mention id="m-554" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="1598" length="27">those that died as a result</entity_mention>
+      <entity_mention id="m-671" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="2057" length="27">those that died as a result</entity_mention>
+    </entity>
+    <entity id="ent-70132567405760" name="entity-PER-10" type="PER">
+      <entity_mention id="m-658" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="2002" length="19">every single Muslim</entity_mention>
+      <entity_mention id="m-1685" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="5932" length="19">every single Muslim</entity_mention>
+      <entity_mention id="m-2959" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="1543" length="19">every single Muslim</entity_mention>
+    </entity>
+    <entity id="ent-70132567390540" name="entity-PER-11" type="PER">
+      <entity_mention id="m-697" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="2344" length="6">Besakt</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="2859" length="2">me</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3241" length="2">me</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3934" length="6">Besakt</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="4147" length="2">me</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="4529" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132577140840" name="entity-PER-12" type="PER">
+      <entity_mention id="m-710" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="2414" length="12">Perseveranze</entity_mention>
+    </entity>
+    <entity id="ent-70132575368880" name="entity-PER-14" type="PER">
+      <entity_mention id="m-853" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="2956" length="51">All the so-called members of the Blackburn division</entity_mention>
+      <entity_mention id="m-1217" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="4244" length="51">All the so-called members of the Blackburn division</entity_mention>
+    </entity>
+    <entity id="ent-70132575363240" name="entity-PER-15" type="PER">
+      <entity_mention id="m-918" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3313" length="9">nicknick1</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3603" length="1">I</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3829" length="2">my</entity_mention>
+    </entity>
+    <entity id="ent-70132575495000" name="entity-PER-16" type="PER">
+      <entity_mention id="m-931" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3386" length="7">IRSP044</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3433" length="2">Im</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3615" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132577363920" name="entity-PER-17" type="PER">
+      <entity_mention id="m-879" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="2985" length="22">the Blackburn division</entity_mention>
+      <entity_mention id="m-1230" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="4273" length="22">the Blackburn division</entity_mention>
+    </entity>
+    <entity id="ent-70132577465220" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1295" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="4686" length="6">Barksy</entity_mention>
+      <entity_mention id="m-1568" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5620" length="6">Barksy</entity_mention>
+    </entity>
+    <entity id="ent-70132577705760" name="entity-PER-19" type="PER">
+      <entity_mention id="m-1334" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="4769" length="27">Muslim and minority members</entity_mention>
+      <entity_mention id="m-1607" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="5662" length="27">Muslim and minority members</entity_mention>
+    </entity>
+    <entity id="ent-70132577700540" name="entity-PER-20" type="PER">
+      <entity_mention id="m-1399" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5021" length="7">TheDubs</entity_mention>
+    </entity>
+    <entity id="ent-70132577812320" name="entity-PER-21" type="PER">
+      <entity_mention id="m-1464" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5190" length="14">Pax Amerifauna</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="5332" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132577807140" name="entity-PER-22" type="PER">
+      <entity_mention id="m-1529" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="5469" length="26">the perpetrators behind it</entity_mention>
+    </entity>
+    <entity id="ent-70132572790700" name="entity-PER-23" type="PER">
+      <entity_mention id="m-1750" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="6332" length="9">Bloodbath</entity_mention>
+      <entity_mention id="m-1802" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="7001" length="9">Bloodbath</entity_mention>
+      <entity_mention id="m-1815" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="7071" length="1">I</entity_mention>
+      <entity_mention id="m-1776" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="6798" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132572928340" name="entity-PER-24" type="PER">
+      <entity_mention id="m-1763" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="6405" length="15">Blackrevolution</entity_mention>
+    </entity>
+    <entity id="ent-70132572925460" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1828" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="7196" length="2">he</entity_mention>
+      <entity_mention id="m-1841" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="7215" length="2">He</entity_mention>
+    </entity>
+    <entity id="ent-70132573059520" name="entity-PER-1" type="PER">
+      <entity_mention id="m-2552" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="3712" length="100">the gentlemen BNP members that are locked up and in the dock from the demo in Liverpool this weekend</entity_mention>
+    </entity>
+    <entity id="ent-70132573056620" name="entity-PER-26" type="PER">
+      <entity_mention id="m-2805" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="3020" length="3">six</entity_mention>
+      <entity_mention id="m-2818" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="4308" length="3">six</entity_mention>
+    </entity>
+    <entity id="ent-70132573198860" name="entity-PER-27" type="PER">
+      <entity_mention id="m-944" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3401" length="4">your</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3446" length="3">you</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3525" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132573338800" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-177" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="246" length="3">EDL</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="276" length="4">They</entity_mention>
+      <entity_mention id="m-229" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="494" length="3">EDL</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="656" length="3">EDL</entity_mention>
+      <entity_mention id="m-294" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="756" length="3">EDL</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="780" length="5">their</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="1070" length="3">EDL</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1522" length="5">their</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1981" length="5">their</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="2747" length="3">EDL</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="2882" length="5">their</entity_mention>
+      <entity_mention id="m-1191" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="4170" length="5">their</entity_mention>
+      <entity_mention id="m-1308" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="4740" length="3">EDL</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="4759" length="4">they</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="4798" length="4">They</entity_mention>
+      <entity_mention id="m-1386" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="4994" length="3">EDL</entity_mention>
+      <entity_mention id="m-1425" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5078" length="3">EDL</entity_mention>
+      <entity_mention id="m-1581" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5633" length="3">EDL</entity_mention>
+      <entity_mention id="m-1594" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="5652" length="4">they</entity_mention>
+      <entity_mention id="m-1620" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="5691" length="4">They</entity_mention>
+      <entity_mention id="m-1659" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5887" length="3">EDL</entity_mention>
+      <entity_mention id="m-1711" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5974" length="3">EDL</entity_mention>
+      <entity_mention id="m-1724" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="6010" length="4">they</entity_mention>
+      <entity_mention id="m-1737" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="6055" length="4">they</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1295" length="4">them</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="1335" length="4">them</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="2482" length="4">they</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="2546" length="4">they</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="4035" length="3">EDL</entity_mention>
+    </entity>
+    <entity id="ent-70132574426140" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-242" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="502" length="3">BNP</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3726" length="3">BNP</entity_mention>
+      <entity_mention id="m-1412" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5072" length="3">BNP</entity_mention>
+      <entity_mention id="m-1438" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5090" length="3">BNP</entity_mention>
+    </entity>
+    <entity id="ent-70132574563600" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-255" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="580" length="12">such parties</entity_mention>
+    </entity>
+    <entity id="ent-70132574560520" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-1035" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3704" length="3">UAF</entity_mention>
+    </entity>
+    <entity id="ent-70132575770340" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-1542" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="5505" length="19">international court</entity_mention>
+    </entity>
+    <entity id="ent-70132575767280" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-1139" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3971" length="59">the Blackburn KFC who were trialling so called "halal" meat</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="2683" length="59">the Blackburn KFC who were trialling so called "halal" meat</entity_mention>
+    </entity>
+    <entity id="ent-70132575909680" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-203" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="339" length="12">this country</entity_mention>
+      <entity_mention id="m-1360" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="4828" length="25">a largely secular country</entity_mention>
+      <entity_mention id="m-1373" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="4962" length="12">this country</entity_mention>
+      <entity_mention id="m-1633" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="5721" length="25">a largely secular country</entity_mention>
+      <entity_mention id="m-1646" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="5855" length="12">this country</entity_mention>
+    </entity>
+    <entity id="ent-70132574701060" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-216" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="369" length="7">britons</entity_mention>
+      <entity_mention id="m-1022" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3624" length="7">Britain</entity_mention>
+    </entity>
+    <entity id="ent-70132574835320" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-762" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="2687" length="9">Blackburn</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="2989" length="9">Blackburn</entity_mention>
+      <entity_mention id="m-1126" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3975" length="9">Blackburn</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="4277" length="9">Blackburn</entity_mention>
+    </entity>
+    <entity id="ent-70132574964700" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1074" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="3790" length="9">Liverpool</entity_mention>
+    </entity>
+    <entity id="ent-70132574962880" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-1516" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5419" length="6">Bosnia</entity_mention>
+    </entity>
+    <entity id="ent-70132575098700" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-840" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="2938" length="3">KFC</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="4226" length="3">KFC</entity_mention>
+      <entity_mention id="m-2831" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="3033" length="5">there</entity_mention>
+      <entity_mention id="m-2946" noun_type="PRO" source="51d64c51a2363954454ee9e921b590ce" offset="4321" length="5">there</entity_mention>
+    </entity>
+    <entity id="ent-70132575629360" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-1490" noun_type="NAM" source="51d64c51a2363954454ee9e921b590ce" offset="5383" length="8">European</entity_mention>
+    </entity>
+    <entity id="ent-70132575626040" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-2972" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="2675" length="67">outside the Blackburn KFC who were trialling so called "halal" meat</entity_mention>
+      <entity_mention id="m-2985" noun_type="NOM" source="51d64c51a2363954454ee9e921b590ce" offset="3963" length="67">outside the Blackburn KFC who were trialling so called "halal" meat</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132577363880" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-40">
+        <arg type="employeemember" entity_id="ent-70132568441080" entity_mention_id="m-281">EDL's common members</arg>
+        <arg type="org" entity_id="ent-70132573338800" entity_mention_id="m-268">EDL</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="669" length="7">members</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1849">
+        <arg type="employeemember" entity_id="ent-70132568441080" entity_mention_id="m-333">the members</arg>
+        <arg type="org" entity_id="ent-70132573338800" entity_mention_id="m-307">their</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="831" length="7">members</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363820" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1879">
+        <arg type="employeemember" entity_id="ent-70132567479120" entity_mention_id="m-411">people who (rightly) didn't want to be taken over in their own towns and have them converted to Islam</arg>
+        <arg type="org" entity_id="ent-70132573338800" entity_mention_id="m-398">EDL</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363760" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1909">
+        <arg type="leader" entity_id="ent-70132567449400" entity_mention_id="m-515">their leader</arg>
+        <arg type="entity" entity_id="ent-70132573338800" entity_mention_id="m-528">their</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="1528" length="6">leader</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1939">
+        <arg type="leader" entity_id="ent-70132567449400" entity_mention_id="m-632">their leader</arg>
+        <arg type="entity" entity_id="ent-70132573338800" entity_mention_id="m-645">their</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="1987" length="6">leader</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363700" type="physical" subtype="origin">
+      <relation_mention id="relm-1969">
+        <arg type="entity" entity_id="ent-70132575767280" entity_mention_id="m-775">the Blackburn KFC who were trialling so called "halal" meat</arg>
+        <arg type="loc" entity_id="ent-70132574835320" entity_mention_id="m-762">Blackburn</arg>
+      </relation_mention>
+      <relation_mention id="relm-2149">
+        <arg type="entity" entity_id="ent-70132575767280" entity_mention_id="m-1139">the Blackburn KFC who were trialling so called "halal" meat</arg>
+        <arg type="loc" entity_id="ent-70132574835320" entity_mention_id="m-1126">Blackburn</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363600" type="physical" subtype="located">
+      <relation_mention id="relm-1999">
+        <arg type="entity" entity_id="ent-70132573338800" entity_mention_id="m-801">EDL</arg>
+        <arg type="loc" entity_id="ent-70132575626040" entity_mention_id="m-2972">outside the Blackburn KFC who were trialling so called "halal" meat</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="2767" length="7">outside</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2179">
+        <arg type="entity" entity_id="ent-70132573338800" entity_mention_id="m-1165">EDL</arg>
+        <arg type="loc" entity_id="ent-70132575626040" entity_mention_id="m-2985">outside the Blackburn KFC who were trialling so called "halal" meat</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="4055" length="7">outside</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363540" type="social" subtype="membership">
+      <relation_mention id="relm-2029">
+        <arg type="member" entity_id="ent-70132575368880" entity_mention_id="m-853">All the so-called members of the Blackburn division</arg>
+        <arg type="group" entity_id="ent-70132577363920" entity_mention_id="m-879">the Blackburn division</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="2974" length="7">members</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363460" type="physical" subtype="origin">
+      <relation_mention id="relm-2059">
+        <arg type="entity" entity_id="ent-70132577363920" entity_mention_id="m-879">the Blackburn division</arg>
+        <arg type="loc" entity_id="ent-70132574835320" entity_mention_id="m-866">Blackburn</arg>
+      </relation_mention>
+      <relation_mention id="relm-2239">
+        <arg type="entity" entity_id="ent-70132577363920" entity_mention_id="m-1230">the Blackburn division</arg>
+        <arg type="loc" entity_id="ent-70132574835320" entity_mention_id="m-1243">Blackburn</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363400" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2089">
+        <arg type="employeemember" entity_id="ent-70132573059520" entity_mention_id="m-2552">the gentlemen BNP members that are locked up and in the dock from the demo in Liverpool this weekend</arg>
+        <arg type="org" entity_id="ent-70132574426140" entity_mention_id="m-1061">BNP</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="3730" length="7">members</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363340" type="physical" subtype="located">
+      <relation_mention id="relm-2119">
+        <arg type="entity" entity_id="ent-70132573059520" entity_mention_id="m-2552">the gentlemen BNP members that are locked up and in the dock from the demo in Liverpool this weekend</arg>
+        <arg type="loc" entity_id="ent-70132574964700" entity_mention_id="m-1074">Liverpool</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="3787" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363280" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2269">
+        <arg type="employeemember" entity_id="ent-70132577705760" entity_mention_id="m-1334">Muslim and minority members</arg>
+        <arg type="org" entity_id="ent-70132573338800" entity_mention_id="m-1321">they</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="4789" length="7">members</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2299">
+        <arg type="employeemember" entity_id="ent-70132577705760" entity_mention_id="m-1607">Muslim and minority members</arg>
+        <arg type="org" entity_id="ent-70132573338800" entity_mention_id="m-1594">they</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="5682" length="7">members</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577363220" type="physical" subtype="located">
+      <relation_mention id="relm-2881">
+        <arg type="entity" entity_id="ent-70132573056620" entity_mention_id="m-2805">six</arg>
+        <arg type="loc" entity_id="ent-70132575098700" entity_mention_id="m-2831">there</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="3024" length="5">stood</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2911">
+        <arg type="entity" entity_id="ent-70132573056620" entity_mention_id="m-2818">six</arg>
+        <arg type="loc" entity_id="ent-70132575098700" entity_mention_id="m-2946">there</arg>
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="4312" length="5">stood</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571800840" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="business" subtype="startorg">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="1094" length="7">started</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-398" entity_id="ent-70132573338800">EDL</arg>
+          <arg type="agent" entity_mention_id="m-411" entity_id="ent-70132567479120">people who (rightly) didn't want to be taken over in their own towns and have them converted to Islam</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571766600" name="entity-EVENT-3">
+      <event_mention id="evm-2343" type="life" subtype="die">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="1609" length="4">died</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-554" entity_id="ent-70132567425940">those that died as a result</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2385" type="life" subtype="die">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="2068" length="4">died</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-671" entity_id="ent-70132567425940">those that died as a result</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571765260" name="entity-EVENT-8">
+      <event_mention id="evm-2764" type="life" subtype="die">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="5392" length="8">massacre</trigger>
+        <args/>
+        <places>
+          <place entity_mention_id="m-1516">Bosnia</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571764080" name="entity-EVENT-6">
+      <event_mention id="evm-2638" type="conflict" subtype="demonstrate">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="3782" length="4">demo</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-2552" entity_id="ent-70132573059520">the gentlemen BNP members that are locked up and in the dock from the demo in Liverpool this weekend</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1074">Liverpool</place>
+        </places>
+        <date>
+          <date_extent source="51d64c51a2363954454ee9e921b590ce" offset="3800" length="12">this weekend</date_extent>
+          <normalized_date>2012-02-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571762300" name="entity-EVENT-7">
+      <event_mention id="evm-2511" type="justice" subtype="arrestjail">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="3747" length="9">locked up</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-2552" entity_id="ent-70132573059520">the gentlemen BNP members that are locked up and in the dock from the demo in Liverpool this weekend</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571759220" name="entity-EVENT-1">
+      <event_mention id="evm-2596" type="justice" subtype="chargeindict">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="3761" length="11">in the dock</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-2552" entity_id="ent-70132573059520">the gentlemen BNP members that are locked up and in the dock from the demo in Liverpool this weekend</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571707100" name="entity-EVENT-4">
+      <event_mention id="evm-2722" type="conflict" subtype="demonstrate">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="4044" length="10">protesting</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-1165" entity_id="ent-70132573338800">EDL</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-2985">outside the Blackburn KFC who were trialling so called "halal" meat</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-2469" type="conflict" subtype="demonstrate">
+        <trigger source="51d64c51a2363954454ee9e921b590ce" offset="2756" length="10">protesting</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-801" entity_id="ent-70132573338800">EDL</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-2972">outside the Blackburn KFC who were trialling so called "halal" meat</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

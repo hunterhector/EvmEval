@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="f4a7057ca1666181fad67640badab45f" source_type="multi_post" kit_id="533486f60000000000000091">
+  <entities>
+    <entity id="ent-70132571579600" name="entity-PER-3" type="PER">
+      <entity_mention id="m-450" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="1652" length="3">you</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="119" length="7">Jarhead</entity_mention>
+      <entity_mention id="m-658" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3189" length="7">Jarhead</entity_mention>
+    </entity>
+    <entity id="ent-70132571562240" name="entity-PER-4" type="PER">
+      <entity_mention id="m-957" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="4751" length="3">you</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="4738" length="3">you</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="4076" length="3">you</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="4055" length="3">You</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3831" length="3">you</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3817" length="3">you</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="634" length="3">you</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="1568" length="3">you</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="1555" length="3">you</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="893" length="3">you</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="648" length="3">you</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="872" length="3">You</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="85" length="11">rightwinger</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="149" length="11">rightwinger</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3219" length="11">rightwinger</entity_mention>
+    </entity>
+    <entity id="ent-70132571503580" name="entity-PER-6" type="PER">
+      <entity_mention id="m-970" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="4807" length="1">I</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="1027" length="1">I</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="4210" length="1">I</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="621" length="1">I</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="982" length="1">I</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="176" length="1">I</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="166" length="1">I</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="1793" length="1">I</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="1886" length="1">I</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="2797" length="1">I</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3349" length="1">I</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3804" length="1">I</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="4165" length="1">I</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3359" length="1">I</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="1639" length="1">I</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="1059" length="2">my</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="4242" length="2">my</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="2602" length="2">my</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="14" length="7">Mr.Nick</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3118" length="7">Mr.Nick</entity_mention>
+    </entity>
+    <entity id="ent-70132571335860" name="entity-PER-10" type="PER">
+      <entity_mention id="m-528" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="2660" length="9">US troops</entity_mention>
+    </entity>
+    <entity id="ent-70132571331620" name="entity-PER-11" type="PER">
+      <entity_mention id="m-632" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3062" length="3">you</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3000" length="8">yourself</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="2991" length="3">you</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="2887" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571293460" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1035" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3026" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132571265180" name="entity-PER-1" type="PER">
+      <entity_mention id="m-1134" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="2576" length="2">me</entity_mention>
+      <entity_mention id="m-1160" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="2717" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132570250200" name="entity-PER-8" type="PER">
+      <entity_mention id="m-567" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="2813" length="19">the American people</entity_mention>
+    </entity>
+    <entity id="ent-70132570225980" name="entity-PER-2" type="PER">
+      <entity_mention id="m-476" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="1825" length="4">Paul</entity_mention>
+    </entity>
+    <entity id="ent-70132570220980" name="entity-PER-5" type="PER">
+      <entity_mention id="m-684" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3253" length="9">MeBelle60</entity_mention>
+    </entity>
+    <entity id="ent-70132570174980" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-762" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="3535" length="18">Federal Government</entity_mention>
+      <entity_mention id="m-268" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="458" length="22">The Federal Government</entity_mention>
+      <entity_mention id="m-229" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="352" length="18">Federal Government</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3618" length="4">them</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="435" length="4">them</entity_mention>
+      <entity_mention id="m-801" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="3641" length="22">The Federal Government</entity_mention>
+      <entity_mention id="m-333" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="670" length="22">the federal government</entity_mention>
+      <entity_mention id="m-866" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="3853" length="22">the federal government</entity_mention>
+    </entity>
+    <entity id="ent-70132570081420" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-736" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3467" length="4">FDNY</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3265" length="4">FDNY</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="284" length="4">FDNY</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="312" length="4">they</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="f4a7057ca1666181fad67640badab45f" offset="3495" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132569887160" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-1048" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="292" length="15">city government</entity_mention>
+      <entity_mention id="m-1061" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="3475" length="15">city government</entity_mention>
+    </entity>
+    <entity id="ent-70132569828480" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-1147" noun_type="NOM" source="f4a7057ca1666181fad67640badab45f" offset="2602" length="13">my government</entity_mention>
+    </entity>
+    <entity id="ent-70132569769080" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-242" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="414" length="8">New York</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3597" length="8">New York</entity_mention>
+    </entity>
+    <entity id="ent-70132569673960" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-515" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="2660" length="2">US</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="2817" length="8">American</entity_mention>
+    </entity>
+    <entity id="ent-70132569568200" name="entity-GPE-1" type="GPE">
+      <entity_mention id="m-1173" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3711" length="8">Manattan</entity_mention>
+      <entity_mention id="m-1186" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="528" length="8">Manattan</entity_mention>
+    </entity>
+    <entity id="ent-70132569504100" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-814" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="3705" length="14">lower Manattan</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="f4a7057ca1666181fad67640badab45f" offset="522" length="14">lower Manattan</entity_mention>
+    </entity>
+    <entity id="ent-70132569423400" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-1259" noun_type="NA" source="f4a7057ca1666181fad67640badab45f" offset="1822" length="2">Dr</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132568732620" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-40">
+        <arg type="suborg" entity_id="ent-70132570081420" entity_mention_id="m-736">FDNY</arg>
+        <arg type="parent" entity_id="ent-70132569887160" entity_mention_id="m-1061">city government</arg>
+      </relation_mention>
+      <relation_mention id="relm-1069">
+        <arg type="suborg" entity_id="ent-70132570081420" entity_mention_id="m-203">FDNY</arg>
+        <arg type="parent" entity_id="ent-70132569887160" entity_mention_id="m-1048">city government</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568732560" type="physical" subtype="origin">
+      <relation_mention id="relm-1099">
+        <arg type="entity" entity_id="ent-70132571335860" entity_mention_id="m-528">US troops</arg>
+        <arg type="loc" entity_id="ent-70132569673960" entity_mention_id="m-515">US</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568732480" type="physical" subtype="located">
+      <relation_mention id="relm-1194">
+        <arg type="entity" entity_id="ent-70132569504100" entity_mention_id="m-814">lower Manattan</arg>
+        <arg type="loc" entity_id="ent-70132569568200" entity_mention_id="m-1173">Manattan</arg>
+      </relation_mention>
+      <relation_mention id="relm-1224">
+        <arg type="entity" entity_id="ent-70132569504100" entity_mention_id="m-281">lower Manattan</arg>
+        <arg type="loc" entity_id="ent-70132569568200" entity_mention_id="m-1186">Manattan</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568732260" type="social" subtype="role">
+      <relation_mention id="relm-1267">
+        <arg type="role" entity_id="ent-70132569423400" entity_mention_id="m-1259">Dr</arg>
+        <arg type="per" entity_id="ent-70132570225980" entity_mention_id="m-476">Paul</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events/>
+</deft_ere>

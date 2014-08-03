@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="9505f437988e8a2ef8b5192d89b58cdb" source_type="multi_post" kit_id="533486f60000000000000029">
+  <entities>
+    <entity id="ent-70132571800220" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="14" length="6">GasDad</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="9505f437988e8a2ef8b5192d89b58cdb" offset="331" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="9505f437988e8a2ef8b5192d89b58cdb" offset="421" length="1">I</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="9505f437988e8a2ef8b5192d89b58cdb" offset="525" length="2">my</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="9505f437988e8a2ef8b5192d89b58cdb" offset="1244" length="8">yourself</entity_mention>
+    </entity>
+    <entity id="ent-70132571641900" name="entity-PER-3" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="572" length="10">the driver</entity_mention>
+    </entity>
+    <entity id="ent-70132571637320" name="entity-PER-4" type="PER">
+      <entity_mention id="m-307" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="606" length="9">IronGiant</entity_mention>
+    </entity>
+    <entity id="ent-70132571592560" name="entity-PER-5" type="PER">
+      <entity_mention id="m-320" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="835" length="15">DrapedINDarknes</entity_mention>
+    </entity>
+    <entity id="ent-70132571588000" name="entity-PER-6" type="PER">
+      <entity_mention id="m-333" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="1047" length="12">Officer M168</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="9505f437988e8a2ef8b5192d89b58cdb" offset="1101" length="1">i</entity_mention>
+    </entity>
+    <entity id="ent-70132571581760" name="entity-PER-7" type="PER">
+      <entity_mention id="m-372" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="1291" length="15">Ivor the Engine</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="9505f437988e8a2ef8b5192d89b58cdb" offset="1513" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132571567440" name="entity-PER-8" type="PER">
+      <entity_mention id="m-411" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="1625" length="6">dc8900</entity_mention>
+    </entity>
+    <entity id="ent-70132571564140" name="entity-PER-9" type="PER">
+      <entity_mention id="m-424" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="1733" length="13">rousetafarian</entity_mention>
+    </entity>
+    <entity id="ent-70132571560840" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-164" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="156" length="5">Apple</entity_mention>
+      <entity_mention id="m-216" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="352" length="5">Apple</entity_mention>
+    </entity>
+    <entity id="ent-70132571555120" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-138" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="98" length="7">Bristol</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="485" length="7">Bristol</entity_mention>
+    </entity>
+    <entity id="ent-70132571540980" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-151" noun_type="NOM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="152" length="15">the Apple store</entity_mention>
+    </entity>
+    <entity id="ent-70132571537740" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-177" noun_type="NOM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="258" length="4">home</entity_mention>
+      <entity_mention id="m-190" noun_type="NOM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="314" length="4">home</entity_mention>
+    </entity>
+    <entity id="ent-70132571531720" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-229" noun_type="NOM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="246" length="7">P&amp;amp;R</entity_mention>
+      <entity_mention id="m-242" noun_type="NOM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="400" length="7">P&amp;amp;R</entity_mention>
+    </entity>
+    <entity id="ent-70132571517620" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-385" noun_type="NAM" source="9505f437988e8a2ef8b5192d89b58cdb" offset="1448" length="8">Victoria</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571460280" type="physical" subtype="located">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132571800220" entity_mention_id="m-203">I</arg>
+        <arg type="loc" entity_id="ent-70132571537740" entity_mention_id="m-190">home</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571460220" type="physical" subtype="located">
+      <relation_mention id="relm-432">
+        <arg type="entity" entity_id="ent-70132571800220" entity_mention_id="m-255">I</arg>
+        <arg type="loc" entity_id="ent-70132571531720" entity_mention_id="m-242">P&amp;amp;R</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571460160" type="physical" subtype="located">
+      <relation_mention id="relm-630">
+        <arg type="entity" entity_id="ent-70132571800220" entity_mention_id="m-125">GasDad</arg>
+        <arg type="loc" entity_id="ent-70132571555120" entity_mention_id="m-138">Bristol</arg>
+        <trigger source="9505f437988e8a2ef8b5192d89b58cdb" offset="95" length="2">In</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571460100" type="physical" subtype="located">
+      <relation_mention id="relm-660">
+        <arg type="entity" entity_id="ent-70132571800220" entity_mention_id="m-125">GasDad</arg>
+        <arg type="loc" entity_id="ent-70132571540980" entity_mention_id="m-151">the Apple store</arg>
+        <trigger source="9505f437988e8a2ef8b5192d89b58cdb" offset="147" length="4">into</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132570175620" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="movement" subtype="transportperson">
+        <trigger source="9505f437988e8a2ef8b5192d89b58cdb" offset="254" length="3">bus</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-203" entity_id="ent-70132571800220">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-177">home</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132570172420" name="entity-EVENT-3">
+      <event_mention id="evm-468" type="movement" subtype="transportperson">
+        <trigger source="9505f437988e8a2ef8b5192d89b58cdb" offset="289" length="5">drive</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-203" entity_id="ent-70132571800220">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-190">home</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132570171380" name="entity-EVENT-4">
+      <event_mention id="evm-510" type="movement" subtype="transportperson">
+        <trigger source="9505f437988e8a2ef8b5192d89b58cdb" offset="374" length="5">Drive</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-255" entity_id="ent-70132571800220">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-242">P&amp;amp;R</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132570168100" name="entity-EVENT-5">
+      <event_mention id="evm-594" type="transaction" subtype="transferownership">
+        <trigger source="9505f437988e8a2ef8b5192d89b58cdb" offset="188" length="7">pick up</trigger>
+        <args>
+          <arg type="buyer" entity_mention_id="m-203" entity_id="ent-70132571800220">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-151">the Apple store</place>
+        </places>
+        <date>
+          <date_extent source="9505f437988e8a2ef8b5192d89b58cdb" offset="106" length="5">today</date_extent>
+          <normalized_date>2011-12-15</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132570166400" name="entity-EVENT-6">
+      <event_mention id="evm-552" type="movement" subtype="transportperson">
+        <trigger source="9505f437988e8a2ef8b5192d89b58cdb" offset="143" length="8">pop into</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-203" entity_id="ent-70132571800220">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-138" type="origin">Bristol</place>
+          <place entity_mention_id="m-151" type="destination">the Apple store</place>
+        </places>
+        <date>
+          <date_extent source="9505f437988e8a2ef8b5192d89b58cdb" offset="106" length="5">today</date_extent>
+          <normalized_date>2011-12-15</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

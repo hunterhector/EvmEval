@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="324274e50f2d07757e2d88ff58a0c33b" source_type="multi_post" kit_id="5346f3680000000000000033">
+  <entities>
+    <entity id="ent-70132571472280" name="entity-PER-2" type="PER">
+      <entity_mention id="m-528" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1028" length="2">my</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="617" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="417" length="1">I</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="345" length="1">I</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="227" length="1">I</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="175" length="1">I</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="136" length="1">I</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="67" length="1">I</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="14" length="11">OliverevilO</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="2533" length="3">you</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="2512" length="4">your</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="2486" length="3">you</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="2472" length="3">you</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1490" length="3">you</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1628" length="3">you</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1674" length="3">you</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1967" length="3">You</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1448" length="3">You</entity_mention>
+    </entity>
+    <entity id="ent-70132571324540" name="entity-PER-3" type="PER">
+      <entity_mention id="m-541" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1064" length="12">other people</entity_mention>
+    </entity>
+    <entity id="ent-70132571297100" name="entity-PER-4" type="PER">
+      <entity_mention id="m-1100" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="2360" length="2">We</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="2050" length="2">We</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1283" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132571262840" name="entity-PER-5" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1114" length="6">Galoot</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1162" length="1">I</entity_mention>
+      <entity_mention id="m-580" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1168" length="39">one of the founders of Mad City Rollers</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1923" length="1">I</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1377" length="1">I</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1395" length="1">I</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1343" length="1">I</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1241" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132570164800" name="entity-PER-6" type="PER">
+      <entity_mention id="m-1087" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="2293" length="2">he</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="2190" length="10">Ron Dennis</entity_mention>
+      <entity_mention id="m-1961" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1226" length="10">Ron Dennis</entity_mention>
+    </entity>
+    <entity id="ent-70132570150100" name="entity-PER-7" type="PER">
+      <entity_mention id="m-1074" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="2215" length="25">the fitness/speed skaters</entity_mention>
+    </entity>
+    <entity id="ent-70132570145160" name="entity-PER-8" type="PER">
+      <entity_mention id="m-1696" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1175" length="32">the founders of Mad City Rollers</entity_mention>
+    </entity>
+    <entity id="ent-70132570108060" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-476" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="872" length="16">Mad City Rollers</entity_mention>
+      <entity_mention id="m-710" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1429" length="8">the club</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1191" length="16">Mad City Rollers</entity_mention>
+      <entity_mention id="m-1974" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1267" length="8">the club</entity_mention>
+    </entity>
+    <entity id="ent-70132570047840" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-1048" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="2155" length="9">the group</entity_mention>
+      <entity_mention id="m-1035" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="2073" length="18">Friday Night Skate</entity_mention>
+      <entity_mention id="m-1022" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="2066" length="83">a good Friday Night Skate group that did the 10 mile route described on the website</entity_mention>
+    </entity>
+    <entity id="ent-70132569940880" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-281" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="490" length="6">Verona</entity_mention>
+    </entity>
+    <entity id="ent-70132569886040" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-177" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="147" length="7">Madison</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1717" length="7">Madison</entity_mention>
+      <entity_mention id="m-736" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1560" length="7">Madison</entity_mention>
+    </entity>
+    <entity id="ent-70132569771380" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-671" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1354" length="2">CA</entity_mention>
+    </entity>
+    <entity id="ent-70132569692500" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-151" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="86" length="9">the store</entity_mention>
+    </entity>
+    <entity id="ent-70132569677020" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-190" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="161" length="124">a place where I could roll out the door with my skates on knowing I'd find a safe and efficient route to just about anywhere</entity_mention>
+    </entity>
+    <entity id="ent-70132569673220" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-268" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="456" length="14">Military Ridge</entity_mention>
+    </entity>
+    <entity id="ent-70132569624420" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-255" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="452" length="131">the Military Ridge trail segment from Verona to the end of the fee/permit zone around McKee and Verona Rd--which has a nice surface</entity_mention>
+    </entity>
+    <entity id="ent-70132569568260" name="entity-LOC-6" type="LOC">
+      <entity_mention id="m-294" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="500" length="57">the end of the fee/permit zone around McKee and Verona Rd</entity_mention>
+    </entity>
+    <entity id="ent-70132569534060" name="entity-LOC-8" type="LOC">
+      <entity_mention id="m-333" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="538" length="19">McKee and Verona Rd</entity_mention>
+    </entity>
+    <entity id="ent-70132569505120" name="entity-LOC-9" type="LOC">
+      <entity_mention id="m-515" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1010" length="6">itself</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1002" length="7">Terrace</entity_mention>
+    </entity>
+    <entity id="ent-70132569436160" name="entity-LOC-10" type="LOC">
+      <entity_mention id="m-372" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="629" length="13">the shoreline</entity_mention>
+    </entity>
+    <entity id="ent-70132569419620" name="entity-LOC-11" type="LOC">
+      <entity_mention id="m-437" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="746" length="14">Monono Terrace</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="668" length="14">Monono Terrace</entity_mention>
+    </entity>
+    <entity id="ent-70132569391660" name="entity-LOC-12" type="LOC">
+      <entity_mention id="m-489" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="977" length="39">the shoreline around the Terrace itself</entity_mention>
+    </entity>
+    <entity id="ent-70132569369440" name="entity-LOC-13" type="LOC">
+      <entity_mention id="m-463" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="764" length="19">East of the Isthmus</entity_mention>
+    </entity>
+    <entity id="ent-70132569363060" name="entity-LOC-14" type="LOC">
+      <entity_mention id="m-450" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="776" length="7">Isthmus</entity_mention>
+    </entity>
+    <entity id="ent-70132569299320" name="entity-LOC-15" type="LOC">
+      <entity_mention id="m-424" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="709" length="17">the bike elevator</entity_mention>
+    </entity>
+    <entity id="ent-70132569298500" name="entity-LOC-16" type="LOC">
+      <entity_mention id="m-411" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="693" length="11">the capitol</entity_mention>
+    </entity>
+    <entity id="ent-70132569271020" name="entity-LOC-17" type="LOC">
+      <entity_mention id="m-385" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="655" length="9">Olin Park</entity_mention>
+    </entity>
+    <entity id="ent-70132569265600" name="entity-LOC-18" type="LOC">
+      <entity_mention id="m-866" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1860" length="18">Capital City trail</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1689" length="18">Capital City Trail</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="2004" length="14">Cap City trail</entity_mention>
+    </entity>
+    <entity id="ent-70132569166460" name="entity-LOC-19" type="LOC">
+      <entity_mention id="m-892" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1889" length="19">Allied/Dunn's Marsh</entity_mention>
+      <entity_mention id="m-879" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1885" length="36">the Allied/Dunn's Marsh neighborhood</entity_mention>
+    </entity>
+    <entity id="ent-70132568813100" name="entity-LOC-20" type="LOC">
+      <entity_mention id="m-723" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1513" length="54">the various bike/pedestrian/skate paths around Madison</entity_mention>
+    </entity>
+    <entity id="ent-70132568809260" name="entity-LOC-21" type="LOC">
+      <entity_mention id="m-853" noun_type="PRO" source="324274e50f2d07757e2d88ff58a0c33b" offset="1839" length="2">it</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1810" length="19">Southwest Bike Path</entity_mention>
+    </entity>
+    <entity id="ent-70132568792580" name="entity-LOC-22" type="LOC">
+      <entity_mention id="m-788" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1729" length="18">the lakeshore path</entity_mention>
+    </entity>
+    <entity id="ent-70132568785860" name="entity-LOC-23" type="LOC">
+      <entity_mention id="m-762" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1708" length="16">south of Madison</entity_mention>
+    </entity>
+    <entity id="ent-70132568781300" name="entity-LOC-25" type="LOC">
+      <entity_mention id="m-814" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1782" length="12">Camp Randall</entity_mention>
+    </entity>
+    <entity id="ent-70132568781260" name="entity-LOC-26" type="LOC">
+      <entity_mention id="m-801" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1754" length="24">the Central Isthmus path</entity_mention>
+    </entity>
+    <entity id="ent-70132568763820" name="entity-LOC-27" type="LOC">
+      <entity_mention id="m-918" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1931" length="15">the entire loop</entity_mention>
+    </entity>
+    <entity id="ent-70132568765740" name="entity-LOC-28" type="LOC">
+      <entity_mention id="m-1113" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="2419" length="32">the parking lot at Machinery Row</entity_mention>
+    </entity>
+    <entity id="ent-70132568756200" name="entity-LOC-29" type="LOC">
+      <entity_mention id="m-1126" noun_type="NAM" source="324274e50f2d07757e2d88ff58a0c33b" offset="2438" length="13">Machinery Row</entity_mention>
+    </entity>
+    <entity id="ent-70132568759420" name="entity-LOC-1" type="LOC">
+      <entity_mention id="m-307" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="511" length="46">the fee/permit zone around McKee and Verona Rd</entity_mention>
+    </entity>
+    <entity id="ent-70132568739180" name="entity-LOC-7" type="LOC">
+      <entity_mention id="m-840" noun_type="NOM" source="324274e50f2d07757e2d88ff58a0c33b" offset="1833" length="88">where it connects with the Capital City trail, near the Allied/Dunn's Marsh neighborhood</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132576389320" type="physical" subtype="located">
+      <relation_mention id="relm-1451">
+        <arg type="entity" entity_id="ent-70132569624420" entity_mention_id="m-255">the Military Ridge trail segment from Verona to the end of the fee/permit zone around McKee and Verona Rd--which has a nice surface</arg>
+        <arg type="loc" entity_id="ent-70132569673220" entity_mention_id="m-268">Military Ridge</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="456" length="14">Military Ridge</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576389260" type="physical" subtype="located">
+      <relation_mention id="relm-1481">
+        <arg type="entity" entity_id="ent-70132569940880" entity_mention_id="m-281">Verona</arg>
+        <arg type="loc" entity_id="ent-70132569624420" entity_mention_id="m-255">the Military Ridge trail segment from Verona to the end of the fee/permit zone around McKee and Verona Rd--which has a nice surface</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="485" length="4">from</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576389200" type="physical" subtype="located">
+      <relation_mention id="relm-1511">
+        <arg type="entity" entity_id="ent-70132569568260" entity_mention_id="m-294">the end of the fee/permit zone around McKee and Verona Rd</arg>
+        <arg type="loc" entity_id="ent-70132569624420" entity_mention_id="m-255">the Military Ridge trail segment from Verona to the end of the fee/permit zone around McKee and Verona Rd--which has a nice surface</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="497" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576389140" type="physical" subtype="located">
+      <relation_mention id="relm-1541">
+        <arg type="entity" entity_id="ent-70132569568260" entity_mention_id="m-294">the end of the fee/permit zone around McKee and Verona Rd</arg>
+        <arg type="loc" entity_id="ent-70132568759420" entity_mention_id="m-307">the fee/permit zone around McKee and Verona Rd</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="508" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576389040" type="physical" subtype="located">
+      <relation_mention id="relm-1571">
+        <arg type="entity" entity_id="ent-70132568759420" entity_mention_id="m-307">the fee/permit zone around McKee and Verona Rd</arg>
+        <arg type="loc" entity_id="ent-70132569534060" entity_mention_id="m-333">McKee and Verona Rd</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="531" length="6">around</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388980" type="physical" subtype="located">
+      <relation_mention id="relm-1601">
+        <arg type="entity" entity_id="ent-70132569271020" entity_mention_id="m-385">Olin Park</arg>
+        <arg type="loc" entity_id="ent-70132569436160" entity_mention_id="m-372">the shoreline</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="643" length="4">from</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388920" type="physical" subtype="located">
+      <relation_mention id="relm-1631">
+        <arg type="entity" entity_id="ent-70132569419620" entity_mention_id="m-398">Monono Terrace</arg>
+        <arg type="loc" entity_id="ent-70132569436160" entity_mention_id="m-372">the shoreline</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="665" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388840" type="physical" subtype="located">
+      <relation_mention id="relm-1661">
+        <arg type="entity" entity_id="ent-70132569391660" entity_mention_id="m-489">the shoreline around the Terrace itself</arg>
+        <arg type="loc" entity_id="ent-70132569505120" entity_mention_id="m-502">Terrace</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="991" length="6">around</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388720" type="social" subtype="membership">
+      <relation_mention id="relm-1704">
+        <arg type="member" entity_id="ent-70132571262840" entity_mention_id="m-580">one of the founders of Mad City Rollers</arg>
+        <arg type="group" entity_id="ent-70132570145160" entity_mention_id="m-1696">the founders of Mad City Rollers</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1172" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388660" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1734">
+        <arg type="employeemember" entity_id="ent-70132570145160" entity_mention_id="m-1696">the founders of Mad City Rollers</arg>
+        <arg type="org" entity_id="ent-70132570108060" entity_mention_id="m-1191">Mad City Rollers</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1179" length="8">founders</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388580" type="physical" subtype="located">
+      <relation_mention id="relm-1764">
+        <arg type="entity" entity_id="ent-70132571262840" entity_mention_id="m-658">I</arg>
+        <arg type="loc" entity_id="ent-70132569771380" entity_mention_id="m-671">CA</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1351" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388520" type="physical" subtype="located">
+      <relation_mention id="relm-1794">
+        <arg type="entity" entity_id="ent-70132568813100" entity_mention_id="m-723">the various bike/pedestrian/skate paths around Madison</arg>
+        <arg type="loc" entity_id="ent-70132569886040" entity_mention_id="m-736">Madison</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1553" length="6">around</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388460" type="physical" subtype="located">
+      <relation_mention id="relm-1824">
+        <arg type="entity" entity_id="ent-70132568785860" entity_mention_id="m-762">south of Madison</arg>
+        <arg type="loc" entity_id="ent-70132569886040" entity_mention_id="m-775">Madison</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1708" length="5">south</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388400" type="physical" subtype="located">
+      <relation_mention id="relm-1854">
+        <arg type="entity" entity_id="ent-70132568809260" entity_mention_id="m-853">it</arg>
+        <arg type="loc" entity_id="ent-70132569265600" entity_mention_id="m-866">Capital City trail</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1842" length="8">connects</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388320" type="physical" subtype="located">
+      <relation_mention id="relm-1884">
+        <arg type="entity" entity_id="ent-70132568739180" entity_mention_id="m-840">where it connects with the Capital City trail, near the Allied/Dunn's Marsh neighborhood</arg>
+        <arg type="loc" entity_id="ent-70132569166460" entity_mention_id="m-879">the Allied/Dunn's Marsh neighborhood</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1880" length="4">near</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388260" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1982">
+        <arg type="leader" entity_id="ent-70132570164800" entity_mention_id="m-1961">Ron Dennis</arg>
+        <arg type="entity" entity_id="ent-70132570108060" entity_mention_id="m-1974">the club</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1259" length="7">running</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576388200" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-2012">
+        <arg type="leader" entity_id="ent-70132571262840" entity_mention_id="m-606">I</arg>
+        <arg type="entity" entity_id="ent-70132570108060" entity_mention_id="m-1974">the club</arg>
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="1259" length="7">running</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132577016280" name="entity-EVENT-2">
+      <event_mention id="evm-1205" type="movement" subtype="transportperson">
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="138" length="5">moved</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-164" entity_id="ent-70132571472280">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-190" type="origin">a place where I could roll out the door with my skates on knowing I'd find a safe and efficient route to just about anywhere</place>
+          <place entity_mention_id="m-177" type="destination">Madison</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132577015220" name="entity-EVENT-3">
+      <event_mention id="evm-1920" type="movement" subtype="transportperson">
+        <trigger source="324274e50f2d07757e2d88ff58a0c33b" offset="622" length="6">skated</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-359" entity_id="ent-70132571472280">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-385" type="origin">Olin Park</place>
+          <place entity_mention_id="m-463" type="destination">East of the Isthmus</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

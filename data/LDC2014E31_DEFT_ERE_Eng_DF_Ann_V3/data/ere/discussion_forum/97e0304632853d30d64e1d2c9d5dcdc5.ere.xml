@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="97e0304632853d30d64e1d2c9d5dcdc5" source_type="multi_post" kit_id="5355f7d70000000000000018">
+  <entities>
+    <entity id="ent-70132571579920" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="14" length="6">dlowan</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="132" length="1">I</entity_mention>
+      <entity_mention id="m-125" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="71" length="1">I</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="318" length="1">I</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="503" length="1">I</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="1676" length="2">my</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2305" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="1120" length="1">I</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="1354" length="1">I</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2205" length="1">I</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2631" length="1">I</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2637" length="2">my</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2821" length="1">I</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2784" length="1">I</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3321" length="1">I</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3271" length="1">I</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3683" length="1">I</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4902" length="1">I</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4855" length="1">I</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4809" length="1">I</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4749" length="1">I</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4698" length="1">I</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3817" length="2">my</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3713" length="1">I</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4688" length="1">I</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4655" length="1">I</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3729" length="1">I</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4599" length="1">I</entity_mention>
+      <entity_mention id="m-1280" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2257" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571458060" name="entity-PER-3" type="PER">
+      <entity_mention id="m-372" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2329" length="33">six people who have been murdered</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="851" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132571452120" name="entity-PER-4" type="PER">
+      <entity_mention id="m-398" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2372" length="7">clients</entity_mention>
+      <entity_mention id="m-385" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2365" length="1">3</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2494" length="4">them</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2439" length="4">them</entity_mention>
+    </entity>
+    <entity id="ent-70132571406600" name="entity-PER-5" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2391" length="62">violent partners who had pursued and threatened them for years</entity_mention>
+      <entity_mention id="m-437" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2456" length="42">who had made numerous threats to kill them</entity_mention>
+    </entity>
+    <entity id="ent-70132571358000" name="entity-PER-6" type="PER">
+      <entity_mention id="m-489" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2528" length="5">their</entity_mention>
+      <entity_mention id="m-463" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2500" length="3">Two</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2226" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571332360" name="entity-PER-7" type="PER">
+      <entity_mention id="m-476" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2528" length="14">their children</entity_mention>
+    </entity>
+    <entity id="ent-70132571328820" name="entity-PER-8" type="PER">
+      <entity_mention id="m-502" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2560" length="31">a lot of other people with kids</entity_mention>
+    </entity>
+    <entity id="ent-70132571325260" name="entity-PER-9" type="PER">
+      <entity_mention id="m-541" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2617" length="3">her</entity_mention>
+      <entity_mention id="m-515" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2595" length="3">one</entity_mention>
+    </entity>
+    <entity id="ent-70132571293800" name="entity-PER-10" type="PER">
+      <entity_mention id="m-528" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2617" length="12">her children</entity_mention>
+    </entity>
+    <entity id="ent-70132571264880" name="entity-PER-11" type="PER">
+      <entity_mention id="m-580" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2699" length="11">the killers</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2720" length="4">they</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2755" length="4">they</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2963" length="4">they</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3032" length="4">they</entity_mention>
+      <entity_mention id="m-658" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2834" length="8">the guys</entity_mention>
+      <entity_mention id="m-632" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2802" length="8">the guys</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2853" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132570157260" name="entity-PER-12" type="PER">
+      <entity_mention id="m-801" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3748" length="8">the kids</entity_mention>
+    </entity>
+    <entity id="ent-70132570152080" name="entity-PER-13" type="PER">
+      <entity_mention id="m-957" noun_type="NOM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4915" length="13">a lot of them</entity_mention>
+    </entity>
+    <entity id="ent-70132570145520" name="entity-PER-14" type="PER">
+      <entity_mention id="m-970" noun_type="NAM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4952" length="18">blueveinedthrobber</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="5019" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132570083680" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-164" noun_type="NAM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="363" length="3">USA</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="1282" length="3">USA</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4230" length="3">USA</entity_mention>
+    </entity>
+    <entity id="ent-70132570000460" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-203" noun_type="NAM" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="445" length="9">Australia</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="1265" length="4">here</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="908" length="4">here</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="592" length="4">here</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="411" length="4">here</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="97e0304632853d30d64e1d2c9d5dcdc5" offset="436" length="4">here</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132568792400" type="social" subtype="unspecified">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132571406600" entity_mention_id="m-411">violent partners who had pursued and threatened them for years</arg>
+        <arg type="per" entity_id="ent-70132571452120" entity_mention_id="m-424">them</arg>
+        <trigger source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2399" length="8">partners</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568792300" type="social" subtype="family">
+      <relation_mention id="relm-991">
+        <arg type="per" entity_id="ent-70132571358000" entity_mention_id="m-489">their</arg>
+        <arg type="per" entity_id="ent-70132571332360" entity_mention_id="m-476">their children</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568792180" type="social" subtype="family">
+      <relation_mention id="relm-1021">
+        <arg type="per" entity_id="ent-70132571325260" entity_mention_id="m-541">her</arg>
+        <arg type="per" entity_id="ent-70132571293800" entity_mention_id="m-528">her children</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568792080" type="social" subtype="business">
+      <relation_mention id="relm-1051">
+        <arg type="per" entity_id="ent-70132571579920" entity_mention_id="m-788">I</arg>
+        <arg type="per" entity_id="ent-70132570157260" entity_mention_id="m-801">the kids</arg>
+        <trigger source="97e0304632853d30d64e1d2c9d5dcdc5" offset="3738" length="4">work</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568791940" type="social" subtype="unspecified">
+      <relation_mention id="relm-1081">
+        <arg type="per" entity_id="ent-70132571579920" entity_mention_id="m-944">I</arg>
+        <arg type="per" entity_id="ent-70132570152080" entity_mention_id="m-957">a lot of them</arg>
+        <trigger source="97e0304632853d30d64e1d2c9d5dcdc5" offset="4909" length="5">known</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568791880" type="social" subtype="unspecified">
+      <relation_mention id="relm-1111">
+        <arg type="per" entity_id="ent-70132571579920" entity_mention_id="m-359">I</arg>
+        <arg type="per" entity_id="ent-70132571458060" entity_mention_id="m-372">six people who have been murdered</arg>
+        <trigger source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2312" length="5">known</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132568616220" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="life" subtype="die">
+        <trigger source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2354" length="8">murdered</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-372" entity_id="ent-70132571458060">six people who have been murdered</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132568614600" name="entity-EVENT-4">
+      <event_mention id="evm-1197" type="life" subtype="die">
+        <trigger source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2509" length="6">killed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-463" entity_id="ent-70132571358000">Two</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132568612940" name="entity-EVENT-5">
+      <event_mention id="evm-1239" type="life" subtype="die">
+        <trigger source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2603" length="8">murdered</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-515" entity_id="ent-70132571325260">one</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132568594060" name="entity-EVENT-1">
+      <event_mention id="evm-1147" type="life" subtype="die">
+        <trigger source="97e0304632853d30d64e1d2c9d5dcdc5" offset="2381" length="6">Killed</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-411" entity_id="ent-70132571406600">violent partners who had pursued and threatened them for years</arg>
+          <arg type="victim" entity_mention_id="m-424" entity_id="ent-70132571452120">them</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

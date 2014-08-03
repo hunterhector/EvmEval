@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="f1c41b61746035c01c0a3e0aecb98eda" source_type="multi_post" kit_id="5346f3680000000000000103">
+  <entities>
+    <entity id="ent-70132573737180" name="entity-PER-2" type="PER">
+      <entity_mention id="m-164" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="89" length="1">I</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="74" length="2">my</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="63" length="1">I</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="14" length="6">Jodgyy</entity_mention>
+    </entity>
+    <entity id="ent-70132573874400" name="entity-PER-3" type="PER">
+      <entity_mention id="m-905" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4112" length="1">I</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="3694" length="1">I</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="2537" length="1">I</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1531" length="2">my</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1520" length="1">I</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="588" length="1">I</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="460" length="1">I</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="205" length="2">my</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="162" length="1">I</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="133" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="438" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="333" length="2">My</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="254" length="2">my</entity_mention>
+    </entity>
+    <entity id="ent-70132574425860" name="entity-PER-4" type="PER">
+      <entity_mention id="m-229" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="254" length="25">my followers on that blog</entity_mention>
+    </entity>
+    <entity id="ent-70132574422460" name="entity-PER-5" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="516" length="23">all the people involved</entity_mention>
+    </entity>
+    <entity id="ent-70132574567920" name="entity-PER-6" type="PER">
+      <entity_mention id="m-372" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="911" length="9">the ‘mob’</entity_mention>
+      <entity_mention id="m-346" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="779" length="19">peaceful protesters</entity_mention>
+      <entity_mention id="m-1394" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1007" length="14">the protesters</entity_mention>
+    </entity>
+    <entity id="ent-70132574704160" name="entity-PER-7" type="PER">
+      <entity_mention id="m-398" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1267" length="11">Mark Duggan</entity_mention>
+      <entity_mention id="m-320" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="688" length="11">Mark Duggan</entity_mention>
+    </entity>
+    <entity id="ent-70132574701940" name="entity-PER-8" type="PER">
+      <entity_mention id="m-645" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1696" length="2">we</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1681" length="2">we</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1620" length="2">we</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1611" length="2">we</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1596" length="2">we</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1571" length="2">We</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1498" length="2">us</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1484" length="2">we</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1481" length="2">us</entity_mention>
+      <entity_mention id="m-437" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1449" length="5">youth</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1446" length="2">us</entity_mention>
+      <entity_mention id="m-411" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1375" length="6">youths</entity_mention>
+    </entity>
+    <entity id="ent-70132575632780" name="entity-PER-9" type="PER">
+      <entity_mention id="m-684" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1648" length="5">who’s</entity_mention>
+      <entity_mention id="m-658" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1639" length="8">the rich</entity_mention>
+    </entity>
+    <entity id="ent-70132575626800" name="entity-PER-10" type="PER">
+      <entity_mention id="m-723" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1806" length="4">they</entity_mention>
+      <entity_mention id="m-710" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1786" length="11">the rioters</entity_mention>
+    </entity>
+    <entity id="ent-70132575769420" name="entity-PER-11" type="PER">
+      <entity_mention id="m-814" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="2591" length="7">rioters</entity_mention>
+      <entity_mention id="m-801" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="2570" length="7">the mob</entity_mention>
+    </entity>
+    <entity id="ent-70132575908060" name="entity-PER-12" type="PER">
+      <entity_mention id="m-866" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="3965" length="4">They</entity_mention>
+      <entity_mention id="m-879" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="3981" length="121">people who share feelings of resentment towards their government and lose themselves as an individual during large crowds</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4055" length="10">themselves</entity_mention>
+      <entity_mention id="m-853" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="3902" length="34">the people involved in the rioting</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="3895" length="3">all</entity_mention>
+    </entity>
+    <entity id="ent-70132576145120" name="entity-PER-13" type="PER">
+      <entity_mention id="m-944" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4269" length="5">their</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4257" length="4">they</entity_mention>
+      <entity_mention id="m-918" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4136" length="7">parents</entity_mention>
+    </entity>
+    <entity id="ent-70132576391660" name="entity-PER-14" type="PER">
+      <entity_mention id="m-957" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4269" length="14">their children</entity_mention>
+    </entity>
+    <entity id="ent-70132576388320" name="entity-PER-15" type="PER">
+      <entity_mention id="m-333" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="703" length="6">police</entity_mention>
+    </entity>
+    <entity id="ent-70132576640180" name="entity-PER-16" type="PER">
+      <entity_mention id="m-567" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1585" length="10">the police</entity_mention>
+    </entity>
+    <entity id="ent-70132576636840" name="entity-PER-17" type="PER">
+      <entity_mention id="m-528" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1550" length="10">Mark Stone</entity_mention>
+    </entity>
+    <entity id="ent-70132576633600" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1217" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5877" length="1">I</entity_mention>
+      <entity_mention id="m-1178" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5669" length="7">Azra'il</entity_mention>
+    </entity>
+    <entity id="ent-70132576768020" name="entity-PER-19" type="PER">
+      <entity_mention id="m-1191" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5739" length="4">Aack</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5475" length="4">Aack</entity_mention>
+    </entity>
+    <entity id="ent-70132576894380" name="entity-PER-20" type="PER">
+      <entity_mention id="m-996" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4583" length="1">I</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4330" length="16">Meridian Soldier</entity_mention>
+    </entity>
+    <entity id="ent-70132576888380" name="entity-PER-21" type="PER">
+      <entity_mention id="m-983" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4409" length="7">Agent Z</entity_mention>
+    </entity>
+    <entity id="ent-70132577017380" name="entity-PER-22" type="PER">
+      <entity_mention id="m-1035" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4907" length="12">lumberjack77</entity_mention>
+      <entity_mention id="m-1733" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5155" length="12">lumberjack77</entity_mention>
+    </entity>
+    <entity id="ent-70132577011300" name="entity-PER-23" type="PER">
+      <entity_mention id="m-1048" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5084" length="8">The Mr Z</entity_mention>
+    </entity>
+    <entity id="ent-70132577148540" name="entity-PER-24" type="PER">
+      <entity_mention id="m-1022" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4628" length="6">police</entity_mention>
+    </entity>
+    <entity id="ent-70132577145200" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1113" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5369" length="6">police</entity_mention>
+    </entity>
+    <entity id="ent-70132577141840" name="entity-PER-26" type="PER">
+      <entity_mention id="m-1139" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5408" length="4">them</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5333" length="4">they</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5281" length="4">They</entity_mention>
+    </entity>
+    <entity id="ent-70132575364940" name="entity-PER-27" type="PER">
+      <entity_mention id="m-1126" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5388" length="12">the officers</entity_mention>
+    </entity>
+    <entity id="ent-70132575502080" name="entity-PER-28" type="PER">
+      <entity_mention id="m-1204" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5762" length="7">rioters</entity_mention>
+      <entity_mention id="m-1165" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5627" length="7">rioters</entity_mention>
+    </entity>
+    <entity id="ent-70132575496140" name="entity-PER-29" type="PER">
+      <entity_mention id="m-1420" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="988" length="6">police</entity_mention>
+    </entity>
+    <entity id="ent-70132577370000" name="entity-PER-30" type="PER">
+      <entity_mention id="m-1746" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5542" length="10">flown_muse</entity_mention>
+    </entity>
+    <entity id="ent-70132577366700" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-541" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1561" length="7">YouTube</entity_mention>
+    </entity>
+    <entity id="ent-70132577363400" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-697" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1708" length="8">BBC News</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1508" length="8">BBC News</entity_mention>
+    </entity>
+    <entity id="ent-70132577465080" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-671" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1648" length="16">who’s businesses</entity_mention>
+    </entity>
+    <entity id="ent-70132577461860" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-762" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="2200" length="10">Youth Club</entity_mention>
+    </entity>
+    <entity id="ent-70132577704920" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-775" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="2371" length="14">the government</entity_mention>
+      <entity_mention id="m-1009" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="4613" length="10">government</entity_mention>
+    </entity>
+    <entity id="ent-70132577699340" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-749" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="2053" length="2">UK</entity_mention>
+      <entity_mention id="m-736" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1875" length="2">UK</entity_mention>
+      <entity_mention id="m-255" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="402" length="2">UK</entity_mention>
+    </entity>
+    <entity id="ent-70132577806640" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-385" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="1091" length="14">various houses</entity_mention>
+    </entity>
+    <entity id="ent-70132572790580" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-1100" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5344" length="36">the civilian side of the police wall</entity_mention>
+    </entity>
+    <entity id="ent-70132572787400" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-1087" noun_type="NOM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="5365" length="15">the police wall</entity_mention>
+    </entity>
+    <entity id="ent-70132572784280" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-359" noun_type="NAM" source="f1c41b61746035c01c0a3e0aecb98eda" offset="822" length="9">Tottenham</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132577807140" type="social" subtype="unspecified">
+      <relation_mention id="relm-1225">
+        <arg type="per" entity_id="ent-70132573874400" entity_mention_id="m-216">my</arg>
+        <arg type="per" entity_id="ent-70132574425860" entity_mention_id="m-229">my followers on that blog</arg>
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="257" length="9">followers</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577807060" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1512">
+        <arg type="leader" entity_id="ent-70132575632780" entity_mention_id="m-684">who’s</arg>
+        <arg type="entity" entity_id="ent-70132577465080" entity_mention_id="m-671">who’s businesses</arg>
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="1648" length="5">who’s</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577806960" type="social" subtype="family">
+      <relation_mention id="relm-1668">
+        <arg type="per" entity_id="ent-70132576391660" entity_mention_id="m-957">their children</arg>
+        <arg type="per" entity_id="ent-70132576145120" entity_mention_id="m-944">their</arg>
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="4275" length="8">children</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577806900" type="physical" subtype="located">
+      <relation_mention id="relm-1698">
+        <arg type="entity" entity_id="ent-70132572790580" entity_mention_id="m-1100">the civilian side of the police wall</arg>
+        <arg type="loc" entity_id="ent-70132572787400" entity_mention_id="m-1087">the police wall</arg>
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="5362" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132575630420" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="conflict" subtype="demonstrate">
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="387" length="7">rioting</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-294" entity_id="ent-70132574422460">all the people involved</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-255">UK</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-1434" type="conflict" subtype="demonstrate">
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="1070" length="4">riot</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-1394" entity_id="ent-70132574567920">the protesters</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1548" type="conflict" subtype="demonstrate">
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="1790" length="7">rioters</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-710" entity_id="ent-70132575626800">the rioters</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1632" type="conflict" subtype="demonstrate">
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="3929" length="7">rioting</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-853" entity_id="ent-70132575908060">the people involved in the rioting</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132575629300" name="entity-EVENT-3">
+      <event_mention id="evm-1261" type="conflict" subtype="attack">
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="600" length="8">violence</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-294" entity_id="ent-70132574422460">all the people involved</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-255">UK</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132575627660" name="entity-EVENT-4">
+      <event_mention id="evm-1303" type="conflict" subtype="attack">
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="676" length="8">shooting</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-333" entity_id="ent-70132576388320">police</arg>
+          <arg type="target" entity_mention_id="m-320" entity_id="ent-70132574704160">Mark Duggan</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1476" type="conflict" subtype="attack">
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="1255" length="8">shooting</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-398" entity_id="ent-70132574704160">Mark Duggan</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132575626400" name="entity-EVENT-5">
+      <event_mention id="evm-1353" type="conflict" subtype="demonstrate">
+        <trigger source="f1c41b61746035c01c0a3e0aecb98eda" offset="799" length="19">took to the streets</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-346" entity_id="ent-70132574567920">peaceful protesters</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-359">Tottenham</place>
+        </places>
+        <date>
+          <date_extent source="f1c41b61746035c01c0a3e0aecb98eda" offset="835" length="8">Saturday</date_extent>
+          <normalized_date>2011-08-06</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

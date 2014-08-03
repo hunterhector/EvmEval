@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="0eb03fc279066b84ed49d44b2405469a" source_type="multi_post" kit_id="5346f3670000000000000005">
+  <entities>
+    <entity id="ent-70132571643500" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="0eb03fc279066b84ed49d44b2405469a" offset="14" length="4">Skip</entity_mention>
+    </entity>
+    <entity id="ent-70132571638420" name="entity-PER-3" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="0eb03fc279066b84ed49d44b2405469a" offset="351" length="12">Mr. Briskman</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="0eb03fc279066b84ed49d44b2405469a" offset="423" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132571589680" name="entity-PER-4" type="PER">
+      <entity_mention id="m-151" noun_type="NOM" source="0eb03fc279066b84ed49d44b2405469a" offset="423" length="22">his “business contacts</entity_mention>
+    </entity>
+    <entity id="ent-70132571585380" name="entity-PER-5" type="PER">
+      <entity_mention id="m-177" noun_type="NOM" source="0eb03fc279066b84ed49d44b2405469a" offset="488" length="19">government auditors</entity_mention>
+    </entity>
+    <entity id="ent-70132571581960" name="entity-PER-6" type="PER">
+      <entity_mention id="m-203" noun_type="NAM" source="0eb03fc279066b84ed49d44b2405469a" offset="1126" length="9">slappyman</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="0eb03fc279066b84ed49d44b2405469a" offset="1229" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="0eb03fc279066b84ed49d44b2405469a" offset="1342" length="2">my</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="0eb03fc279066b84ed49d44b2405469a" offset="1414" length="1">I</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="0eb03fc279066b84ed49d44b2405469a" offset="1433" length="2">my</entity_mention>
+    </entity>
+    <entity id="ent-70132571558340" name="entity-PER-7" type="PER">
+      <entity_mention id="m-229" noun_type="NOM" source="0eb03fc279066b84ed49d44b2405469a" offset="1324" length="25">The ex-sheriff in my town</entity_mention>
+    </entity>
+    <entity id="ent-70132571554160" name="entity-PER-8" type="PER">
+      <entity_mention id="m-294" noun_type="NAM" source="0eb03fc279066b84ed49d44b2405469a" offset="1805" length="8">dirtydog</entity_mention>
+    </entity>
+    <entity id="ent-70132571542660" name="entity-PER-9" type="PER">
+      <entity_mention id="m-346" noun_type="PRO" source="0eb03fc279066b84ed49d44b2405469a" offset="2016" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132571538820" name="entity-PER-10" type="PER">
+      <entity_mention id="m-333" noun_type="NAM" source="0eb03fc279066b84ed49d44b2405469a" offset="1958" length="16">John T. Williams</entity_mention>
+    </entity>
+    <entity id="ent-70132571535640" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-125" noun_type="NOM" source="0eb03fc279066b84ed49d44b2405469a" offset="177" length="22">the Federal government</entity_mention>
+      <entity_mention id="m-190" noun_type="NOM" source="0eb03fc279066b84ed49d44b2405469a" offset="488" length="10">government</entity_mention>
+    </entity>
+    <entity id="ent-70132571520980" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-307" noun_type="NOM" source="0eb03fc279066b84ed49d44b2405469a" offset="1888" length="18">The U.S. Marshalls</entity_mention>
+    </entity>
+    <entity id="ent-70132571517000" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-320" noun_type="NAM" source="0eb03fc279066b84ed49d44b2405469a" offset="1892" length="4">U.S.</entity_mention>
+    </entity>
+    <entity id="ent-70132571513020" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-242" noun_type="NOM" source="0eb03fc279066b84ed49d44b2405469a" offset="1342" length="7">my town</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571361940" type="social" subtype="business">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132571589680" entity_mention_id="m-151">his “business contacts</arg>
+        <arg type="per" entity_id="ent-70132571638420" entity_mention_id="m-164">his</arg>
+        <trigger source="0eb03fc279066b84ed49d44b2405469a" offset="437" length="8">contacts</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571361800" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-354">
+        <arg type="employeemember" entity_id="ent-70132571585380" entity_mention_id="m-177">government auditors</arg>
+        <arg type="org" entity_id="ent-70132571535640" entity_mention_id="m-190">government</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571361720" type="physical" subtype="located">
+      <relation_mention id="relm-384">
+        <arg type="entity" entity_id="ent-70132571558340" entity_mention_id="m-229">The ex-sheriff in my town</arg>
+        <arg type="loc" entity_id="ent-70132571513020" entity_mention_id="m-242">my town</arg>
+        <trigger source="0eb03fc279066b84ed49d44b2405469a" offset="1339" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571361660" type="physical" subtype="origin">
+      <relation_mention id="relm-414">
+        <arg type="entity" entity_id="ent-70132571581960" entity_mention_id="m-255">my</arg>
+        <arg type="loc" entity_id="ent-70132571513020" entity_mention_id="m-242">my town</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571361580" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-444">
+        <arg type="suborg" entity_id="ent-70132571520980" entity_mention_id="m-307">The U.S. Marshalls</arg>
+        <arg type="parent" entity_id="ent-70132571517000" entity_mention_id="m-320">U.S.</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events/>
+</deft_ere>

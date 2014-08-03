@@ -1,0 +1,24 @@
+<post author="cheering_bell" datetime="2009-11-11T21:45:00" id="p1">
+Hello
+
+I was wondering if anyone has been having problems with paying for childcare using evouchers with Computershare. I transferred an evoucher payment to my childminder 2 weeks ago, but the funds still have not appeared in her account. Both myself and my partner have spent ages on their "support" line, only to be fobbed off with one excuse or another. I don't believe they have even started the BACS transfer, although the money is out of my account.
+
+We will now have to pay my childminder in cash tomorrow - nearly doubling the cost of child care this month, hardly the great savings they promised when I joined the scheme.
+
+Does anyone know if childcare voucher companies are regulated and is there any organisation I can complain to?
+</post>
+<post author="scootermacc" datetime="2009-11-12T15:13:00" id="p2">
+Hi cheering bell. I have just posted a similar question on another thread - ComputerShare made an unauthorised payment of £243 to our carer, and after 4 weeks have failed to reclaim the money back into our voucher account.
+We are sending a formal written letter of complaint to them tomorrow, but I am also trying to find out who to escalate it to. They told me they are not regulated by the FSA (although I have emailed the FSA to check this). Next stop may actually be the local MP as they are (badly) administrating a government scheme here.
+
+Also, might try Consumer Direct: <a href="http://www.consumerdirect.gov.uk/after_you_buy/making-complaint/">http://www.consumerdirect.gov.uk/aft...ing-complaint/</a>
+
+Sorry i don't have your answer - does anybody else know who we can complain to?
+</post>
+<post author="Snarf999" datetime="2009-11-12T18:14:00" id="p3">
+We had a similar problem this month, the vouchers went in around 2 weeks or so later than they normally would so we'll have to top up at our nursery.
+
+Woman at the nursery also said that they're appalling in answering calls, I was on for over half an hour waiting for an answer in the morning.
+
+Also, keep an eye on the auto-payment if you have one set up. Whereas the old Busybees account would just keep trying to pay until the funds will available, the Computershare account will stop trying to pay after 5 days and cancel the auto-payment (without actually telling you!). So if you don't notice then payments won't be made until you set up another auto-payment!
+</post>

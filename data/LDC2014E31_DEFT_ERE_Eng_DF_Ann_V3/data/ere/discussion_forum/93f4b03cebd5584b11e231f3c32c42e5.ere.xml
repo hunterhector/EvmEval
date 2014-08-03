@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="93f4b03cebd5584b11e231f3c32c42e5" source_type="multi_post" kit_id="533486f60000000000000028">
+  <entities>
+    <entity id="ent-70132570224840" name="entity-PER-2" type="PER">
+      <entity_mention id="m-310" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="194" length="1">I</entity_mention>
+      <entity_mention id="m-271" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="65" length="1">I</entity_mention>
+      <entity_mention id="m-297" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="148" length="2">my</entity_mention>
+      <entity_mention id="m-284" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="76" length="2">my</entity_mention>
+      <entity_mention id="m-323" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="263" length="1">I</entity_mention>
+      <entity_mention id="m-336" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="330" length="2">me</entity_mention>
+      <entity_mention id="m-349" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="356" length="2">my</entity_mention>
+      <entity_mention id="m-362" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="450" length="1">I</entity_mention>
+      <entity_mention id="m-375" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="491" length="2">my</entity_mention>
+      <entity_mention id="m-427" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="566" length="1">I</entity_mention>
+      <entity_mention id="m-479" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="659" length="1">I</entity_mention>
+      <entity_mention id="m-466" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="644" length="2">me</entity_mention>
+      <entity_mention id="m-453" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="612" length="2">my</entity_mention>
+      <entity_mention id="m-440" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="583" length="2">my</entity_mention>
+      <entity_mention id="m-492" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="689" length="1">I</entity_mention>
+      <entity_mention id="m-505" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="735" length="2">me</entity_mention>
+      <entity_mention id="m-518" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="750" length="2">my</entity_mention>
+      <entity_mention id="m-531" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="759" length="1">I</entity_mention>
+      <entity_mention id="m-570" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="805" length="2">my</entity_mention>
+      <entity_mention id="m-596" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="899" length="2">my</entity_mention>
+      <entity_mention id="m-622" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="967" length="1">I</entity_mention>
+      <entity_mention id="m-635" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1066" length="1">I</entity_mention>
+      <entity_mention id="m-661" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1166" length="1">I</entity_mention>
+      <entity_mention id="m-674" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1173" length="1">I</entity_mention>
+      <entity_mention id="m-648" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1090" length="1">I</entity_mention>
+      <entity_mention id="m-687" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1206" length="2">my</entity_mention>
+      <entity_mention id="m-700" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1245" length="1">I</entity_mention>
+      <entity_mention id="m-713" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1312" length="1">I</entity_mention>
+      <entity_mention id="m-726" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1347" length="1">I</entity_mention>
+      <entity_mention id="m-739" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1455" length="1">I</entity_mention>
+      <entity_mention id="m-765" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1594" length="3">you</entity_mention>
+      <entity_mention id="m-778" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1615" length="3">you</entity_mention>
+      <entity_mention id="m-817" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1780" length="3">you</entity_mention>
+      <entity_mention id="m-830" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1801" length="3">you</entity_mention>
+      <entity_mention id="m-843" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1861" length="2">MY</entity_mention>
+      <entity_mention id="m-856" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1904" length="1">I</entity_mention>
+      <entity_mention id="m-869" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1931" length="2">my</entity_mention>
+      <entity_mention id="m-882" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1959" length="2">my</entity_mention>
+      <entity_mention id="m-895" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1985" length="1">I</entity_mention>
+      <entity_mention id="m-908" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2014" length="2">me</entity_mention>
+      <entity_mention id="m-921" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2018" length="1">I</entity_mention>
+      <entity_mention id="m-934" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2083" length="1">I</entity_mention>
+      <entity_mention id="m-947" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2097" length="1">I</entity_mention>
+      <entity_mention id="m-960" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2108" length="2">my</entity_mention>
+      <entity_mention id="m-973" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2127" length="2">my</entity_mention>
+      <entity_mention id="m-986" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2135" length="1">I</entity_mention>
+      <entity_mention id="m-999" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2164" length="1">I</entity_mention>
+      <entity_mention id="m-1025" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2295" length="3">you</entity_mention>
+      <entity_mention id="m-791" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1688" length="9">neilo1978</entity_mention>
+      <entity_mention id="m-258" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="14" length="9">neilo1978</entity_mention>
+    </entity>
+    <entity id="ent-70132568778720" name="entity-PER-3" type="PER">
+      <entity_mention id="m-401" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="512" length="3">she</entity_mention>
+      <entity_mention id="m-388" noun_type="NOM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="491" length="13">my girlfriend</entity_mention>
+    </entity>
+    <entity id="ent-70132568760880" name="entity-PER-4" type="PER">
+      <entity_mention id="m-414" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="523" length="2">We</entity_mention>
+    </entity>
+    <entity id="ent-70132568756620" name="entity-PER-5" type="PER">
+      <entity_mention id="m-1038" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2361" length="1">I</entity_mention>
+      <entity_mention id="m-752" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1541" length="5">BoGoF</entity_mention>
+      <entity_mention id="m-804" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="1766" length="5">BoGoF</entity_mention>
+      <entity_mention id="m-1012" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2244" length="5">BoGoF</entity_mention>
+    </entity>
+    <entity id="ent-70132568731380" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-164" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="923" length="8">Barclays</entity_mention>
+    </entity>
+    <entity id="ent-70132568718800" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-544" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="791" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568714300" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-557" noun_type="NOM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="615" length="16">mortgage company</entity_mention>
+      <entity_mention id="m-583" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="851" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568695080" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-609" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="938" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568690740" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-1051" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2375" length="4">they</entity_mention>
+      <entity_mention id="m-1064" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2430" length="4">them</entity_mention>
+      <entity_mention id="m-1077" noun_type="PRO" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2469" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132568657220" name="entity-ORG-1" type="ORG">
+      <entity_mention id="m-151" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="97" length="8">Woolwich</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="957" length="8">Woolwich</entity_mention>
+      <entity_mention id="m-1227" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="279" length="8">Woolwich</entity_mention>
+    </entity>
+    <entity id="ent-70132568590780" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-138" noun_type="NAM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="242" length="5">Leeds</entity_mention>
+    </entity>
+    <entity id="ent-70132568566980" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-1120" noun_type="NOM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="480" length="5">house</entity_mention>
+      <entity_mention id="m-1133" noun_type="NOM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="359" length="4">flat</entity_mention>
+      <entity_mention id="m-1159" noun_type="NOM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="2111" length="8">property</entity_mention>
+      <entity_mention id="m-1214" noun_type="NOM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="753" length="4">flat</entity_mention>
+      <entity_mention id="m-1146" noun_type="NOM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="148" length="29">my property in the North East</entity_mention>
+    </entity>
+    <entity id="ent-70132568450140" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-1240" noun_type="NOM" source="93f4b03cebd5584b11e231f3c32c42e5" offset="163" length="14">the North East</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132567509460" type="social" subtype="unspecified">
+      <relation_mention id="relm-1085">
+        <arg type="per" entity_id="ent-70132570224840" entity_mention_id="m-375">my</arg>
+        <arg type="per" entity_id="ent-70132568778720" entity_mention_id="m-388">my girlfriend</arg>
+        <trigger source="93f4b03cebd5584b11e231f3c32c42e5" offset="494" length="10">girlfriend</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132567448740" name="entity-EVENT-3">
+      <event_mention id="evm-1173" type="movement" subtype="transportperson">
+        <trigger source="93f4b03cebd5584b11e231f3c32c42e5" offset="233" length="5">moved</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-310" entity_id="ent-70132570224840">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-138">Leeds</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132567445920" name="entity-EVENT-1">
+      <event_mention id="evm-84" type="transaction" subtype="transferownership">
+        <trigger source="93f4b03cebd5584b11e231f3c32c42e5" offset="943" length="9">took over</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-177" entity_id="ent-70132568657220">Woolwich</arg>
+          <arg type="beneficiary" entity_mention_id="m-164" entity_id="ent-70132568731380">Barclays</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

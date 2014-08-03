@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="effae9149da35676e712683c3167114f" source_type="multi_post" kit_id="53977fee0000000000000001">
+  <entities>
+    <entity id="ent-70132573738260" name="entity-PER-2" type="PER">
+      <entity_mention id="m-164" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="566" length="9">Arrhenius</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="657" length="2">He</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="855" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132573878180" name="entity-PER-3" type="PER">
+      <entity_mention id="m-216" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="946" length="9">Callendar</entity_mention>
+    </entity>
+    <entity id="ent-70132573874980" name="entity-PER-4" type="PER">
+      <entity_mention id="m-229" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="960" length="5">Plass</entity_mention>
+    </entity>
+    <entity id="ent-70132573875420" name="entity-PER-5" type="PER">
+      <entity_mention id="m-892" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="4689" length="13">Rush Limbaugh</entity_mention>
+    </entity>
+    <entity id="ent-70132574156040" name="entity-PER-6" type="PER">
+      <entity_mention id="m-840" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="4395" length="6">Hansen</entity_mention>
+    </entity>
+    <entity id="ent-70132574152900" name="entity-PER-7" type="PER">
+      <entity_mention id="m-814" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="4313" length="17">Margaret Thatcher</entity_mention>
+    </entity>
+    <entity id="ent-70132574297960" name="entity-PER-8" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="14" length="10">Matt Giwer</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1337" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1366" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="1437" length="10">Matt Giwer</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1589" length="3">you</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1613" length="3">you</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1642" length="1">I</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="2040" length="4">your</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="2520" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="3040" length="10">Matt Giwer</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3299" length="3">you</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3510" length="1">I</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="3681" length="10">Matt Giwer</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3795" length="3">you</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="3832" length="10">Matt Giwer</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="4008" length="10">Matt Giwer</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="4021" length="1">I</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="4050" length="1">I</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3854" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132574835100" name="entity-PER-9" type="PER">
+      <entity_mention id="m-684" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="3755" length="8">BenBurch</entity_mention>
+    </entity>
+    <entity id="ent-70132574832220" name="entity-PER-10" type="PER">
+      <entity_mention id="m-580" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3364" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132574968560" name="entity-PER-11" type="PER">
+      <entity_mention id="m-619" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3417" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132574965680" name="entity-PER-12" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="88" length="11">CapelDodger</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="131" length="11">CapelDodger</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="438" length="1">I</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="1511" length="11">CapelDodger</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1564" length="1">I</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1681" length="3">you</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1731" length="4">your</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1748" length="3">You</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1790" length="3">You</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1866" length="3">you</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="1948" length="3">you</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="2528" length="3">you</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="2577" length="3">you</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="2660" length="3">you</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="2926" length="3">you</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="3114" length="11">CapelDodger</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3379" length="4">your</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3404" length="3">you</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3456" length="4">your</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="3572" length="4">your</entity_mention>
+      <entity_mention id="m-762" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="3933" length="11">CapelDodger</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="4455" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132574013820" name="entity-PER-13" type="PER">
+      <entity_mention id="m-437" noun_type="PRO" source="effae9149da35676e712683c3167114f" offset="2349" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132574428280" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-736" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="3886" length="15">U of Cincinnati</entity_mention>
+    </entity>
+    <entity id="ent-70132574424940" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-827" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="4370" length="4">IPCC</entity_mention>
+    </entity>
+    <entity id="ent-70132574421600" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-853" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="4445" length="8">Congress</entity_mention>
+    </entity>
+    <entity id="ent-70132574295380" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-879" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="4666" length="8">Fox News</entity_mention>
+    </entity>
+    <entity id="ent-70132574291920" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-190" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="849" length="5">Swede</entity_mention>
+    </entity>
+    <entity id="ent-70132574157440" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-749" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="3891" length="10">Cincinnati</entity_mention>
+    </entity>
+    <entity id="ent-70132574154040" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-502" noun_type="NAM" source="effae9149da35676e712683c3167114f" offset="2764" length="6">Europe</entity_mention>
+    </entity>
+    <entity id="ent-70132573880160" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-515" noun_type="NOM" source="effae9149da35676e712683c3167114f" offset="2851" length="9">The world</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132573469280" type="physical" subtype="origin">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132573738260" entity_mention_id="m-203">he</arg>
+        <arg type="loc" entity_id="ent-70132574291920" entity_mention_id="m-190">Swede</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132573469220" type="physical" subtype="origin">
+      <relation_mention id="relm-900">
+        <arg type="entity" entity_id="ent-70132574428280" entity_mention_id="m-736">U of Cincinnati</arg>
+        <arg type="loc" entity_id="ent-70132574157440" entity_mention_id="m-749">Cincinnati</arg>
+        <trigger source="effae9149da35676e712683c3167114f" offset="3888" length="2">of</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132573199860" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="business" subtype="startorg">
+        <trigger source="effae9149da35676e712683c3167114f" offset="4379" length="7">created</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-827" entity_id="ent-70132574424940">IPCC</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

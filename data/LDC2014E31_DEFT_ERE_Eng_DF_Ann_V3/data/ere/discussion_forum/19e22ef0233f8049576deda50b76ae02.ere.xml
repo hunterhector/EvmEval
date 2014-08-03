@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="19e22ef0233f8049576deda50b76ae02" source_type="multi_post" kit_id="53a52d7e0000000000000029">
+  <entities>
+    <entity id="ent-70132574567920" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="85" length="4">Dave</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="525" length="1">I</entity_mention>
+      <entity_mention id="m-372" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="637" length="4">Dave</entity_mention>
+    </entity>
+    <entity id="ent-70132574566280" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="14" length="7">dazza74</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="632" length="3">imo</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="1043" length="7">dazza74</entity_mention>
+      <entity_mention id="m-1048" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="3068" length="7">dazza74</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3265" length="1">I</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3366" length="2">my</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3438" length="1">I</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3554" length="1">I</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3686" length="2">me</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3714" length="1">I</entity_mention>
+      <entity_mention id="m-1373" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="4666" length="7">dazza74</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="4708" length="1">I</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="4809" length="2">my</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="4881" length="1">I</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="4997" length="1">I</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5129" length="2">me</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5157" length="1">I</entity_mention>
+      <entity_mention id="m-1633" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5775" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132575099840" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="100" length="51">2 of the most senior police officers in the country</entity_mention>
+    </entity>
+    <entity id="ent-70132575096920" name="entity-PER-5" type="PER">
+      <entity_mention id="m-151" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="105" length="46">the most senior police officers in the country</entity_mention>
+    </entity>
+    <entity id="ent-70132575094020" name="entity-PER-6" type="PER">
+      <entity_mention id="m-190" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="166" length="7">Cameron</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="207" length="2">he</entity_mention>
+      <entity_mention id="m-307" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="426" length="7">Cameron</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="540" length="2">he</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="818" length="7">Cameron</entity_mention>
+      <entity_mention id="m-840" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="2474" length="6">the PM</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2489" length="3">him</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2498" length="3">his</entity_mention>
+      <entity_mention id="m-970" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="2756" length="6">the PM</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2771" length="3">him</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2780" length="3">his</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2915" length="3">his</entity_mention>
+      <entity_mention id="m-1256" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="3950" length="6">the PM</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3965" length="3">him</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3974" length="3">his</entity_mention>
+      <entity_mention id="m-1607" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="5666" length="2">PM</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="1104" length="7">Cameron</entity_mention>
+    </entity>
+    <entity id="ent-70132576766300" name="entity-PER-7" type="PER">
+      <entity_mention id="m-216" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="245" length="11">media execs</entity_mention>
+    </entity>
+    <entity id="ent-70132576894440" name="entity-PER-8" type="PER">
+      <entity_mention id="m-229" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="272" length="15">police officers</entity_mention>
+    </entity>
+    <entity id="ent-70132576891560" name="entity-PER-9" type="PER">
+      <entity_mention id="m-320" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="514" length="9">Milliband</entity_mention>
+    </entity>
+    <entity id="ent-70132576888680" name="entity-PER-10" type="PER">
+      <entity_mention id="m-398" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="688" length="14">Both Murdoch's</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="716" length="5">their</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="747" length="4">them</entity_mention>
+      <entity_mention id="m-515" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="1344" length="14">Both Murdoch's</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="1395" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132577147200" name="entity-PER-11" type="PER">
+      <entity_mention id="m-437" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="733" length="18">others around them</entity_mention>
+    </entity>
+    <entity id="ent-70132577144120" name="entity-PER-12" type="PER">
+      <entity_mention id="m-463" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="968" length="11">Bald Monkey</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="1313" length="2">My</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="1449" length="4">IMHO</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="1548" length="11">Bald Monkey</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="1586" length="2">me</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="2573" length="11">Bald Monkey</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="3139" length="11">Bald Monkey</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3570" length="3">you</entity_mention>
+      <entity_mention id="m-1360" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="4591" length="11">Bald Monkey</entity_mention>
+      <entity_mention id="m-1438" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5013" length="3">you</entity_mention>
+      <entity_mention id="m-1490" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5202" length="1">I</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5399" length="2">My</entity_mention>
+      <entity_mention id="m-1568" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5472" length="1">I</entity_mention>
+      <entity_mention id="m-1620" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5762" length="1">I</entity_mention>
+      <entity_mention id="m-1646" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="5837" length="1">I</entity_mention>
+      <entity_mention id="m-1659" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="5904" length="11">Bald Monkey</entity_mention>
+      <entity_mention id="m-1685" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="6214" length="1">I</entity_mention>
+      <entity_mention id="m-1698" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="6315" length="2">me</entity_mention>
+      <entity_mention id="m-1711" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="6547" length="2">me</entity_mention>
+      <entity_mention id="m-1776" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="6902" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132577010040" name="entity-PER-13" type="PER">
+      <entity_mention id="m-567" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="1478" length="6">Pecker</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2375" length="1">I</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2393" length="1">I</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="2543" length="7">Steve W</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="2648" length="6">Pecker</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2657" length="1">I</entity_mention>
+      <entity_mention id="m-931" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2675" length="1">I</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="2827" length="5">Steve</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="3842" length="6">Pecker</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3851" length="1">I</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3869" length="1">I</entity_mention>
+      <entity_mention id="m-1295" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="4019" length="7">Steve W</entity_mention>
+      <entity_mention id="m-1308" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="4195" length="6">Pecker</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="4480" length="1">I</entity_mention>
+      <entity_mention id="m-1347" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="4561" length="7">Steve W</entity_mention>
+    </entity>
+    <entity id="ent-70132576141440" name="entity-PER-14" type="PER">
+      <entity_mention id="m-814" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="2432" length="21">the Cabinet Secretary</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2455" length="3">who</entity_mention>
+      <entity_mention id="m-944" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="2714" length="21">the Cabinet Secretary</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2737" length="3">who</entity_mention>
+      <entity_mention id="m-1230" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="3908" length="21">the Cabinet Secretary</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="3931" length="3">who</entity_mention>
+    </entity>
+    <entity id="ent-70132574969260" name="entity-PER-15" type="PER">
+      <entity_mention id="m-1022" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2867" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132574965980" name="entity-PER-16" type="PER">
+      <entity_mention id="m-1178" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="3771" length="7">Flimber</entity_mention>
+      <entity_mention id="m-1321" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="4265" length="7">Flimber</entity_mention>
+      <entity_mention id="m-1672" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="5979" length="7">Flimber</entity_mention>
+    </entity>
+    <entity id="ent-70132574834360" name="entity-PER-17" type="PER">
+      <entity_mention id="m-1529" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="5277" length="15">the politicians</entity_mention>
+    </entity>
+    <entity id="ent-70132574831080" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1555" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="5454" length="16">all these people</entity_mention>
+    </entity>
+    <entity id="ent-70132574704740" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-164" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="121" length="6">police</entity_mention>
+      <entity_mention id="m-242" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="272" length="6">police</entity_mention>
+      <entity_mention id="m-1516" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="5256" length="16">the Police force</entity_mention>
+      <entity_mention id="m-1737" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="6721" length="10">Met Police</entity_mention>
+    </entity>
+    <entity id="ent-70132575905740" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-385" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="666" length="8">Newscorp</entity_mention>
+      <entity_mention id="m-541" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="1395" length="17">their own company</entity_mention>
+      <entity_mention id="m-1503" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="5252" length="2">NI</entity_mention>
+      <entity_mention id="m-1724" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="6713" length="2">NI</entity_mention>
+    </entity>
+    <entity id="ent-70132574566920" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-606" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="1592" length="24">the inteligence services</entity_mention>
+      <entity_mention id="m-736" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="2179" length="24">the inteligence services</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="1687" length="4">they</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="1771" length="4">they</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2273" length="4">they</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="19e22ef0233f8049576deda50b76ae02" offset="2329" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132574296000" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-619" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="1650" length="16">house of commons</entity_mention>
+      <entity_mention id="m-658" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="1744" length="5">house</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="2230" length="5">house</entity_mention>
+    </entity>
+    <entity id="ent-70132574156320" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-1750" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="6736" length="17">the UK government</entity_mention>
+    </entity>
+    <entity id="ent-70132574153280" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-177" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="140" length="11">the country</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="2166" length="2">UK</entity_mention>
+      <entity_mention id="m-1139" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="3636" length="12">this country</entity_mention>
+      <entity_mention id="m-1451" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="5079" length="12">this country</entity_mention>
+      <entity_mention id="m-1581" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="5502" length="2">UK</entity_mention>
+      <entity_mention id="m-1763" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="6740" length="2">UK</entity_mention>
+    </entity>
+    <entity id="ent-70132573874980" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-1594" noun_type="NAM" source="19e22ef0233f8049576deda50b76ae02" offset="5615" length="2">EU</entity_mention>
+    </entity>
+    <entity id="ent-70132573740560" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-1789" noun_type="NOM" source="19e22ef0233f8049576deda50b76ae02" offset="6918" length="8">the moon</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132577804900" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-40">
+        <arg type="employeemember" entity_id="ent-70132575096920" entity_mention_id="m-151">the most senior police officers in the country</arg>
+        <arg type="org" entity_id="ent-70132574704740" entity_mention_id="m-164">police</arg>
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="128" length="8">officers</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577804840" type="physical" subtype="origin">
+      <relation_mention id="relm-1797">
+        <arg type="entity" entity_id="ent-70132575096920" entity_mention_id="m-151">the most senior police officers in the country</arg>
+        <arg type="loc" entity_id="ent-70132574153280" entity_mention_id="m-177">the country</arg>
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="137" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577804780" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1827">
+        <arg type="employeemember" entity_id="ent-70132576894440" entity_mention_id="m-229">police officers</arg>
+        <arg type="org" entity_id="ent-70132574704740" entity_mention_id="m-242">police</arg>
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="279" length="8">officers</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577804720" type="social" subtype="business">
+      <relation_mention id="relm-1857">
+        <arg type="per" entity_id="ent-70132577147200" entity_mention_id="m-437">others around them</arg>
+        <arg type="per" entity_id="ent-70132576888680" entity_mention_id="m-424">them</arg>
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="740" length="6">around</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577804660" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1887">
+        <arg type="leader" entity_id="ent-70132576888680" entity_mention_id="m-528">their</arg>
+        <arg type="entity" entity_id="ent-70132575905740" entity_mention_id="m-541">their own company</arg>
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="1395" length="9">their own</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132577804580" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1917">
+        <arg type="suborg" entity_id="ent-70132574156320" entity_mention_id="m-1750">the UK government</arg>
+        <arg type="parent" entity_id="ent-70132574153280" entity_mention_id="m-1763">UK</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132576266620" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="personnel" subtype="endposition">
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="152" length="6">resign</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-138" entity_id="ent-70132575099840">2 of the most senior police officers in the country</arg>
+          <arg type="entity" entity_mention_id="m-164" entity_id="ent-70132574704740">police</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-177">the country</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132576265420" name="entity-EVENT-4">
+      <event_mention id="evm-2003" type="personnel" subtype="endposition">
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="293" length="8">resigned</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-229" entity_id="ent-70132576894440">police officers</arg>
+          <arg type="entity" entity_mention_id="m-242" entity_id="ent-70132574704740">police</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132576271320" name="entity-EVENT-6">
+      <event_mention id="evm-1961" type="personnel" subtype="endposition">
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="262" length="8">resigned</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-216" entity_id="ent-70132576766300">media execs</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-2053" type="personnel" subtype="endposition">
+        <trigger source="19e22ef0233f8049576deda50b76ae02" offset="757" length="8">resigned</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-437" entity_id="ent-70132577147200">others around them</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

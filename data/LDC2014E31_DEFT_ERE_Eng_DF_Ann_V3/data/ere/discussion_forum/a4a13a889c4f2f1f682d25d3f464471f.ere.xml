@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="a4a13a889c4f2f1f682d25d3f464471f" source_type="multi_post" kit_id="53a52d7e0000000000000011">
+  <entities>
+    <entity id="ent-70132573735220" name="entity-PER-2" type="PER">
+      <entity_mention id="m-372" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1241" length="11">RollingWave</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1620" length="11">RollingWave</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1324" length="1">I</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1663" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132573872780" name="entity-PER-3" type="PER">
+      <entity_mention id="m-346" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1025" length="6">McCain</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1045" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132574154860" name="entity-PER-4" type="PER">
+      <entity_mention id="m-307" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="982" length="6">Cantor</entity_mention>
+    </entity>
+    <entity id="ent-70132574151400" name="entity-PER-5" type="PER">
+      <entity_mention id="m-268" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="486" length="8">Norquist</entity_mention>
+    </entity>
+    <entity id="ent-70132574296880" name="entity-PER-6" type="PER">
+      <entity_mention id="m-242" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="385" length="5">Obama</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="190" length="5">Obama</entity_mention>
+      <entity_mention id="m-762" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3590" length="5">Obama</entity_mention>
+      <entity_mention id="m-788" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3714" length="5">Obama</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3742" length="5">Obama</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3948" length="5">Obama</entity_mention>
+      <entity_mention id="m-1022" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4458" length="5">Obama</entity_mention>
+    </entity>
+    <entity id="ent-70132574018000" name="entity-PER-7" type="PER">
+      <entity_mention id="m-203" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="310" length="7">Clinton</entity_mention>
+      <entity_mention id="m-229" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="355" length="7">Clinton</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="514" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132575911140" name="entity-PER-8" type="PER">
+      <entity_mention id="m-151" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="181" length="7">Boehner</entity_mention>
+    </entity>
+    <entity id="ent-70132575907720" name="entity-PER-9" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="14" length="7">snapper</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1017" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132574707040" name="entity-PER-10" type="PER">
+      <entity_mention id="m-216" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="322" length="13">Newt Gingrich</entity_mention>
+    </entity>
+    <entity id="ent-70132574703540" name="entity-PER-11" type="PER">
+      <entity_mention id="m-177" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="278" length="4">Bush</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="499" length="4">Bush</entity_mention>
+      <entity_mention id="m-840" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3877" length="4">Bush</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4015" length="4">Bush</entity_mention>
+      <entity_mention id="m-957" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4161" length="4">Bush</entity_mention>
+    </entity>
+    <entity id="ent-70132574837160" name="entity-PER-12" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="84" length="4">kato</entity_mention>
+    </entity>
+    <entity id="ent-70132574967400" name="entity-PER-14" type="PER">
+      <entity_mention id="m-645" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3061" length="20">the Governor General</entity_mention>
+    </entity>
+    <entity id="ent-70132574963880" name="entity-PER-16" type="PER">
+      <entity_mention id="m-515" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2189" length="7">Chunder</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1550" length="7">Chunder</entity_mention>
+    </entity>
+    <entity id="ent-70132575098300" name="entity-PER-17" type="PER">
+      <entity_mention id="m-1048" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4498" length="21">republican candidates</entity_mention>
+    </entity>
+    <entity id="ent-70132575094980" name="entity-PER-18" type="PER">
+      <entity_mention id="m-1087" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4658" length="6">cr9527</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="5134" length="1">I</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="5002" length="1">I</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4707" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132574968960" name="entity-PER-19" type="PER">
+      <entity_mention id="m-502" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2120" length="6">ace009</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2206" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2341" length="1">I</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3505" length="1">I</entity_mention>
+      <entity_mention id="m-1434" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4548" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132574831800" name="entity-PER-22" type="PER">
+      <entity_mention id="m-1243" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2000" length="2">We</entity_mention>
+      <entity_mention id="m-1598" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1908" length="3">our</entity_mention>
+    </entity>
+    <entity id="ent-70132574702820" name="entity-PER-1" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2369" length="9">Tea Party</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2485" length="11">Tea Parties</entity_mention>
+      <entity_mention id="m-23" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="166" length="9">Tea Party</entity_mention>
+      <entity_mention id="m-294" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="613" length="9">Tea Party</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3314" length="9">Tea Party</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3530" length="9">Tea Party</entity_mention>
+      <entity_mention id="m-1366" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3721" length="4">They</entity_mention>
+      <entity_mention id="m-879" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3973" length="22">the "Tea Party" people</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4557" length="9">tea Party</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4142" length="12">Tea partiers</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4250" length="12">tea partiers</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4371" length="12">tea partiers</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4393" length="4">they</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="937" length="4">them</entity_mention>
+      <entity_mention id="m-1667" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1054" length="4">them</entity_mention>
+    </entity>
+    <entity id="ent-70132574153600" name="entity-PER-21" type="PER">
+      <entity_mention id="m-1230" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="952" length="4">They</entity_mention>
+    </entity>
+    <entity id="ent-70132573879880" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-1165" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="5182" length="12">the military</entity_mention>
+      <entity_mention id="m-1035" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4498" length="10">republican</entity_mention>
+    </entity>
+    <entity id="ent-70132573873800" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-905" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4031" length="11">republicans</entity_mention>
+      <entity_mention id="m-1546" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="627" length="10">Republican</entity_mention>
+      <entity_mention id="m-1074" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4607" length="11">republicans</entity_mention>
+    </entity>
+    <entity id="ent-70132573733400" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-658" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3096" length="3">ALP</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3126" length="2">it</entity_mention>
+    </entity>
+    <entity id="ent-70132573604520" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-593" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2791" length="12">both parties</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2942" length="4">They</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2982" length="4">they</entity_mention>
+      <entity_mention id="m-1611" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2866" length="10">themselves</entity_mention>
+    </entity>
+    <entity id="ent-70132573339060" name="entity-ORG-1" type="ORG">
+      <entity_mention id="m-814" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3756" length="9">democrats</entity_mention>
+    </entity>
+    <entity id="ent-70132573335580" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-1269" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3195" length="14">the electorate</entity_mention>
+    </entity>
+    <entity id="ent-70132573332140" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-320" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="885" length="6">German</entity_mention>
+    </entity>
+    <entity id="ent-70132573197500" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-255" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="446" length="2">US</entity_mention>
+      <entity_mention id="m-1152" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="5030" length="2">US</entity_mention>
+      <entity_mention id="m-1126" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4988" length="2">US</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4821" length="2">US</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4273" length="2">US</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3845" length="2">US</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="2727" length="3">U.S</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1694" length="2">US</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1355" length="2">US</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3646" length="2">US</entity_mention>
+      <entity_mention id="m-1191" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1757" length="4">they</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1418" length="4">they</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1456" length="8">themself</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1795" length="8">themself</entity_mention>
+      <entity_mention id="m-723" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3358" length="10">the nation</entity_mention>
+      <entity_mention id="m-1379" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3777" length="11">the country</entity_mention>
+      <entity_mention id="m-1460" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4842" length="2">it</entity_mention>
+      <entity_mention id="m-1473" noun_type="PRO" source="a4a13a889c4f2f1f682d25d3f464471f" offset="5046" length="2">it</entity_mention>
+      <entity_mention id="m-1559" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1199" length="7">America</entity_mention>
+      <entity_mention id="m-1572" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1361" length="50">the biggest benificiary of the current world order</entity_mention>
+      <entity_mention id="m-1585" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="1700" length="50">the biggest benificiary of the current world order</entity_mention>
+    </entity>
+    <entity id="ent-70132577366160" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-931" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4108" length="11">Afghanistan</entity_mention>
+    </entity>
+    <entity id="ent-70132577362700" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-918" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="4099" length="4">Iraq</entity_mention>
+    </entity>
+    <entity id="ent-70132575499680" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-671" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3144" length="11">the country</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="3022" length="9">Australia</entity_mention>
+    </entity>
+    <entity id="ent-70132575370560" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-1654" noun_type="NOM" source="a4a13a889c4f2f1f682d25d3f464471f" offset="994" length="10">southerner</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132576271660" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-40">
+        <arg type="employeemember" entity_id="ent-70132575098300" entity_mention_id="m-1048">republican candidates</arg>
+        <arg type="org" entity_id="ent-70132573879880" entity_mention_id="m-1035">republican</arg>
+        <trigger source="a4a13a889c4f2f1f682d25d3f464471f" offset="4498" length="10">republican</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576271600" type="physical" subtype="origin">
+      <relation_mention id="relm-1481">
+        <arg type="entity" entity_id="ent-70132574967400" entity_mention_id="m-645">the Governor General</arg>
+        <arg type="loc" entity_id="ent-70132575499680" entity_mention_id="m-632">Australia</arg>
+        <trigger source="a4a13a889c4f2f1f682d25d3f464471f" offset="3019" length="2">In</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132576271520" type="physical" subtype="origin">
+      <relation_mention id="relm-1619">
+        <arg type="entity" entity_id="ent-70132574154860" entity_mention_id="m-307">Cantor</arg>
+        <arg type="loc" entity_id="ent-70132575370560" entity_mention_id="m-1654">southerner</arg>
+        <trigger source="a4a13a889c4f2f1f682d25d3f464471f" offset="994" length="10">southerner</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571764360" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="personnel" subtype="elect">
+        <trigger source="a4a13a889c4f2f1f682d25d3f464471f" offset="420" length="9">reelected</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-229" entity_id="ent-70132574018000">Clinton</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571763180" name="entity-EVENT-3">
+      <event_mention id="evm-1681" type="personnel" subtype="elect">
+        <trigger source="a4a13a889c4f2f1f682d25d3f464471f" offset="4464" length="8">election</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1022" entity_id="ent-70132574296880">Obama</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

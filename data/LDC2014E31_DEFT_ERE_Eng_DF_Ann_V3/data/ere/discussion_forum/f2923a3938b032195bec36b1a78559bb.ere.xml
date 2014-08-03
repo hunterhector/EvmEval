@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="f2923a3938b032195bec36b1a78559bb" source_type="multi_post" kit_id="5346f3680000000000000104">
+  <entities>
+    <entity id="ent-70132571706680" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="14" length="10">CurveLight</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="118" length="10">CurveLight</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2466" length="10">CurveLight</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2803" length="1">I</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="3261" length="1">I</entity_mention>
+      <entity_mention id="m-1204" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="3348" length="10">CurveLight</entity_mention>
+    </entity>
+    <entity id="ent-70132571585600" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="87" length="8">Madeline</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2613" length="3">You</entity_mention>
+    </entity>
+    <entity id="ent-70132571578840" name="entity-PER-4" type="PER">
+      <entity_mention id="m-151" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="151" length="12">RetiredGySgt</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1980" length="3">You</entity_mention>
+      <entity_mention id="m-788" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2026" length="3">you</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2049" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571559020" name="entity-PER-5" type="PER">
+      <entity_mention id="m-203" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="355" length="20">the Emperor of Japan</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="389" length="3">his</entity_mention>
+      <entity_mention id="m-710" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="1520" length="11">the Emperor</entity_mention>
+      <entity_mention id="m-736" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="1627" length="11">the Emperor</entity_mention>
+    </entity>
+    <entity id="ent-70132571538860" name="entity-PER-6" type="PER">
+      <entity_mention id="m-333" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="676" length="13">her civilians</entity_mention>
+    </entity>
+    <entity id="ent-70132571535780" name="entity-PER-7" type="PER">
+      <entity_mention id="m-1035" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="2726" length="16">A-Bomb survivors</entity_mention>
+      <entity_mention id="m-1061" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="2784" length="16">A-bomb survivors</entity_mention>
+    </entity>
+    <entity id="ent-70132571531420" name="entity-PER-8" type="PER">
+      <entity_mention id="m-1087" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="2944" length="16">A German Citizen</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="3049" length="2">he</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="3077" length="3">His</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="3129" length="3">his</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="3141" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571506400" name="entity-PER-9" type="PER">
+      <entity_mention id="m-1217" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="3421" length="15">Baruch Menachem</entity_mention>
+    </entity>
+    <entity id="ent-70132571503360" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-229" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="389" length="30">his Army Controlled Government</entity_mention>
+      <entity_mention id="m-684" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="1462" length="30">the Army controlled government</entity_mention>
+    </entity>
+    <entity id="ent-70132571496540" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-398" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="938" length="8">the Army</entity_mention>
+      <entity_mention id="m-411" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="393" length="4">Army</entity_mention>
+      <entity_mention id="m-697" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="1466" length="4">Army</entity_mention>
+      <entity_mention id="m-723" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="1590" length="8">the Army</entity_mention>
+    </entity>
+    <entity id="ent-70132571476920" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-164" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="230" length="7">Germany</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="299" length="7">Germany</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2946" length="6">German</entity_mention>
+    </entity>
+    <entity id="ent-70132571459560" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-190" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="260" length="2">We</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="471" length="2">we</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1185" length="2">us</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1287" length="2">we</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1857" length="2">we</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2203" length="2">We</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2242" length="2">we</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2286" length="2">we</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2304" length="2">we</entity_mention>
+      <entity_mention id="m-931" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2544" length="2">US</entity_mention>
+      <entity_mention id="m-970" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2627" length="2">we</entity_mention>
+      <entity_mention id="m-1100" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2982" length="2">US</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="3153" length="2">US</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="3662" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132571326820" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-216" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="370" length="5">Japan</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="493" length="5">Japan</entity_mention>
+      <entity_mention id="m-294" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="623" length="8">Japanese</entity_mention>
+      <entity_mention id="m-307" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="657" length="5">Japan</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="676" length="3">her</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="789" length="5">Japan</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="844" length="8">Japanese</entity_mention>
+      <entity_mention id="m-372" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="873" length="5">Japan</entity_mention>
+      <entity_mention id="m-385" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="926" length="5">Japan</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="983" length="4">they</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1045" length="5">Japan</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1070" length="3">she</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1108" length="8">Japanese</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1159" length="5">Japan</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1208" length="4">them</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1214" length="4">They</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1239" length="5">their</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="1303" length="5">their</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1382" length="5">Japan</entity_mention>
+      <entity_mention id="m-762" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1881" length="5">Japan</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="f2923a3938b032195bec36b1a78559bb" offset="2210" length="5">their</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2407" length="5">Japan</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2560" length="5">Japan</entity_mention>
+      <entity_mention id="m-1022" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2706" length="5">Japan</entity_mention>
+      <entity_mention id="m-1048" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2762" length="5">Japan</entity_mention>
+      <entity_mention id="m-1256" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="3615" length="5">Japan</entity_mention>
+      <entity_mention id="m-814" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2178" length="5">Japan</entity_mention>
+      <entity_mention id="m-1230" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="3443" length="8">Japanese</entity_mention>
+    </entity>
+    <entity id="ent-70132569831880" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-437" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1010" length="12">Soviet Union</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2447" length="6">Russia</entity_mention>
+    </entity>
+    <entity id="ent-70132569770260" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-502" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1150" length="7">Okinawa</entity_mention>
+    </entity>
+    <entity id="ent-70132569690420" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-593" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1245" length="7">Chinese</entity_mention>
+    </entity>
+    <entity id="ent-70132569675780" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-606" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1254" length="6">Korean</entity_mention>
+    </entity>
+    <entity id="ent-70132569670900" name="entity-GPE-9" type="GPE">
+      <entity_mention id="m-983" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2662" length="7">Vietnam</entity_mention>
+    </entity>
+    <entity id="ent-70132569620700" name="entity-GPE-10" type="GPE">
+      <entity_mention id="m-996" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2671" length="4">Iraq</entity_mention>
+    </entity>
+    <entity id="ent-70132569565460" name="entity-GPE-11" type="GPE">
+      <entity_mention id="m-1009" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="2677" length="11">Afghanistan</entity_mention>
+    </entity>
+    <entity id="ent-70132569530780" name="entity-GPE-12" type="GPE">
+      <entity_mention id="m-1243" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="3567" length="10">the allies</entity_mention>
+    </entity>
+    <entity id="ent-70132569497680" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-281" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="570" length="13">a Home Island</entity_mention>
+      <entity_mention id="m-658" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="1309" length="11">home island</entity_mention>
+    </entity>
+    <entity id="ent-70132569423440" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-632" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="1303" length="26">their home island captures</entity_mention>
+    </entity>
+    <entity id="ent-70132569415840" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-489" noun_type="NAM" source="f2923a3938b032195bec36b1a78559bb" offset="1139" length="6">Saipan</entity_mention>
+    </entity>
+    <entity id="ent-70132569392000" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-567" noun_type="NOM" source="f2923a3938b032195bec36b1a78559bb" offset="1239" length="43">their Chinese, Korean and other possessions</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132568564900" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-40">
+        <arg type="leader" entity_id="ent-70132571559020" entity_mention_id="m-203">the Emperor of Japan</arg>
+        <arg type="entity" entity_id="ent-70132571326820" entity_mention_id="m-216">Japan</arg>
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="359" length="7">Emperor</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568564780" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1277">
+        <arg type="leader" entity_id="ent-70132571559020" entity_mention_id="m-242">his</arg>
+        <arg type="entity" entity_id="ent-70132571503360" entity_mention_id="m-229">his Army Controlled Government</arg>
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="389" length="3">his</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568564700" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1307">
+        <arg type="suborg" entity_id="ent-70132571496540" entity_mention_id="m-411">Army</arg>
+        <arg type="parent" entity_id="ent-70132571503360" entity_mention_id="m-229">his Army Controlled Government</arg>
+      </relation_mention>
+      <relation_mention id="relm-1487">
+        <arg type="suborg" entity_id="ent-70132571496540" entity_mention_id="m-697">Army</arg>
+        <arg type="parent" entity_id="ent-70132571503360" entity_mention_id="m-684">the Army controlled government</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568564600" type="physical" subtype="located">
+      <relation_mention id="relm-1337">
+        <arg type="entity" entity_id="ent-70132569497680" entity_mention_id="m-281">a Home Island</arg>
+        <arg type="loc" entity_id="ent-70132571326820" entity_mention_id="m-294">Japanese</arg>
+      </relation_mention>
+      <relation_mention id="relm-1457">
+        <arg type="entity" entity_id="ent-70132569497680" entity_mention_id="m-658">home island</arg>
+        <arg type="loc" entity_id="ent-70132571326820" entity_mention_id="m-645">their</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568564480" type="physical" subtype="origin">
+      <relation_mention id="relm-1367">
+        <arg type="entity" entity_id="ent-70132571538860" entity_mention_id="m-333">her civilians</arg>
+        <arg type="loc" entity_id="ent-70132571326820" entity_mention_id="m-320">her</arg>
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="676" length="3">her</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568564400" type="physical" subtype="located">
+      <relation_mention id="relm-1397">
+        <arg type="entity" entity_id="ent-70132569392000" entity_mention_id="m-567">their Chinese, Korean and other possessions</arg>
+        <arg type="loc" entity_id="ent-70132571326820" entity_mention_id="m-580">their</arg>
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="1239" length="5">their</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568564260" type="physical" subtype="located">
+      <relation_mention id="relm-1427">
+        <arg type="entity" entity_id="ent-70132569423440" entity_mention_id="m-632">their home island captures</arg>
+        <arg type="loc" entity_id="ent-70132569497680" entity_mention_id="m-658">home island</arg>
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="1303" length="5">their</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568564160" type="physical" subtype="origin">
+      <relation_mention id="relm-1517">
+        <arg type="entity" entity_id="ent-70132571531420" entity_mention_id="m-1087">A German Citizen</arg>
+        <arg type="loc" entity_id="ent-70132571476920" entity_mention_id="m-1191">German</arg>
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="2946" length="6">German</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132573194060" name="entity-EVENT-2">
+      <event_mention id="evm-1553" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="342" length="5">bombs</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-190" entity_id="ent-70132571459560">We</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-216">Japan</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-1595" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="1456" length="5">Bombs</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-619" entity_id="ent-70132571459560">we</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-671">Japan</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-1653" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="1818" length="5">bombs</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-749" entity_id="ent-70132571459560">we</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-762">Japan</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-1695" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="2150" length="5">bombs</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-827" entity_id="ent-70132571459560">We</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-814">Japan</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-1737" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="2257" length="5">bombs</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-853" entity_id="ent-70132571459560">we</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-840">their</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-1779" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="2337" length="5">bombs</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-879" entity_id="ent-70132571459560">we</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1821" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="2370" length="5">bombs</trigger>
+        <args/>
+        <places>
+          <place entity_mention_id="m-892">Japan</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-2055" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="3634" length="5">bombs</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-1269" entity_id="ent-70132571459560">we</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1256">Japan</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132573192840" name="entity-EVENT-3">
+      <event_mention id="evm-1863" type="transaction" subtype="transfermoney">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="2777" length="6">paying</trigger>
+        <args>
+          <arg type="giver" entity_mention_id="m-1048" entity_id="ent-70132571326820">Japan</arg>
+          <arg type="recipient" entity_mention_id="m-1061" entity_id="ent-70132571535780">A-bomb survivors</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573060500" name="entity-EVENT-4">
+      <event_mention id="evm-1913" type="movement" subtype="transportperson">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="2986" length="5">taken</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-1087" entity_id="ent-70132571531420">A German Citizen</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573059320" name="entity-EVENT-5">
+      <event_mention id="evm-1963" type="conflict" subtype="attack">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="3015" length="8">tortured</trigger>
+        <args>
+          <arg type="target" entity_mention_id="m-1087" entity_id="ent-70132571531420">A German Citizen</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573058140" name="entity-EVENT-6">
+      <event_mention id="evm-2005" type="justice" subtype="sue">
+        <trigger source="f2923a3938b032195bec36b1a78559bb" offset="3144" length="4">sued</trigger>
+        <args>
+          <arg type="plaintiff" entity_mention_id="m-1152" entity_id="ent-70132571531420">he</arg>
+          <arg type="defendant" entity_mention_id="m-1165" entity_id="ent-70132571459560">US</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="c7fa604381a2269b05b8938eb9edf9cf" source_type="multi_post" kit_id="5395da0e0000000000000002">
+  <entities>
+    <entity id="ent-70132573463360" name="entity-PER-2" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="102" length="5">Major</entity_mention>
+      <entity_mention id="m-151" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="111" length="40">the only party leader in British history</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="160" length="3">his</entity_mention>
+      <entity_mention id="m-229" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="301" length="5">Major</entity_mention>
+      <entity_mention id="m-268" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="599" length="5">Major</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2635" length="5">Major</entity_mention>
+    </entity>
+    <entity id="ent-70132573192860" name="entity-PER-3" type="PER">
+      <entity_mention id="m-216" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="238" length="5">Blair</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1906" length="10">Tony Blair</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2508" length="10">Tony Blair</entity_mention>
+    </entity>
+    <entity id="ent-70132573053180" name="entity-PER-4" type="PER">
+      <entity_mention id="m-307" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="772" length="3">she</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="817" length="3">she</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="929" length="3">her</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1344" length="3">She</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1399" length="3">her</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1620" length="8">Thatcher</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1708" length="3">she</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1839" length="8">Thatcher</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2222" length="8">Thatcher</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2310" length="3">she</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2377" length="3">she</entity_mention>
+      <entity_mention id="m-762" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2441" length="8">Thatcher</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2945" length="3">her</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3083" length="3">her</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3133" length="3">her</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1775" length="3">she</entity_mention>
+    </entity>
+    <entity id="ent-70132577368100" name="entity-PER-5" type="PER">
+      <entity_mention id="m-333" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="875" length="39">the current leaders of the main parties</entity_mention>
+      <entity_mention id="m-918" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2891" length="39">the current leaders of the main parties</entity_mention>
+    </entity>
+    <entity id="ent-70132575502220" name="entity-PER-6" type="PER">
+      <entity_mention id="m-372" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="959" length="47">any of the idiots currently leading the parties</entity_mention>
+      <entity_mention id="m-957" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2975" length="47">any of the idiots currently leading the parties</entity_mention>
+    </entity>
+    <entity id="ent-70132575495980" name="entity-PER-7" type="PER">
+      <entity_mention id="m-476" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1252" length="2">he</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2702" length="5">Brown</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1170" length="12">Gordon Brown</entity_mention>
+    </entity>
+    <entity id="ent-70132575364220" name="entity-PER-8" type="PER">
+      <entity_mention id="m-840" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2664" length="9">Callaghan</entity_mention>
+    </entity>
+    <entity id="ent-70132577146700" name="entity-PER-9" type="PER">
+      <entity_mention id="m-853" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2678" length="6">Attlee</entity_mention>
+    </entity>
+    <entity id="ent-70132577143360" name="entity-PER-10" type="PER">
+      <entity_mention id="m-879" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2736" length="5">Heath</entity_mention>
+    </entity>
+    <entity id="ent-70132577017060" name="entity-PER-11" type="PER">
+      <entity_mention id="m-788" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2522" length="13">David Cameron</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1920" length="13">David Cameron</entity_mention>
+    </entity>
+    <entity id="ent-70132577011080" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1035" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3133" length="14">her successors</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3183" length="4">them</entity_mention>
+    </entity>
+    <entity id="ent-70132576890180" name="entity-PER-13" type="PER">
+      <entity_mention id="m-1113" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3505" length="6">Hitler</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3543" length="2">he</entity_mention>
+      <entity_mention id="m-1555" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5832" length="6">Hitler</entity_mention>
+      <entity_mention id="m-1581" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5877" length="2">he</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5926" length="2">he</entity_mention>
+      <entity_mention id="m-1620" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5960" length="2">He</entity_mention>
+      <entity_mention id="m-1646" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="6000" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132574567720" name="entity-PER-14" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="14" length="8">Teaddict</entity_mention>
+    </entity>
+    <entity id="ent-70132574563960" name="entity-PER-18" type="PER">
+      <entity_mention id="m-411" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1104" length="9">Genocidal</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1116" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576638500" name="entity-PER-19" type="PER">
+      <entity_mention id="m-398" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1030" length="11">Snagprophet</entity_mention>
+    </entity>
+    <entity id="ent-70132576634520" name="entity-PER-20" type="PER">
+      <entity_mention id="m-892" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2765" length="8">limetang</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3035" length="1">I</entity_mention>
+      <entity_mention id="m-294" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="744" length="8">limetang</entity_mention>
+    </entity>
+    <entity id="ent-70132576387900" name="entity-PER-1" type="PER">
+      <entity_mention id="m-905" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2836" length="10">Will Lucky</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="671" length="10">Will Lucky</entity_mention>
+    </entity>
+    <entity id="ent-70132576143880" name="entity-PER-16" type="PER">
+      <entity_mention id="m-489" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1290" length="11">xnatalie01x</entity_mention>
+    </entity>
+    <entity id="ent-70132575632960" name="entity-PER-22" type="PER">
+      <entity_mention id="m-671" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2008" length="13">nulli tertius</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2599" length="1">i</entity_mention>
+    </entity>
+    <entity id="ent-70132575626100" name="entity-PER-23" type="PER">
+      <entity_mention id="m-684" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2084" length="10">9MmBulletz</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2178" length="6">myself</entity_mention>
+      <entity_mention id="m-801" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2549" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1442" length="10">9MmBulletz</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1576" length="6">myself</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1947" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577598700" name="entity-PER-17" type="PER">
+      <entity_mention id="m-996" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3059" length="8">the PM's</entity_mention>
+    </entity>
+    <entity id="ent-70132577268120" name="entity-PER-24" type="PER">
+      <entity_mention id="m-1074" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3375" length="14">Erich Hartmann</entity_mention>
+    </entity>
+    <entity id="ent-70132577264420" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1061" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3305" length="7">jus2sik</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3681" length="1">i</entity_mention>
+    </entity>
+    <entity id="ent-70132576512500" name="entity-PER-26" type="PER">
+      <entity_mention id="m-1217" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4042" length="3">you</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4852" length="3">you</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5431" length="1">I</entity_mention>
+      <entity_mention id="m-1412" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5552" length="8">tulley11</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5563" length="1">I</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5612" length="3">you</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5638" length="3">You</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5668" length="3">you</entity_mention>
+      <entity_mention id="m-2112" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4632" length="8">tulley11</entity_mention>
+      <entity_mention id="m-2125" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3782" length="8">tulley11</entity_mention>
+    </entity>
+    <entity id="ent-70132572644360" name="entity-PER-27" type="PER">
+      <entity_mention id="m-1152" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3714" length="5">IB_19</entity_mention>
+      <entity_mention id="m-1399" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5484" length="5">IB_19</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5622" length="1">I</entity_mention>
+      <entity_mention id="m-1529" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5687" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571762020" name="entity-PER-28" type="PER">
+      <entity_mention id="m-1178" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3905" length="1">I</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3974" length="1">I</entity_mention>
+      <entity_mention id="m-1230" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4089" length="1">I</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4715" length="1">I</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4784" length="1">I</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4899" length="1">I</entity_mention>
+      <entity_mention id="m-2099" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4703" length="9">bradshawi</entity_mention>
+      <entity_mention id="m-1438" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5455" length="5">troll</entity_mention>
+      <entity_mention id="m-1451" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5587" length="5">troll</entity_mention>
+      <entity_mention id="m-1490" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5630" length="5">troll</entity_mention>
+    </entity>
+    <entity id="ent-70132571579600" name="entity-PER-29" type="PER">
+      <entity_mention id="m-1594" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5903" length="1">I</entity_mention>
+      <entity_mention id="m-2138" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5811" length="14">MagicNMedicine</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="85" length="14">MagicNMedicine</entity_mention>
+    </entity>
+    <entity id="ent-70132571562940" name="entity-PER-15" type="PER">
+      <entity_mention id="m-1542" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5742" length="6">Barden</entity_mention>
+      <entity_mention id="m-1672" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="6199" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571557640" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-177" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="120" length="5">party</entity_mention>
+      <entity_mention id="m-190" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="160" length="9">his party</entity_mention>
+    </entity>
+    <entity id="ent-70132571543920" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-255" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="453" length="6">Tories</entity_mention>
+      <entity_mention id="m-2177" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4132" length="12">Conservative</entity_mention>
+      <entity_mention id="m-2190" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4495" length="13">Conservatives</entity_mention>
+      <entity_mention id="m-2203" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4799" length="13">Conservatives</entity_mention>
+      <entity_mention id="m-2216" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4942" length="12">Conservative</entity_mention>
+      <entity_mention id="m-2229" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5305" length="13">Conservatives</entity_mention>
+      <entity_mention id="m-2164" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3989" length="13">Conservatives</entity_mention>
+      <entity_mention id="m-2151" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3819" length="12">Conservative</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3859" length="5">their</entity_mention>
+      <entity_mention id="m-1191" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3945" length="4">they</entity_mention>
+      <entity_mention id="m-1295" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4755" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132571507000" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-580" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1618" length="25">a Thatcher administration</entity_mention>
+      <entity_mention id="m-723" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2220" length="25">a Thatcher administration</entity_mention>
+    </entity>
+    <entity id="ent-70132571501440" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-1659" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="6190" length="5">Nazis</entity_mention>
+    </entity>
+    <entity id="ent-70132571498040" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-346" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="898" length="16">the main parties</entity_mention>
+      <entity_mention id="m-931" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="2914" length="16">the main parties</entity_mention>
+    </entity>
+    <entity id="ent-70132571484260" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-385" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="995" length="11">the parties</entity_mention>
+      <entity_mention id="m-970" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3011" length="11">the parties</entity_mention>
+    </entity>
+    <entity id="ent-70132571478800" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-1360" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5327" length="6">Labour</entity_mention>
+      <entity_mention id="m-1256" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4517" length="6">Labour</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="429" length="12">Labour party</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4418" length="6">Labour</entity_mention>
+      <entity_mention id="m-1269" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="4542" length="4">they</entity_mention>
+      <entity_mention id="m-1347" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5228" length="6">Labour</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5352" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132571451860" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-164" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="136" length="7">British</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="c7fa604381a2269b05b8938eb9edf9cf" offset="1369" length="2">We</entity_mention>
+    </entity>
+    <entity id="ent-70132571413700" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-1100" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3485" length="7">Germany</entity_mention>
+      <entity_mention id="m-1633" noun_type="NAM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="5972" length="6">German</entity_mention>
+    </entity>
+    <entity id="ent-70132571406700" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-1087" noun_type="NOM" source="c7fa604381a2269b05b8938eb9edf9cf" offset="3468" length="24">various parts of Germany</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132569673300" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-40">
+        <arg type="employeemember" entity_id="ent-70132573463360" entity_mention_id="m-151">the only party leader in British history</arg>
+        <arg type="org" entity_id="ent-70132571557640" entity_mention_id="m-177">party</arg>
+        <trigger source="c7fa604381a2269b05b8938eb9edf9cf" offset="126" length="6">leader</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569673200" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1680">
+        <arg type="suborg" entity_id="ent-70132571557640" entity_mention_id="m-177">party</arg>
+        <arg type="parent" entity_id="ent-70132571451860" entity_mention_id="m-164">British</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569673140" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1710">
+        <arg type="leader" entity_id="ent-70132573463360" entity_mention_id="m-203">his</arg>
+        <arg type="entity" entity_id="ent-70132571557640" entity_mention_id="m-190">his party</arg>
+        <trigger source="c7fa604381a2269b05b8938eb9edf9cf" offset="164" length="5">party</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569673080" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1740">
+        <arg type="leader" entity_id="ent-70132577368100" entity_mention_id="m-333">the current leaders of the main parties</arg>
+        <arg type="entity" entity_id="ent-70132571498040" entity_mention_id="m-346">the main parties</arg>
+        <trigger source="c7fa604381a2269b05b8938eb9edf9cf" offset="887" length="7">leaders</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1860">
+        <arg type="leader" entity_id="ent-70132577368100" entity_mention_id="m-918">the current leaders of the main parties</arg>
+        <arg type="entity" entity_id="ent-70132571498040" entity_mention_id="m-931">the main parties</arg>
+        <trigger source="c7fa604381a2269b05b8938eb9edf9cf" offset="2903" length="7">leaders</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569672940" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1770">
+        <arg type="leader" entity_id="ent-70132575502220" entity_mention_id="m-372">any of the idiots currently leading the parties</arg>
+        <arg type="entity" entity_id="ent-70132571484260" entity_mention_id="m-385">the parties</arg>
+        <trigger source="c7fa604381a2269b05b8938eb9edf9cf" offset="987" length="7">leading</trigger>
+      </relation_mention>
+      <relation_mention id="relm-1890">
+        <arg type="leader" entity_id="ent-70132575502220" entity_mention_id="m-957">any of the idiots currently leading the parties</arg>
+        <arg type="entity" entity_id="ent-70132571484260" entity_mention_id="m-970">the parties</arg>
+        <trigger source="c7fa604381a2269b05b8938eb9edf9cf" offset="3003" length="7">leading</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569672760" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1800">
+        <arg type="leader" entity_id="ent-70132573053180" entity_mention_id="m-567">Thatcher</arg>
+        <arg type="entity" entity_id="ent-70132571507000" entity_mention_id="m-580">a Thatcher administration</arg>
+      </relation_mention>
+      <relation_mention id="relm-1830">
+        <arg type="leader" entity_id="ent-70132573053180" entity_mention_id="m-710">Thatcher</arg>
+        <arg type="entity" entity_id="ent-70132571507000" entity_mention_id="m-723">a Thatcher administration</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569672660" type="physical" subtype="located">
+      <relation_mention id="relm-1950">
+        <arg type="entity" entity_id="ent-70132571406700" entity_mention_id="m-1087">various parts of Germany</arg>
+        <arg type="loc" entity_id="ent-70132571413700" entity_mention_id="m-1100">Germany</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132569364880" name="entity-EVENT-2">
+      <event_mention id="evm-2016" type="personnel" subtype="elect">
+        <trigger source="c7fa604381a2269b05b8938eb9edf9cf" offset="244" length="10">landslides</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-216" entity_id="ent-70132573192860">Blair</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="c7fa604381a2269b05b8938eb9edf9cf" offset="258" length="4">1997</date_extent>
+          <normalized_date>1997-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132569362960" name="entity-EVENT-3">
+      <event_mention id="evm-2058" type="personnel" subtype="elect">
+        <trigger source="c7fa604381a2269b05b8938eb9edf9cf" offset="244" length="10">landslides</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-216" entity_id="ent-70132573192860">Blair</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="c7fa604381a2269b05b8938eb9edf9cf" offset="267" length="4">2001</date_extent>
+          <normalized_date>2001-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

@@ -1,0 +1,129 @@
+<post author="boomerang" datetime="2005-01-09T18:51:00" id="p1">
+When I was little my mom used to sing to me (and now I sing to Mo):
+
+I love you
+A bushel and a peck
+And a hug around the neck
+A barrel and a peep
+And I'm talking in my sleep
+About you
+
+I kind of understand what a "bushel" and a "peck" (like Peter Piper picked, right?) and a "barrel" but what is a "peep"?
+
+Also, is there a specific number that represents those odd measurements like barrel, peck, bushel, stone, hand, etc?
+
+What are some of the other odd units of measurement?
+
+Thanks!
+</post>
+<post author="markr" datetime="2005-01-09T20:02:00" id="p2">
+1 bushel (U.S.) = 4 pecks = 32 quarts (dry) = 2,150.42 cubic inches
+1 barrel (standard, non-cranberry) = 7,056 cubic inches
+1 stone = 14 pounds
+1 hand = 4 inches
+
+Other potentially odd units:
+Length: rod, pole, perch, furlong, link, chain, league, fathom
+Area: are, hectare, bolt
+Capacitiy: board foot, cord, dram, gill
+Weight/Mass: bale, carat, dram, gamma, grain, hundredweight, pennyweight
+</post>
+<post author="boomerang" datetime="2005-01-09T20:43:00" id="p3">
+Thank you, markr.
+
+So I guess if someone loves you a bushel and a peck they love you five pecks worth.
+
+I've always assumed that "bolt" refered to length - a bolt of fabric being a certain lenght regardless of it's width. I suppose in fabric terms that bolt is an arbitrary measurement.
+
+Since you really seem to know what you're talking about but that you fail to mention a "peep" I'm going to guess that it was chosen because it rhymes with "sleep".
+</post>
+<post author="markr" datetime="2005-01-09T20:56:00" id="p4">
+I got this out of an almanac. Peep wasn't listed. Also, there are other sizes for barrels:
+oil = 42 gallons
+liquid = 7276.5 cubic inches
+The one I listed previously was dry.
+
+For some reason, the almanac had bolt listed in the area section.
+
+I also have a book called a Pocket Ref. It lists other odd units.
+
+1 firkin = 9 gallons
+1 butt (Brit) = 2 hogsheads (Brit) = 126 gallons (U.S.)
+</post>
+<post author="boomerang" datetime="2005-01-09T21:25:00" id="p5">
+A firkin and a hogshead?
+
+You really have to wonder why those measurements came about.
+
+Neither 9 nor 126 gallons seem to make enough sense to require their own word.
+
+I wonder if perhaps a "cask" held one of those amounts.
+</post>
+<post author="DrewDad" datetime="2005-01-09T21:37:00" id="p6">
+firkin (fir) [1]
+a traditional unit of volume equal to 1/4 barrel or 1/2 kilderkin. Since barrels are of various sizes, the capacity of a firkin varies. Based on the standard U.S. barrel of 31.5 gallons, a firkin would equal 7.875 gallons, 1.05 cubic feet, or about 29.81 liters. Traditional British barrels and firkins are larger; in the imperial system a firkin holds 1.445 cubic feet or 40.91 liters. The unit is of Dutch origin, and its name is based on the Dutch word vier for four.
+firkin (fir) [2]
+a traditional unit of weight for butter and soap, equal to 4 stone or 56 pounds (about 25.40 kilograms).
+</post>
+<post author="DrewDad" datetime="2005-01-09T21:44:00" id="p7">
+I also found "pip" and "pipa" (which is Portugese, so I suppose it might be pronounced "peep-a").
+
+pip
+the smallest measured change in a currency conversion rate. This depends on the relative values of the two currency units: in converting euros to U.S. dollars, for example, a pip is 0.0001, but in converting U.S. dollars to Japanese yen a pip is 0.01. This unit is also called a tick [2].
+pipa
+a traditional Portuguese unit of liquid volume, originally very similar in size to the English pipe (see next entry). The pipa has become a metric unit equal to exactly 500 liters, which is 0.5 cubic meter, 132.085 U.S. gallons, or 109.996 British imperial gallons.
+pipe
+like the butt, the pipe is a traditional unit of liquid volume generally equal to 2 hogsheads. In the U.S., this means a pipe equals 126 U.S.gallons, about 16.844 cubic feet or 476.96 liters. In Britain it's more complicated, because traditional British hogsheads were of different sizes depending on what they contained. The British pipe was usually used as a wine measure, but even different types of wine had different size pipes.
+</post>
+<post author="DrewDad" datetime="2005-01-09T21:45:00" id="p8">
+Here's the site I used:
+
+<a href="http://www.unc.edu/~rowlett/units/">http://www.unc.edu/~rowlett/units/</a>
+</post>
+<post author="farmerman" datetime="2005-01-09T21:49:00" id="p9">
+used to set up road rallyes for people who were looking for a weekend drive with instructions. I always made our speed units in furlongs per fortnight. Thus everyone, besides driving TO a place, ahd to go there at a set velocity.
+
+PING
+
+oertsed
+
+poise
+
+munsell number
+
+there are ssome really good sites on the web that provide conversions
+</post>
+<post author="Adrian" datetime="2005-01-09T22:01:00" id="p10">
+There are 125,000 nanons in a gnat's eye and 8,040 grys in a smoot.
+
+Don't know what a peep is though.
+</post>
+<post author="boomerang" datetime="2005-01-09T22:11:00" id="p11">
+56 pound of butter or soap!? What a strange number to measure either of those!
+
+Hmmm. A pipa, like a barrel seems to be a liquid measure so mabye that is what a "peep" refers to!
+
+I will have to put together (or find someone who can) an equation to signify the love in this song.
+
+(Ohhhh. I have a great idea on where I could immortalize that equation! Please. Someome smarter than me figure it out!)
+
+farmerman, you are a most complicated man. So mysterioso!
+
+What do those numbers refer to?
+
+Thanks to littlek's link to microscopic photos I know about gnats eyes:
+
+<img src="http://www.astrographics.com/GalleryPrints/Thumbnail/GP2064-over.jpg" alt="http://www.astrographics.com/GalleryPrints/Thumbnail/GP2064-over.jpg"/>
+
+but really, what the heck do those measurements mean?
+</post>
+<post author="farmerman" datetime="2005-01-10T06:20:00" id="p12">
+well, a ping is a measure of areaa tthat is used in Taaiwan for floor spaace. Its aabout 12 sq feet. We used to rent office space by
+the "Ping"
+
+aAn oersted is the cgs unit of magnetic intensity, we use a smaller unit, the gamma.
+
+a poise is a unit of viscosity
+
+a Munsell number is a number given to describe every color known. It a number based on hue and chroma
+</post>

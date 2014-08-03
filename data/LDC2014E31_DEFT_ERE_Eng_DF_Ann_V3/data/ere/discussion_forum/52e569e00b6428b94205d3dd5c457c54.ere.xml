@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="52e569e00b6428b94205d3dd5c457c54" source_type="multi_post" kit_id="53a52d7e0000000000000002">
+  <entities>
+    <entity id="ent-70132568733040" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="83" length="5">Gunny</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="751" length="5">Gunny</entity_mention>
+      <entity_mention id="m-2010" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4648" length="5">Gunny</entity_mention>
+      <entity_mention id="m-1360" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3272" length="5">Gunny</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3033" length="2">my</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3222" length="2">MY</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2602" length="5">Gunny</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2695" length="5">Gunny</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3230" length="1">I</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3084" length="1">I</entity_mention>
+      <entity_mention id="m-1230" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2999" length="2">My</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2971" length="1">I</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2914" length="2">me</entity_mention>
+      <entity_mention id="m-2400" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="6154" length="5">Gunny</entity_mention>
+      <entity_mention id="m-2387" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="6133" length="5">Gunny</entity_mention>
+      <entity_mention id="m-2218" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5412" length="5">Gunny</entity_mention>
+      <entity_mention id="m-2140" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="5057" length="2">my</entity_mention>
+      <entity_mention id="m-2257" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="5473" length="2">my</entity_mention>
+      <entity_mention id="m-2465" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="6385" length="2">my</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="120" length="1">I</entity_mention>
+      <entity_mention id="m-3669" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="1048" length="5">Gunny</entity_mention>
+      <entity_mention id="m-3682" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="6324" length="5">Gunny</entity_mention>
+    </entity>
+    <entity id="ent-70132567511560" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="14" length="6">Paulie</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="97" length="3">you</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="677" length="3">You</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="758" length="2">My</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1055" length="2">My</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="1023" length="9">Paulitics</entity_mention>
+      <entity_mention id="m-1074" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2670" length="9">Paulitics</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1181" length="1">I</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="884" length="1">I</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="787" length="1">I</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1084" length="1">I</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2702" length="2">My</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2731" length="1">I</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2828" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132567413780" name="entity-PER-6" type="PER">
+      <entity_mention id="m-554" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="954" length="6">editec</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1336" length="2">me</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1250" length="1">I</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1240" length="2">Me</entity_mention>
+      <entity_mention id="m-3404" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1354" length="2">my</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="1802" length="6">editec</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1462" length="1">I</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1433" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132575233500" name="entity-PER-1" type="PER">
+      <entity_mention id="m-476" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="1170" length="2">us</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="873" length="2">us</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2817" length="2">us</entity_mention>
+    </entity>
+    <entity id="ent-70132577592760" name="entity-PER-7" type="PER">
+      <entity_mention id="m-840" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="2156" length="9">my family</entity_mention>
+      <entity_mention id="m-1412" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3364" length="9">my family</entity_mention>
+      <entity_mention id="m-1685" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3923" length="9">my family</entity_mention>
+      <entity_mention id="m-1958" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="4572" length="19">a family of Marines</entity_mention>
+      <entity_mention id="m-2049" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="4939" length="19">a family of Marines</entity_mention>
+    </entity>
+    <entity id="ent-70132576514700" name="entity-PER-8" type="PER">
+      <entity_mention id="m-827" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2156" length="2">my</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2290" length="2">my</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2305" length="1">I</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2235" length="1">I</entity_mention>
+      <entity_mention id="m-1373" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3340" length="6">Amanda</entity_mention>
+      <entity_mention id="m-1464" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3498" length="2">my</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3364" length="2">my</entity_mention>
+      <entity_mention id="m-1594" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3706" length="2">my</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2551" length="1">I</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2492" length="1">I</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2442" length="1">I</entity_mention>
+      <entity_mention id="m-1997" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4607" length="4">your</entity_mention>
+      <entity_mention id="m-1763" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4057" length="2">my</entity_mention>
+      <entity_mention id="m-1776" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4072" length="1">I</entity_mention>
+      <entity_mention id="m-1737" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4002" length="1">I</entity_mention>
+      <entity_mention id="m-1919" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4318" length="1">I</entity_mention>
+      <entity_mention id="m-1880" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4265" length="2">my</entity_mention>
+      <entity_mention id="m-1893" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4276" length="1">I</entity_mention>
+      <entity_mention id="m-1867" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4259" length="1">I</entity_mention>
+      <entity_mention id="m-1828" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4209" length="1">I</entity_mention>
+      <entity_mention id="m-3600" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4816" length="3">you</entity_mention>
+      <entity_mention id="m-3587" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4449" length="3">you</entity_mention>
+      <entity_mention id="m-2101" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4974" length="4">your</entity_mention>
+      <entity_mention id="m-1451" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3443" length="1">I</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3513" length="1">I</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2509" length="1">I</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3650" length="1">I</entity_mention>
+      <entity_mention id="m-1581" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3700" length="1">I</entity_mention>
+      <entity_mention id="m-1607" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3717" length="1">I</entity_mention>
+      <entity_mention id="m-1633" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3759" length="1">I</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2092" length="6">Amanda</entity_mention>
+      <entity_mention id="m-1698" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3923" length="2">my</entity_mention>
+      <entity_mention id="m-1659" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3899" length="6">Amanda</entity_mention>
+    </entity>
+    <entity id="ent-70132571544160" name="entity-PER-9" type="PER">
+      <entity_mention id="m-736" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="1965" length="17">The washing woman</entity_mention>
+      <entity_mention id="m-684" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="1876" length="18">that washing woman</entity_mention>
+      <entity_mention id="m-3561" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="1898" length="65">the daughter of a bar girl from olongapo who migrated to kinville</entity_mention>
+    </entity>
+    <entity id="ent-70132571535920" name="entity-PER-11" type="PER">
+      <entity_mention id="m-866" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="2196" length="11">all of them</entity_mention>
+      <entity_mention id="m-1438" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3404" length="11">all of them</entity_mention>
+      <entity_mention id="m-1724" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3963" length="11">all of them</entity_mention>
+      <entity_mention id="m-814" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="2141" length="24">All the men in my family</entity_mention>
+      <entity_mention id="m-1386" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3349" length="24">All the men in my family</entity_mention>
+      <entity_mention id="m-1672" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3908" length="24">All the men in my family</entity_mention>
+    </entity>
+    <entity id="ent-70132571511740" name="entity-PER-12" type="PER">
+      <entity_mention id="m-658" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="1732" length="7">pegwinn</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2018" length="1">I</entity_mention>
+      <entity_mention id="m-2335" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5876" length="7">pegwinn</entity_mention>
+      <entity_mention id="m-2374" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="6077" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571500740" name="entity-PER-14" type="PER">
+      <entity_mention id="m-1243" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3033" length="14">my grandfather</entity_mention>
+      <entity_mention id="m-1269" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3049" length="10">his father</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3049" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132571484260" name="entity-PER-15" type="PER">
+      <entity_mention id="m-1204" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="2999" length="9">My father</entity_mention>
+    </entity>
+    <entity id="ent-70132571480860" name="entity-PER-16" type="PER">
+      <entity_mention id="m-970" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="2449" length="9">a brother</entity_mention>
+      <entity_mention id="m-1555" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3657" length="9">a brother</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2563" length="2">he</entity_mention>
+      <entity_mention id="m-1932" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4330" length="2">he</entity_mention>
+      <entity_mention id="m-1841" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="4216" length="9">a brother</entity_mention>
+      <entity_mention id="m-3391" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="3771" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571456600" name="entity-PER-17" type="PER">
+      <entity_mention id="m-2023" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4716" length="6">bk1983</entity_mention>
+      <entity_mention id="m-1646" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3830" length="6">bk1983</entity_mention>
+      <entity_mention id="m-2348" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5946" length="6">bk1983</entity_mention>
+      <entity_mention id="m-2205" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5343" length="6">bk1983</entity_mention>
+      <entity_mention id="m-1984" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4592" length="1">I</entity_mention>
+      <entity_mention id="m-2088" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4959" length="1">I</entity_mention>
+      <entity_mention id="m-2322" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="5751" length="1">I</entity_mention>
+      <entity_mention id="m-2361" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="5958" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571359660" name="entity-PER-18" type="PER">
+      <entity_mention id="m-788" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2046" length="4">your</entity_mention>
+      <entity_mention id="m-3574" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="2025" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571337500" name="entity-PER-19" type="PER">
+      <entity_mention id="m-2413" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="6258" length="3">CSM</entity_mention>
+      <entity_mention id="m-2517" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="6640" length="2">me</entity_mention>
+    </entity>
+    <entity id="ent-70132571331200" name="entity-PER-20" type="PER">
+      <entity_mention id="m-2127" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="5057" length="11">my brothers</entity_mention>
+      <entity_mention id="m-2244" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="5473" length="11">my brothers</entity_mention>
+      <entity_mention id="m-2452" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="6385" length="11">my brothers</entity_mention>
+      <entity_mention id="m-3643" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="6095" length="12">the siblings</entity_mention>
+    </entity>
+    <entity id="ent-70132571295360" name="entity-PER-21" type="PER">
+      <entity_mention id="m-2426" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="6338" length="2">we</entity_mention>
+    </entity>
+    <entity id="ent-70132571291700" name="entity-PER-23" type="PER">
+      <entity_mention id="m-697" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="1914" length="49">a bar girl from olongapo who migrated to kinville</entity_mention>
+    </entity>
+    <entity id="ent-70132571263680" name="entity-PER-4" type="PER">
+      <entity_mention id="m-749" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="1965" length="28">The washing woman's daughter</entity_mention>
+    </entity>
+    <entity id="ent-70132571260140" name="entity-PER-5" type="PER">
+      <entity_mention id="m-3233" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="5300" length="19">the West Point grad</entity_mention>
+      <entity_mention id="m-3246" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="5716" length="19">the West Point grad</entity_mention>
+    </entity>
+    <entity id="ent-70132570226520" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-1971" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4584" length="7">Marines</entity_mention>
+      <entity_mention id="m-2504" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="6598" length="6">Marine</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="139" length="7">Marines</entity_mention>
+      <entity_mention id="m-1425" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3391" length="7">Marines</entity_mention>
+      <entity_mention id="m-1516" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3542" length="7">Marines</entity_mention>
+      <entity_mention id="m-1711" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3950" length="7">Marines</entity_mention>
+      <entity_mention id="m-2062" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4951" length="7">Marines</entity_mention>
+      <entity_mention id="m-1802" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4101" length="7">Marines</entity_mention>
+      <entity_mention id="m-931" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2334" length="7">Marines</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2183" length="7">Marines</entity_mention>
+    </entity>
+    <entity id="ent-70132570111040" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-255" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="280" length="4">they</entity_mention>
+      <entity_mention id="m-242" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="271" length="4">Navy</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="1320" length="3">NAV</entity_mention>
+    </entity>
+    <entity id="ent-70132570079500" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-385" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="703" length="5">USAAF</entity_mention>
+      <entity_mention id="m-281" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="395" length="15">you powderpuffs</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="199" length="3">you</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="256" length="3">you</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="296" length="3">you</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="445" length="4">your</entity_mention>
+      <entity_mention id="m-3535" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="499" length="5">y'all</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="516" length="3">you</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="586" length="3">you</entity_mention>
+      <entity_mention id="m-3548" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="609" length="5">y'all</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="662" length="3">you</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="165" length="9">Air Force</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2988" length="9">Air Force</entity_mention>
+    </entity>
+    <entity id="ent-70132569626460" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-1321" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="3115" length="18">the other services</entity_mention>
+    </entity>
+    <entity id="ent-70132569569580" name="entity-ORG-11" type="ORG">
+      <entity_mention id="m-2309" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5720" length="10">West Point</entity_mention>
+      <entity_mention id="m-2192" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5304" length="10">West Point</entity_mention>
+    </entity>
+    <entity id="ent-70132569515920" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-437" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="463" length="21">the 3 useful services</entity_mention>
+    </entity>
+    <entity id="ent-70132569482540" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-346" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="651" length="4">Army</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2382" length="4">Army</entity_mention>
+      <entity_mention id="m-1529" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3590" length="4">Army</entity_mention>
+      <entity_mention id="m-1945" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4503" length="4">Army</entity_mention>
+      <entity_mention id="m-2036" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4870" length="4">Army</entity_mention>
+      <entity_mention id="m-2296" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5663" length="4">Army</entity_mention>
+      <entity_mention id="m-2439" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="6359" length="4">Army</entity_mention>
+      <entity_mention id="m-3656" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3071" length="4">Army</entity_mention>
+      <entity_mention id="m-2530" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="6735" length="4">Army</entity_mention>
+      <entity_mention id="m-2491" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="6451" length="4">Army</entity_mention>
+      <entity_mention id="m-2478" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="6401" length="4">Army</entity_mention>
+      <entity_mention id="m-2283" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5539" length="4">Army</entity_mention>
+      <entity_mention id="m-1490" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3463" length="4">Army</entity_mention>
+      <entity_mention id="m-2270" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5489" length="4">Army</entity_mention>
+      <entity_mention id="m-2231" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5447" length="4">Army</entity_mention>
+      <entity_mention id="m-2179" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5247" length="4">Army</entity_mention>
+      <entity_mention id="m-2166" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5123" length="4">Army</entity_mention>
+      <entity_mention id="m-2153" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5073" length="4">Army</entity_mention>
+      <entity_mention id="m-2114" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="5031" length="4">Army</entity_mention>
+      <entity_mention id="m-1815" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4149" length="4">Army</entity_mention>
+      <entity_mention id="m-1750" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4022" length="4">Army</entity_mention>
+      <entity_mention id="m-1503" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2255" length="4">Army</entity_mention>
+    </entity>
+    <entity id="ent-70132568781700" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-190" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="185" length="2">we</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="433" length="2">we</entity_mention>
+      <entity_mention id="m-1789" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="4080" length="2">we</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="52e569e00b6428b94205d3dd5c457c54" offset="242" length="2">We</entity_mention>
+    </entity>
+    <entity id="ent-70132568758900" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-1022" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2536" length="6">Iraqis</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="2462" length="4">Iraq</entity_mention>
+      <entity_mention id="m-1620" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3744" length="6">Iraqis</entity_mention>
+      <entity_mention id="m-1568" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="3670" length="4">Iraq</entity_mention>
+      <entity_mention id="m-1854" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4229" length="4">Iraq</entity_mention>
+      <entity_mention id="m-1906" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="4303" length="6">Iraqis</entity_mention>
+    </entity>
+    <entity id="ent-70132568727920" name="entity-GPE-1" type="GPE">
+      <entity_mention id="m-710" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="1930" length="8">olongapo</entity_mention>
+    </entity>
+    <entity id="ent-70132568716200" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-723" noun_type="NAM" source="52e569e00b6428b94205d3dd5c457c54" offset="1955" length="8">kinville</entity_mention>
+    </entity>
+    <entity id="ent-70132568702200" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-762" noun_type="NOM" source="52e569e00b6428b94205d3dd5c457c54" offset="2003" length="12">a mojo house</entity_mention>
+    </entity>
+    <entity id="ent-70132568696700" name="entity-TITLE-3" type="TITLE">
+      <entity_mention id="m-1217" noun_type="NA" source="52e569e00b6428b94205d3dd5c457c54" offset="3022" length="5">Chief</entity_mention>
+    </entity>
+    <entity id="ent-70132568692040" name="entity-TITLE-1" type="TITLE">
+      <entity_mention id="m-1295" noun_type="NA" source="52e569e00b6428b94205d3dd5c457c54" offset="3076" length="6">SgtMaj</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132572927940" type="social" subtype="family">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132571544160" entity_mention_id="m-684">that washing woman</arg>
+        <arg type="per" entity_id="ent-70132571291700" entity_mention_id="m-697">a bar girl from olongapo who migrated to kinville</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="1902" length="8">daughter</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927880" type="physical" subtype="origin">
+      <relation_mention id="relm-2538">
+        <arg type="entity" entity_id="ent-70132571291700" entity_mention_id="m-697">a bar girl from olongapo who migrated to kinville</arg>
+        <arg type="loc" entity_id="ent-70132568727920" entity_mention_id="m-710">olongapo</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="1925" length="4">from</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927820" type="social" subtype="family">
+      <relation_mention id="relm-2568">
+        <arg type="per" entity_id="ent-70132571544160" entity_mention_id="m-736">The washing woman</arg>
+        <arg type="per" entity_id="ent-70132571263680" entity_mention_id="m-749">The washing woman's daughter</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="1985" length="8">daughter</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927760" type="social" subtype="family">
+      <relation_mention id="relm-2598">
+        <arg type="per" entity_id="ent-70132576514700" entity_mention_id="m-827">my</arg>
+        <arg type="per" entity_id="ent-70132577592760" entity_mention_id="m-840">my family</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="2159" length="6">family</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2898">
+        <arg type="per" entity_id="ent-70132576514700" entity_mention_id="m-1399">my</arg>
+        <arg type="per" entity_id="ent-70132577592760" entity_mention_id="m-1412">my family</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3367" length="6">family</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3048">
+        <arg type="per" entity_id="ent-70132576514700" entity_mention_id="m-1698">my</arg>
+        <arg type="per" entity_id="ent-70132577592760" entity_mention_id="m-1685">my family</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3926" length="6">family</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927700" type="social" subtype="family">
+      <relation_mention id="relm-2628">
+        <arg type="per" entity_id="ent-70132571535920" entity_mention_id="m-814">All the men in my family</arg>
+        <arg type="per" entity_id="ent-70132577592760" entity_mention_id="m-840">my family</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="2153" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2928">
+        <arg type="per" entity_id="ent-70132571535920" entity_mention_id="m-1386">All the men in my family</arg>
+        <arg type="per" entity_id="ent-70132577592760" entity_mention_id="m-1412">my family</arg>
+      </relation_mention>
+      <relation_mention id="relm-3078">
+        <arg type="per" entity_id="ent-70132571535920" entity_mention_id="m-1672">All the men in my family</arg>
+        <arg type="per" entity_id="ent-70132577592760" entity_mention_id="m-1685">my family</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3920" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927640" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-2658">
+        <arg type="employeemember" entity_id="ent-70132571535920" entity_mention_id="m-814">All the men in my family</arg>
+        <arg type="org" entity_id="ent-70132570226520" entity_mention_id="m-853">Marines</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="2178" length="4">been</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2958">
+        <arg type="employeemember" entity_id="ent-70132571535920" entity_mention_id="m-1386">All the men in my family</arg>
+        <arg type="org" entity_id="ent-70132570226520" entity_mention_id="m-1425">Marines</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3386" length="4">been</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3108">
+        <arg type="employeemember" entity_id="ent-70132571535920" entity_mention_id="m-1672">All the men in my family</arg>
+        <arg type="org" entity_id="ent-70132570226520" entity_mention_id="m-1711">Marines</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3945" length="4">been</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927580" type="social" subtype="family">
+      <relation_mention id="relm-2688">
+        <arg type="per" entity_id="ent-70132576514700" entity_mention_id="m-957">I</arg>
+        <arg type="per" entity_id="ent-70132571480860" entity_mention_id="m-970">a brother</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="2451" length="7">brother</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2988">
+        <arg type="per" entity_id="ent-70132576514700" entity_mention_id="m-1542">I</arg>
+        <arg type="per" entity_id="ent-70132571480860" entity_mention_id="m-1555">a brother</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3659" length="7">brother</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3138">
+        <arg type="per" entity_id="ent-70132576514700" entity_mention_id="m-1828">I</arg>
+        <arg type="per" entity_id="ent-70132571480860" entity_mention_id="m-1841">a brother</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="4218" length="7">brother</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927480" type="physical" subtype="located">
+      <relation_mention id="relm-2718">
+        <arg type="entity" entity_id="ent-70132571480860" entity_mention_id="m-970">a brother</arg>
+        <arg type="loc" entity_id="ent-70132568758900" entity_mention_id="m-983">Iraq</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="2459" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3018">
+        <arg type="entity" entity_id="ent-70132571480860" entity_mention_id="m-1555">a brother</arg>
+        <arg type="loc" entity_id="ent-70132568758900" entity_mention_id="m-1568">Iraq</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3667" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3168">
+        <arg type="entity" entity_id="ent-70132571480860" entity_mention_id="m-1841">a brother</arg>
+        <arg type="loc" entity_id="ent-70132568758900" entity_mention_id="m-1854">Iraq</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="4226" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927420" type="social" subtype="family">
+      <relation_mention id="relm-2748">
+        <arg type="per" entity_id="ent-70132568733040" entity_mention_id="m-1230">My</arg>
+        <arg type="per" entity_id="ent-70132571484260" entity_mention_id="m-1204">My father</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3002" length="6">father</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927360" type="social" subtype="role">
+      <relation_mention id="relm-2778">
+        <arg type="role" entity_id="ent-70132568696700" entity_mention_id="m-1217">Chief</arg>
+        <arg type="per" entity_id="ent-70132571484260" entity_mention_id="m-1204">My father</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927300" type="social" subtype="family">
+      <relation_mention id="relm-2838">
+        <arg type="per" entity_id="ent-70132571500740" entity_mention_id="m-1282">his</arg>
+        <arg type="per" entity_id="ent-70132571500740" entity_mention_id="m-1269">his father</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3053" length="6">father</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927240" type="social" subtype="family">
+      <relation_mention id="relm-3198">
+        <arg type="per" entity_id="ent-70132568733040" entity_mention_id="m-2140">my</arg>
+        <arg type="per" entity_id="ent-70132571331200" entity_mention_id="m-2127">my brothers</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="5060" length="8">brothers</trigger>
+      </relation_mention>
+      <relation_mention id="relm-3284">
+        <arg type="per" entity_id="ent-70132568733040" entity_mention_id="m-2465">my</arg>
+        <arg type="per" entity_id="ent-70132571331200" entity_mention_id="m-2452">my brothers</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="6388" length="8">brothers</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927180" type="social" subtype="family">
+      <relation_mention id="relm-3470">
+        <arg type="per" entity_id="ent-70132568733040" entity_mention_id="m-1256">my</arg>
+        <arg type="per" entity_id="ent-70132571500740" entity_mention_id="m-1243">my grandfather</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3036" length="11">grandfather</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927120" type="social" subtype="role">
+      <relation_mention id="relm-3500">
+        <arg type="role" entity_id="ent-70132568692040" entity_mention_id="m-1295">SgtMaj</arg>
+        <arg type="per" entity_id="ent-70132571500740" entity_mention_id="m-1269">his father</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132572927060" type="social" subtype="family">
+      <relation_mention id="relm-3608">
+        <arg type="per" entity_id="ent-70132571331200" entity_mention_id="m-2244">my brothers</arg>
+        <arg type="per" entity_id="ent-70132568733040" entity_mention_id="m-2257">my</arg>
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="5476" length="8">brothers</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132573605960" name="entity-EVENT-3">
+      <event_mention id="evm-3350" type="personnel" subtype="endposition">
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3014" length="7">retired</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1204" entity_id="ent-70132571484260">My father</arg>
+          <arg type="position" entity_mention_id="m-1217" entity_id="ent-70132568696700">Chief</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573604900" name="entity-EVENT-1">
+      <event_mention id="evm-3426" type="personnel" subtype="endposition">
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="3063" length="7">retired</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-1269" entity_id="ent-70132571500740">his father</arg>
+          <arg type="position" entity_mention_id="m-1295" entity_id="ent-70132568692040">SgtMaj</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132573603800" name="entity-EVENT-4">
+      <event_mention id="evm-84" type="movement" subtype="transportperson">
+        <trigger source="52e569e00b6428b94205d3dd5c457c54" offset="1943" length="8">migrated</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-697" entity_id="ent-70132571291700">a bar girl from olongapo who migrated to kinville</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-723">kinville</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

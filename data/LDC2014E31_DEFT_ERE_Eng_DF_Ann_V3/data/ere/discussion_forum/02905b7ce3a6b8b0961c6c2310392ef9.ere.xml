@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="02905b7ce3a6b8b0961c6c2310392ef9" source_type="multi_post" kit_id="5355f7d70000000000000006">
+  <entities>
+    <entity id="ent-70132569274940" name="entity-PER-2" type="PER">
+      <entity_mention id="m-138" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="67" length="30">The Jewish minority in Finland</entity_mention>
+      <entity_mention id="m-164" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="121" length="5">1,500</entity_mention>
+    </entity>
+    <entity id="ent-70132569263200" name="entity-PER-3" type="PER">
+      <entity_mention id="m-177" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="131" length="31">total population of 3.5 million</entity_mention>
+    </entity>
+    <entity id="ent-70132569173120" name="entity-PER-4" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="14" length="11">Kalevalatar</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1277" length="1">I</entity_mention>
+      <entity_mention id="m-996" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3049" length="11">Kalevalatar</entity_mention>
+      <entity_mention id="m-1022" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3128" length="3">you</entity_mention>
+      <entity_mention id="m-1009" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3082" length="4">your</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3220" length="6">myself</entity_mention>
+      <entity_mention id="m-1490" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="4329" length="3">you</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="4273" length="3">you</entity_mention>
+      <entity_mention id="m-2490" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="2961" length="11">Kalevalatar</entity_mention>
+    </entity>
+    <entity id="ent-70132568779160" name="entity-PER-5" type="PER">
+      <entity_mention id="m-190" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="178" length="3">350</entity_mention>
+    </entity>
+    <entity id="ent-70132568762980" name="entity-PER-6" type="PER">
+      <entity_mention id="m-216" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="282" length="2">23</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="290" length="5">their</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="315" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132568741700" name="entity-PER-8" type="PER">
+      <entity_mention id="m-294" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="371" length="13">Salomon Klass</entity_mention>
+      <entity_mention id="m-307" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="396" length="16">the most notable</entity_mention>
+      <entity_mention id="m-775" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1566" length="13">Salomon Klass</entity_mention>
+    </entity>
+    <entity id="ent-70132568731320" name="entity-PER-9" type="PER">
+      <entity_mention id="m-385" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="605" length="5">their</entity_mention>
+      <entity_mention id="m-359" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="574" length="20">all Finnish soldiers</entity_mention>
+    </entity>
+    <entity id="ent-70132568700400" name="entity-PER-10" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="651" length="18">many Finnish women</entity_mention>
+    </entity>
+    <entity id="ent-70132568700180" name="entity-PER-11" type="PER">
+      <entity_mention id="m-450" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="785" length="11">Lotta Svärd</entity_mention>
+    </entity>
+    <entity id="ent-70132568689260" name="entity-PER-12" type="PER">
+      <entity_mention id="m-463" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="799" length="29">Finnish women of Jewish faith</entity_mention>
+    </entity>
+    <entity id="ent-70132568671260" name="entity-PER-13" type="PER">
+      <entity_mention id="m-489" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="938" length="34">two Finnish ladies of Muslim faith</entity_mention>
+    </entity>
+    <entity id="ent-70132568658040" name="entity-PER-14" type="PER">
+      <entity_mention id="m-528" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="974" length="6">Tatars</entity_mention>
+      <entity_mention id="m-541" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="982" length="24">another Finnish minority</entity_mention>
+      <entity_mention id="m-554" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1008" length="48">who also served on the front as Finnish soldiers</entity_mention>
+    </entity>
+    <entity id="ent-70132568588880" name="entity-PER-15" type="PER">
+      <entity_mention id="m-619" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1201" length="23">the non-Christian Finns</entity_mention>
+    </entity>
+    <entity id="ent-70132568565060" name="entity-PER-17" type="PER">
+      <entity_mention id="m-658" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1392" length="35">three Finns of the Jewish community</entity_mention>
+    </entity>
+    <entity id="ent-70132568550080" name="entity-PER-18" type="PER">
+      <entity_mention id="m-710" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1501" length="11">Leo Skurnik</entity_mention>
+      <entity_mention id="m-2464" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1514" length="3">who</entity_mention>
+    </entity>
+    <entity id="ent-70132568451400" name="entity-PER-19" type="PER">
+      <entity_mention id="m-736" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1535" length="20">several German lives</entity_mention>
+    </entity>
+    <entity id="ent-70132568444920" name="entity-PER-20" type="PER">
+      <entity_mention id="m-788" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1584" length="14">Dina Poljakoff</entity_mention>
+    </entity>
+    <entity id="ent-70132567525920" name="entity-PER-21" type="PER">
+      <entity_mention id="m-905" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1990" length="11">Väinö Linna</entity_mention>
+    </entity>
+    <entity id="ent-70132567518680" name="entity-PER-22" type="PER">
+      <entity_mention id="m-983" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="2995" length="9">Biblicist</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3284" length="1">I</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3347" length="1">I</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3305" length="1">I</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3432" length="2">me</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3560" length="1">I</entity_mention>
+      <entity_mention id="m-1217" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3683" length="1">I</entity_mention>
+      <entity_mention id="m-1243" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3719" length="1">I</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="4173" length="2">My</entity_mention>
+    </entity>
+    <entity id="ent-70132567459200" name="entity-PER-25" type="PER">
+      <entity_mention id="m-1464" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="4210" length="10">a legation</entity_mention>
+    </entity>
+    <entity id="ent-70132567450500" name="entity-PER-23" type="PER">
+      <entity_mention id="m-268" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="335" length="11">Quite a few</entity_mention>
+    </entity>
+    <entity id="ent-70132567442600" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-398" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="611" length="31">own "home" battalions and units</entity_mention>
+    </entity>
+    <entity id="ent-70132567426840" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-606" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1069" length="5">Lotta</entity_mention>
+      <entity_mention id="m-931" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="2711" length="5">Lotta</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="2782" length="6">Lottas</entity_mention>
+      <entity_mention id="m-1919" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1609" length="5">Lotta</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="891" length="5">Lotta</entity_mention>
+      <entity_mention id="m-424" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="702" length="75">a voluntary auxiliary paramilitary home guard for women called the "Lottas"</entity_mention>
+    </entity>
+    <entity id="ent-70132567377740" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-1360" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3894" length="11">these units</entity_mention>
+      <entity_mention id="m-1373" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3934" length="23">these same German units</entity_mention>
+      <entity_mention id="m-1256" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3769" length="104">the German regiments which were fighting alongside Finish units against Soviet aggression toward Finland</entity_mention>
+      <entity_mention id="m-1386" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3976" length="9">the enemy</entity_mention>
+    </entity>
+    <entity id="ent-70132577597560" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-1295" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3820" length="12">Finish units</entity_mention>
+    </entity>
+    <entity id="ent-70132577594440" name="entity-ORG-1" type="ORG">
+      <entity_mention id="m-333" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="432" length="11">a battalion</entity_mention>
+    </entity>
+    <entity id="ent-70132577594940" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-151" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="90" length="7">Finland</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="202" length="7">Finnish</entity_mention>
+      <entity_mention id="m-255" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="315" length="18">their home country</entity_mention>
+      <entity_mention id="m-372" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="578" length="7">Finnish</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="799" length="7">Finnish</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1040" length="7">Finnish</entity_mention>
+      <entity_mention id="m-567" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="990" length="7">Finnish</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="942" length="7">Finnish</entity_mention>
+      <entity_mention id="m-866" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1632" length="7">Finnish</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="2058" length="7">Finland</entity_mention>
+      <entity_mention id="m-1035" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3182" length="8">Finlands</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3384" length="7">Finland</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3409" length="3">its</entity_mention>
+      <entity_mention id="m-1230" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3711" length="7">Finland</entity_mention>
+      <entity_mention id="m-1308" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3820" length="6">Finish</entity_mention>
+      <entity_mention id="m-1334" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3866" length="7">Finland</entity_mention>
+      <entity_mention id="m-1399" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="4078" length="8">Finlands</entity_mention>
+      <entity_mention id="m-1451" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="4224" length="7">Finland</entity_mention>
+      <entity_mention id="m-1756" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="656" length="7">Finnish</entity_mention>
+    </entity>
+    <entity id="ent-70132571764940" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-684" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1450" length="6">German</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1543" length="6">German</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3651" length="6">German</entity_mention>
+      <entity_mention id="m-1269" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3773" length="6">German</entity_mention>
+      <entity_mention id="m-1412" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="4104" length="7">Germany</entity_mention>
+      <entity_mention id="m-1178" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3608" length="7">Germans</entity_mention>
+      <entity_mention id="m-2477" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3945" length="6">German</entity_mention>
+    </entity>
+    <entity id="ent-70132571590920" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-1061" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3232" length="9">Australia</entity_mention>
+    </entity>
+    <entity id="ent-70132571593460" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-1204" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3668" length="10">Stalingrad</entity_mention>
+    </entity>
+    <entity id="ent-70132571583180" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-1321" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3841" length="6">Soviet</entity_mention>
+    </entity>
+    <entity id="ent-70132571579500" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-1347" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3922" length="6">Norway</entity_mention>
+    </entity>
+    <entity id="ent-70132571568440" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-1438" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="4202" length="2">US</entity_mention>
+    </entity>
+    <entity id="ent-70132571564980" name="entity-GPE-9" type="GPE">
+      <entity_mention id="m-1165" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3587" length="8">Russians</entity_mention>
+    </entity>
+    <entity id="ent-70132571568500" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-593" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1027" length="9">the front</entity_mention>
+      <entity_mention id="m-970" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="2802" length="15">the front lines</entity_mention>
+    </entity>
+    <entity id="ent-70132571555880" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-814" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="269" length="7">Lapland</entity_mention>
+      <entity_mention id="m-827" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1369" length="7">Lapland</entity_mention>
+    </entity>
+    <entity id="ent-70132571542200" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-892" noun_type="NAM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1671" length="6">Syväri</entity_mention>
+    </entity>
+    <entity id="ent-70132571538720" name="entity-LOC-1" type="LOC">
+      <entity_mention id="m-840" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1617" length="60">The improvised Finnish Jewish field/tent synagogue in Syväri</entity_mention>
+    </entity>
+    <entity id="ent-70132571535880" name="entity-LOC-6" type="LOC">
+      <entity_mention id="m-957" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="2749" length="14">the home front</entity_mention>
+    </entity>
+    <entity id="ent-70132571532300" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-320" noun_type="NA" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="419" length="9">commander</entity_mention>
+    </entity>
+    <entity id="ent-70132571520820" name="entity-TITLE-3" type="TITLE">
+      <entity_mention id="m-281" noun_type="NA" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="361" length="8">Captains</entity_mention>
+      <entity_mention id="m-697" noun_type="NA" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1493" length="7">Captain</entity_mention>
+      <entity_mention id="m-762" noun_type="NA" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1558" length="7">Captain</entity_mention>
+    </entity>
+    <entity id="ent-70132571510860" name="entity-TITLE-4" type="TITLE">
+      <entity_mention id="m-723" noun_type="NOM" source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1523" length="5">medic</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132569267760" type="physical" subtype="located">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132569274940" entity_mention_id="m-138">The Jewish minority in Finland</arg>
+        <arg type="loc" entity_id="ent-70132577594940" entity_mention_id="m-151">Finland</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="87" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569267440" type="physical" subtype="origin">
+      <relation_mention id="relm-1511">
+        <arg type="entity" entity_id="ent-70132568762980" entity_mention_id="m-242">their</arg>
+        <arg type="loc" entity_id="ent-70132577594940" entity_mention_id="m-255">their home country</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="315" length="5">their</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569267340" type="social" subtype="role">
+      <relation_mention id="relm-1541">
+        <arg type="role" entity_id="ent-70132571532300" entity_mention_id="m-320">commander</arg>
+        <arg type="per" entity_id="ent-70132568741700" entity_mention_id="m-307">the most notable</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="414" length="2">as</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569267240" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1571">
+        <arg type="leader" entity_id="ent-70132568741700" entity_mention_id="m-307">the most notable</arg>
+        <arg type="entity" entity_id="ent-70132577594440" entity_mention_id="m-333">a battalion</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="419" length="9">commander</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569267040" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1601">
+        <arg type="employeemember" entity_id="ent-70132568731320" entity_mention_id="m-385">their</arg>
+        <arg type="org" entity_id="ent-70132567442600" entity_mention_id="m-398">own "home" battalions and units</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569266920" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1631">
+        <arg type="employeemember" entity_id="ent-70132568700400" entity_mention_id="m-411">many Finnish women</arg>
+        <arg type="org" entity_id="ent-70132567426840" entity_mention_id="m-424">a voluntary auxiliary paramilitary home guard for women called the "Lottas"</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="691" length="7">serving</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569266840" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1661">
+        <arg type="employeemember" entity_id="ent-70132568671260" entity_mention_id="m-489">two Finnish ladies of Muslim faith</arg>
+        <arg type="org" entity_id="ent-70132567426840" entity_mention_id="m-476">Lotta</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="924" length="10">membership</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569266700" type="physical" subtype="origin">
+      <relation_mention id="relm-1691">
+        <arg type="entity" entity_id="ent-70132568689260" entity_mention_id="m-463">Finnish women of Jewish faith</arg>
+        <arg type="loc" entity_id="ent-70132577594940" entity_mention_id="m-502">Finnish</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="799" length="7">Finnish</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569266360" type="physical" subtype="origin">
+      <relation_mention id="relm-1721">
+        <arg type="entity" entity_id="ent-70132568700400" entity_mention_id="m-411">many Finnish women</arg>
+        <arg type="loc" entity_id="ent-70132577594940" entity_mention_id="m-1756">Finnish</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="656" length="7">Finnish</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569266220" type="physical" subtype="origin">
+      <relation_mention id="relm-1764">
+        <arg type="entity" entity_id="ent-70132568671260" entity_mention_id="m-489">two Finnish ladies of Muslim faith</arg>
+        <arg type="loc" entity_id="ent-70132577594940" entity_mention_id="m-515">Finnish</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="942" length="7">Finnish</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569265900" type="physical" subtype="origin">
+      <relation_mention id="relm-1794">
+        <arg type="entity" entity_id="ent-70132568658040" entity_mention_id="m-541">another Finnish minority</arg>
+        <arg type="loc" entity_id="ent-70132577594940" entity_mention_id="m-567">Finnish</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="990" length="7">Finnish</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569265740" type="physical" subtype="located">
+      <relation_mention id="relm-1824">
+        <arg type="entity" entity_id="ent-70132568658040" entity_mention_id="m-554">who also served on the front as Finnish soldiers</arg>
+        <arg type="loc" entity_id="ent-70132571568500" entity_mention_id="m-593">the front</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1024" length="2">on</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569265640" type="social" subtype="role">
+      <relation_mention id="relm-1854">
+        <arg type="role" entity_id="ent-70132571520820" entity_mention_id="m-697">Captain</arg>
+        <arg type="per" entity_id="ent-70132568550080" entity_mention_id="m-710">Leo Skurnik</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569265540" type="social" subtype="role">
+      <relation_mention id="relm-1884">
+        <arg type="role" entity_id="ent-70132571520820" entity_mention_id="m-762">Captain</arg>
+        <arg type="per" entity_id="ent-70132568741700" entity_mention_id="m-775">Salomon Klass</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569265420" type="physical" subtype="origin">
+      <relation_mention id="relm-1927">
+        <arg type="entity" entity_id="ent-70132568451400" entity_mention_id="m-736">several German lives</arg>
+        <arg type="loc" entity_id="ent-70132571764940" entity_mention_id="m-749">German</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1543" length="6">German</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569265220" type="physical" subtype="located">
+      <relation_mention id="relm-1987">
+        <arg type="entity" entity_id="ent-70132571538720" entity_mention_id="m-840">The improvised Finnish Jewish field/tent synagogue in Syväri</arg>
+        <arg type="loc" entity_id="ent-70132571542200" entity_mention_id="m-892">Syväri</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="1668" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569264640" type="physical" subtype="origin">
+      <relation_mention id="relm-2017">
+        <arg type="entity" entity_id="ent-70132569173120" entity_mention_id="m-1048">myself</arg>
+        <arg type="loc" entity_id="ent-70132571590920" entity_mention_id="m-1061">Australia</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3227" length="4">from</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569264580" type="physical" subtype="origin">
+      <relation_mention id="relm-2047">
+        <arg type="entity" entity_id="ent-70132567377740" entity_mention_id="m-1256">the German regiments which were fighting alongside Finish units against Soviet aggression toward Finland</arg>
+        <arg type="loc" entity_id="ent-70132571764940" entity_mention_id="m-1269">German</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3773" length="6">German</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569264440" type="physical" subtype="origin">
+      <relation_mention id="relm-2077">
+        <arg type="entity" entity_id="ent-70132577597560" entity_mention_id="m-1295">Finish units</arg>
+        <arg type="loc" entity_id="ent-70132577594940" entity_mention_id="m-1308">Finish</arg>
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3820" length="6">Finish</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132568613460" name="entity-EVENT-2">
+      <event_mention id="evm-2247" type="conflict" subtype="attack">
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="878" length="3">War</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-463" entity_id="ent-70132568689260">Finnish women of Jewish faith</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-593">the front</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132568595240" name="entity-EVENT-5">
+      <event_mention id="evm-2331" type="conflict" subtype="attack">
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3658" length="6">attack</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-1191" entity_id="ent-70132571764940">German</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1204">Stalingrad</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132568592640" name="entity-EVENT-1">
+      <event_mention id="evm-2373" type="conflict" subtype="attack">
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="3801" length="8">fighting</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-1256" entity_id="ent-70132567377740">the German regiments which were fighting alongside Finish units against Soviet aggression toward Finland</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132568590840" name="entity-EVENT-6">
+      <event_mention id="evm-2155" type="personnel" subtype="startposition">
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="352" length="8">promoted</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-268" entity_id="ent-70132567450500">Quite a few</arg>
+          <arg type="position" entity_mention_id="m-281" entity_id="ent-70132571520820">Captains</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132568588900" name="entity-EVENT-7">
+      <event_mention id="evm-84" type="conflict" subtype="attack">
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="217" length="4">wars</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-190" entity_id="ent-70132568779160">350</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132568569680" name="entity-EVENT-3">
+      <event_mention id="evm-2113" type="life" subtype="die">
+        <trigger source="02905b7ce3a6b8b0961c6c2310392ef9" offset="285" length="4">gave</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-216" entity_id="ent-70132568762980">23</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

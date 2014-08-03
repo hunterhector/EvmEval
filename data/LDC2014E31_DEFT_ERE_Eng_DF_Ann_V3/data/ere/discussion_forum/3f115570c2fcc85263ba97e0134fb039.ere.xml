@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="3f115570c2fcc85263ba97e0134fb039" source_type="multi_post" kit_id="5346f3680000000000000041">
+  <entities>
+    <entity id="ent-70132571358400" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="14" length="10">tinydancer</entity_mention>
+      <entity_mention id="m-125" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="104" length="17">a conservationist</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="122" length="1">I</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="168" length="1">I</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="228" length="1">I</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="1249" length="10">tinydancer</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="1487" length="2">me</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="1649" length="1">I</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="1824" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571292840" name="entity-PER-3" type="PER">
+      <entity_mention id="m-320" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="677" length="13">its workforce</entity_mention>
+      <entity_mention id="m-346" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="692" length="19">about 200 employees</entity_mention>
+    </entity>
+    <entity id="ent-70132571260780" name="entity-PER-4" type="PER">
+      <entity_mention id="m-398" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="1069" length="4">kyzr</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="1321" length="4">kyzr</entity_mention>
+    </entity>
+    <entity id="ent-70132570248000" name="entity-PER-5" type="PER">
+      <entity_mention id="m-528" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="1690" length="25">an awesome finance critic</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="1716" length="11">Amanda Lang</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="1732" length="3">she</entity_mention>
+    </entity>
+    <entity id="ent-70132570168900" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-203" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="367" length="16">Evergreen Energy</entity_mention>
+      <entity_mention id="m-606" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="346" length="20">Stimulus beneficiary</entity_mention>
+    </entity>
+    <entity id="ent-70132570155860" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-216" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="405" length="5">Ener1</entity_mention>
+      <entity_mention id="m-229" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="412" length="84">a manufacturer of batteries for electric vehicles and recipient of Stimulus largesse</entity_mention>
+    </entity>
+    <entity id="ent-70132570146100" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-255" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="536" length="13">Las Vegas Sun</entity_mention>
+    </entity>
+    <entity id="ent-70132570107600" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-268" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="563" length="12">Amonix, Inc.</entity_mention>
+      <entity_mention id="m-281" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="577" length="75">a manufacturer of solar panels that received $5.9 million from the Porkulus</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="677" length="3">its</entity_mention>
+    </entity>
+    <entity id="ent-70132570049020" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-424" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="1175" length="8">Solyndra</entity_mention>
+      <entity_mention id="m-476" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="1388" length="8">Solyndra</entity_mention>
+    </entity>
+    <entity id="ent-70132569944260" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-411" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="1115" length="4">They</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="3f115570c2fcc85263ba97e0134fb039" offset="1328" length="4">They</entity_mention>
+    </entity>
+    <entity id="ent-70132569882960" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-593" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="1843" length="14">the government</entity_mention>
+    </entity>
+    <entity id="ent-70132569827560" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-177" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="314" length="10">Washington</entity_mention>
+    </entity>
+    <entity id="ent-70132569769900" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-307" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="536" length="9">Las Vegas</entity_mention>
+    </entity>
+    <entity id="ent-70132569687780" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-372" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="758" length="6">Nevada</entity_mention>
+    </entity>
+    <entity id="ent-70132569674220" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-567" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="1748" length="7">Germany</entity_mention>
+    </entity>
+    <entity id="ent-70132569624500" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-359" noun_type="NOM" source="3f115570c2fcc85263ba97e0134fb039" offset="745" length="9">a factory</entity_mention>
+    </entity>
+    <entity id="ent-70132569567060" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-502" noun_type="NAM" source="3f115570c2fcc85263ba97e0134fb039" offset="1522" length="4">Euro</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132568790260" type="physical" subtype="origin">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132570146100" entity_mention_id="m-255">Las Vegas Sun</arg>
+        <arg type="loc" entity_id="ent-70132569769900" entity_mention_id="m-307">Las Vegas</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568790160" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-614">
+        <arg type="employeemember" entity_id="ent-70132571292840" entity_mention_id="m-320">its workforce</arg>
+        <arg type="org" entity_id="ent-70132570107600" entity_mention_id="m-333">its</arg>
+        <trigger source="3f115570c2fcc85263ba97e0134fb039" offset="681" length="9">workforce</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568790080" type="physical" subtype="located">
+      <relation_mention id="relm-644">
+        <arg type="entity" entity_id="ent-70132571292840" entity_mention_id="m-346">about 200 employees</arg>
+        <arg type="loc" entity_id="ent-70132569687780" entity_mention_id="m-372">Nevada</arg>
+        <trigger source="3f115570c2fcc85263ba97e0134fb039" offset="755" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568789960" type="physical" subtype="located">
+      <relation_mention id="relm-674">
+        <arg type="entity" entity_id="ent-70132569624500" entity_mention_id="m-359">a factory</arg>
+        <arg type="loc" entity_id="ent-70132569687780" entity_mention_id="m-372">Nevada</arg>
+        <trigger source="3f115570c2fcc85263ba97e0134fb039" offset="755" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568789880" type="physical" subtype="located">
+      <relation_mention id="relm-704">
+        <arg type="entity" entity_id="ent-70132570248000" entity_mention_id="m-554">she</arg>
+        <arg type="loc" entity_id="ent-70132569674220" entity_mention_id="m-567">Germany</arg>
+        <trigger source="3f115570c2fcc85263ba97e0134fb039" offset="1745" length="2">to</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132568614280" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="business" subtype="endorg">
+        <trigger source="3f115570c2fcc85263ba97e0134fb039" offset="384" length="12">bit the dust</trigger>
+        <args>
+          <arg type="org" entity_mention_id="m-203" entity_id="ent-70132570168900">Evergreen Energy</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="3f115570c2fcc85263ba97e0134fb039" offset="327" length="17">Earlier this week</date_extent>
+          <normalized_date>2012-01-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132568620340" name="entity-EVENT-3">
+      <event_mention id="evm-740" type="business" subtype="declarebankruptcy">
+        <trigger source="3f115570c2fcc85263ba97e0134fb039" offset="508" length="10">bankruptcy</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-229" entity_id="ent-70132570155860">a manufacturer of batteries for electric vehicles and recipient of Stimulus largesse</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="3f115570c2fcc85263ba97e0134fb039" offset="399" length="4">Then</date_extent>
+          <normalized_date>2012-01-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132568593220" name="entity-EVENT-4">
+      <event_mention id="evm-782" type="movement" subtype="transportperson">
+        <trigger source="3f115570c2fcc85263ba97e0134fb039" offset="1740" length="4">gone</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-541" entity_id="ent-70132570248000">Amanda Lang</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-567">Germany</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132568590980" name="entity-EVENT-5">
+      <event_mention id="evm-824" type="transaction" subtype="transfermoney">
+        <trigger source="3f115570c2fcc85263ba97e0134fb039" offset="613" length="8">received</trigger>
+        <args>
+          <arg type="recipient" entity_mention_id="m-281" entity_id="ent-70132570107600">a manufacturer of solar panels that received $5.9 million from the Porkulus</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

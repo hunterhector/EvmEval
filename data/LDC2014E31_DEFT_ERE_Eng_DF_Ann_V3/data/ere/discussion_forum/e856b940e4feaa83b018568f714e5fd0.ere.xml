@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="e856b940e4feaa83b018568f714e5fd0" source_type="multi_post" kit_id="533486f60000000000000093">
+  <entities>
+    <entity id="ent-70132576143600" name="entity-PER-3" type="PER">
+      <entity_mention id="m-333" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1392" length="7">Clinton</entity_mention>
+    </entity>
+    <entity id="ent-70132575632320" name="entity-PER-4" type="PER">
+      <entity_mention id="m-710" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3150" length="6">Samson</entity_mention>
+      <entity_mention id="m-736" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3252" length="6">Samson</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="3574" length="1">I</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="3723" length="1">I</entity_mention>
+      <entity_mention id="m-892" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="3784" length="2">me</entity_mention>
+      <entity_mention id="m-1282" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5298" length="6">Samson</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="3340" length="3">you</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="3385" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132574963000" name="entity-PER-5" type="PER">
+      <entity_mention id="m-723" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3219" length="10">JiggsCasey</entity_mention>
+      <entity_mention id="m-879" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="3769" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132574833920" name="entity-PER-7" type="PER">
+      <entity_mention id="m-593" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="2716" length="10">Geologists</entity_mention>
+    </entity>
+    <entity id="ent-70132574830680" name="entity-PER-8" type="PER">
+      <entity_mention id="m-1243" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5120" length="4">Bush</entity_mention>
+      <entity_mention id="m-1555" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="6200" length="4">Bush</entity_mention>
+    </entity>
+    <entity id="ent-70132574701560" name="entity-PER-9" type="PER">
+      <entity_mention id="m-905" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3825" length="5">rdean</entity_mention>
+      <entity_mention id="m-1295" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5367" length="5">rdean</entity_mention>
+    </entity>
+    <entity id="ent-70132575907760" name="entity-PER-10" type="PER">
+      <entity_mention id="m-918" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3893" length="9">Eightball</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3957" length="9">Eightball</entity_mention>
+      <entity_mention id="m-1308" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5395" length="9">Eightball</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4374" length="3">you</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5048" length="3">You</entity_mention>
+      <entity_mention id="m-1334" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5454" length="3">you</entity_mention>
+      <entity_mention id="m-1516" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="6128" length="3">You</entity_mention>
+    </entity>
+    <entity id="ent-70132574561560" name="entity-PER-11" type="PER">
+      <entity_mention id="m-931" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3925" length="9">uscitizen</entity_mention>
+      <entity_mention id="m-1321" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5427" length="9">uscitizen</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4392" length="1">I</entity_mention>
+      <entity_mention id="m-1035" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4414" length="1">I</entity_mention>
+      <entity_mention id="m-1048" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4480" length="1">I</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4602" length="4">Your</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4681" length="4">your</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4861" length="3">you</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4963" length="3">you</entity_mention>
+      <entity_mention id="m-1165" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4972" length="3">you</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4073" length="4">Your</entity_mention>
+      <entity_mention id="m-1347" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5472" length="1">I</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5494" length="1">I</entity_mention>
+      <entity_mention id="m-1399" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5560" length="1">I</entity_mention>
+      <entity_mention id="m-1412" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5682" length="4">Your</entity_mention>
+      <entity_mention id="m-1451" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5761" length="4">your</entity_mention>
+      <entity_mention id="m-1477" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5941" length="3">you</entity_mention>
+      <entity_mention id="m-1490" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="6043" length="3">you</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="6052" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132573608140" name="entity-PER-1" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="14" length="6">KissMy</entity_mention>
+    </entity>
+    <entity id="ent-70132573604740" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-138" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="558" length="22">U.S. Geological Survey</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="582" length="4">USGS</entity_mention>
+      <entity_mention id="m-190" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="991" length="4">USGS</entity_mention>
+    </entity>
+    <entity id="ent-70132573464720" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-294" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="1308" length="7">federal</entity_mention>
+      <entity_mention id="m-359" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="1483" length="7">federal</entity_mention>
+      <entity_mention id="m-541" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="2527" length="22">the federal government</entity_mention>
+      <entity_mention id="m-476" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="2315" length="7">federal</entity_mention>
+      <entity_mention id="m-463" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="2134" length="7">federal</entity_mention>
+    </entity>
+    <entity id="ent-70132573196200" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-1646" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="6428" length="19">regulatory agencies</entity_mention>
+    </entity>
+    <entity id="ent-70132573192820" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-1256" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="5221" length="16">those industries</entity_mention>
+      <entity_mention id="m-1581" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="6301" length="16">those industries</entity_mention>
+    </entity>
+    <entity id="ent-70132575234600" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-567" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2682" length="44">American Association of Petroleum Geologists</entity_mention>
+    </entity>
+    <entity id="ent-70132577598740" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-372" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1704" length="8">Congress</entity_mention>
+    </entity>
+    <entity id="ent-70132577595400" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-320" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1392" length="22">Clinton Administration</entity_mention>
+    </entity>
+    <entity id="ent-70132577592000" name="entity-ORG-9" type="ORG">
+      <entity_mention id="m-1126" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="4818" length="3">EPA</entity_mention>
+      <entity_mention id="m-1191" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="4146" length="3">EPA</entity_mention>
+      <entity_mention id="m-1230" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5107" length="3">EPA</entity_mention>
+      <entity_mention id="m-1464" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5898" length="3">EPA</entity_mention>
+      <entity_mention id="m-1542" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="6187" length="3">EPA</entity_mention>
+      <entity_mention id="m-1607" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="6405" length="3">EPA</entity_mention>
+      <entity_mention id="m-1633" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="6420" length="3">EPA</entity_mention>
+    </entity>
+    <entity id="ent-70132576269700" name="entity-ORG-10" type="ORG">
+      <entity_mention id="m-775" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3611" length="8">Pentagon</entity_mention>
+    </entity>
+    <entity id="ent-70132576266420" name="entity-ORG-11" type="ORG">
+      <entity_mention id="m-437" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2089" length="25">U.S. Department of Energy</entity_mention>
+      <entity_mention id="m-788" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3621" length="3">DoE</entity_mention>
+    </entity>
+    <entity id="ent-70132576039140" name="entity-ORG-12" type="ORG">
+      <entity_mention id="m-762" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3606" length="3">IEA</entity_mention>
+    </entity>
+    <entity id="ent-70132576035820" name="entity-ORG-13" type="ORG">
+      <entity_mention id="m-801" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3630" length="3">EIA</entity_mention>
+    </entity>
+    <entity id="ent-70132572648860" name="entity-ORG-14" type="ORG">
+      <entity_mention id="m-1217" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5094" length="4">OSHA</entity_mention>
+      <entity_mention id="m-1529" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="6174" length="4">OSHA</entity_mention>
+      <entity_mention id="m-1594" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="6392" length="4">OSHA</entity_mention>
+      <entity_mention id="m-1620" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="6411" length="4">OSHA</entity_mention>
+    </entity>
+    <entity id="ent-70132571765780" name="entity-ORG-15" type="ORG">
+      <entity_mention id="m-840" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="3495" length="14">those entities</entity_mention>
+      <entity_mention id="m-853" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="3521" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132571706700" name="entity-ORG-16" type="ORG">
+      <entity_mention id="m-1269" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="5204" length="4">they</entity_mention>
+      <entity_mention id="m-1568" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="6284" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132571640940" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-125" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="241" length="4">U.S.</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="558" length="4">U.S.</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="582" length="2">US</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="991" length="2">US</entity_mention>
+      <entity_mention id="m-216" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1009" length="4">U.S.</entity_mention>
+      <entity_mention id="m-255" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1127" length="4">U.S.</entity_mention>
+      <entity_mention id="m-450" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2089" length="4">U.S.</entity_mention>
+      <entity_mention id="m-658" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="2926" length="10">the nation</entity_mention>
+      <entity_mention id="m-944" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="515" length="4">U.S.</entity_mention>
+      <entity_mention id="m-1100" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="4615" length="11">the country</entity_mention>
+      <entity_mention id="m-1438" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="5695" length="11">the country</entity_mention>
+      <entity_mention id="m-1672" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2205" length="4">U.S.</entity_mention>
+      <entity_mention id="m-1685" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="370" length="10">the nation</entity_mention>
+      <entity_mention id="m-2238" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="184" length="4">U.S.</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2682" length="8">American</entity_mention>
+    </entity>
+    <entity id="ent-70132571537740" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-1022" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="4410" length="2">KY</entity_mention>
+      <entity_mention id="m-1373" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="5490" length="2">KY</entity_mention>
+    </entity>
+    <entity id="ent-70132571531660" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-398" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1922" length="6">Mexico</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1976" length="6">Mexico</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2359" length="6">Mexico</entity_mention>
+    </entity>
+    <entity id="ent-70132571514460" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-268" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="1061" length="12">federal land</entity_mention>
+    </entity>
+    <entity id="ent-70132571511360" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-281" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="1269" length="51">more than 300 million onshore acres of federal land</entity_mention>
+    </entity>
+    <entity id="ent-70132571507660" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-346" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="1463" length="32">43 million acres of federal land</entity_mention>
+    </entity>
+    <entity id="ent-70132571512320" name="entity-LOC-7" type="LOC">
+      <entity_mention id="m-411" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1968" length="14">Gulf of Mexico</entity_mention>
+      <entity_mention id="m-2251" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="1914" length="14">Gulf of Mexico</entity_mention>
+      <entity_mention id="m-2264" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2351" length="14">Gulf of Mexico</entity_mention>
+    </entity>
+    <entity id="ent-70132571487440" name="entity-LOC-8" type="LOC">
+      <entity_mention id="m-489" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2343" length="22">Eastern Gulf of Mexico</entity_mention>
+    </entity>
+    <entity id="ent-70132571483900" name="entity-LOC-9" type="LOC">
+      <entity_mention id="m-515" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2371" length="14">Atlantic Ocean</entity_mention>
+    </entity>
+    <entity id="ent-70132571480160" name="entity-LOC-10" type="LOC">
+      <entity_mention id="m-528" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2397" length="13">Pacific coast</entity_mention>
+    </entity>
+    <entity id="ent-70132571477180" name="entity-LOC-11" type="LOC">
+      <entity_mention id="m-1074" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="4602" length="24">Your part of the country</entity_mention>
+      <entity_mention id="m-1425" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="5682" length="24">Your part of the country</entity_mention>
+    </entity>
+    <entity id="ent-70132571462580" name="entity-LOC-12" type="LOC">
+      <entity_mention id="m-1061" noun_type="PRO" source="e856b940e4feaa83b018568f714e5fd0" offset="4545" length="4">here</entity_mention>
+      <entity_mention id="m-1360" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="5482" length="10">eastern KY</entity_mention>
+      <entity_mention id="m-1009" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="4402" length="10">eastern KY</entity_mention>
+    </entity>
+    <entity id="ent-70132571453640" name="entity-LOC-13" type="LOC">
+      <entity_mention id="m-684" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2671" length="4">ANWR</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3027" length="4">ANWR</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2880" length="4">ANWR</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2819" length="4">ANWR</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2742" length="4">ANWR</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="2638" length="31">Arctic National Wildlife Refuge</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="e856b940e4feaa83b018568f714e5fd0" offset="3093" length="4">ANWR</entity_mention>
+      <entity_mention id="m-645" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="2885" length="37">the single most important oil reserve</entity_mention>
+    </entity>
+    <entity id="ent-70132571338400" name="entity-LOC-1" type="LOC">
+      <entity_mention id="m-385" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="1894" length="34">Western and Central Gulf of Mexico</entity_mention>
+    </entity>
+    <entity id="ent-70132571334780" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-242" noun_type="NOM" source="e856b940e4feaa83b018568f714e5fd0" offset="1119" length="11">western U.S</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132568809280" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-40">
+        <arg type="suborg" entity_id="ent-70132573604740" entity_mention_id="m-138">U.S. Geological Survey</arg>
+        <arg type="parent" entity_id="ent-70132571640940" entity_mention_id="m-151">U.S.</arg>
+      </relation_mention>
+      <relation_mention id="relm-1693">
+        <arg type="suborg" entity_id="ent-70132573604740" entity_mention_id="m-164">USGS</arg>
+        <arg type="parent" entity_id="ent-70132571640940" entity_mention_id="m-177">US</arg>
+      </relation_mention>
+      <relation_mention id="relm-1723">
+        <arg type="suborg" entity_id="ent-70132573604740" entity_mention_id="m-190">USGS</arg>
+        <arg type="parent" entity_id="ent-70132571640940" entity_mention_id="m-203">US</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568809080" type="physical" subtype="located">
+      <relation_mention id="relm-1753">
+        <arg type="entity" entity_id="ent-70132571334780" entity_mention_id="m-242">western U.S</arg>
+        <arg type="loc" entity_id="ent-70132571640940" entity_mention_id="m-255">U.S.</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568809000" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1813">
+        <arg type="leader" entity_id="ent-70132576143600" entity_mention_id="m-333">Clinton</arg>
+        <arg type="entity" entity_id="ent-70132577595400" entity_mention_id="m-320">Clinton Administration</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808860" type="physical" subtype="located">
+      <relation_mention id="relm-1843">
+        <arg type="entity" entity_id="ent-70132571338400" entity_mention_id="m-385">Western and Central Gulf of Mexico</arg>
+        <arg type="loc" entity_id="ent-70132571512320" entity_mention_id="m-2251">Gulf of Mexico</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808740" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1903">
+        <arg type="suborg" entity_id="ent-70132576266420" entity_mention_id="m-437">U.S. Department of Energy</arg>
+        <arg type="parent" entity_id="ent-70132571640940" entity_mention_id="m-450">U.S.</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808680" type="physical" subtype="located">
+      <relation_mention id="relm-1933">
+        <arg type="entity" entity_id="ent-70132571487440" entity_mention_id="m-489">Eastern Gulf of Mexico</arg>
+        <arg type="loc" entity_id="ent-70132571512320" entity_mention_id="m-2264">Gulf of Mexico</arg>
+        <trigger source="e856b940e4feaa83b018568f714e5fd0" offset="2343" length="7">Eastern</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808620" type="physical" subtype="located">
+      <relation_mention id="relm-1993">
+        <arg type="entity" entity_id="ent-70132571453640" entity_mention_id="m-645">the single most important oil reserve</arg>
+        <arg type="loc" entity_id="ent-70132571640940" entity_mention_id="m-658">the nation</arg>
+        <trigger source="e856b940e4feaa83b018568f714e5fd0" offset="2923" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808560" type="physical" subtype="located">
+      <relation_mention id="relm-2023">
+        <arg type="entity" entity_id="ent-70132574561560" entity_mention_id="m-996">I</arg>
+        <arg type="loc" entity_id="ent-70132571462580" entity_mention_id="m-1009">eastern KY</arg>
+        <trigger source="e856b940e4feaa83b018568f714e5fd0" offset="4399" length="2">in</trigger>
+      </relation_mention>
+      <relation_mention id="relm-2113">
+        <arg type="entity" entity_id="ent-70132574561560" entity_mention_id="m-1347">I</arg>
+        <arg type="loc" entity_id="ent-70132571462580" entity_mention_id="m-1360">eastern KY</arg>
+        <trigger source="e856b940e4feaa83b018568f714e5fd0" offset="5479" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808500" type="physical" subtype="located">
+      <relation_mention id="relm-2053">
+        <arg type="entity" entity_id="ent-70132571462580" entity_mention_id="m-1009">eastern KY</arg>
+        <arg type="loc" entity_id="ent-70132571537740" entity_mention_id="m-1022">KY</arg>
+      </relation_mention>
+      <relation_mention id="relm-2143">
+        <arg type="entity" entity_id="ent-70132571462580" entity_mention_id="m-1360">eastern KY</arg>
+        <arg type="loc" entity_id="ent-70132571537740" entity_mention_id="m-1373">KY</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808400" type="physical" subtype="located">
+      <relation_mention id="relm-2173">
+        <arg type="entity" entity_id="ent-70132571477180" entity_mention_id="m-1425">Your part of the country</arg>
+        <arg type="loc" entity_id="ent-70132571640940" entity_mention_id="m-1438">the country</arg>
+      </relation_mention>
+      <relation_mention id="relm-2203">
+        <arg type="entity" entity_id="ent-70132571477180" entity_mention_id="m-1074">Your part of the country</arg>
+        <arg type="loc" entity_id="ent-70132571640940" entity_mention_id="m-1100">the country</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568808260" type="physical" subtype="origin">
+      <relation_mention id="relm-2272">
+        <arg type="entity" entity_id="ent-70132575234600" entity_mention_id="m-567">American Association of Petroleum Geologists</arg>
+        <arg type="loc" entity_id="ent-70132571640940" entity_mention_id="m-580">American</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events/>
+</deft_ere>

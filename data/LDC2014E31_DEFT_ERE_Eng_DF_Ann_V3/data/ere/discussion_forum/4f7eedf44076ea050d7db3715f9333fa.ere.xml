@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="4f7eedf44076ea050d7db3715f9333fa" source_type="multi_post" kit_id="5346f3680000000000000046">
+  <entities>
+    <entity id="ent-70132577598520" name="entity-PER-2" type="PER">
+      <entity_mention id="m-151" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="215" length="1">I</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="196" length="1">I</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="4f7eedf44076ea050d7db3715f9333fa" offset="14" length="7">Geoff J</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="580" length="3">you</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="635" length="3">you</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="674" length="3">you</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="869" length="3">you</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1603" length="4">your</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1631" length="4">your</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1734" length="3">you</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1782" length="4">your</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1848" length="4">your</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="4f7eedf44076ea050d7db3715f9333fa" offset="433" length="5">Geoff</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="4f7eedf44076ea050d7db3715f9333fa" offset="520" length="5">Geoff</entity_mention>
+    </entity>
+    <entity id="ent-70132572650360" name="entity-PER-3" type="PER">
+      <entity_mention id="m-268" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="926" length="1">I</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="544" length="1">I</entity_mention>
+      <entity_mention id="m-281" noun_type="NAM" source="4f7eedf44076ea050d7db3715f9333fa" offset="461" length="17">Trying to be good</entity_mention>
+    </entity>
+    <entity id="ent-70132571802500" name="entity-PER-4" type="PER">
+      <entity_mention id="m-294" noun_type="NAM" source="4f7eedf44076ea050d7db3715f9333fa" offset="955" length="5">SandC</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1002" length="1">I</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1192" length="1">I</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1231" length="1">I</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1453" length="1">I</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1546" length="1">I</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1675" length="1">I</entity_mention>
+      <entity_mention id="m-492" noun_type="PRO" source="4f7eedf44076ea050d7db3715f9333fa" offset="1397" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571589480" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-190" noun_type="NAM" source="4f7eedf44076ea050d7db3715f9333fa" offset="538" length="3">MSE</entity_mention>
+    </entity>
+  </entities>
+  <relations/>
+  <events>
+    <event id="e-70132571557500" name="entity-EVENT-2">
+      <event_mention id="evm-451" type="life" subtype="marry">
+        <trigger source="4f7eedf44076ea050d7db3715f9333fa" offset="119" length="7">married</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-138" entity_id="ent-70132577598520">I</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="4f7eedf44076ea050d7db3715f9333fa" offset="97" length="12">14 years ago</date_extent>
+          <normalized_date>1997-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

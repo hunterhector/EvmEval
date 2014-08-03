@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="c880dc09beed7db18611c60806274439" source_type="multi_post" kit_id="533486f60000000000000056">
+  <entities>
+    <entity id="ent-70132573193280" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="c880dc09beed7db18611c60806274439" offset="14" length="7">Brand X</entity_mention>
+    </entity>
+    <entity id="ent-70132573338200" name="entity-PER-3" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="c880dc09beed7db18611c60806274439" offset="63" length="11">Lionel Tate</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="194" length="2">He</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="c880dc09beed7db18611c60806274439" offset="288" length="6">Lionel</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="374" length="2">He</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="466" length="3">his</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="568" length="2">He</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="611" length="2">He</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="746" length="3">His</entity_mention>
+      <entity_mention id="m-320" noun_type="NOM" source="c880dc09beed7db18611c60806274439" offset="837" length="7">The kid</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="890" length="3">His</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="1071" length="2">he</entity_mention>
+      <entity_mention id="m-918" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="75" length="3">who</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="232" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132573877260" name="entity-PER-4" type="PER">
+      <entity_mention id="m-229" noun_type="NAM" source="c880dc09beed7db18611c60806274439" offset="499" length="10">OCCOM BILL</entity_mention>
+    </entity>
+    <entity id="ent-70132573877420" name="entity-PER-5" type="PER">
+      <entity_mention id="m-138" noun_type="NOM" source="c880dc09beed7db18611c60806274439" offset="86" length="19">the 6 year old girl</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="345" length="3">she</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="642" length="3">her</entity_mention>
+    </entity>
+    <entity id="ent-70132574017200" name="entity-PER-6" type="PER">
+      <entity_mention id="m-294" noun_type="NOM" source="c880dc09beed7db18611c60806274439" offset="746" length="7">His mom</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="755" length="3">who</entity_mention>
+      <entity_mention id="m-346" noun_type="NOM" source="c880dc09beed7db18611c60806274439" offset="890" length="7">His mom</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="941" length="3">she</entity_mention>
+      <entity_mention id="m-1081" noun_type="PRO" source="c880dc09beed7db18611c60806274439" offset="923" length="3">her</entity_mention>
+    </entity>
+    <entity id="ent-70132574152280" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-398" noun_type="NOM" source="c880dc09beed7db18611c60806274439" offset="801" length="8">upstairs</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132574156640" type="physical" subtype="located">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132574017200" entity_mention_id="m-307">who</arg>
+        <arg type="loc" entity_id="ent-70132574152280" entity_mention_id="m-398">upstairs</arg>
+        <trigger source="c880dc09beed7db18611c60806274439" offset="797" length="3">was</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574156580" type="social" subtype="family">
+      <relation_mention id="relm-406">
+        <arg type="per" entity_id="ent-70132573338200" entity_mention_id="m-281">His</arg>
+        <arg type="per" entity_id="ent-70132574017200" entity_mention_id="m-294">His mom</arg>
+        <trigger source="c880dc09beed7db18611c60806274439" offset="750" length="3">mom</trigger>
+      </relation_mention>
+      <relation_mention id="relm-436">
+        <arg type="per" entity_id="ent-70132573338200" entity_mention_id="m-333">His</arg>
+        <arg type="per" entity_id="ent-70132574017200" entity_mention_id="m-346">His mom</arg>
+        <trigger source="c880dc09beed7db18611c60806274439" offset="894" length="3">mom</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571702560" name="entity-EVENT-7">
+      <event_mention id="evm-877" type="justice" subtype="tryholdhearing">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="144" length="14">pleaded guilty</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-125" entity_id="ent-70132573338200">Lionel Tate</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="c880dc09beed7db18611c60806274439" offset="183" length="9">yesterday</date_extent>
+          <normalized_date>2004-01-26</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571643300" name="entity-EVENT-9">
+      <event_mention id="evm-84" type="life" subtype="die">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="79" length="6">killed</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-138" entity_id="ent-70132573877420">the 6 year old girl</arg>
+          <arg type="agent" entity_mention_id="m-918" entity_id="ent-70132573338200">who</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-835" type="life" subtype="die">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="829" length="6">murder</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-320" entity_id="ent-70132573338200">The kid</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571640900" name="entity-EVENT-4">
+      <event_mention id="evm-785" type="justice" subtype="arrestjail">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="789" length="6">arrest</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-307" entity_id="ent-70132574017200">who</arg>
+          <arg type="person" entity_mention_id="m-281" entity_id="ent-70132573338200">His</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-643" type="justice" subtype="arrestjail">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="256" length="6">arrest</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-164" entity_id="ent-70132573338200">he</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="c880dc09beed7db18611c60806274439" offset="228" length="3">now</date_extent>
+          <normalized_date>2004-01-27</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132571639360" name="entity-EVENT-5">
+      <event_mention id="evm-932" type="life" subtype="injure">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="736" length="8">injuries</trigger>
+        <args>
+          <arg type="victim" entity_mention_id="m-268" entity_id="ent-70132573877420">her</arg>
+          <arg type="agent" entity_mention_id="m-255" entity_id="ent-70132573338200">He</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571637800" name="entity-EVENT-6">
+      <event_mention id="evm-727" type="conflict" subtype="attack">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="673" length="7">beating</trigger>
+        <args>
+          <arg type="attacker" entity_mention_id="m-255" entity_id="ent-70132573338200">He</arg>
+          <arg type="target" entity_mention_id="m-268" entity_id="ent-70132573877420">her</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571636100" name="entity-EVENT-1">
+      <event_mention id="evm-685" type="justice" subtype="sentence">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="381" length="9">sentenced</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-203" entity_id="ent-70132573338200">He</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132571593980" name="entity-EVENT-8">
+      <event_mention id="evm-601" type="justice" subtype="arrestjail">
+        <trigger source="c880dc09beed7db18611c60806274439" offset="216" length="10">in lock up</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-151" entity_id="ent-70132573338200">He</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

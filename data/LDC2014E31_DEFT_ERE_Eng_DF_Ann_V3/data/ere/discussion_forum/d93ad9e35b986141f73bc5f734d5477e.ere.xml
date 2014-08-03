@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="d93ad9e35b986141f73bc5f734d5477e" source_type="multi_post" kit_id="5387adee0000000000000002">
+  <entities>
+    <entity id="ent-70132568764680" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="14" length="7">Setanta</entity_mention>
+      <entity_mention id="m-138" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="144" length="1">I</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="336" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="553" length="1">i</entity_mention>
+      <entity_mention id="m-333" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="976" length="7">Setanta</entity_mention>
+      <entity_mention id="m-1714" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4941" length="7">Setanta</entity_mention>
+    </entity>
+    <entity id="ent-70132568734160" name="entity-PER-3" type="PER">
+      <entity_mention id="m-151" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="158" length="3">you</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="223" length="3">you</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="313" length="4">your</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="354" length="3">you</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="499" length="4">Your</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="728" length="1">I</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="816" length="3">You</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="907" length="3">you</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="2861" length="3">you</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="2829" length="7">someone</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="2837" length="3">who</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="66" length="10">OmSigDAVID</entity_mention>
+    </entity>
+    <entity id="ent-70132568617680" name="entity-PER-4" type="PER">
+      <entity_mention id="m-398" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="1559" length="9">Hammurabi</entity_mention>
+    </entity>
+    <entity id="ent-70132568613120" name="entity-PER-5" type="PER">
+      <entity_mention id="m-567" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="3631" length="11">izzythepush</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="3686" length="1">I</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4434" length="1">I</entity_mention>
+      <entity_mention id="m-749" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4490" length="1">I</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4547" length="1">I</entity_mention>
+      <entity_mention id="m-775" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4575" length="1">I</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4690" length="1">I</entity_mention>
+      <entity_mention id="m-866" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4738" length="1">I</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="3827" length="1">I</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="3834" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568444420" name="entity-PER-6" type="PER">
+      <entity_mention id="m-619" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4237" length="12">Jamie Oliver</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4324" length="2">He</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4375" length="3">him</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4384" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132567515400" name="entity-PER-7" type="PER">
+      <entity_mention id="m-684" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4384" length="20">his American friends</entity_mention>
+    </entity>
+    <entity id="ent-70132567510320" name="entity-PER-8" type="PER">
+      <entity_mention id="m-879" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4887" length="9">High Seas</entity_mention>
+    </entity>
+    <entity id="ent-70132567504760" name="entity-PER-9" type="PER">
+      <entity_mention id="m-944" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5062" length="7">a judge</entity_mention>
+    </entity>
+    <entity id="ent-70132567499100" name="entity-PER-10" type="PER">
+      <entity_mention id="m-918" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4993" length="17">a 3-year old girl</entity_mention>
+      <entity_mention id="m-957" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="5085" length="3">her</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5117" length="8">Anamarie</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="5222" length="3">she</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5258" length="8">Anamarie</entity_mention>
+      <entity_mention id="m-1100" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5450" length="11">their child</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="5479" length="3">her</entity_mention>
+    </entity>
+    <entity id="ent-70132567466920" name="entity-PER-11" type="PER">
+      <entity_mention id="m-970" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5092" length="11">the parents</entity_mention>
+      <entity_mention id="m-1113" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="5450" length="5">their</entity_mention>
+    </entity>
+    <entity id="ent-70132567457500" name="entity-PER-12" type="PER">
+      <entity_mention id="m-1022" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5269" length="6">mother</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="5399" length="3">her</entity_mention>
+      <entity_mention id="m-1555" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="5407" length="3">her</entity_mention>
+    </entity>
+    <entity id="ent-70132567442200" name="entity-PER-13" type="PER">
+      <entity_mention id="m-1074" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5407" length="11">her husband</entity_mention>
+      <entity_mention id="m-1087" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5420" length="13">Miguel Regino</entity_mention>
+    </entity>
+    <entity id="ent-70132567420560" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-788" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4631" length="8">Kelloggs</entity_mention>
+    </entity>
+    <entity id="ent-70132567412780" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-1048" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5309" length="36">Child, Youth and Families Department</entity_mention>
+    </entity>
+    <entity id="ent-70132567402040" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-216" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="401" length="5">Dutch</entity_mention>
+    </entity>
+    <entity id="ent-70132567396400" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-242" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="493" length="4">them</entity_mention>
+    </entity>
+    <entity id="ent-70132567400400" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-307" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="862" length="40">states without an institution of slavery</entity_mention>
+    </entity>
+    <entity id="ent-70132567387680" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-359" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="1111" length="7">English</entity_mention>
+      <entity_mention id="m-372" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="1137" length="7">England</entity_mention>
+      <entity_mention id="m-385" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="1520" length="7">England</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="3003" length="7">English</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="3910" length="4">here</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4707" length="4">here</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="d93ad9e35b986141f73bc5f734d5477e" offset="4318" length="4">here</entity_mention>
+    </entity>
+    <entity id="ent-70132575367760" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-814" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4686" length="2">UK</entity_mention>
+    </entity>
+    <entity id="ent-70132575364860" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-450" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="2042" length="8">New York</entity_mention>
+    </entity>
+    <entity id="ent-70132575501420" name="entity-GPE-9" type="GPE">
+      <entity_mention id="m-892" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4959" length="9">the state</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4972" length="10">New Mexico</entity_mention>
+      <entity_mention id="m-931" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5014" length="5">state</entity_mention>
+      <entity_mention id="m-1035" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="5297" length="9">the state</entity_mention>
+    </entity>
+    <entity id="ent-70132577367380" name="entity-GPE-10" type="GPE">
+      <entity_mention id="m-736" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4474" length="5">texan</entity_mention>
+    </entity>
+    <entity id="ent-70132577364240" name="entity-GPE-11" type="GPE">
+      <entity_mention id="m-541" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="2908" length="8">American</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="3791" length="7">America</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4388" length="8">American</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4666" length="7">America</entity_mention>
+      <entity_mention id="m-853" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4729" length="7">America</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="1044" length="8">American</entity_mention>
+    </entity>
+    <entity id="ent-70132577702180" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-411" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="1577" length="11">Middle East</entity_mention>
+      <entity_mention id="m-463" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="2345" length="14">Middle Eastern</entity_mention>
+    </entity>
+    <entity id="ent-70132577811960" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-424" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="1892" length="10">world-wide</entity_mention>
+    </entity>
+    <entity id="ent-70132577808780" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-437" noun_type="NAM" source="d93ad9e35b986141f73bc5f734d5477e" offset="1936" length="8">European</entity_mention>
+    </entity>
+    <entity id="ent-70132577805580" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-632" noun_type="NOM" source="d93ad9e35b986141f73bc5f734d5477e" offset="4287" length="14">the Deep South</entity_mention>
+    </entity>
+    <entity id="ent-70132572789680" name="entity-TITLE-2" type="TITLE">
+      <entity_mention id="m-528" noun_type="NA" source="d93ad9e35b986141f73bc5f734d5477e" offset="2853" length="6">lawyer</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132574701800" type="social" subtype="role">
+      <relation_mention id="relm-40">
+        <arg type="role" entity_id="ent-70132572789680" entity_mention_id="m-528">lawyer</arg>
+        <arg type="per" entity_id="ent-70132568734160" entity_mention_id="m-489">you</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701740" type="physical" subtype="located">
+      <relation_mention id="relm-1160">
+        <arg type="entity" entity_id="ent-70132568613120" entity_mention_id="m-1152">I</arg>
+        <arg type="loc" entity_id="ent-70132567387680" entity_mention_id="m-606">here</arg>
+      </relation_mention>
+      <relation_mention id="relm-1340">
+        <arg type="entity" entity_id="ent-70132568613120" entity_mention_id="m-827">I</arg>
+        <arg type="loc" entity_id="ent-70132567387680" entity_mention_id="m-840">here</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701660" type="physical" subtype="located">
+      <relation_mention id="relm-1190">
+        <arg type="entity" entity_id="ent-70132568444420" entity_mention_id="m-619">Jamie Oliver</arg>
+        <arg type="loc" entity_id="ent-70132577805580" entity_mention_id="m-632">the Deep South</arg>
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="4284" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701600" type="social" subtype="unspecified">
+      <relation_mention id="relm-1220">
+        <arg type="per" entity_id="ent-70132568444420" entity_mention_id="m-710">his</arg>
+        <arg type="per" entity_id="ent-70132567515400" entity_mention_id="m-684">his American friends</arg>
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="4397" length="7">friends</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701540" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-1250">
+        <arg type="employeemember" entity_id="ent-70132567515400" entity_mention_id="m-684">his American friends</arg>
+        <arg type="org" entity_id="ent-70132577364240" entity_mention_id="m-697">American</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701480" type="physical" subtype="located">
+      <relation_mention id="relm-1370">
+        <arg type="entity" entity_id="ent-70132568613120" entity_mention_id="m-827">I</arg>
+        <arg type="loc" entity_id="ent-70132577364240" entity_mention_id="m-853">America</arg>
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="4726" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701400" type="physical" subtype="located">
+      <relation_mention id="relm-1400">
+        <arg type="entity" entity_id="ent-70132567499100" entity_mention_id="m-918">a 3-year old girl</arg>
+        <arg type="loc" entity_id="ent-70132575501420" entity_mention_id="m-931">state</arg>
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="5011" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701340" type="social" subtype="family">
+      <relation_mention id="relm-1430">
+        <arg type="per" entity_id="ent-70132567499100" entity_mention_id="m-957">her</arg>
+        <arg type="per" entity_id="ent-70132567466920" entity_mention_id="m-970">the parents</arg>
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="5096" length="7">parents</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701280" type="social" subtype="family">
+      <relation_mention id="relm-1460">
+        <arg type="per" entity_id="ent-70132567499100" entity_mention_id="m-1009">Anamarie</arg>
+        <arg type="per" entity_id="ent-70132567457500" entity_mention_id="m-1022">mother</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701220" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1490">
+        <arg type="suborg" entity_id="ent-70132567412780" entity_mention_id="m-1048">Child, Youth and Families Department</arg>
+        <arg type="parent" entity_id="ent-70132575501420" entity_mention_id="m-1035">the state</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701160" type="social" subtype="family">
+      <relation_mention id="relm-1520">
+        <arg type="per" entity_id="ent-70132567457500" entity_mention_id="m-1555">her</arg>
+        <arg type="per" entity_id="ent-70132567442200" entity_mention_id="m-1074">her husband</arg>
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="5411" length="7">husband</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132574701100" type="social" subtype="family">
+      <relation_mention id="relm-1563">
+        <arg type="per" entity_id="ent-70132567466920" entity_mention_id="m-1113">their</arg>
+        <arg type="per" entity_id="ent-70132567499100" entity_mention_id="m-1100">their child</arg>
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="5456" length="5">child</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132575094860" name="entity-EVENT-4">
+      <event_mention id="evm-1665" type="contact" subtype="meet">
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="5076" length="8">returned</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-957" entity_id="ent-70132567499100">her</arg>
+          <arg type="entity" entity_mention_id="m-970" entity_id="ent-70132567466920">the parents</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132575093360" name="entity-EVENT-3">
+      <event_mention id="evm-1607" type="justice" subtype="chargeindict">
+        <trigger source="d93ad9e35b986141f73bc5f734d5477e" offset="5392" length="6">accuse</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-1074" entity_id="ent-70132567442200">her husband</arg>
+          <arg type="prosecutor" entity_mention_id="m-1048" entity_id="ent-70132567412780">Child, Youth and Families Department</arg>
+          <arg type="defendant" entity_mention_id="m-1061" entity_id="ent-70132567457500">her</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

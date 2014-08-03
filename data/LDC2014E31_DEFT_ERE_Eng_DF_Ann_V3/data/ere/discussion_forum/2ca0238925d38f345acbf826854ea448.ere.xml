@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="2ca0238925d38f345acbf826854ea448" source_type="multi_post" kit_id="537d4c1d0000000000000001">
+  <entities>
+    <entity id="ent-70132577597100" name="entity-PER-2" type="PER">
+      <entity_mention id="m-346" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="2064" length="8">goldcatt</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="14" length="8">goldcatt</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="4667" length="8">goldcatt</entity_mention>
+      <entity_mention id="m-372" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="2169" length="8">goldcatt</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="119" length="8">goldcatt</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="1437" length="2">my</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="1417" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132576515140" name="entity-PER-3" type="PER">
+      <entity_mention id="m-359" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="2135" length="11">saveliberty</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="85" length="11">saveliberty</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="4181" length="11">saveliberty</entity_mention>
+      <entity_mention id="m-1153" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="4738" length="11">saveliberty</entity_mention>
+    </entity>
+    <entity id="ent-70132576267280" name="entity-PER-4" type="PER">
+      <entity_mention id="m-177" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="541" length="14">Matthew Snyder</entity_mention>
+      <entity_mention id="m-398" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="2591" length="14">Matthew Snyder</entity_mention>
+      <entity_mention id="m-268" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="1193" length="11">the soldier</entity_mention>
+      <entity_mention id="m-502" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="3243" length="11">the soldier</entity_mention>
+      <entity_mention id="m-619" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="4900" length="6">Snyder</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="1255" length="3">his</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="3305" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132572643660" name="entity-PER-5" type="PER">
+      <entity_mention id="m-216" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="862" length="7">a judge</entity_mention>
+      <entity_mention id="m-437" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="2912" length="7">a judge</entity_mention>
+    </entity>
+    <entity id="ent-70132571766720" name="entity-PER-6" type="PER">
+      <entity_mention id="m-385" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="2200" length="8">Madeline</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="150" length="8">Madeline</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="1635" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="942" length="1">I</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="3322" length="1">I</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="2992" length="1">I</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="1272" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571592280" name="entity-PER-7" type="PER">
+      <entity_mention id="m-333" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="1737" length="6">Gadawg</entity_mention>
+    </entity>
+    <entity id="ent-70132571587360" name="entity-PER-8" type="PER">
+      <entity_mention id="m-580" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="4380" length="7">midcan5</entity_mention>
+    </entity>
+    <entity id="ent-70132571583920" name="entity-PER-9" type="PER">
+      <entity_mention id="m-1056" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="4910" length="6">Phelps</entity_mention>
+    </entity>
+    <entity id="ent-70132571580220" name="entity-PER-10" type="PER">
+      <entity_mention id="m-190" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="588" length="10">the family</entity_mention>
+      <entity_mention id="m-411" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="2638" length="10">the family</entity_mention>
+    </entity>
+    <entity id="ent-70132571566120" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-255" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="961" length="13">Supreme Court</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="3011" length="13">Supreme Court</entity_mention>
+    </entity>
+    <entity id="ent-70132571560180" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-229" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="901" length="14">a higher court</entity_mention>
+      <entity_mention id="m-463" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="2951" length="14">a higher court</entity_mention>
+    </entity>
+    <entity id="ent-70132571554900" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-541" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="3761" length="11">4th Circuit</entity_mention>
+    </entity>
+    <entity id="ent-70132571542520" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-450" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="2895" length="13">a lower court</entity_mention>
+      <entity_mention id="m-632" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="845" length="13">a lower court</entity_mention>
+    </entity>
+    <entity id="ent-70132571536820" name="entity-ORG-7" type="ORG">
+      <entity_mention id="m-778" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="3628" length="9">the bench</entity_mention>
+      <entity_mention id="m-791" noun_type="PRO" source="2ca0238925d38f345acbf826854ea448" offset="3695" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132571530380" name="entity-ORG-8" type="ORG">
+      <entity_mention id="m-567" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="4329" length="10">The church</entity_mention>
+      <entity_mention id="m-606" noun_type="NOM" source="2ca0238925d38f345acbf826854ea448" offset="4846" length="10">The church</entity_mention>
+      <entity_mention id="m-424" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="2665" length="3">WBC</entity_mention>
+      <entity_mention id="m-203" noun_type="NAM" source="2ca0238925d38f345acbf826854ea448" offset="615" length="3">WBC</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571447580" type="affiliation" subtype="employmentmembership">
+      <relation_mention id="relm-653">
+        <arg type="employeemember" entity_id="ent-70132572643660" entity_mention_id="m-216">a judge</arg>
+        <arg type="org" entity_id="ent-70132571542520" entity_mention_id="m-632">a lower court</arg>
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="864" length="5">judge</trigger>
+      </relation_mention>
+      <relation_mention id="relm-743">
+        <arg type="employeemember" entity_id="ent-70132572643660" entity_mention_id="m-437">a judge</arg>
+        <arg type="org" entity_id="ent-70132571542520" entity_mention_id="m-450">a lower court</arg>
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="2914" length="5">judge</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571447520" type="social" subtype="family">
+      <relation_mention id="relm-683">
+        <arg type="per" entity_id="ent-70132576267280" entity_mention_id="m-177">Matthew Snyder</arg>
+        <arg type="per" entity_id="ent-70132571580220" entity_mention_id="m-190">the family</arg>
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="592" length="6">family</trigger>
+      </relation_mention>
+      <relation_mention id="relm-713">
+        <arg type="per" entity_id="ent-70132576267280" entity_mention_id="m-398">Matthew Snyder</arg>
+        <arg type="per" entity_id="ent-70132571580220" entity_mention_id="m-411">the family</arg>
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="2642" length="6">family</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132570152700" name="entity-EVENT-2">
+      <event_mention id="evm-847" type="justice" subtype="tryholdhearing">
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="835" length="6">proven</trigger>
+        <args>
+          <arg type="adjudicator" entity_mention_id="m-216" entity_id="ent-70132572643660">a judge</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-889" type="justice" subtype="tryholdhearing">
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="2885" length="6">proven</trigger>
+        <args>
+          <arg type="adjudicator" entity_mention_id="m-437" entity_id="ent-70132572643660">a judge</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132570149220" name="entity-EVENT-3">
+      <event_mention id="evm-931" type="justice" subtype="tryholdhearing">
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="2938" length="9">overruled</trigger>
+        <args>
+          <arg type="adjudicator" entity_mention_id="m-463" entity_id="ent-70132571560180">a higher court</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-1112" type="justice" subtype="tryholdhearing">
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="888" length="9">overruled</trigger>
+        <args>
+          <arg type="adjudicator" entity_mention_id="m-229" entity_id="ent-70132571560180">a higher court</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132570147400" name="entity-EVENT-5">
+      <event_mention id="evm-973" type="justice" subtype="appeal">
+        <trigger source="2ca0238925d38f345acbf826854ea448" offset="3600" length="6">appeal</trigger>
+        <args>
+          <arg type="adjudicator" entity_mention_id="m-778" entity_id="ent-70132571536820">the bench</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

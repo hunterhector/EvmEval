@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="72f595e92241c03ea556c206d2265d35" source_type="multi_post" kit_id="5346f3680000000000000101">
+  <entities>
+    <entity id="ent-70132571587060" name="entity-PER-2" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="91" length="11">GregHouseMD</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="876" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="1451" length="2">My</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="1565" length="1">I</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="1956" length="1">I</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="2003" length="1">I</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="2023" length="1">I</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="2085" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571545460" name="entity-PER-3" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="14" length="13">Clayton Moore</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3207" length="13">Clayton Moore</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="3400" length="3">You</entity_mention>
+      <entity_mention id="m-593" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3585" length="13">Clayton Moore</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="3671" length="3">You</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3975" length="13">Clayton Moore</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="4231" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571514440" name="entity-PER-4" type="PER">
+      <entity_mention id="m-307" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="1655" length="13">the President</entity_mention>
+      <entity_mention id="m-320" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="1814" length="5">Nixon</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="1825" length="2">he</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="72f595e92241c03ea556c206d2265d35" offset="1834" length="1">I</entity_mention>
+      <entity_mention id="m-372" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="1870" length="13">the president</entity_mention>
+    </entity>
+    <entity id="ent-70132571498820" name="entity-PER-5" type="PER">
+      <entity_mention id="m-359" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="1854" length="37">Some members of the president's staff</entity_mention>
+    </entity>
+    <entity id="ent-70132571487300" name="entity-PER-6" type="PER">
+      <entity_mention id="m-385" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="1870" length="21">the president's staff</entity_mention>
+    </entity>
+    <entity id="ent-70132571483320" name="entity-PER-8" type="PER">
+      <entity_mention id="m-515" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3137" length="6">Robrob</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3662" length="6">Robrob</entity_mention>
+    </entity>
+    <entity id="ent-70132571476640" name="entity-PER-9" type="PER">
+      <entity_mention id="m-645" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3879" length="5">Perot</entity_mention>
+      <entity_mention id="m-684" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="4026" length="5">Perot</entity_mention>
+    </entity>
+    <entity id="ent-70132571461600" name="entity-PER-10" type="PER">
+      <entity_mention id="m-658" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3908" length="3">TSR</entity_mention>
+    </entity>
+    <entity id="ent-70132571457500" name="entity-PER-11" type="PER">
+      <entity_mention id="m-710" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="4257" length="7">Cristol</entity_mention>
+    </entity>
+    <entity id="ent-70132571454280" name="entity-PER-1" type="PER">
+      <entity_mention id="m-450" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="2549" length="35">the people on the airplanes on 9/11</entity_mention>
+    </entity>
+    <entity id="ent-70132571450120" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-177" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="410" length="9">Air Force</entity_mention>
+    </entity>
+    <entity id="ent-70132571414260" name="entity-ORG-3" type="ORG">
+      <entity_mention id="m-190" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="497" length="17">the US Government</entity_mention>
+      <entity_mention id="m-229" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="573" length="14">The Government</entity_mention>
+    </entity>
+    <entity id="ent-70132571409300" name="entity-ORG-4" type="ORG">
+      <entity_mention id="m-281" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="1633" length="3">GOP</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3069" length="10">Republican</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3344" length="10">Republican</entity_mention>
+    </entity>
+    <entity id="ent-70132571337860" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-502" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3084" length="8">Democrat</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3359" length="8">Democrat</entity_mention>
+    </entity>
+    <entity id="ent-70132571330640" name="entity-ORG-6" type="ORG">
+      <entity_mention id="m-294" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="1641" length="27">the office of the President</entity_mention>
+    </entity>
+    <entity id="ent-70132571326580" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-138" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="108" length="7">Roswell</entity_mention>
+    </entity>
+    <entity id="ent-70132571298800" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-151" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="117" length="2">NM</entity_mention>
+    </entity>
+    <entity id="ent-70132571294220" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-203" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="501" length="2">US</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3422" length="13">United States</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="3693" length="13">United States</entity_mention>
+    </entity>
+    <entity id="ent-70132571259060" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-164" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="371" length="7">Area 51</entity_mention>
+    </entity>
+    <entity id="ent-70132570244600" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-463" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="2615" length="6">Europe</entity_mention>
+    </entity>
+    <entity id="ent-70132570222580" name="entity-LOC-1" type="LOC">
+      <entity_mention id="m-216" noun_type="NAM" source="72f595e92241c03ea556c206d2265d35" offset="559" length="12">Planet Earth</entity_mention>
+    </entity>
+    <entity id="ent-70132570176720" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-476" noun_type="NOM" source="72f595e92241c03ea556c206d2265d35" offset="2684" length="15">the Twin Towers</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132569828280" type="physical" subtype="located">
+      <relation_mention id="relm-40">
+        <arg type="entity" entity_id="ent-70132571326580" entity_mention_id="m-138">Roswell</arg>
+        <arg type="loc" entity_id="ent-70132571298800" entity_mention_id="m-151">NM</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569829260" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-718">
+        <arg type="suborg" entity_id="ent-70132571414260" entity_mention_id="m-190">the US Government</arg>
+        <arg type="parent" entity_id="ent-70132571294220" entity_mention_id="m-203">US</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569830320" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-778">
+        <arg type="leader" entity_id="ent-70132571514440" entity_mention_id="m-307">the President</arg>
+        <arg type="entity" entity_id="ent-70132571330640" entity_mention_id="m-294">the office of the President</arg>
+        <trigger source="72f595e92241c03ea556c206d2265d35" offset="1659" length="9">President</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132569831600" type="social" subtype="business">
+      <relation_mention id="relm-808">
+        <arg type="per" entity_id="ent-70132571487300" entity_mention_id="m-385">the president's staff</arg>
+        <arg type="per" entity_id="ent-70132571514440" entity_mention_id="m-372">the president</arg>
+        <trigger source="72f595e92241c03ea556c206d2265d35" offset="1886" length="5">staff</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132569435640" name="entity-EVENT-2">
+      <event_mention id="evm-84" type="justice" subtype="chargeindict">
+        <trigger source="72f595e92241c03ea556c206d2265d35" offset="1897" length="7">indited</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-359" entity_id="ent-70132571498820">Some members of the president's staff</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569437800" name="entity-EVENT-3">
+      <event_mention id="evm-844" type="justice" subtype="arrestjail">
+        <trigger source="72f595e92241c03ea556c206d2265d35" offset="1917" length="6">prison</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-359" entity_id="ent-70132571498820">Some members of the president's staff</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

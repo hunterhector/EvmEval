@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="adb04cd9521511dd0e66bb5085da4d70" source_type="multi_post" kit_id="5355f7d80000000000000080">
+  <entities>
+    <entity id="ent-70132571593600" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="14" length="6">Trajan</entity_mention>
+      <entity_mention id="m-125" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="107" length="6">Trajan</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="456" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="773" length="3">you</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="3515" length="6">Trajan</entity_mention>
+      <entity_mention id="m-541" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="3581" length="6">Trajan</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="3590" length="1">I</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="4226" length="2">me</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2978" length="2">me</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="4698" length="3">you</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="5232" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571544600" name="entity-PER-3" type="PER">
+      <entity_mention id="m-138" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="70" length="7">Mustang</entity_mention>
+      <entity_mention id="m-151" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="136" length="7">Mustang</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="255" length="1">I</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="484" length="3">you</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="765" length="1">I</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2186" length="1">I</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2559" length="1">I</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2764" length="3">you</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2815" length="3">you</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2824" length="3">You</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2964" length="3">you</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="3458" length="7">Mustang</entity_mention>
+      <entity_mention id="m-528" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="3551" length="7">Mustang</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="3618" length="3">you</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="4012" length="3">you</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="4063" length="3">you</entity_mention>
+      <entity_mention id="m-606" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="4072" length="3">You</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="4212" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571478440" name="entity-PER-4" type="PER">
+      <entity_mention id="m-177" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="360" length="11">O J Simpson</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="427" length="3">his</entity_mention>
+    </entity>
+    <entity id="ent-70132571472000" name="entity-PER-5" type="PER">
+      <entity_mention id="m-359" noun_type="NOM" source="adb04cd9521511dd0e66bb5085da4d70" offset="1942" length="22">THEIR former president</entity_mention>
+    </entity>
+    <entity id="ent-70132571460540" name="entity-PER-6" type="PER">
+      <entity_mention id="m-372" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="2165" length="4">Ford</entity_mention>
+    </entity>
+    <entity id="ent-70132571456860" name="entity-PER-7" type="PER">
+      <entity_mention id="m-385" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="2179" length="5">Nixon</entity_mention>
+      <entity_mention id="m-411" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="2237" length="5">Nixon</entity_mention>
+    </entity>
+    <entity id="ent-70132571450880" name="entity-PER-8" type="PER">
+      <entity_mention id="m-861" noun_type="NOM" source="adb04cd9521511dd0e66bb5085da4d70" offset="806" length="20">The founding fathers</entity_mention>
+      <entity_mention id="m-874" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="892" length="4">they</entity_mention>
+      <entity_mention id="m-887" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="945" length="4">they</entity_mention>
+      <entity_mention id="m-900" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="1010" length="4">they</entity_mention>
+      <entity_mention id="m-1030" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="3891" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132571360660" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-255" noun_type="NOM" source="adb04cd9521511dd0e66bb5085da4d70" offset="1245" length="12">this country</entity_mention>
+      <entity_mention id="m-268" noun_type="NOM" source="adb04cd9521511dd0e66bb5085da4d70" offset="1540" length="12">this country</entity_mention>
+      <entity_mention id="m-281" noun_type="NOM" source="adb04cd9521511dd0e66bb5085da4d70" offset="1692" length="11">Our country</entity_mention>
+      <entity_mention id="m-307" noun_type="NOM" source="adb04cd9521511dd0e66bb5085da4d70" offset="1722" length="28">a nation of laws and not men</entity_mention>
+      <entity_mention id="m-437" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="2582" length="2">US</entity_mention>
+      <entity_mention id="m-671" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="4939" length="2">US</entity_mention>
+      <entity_mention id="m-913" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="1779" length="3">our</entity_mention>
+      <entity_mention id="m-926" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="1994" length="3">our</entity_mention>
+      <entity_mention id="m-939" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2058" length="2">we</entity_mention>
+      <entity_mention id="m-952" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2083" length="2">we</entity_mention>
+      <entity_mention id="m-965" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2124" length="2">we</entity_mention>
+      <entity_mention id="m-978" noun_type="NOM" source="adb04cd9521511dd0e66bb5085da4d70" offset="2130" length="8">a nation</entity_mention>
+      <entity_mention id="m-991" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2393" length="3">our</entity_mention>
+      <entity_mention id="m-1004" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2634" length="2">we</entity_mention>
+      <entity_mention id="m-1017" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="2669" length="3">our</entity_mention>
+    </entity>
+    <entity id="ent-70132570222160" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-333" noun_type="NAM" source="adb04cd9521511dd0e66bb5085da4d70" offset="1904" length="6">France</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="adb04cd9521511dd0e66bb5085da4d70" offset="1942" length="5">THEIR</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132570149200" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-692">
+        <arg type="leader" entity_id="ent-70132571472000" entity_mention_id="m-359">THEIR former president</arg>
+        <arg type="entity" entity_id="ent-70132570222160" entity_mention_id="m-346">THEIR</arg>
+        <trigger source="adb04cd9521511dd0e66bb5085da4d70" offset="1955" length="9">president</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132569391940" name="entity-EVENT-3">
+      <event_mention id="evm-728" type="justice" subtype="tryholdhearing">
+        <trigger source="adb04cd9521511dd0e66bb5085da4d70" offset="1968" length="5">trial</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-359" entity_id="ent-70132571472000">THEIR former president</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-346">THEIR</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132569372920" name="entity-EVENT-4">
+      <event_mention id="evm-770" type="justice" subtype="pardon">
+        <trigger source="adb04cd9521511dd0e66bb5085da4d70" offset="2170" length="8">pardoned</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-385" entity_id="ent-70132571456860">Nixon</arg>
+          <arg type="adjudicator" entity_mention_id="m-372" entity_id="ent-70132571460540">Ford</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-820" type="justice" subtype="pardon">
+        <trigger source="adb04cd9521511dd0e66bb5085da4d70" offset="2245" length="6">pardon</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-411" entity_id="ent-70132571456860">Nixon</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569370460" name="entity-EVENT-1">
+      <event_mention id="evm-84" type="justice" subtype="acquit">
+        <trigger source="adb04cd9521511dd0e66bb5085da4d70" offset="383" length="16">gotten away with</trigger>
+        <args>
+          <arg type="defendant" entity_mention_id="m-177" entity_id="ent-70132571478440">O J Simpson</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="adb04cd9521511dd0e66bb5085da4d70" offset="414" length="4">90's</date_extent>
+          <normalized_date>199X-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132569368200" name="entity-EVENT-5">
+      <event_mention id="evm-1044" type="life" subtype="die">
+        <trigger source="adb04cd9521511dd0e66bb5085da4d70" offset="400" length="6">murder</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-177" entity_id="ent-70132571478440">O J Simpson</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="adb04cd9521511dd0e66bb5085da4d70" offset="414" length="4">90's</date_extent>
+          <normalized_date>199X-XX-XX</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="1ae45904ad12b1540dc390e162b61235" source_type="multi_post" kit_id="5346f3680000000000000020">
+  <entities>
+    <entity id="ent-70132571581400" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="14" length="11">hoorayforpp</entity_mention>
+      <entity_mention id="m-125" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="67" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571566980" name="entity-PER-4" type="PER">
+      <entity_mention id="m-1336" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="411" length="10">its people</entity_mention>
+      <entity_mention id="m-502" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1083" length="4">they</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1174" length="4">they</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1296" length="4">they</entity_mention>
+      <entity_mention id="m-320" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="656" length="8">IRANIANS</entity_mention>
+    </entity>
+    <entity id="ent-70132571544040" name="entity-PER-5" type="PER">
+      <entity_mention id="m-372" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="910" length="8">the shah</entity_mention>
+    </entity>
+    <entity id="ent-70132571540540" name="entity-PER-6" type="PER">
+      <entity_mention id="m-437" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1119" length="5">DdotT</entity_mention>
+    </entity>
+    <entity id="ent-70132571537120" name="entity-PER-7" type="PER">
+      <entity_mention id="m-463" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="1184" length="18">a pretty crazy guy</entity_mention>
+      <entity_mention id="m-619" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="1663" length="8">a maniac</entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1640" length="19">Mahmoud Ahmadinejad</entity_mention>
+      <entity_mention id="m-814" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="2705" length="11">Ahmedinijad</entity_mention>
+      <entity_mention id="m-827" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="2725" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571514120" name="entity-PER-8" type="PER">
+      <entity_mention id="m-541" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1346" length="9">cl_steele</entity_mention>
+      <entity_mention id="m-645" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1765" length="9">cl_steele</entity_mention>
+      <entity_mention id="m-710" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1988" length="9">cl_steele</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="2223" length="1">i</entity_mention>
+    </entity>
+    <entity id="ent-70132571503100" name="entity-PER-9" type="PER">
+      <entity_mention id="m-593" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1584" length="6">Tyler.</entity_mention>
+    </entity>
+    <entity id="ent-70132571500060" name="entity-PER-10" type="PER">
+      <entity_mention id="m-632" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1695" length="8">erobique</entity_mention>
+      <entity_mention id="m-723" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="2059" length="8">erobique</entity_mention>
+    </entity>
+    <entity id="ent-70132571486500" name="entity-PER-11" type="PER">
+      <entity_mention id="m-775" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="2277" length="14">MagicNMedicine</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="2905" length="1">I</entity_mention>
+      <entity_mention id="m-983" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="3475" length="2">me</entity_mention>
+      <entity_mention id="m-1100" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="3998" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132571476360" name="entity-PER-12" type="PER">
+      <entity_mention id="m-931" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3340" length="9">Bin Laden</entity_mention>
+      <entity_mention id="m-970" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3406" length="9">Bin Laden</entity_mention>
+    </entity>
+    <entity id="ent-70132571462660" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-515" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1236" length="3">who</entity_mention>
+      <entity_mention id="m-554" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1397" length="4">they</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1446" length="4">they</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1826" length="4">they</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1777" length="4">they</entity_mention>
+      <entity_mention id="m-476" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="1218" length="15">their goverment</entity_mention>
+    </entity>
+    <entity id="ent-70132571447960" name="entity-ORG-5" type="ORG">
+      <entity_mention id="m-944" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="3371" length="20">Pakistani government</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="3499" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132571408900" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-242" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="366" length="55">a weak country with no big weapons to defend its people</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="411" length="3">its</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="862" length="4">Iran</entity_mention>
+      <entity_mention id="m-411" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1009" length="7">Iranian</entity_mention>
+      <entity_mention id="m-697" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1915" length="4">Iran</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="2127" length="4">Iran</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="2674" length="4">Iran</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3595" length="4">Iran</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="119" length="4">They</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="184" length="4">them</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="225" length="3">its</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="272" length="3">its</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="303" length="2">it</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="435" length="4">they</entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="1218" length="5">their</entity_mention>
+      <entity_mention id="m-905" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3176" length="4">Iran</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1506" length="5">irans</entity_mention>
+      <entity_mention id="m-307" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="508" length="4">Iran</entity_mention>
+      <entity_mention id="m-138" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="90" length="4">Iran</entity_mention>
+      <entity_mention id="m-190" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="195" length="4">Iran</entity_mention>
+      <entity_mention id="m-333" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="739" length="4">Iran</entity_mention>
+    </entity>
+    <entity id="ent-70132570177100" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-281" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="467" length="99">All the huge countries that are bullying Iran into submission right now with sanctions and what not</entity_mention>
+    </entity>
+    <entity id="ent-70132570170760" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-684" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="1886" length="2">US</entity_mention>
+      <entity_mention id="m-736" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="2098" length="2">US</entity_mention>
+    </entity>
+    <entity id="ent-70132570162680" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-788" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="2449" length="4">Iraq</entity_mention>
+    </entity>
+    <entity id="ent-70132570155540" name="entity-GPE-6" type="GPE">
+      <entity_mention id="m-957" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3371" length="9">Pakistani</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3130" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3284" length="8">Pakistan</entity_mention>
+      <entity_mention id="m-1061" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3831" length="8">Pakistan</entity_mention>
+    </entity>
+    <entity id="ent-70132570107860" name="entity-GPE-1" type="GPE">
+      <entity_mention id="m-1074" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3858" length="6">Israel</entity_mention>
+      <entity_mention id="m-385" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="965" length="6">Israel</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="1ae45904ad12b1540dc390e162b61235" offset="983" length="3">you</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3143" length="6">Israel</entity_mention>
+    </entity>
+    <entity id="ent-70132570047240" name="entity-GPE-9" type="GPE">
+      <entity_mention id="m-1048" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="3821" length="5">India</entity_mention>
+    </entity>
+    <entity id="ent-70132569999080" name="entity-GPE-10" type="GPE">
+      <entity_mention id="m-1113" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="2980" length="12">these states</entity_mention>
+    </entity>
+    <entity id="ent-70132569941920" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-346" noun_type="NAM" source="1ae45904ad12b1540dc390e162b61235" offset="763" length="11">North Korea</entity_mention>
+    </entity>
+    <entity id="ent-70132569886600" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-866" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="3070" length="10">the region</entity_mention>
+      <entity_mention id="m-1035" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="3797" length="10">the region</entity_mention>
+      <entity_mention id="m-1087" noun_type="NOM" source="1ae45904ad12b1540dc390e162b61235" offset="3912" length="10">the region</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132568762800" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-40">
+        <arg type="leader" entity_id="ent-70132571544040" entity_mention_id="m-372">the shah</arg>
+        <arg type="entity" entity_id="ent-70132571408900" entity_mention_id="m-359">Iran</arg>
+        <trigger source="1ae45904ad12b1540dc390e162b61235" offset="914" length="4">shah</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568762740" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1121">
+        <arg type="leader" entity_id="ent-70132571537120" entity_mention_id="m-463">a pretty crazy guy</arg>
+        <arg type="entity" entity_id="ent-70132571462660" entity_mention_id="m-476">their goverment</arg>
+        <trigger source="1ae45904ad12b1540dc390e162b61235" offset="1210" length="4">head</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568762620" type="physical" subtype="located">
+      <relation_mention id="relm-1181">
+        <arg type="entity" entity_id="ent-70132569999080" entity_mention_id="m-1113">these states</arg>
+        <arg type="loc" entity_id="ent-70132569886600" entity_mention_id="m-866">the region</arg>
+        <trigger source="1ae45904ad12b1540dc390e162b61235" offset="3067" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568762560" type="partwhole" subtype="subsidiary">
+      <relation_mention id="relm-1211">
+        <arg type="suborg" entity_id="ent-70132571447960" entity_mention_id="m-944">Pakistani government</arg>
+        <arg type="parent" entity_id="ent-70132570155540" entity_mention_id="m-957">Pakistani</arg>
+        <trigger source="1ae45904ad12b1540dc390e162b61235" offset="3371" length="9">Pakistani</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568762460" type="physical" subtype="located">
+      <relation_mention id="relm-1241">
+        <arg type="entity" entity_id="ent-70132570107860" entity_mention_id="m-1074">Israel</arg>
+        <arg type="loc" entity_id="ent-70132569886600" entity_mention_id="m-1035">the region</arg>
+        <trigger source="1ae45904ad12b1540dc390e162b61235" offset="3794" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568762360" type="physical" subtype="located">
+      <relation_mention id="relm-1271">
+        <arg type="entity" entity_id="ent-70132570155540" entity_mention_id="m-1061">Pakistan</arg>
+        <arg type="loc" entity_id="ent-70132569886600" entity_mention_id="m-1035">the region</arg>
+        <trigger source="1ae45904ad12b1540dc390e162b61235" offset="3794" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568762300" type="physical" subtype="located">
+      <relation_mention id="relm-1301">
+        <arg type="entity" entity_id="ent-70132570047240" entity_mention_id="m-1048">India</arg>
+        <arg type="loc" entity_id="ent-70132569886600" entity_mention_id="m-1035">the region</arg>
+        <trigger source="1ae45904ad12b1540dc390e162b61235" offset="3794" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132568762240" type="physical" subtype="located">
+      <relation_mention id="relm-1344">
+        <arg type="entity" entity_id="ent-70132571566980" entity_mention_id="m-1336">its people</arg>
+        <arg type="loc" entity_id="ent-70132571408900" entity_mention_id="m-255">its</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events/>
+</deft_ere>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="8b1aa62b47be35932c8dc7eae45574a4" source_type="multi_post" kit_id="533486f60000000000000021">
+  <entities>
+    <entity id="ent-70132573605980" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="62" length="2">My</entity_mention>
+      <entity_mention id="m-125" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="129" length="2">my</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="14" length="6">Linkat</entity_mention>
+      <entity_mention id="m-359" noun_type="NAM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="671" length="6">Linkat</entity_mention>
+      <entity_mention id="m-489" noun_type="NAM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1003" length="6">Linkat</entity_mention>
+      <entity_mention id="m-515" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1069" length="1">I</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1119" length="2">my</entity_mention>
+    </entity>
+    <entity id="ent-70132573332420" name="entity-PER-3" type="PER">
+      <entity_mention id="m-151" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="176" length="2">we</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="191" length="2">We</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="271" length="2">we</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="321" length="2">We</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="428" length="2">we</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="466" length="2">We</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="566" length="3">our</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="384" length="3">our</entity_mention>
+    </entity>
+    <entity id="ent-70132572924840" name="entity-PER-4" type="PER">
+      <entity_mention id="m-138" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="129" length="10">my husband</entity_mention>
+    </entity>
+    <entity id="ent-70132572790380" name="entity-PER-5" type="PER">
+      <entity_mention id="m-242" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="351" length="10">the owners</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="367" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132572784340" name="entity-PER-6" type="PER">
+      <entity_mention id="m-320" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="445" length="8">some one</entity_mention>
+    </entity>
+    <entity id="ent-70132577810780" name="entity-PER-7" type="PER">
+      <entity_mention id="m-346" noun_type="NAM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="618" length="10">mags314772</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="854" length="2">my</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="908" length="1">I</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="971" length="2">my</entity_mention>
+      <entity_mention id="m-502" noun_type="NAM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1052" length="10">mags314772</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1164" length="4">your</entity_mention>
+    </entity>
+    <entity id="ent-70132577466360" name="entity-PER-8" type="PER">
+      <entity_mention id="m-398" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="803" length="4">they</entity_mention>
+      <entity_mention id="m-476" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="947" length="9">strangers</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1188" length="4">them</entity_mention>
+    </entity>
+    <entity id="ent-70132577367440" name="entity-PER-9" type="PER">
+      <entity_mention id="m-580" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1141" length="8">some one</entity_mention>
+    </entity>
+    <entity id="ent-70132577364180" name="entity-PER-10" type="PER">
+      <entity_mention id="m-411" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="854" length="10">my husband</entity_mention>
+    </entity>
+    <entity id="ent-70132575238940" name="entity-PER-11" type="PER">
+      <entity_mention id="m-372" noun_type="PRO" source="8b1aa62b47be35932c8dc7eae45574a4" offset="698" length="2">We</entity_mention>
+    </entity>
+    <entity id="ent-70132575235260" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-229" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="331" length="15">the campgrounds</entity_mention>
+    </entity>
+    <entity id="ent-70132575234140" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-190" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="266" length="4">home</entity_mention>
+      <entity_mention id="m-528" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1119" length="8">my house</entity_mention>
+    </entity>
+    <entity id="ent-70132577593280" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-385" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="751" length="4">home</entity_mention>
+      <entity_mention id="m-450" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="971" length="8">my house</entity_mention>
+      <entity_mention id="m-554" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="1164" length="10">your house</entity_mention>
+    </entity>
+    <entity id="ent-70132577265320" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-281" noun_type="NOM" source="8b1aa62b47be35932c8dc7eae45574a4" offset="384" length="12">our campsite</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132571592760" type="social" subtype="family">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132573605980" entity_mention_id="m-125">my</arg>
+        <arg type="per" entity_id="ent-70132572924840" entity_mention_id="m-138">my husband</arg>
+        <trigger source="8b1aa62b47be35932c8dc7eae45574a4" offset="132" length="7">husband</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571592700" type="physical" subtype="located">
+      <relation_mention id="relm-601">
+        <arg type="entity" entity_id="ent-70132573332420" entity_mention_id="m-268">our</arg>
+        <arg type="loc" entity_id="ent-70132577265320" entity_mention_id="m-281">our campsite</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571592640" type="social" subtype="family">
+      <relation_mention id="relm-631">
+        <arg type="per" entity_id="ent-70132577810780" entity_mention_id="m-424">my</arg>
+        <arg type="per" entity_id="ent-70132577364180" entity_mention_id="m-411">my husband</arg>
+        <trigger source="8b1aa62b47be35932c8dc7eae45574a4" offset="857" length="7">husband</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571592580" type="physical" subtype="located">
+      <relation_mention id="relm-955">
+        <arg type="entity" entity_id="ent-70132577466360" entity_mention_id="m-476">strangers</arg>
+        <arg type="loc" entity_id="ent-70132577593280" entity_mention_id="m-450">my house</arg>
+        <trigger source="8b1aa62b47be35932c8dc7eae45574a4" offset="957" length="13">going through</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132571592480" type="physical" subtype="located">
+      <relation_mention id="relm-985">
+        <arg type="entity" entity_id="ent-70132577367440" entity_mention_id="m-580">some one</arg>
+        <arg type="loc" entity_id="ent-70132577593280" entity_mention_id="m-554">your house</arg>
+        <trigger source="8b1aa62b47be35932c8dc7eae45574a4" offset="1150" length="13">going through</trigger>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132571504060" name="entity-EVENT-2">
+      <event_mention id="evm-727" type="movement" subtype="transportperson">
+        <trigger source="8b1aa62b47be35932c8dc7eae45574a4" offset="259" length="6">coming</trigger>
+        <args>
+          <arg type="person" entity_mention_id="m-203" entity_id="ent-70132573332420">we</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-190">home</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571503040" name="entity-EVENT-3">
+      <event_mention id="evm-869" type="transaction" subtype="transferownership">
+        <trigger source="8b1aa62b47be35932c8dc7eae45574a4" offset="808" length="4">took</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-411" entity_id="ent-70132577364180">my husband</arg>
+          <arg type="buyer" entity_mention_id="m-398" entity_id="ent-70132577466360">they</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-385">home</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132571501520" name="entity-EVENT-4">
+      <event_mention id="evm-769" type="contact" subtype="communicate">
+        <trigger source="8b1aa62b47be35932c8dc7eae45574a4" offset="324" length="6">called</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-216" entity_id="ent-70132573332420">We</arg>
+          <arg type="entity" entity_mention_id="m-229" entity_id="ent-70132575235260">the campgrounds</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-819" type="contact" subtype="communicate">
+        <trigger source="8b1aa62b47be35932c8dc7eae45574a4" offset="362" length="4">said</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-242" entity_id="ent-70132572790380">the owners</arg>
+          <arg type="entity" entity_mention_id="m-216" entity_id="ent-70132573332420">We</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

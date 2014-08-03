@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="609d5112c0386dc4e5f2e90b93cb7a5f" source_type="multi_post" kit_id="5346f3680000000000000075">
+  <entities>
+    <entity id="ent-70132569422500" name="entity-PER-2" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="14" length="10">ldcdesigns</entity_mention>
+      <entity_mention id="m-125" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="618" length="1">I</entity_mention>
+      <entity_mention id="m-164" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="683" length="2">my</entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="706" length="1">I</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="788" length="1">I</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="866" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="947" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="981" length="2">my</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1002" length="2">me</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1041" length="2">my</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1224" length="1">I</entity_mention>
+      <entity_mention id="m-346" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1300" length="1">I</entity_mention>
+      <entity_mention id="m-294" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1010" length="1">I</entity_mention>
+      <entity_mention id="m-372" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1488" length="1">I</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1547" length="2">me</entity_mention>
+      <entity_mention id="m-411" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1587" length="1">I</entity_mention>
+      <entity_mention id="m-424" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1665" length="2">my</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1679" length="1">I</entity_mention>
+      <entity_mention id="m-450" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1744" length="1">I</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1780" length="6">myself</entity_mention>
+      <entity_mention id="m-476" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1950" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568759220" name="entity-PER-3" type="PER">
+      <entity_mention id="m-138" noun_type="NOM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="624" length="25">a rather infrequent buyer</entity_mention>
+      <entity_mention id="m-151" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="651" length="3">who</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="730" length="3">she</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="740" length="3">she</entity_mention>
+      <entity_mention id="m-229" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="795" length="3">her</entity_mention>
+    </entity>
+    <entity id="ent-70132568731440" name="entity-PER-4" type="PER">
+      <entity_mention id="m-333" noun_type="NOM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1262" length="8">customer</entity_mention>
+      <entity_mention id="m-359" noun_type="NOM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1384" length="12">the consumer</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1499" length="3">her</entity_mention>
+    </entity>
+    <entity id="ent-70132568702360" name="entity-PER-5" type="PER">
+      <entity_mention id="m-489" noun_type="NAM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2331" length="7">ducmarc</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2645" length="1">I</entity_mention>
+      <entity_mention id="m-580" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2785" length="2">me</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2935" length="1">I</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3150" length="1">I</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3173" length="1">I</entity_mention>
+      <entity_mention id="m-697" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3234" length="1">I</entity_mention>
+      <entity_mention id="m-710" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3263" length="6">myself</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3271" length="1">I</entity_mention>
+      <entity_mention id="m-736" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3359" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132568588760" name="entity-PER-6" type="PER">
+      <entity_mention id="m-502" noun_type="NOM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2618" length="52">The worst non paying buyer I've encountered recently</entity_mention>
+      <entity_mention id="m-515" noun_type="NAM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2674" length="10">mustyann10</entity_mention>
+      <entity_mention id="m-541" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2692" length="3">she</entity_mention>
+      <entity_mention id="m-567" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2761" length="3">she</entity_mention>
+      <entity_mention id="m-593" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2821" length="3">she</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3000" length="3">she</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3377" length="10">mustyann10</entity_mention>
+      <entity_mention id="m-762" noun_type="NOM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3393" length="11">that member</entity_mention>
+    </entity>
+    <entity id="ent-70132568444820" name="entity-PER-7" type="PER">
+      <entity_mention id="m-554" noun_type="NOM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2706" length="10">14 sellers</entity_mention>
+    </entity>
+    <entity id="ent-70132567538200" name="entity-PER-8" type="PER">
+      <entity_mention id="m-775" noun_type="NOM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3446" length="18">a brand new member</entity_mention>
+      <entity_mention id="m-788" noun_type="NAM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="3477" length="10">mistyann10</entity_mention>
+    </entity>
+    <entity id="ent-70132567517420" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-606" noun_type="NAM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2902" length="4">eBay</entity_mention>
+      <entity_mention id="m-632" noun_type="NAM" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2947" length="4">eBay</entity_mention>
+      <entity_mention id="m-645" noun_type="PRO" source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2953" length="4">they</entity_mention>
+    </entity>
+  </entities>
+  <relations/>
+  <events>
+    <event id="e-70132577264020" name="entity-EVENT-2">
+      <event_mention id="evm-802" type="transaction" subtype="transferownership">
+        <trigger source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="666" length="9">purchased</trigger>
+        <args>
+          <arg type="seller" entity_mention_id="m-164" entity_id="ent-70132569422500">my</arg>
+          <arg type="buyer" entity_mention_id="m-151" entity_id="ent-70132568759220">who</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132576517640" name="entity-EVENT-3">
+      <event_mention id="evm-852" type="contact" subtype="communicate">
+        <trigger source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="790" length="4">sent</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-216" entity_id="ent-70132569422500">I</arg>
+          <arg type="entity" entity_mention_id="m-229" entity_id="ent-70132568759220">her</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132576516080" name="entity-EVENT-4">
+      <event_mention id="evm-902" type="contact" subtype="communicate">
+        <trigger source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1490" length="8">answered</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-372" entity_id="ent-70132569422500">I</arg>
+          <arg type="entity" entity_mention_id="m-385" entity_id="ent-70132568731440">her</arg>
+        </args>
+        <places/>
+      </event_mention>
+      <event_mention id="evm-944" type="contact" subtype="communicate">
+        <trigger source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1237" length="8">question</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-320" entity_id="ent-70132569422500">I</arg>
+          <arg type="entity" entity_mention_id="m-333" entity_id="ent-70132568731440">customer</arg>
+        </args>
+        <places/>
+        <date>
+          <date_extent source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="1217" length="5">Today</date_extent>
+          <normalized_date>2011-09-15</normalized_date>
+        </date>
+      </event_mention>
+    </event>
+    <event id="e-70132576514980" name="entity-EVENT-5">
+      <event_mention id="evm-1002" type="contact" subtype="communicate">
+        <trigger source="609d5112c0386dc4e5f2e90b93cb7a5f" offset="2940" length="6">called</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-619" entity_id="ent-70132568702360">I</arg>
+          <arg type="entity" entity_mention_id="m-632" entity_id="ent-70132567517420">eBay</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deft_ere docid="1f288dcbcb562b39031c6a9402ebf6d0" source_type="multi_post" kit_id="53701d170000000000000001">
+  <entities>
+    <entity id="ent-70132568801700" name="entity-PER-2" type="PER">
+      <entity_mention id="m-515" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1894" length="2">he</entity_mention>
+      <entity_mention id="m-528" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1907" length="2">he</entity_mention>
+      <entity_mention id="m-1139" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4844" length="2">he</entity_mention>
+      <entity_mention id="m-476" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1851" length="16">a 4 star General</entity_mention>
+      <entity_mention id="m-1100" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4801" length="16">a 4 star General</entity_mention>
+      <entity_mention id="m-1152" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4857" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132568757160" name="entity-PER-3" type="PER">
+      <entity_mention id="m-229" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1159" length="9">my guides</entity_mention>
+      <entity_mention id="m-242" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1175" length="2">He</entity_mention>
+    </entity>
+    <entity id="ent-70132568740280" name="entity-PER-4" type="PER">
+      <entity_mention id="m-125" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="82" length="14">Greg Bernhardt</entity_mention>
+      <entity_mention id="m-203" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1105" length="1">I</entity_mention>
+      <entity_mention id="m-216" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1141" length="1">I</entity_mention>
+      <entity_mention id="m-255" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1183" length="2">me</entity_mention>
+      <entity_mention id="m-281" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1354" length="2">me</entity_mention>
+      <entity_mention id="m-333" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1535" length="1">I</entity_mention>
+      <entity_mention id="m-359" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1551" length="1">i</entity_mention>
+      <entity_mention id="m-398" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1661" length="1">I</entity_mention>
+      <entity_mention id="m-554" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2291" length="14">Greg Bernhardt</entity_mention>
+      <entity_mention id="m-658" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2582" length="2">me</entity_mention>
+      <entity_mention id="m-671" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2617" length="2">my</entity_mention>
+      <entity_mention id="m-749" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2876" length="4">Greg</entity_mention>
+      <entity_mention id="m-1048" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4719" length="14">Greg Bernhardt</entity_mention>
+      <entity_mention id="m-1061" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4745" length="2">my</entity_mention>
+      <entity_mention id="m-1230" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5412" length="14">Greg Bernhardt</entity_mention>
+      <entity_mention id="m-1321" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5949" length="2">my</entity_mention>
+      <entity_mention id="m-1412" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6159" length="4">Greg</entity_mention>
+      <entity_mention id="m-1477" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6539" length="14">Greg Bernhardt</entity_mention>
+      <entity_mention id="m-1490" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6608" length="1">I</entity_mention>
+      <entity_mention id="m-1503" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6691" length="2">my</entity_mention>
+      <entity_mention id="m-1568" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6848" length="1">I</entity_mention>
+      <entity_mention id="m-1672" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1159" length="2">my</entity_mention>
+      <entity_mention id="m-190" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1090" length="1">I</entity_mention>
+      <entity_mention id="m-268" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1263" length="1">I</entity_mention>
+      <entity_mention id="m-307" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1436" length="1">I</entity_mention>
+      <entity_mention id="m-320" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1514" length="1">I</entity_mention>
+      <entity_mention id="m-385" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1649" length="2">me</entity_mention>
+      <entity_mention id="m-437" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1795" length="2">my</entity_mention>
+      <entity_mention id="m-463" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1835" length="1">I</entity_mention>
+      <entity_mention id="m-632" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2562" length="2">me</entity_mention>
+      <entity_mention id="m-684" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2625" length="1">I</entity_mention>
+      <entity_mention id="m-723" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2731" length="1">I</entity_mention>
+      <entity_mention id="m-1087" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4785" length="1">I</entity_mention>
+      <entity_mention id="m-1178" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5096" length="3">you</entity_mention>
+      <entity_mention id="m-1256" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5510" length="3">you</entity_mention>
+      <entity_mention id="m-1308" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5866" length="1">I</entity_mention>
+      <entity_mention id="m-1360" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6046" length="1">I</entity_mention>
+      <entity_mention id="m-1386" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6106" length="1">I</entity_mention>
+      <entity_mention id="m-1542" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6788" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132567458580" name="entity-PER-5" type="PER">
+      <entity_mention id="m-23" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="14" length="5">lisab</entity_mention>
+      <entity_mention id="m-580" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2397" length="5">lisab</entity_mention>
+    </entity>
+    <entity id="ent-70132567447020" name="entity-PER-6" type="PER">
+      <entity_mention id="m-567" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2368" length="5">rootX</entity_mention>
+    </entity>
+    <entity id="ent-70132567440480" name="entity-PER-7" type="PER">
+      <entity_mention id="m-645" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2570" length="4">they</entity_mention>
+      <entity_mention id="m-619" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2550" length="4">they</entity_mention>
+    </entity>
+    <entity id="ent-70132567417780" name="entity-PER-8" type="PER">
+      <entity_mention id="m-502" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1880" length="2">We</entity_mention>
+      <entity_mention id="m-1126" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4830" length="2">We</entity_mention>
+    </entity>
+    <entity id="ent-70132567398380" name="entity-PER-9" type="PER">
+      <entity_mention id="m-788" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2957" length="10">MATLABdude</entity_mention>
+      <entity_mention id="m-840" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3099" length="1">I</entity_mention>
+      <entity_mention id="m-892" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3603" length="10">MATLABdude</entity_mention>
+      <entity_mention id="m-905" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3626" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132567377800" name="entity-PER-10" type="PER">
+      <entity_mention id="m-736" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2811" length="4">Borg</entity_mention>
+      <entity_mention id="m-801" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3030" length="4">Borg</entity_mention>
+      <entity_mention id="m-879" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3536" length="4">Borg</entity_mention>
+      <entity_mention id="m-944" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4051" length="1">I</entity_mention>
+      <entity_mention id="m-1399" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6134" length="4">Borg</entity_mention>
+      <entity_mention id="m-1425" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6165" length="1">I</entity_mention>
+      <entity_mention id="m-762" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2882" length="1">I</entity_mention>
+      <entity_mention id="m-814" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3037" length="1">I</entity_mention>
+    </entity>
+    <entity id="ent-70132577268340" name="entity-PER-11" type="PER">
+      <entity_mention id="m-1620" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="7021" length="17">the tibetan llama</entity_mention>
+    </entity>
+    <entity id="ent-70132577265020" name="entity-PER-12" type="PER">
+      <entity_mention id="m-827" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3058" length="3">his</entity_mention>
+      <entity_mention id="m-970" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4245" length="63">the front man for the military dictorship that runs North Korea</entity_mention>
+      <entity_mention id="m-996" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4310" length="2">He</entity_mention>
+      <entity_mention id="m-983" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4229" length="11">Kim Jong Il</entity_mention>
+      <entity_mention id="m-1594" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6948" length="10">the leader</entity_mention>
+      <entity_mention id="m-1217" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5166" length="11">Dear Leader</entity_mention>
+      <entity_mention id="m-1295" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5580" length="11">Dear Leader</entity_mention>
+    </entity>
+    <entity id="ent-70132576270940" name="entity-PER-13" type="PER">
+      <entity_mention id="m-1035" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4645" length="11">Proton Soup</entity_mention>
+      <entity_mention id="m-1243" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5489" length="11">Proton Soup</entity_mention>
+      <entity_mention id="m-1464" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6465" length="11">Proton Soup</entity_mention>
+      <entity_mention id="m-1581" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6911" length="1">i</entity_mention>
+    </entity>
+    <entity id="ent-70132572648840" name="entity-PER-14" type="PER">
+      <entity_mention id="m-1191" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5138" length="8">the monk</entity_mention>
+      <entity_mention id="m-1204" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5151" length="2">he</entity_mention>
+      <entity_mention id="m-1269" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5552" length="8">the monk</entity_mention>
+      <entity_mention id="m-1282" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5565" length="2">he</entity_mention>
+      <entity_mention id="m-1334" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="5994" length="9">The monks</entity_mention>
+      <entity_mention id="m-1373" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6054" length="2">he</entity_mention>
+      <entity_mention id="m-1516" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6736" length="9">The monks</entity_mention>
+      <entity_mention id="m-1555" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6796" length="2">he</entity_mention>
+    </entity>
+    <entity id="ent-70132571702140" name="entity-PER-15" type="PER">
+      <entity_mention id="m-450" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1815" length="3">you</entity_mention>
+      <entity_mention id="m-1074" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4765" length="3">you</entity_mention>
+    </entity>
+    <entity id="ent-70132571636940" name="entity-PER-16" type="PER">
+      <entity_mention id="m-2109" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4178" length="8">bm0p700f</entity_mention>
+    </entity>
+    <entity id="ent-70132571592720" name="entity-ORG-2" type="ORG">
+      <entity_mention id="m-866" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3166" length="7">Orascom</entity_mention>
+      <entity_mention id="m-918" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3693" length="7">Orascom</entity_mention>
+      <entity_mention id="m-1646" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3152" length="13">telecom giant</entity_mention>
+      <entity_mention id="m-1659" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3679" length="13">telecom giant</entity_mention>
+    </entity>
+    <entity id="ent-70132571579700" name="entity-GPE-2" type="GPE">
+      <entity_mention id="m-541" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1932" length="2">US</entity_mention>
+      <entity_mention id="m-1165" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4882" length="2">US</entity_mention>
+      <entity_mention id="m-164" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="865" length="2">US</entity_mention>
+      <entity_mention id="m-346" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1541" length="8">American</entity_mention>
+    </entity>
+    <entity id="ent-70132571560920" name="entity-GPE-3" type="GPE">
+      <entity_mention id="m-1607" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="7025" length="7">tibetan</entity_mention>
+    </entity>
+    <entity id="ent-70132571557340" name="entity-GPE-4" type="GPE">
+      <entity_mention id="m-151" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="634" length="9">the North</entity_mention>
+      <entity_mention id="m-177" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1024" length="13">North Koreans</entity_mention>
+      <entity_mention id="m-957" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4297" length="11">North Korea</entity_mention>
+      <entity_mention id="m-424" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1684" length="69">a completely bizarre but fascinating place that is very misunderstood</entity_mention>
+      <entity_mention id="m-593" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2516" length="11">the country</entity_mention>
+      <entity_mention id="m-1022" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4409" length="9">the place</entity_mention>
+      <entity_mention id="m-1451" noun_type="PRO" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6262" length="2">it</entity_mention>
+      <entity_mention id="m-775" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2928" length="5">there</entity_mention>
+      <entity_mention id="m-1009" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4356" length="3">N.K</entity_mention>
+      <entity_mention id="m-1438" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6211" length="5">there</entity_mention>
+    </entity>
+    <entity id="ent-70132571514660" name="entity-GPE-5" type="GPE">
+      <entity_mention id="m-697" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2696" length="9">Pyongyang</entity_mention>
+    </entity>
+    <entity id="ent-70132571511860" name="entity-GPE-7" type="GPE">
+      <entity_mention id="m-138" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="598" length="11">South Korea</entity_mention>
+    </entity>
+    <entity id="ent-70132571508520" name="entity-GPE-8" type="GPE">
+      <entity_mention id="m-411" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1667" length="7">British</entity_mention>
+    </entity>
+    <entity id="ent-70132571505060" name="entity-GPE-1" type="GPE">
+      <entity_mention id="m-710" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2710" length="30">the other few cities I visited</entity_mention>
+    </entity>
+    <entity id="ent-70132571502080" name="entity-LOC-2" type="LOC">
+      <entity_mention id="m-853" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3199" length="14">Ryugyong Hotel</entity_mention>
+      <entity_mention id="m-931" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="3726" length="14">Ryugyong Hotel</entity_mention>
+    </entity>
+    <entity id="ent-70132571503820" name="entity-LOC-3" type="LOC">
+      <entity_mention id="m-294" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1361" length="9">the world</entity_mention>
+    </entity>
+    <entity id="ent-70132571484660" name="entity-LOC-4" type="LOC">
+      <entity_mention id="m-489" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1875" length="3">DMZ</entity_mention>
+      <entity_mention id="m-1113" noun_type="NAM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4825" length="3">DMZ</entity_mention>
+    </entity>
+    <entity id="ent-70132571478620" name="entity-LOC-5" type="LOC">
+      <entity_mention id="m-1529" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6755" length="20">a Buddhist monastery</entity_mention>
+      <entity_mention id="m-1347" noun_type="NOM" source="1f288dcbcb562b39031c6a9402ebf6d0" offset="6013" length="20">a Buddhist monastery</entity_mention>
+    </entity>
+  </entities>
+  <relations>
+    <relation id="r-70132570251140" type="social" subtype="business">
+      <relation_mention id="relm-40">
+        <arg type="per" entity_id="ent-70132568740280" entity_mention_id="m-1672">my</arg>
+        <arg type="per" entity_id="ent-70132568757160" entity_mention_id="m-229">my guides</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132570226600" type="physical" subtype="origin">
+      <relation_mention id="relm-1680">
+        <arg type="entity" entity_id="ent-70132568740280" entity_mention_id="m-333">I</arg>
+        <arg type="loc" entity_id="ent-70132571579700" entity_mention_id="m-346">American</arg>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132570226460" type="physical" subtype="located">
+      <relation_mention id="relm-1770">
+        <arg type="entity" entity_id="ent-70132568740280" entity_mention_id="m-723">I</arg>
+        <arg type="loc" entity_id="ent-70132571514660" entity_mention_id="m-697">Pyongyang</arg>
+        <trigger source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2733" length="7">visited</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132570226400" type="physical" subtype="located">
+      <relation_mention id="relm-1800">
+        <arg type="entity" entity_id="ent-70132568740280" entity_mention_id="m-723">I</arg>
+        <arg type="loc" entity_id="ent-70132571505060" entity_mention_id="m-710">the other few cities I visited</arg>
+        <trigger source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2733" length="7">visited</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132570226200" type="affiliation" subtype="leadership">
+      <relation_mention id="relm-1830">
+        <arg type="leader" entity_id="ent-70132577265020" entity_mention_id="m-970">the front man for the military dictorship that runs North Korea</arg>
+        <arg type="entity" entity_id="ent-70132571557340" entity_mention_id="m-957">North Korea</arg>
+        <trigger source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4292" length="4">runs</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-70132570225960" type="physical" subtype="origin">
+      <relation_mention id="relm-1890">
+        <arg type="entity" entity_id="ent-70132577268340" entity_mention_id="m-1620">the tibetan llama</arg>
+        <arg type="loc" entity_id="ent-70132571560920" entity_mention_id="m-1607">tibetan</arg>
+      </relation_mention>
+    </relation>
+  </relations>
+  <events>
+    <event id="e-70132569519500" name="entity-EVENT-2">
+      <event_mention id="evm-2060" type="contact" subtype="meet">
+        <trigger source="1f288dcbcb562b39031c6a9402ebf6d0" offset="4792" length="3">met</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-1100" entity_id="ent-70132568801700">a 4 star General</arg>
+          <arg type="entity" entity_mention_id="m-1087" entity_id="ent-70132568740280">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-1113">DMZ</place>
+        </places>
+      </event_mention>
+      <event_mention id="evm-1926" type="contact" subtype="meet">
+        <trigger source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1842" length="3">met</trigger>
+        <args>
+          <arg type="entity" entity_mention_id="m-476" entity_id="ent-70132568801700">a 4 star General</arg>
+          <arg type="entity" entity_mention_id="m-463" entity_id="ent-70132568740280">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-489">DMZ</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132569520860" name="entity-EVENT-3">
+      <event_mention id="evm-1976" type="movement" subtype="transportperson">
+        <trigger source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2733" length="7">visited</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-723" entity_id="ent-70132568740280">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-697">Pyongyang</place>
+        </places>
+      </event_mention>
+    </event>
+    <event id="e-70132569500160" name="entity-EVENT-4">
+      <event_mention id="evm-84" type="movement" subtype="transportperson">
+        <trigger source="1f288dcbcb562b39031c6a9402ebf6d0" offset="1096" length="8">visiting</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-190" entity_id="ent-70132568740280">I</arg>
+        </args>
+        <places/>
+      </event_mention>
+    </event>
+    <event id="e-70132569485680" name="entity-EVENT-5">
+      <event_mention id="evm-2018" type="movement" subtype="transportperson">
+        <trigger source="1f288dcbcb562b39031c6a9402ebf6d0" offset="2733" length="7">visited</trigger>
+        <args>
+          <arg type="agent" entity_mention_id="m-723" entity_id="ent-70132568740280">I</arg>
+        </args>
+        <places>
+          <place entity_mention_id="m-710">the other few cities I visited</place>
+        </places>
+      </event_mention>
+    </event>
+  </events>
+</deft_ere>

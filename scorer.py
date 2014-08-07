@@ -2,7 +2,9 @@
 
 """
     A simple scorer that reads the CMU Event Mention Detection Format 
-    data and produce F-Scores
+    data and produce a mention based F-Scores
+
+    This scorer needs will require token files as well to conduct evaluation
 """
 import math
 import errno
@@ -10,6 +12,7 @@ import argparse
 import logging
 import sys
 import os
+import heapq
 from itertools import izip
 
 commentMarker = "#"
@@ -18,38 +21,56 @@ eodMarker = "#EndOfDocument" #mark end of a document
 
 logger = logging.getLogger()
 
-invisible_words = set(['the','a','an','I','you','he','she','we','they','it','his','her','my','your','mine','yours','our','ours','who','what','where','when','that'])
+invisible_words = set(['the','a','an','I','you','he','she','we','they','his','her','my','your','mine','yours','our','ours','who','what','where','when'])
 
 gf = None
 sf = None
 tokenDir = "."
+
+diffOut = None
+
 
 docScores = []
 
 tokenJoiner = ","
 tokenFileExt = ".tkn"
 
+spanSeperator = ";"
+spanJoiner = "_"
+
+class EvalMethod:
+    Token, Char = range(2)
+
+def createParentDir(p):
+    try:
+        head,tail = os.path.split(p)
+        if head != "":
+            os.makedirs(head)
+    except OSError as exception:
+        if exception.errno != errno.EEXIST:
+            raise
+
 def main():
     global gf
     global sf
+    global diffOut
     global tokenDir
-    parser = argparse.ArgumentParser(description="Event mention scorer")
+    
+    parser = argparse.ArgumentParser(description="Event mention scorer, which conducts token based scoring, your system and gold standard should follows the token-based format. The character based scoring is currently retained for comparison, which requires character based format.")
     parser.add_argument("-g","--gold",help="Golden Standard",required=True)
     parser.add_argument("-s","--system",help="System output",required=True)
+    parser.add_argument("-d","--comparisonOutput",help="Compare and help show the difference between system and gold") 
     parser.add_argument("-o","--output",help="Optional evaluation result redirects")
-    parser.add_argument("-t","--token",help="Path to the directory containing the tokens, will use current directory if not specified")
+    parser.add_argument("-c","--charMode",action='store_true',help="Option for character based scoring, the default one is token based")
+    parser.set_defaults(charMode=False)
+    parser.add_argument("-p","--tokenPath",help="Path to the directory containing the tokens, will use current directory if not specified, it will be required when token mode is activated to remove invisible words")
     args = parser.parse_args()
     
-    stream_handler=None 
+    stream_handler=None
+    evalOut = None
     if args.output is not None:   
         outPath = args.output
-        try:
-            head,tail = os.path.split(outPath)
-            if head != "":
-                os.makedirs(head)
-        except OSError as exception:
-            if exception.errno != errno.EEXIST:
-                raise
+        createParentDir(outPath)
         evalOut = open(outPath,'w')
         stream_handler = logging.StreamHandler(evalOut)
     else:
@@ -67,32 +88,47 @@ def main():
     else:
         logger.error("Cannot find system file at "+ args.system)
         sys.exit(1)
-  
-    if args.token is not None:
-        if os.path.isdir(args.token):
-            logger.error("Will search token files in "+args.token)
-            tokenDir = args.token 
+
+    if args.comparisonOutput is not None:
+        diffOutPath = args.comparisonOutput
+    else:
+        diffOutPath = "diff.tbf"
+    
+    createParentDir(diffOutPath)
+    diffOut = open(diffOutPath,'w')
+
+    if args.tokenPath is not None:
+        if os.path.isdir(args.tokenPath):
+            logger.error("Will search token files in "+args.tokenPath)
+            tokenDir = args.tokenPath
         else:
-            logger.error("Cannot find given token directory at " +args.token+", will try search for currrent directory")
+            logger.error("Cannot find given token directory at " +args.tokenPath+", will try search for currrent directory")
+
+    #token based eval mode
+    evalMode = EvalMethod.Token
+    
+    if args.charMode:
+        evalMode = EvalMethod.Char
+        logger.debug("NOTE: Using character based evaluation")
 
     while True:
-        res = evaluate()
+        res = evaluate(evalMode)
         if not res:
             break
 
     totalTp = 0
     totalFp = 0
-    totalFn = 0
+    totalGoldMentions = 0
     totalPrec = 0
     totalRecall = 0
     validDocs = 0
 
     logger.info("========Document results==========")
-    for (tp,fp,fn,docId) in docScores:
+    for (tp,fp,goldMentions,docId) in docScores:
         prec = tp/(tp+fp) if tp + fp > 0 else float('nan')
-        recall = tp/(tp+fn) if tp + fn > 0 else float('nan')
-        logger.info("TP\tFP\tFN\tPrec\tRecall\tDoc Id")
-        logger.info("%.2f\t%.2f\t%.2f\t%.2f\t%.2f\t%s"%(tp,fp,fn,prec,recall,docId))
+        recall = tp/goldMentions if goldMentions > 0 else float('nan')
+        logger.info("TP\tFP\t#Gold\tPrec\tRecall\tDoc Id")
+        logger.info("%.2f\t%.2f\t%d\t%.4f\t%.4f\t%s"%(tp,fp,goldMentions,prec,recall,docId))
         
         if math.isnan(prec) or math.isnan(recall):
             #no mentions annotated, treat as invalid file 
@@ -101,13 +137,13 @@ def main():
             validDocs += 1
             totalTp += tp
             totalFp += fp 
-            totalFn += fn
+            totalGoldMentions += goldMentions
             totalPrec += prec 
             totalRecall += recall
 
     logger.info("\n=======Final Results=========")
     microPrec = totalTp/(totalTp+totalFp) if totalTp+ totalFp > 0 else float('nan')
-    microRecall = totalTp/(totalTp+totalFn) if totalTp + totalFn > 0 else float('nan')
+    microRecall = totalTp/totalGoldMentions if totalGoldMentions > 0 else float('nan')
     microF1 = 2*microPrec*microRecall/(microPrec+microRecall) if microPrec+microRecall > 0 else float('nan')
 
     macroPrec = totalPrec/validDocs if validDocs > 0 else float('nan')
@@ -122,6 +158,10 @@ def main():
     logger.info("Recall (Macro Average): %.4f", macroRecall)
     logger.info("F1 (Macro Average): %.4f", macroF1)
 
+    if evalOut is not None:
+        evalOut.close()
+    diffOut.close()
+
 def getInvisibleWordIDs(gFileName):
     invisibleIds = set()
     tokenFile = None
@@ -134,7 +174,6 @@ def getInvisibleWordIDs(gFileName):
                 continue 
             if fields[1].lower().strip().rstrip() in invisible_words:
                 invisibleIds.add(int(fields[0]))
-                logger.debug("Token %s-%s is invisible"%(fields[0],fields[1]))
 
     except IOError:
         logger.debug("Cannot find token file for doc [%s], will use empty invisible words list"%gFileName)
@@ -181,8 +220,22 @@ def getNextDoc():
         logger.error("System document IDs are not aligned with gold standard IDs")
         sys.exit(1)
     return (gLines,sLines,gdocId)
-    
+   
+def parseSpans(s):
+    """
+    Method to parse the character based span 
+    """
+    spanStrs = s.split(spanSeperator)
+    spans = []
+    for spanStrs in spanStrs:
+        span = list(map(int,spanStrs.split(spanJoiner)))
+        spans.append(span)
+    return spans
+
 def parseTokenIds(s,invisibleIds):
+    """
+    Method to parse the token ids (instead of a span)
+    """
     tokenStrs = s.split(tokenJoiner)
     tokenIds = set()
     for tokenStr in tokenStrs:
@@ -190,22 +243,95 @@ def parseTokenIds(s,invisibleIds):
         if not tokenId in invisibleIds:
             tokenIds.add(tokenId)
         else:
-            logger.debug("Token Id %d is filtered"%(tokenId))
+            #logger.debug("Token Id %d is filtered"%(tokenId))
             pass
-
+    
     return tokenIds
 
-def parseLine(l,invisibleIds):
+def parseCharBasedLine(l):
     '''
-    parse the line, get the token ids, remove invisible ones
+    Method to parse the character based line, which does not support
+    removal of invisible words
     '''
     fields = l.split("\t")
     if (len(fields) != 8):
         logger.error("Output are not correctly formatted")
-    tokenIds = parseTokenIds(fields[3],invisibleIds)
-    return (tokenIds)
+    spans = parseSpans(fields[3])
 
-def computeOverlapScore(gTokens,sTokens):
+    return spans
+
+def parseTokenBasedLine(l,invisibleIds):
+    """
+    parse the line, get the token ids, remove invisible ones
+    """
+    fields = l.split("\t")
+    if (len(fields) != 8):
+        logger.error("Output are not correctly formatted")
+    tokenIds = parseTokenIds(fields[3],invisibleIds)
+    return tokenIds
+
+def parseLine(l,evalMode,invisibleIds):
+    if evalMode == EvalMethod.Token:
+        return parseTokenBasedLine(l,invisibleIds)
+    else:
+        return parseCharBasedLine(l)
+
+def validateSpans(spans):
+    lastEnd = -1
+    for span in spans:
+        if len(span) == 2 and span[1] > span[0]:
+            pass
+        else:
+            logger.error(span+" is not a valid span")    
+            sys.exit(1)
+        if span[0] < lastEnd:
+            logger.error("Spans cannot overlaps")
+            sys.exit(1)
+
+def spanOverlap(span1, span2):
+    """
+    return the number of characters that overlaps
+    """
+    if span1[1] > span2[0] and span1[0] < span2[1]:
+        #find left end 
+        leftEnd = span1[0] if span1[0] < span2[0] else span2[0]
+        #find right end 
+        rightEnd = span1[1] if span1[1] > span2[1] else span2[1]
+        return rightEnd - leftEnd
+    else:
+        #no overlap 
+        return 0
+
+def computeCharOverlapScore(gSpans,sSpans):
+    """
+    character based overlap score
+    """
+    #validate system span 
+    validateSpans(sSpans)
+
+    gLength = 0
+    for s in gSpans:
+        gLength += (s[1]-s[0])
+
+    sLength = 0
+    for s in sSpans:
+        sLength += (s[1]-s[0])
+    
+    totalOverlap = 0.0
+    for gSpan in gSpans:
+        for sSpan in sSpans:
+            totalOverlap += spanOverlap(gSpan,sSpan)
+ 
+    #choose to use the longer length
+    deno = gLength if gLength < sLength else sLength
+
+    return totalOverlap/deno
+
+def computeTokenOverlapScore(gTokens,sTokens):
+    """
+    token based overlap score
+    """
+    
     totalOverlap = 0.0
     
     for sToken in sTokens:
@@ -215,62 +341,83 @@ def computeOverlapScore(gTokens,sTokens):
     gLength = len(gTokens)
     sLength = len(sTokens)
 
-    deno = gLength if gLength < sLength else sLength
+    deno = gLength if gLength > sLength else sLength
 
     return totalOverlap/deno
 
-def evaluate():
+def computeOverlapScore(systemOutputs,goldAnnos,evalMode): 
+    if evalMode == EvalMethod.Token:
+        return computeTokenOverlapScore(systemOutputs,goldAnnos)
+    else:
+        return computeCharOverlapScore(systemOutputs,goldAnnos)
+
+def evaluate(evalMode):    
     (gLines,sLines,docId) = getNextDoc()
    
     if not gLines:
         return False
 
-    invisibleIds = getInvisibleWordIDs(docId)
+    invisibleIds = set() if evalMode == EvalMethod.Char else  getInvisibleWordIDs(docId)
 
-    tp = 0.0
-    fp = 0.0
-    fn = 0.0
+    systemId = ""
+    if len(sLines) > 0:
+        fields = sLines[0].split("\t")
+        if len(fields) > 0:
+            systemId = fields[0]
 
-    #maintaining the score at slot i
-    scoreSlots = [0.0]*len(gLines)
-    #maininting the actual mapping from gold to system
-    mappingSlots = [-1]*len(gLines)
-    #maintaining all scores of system mappings to gold
-    systemMappingSlots = []*len(sLines)
+    #Store list of mappings with the score as a priority queue
+    allGoldSystemMappingScores = []
+    assignedGold2SystemMapping = [(-1,-1)]*len(gLines) 
 
     for systemIndex, sl in enumerate(sLines):
         largestOverlap = -1.0
-        sTokens = parseLine(sl,invisibleIds)
+        
+        systemOutputs = parseLine(sl,evalMode,invisibleIds)
         corresIndex = -1
 
         for index, gl in enumerate(gLines):
-            gTokens = parseLine(gl,invisibleIds)
-            overlap = computeOverlapScore(gTokens,sTokens)
+            goldAnnos = parseLine(gl,evalMode,invisibleIds)
+            overlap = computeOverlapScore(goldAnnos,systemOutputs,evalMode)
+
+            if len(goldAnnos) == 0:
+                logger.debug("Found empty gold standard")
+                logger.debug(gl)
 
             if (overlap > 0):
                 #maintaining a max heap based on overlap score
-                heappush(systemMappingSlots[systemIndex],(-overlap,systemIndex))
+                heapq.heappush(allGoldSystemMappingScores,(-overlap,systemIndex,index))
 
-            if (overlap > largestOverlap):
-                largestOverlap = overlap
-                corresIndex = index
+    mappedSystemMentions = set()
+    mappedGoldMentions = set()
 
-        if largestOverlap > 0:
-            if largestOverlap > scoreSlots[corresIndex]:
-                scoreSlots[corresIndex] = largestOverlap
-                #could consider implementing something that move the previous
-                #mapped system score to its second best system mapping
+    while len(allGoldSystemMappingScores) != 0:
+        negMappingScore,mappingSystemIndex,mappingGoldIndex = heapq.heappop(allGoldSystemMappingScores)
+        if mappingSystemIndex in mappedSystemMentions or mappingGoldIndex in mappedGoldMentions:
+            #the system mention or gold mention is already mapped
+            continue
         else:
-            #case where no mapping are found
-            fp += 1
-            
-    for score in scoreSlots:
+            assignedGold2SystemMapping[mappingGoldIndex] = (mappingSystemIndex,-negMappingScore)
+            mappedSystemMentions.add(mappingSystemIndex)
+            mappedGoldMentions.add(mappingGoldIndex)
+
+    tp = 0.0
+    fp = 0.0
+
+    for systemIndex, score in assignedGold2SystemMapping:
         if score > 0:
-            tp += score 
-        else:
-            fn += 1
+            tp += score
 
-    docScores.append((tp,fp,fn,docId))
+    diffOut.write(bodMarker+" "+docId+"\n")
+    for gIndex, gLine in enumerate(gLines):
+        goldContent = gLine.split("\t",1)
+        systemIndex, mappingScore = assignedGold2SystemMapping[gIndex]
+        scoreOut = "%.4f"%mappingScore if mappingScore != -1 else "-"
+        diffOut.write("%s\t%s\t%s\n"%(systemId,goldContent[1],scoreOut))
+
+    #unmapped system mentions are considered as false positive
+    fp += len(sLines) - len(mappedSystemMentions)
+
+    docScores.append((tp,fp,len(gLines),docId))
     return True
     
 if __name__ == "__main__":

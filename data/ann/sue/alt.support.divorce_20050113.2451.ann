@@ -1,0 +1,107 @@
+T1	Divorce 164 171	divorce
+E1	Divorce:T1 
+A1	Realis E1 Generic
+T2	Divorce 369 376	divorce
+E2	Divorce:T2 
+A2	Realis E2 Generic
+T3	Marry 492 501	remarried
+E3	Marry:T3 
+A3	Realis E3 Actual
+T4	Divorce 503 511	divorced
+E4	Divorce:T4 
+A4	Realis E4 Actual
+T5	Communicate 986 993	talking
+E5	Communicate:T5 
+A5	Realis E5 Actual
+T6	Transport-Person 1204 1208	take
+E6	Transport-Person:T6 
+A6	Questionable E6 Mention
+A7	Realis E6 Other
+#1	AnnotatorNotes E6	Not sure if actual location ever mentioned. Does "for a beer" qualify?
+T7	Divorce 1424 1431	divorce
+E7	Divorce:T7 
+A8	Realis E7 Other
+T8	Transport-Person 1444 1448	took
+E8	Transport-Person:T8 
+A9	Realis E8 Other
+T9	Transport-Person 1488 1492	that
+E9	Transport-Person:T9 
+A10	Questionable E9 Mention
+A11	Realis E9 Other
+#2	AnnotatorNotes E9	Are we tagging anaphoric "that"?
+T10	Divorce 1500 1507	Divorce
+E10	Divorce:T10 
+A12	Realis E10 Generic
+T11	Divorce 1591 1598	divorce
+E11	Divorce:T11 
+A13	Questionable E11 Mention
+A14	Realis E11 Actual
+#3	AnnotatorNotes E11	In adjectival N-N construction.
+T12	Divorce 1795 1802	divorce
+E12	Divorce:T12 
+A15	Realis E12 Generic
+T13	Divorce 1952 1959	divorce
+E13	Divorce:T13 
+A16	Questionable E13 Mention
+A17	Realis E13 Generic
+#4	AnnotatorNotes E13	In adjectival N-N construction
+T14	Marry 2027 2034	married
+E14	Marry:T14 
+A18	Realis E14 Actual
+T15	Divorce 2062 2069	divorce
+E15	Divorce:T15 
+A19	Questionable E15 Mention
+A20	Realis E15 Generic
+#5	AnnotatorNotes E15	In adjectival N-N construction
+T16	Marry 2455 2463	marriage
+E16	Marry:T16 
+A21	Realis E16 Generic
+T17	Marry 2546 2554	marriage
+E17	Marry:T17 
+A22	Realis E17 Actual
+T18	Marry 3121 3128	married
+E18	Marry:T18 
+A23	Realis E18 Generic
+T19	Transport-Person 3199 3204	going
+E19	Transport-Person:T19 
+A24	Realis E19 Other
+T20	Divorce 3530 3537	divorce
+E20	Divorce:T20 
+A25	Realis E20 Actual
+T21	Divorce 3609 3616	divorce
+E21	Divorce:T21 
+A26	Realis E21 Actual
+T22	Marry 4091 4098	married
+E22	Marry:T22 
+A27	Realis E22 Other
+T23	Divorce 4486 4493	Divorce
+E23	Divorce:T23 
+A28	Realis E23 Generic
+T24	Marry 5260 5267	wedding
+E24	Marry:T24 
+A29	Questionable E24 Mention
+A30	Realis E24 Actual
+#6	AnnotatorNotes E24	In adjectival N-N construction
+T25	Transport-Person 5479 5484	trips
+E25	Transport-Person:T25 
+A31	Questionable E25 Mention
+#7	AnnotatorNotes E25	Not sure if explicit mention of either origin or destination, although trips always start from home.
+T26	Transport-Person 5485 5494	vacations
+E26	Transport-Person:T26 
+A32	Questionable E26 Mention
+A33	Realis E26 Actual
+#8	AnnotatorNotes E26	Not sure if explicit mention of either origin or destination, although trips always start from home.
+T27	Transport-Person 5495 5503	whatever
+E27	Transport-Person:T27 
+A34	Questionable E27 Mention
+A35	Realis E27 Actual
+#9	AnnotatorNotes E27	Tag anaphora - "whatever"? also not sure if origin or destination not being explicitly mentioned disqualifies as a taggable event.
+T28	Marry 6112 6122	remarriage
+E28	Marry:T28 
+A36	Realis E28 Actual
+T29	Divorce 6169 6176	Divorce
+E29	Divorce:T29 
+A37	Realis E29 Generic
+T30	Marry 6286 6293	married
+E30	Marry:T30 
+A38	Realis E30 Generic

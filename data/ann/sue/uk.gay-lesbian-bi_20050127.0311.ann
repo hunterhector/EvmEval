@@ -1,0 +1,76 @@
+T1	Die 523 532	slaughter
+E1	Die:T1 
+A1	Realis E1 Actual
+T2	Die 676 685	slaughter
+E2	Die:T2 
+A2	Realis E2 Actual
+T3	Die 1579 1583	died
+E3	Die:T3 
+A3	Realis E3 Actual
+T4	Die 3487 3493	killed
+E4	Die:T4 
+A4	Realis E4 Actual
+T5	Die 3586 3594	genocide
+E5	Die:T5 
+A5	Realis E5 Actual
+T6	Die 3700 3704	died
+E6	Die:T6 
+A6	Realis E6 Actual
+T7	Die 5522 5528	deaths
+E7	Die:T7 
+A7	Realis E7 Actual
+T8	Die 5617 5628	liquidation
+E8	Die:T8 
+A8	Questionable E8 Mention
+A9	Realis E8 Other
+#1	AnnotatorNotes E8	Is this expression (metaphor?) for killing a Life.Die event?
+T9	Die 8368 8377	Holocaust
+E9	Die:T9 
+A10	Questionable E9 Mention
+A11	Realis E9 Actual
+#2	AnnotatorNotes E9	Is holocaust a Life.Die event, since it can mean "destruction or slaughter on a mass scale" (Google define)
+T10	Die 162 171	Holocaust
+E10	Die:T10 
+A12	Questionable E10 Mention
+A13	Realis E10 Actual
+#3	AnnotatorNotes E10	Is holocaust a Life.Die event, since it can mean "destruction or slaughter on a mass scale" (Google define)
+T11	Die 398 407	Holocaust
+E11	Die:T11 
+A14	Questionable E11 Mention
+A15	Realis E11 Actual
+#4	AnnotatorNotes E11	Is holocaust a Life.Die event, since it can mean "destruction or slaughter on a mass scale" (Google define)
+T12	Die 4120 4129	Holocaust
+E12	Die:T12 
+A16	Realis E12 Actual
+#5	AnnotatorNotes E12	Is holocaust a Life.Die event, since it can mean "destruction or slaughter on a mass scale" (Google define)
+T13	Die 8443 8449	murder
+E13	Die:T13 
+A17	Realis E13 Actual
+T14	Arrest-Jail 8508 8516	arrested
+E14	Arrest-Jail:T14 
+A18	Realis E14 Actual
+T15	Arrest-Jail 8542 8552	imprisoned
+E15	Arrest-Jail:T15 
+A19	Realis E15 Actual
+T16	Die 8716 8722	killed
+E16	Die:T16 
+A20	Realis E16 Actual
+T17	Die 8821 8827	murder
+E17	Die:T17 
+A21	Realis E17 Generic
+T18	Die 10475 10481	killed
+E18	Die:T18 
+A22	Realis E18 Actual
+T19	Convict 10558 10567	convicted
+E19	Convict:T19 
+A23	Realis E19 Actual
+T20	Transport-Person 10633 10637	sent
+E20	Transport-Person:T20 
+A24	Realis E20 Actual
+T21	Arrest-Jail 10726 10731	jails
+E21	Arrest-Jail:T21 
+A25	Realis E21 Actual
+T22	Transport-Person 10737 10748	transferred
+E22	Transport-Person:T22 
+A26	Realis E22 Actual
+A27	Questionable E12 Mention

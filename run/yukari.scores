@@ -1,0 +1,50 @@
+Will search token files in ../data/tkn/LDC2014R19/
+========Document results==========
+TP	FP	Prec	Recall	Doc Id
+19.00	0.00	1.00	0.90	0f03cc5a508d630c6c8c8c61396e31a9
+TP	FP	Prec	Recall	Doc Id
+22.00	0.00	1.00	0.49	1b268b27094ba9c5feb11192dad940ab
+TP	FP	Prec	Recall	Doc Id
+17.50	0.00	1.00	0.73	29f64df7feb04dfb16f4667ce199c9f0
+TP	FP	Prec	Recall	Doc Id
+17.00	0.00	1.00	0.52	44b011cd504c9ed71beb851324db886a
+TP	FP	Prec	Recall	Doc Id
+28.00	1.00	0.97	0.74	57026b7bcb8f855de3e26d572db35285
+TP	FP	Prec	Recall	Doc Id
+20.40	0.00	1.00	0.62	7ddae34c4553ef60a76c43144855ec6b
+TP	FP	Prec	Recall	Doc Id
+10.50	0.00	1.00	0.28	90e2a980c22e41e2b25666f676458343
+TP	FP	Prec	Recall	Doc Id
+25.50	2.00	0.93	0.82	alt.support.divorce_20050113.2451
+TP	FP	Prec	Recall	Doc Id
+19.50	1.00	0.95	0.70	alt.sys.pc-clone.dell_20050226.2350
+TP	FP	Prec	Recall	Doc Id
+20.83	2.00	0.91	0.50	be8792abc57847d9a19940579acf8373
+TP	FP	Prec	Recall	Doc Id
+14.12	3.00	0.82	0.52	c572dc8353079a5ef9943ae298e4f5b0
+TP	FP	Prec	Recall	Doc Id
+23.00	0.00	1.00	0.64	d21dc2cb6e6435da7f9d9b0e5759e214
+TP	FP	Prec	Recall	Doc Id
+45.17	1.00	0.98	0.65	misc.legal.moderated_20041202.1648
+TP	FP	Prec	Recall	Doc Id
+26.33	11.00	0.71	0.54	misc.legal.moderated_20050129.2225
+TP	FP	Prec	Recall	Doc Id
+23.58	2.00	0.92	0.49	rec.arts.sf.written.robert-jordan_20050208.1350
+TP	FP	Prec	Recall	Doc Id
+32.50	0.00	1.00	0.69	rec.games.chess.politics_20041217.2111
+TP	FP	Prec	Recall	Doc Id
+4.00	4.00	0.50	0.67	soc.culture.china_20050203.0639
+TP	FP	Prec	Recall	Doc Id
+7.50	0.00	1.00	0.50	soc.culture.iraq_20050211.0445
+TP	FP	Prec	Recall	Doc Id
+8.00	2.00	0.80	0.20	soc.org.nonprofit_20050218.1902
+TP	FP	Prec	Recall	Doc Id
+16.67	1.00	0.94	0.62	uk.gay-lesbian-bi_20050127.0311
+
+=======Final Results=========
+Precision (Micro Average): 0.9304
+Recall (Micro Average):0.5747
+F1 (Micro Average):0.7105
+Precision (Macro Average): 0.9215
+Recall (Macro Average): 0.5900
+F1 (Macro Average): 0.7194

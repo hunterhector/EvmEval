@@ -1,6 +1,10 @@
 #!/usr/bin/python 
 
 """
+    #NOTE THIS FILE IS NO LONGER MAINTAINED!
+    The full functionality is moved to the "scorer.py" file, this file
+    will be removed after a certain testing period.
+
     A simple scorer that reads the CMU Event Mention Detection Format 
     data and produce F-Scores
 """
@@ -73,17 +77,17 @@ def main():
 
     totalTp = 0
     totalFp = 0
-    totalFn = 0
+    totalGoldMention = 0
     totalPrec = 0
     totalRecall = 0
     validDocs = 0
 
     logger.info("========Document results==========")
-    for (tp,fp,fn,docId) in docScores:
+    for (tp,fp,noGoldMention,docId) in docScores:
         prec = tp/(tp+fp) if tp + fp > 0 else float('nan')
-        recall = tp/(tp+fn) if tp + fn > 0 else float('nan')
-        logger.info("TP\tFP\tFN\tPrec\tRecall\tDoc Id")
-        logger.info("%.2f\t%.2f\t%.2f\t%.2f\t%.2f\t%s"%(tp,fp,fn,prec,recall,docId))
+        recall = tp/noGoldMention if noGoldMention > 0 else float('nan')
+        logger.info("TP\tFP\tPrec\tRecall\tDoc Id")
+        logger.info("%.2f\t%.2f\t%.2f\t%.2f\t%s"%(tp,fp,prec,recall,docId))
         
         if math.isnan(prec) or math.isnan(recall):
             #no mentions annotated, treat as invalid file 
@@ -92,13 +96,13 @@ def main():
             validDocs += 1
             totalTp += tp
             totalFp += fp 
-            totalFn += fn
+            totalGoldMention += noGoldMention
             totalPrec += prec 
             totalRecall += recall
 
     logger.info("\n=======Final Results=========")
     microPrec = totalTp/(totalTp+totalFp) if totalTp+ totalFp > 0 else float('nan')
-    microRecall = totalTp/(totalTp+totalFn) if totalTp + totalFn > 0 else float('nan')
+    microRecall = totalTp/totalGoldMention if noGoldMention > 0 else float('nan')
     microF1 = 2*microPrec*microRecall/(microPrec+microRecall)
 
     macroPrec = totalPrec/validDocs if validDocs > 0 else float('nan')
@@ -224,7 +228,6 @@ def evaluate():
 
     tp = 0.0
     fp = 0.0
-    fn = 0.0
 
     scoreSlots = [0.0]*len(gLines)
     
@@ -251,10 +254,8 @@ def evaluate():
     for score in scoreSlots:
         if score > 0:
             tp += score 
-        else:
-            fn += 1
 
-    docScores.append((tp,fp,fn,docId))
+    docScores.append((tp,fp,len(gLines),docId))
     return True
     
 if __name__ == "__main__":

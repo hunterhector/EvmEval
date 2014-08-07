@@ -1,0 +1,112 @@
+T2	Transport-Person 711 715	went
+E2	Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Marry 786 793	wedding
+E3	Marry:T3 
+A3	Realis E3 Actual
+T5	Marry 1006 1013	wedding
+E5	Marry:T5 
+A5	Realis E5 Actual
+T6	Transport-Person 1049 1053	went
+E6	Transport-Person:T6 
+A6	Realis E6 Actual
+T7	Marry 1213 1220	wedding
+E7	Marry:T7 
+A7	Realis E7 Other
+T8	Transfer-Ownership 1339 1345	borrow
+E8	Transfer-Ownership:T8 
+A8	Realis E8 Other
+T10	Transport-Person 1478 1482	trip
+E10	Transport-Person:T10 
+A10	Realis E10 Other
+T11	Meet 1557 1563	dinner
+E11	Meet:T11 
+A11	Realis E11 Actual
+T12	Transfer-Ownership 1729 1735	buying
+E12	Transfer-Ownership:T12 
+A12	Realis E12 Other
+T13	Transfer-Ownership 1268 1272	Hire
+E13	Transfer-Ownership:T13 
+A13	Realis E13 Other
+T14	Transfer-Ownership 1750 1754	hire
+E14	Transfer-Ownership:T14 
+A14	Realis E14 Other
+T15	Marry 2075 2082	married
+E15	Marry:T15 
+A15	Realis E15 Generic
+T16	Meet 2116 2121	party
+E16	Meet:T16 
+A16	Realis E16 Generic
+T17	Marry 2244 2252	weddings
+E17	Marry:T17 
+A17	Realis E17 Generic
+T18	Marry 2436 2443	married
+E18	Marry:T18 
+A18	Realis E18 Other
+T19	Marry 2492 2500	weddings
+E19	Marry:T19 
+A19	Realis E19 Generic
+T20	Marry 2978 2985	wedding
+E20	Marry:T20 
+A20	Realis E20 Other
+T21	Marry 3127 3135	weddings
+E21	Marry:T21 
+A21	Realis E21 Generic
+T22	Marry 3297 3305	marriage
+E22	Marry:T22 
+A23	Realis E22 Other
+T23	Meet 3358 3363	party
+E23	Meet:T23 
+A24	Realis E23 Other
+T25	Marry 352 360	ceromony
+E25	Marry:T25 
+A26	Realis E25 Actual
+T4	Communicate 113 117	tell
+E4	Communicate:T4 
+A25	Realis E4 Other
+T24	Marry 186 193	wedding
+E24	Marry:T24 
+A27	Realis E24 Actual
+#2	AnnotatorNotes E24	N-N phrase
+T26	Marry 398 405	wedding
+E26	Marry:T26 
+A4	Realis E26 Generic
+#1	AnnotatorNotes E26	N-N phrase
+T27	Transfer-Ownership 417 422	hired
+E27	Transfer-Ownership:T27 
+A29	Realis E27 Actual
+T28	Marry 453 460	wedding
+E28	Marry:T28 
+A30	Realis E28 Generic
+#4	AnnotatorNotes E28	N-N phrase
+T9	Marry 1997 2004	wedding
+E9	Marry:T9 
+A32	Realis E9 Generic
+#7	AnnotatorNotes E9	N-N phrase
+T29	Transport-Person 3447 3456	honeymoon
+E29	Transport-Person:T29 
+A22	Realis E29 Generic
+T30	Transport-Person 3543 3550;3571 3576	holiday taken
+E30	Transport-Person:T30 
+A33	Realis E30 Generic
+T31	Meet 1246 1251	party
+E31	Meet:T31 
+A34	Realis E31 Other
+T1	Marry 150 158	ceromony
+E1	Marry:T1 
+A1	Realis E1 Actual
+T32	Transfer-Money 1435 1438	get
+E32	Transfer-Money:T32 
+A28	Realis E32 Other
+T33	Transfer-Ownership 1361 1364	get
+E33	Transfer-Ownership:T33 
+A31	Realis E33 Other
+T34	Transfer-Money 3101 3106	spend
+E34	Transfer-Money:T34 
+A9	Realis E34 Generic
+T35	Transfer-Money 3210 3215	spend
+E35	Transfer-Money:T35 
+A35	Realis E35 Other
+T36	Transfer-Money 3499 3504	spend
+E36	Transfer-Money:T36 
+A36	Realis E36 Generic

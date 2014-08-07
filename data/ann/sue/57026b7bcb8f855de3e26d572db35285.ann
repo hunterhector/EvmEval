@@ -1,0 +1,125 @@
+T1	Transport-Person 64 70	leaves
+E1	Transport-Person:T1 
+A1	Realis E1 Other
+T2	Transport-Person 88 94	travel
+E2	Transport-Person:T2 
+A2	Realis E2 Other
+T3	Meet 190 195	visit
+E3	Meet:T3 
+A3	Realis E3 Other
+T4	Meet 224 229	visit
+E4	Meet:T4 
+A4	Realis E4 Actual
+T5	Be-Born 255 259	born
+E5	Be-Born:T5 
+A5	Realis E5 Actual
+T6	Meet 369 374	visit
+E6	Meet:T6 
+A6	Realis E6 Actual
+T7	Transport-Person 403 407	left
+E7	Transport-Person:T7 
+A7	Realis E7 Actual
+T8	Communicate 410 416	called
+E8	Communicate:T8 
+A8	Realis E8 Actual
+T9	Transport-Person 450 454	send
+E9	Transport-Person:T9 
+A9	Realis E9 Other
+T10	Communicate 526 530	call
+E10	Communicate:T10 
+A10	Realis E10 Actual
+T11	Transport-Person 563 567	came
+E11	Transport-Person:T11 
+A11	Realis E11 Actual
+T12	Demonstrate 594 608	demonstrations
+E12	Demonstrate:T12 
+A12	Realis E12 Actual
+T13	Transport-Person 125 131	flight
+E13	Transport-Person:T13 
+A13	Realis E13 Other
+T14	Transport-Person 695 699	flew
+E14	Transport-Person:T14 
+A14	Realis E14 Actual
+T15	Marry 749 756	wedding
+E15	Marry:T15 
+A15	Realis E15 Other
+T16	Meet 779 783	said
+E16	Meet:T16 
+A16	Realis E16 Actual
+T17	Injure 845 851	broken
+E17	Injure:T17 
+A17	Realis E17 Actual
+T18	Transport-Person 1211 1216	going
+E18	Transport-Person:T18 
+A18	Realis E18 Other
+T19	Transport-Person 1246 1252	leaves
+E19	Transport-Person:T19 
+A19	Realis E19 Other
+T20	Transport-Person 1673 1676	get
+E20	Transport-Person:T20 
+A20	Realis E20 Other
+T21	Transport-Person 2228 2232	goes
+E21	Transport-Person:T21 
+A21	Realis E21 Other
+T22	Transport-Person 2285 2289	trip
+E22	Transport-Person:T22 
+A22	Questionable E22 Mention
+A23	Realis E22 Other
+#1	AnnotatorNotes E22	Is this Movement.Person-Transport or Contact.Meet? The object/destination could be either LOC/GPE or PER.
+T23	Transport-Person 2318 2322	trip
+E23	Transport-Person:T23 
+A24	Realis E23 Other
+T24	Transport-Person 2327 2332	comes
+E24	Transport-Person:T24 
+A25	Realis E24 Actual
+T25	Meet 2432 2437	tells
+E25	Meet:T25 
+A26	Realis E25 Actual
+T26	Transport-Person 2452 2456	trip
+E26	Transport-Person:T26 
+A27	Realis E26 Other
+T27	Transport-Person 2693 2697	come
+E27	Transport-Person:T27 
+A28	Realis E27 Actual
+T28	Communicate 2752 2759	Sending
+E28	Communicate:T28 
+A29	Questionable E28 Mention
+A30	Realis E28 Actual
+#2	AnnotatorNotes E28	Is "sending vibes" a Contact.Communicate vent? Also is present tense "sending" realis=Actual or realis=Other?
+T29	Be-Born 3317 3322	birth
+E29	Be-Born:T29 
+A31	Realis E29 Actual
+T30	Transport-Person 3427 3433	cruise
+E30	Transport-Person:T30 
+A32	Realis E30 Actual
+T31	Transport-Person 3456 3463	touring
+E31	Transport-Person:T31 
+A33	Realis E31 Actual
+T32	Meet 3476 3482	seeing
+E32	Meet:T32 
+A34	Realis E32 Actual
+T33	Transport-Person 3546 3550	come
+E33	Transport-Person:T33 
+A35	Questionable E33 Mention
+A36	Realis E33 Actual
+#3	AnnotatorNotes E33	Is this Movement.Transport-Person or Contact.Meet? Is object/destination LOC/GPE or PER?
+T34	Transport-Person 3650 3654	sent
+E34	Transport-Person:T34 
+A37	Realis E34 Other
+T35	Transport-Person 3787 3790	got
+E35	Transport-Person:T35 
+A38	Realis E35 Actual
+T36	Meet 4001 4006	visit
+E36	Meet:T36 
+A39	Realis E36 Other
+T37	Meet 4072 4076	told
+E37	Meet:T37 
+A40	Questionable E37 Mention
+A41	Realis E37 Actual
+#4	AnnotatorNotes E37	Is telling a Contact.Meet event?
+T38	Meet 4163 4172	explained
+E38	Meet:T38 
+A42	Realis E38 Actual
+#5	AnnotatorNotes E38	Is explaining a Contact.Meet event?
+A43	Questionable E18 Mention
+#6	AnnotatorNotes E18	Is "going back to work" (after maturnity leave) a Movement.Transport-Person event or a Personnel.Start-Position event? Or should it be a Personnel.Return-To-Position event?

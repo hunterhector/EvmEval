@@ -1,0 +1,80 @@
+T1	Injure 230 234	shot
+E1	Injure:T1 
+A1	Realis E1 Actual
+T2	Transport-Person 456 465	returning
+E2	Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Communicate 528 535;542 550	brought telegram
+E3	Communicate:T3 
+A3	Realis E3 Actual
+T4	Die 625 630	death
+E4	Die:T4 
+A4	Realis E4 Other
+T5	Transport-Person 670 678	departed
+E5	Transport-Person:T5 
+A5	Realis E5 Actual
+T6	Transport-Person 702 709	reached
+E6	Transport-Person:T6 
+A6	Realis E6 Actual
+T7	Communicate 783 791;800 808	received telegram
+E7	Communicate:T7 
+A7	Realis E7 Actual
+T8	Die 841 845	died
+E8	Die:T8 
+A8	Realis E8 Actual
+T9	Transport-Person 877 884	arrived
+E9	Transport-Person:T9 
+A9	Realis E9 Actual
+T10	Demonstrate 1568 1574	strike
+E10	Demonstrate:T10 
+A10	Realis E10 Actual
+T11	Demonstrate 1674 1680	strike
+E11	Demonstrate:T11 
+A11	Realis E11 Actual
+T12	Nominate 3781 3790	appointed
+E12	Nominate:T12 
+A12	Realis E12 Actual
+T13	Nominate 3824 3833	appointed
+E13	Nominate:T13 
+A13	Realis E13 Actual
+T14	Nominate 3872 3881	appointed
+E14	Nominate:T14 
+A14	Realis E14 Actual
+T15	Nominate 4067 4076	appointed
+E15	Nominate:T15 
+A15	Realis E15 Actual
+T20	Transport-Person 399 407	vacation
+E20	Transport-Person:T20 
+A20	Realis E20 Actual
+T21	Transport-Person 473 478	climb
+E21	Transport-Person:T21 
+A21	Realis E21 Actual
+T22	Start-Position 920 928	sworn in
+E22	Start-Position:T22 
+A22	Realis E22 Actual
+T23	Start-Position 1383 1386;1391 1401	won presidency
+E23	Start-Position:T23 
+T16	Transport-Person 1806 1812	riding
+E16	Transport-Person:T16 
+A16	Realis E16 Actual
+T24	Transport-Person 1971 1975	rode
+E24	Transport-Person:T24 
+A23	Realis E24 Actual
+T25	Transfer-Ownership 2583 2587	sold
+E25	Transfer-Ownership:T25 
+A24	Realis E25 Other
+T26	Transport-Person 2962 2973	immigration
+E26	Transport-Person:T26 
+A25	Realis E26 Actual
+T18	Attack 5039 5046	raiding
+E18	Attack:T18 
+A18	Realis E18 Generic
+T17	Meet 2773 2829	White House Conference on the Care of Dependent Children
+E17	Meet:T17 
+A17	Realis E17 Actual
+T27	Start-Position 317 327	succeeding
+E27	Start-Position:T27 
+A27	Realis E27 Other
+T28	Elect 3705 3716	re-election
+E28	Elect:T28 
+A28	Realis E28 Other

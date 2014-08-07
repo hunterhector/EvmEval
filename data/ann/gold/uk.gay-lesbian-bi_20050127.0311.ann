@@ -1,0 +1,83 @@
+T1	Die 523 532	slaughter
+E1	Die:T1 
+A1	Realis E1 Actual
+T2	Die 676 685	slaughter
+E2	Die:T2 
+A2	Realis E2 Actual
+T3	Die 1579 1583	died
+E3	Die:T3 
+A3	Realis E3 Actual
+T4	Die 3487 3493	killed
+E4	Die:T4 
+T5	Die 3586 3594	genocide
+E5	Die:T5 
+T6	Die 3700 3704	died
+E6	Die:T6 
+T8	Die 5522 5528	deaths
+E8	Die:T8 
+A5	Realis E8 Actual
+T10	Die 8443 8449	murder
+E10	Die:T10 
+A7	Realis E10 Actual
+T11	Arrest-Jail 8542 8552	imprisoned
+E11	Arrest-Jail:T11 
+A8	Realis E11 Actual
+T12	Die 8716 8722	killed
+E12	Die:T12 
+A9	Realis E12 Actual
+T13	Die 8821 8827	murder
+E13	Die:T13 
+A10	Realis E13 Generic
+T14	Die 10475 10481	killed
+E14	Die:T14 
+A11	Realis E14 Actual
+T15	Convict 10558 10567	convicted
+E15	Convict:T15 
+A12	Realis E15 Actual
+T16	Transport-Person 10633 10637	sent
+E16	Transport-Person:T16 
+A13	Realis E16 Actual
+T17	Die 10652 10658	killed
+E17	Die:T17 
+A14	Realis E17 Actual
+T19	Transport-Person 10737 10748	transferred
+E19	Transport-Person:T19 
+A17	Realis E19 Actual
+A18	Realis E4 Actual
+A19	Realis E5 Actual
+A20	Realis E6 Actual
+T20	Die 162 171	Holocaust
+E20	Die:T20 
+A22	Realis E20 Actual
+T21	Die 398 407	Holocaust
+E21	Die:T21 
+A24	Realis E21 Actual
+T7	Die 4120 4129	Holocaust
+E7	Die:T7 
+A25	Realis E7 Actual
+T9	Communicate 6760 6763;6767 6777	get email back
+E9	Communicate:T9 
+A6	Realis E9 Actual
+T24	Communicate 6830 6836	saying
+E24	Communicate:T24 
+A29	Realis E24 Actual
+T25	Die 8368 8377	Holocaust
+E25	Die:T25 
+A31	Realis E25 Actual
+T26	Arrest-Jail 8508 8516	arrested
+E26	Arrest-Jail:T26 
+A32	Realis E26 Actual
+T18	Arrest-Jail 10711 10718;10726 10731	sent to jails
+E18	Arrest-Jail:T18 
+A4	Realis E18 Actual
+T22	Die 3759 3770	it happened
+E22	Die:T22 
+A15	Realis E22 Actual
+A16	Questionable E22 Mention
+T23	Die 5617 5628	liquidation
+E23	Die:T23 
+A21	Idiom E23
+A23	Realis E23 Other
+T27	Communicate 10083 10086	say
+E27	Communicate:T27 
+A26	Realis E27 Actual

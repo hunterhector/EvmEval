@@ -1,0 +1,138 @@
+T1	Transport-Person 313 317	went
+E1	Transport-Person:T1 
+A1	Realis E1 Actual
+T2	Meet 321 324	see
+E2	Meet:T2 
+A2	Realis E2 Other
+T3	Meet 357 361	said
+E3	Meet:T3 
+A3	Realis E3 Actual
+A4	Questionable E3 Mention
+#1	AnnotatorNotes E3	Saying during the meeting - should this be tagged?
+T4	Meet 484 488	said
+E4	Meet:T4 
+A5	Questionable E4 Mention
+A6	Realis E4 Actual
+#2	AnnotatorNotes E4	Saying within already tagged meeting, is this taggable?
+T5	Transport-Person 670 674	came
+E5	Transport-Person:T5 
+A7	Realis E5 Actual
+T6	Meet 894 897	say
+E6	Meet:T6 
+A8	Realis E6 Other
+T7	Communicate 181 185	told
+E7	Communicate:T7 
+A9	Realis E7 Actual
+T8	Communicate 249 253	said
+E8	Communicate:T8 
+A10	Realis E8 Actual
+T9	Communicate 556 560	told
+E9	Communicate:T9 
+A11	Realis E9 Actual
+A12	Questionable E9 Mention
+#3	AnnotatorNotes E9	Telling during a meeting - is this markable?
+T10	Meet 1017 1022	asked
+E10	Meet:T10 
+A13	Questionable E10 Mention
+A14	Realis E10 Actual
+#4	AnnotatorNotes E10	Asking during a meeting - markable?
+T11	Meet 1090 1094	said
+E11	Meet:T11 
+A15	Questionable E11 Mention
+A16	Realis E11 Actual
+#5	AnnotatorNotes E11	Saying within a meeting -markable?
+T12	Meet 1098 1102	told
+E12	Meet:T12 
+A17	Realis E12 Actual
+T13	Meet 1128 1133	asked
+E13	Meet:T13 
+A18	Realis E13 Actual
+#6	AnnotatorNotes E13	Asking within a meeting - markable?
+T14	Meet 1171 1175	said
+E14	Meet:T14 
+A19	Questionable E14 Mention
+A20	Realis E14 Actual
+#7	AnnotatorNotes E14	Saying within a meeting - markable?
+T15	Communicate 1190 1194	told
+E15	Communicate:T15 
+A21	Realis E15 Actual
+T16	Communicate 1303 1310	advised
+E16	Communicate:T16 
+A22	Realis E16 Actual
+T17	Communicate 1384 1390	spoken
+E17	Communicate:T17 
+A23	Realis E17 Actual
+T18	Communicate 1408 1413	asked
+E18	Communicate:T18 
+A24	Questionable E18 Mention
+A25	Realis E18 Actual
+#8	AnnotatorNotes E18	Asking within a communicate event - markable?
+T19	Communicate 1451 1455	said
+E19	Communicate:T19 
+A26	Questionable E19 Mention
+A27	Realis E19 Actual
+#9	AnnotatorNotes E19	Saying within a communication event - markable?
+T20	Meet 1490 1494	meet
+E20	Meet:T20 
+A28	Realis E20 Other
+T21	Communicate 1535 1539	told
+E21	Communicate:T21 
+A29	Realis E21 Actual
+#10	AnnotatorNotes E21	Telling within communication event -markable?
+T22	Communicate 2105 2112	advised
+E22	Communicate:T22 
+A30	Realis E22 Actual
+T23	Communicate 2307 2311	said
+E23	Communicate:T23 
+A31	Realis E23 Actual
+T24	Transport-Person 2433 2438	going
+E24	Transport-Person:T24 
+A32	Realis E24 Actual
+T25	Communicate 2628 2634	advice
+E25	Communicate:T25 
+A33	Realis E25 Other
+T26	Communicate 2940 2946	thread
+E26	Communicate:T26 
+A34	Realis E26 Actual
+T27	Transport-Person 3126 3128	go
+E27	Transport-Person:T27 
+A35	Realis E27 Other
+T28	Communicate 3710 3717	threads
+E28	Communicate:T28 
+A36	Realis E28 Actual
+T29	Communicate 4117 4123	advise
+E29	Communicate:T29 
+A37	Realis E29 Other
+T30	Transport-Person 4128 4133	going
+E30	Transport-Person:T30 
+A38	Realis E30 Other
+T31	Communicate 4444 4450	advice
+E31	Communicate:T31 
+A39	Realis E31 Actual
+T32	Communicate 4547 4553	advice
+E32	Communicate:T32 
+A40	Realis E32 Actual
+T33	Communicate 4651 4655	rang
+E33	Communicate:T33 
+A41	Realis E33 Actual
+A42	Questionable E13 Mention
+A43	Questionable E21 Mention
+T34	Die 1619 1623	dead
+E34	Die:T34 
+A44	Questionable E34 Mention
+A45	Realis E34 Other
+#11	AnnotatorNotes E34	Is "half dead" Life.Injure or Life.Die event? You can't really be half dead, you know. So does it mean severely injured? or in this case does it mean mentally handicapped, which wouldn't be an injury?????
+T35	Meet 1674 1677	say
+E35	Meet:T35 
+A46	Realis E35 Actual
+T36	Communicate 2234 2238	told
+E36	Communicate:T36 
+A47	Realis E36 Actual
+T37	Attack 4506 4513	violent
+E37	Attack:T37 
+A48	Realis E37 Generic
+T38	Transport-Person 4722 4726	took
+E38	Transport-Person:T38 
+A49	Questionable E38 Mention
+A50	Realis E38 Actual
+#12	AnnotatorNotes E38	Is taking on a student a Movement.Transport-Person event? If so, only the first word of the verb phrase was marked here.

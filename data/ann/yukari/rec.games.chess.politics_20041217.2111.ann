@@ -1,0 +1,112 @@
+T1	Start-Position 583 588	hired
+E1	Start-Position:T1 
+A1	Realis E1 Other
+T2	Transfer-Money 790 795	given
+E2	Transfer-Money:T2 
+A2	Realis E2 Other
+T3	Transfer-Money 882 887	given
+E3	Transfer-Money:T3 
+A3	Realis E3 Other
+T4	End-Position 1058 1065	leaving
+E4	End-Position:T4 
+A4	Realis E4 Other
+T5	Transfer-Money 1170 1175	given
+E5	Transfer-Money:T5 
+A5	Realis E5 Other
+T6	End-Position 1193 1203	expiration
+E6	End-Position:T6 
+A6	Realis E6 Other
+T7	Transfer-Money 1329 1333	give
+E7	Transfer-Money:T7 
+A7	Realis E7 Other
+T8	Transfer-Money 1380 1384	give
+E8	Transfer-Money:T8 
+A8	Realis E8 Other
+T9	Communicate 1523 1533	discussion
+E9	Communicate:T9 
+A9	Realis E9 Other
+T10	Meet 1577 1584	meeting
+E10	Meet:T10 
+A10	Realis E10 Other
+T11	Elect 2231 2236	elect
+E11	Elect:T11 
+A11	Realis E11 Other
+T12	End-Position 2336 2341	leave
+E12	End-Position:T12 
+A12	Realis E12 Other
+T13	Communicate 2374 2383	discussed
+E13	Communicate:T13 
+A13	Realis E13 Other
+T14	Start-Position 2490 2494	hire
+E14	Start-Position:T14 
+A14	Realis E14 Other
+T15	Communicate 3007 3018	discussions
+E15	Communicate:T15 
+A15	Realis E15 Actual
+T17	Transfer-Money 3491 3494	get
+E17	Transfer-Money:T17 
+A17	Realis E17 Other
+T18	Nominate 4265 4274	designate
+E18	Nominate:T18 
+A18	Realis E18 Other
+T19	Start-Position 4365 4369	hire
+E19	Start-Position:T19 
+A19	Realis E19 Other
+T20	Elect 5317 5324	elected
+E20	Elect:T20 
+A20	Realis E20 Actual
+T21	Start-Position 197 203	hiring
+E21	Start-Position:T21 
+A21	Realis E21 Other
+T22	End-Position 540 545	leave
+E22	End-Position:T22 
+A22	Realis E22 Other
+T16	End-Position 3296 3306	steps down
+E16	End-Position:T16 
+A16	Realis E16 Other
+T23	Communicate 3600 3607	explain
+E23	Communicate:T23 
+A23	Questionable E23 Mention
+A24	Realis E23 Other
+T24	Elect 5459 5466	elected
+E24	Elect:T24 
+A25	Realis E24 Actual
+T25	Transfer-Money 5974 5978	loan
+E25	Transfer-Money:T25 
+A26	Realis E25 Other
+T26	Meet 6541 6548	meeting
+E26	Meet:T26 
+A27	Realis E26 Other
+T27	End-Position 6575 6582	resigns
+E27	End-Position:T27 
+A28	Realis E27 Other
+T28	Start-Position 6603 6608	hired
+E28	Start-Position:T28 
+A29	Realis E28 Other
+T29	Sue 6695 6702	lawsuit
+E29	Sue:T29 
+A30	Realis E29 Other
+T30	Charge-Indict 6736 6744	charging
+E30	Charge-Indict:T30 
+A31	Realis E30 Other
+T31	End-Position 6938 6944	frozen
+E31	End-Position:T31 
+A32	Realis E31 Other
+T32	Communicate 6971 6984	communication
+E32	Communicate:T32 
+A33	Realis E32 Actual
+T33	Sue 7062 7069	lawsuit
+E33	Sue:T33 
+A34	Realis E33 Other
+T34	Sue 7199 7206	lawsuit
+E34	Sue:T34 
+A35	Realis E34 Other
+T35	Communicate 7314 7319	wrote
+E35	Communicate:T35 
+A36	Realis E35 Actual
+T36	Sue 7515 7519	sued
+E36	Sue:T36 
+A37	Realis E36 Other
+T37	Sue 7576 7580	sued
+E37	Sue:T37 
+A38	Realis E37 Other

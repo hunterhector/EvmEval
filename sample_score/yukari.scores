@@ -1,0 +1,50 @@
+Will search token files in ../data/tkn/LDC2014R19/
+========Document results==========
+TP	FP	#Gold	Prec	Recall	Doc Id
+19.00	0.00	21	1.0000	0.9048	0f03cc5a508d630c6c8c8c61396e31a9
+TP	FP	#Gold	Prec	Recall	Doc Id
+22.00	0.00	45	1.0000	0.4889	1b268b27094ba9c5feb11192dad940ab
+TP	FP	#Gold	Prec	Recall	Doc Id
+17.50	0.00	24	1.0000	0.7292	29f64df7feb04dfb16f4667ce199c9f0
+TP	FP	#Gold	Prec	Recall	Doc Id
+17.00	0.00	33	1.0000	0.5152	44b011cd504c9ed71beb851324db886a
+TP	FP	#Gold	Prec	Recall	Doc Id
+28.00	1.00	38	0.9655	0.7368	57026b7bcb8f855de3e26d572db35285
+TP	FP	#Gold	Prec	Recall	Doc Id
+20.40	0.00	33	1.0000	0.6182	7ddae34c4553ef60a76c43144855ec6b
+TP	FP	#Gold	Prec	Recall	Doc Id
+10.50	0.00	38	1.0000	0.2763	90e2a980c22e41e2b25666f676458343
+TP	FP	#Gold	Prec	Recall	Doc Id
+25.50	2.00	31	0.9273	0.8226	alt.support.divorce_20050113.2451
+TP	FP	#Gold	Prec	Recall	Doc Id
+19.50	1.00	28	0.9512	0.6964	alt.sys.pc-clone.dell_20050226.2350
+TP	FP	#Gold	Prec	Recall	Doc Id
+20.83	2.00	42	0.9124	0.4960	be8792abc57847d9a19940579acf8373
+TP	FP	#Gold	Prec	Recall	Doc Id
+14.12	3.00	27	0.8248	0.5231	c572dc8353079a5ef9943ae298e4f5b0
+TP	FP	#Gold	Prec	Recall	Doc Id
+23.00	0.00	36	1.0000	0.6389	d21dc2cb6e6435da7f9d9b0e5759e214
+TP	FP	#Gold	Prec	Recall	Doc Id
+45.17	1.00	69	0.9783	0.6546	misc.legal.moderated_20041202.1648
+TP	FP	#Gold	Prec	Recall	Doc Id
+26.33	11.00	49	0.7054	0.5374	misc.legal.moderated_20050129.2225
+TP	FP	#Gold	Prec	Recall	Doc Id
+23.58	2.00	48	0.9218	0.4913	rec.arts.sf.written.robert-jordan_20050208.1350
+TP	FP	#Gold	Prec	Recall	Doc Id
+32.50	0.00	47	1.0000	0.6915	rec.games.chess.politics_20041217.2111
+TP	FP	#Gold	Prec	Recall	Doc Id
+4.00	4.00	6	0.5000	0.6667	soc.culture.china_20050203.0639
+TP	FP	#Gold	Prec	Recall	Doc Id
+7.50	0.00	15	1.0000	0.5000	soc.culture.iraq_20050211.0445
+TP	FP	#Gold	Prec	Recall	Doc Id
+8.00	2.00	41	0.8000	0.1951	soc.org.nonprofit_20050218.1902
+TP	FP	#Gold	Prec	Recall	Doc Id
+16.67	1.00	27	0.9434	0.6173	uk.gay-lesbian-bi_20050127.0311
+
+=======Final Results=========
+Precision (Micro Average): 0.9304
+Recall (Micro Average):0.5747
+F1 (Micro Average):0.7105
+Precision (Macro Average): 0.9215
+Recall (Macro Average): 0.5900
+F1 (Macro Average): 0.7194

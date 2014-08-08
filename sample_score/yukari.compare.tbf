@@ -20,6 +20,7 @@ yukari	0f03cc5a508d630c6c8c8c61396e31a9	E18	537	births	Be-Born	Actual	1	1.0000
 yukari	0f03cc5a508d630c6c8c8c61396e31a9	E19	216	advice	Communicate	Other	1	1.0000
 yukari	0f03cc5a508d630c6c8c8c61396e31a9	E20	226	way	Transport-Person	Actual	1	-
 yukari	0f03cc5a508d630c6c8c8c61396e31a9	E22	275	way	Transport-Person	Actual	1	-
+#EndOfDocument 
 #BeginOfDocument 1b268b27094ba9c5feb11192dad940ab
 yukari	1b268b27094ba9c5feb11192dad940ab	E1	52	going	Transport-Person	Actual	1	1.0000
 yukari	1b268b27094ba9c5feb11192dad940ab	E2	33	came	Transport-Person	Actual	1	1.0000
@@ -66,6 +67,7 @@ yukari	1b268b27094ba9c5feb11192dad940ab	E42	970	telling	Communicate	Other	1	-
 yukari	1b268b27094ba9c5feb11192dad940ab	E43	1021	Tell	Communicate	Other	1	-
 yukari	1b268b27094ba9c5feb11192dad940ab	E44	650	told	Communicate	Other	1	-
 yukari	1b268b27094ba9c5feb11192dad940ab	E45	1026	pay	Transfer-Money	Other	1	-
+#EndOfDocument 
 #BeginOfDocument 29f64df7feb04dfb16f4667ce199c9f0
 yukari	29f64df7feb04dfb16f4667ce199c9f0	E1	4,6	got letter	Communicate	Actual	1	0.5000
 yukari	29f64df7feb04dfb16f4667ce199c9f0	E2	12	appoitment	Meet	Other	1	1.0000
@@ -91,6 +93,7 @@ yukari	29f64df7feb04dfb16f4667ce199c9f0	E21	272	appt	Meet	Actual	1	-
 yukari	29f64df7feb04dfb16f4667ce199c9f0	E22	413	tell	Communicate	Other	1	-
 yukari	29f64df7feb04dfb16f4667ce199c9f0	E23	400,402	shout out	Communicate	Other	1	-
 yukari	29f64df7feb04dfb16f4667ce199c9f0	E24	439	complain	Communicate	Other	1	-
+#EndOfDocument 
 #BeginOfDocument 44b011cd504c9ed71beb851324db886a
 yukari	44b011cd504c9ed71beb851324db886a	E1	59	went	Transport-Person	Actual	1	1.0000
 yukari	44b011cd504c9ed71beb851324db886a	E2	61	see	Meet	Actual	1	1.0000
@@ -125,6 +128,7 @@ yukari	44b011cd504c9ed71beb851324db886a	E30	449	advised	Communicate	Actual	1	-
 yukari	44b011cd504c9ed71beb851324db886a	E31	568,571	offer advice	Communicate	Other	1	-
 yukari	44b011cd504c9ed71beb851324db886a	E32	880	advice	Communicate	Actual	1	-
 yukari	44b011cd504c9ed71beb851324db886a	E33	902	advice	Communicate	Actual	1	-
+#EndOfDocument 
 #BeginOfDocument 57026b7bcb8f855de3e26d572db35285
 yukari	57026b7bcb8f855de3e26d572db35285	E1	3	leaves	Transport-Person	Actual	1	1.0000
 yukari	57026b7bcb8f855de3e26d572db35285	E2	29	visit	Transport-Person	Other	1	1.0000
@@ -164,6 +168,7 @@ yukari	57026b7bcb8f855de3e26d572db35285	E36	613	cruise	Transport-Person	Actual	1
 yukari	57026b7bcb8f855de3e26d572db35285	E37	641	come	Transport-Person	Actual	1	-
 yukari	57026b7bcb8f855de3e26d572db35285	E38	696	got	Transport-Person	Actual	1	-
 yukari	57026b7bcb8f855de3e26d572db35285	E39	778	explained	Meet	Actual	1	-
+#EndOfDocument 
 #BeginOfDocument 7ddae34c4553ef60a76c43144855ec6b
 yukari	7ddae34c4553ef60a76c43144855ec6b	E1	21	death	Die	Other	1	1.0000
 yukari	7ddae34c4553ef60a76c43144855ec6b	E2	53	death	Die	Generic	1	1.0000
@@ -198,6 +203,7 @@ yukari	7ddae34c4553ef60a76c43144855ec6b	E30	668	said	Communicate	Actual	1	-
 yukari	7ddae34c4553ef60a76c43144855ec6b	E31	686	told	Communicate	Actual	1	-
 yukari	7ddae34c4553ef60a76c43144855ec6b	E32	710,711	checked out	Die	Actual	1	-
 yukari	7ddae34c4553ef60a76c43144855ec6b	E33	731,732	time comes	Die	Other	1	-
+#EndOfDocument 
 #BeginOfDocument 90e2a980c22e41e2b25666f676458343
 yukari	90e2a980c22e41e2b25666f676458343	E1	3	marriage	Marry	Actual	1	1.0000
 yukari	90e2a980c22e41e2b25666f676458343	E2	133	went	Transport-Person	Actual	1	1.0000
@@ -237,6 +243,7 @@ yukari	90e2a980c22e41e2b25666f676458343	E38	619	benefits	Transfer-Money	Generic	
 yukari	90e2a980c22e41e2b25666f676458343	E39	70	spending	Transfer-Money	Actual	1	-
 yukari	90e2a980c22e41e2b25666f676458343	E40	147,149	let back	Transport-Person	Other	1	-
 yukari	90e2a980c22e41e2b25666f676458343	E41	290	split	Divorce	Other	1	-
+#EndOfDocument 
 #BeginOfDocument alt.support.divorce_20050113.2451
 yukari	alt.support.divorce_20050113.2451	E1	44	divorce	Divorce	Generic	1	1.0000
 yukari	alt.support.divorce_20050113.2451	E2	72	remarried	Marry	Actual	1	1.0000
@@ -269,6 +276,7 @@ yukari	alt.support.divorce_20050113.2451	E28	1199	trips	Transport-Person	Actual	
 yukari	alt.support.divorce_20050113.2451	E29	413	divorce	Divorce	Generic	1	-
 yukari	alt.support.divorce_20050113.2451	E30	1199	vacations	Transport-Person	Actual	1	-
 yukari	alt.support.divorce_20050113.2451	E32	308	that	Transport-Person	Other	1	-
+#EndOfDocument 
 #BeginOfDocument alt.sys.pc-clone.dell_20050226.2350
 yukari	alt.sys.pc-clone.dell_20050226.2350	E1	19	sued	Sue	Actual	1	1.0000
 yukari	alt.sys.pc-clone.dell_20050226.2350	E2	65	suit	Sue	Actual	1	1.0000
@@ -298,6 +306,7 @@ yukari	alt.sys.pc-clone.dell_20050226.2350	E25	359	actions	Sue	Generic	1	-
 yukari	alt.sys.pc-clone.dell_20050226.2350	E27	1109	buy	Transfer-Ownership	Generic	1	1.0000
 yukari	alt.sys.pc-clone.dell_20050226.2350	E28	654,655	cashed in	Transfer-Money	Actual	1	0.5000
 yukari	alt.sys.pc-clone.dell_20050226.2350	E29	165,166,167	make a buck	Transfer-Money	Other	1	-
+#EndOfDocument 
 #BeginOfDocument be8792abc57847d9a19940579acf8373
 yukari	be8792abc57847d9a19940579acf8373	E1	118	injuring	Injure	Actual	1	1.0000
 yukari	be8792abc57847d9a19940579acf8373	E2	123	sped	Transport-Person	Actual	1	1.0000
@@ -341,6 +350,7 @@ yukari	be8792abc57847d9a19940579acf8373	E39	705	prison	Arrest-Jail	Generic	1	-
 yukari	be8792abc57847d9a19940579acf8373	E40	808	conviction	Convict	Other	1	-
 yukari	be8792abc57847d9a19940579acf8373	E41	1076	walked	Acquit	Actual	1	-
 yukari	be8792abc57847d9a19940579acf8373	E42	1090,1091	Not Guilty	Acquit	Generic	1	-
+#EndOfDocument 
 #BeginOfDocument c572dc8353079a5ef9943ae298e4f5b0
 yukari	c572dc8353079a5ef9943ae298e4f5b0	E1	32	shot	Injure	Actual	1	1.0000
 yukari	c572dc8353079a5ef9943ae298e4f5b0	E2	72	returning	Transport-Person	Actual	1	1.0000
@@ -369,6 +379,7 @@ yukari	c572dc8353079a5ef9943ae298e4f5b0	E25	475	sold	Transfer-Ownership	Other	1	
 yukari	c572dc8353079a5ef9943ae298e4f5b0	E26	540	immigration	Transport-Person	Actual	1	-
 yukari	c572dc8353079a5ef9943ae298e4f5b0	E27	48	succeeding	Start-Position	Other	1	-
 yukari	c572dc8353079a5ef9943ae298e4f5b0	E28	671	re-election	Elect	Other	1	-
+#EndOfDocument 
 #BeginOfDocument d21dc2cb6e6435da7f9d9b0e5759e214
 yukari	d21dc2cb6e6435da7f9d9b0e5759e214	E1	23	ceromony	Marry	Actual	1	1.0000
 yukari	d21dc2cb6e6435da7f9d9b0e5759e214	E2	158	went	Transport-Person	Actual	1	1.0000
@@ -406,6 +417,7 @@ yukari	d21dc2cb6e6435da7f9d9b0e5759e214	E33	286	get	Transfer-Ownership	Other	1	1
 yukari	d21dc2cb6e6435da7f9d9b0e5759e214	E34	618	spend	Transfer-Money	Generic	1	-
 yukari	d21dc2cb6e6435da7f9d9b0e5759e214	E35	639	spend	Transfer-Money	Other	1	-
 yukari	d21dc2cb6e6435da7f9d9b0e5759e214	E36	696	spend	Transfer-Money	Generic	1	-
+#EndOfDocument 
 #BeginOfDocument misc.legal.moderated_20041202.1648
 yukari	misc.legal.moderated_20041202.1648	E1	19	extradition	Extradite	Generic	1	1.0000
 yukari	misc.legal.moderated_20041202.1648	E2	51	probation	Release-Parole	Actual	1	1.0000
@@ -476,6 +488,7 @@ yukari	misc.legal.moderated_20041202.1648	E67	629	get	Transport-Person	Other	1	-
 yukari	misc.legal.moderated_20041202.1648	E68	1008	advice	Communicate	Generic	1	-
 yukari	misc.legal.moderated_20041202.1648	E69	77,78	showing up	Transport-Person	Other	1	-
 yukari	misc.legal.moderated_20041202.1648	E70	323,324	skips out	Transport-Person	Other	1	-
+#EndOfDocument 
 #BeginOfDocument misc.legal.moderated_20050129.2225
 yukari	misc.legal.moderated_20050129.2225	E1	77	moved	Transport-Person	Actual	1	1.0000
 yukari	misc.legal.moderated_20050129.2225	E2	179,180,181	get out of	Transport-Person	Actual	1	0.3333
@@ -526,6 +539,7 @@ yukari	misc.legal.moderated_20050129.2225	E62	686,687	left marks	Injure	Actual	1
 yukari	misc.legal.moderated_20050129.2225	E63	698	reported	Transport-Person	Other	1	-
 yukari	misc.legal.moderated_20050129.2225	E68	925	advice	Communicate	Generic	1	-
 yukari	misc.legal.moderated_20050129.2225	E69	651	saying	Meet	Actual	1	-
+#EndOfDocument 
 #BeginOfDocument rec.arts.sf.written.robert-jordan_20050208.1350
 yukari	rec.arts.sf.written.robert-jordan_20050208.1350	E1	52,53,54	going to jail	Arrest-Jail	Other	1	0.3333
 yukari	rec.arts.sf.written.robert-jordan_20050208.1350	E2	94	parole	Release-Parole	Generic	1	1.0000
@@ -575,6 +589,7 @@ yukari	rec.arts.sf.written.robert-jordan_20050208.1350	E45	363,367	provided job	
 yukari	rec.arts.sf.written.robert-jordan_20050208.1350	E46	373	it	Release-Parole	Generic	1	-
 yukari	rec.arts.sf.written.robert-jordan_20050208.1350	E47	380	it	Release-Parole	Generic	1	-
 yukari	rec.arts.sf.written.robert-jordan_20050208.1350	E48	576	sentence	Sentence	Generic	1	1.0000
+#EndOfDocument 
 #BeginOfDocument rec.games.chess.politics_20041217.2111
 yukari	rec.games.chess.politics_20041217.2111	E1	87	hired	Start-Position	Generic	1	1.0000
 yukari	rec.games.chess.politics_20041217.2111	E2	134,135	given money	Transfer-Money	Generic	1	0.5000
@@ -623,6 +638,7 @@ yukari	rec.games.chess.politics_20041217.2111	E44	702	explain	Communicate	Other	
 yukari	rec.games.chess.politics_20041217.2111	E45	189	money	Transfer-Money	Generic	1	-
 yukari	rec.games.chess.politics_20041217.2111	E46	271	arrangement	Transfer-Money	Other	1	-
 yukari	rec.games.chess.politics_20041217.2111	E47	1158	pay	Transfer-Money	Other	1	-
+#EndOfDocument 
 #BeginOfDocument soc.culture.china_20050203.0639
 yukari	soc.culture.china_20050203.0639	E2	775,777	raised question	Communicate	Actual	1	-
 yukari	soc.culture.china_20050203.0639	E3	785	invasion	Attack	Actual	1	-
@@ -630,6 +646,7 @@ yukari	soc.culture.china_20050203.0639	E5	727	consulted	Communicate	Other	1	1.00
 yukari	soc.culture.china_20050203.0639	E6	751	moving	Transport-Person	Other	1	1.0000
 yukari	soc.culture.china_20050203.0639	E7	932	killing	Die	Actual	1	1.0000
 yukari	soc.culture.china_20050203.0639	E8	970	moving	Transport-Person	Other	1	1.0000
+#EndOfDocument 
 #BeginOfDocument soc.culture.iraq_20050211.0445
 yukari	soc.culture.iraq_20050211.0445	E1	127	funded	Transfer-Money	Actual	1	1.0000
 yukari	soc.culture.iraq_20050211.0445	E2	210	talk	Communicate	Other	1	1.0000
@@ -646,6 +663,7 @@ yukari	soc.culture.iraq_20050211.0445	E14	712	war	Attack	Actual	1	-
 yukari	soc.culture.iraq_20050211.0445	E15	847	crushed	Attack	Other	1	-
 yukari	soc.culture.iraq_20050211.0445	E16	391	it	Attack	Actual	1	-
 yukari	soc.culture.iraq_20050211.0445	E17	597	its	Attack	Actual	1	-
+#EndOfDocument 
 #BeginOfDocument soc.org.nonprofit_20050218.1902
 yukari	soc.org.nonprofit_20050218.1902	E1	54	meetings	Meet	Generic	1	1.0000
 yukari	soc.org.nonprofit_20050218.1902	E2	71	meeting	Meet	Generic	1	1.0000
@@ -688,6 +706,7 @@ yukari	soc.org.nonprofit_20050218.1902	E38	658	payment	Transfer-Money	Generic	1	
 yukari	soc.org.nonprofit_20050218.1902	E39	948	remunerate	Transfer-Money	Other	1	-
 yukari	soc.org.nonprofit_20050218.1902	E40	1110	done	Transfer-Money	Generic	1	-
 yukari	soc.org.nonprofit_20050218.1902	E41	1140	do	Transfer-Money	Other	1	-
+#EndOfDocument 
 #BeginOfDocument uk.gay-lesbian-bi_20050127.0311
 yukari	uk.gay-lesbian-bi_20050127.0311	E1	79	slaughter	Die	Actual	1	1.0000
 yukari	uk.gay-lesbian-bi_20050127.0311	E2	110	slaughter	Die	Actual	1	1.0000
@@ -716,3 +735,4 @@ yukari	uk.gay-lesbian-bi_20050127.0311	E24	689	saying	Communicate	Actual	1	-
 yukari	uk.gay-lesbian-bi_20050127.0311	E25	735	Holocaust	Die	Actual	1	-
 yukari	uk.gay-lesbian-bi_20050127.0311	E26	762	arrested	Arrest-Jail	Actual	1	-
 yukari	uk.gay-lesbian-bi_20050127.0311	E27	862	say	Communicate	Actual	1	-
+#EndOfDocument 

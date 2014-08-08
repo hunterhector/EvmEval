@@ -29,7 +29,6 @@ tokenDir = "."
 
 diffOut = None
 
-
 docScores = []
 
 tokenJoiner = ","
@@ -368,6 +367,7 @@ def evaluate(evalMode):
     #Store list of mappings with the score as a priority queue
     allGoldSystemMappingScores = []
     assignedGold2SystemMapping = [(-1,-1)]*len(gLines) 
+    assignedSystem2GoldMapping = [(-1,-1)]*len(sLines)
 
     for systemIndex, sl in enumerate(sLines):
         largestOverlap = -1.0
@@ -396,6 +396,7 @@ def evaluate(evalMode):
             #the system mention or gold mention is already mapped
             continue
         else:
+            assignedSystem2GoldMapping[mappingSystemIndex] = (mappingGoldIndex,-negMappingScore)
             assignedGold2SystemMapping[mappingGoldIndex] = (mappingSystemIndex,-negMappingScore)
             mappedSystemMentions.add(mappingSystemIndex)
             mappedGoldMentions.add(mappingGoldIndex)
@@ -408,11 +409,17 @@ def evaluate(evalMode):
             tp += score
 
     diffOut.write(bodMarker+" "+docId+"\n")
+   # for sIndex, sLine in enumerate(sLines):
+    #    goldIndex , mappingScore = assignedSystem2GoldMapping[sIndex]
+     #   scoreOut = "%.4f"%mappingScore if mappingScore != -1 else "-"
+      #  diffOut.write("%s\t%s\n"%(sLine,scoreOut))
+
     for gIndex, gLine in enumerate(gLines):
         goldContent = gLine.split("\t",1)
         systemIndex, mappingScore = assignedGold2SystemMapping[gIndex]
         scoreOut = "%.4f"%mappingScore if mappingScore != -1 else "-"
         diffOut.write("%s\t%s\t%s\n"%(systemId,goldContent[1],scoreOut))
+    diffOut.write(eodMarker+" "+"\n")
 
     #unmapped system mentions are considered as false positive
     fp += len(sLines) - len(mappedSystemMentions)

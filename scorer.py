@@ -126,8 +126,9 @@ def main():
     for (tp,fp,goldMentions,docId) in docScores:
         prec = tp/(tp+fp) if tp + fp > 0 else float('nan')
         recall = tp/goldMentions if goldMentions > 0 else float('nan')
-        logger.info("TP\tFP\t#Gold\tPrec\tRecall\tDoc Id")
-        logger.info("%.2f\t%.2f\t%d\t%.4f\t%.4f\t%s"%(tp,fp,goldMentions,prec,recall,docId))
+        docF1 = 2 * prec * recall / (prec + recall) if prec + recall > 0 else float('nan')
+        logger.info("TP\tFP\t#Gold\tPrec\tRecall\tF1\tDoc Id")
+        logger.info("%.2f\t%.2f\t%d\t%.4f\t%.4f\t%.4f\t%s"%(tp,fp,goldMentions,prec,recall,docF1,docId))
         
         if math.isnan(prec) or math.isnan(recall):
             #no mentions annotated, treat as invalid file 

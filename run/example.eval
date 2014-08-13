@@ -1,0 +1,12 @@
+Will search token files in ../data/tkn/LDC2014R19/
+========Document results==========
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+2.25	1.00	4	0.6923	0.5625	0.6207	1b268b27094ba9c5feb11192dad940ab
+
+=======Final Results=========
+Precision (Micro Average): 0.6923
+Recall (Micro Average):0.5625
+F1 (Micro Average):0.6207
+Precision (Macro Average): 0.6923
+Recall (Macro Average): 0.5625
+F1 (Macro Average): 0.6207

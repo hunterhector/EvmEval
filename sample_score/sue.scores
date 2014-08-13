@@ -1,45 +1,45 @@
 Will search token files in ../data/tkn/LDC2014R19/
 ========Document results==========
-TP	FP	#Gold	Prec	Recall	Doc Id
-21.00	8.00	21	0.7241	1.0000	0f03cc5a508d630c6c8c8c61396e31a9
-TP	FP	#Gold	Prec	Recall	Doc Id
-37.75	4.00	45	0.9042	0.8389	1b268b27094ba9c5feb11192dad940ab
-TP	FP	#Gold	Prec	Recall	Doc Id
-21.50	0.00	24	1.0000	0.8958	29f64df7feb04dfb16f4667ce199c9f0
-TP	FP	#Gold	Prec	Recall	Doc Id
-30.00	7.00	33	0.8108	0.9091	44b011cd504c9ed71beb851324db886a
-TP	FP	#Gold	Prec	Recall	Doc Id
-37.00	1.00	38	0.9737	0.9737	57026b7bcb8f855de3e26d572db35285
-TP	FP	#Gold	Prec	Recall	Doc Id
-31.90	5.00	33	0.8645	0.9667	7ddae34c4553ef60a76c43144855ec6b
-TP	FP	#Gold	Prec	Recall	Doc Id
-24.70	2.00	38	0.9251	0.6500	90e2a980c22e41e2b25666f676458343
-TP	FP	#Gold	Prec	Recall	Doc Id
-28.50	1.00	31	0.9661	0.9194	alt.support.divorce_20050113.2451
-TP	FP	#Gold	Prec	Recall	Doc Id
-19.50	2.00	28	0.9070	0.6964	alt.sys.pc-clone.dell_20050226.2350
-TP	FP	#Gold	Prec	Recall	Doc Id
-34.83	3.00	42	0.9207	0.8294	be8792abc57847d9a19940579acf8373
-TP	FP	#Gold	Prec	Recall	Doc Id
-20.00	5.00	27	0.8000	0.7407	c572dc8353079a5ef9943ae298e4f5b0
-TP	FP	#Gold	Prec	Recall	Doc Id
-28.50	1.00	36	0.9661	0.7917	d21dc2cb6e6435da7f9d9b0e5759e214
-TP	FP	#Gold	Prec	Recall	Doc Id
-54.17	1.00	69	0.9819	0.7850	misc.legal.moderated_20041202.1648
-TP	FP	#Gold	Prec	Recall	Doc Id
-37.33	23.00	49	0.6188	0.7619	misc.legal.moderated_20050129.2225
-TP	FP	#Gold	Prec	Recall	Doc Id
-30.08	0.00	48	1.0000	0.6267	rec.arts.sf.written.robert-jordan_20050208.1350
-TP	FP	#Gold	Prec	Recall	Doc Id
-37.00	0.00	47	1.0000	0.7872	rec.games.chess.politics_20041217.2111
-TP	FP	#Gold	Prec	Recall	Doc Id
-4.50	1.00	6	0.8182	0.7500	soc.culture.china_20050203.0639
-TP	FP	#Gold	Prec	Recall	Doc Id
-10.50	4.00	15	0.7241	0.7000	soc.culture.iraq_20050211.0445
-TP	FP	#Gold	Prec	Recall	Doc Id
-30.00	3.00	41	0.9091	0.7317	soc.org.nonprofit_20050218.1902
-TP	FP	#Gold	Prec	Recall	Doc Id
-21.33	0.00	27	1.0000	0.7901	uk.gay-lesbian-bi_20050127.0311
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+21.00	8.00	21	0.7241	1.0000	0.8400	0f03cc5a508d630c6c8c8c61396e31a9
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+37.75	4.00	45	0.9042	0.8389	0.8703	1b268b27094ba9c5feb11192dad940ab
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+21.50	0.00	24	1.0000	0.8958	0.9451	29f64df7feb04dfb16f4667ce199c9f0
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+30.00	7.00	33	0.8108	0.9091	0.8571	44b011cd504c9ed71beb851324db886a
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+37.00	1.00	38	0.9737	0.9737	0.9737	57026b7bcb8f855de3e26d572db35285
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+31.90	5.00	33	0.8645	0.9667	0.9127	7ddae34c4553ef60a76c43144855ec6b
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+24.70	2.00	38	0.9251	0.6500	0.7635	90e2a980c22e41e2b25666f676458343
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+28.50	1.00	31	0.9661	0.9194	0.9421	alt.support.divorce_20050113.2451
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+19.50	2.00	28	0.9070	0.6964	0.7879	alt.sys.pc-clone.dell_20050226.2350
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+34.83	3.00	42	0.9207	0.8294	0.8727	be8792abc57847d9a19940579acf8373
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+20.00	5.00	27	0.8000	0.7407	0.7692	c572dc8353079a5ef9943ae298e4f5b0
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+28.50	1.00	36	0.9661	0.7917	0.8702	d21dc2cb6e6435da7f9d9b0e5759e214
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+54.17	1.00	69	0.9819	0.7850	0.8725	misc.legal.moderated_20041202.1648
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+37.33	23.00	49	0.6188	0.7619	0.6829	misc.legal.moderated_20050129.2225
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+30.08	0.00	48	1.0000	0.6267	0.7705	rec.arts.sf.written.robert-jordan_20050208.1350
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+37.00	0.00	47	1.0000	0.7872	0.8810	rec.games.chess.politics_20041217.2111
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+4.50	1.00	6	0.8182	0.7500	0.7826	soc.culture.china_20050203.0639
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+10.50	4.00	15	0.7241	0.7000	0.7119	soc.culture.iraq_20050211.0445
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+30.00	3.00	41	0.9091	0.7317	0.8108	soc.org.nonprofit_20050218.1902
+TP	FP	#Gold	Prec	Recall	F1	Doc Id
+21.33	0.00	27	1.0000	0.7901	0.8828	uk.gay-lesbian-bi_20050127.0311
 
 =======Final Results=========
 Precision (Micro Average): 0.8875

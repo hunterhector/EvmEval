@@ -117,18 +117,25 @@ def main():
 
     totalTp = 0
     totalFp = 0
+    totalRealisCorrect = 0
+    totalTypeCorrect = 0
     totalGoldMentions = 0
     totalPrec = 0
     totalRecall = 0
+    totalRealisAccuracy = 0
+    totalTypeAccuracy = 0
     validDocs = 0
 
     logger.info("========Document results==========")
-    for (tp,fp,goldMentions,docId) in docScores:
+    for (tp,fp,typeCorrect,realisCorrect,goldMentions,docId) in docScores:
         prec = tp/(tp+fp) if tp + fp > 0 else float('nan')
         recall = tp/goldMentions if goldMentions > 0 else float('nan')
         docF1 = 2 * prec * recall / (prec + recall) if prec + recall > 0 else float('nan')
-        logger.info("TP\tFP\t#Gold\tPrec\tRecall\tF1\tDoc Id")
-        logger.info("%.2f\t%.2f\t%d\t%.4f\t%.4f\t%.4f\t%s"%(tp,fp,goldMentions,prec,recall,docF1,docId))
+        typeAccuracy = typeCorrect/goldMentions
+        realisAccuracy = realisCorrect/goldMentions
+        print typeAccuracy,realisAccuracy
+        logger.info("TP\tFP\t#Gold\tPrec\tRecall\tF1\tType\tRealis\tDoc Id")
+        logger.info("%.2f\t%.2f\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\t%s"%(tp,fp,goldMentions,prec,recall,docF1,typeAccuracy,realisAccuracy,docId))
         
         if math.isnan(prec) or math.isnan(recall):
             #no mentions annotated, treat as invalid file 
@@ -140,23 +147,35 @@ def main():
             totalGoldMentions += goldMentions
             totalPrec += prec 
             totalRecall += recall
+            totalRealisAccuracy += realisAccuracy
+            totalTypeAccuracy += typeAccuracy
+            totalRealisCorrect += realisCorrect
+            totalTypeCorrect += typeCorrect
 
     logger.info("\n=======Final Results=========")
     microPrec = totalTp/(totalTp+totalFp) if totalTp+ totalFp > 0 else float('nan')
     microRecall = totalTp/totalGoldMentions if totalGoldMentions > 0 else float('nan')
     microF1 = 2*microPrec*microRecall/(microPrec+microRecall) if microPrec+microRecall > 0 else float('nan')
+    microTypeAccuracy = totalTypeCorrect / totalGoldMentions if totalGoldMentions > 0 else float('nan')
+    microRealisAccuracy = totalRealisCorrect / totalGoldMentions if totalGoldMentions > 0 else float('nan')
 
     macroPrec = totalPrec/validDocs if validDocs > 0 else float('nan')
     macroRecall = totalRecall/validDocs if validDocs > 0 else float('nan')
     macroF1 = 2*macroPrec*macroRecall/(macroPrec+macroRecall) if macroPrec+macroRecall > 0 else float('nan')
+    macroTypeAccuracy = totalTypeAccuracy / validDocs if validDocs > 0 else float('nan')
+    macroRealisAccuracy = totalRealisAccuracy / validDocs if validDocs > 0 else float('nan')
 
     logger.info("Precision (Micro Average): %.4f",microPrec)
     logger.info("Recall (Micro Average):%.4f",microRecall)
     logger.info("F1 (Micro Average):%.4f",microF1)
+    logger.info("Mention type detection accuracy (Micro Average):%.4f",microTypeAccuracy)
+    logger.info("Mention realis status accuracy (Micro Average):%.4f",microRealisAccuracy)
     
     logger.info("Precision (Macro Average): %.4f", macroPrec)
     logger.info("Recall (Macro Average): %.4f", macroRecall)
     logger.info("F1 (Macro Average): %.4f", macroF1)
+    logger.info("Mention type detection accuracy (Macro Average):%.4f",macroTypeAccuracy)
+    logger.info("Mention realis status accuracy (Macro Average):%.4f",macroRealisAccuracy)
 
     if evalOut is not None:
         evalOut.close()
@@ -257,8 +276,9 @@ def parseCharBasedLine(l):
     if (len(fields) != 8):
         logger.error("Output are not correctly formatted")
     spans = parseSpans(fields[3])
-
-    return spans
+    mentionType = fields[5]
+    realisStatus = fields[6]
+    return (spans,mentionType,realisStatus)
 
 def parseTokenBasedLine(l,invisibleIds):
     """
@@ -268,7 +288,9 @@ def parseTokenBasedLine(l,invisibleIds):
     if (len(fields) != 8):
         logger.error("Output are not correctly formatted")
     tokenIds = parseTokenIds(fields[3],invisibleIds)
-    return tokenIds
+    mentionType = fields[5]
+    realisStatus = fields[6]
+    return (tokenIds,mentionType,realisStatus)
 
 def parseLine(l,evalMode,invisibleIds):
     if evalMode == EvalMethod.Token:
@@ -341,9 +363,17 @@ def computeTokenOverlapScore(gTokens,sTokens):
     gLength = len(gTokens)
     sLength = len(sTokens)
 
-    deno = gLength if gLength > sLength else sLength
+    if totalOverlap == 0:
+        return 0
 
-    return totalOverlap/deno
+    #deno = gLength if gLength > sLength else sLength
+
+    prec = totalOverlap / sLength
+    recall = totalOverlap / gLength
+
+    #return totalOverlap/deno
+    return 2*prec*recall / (prec+recall)
+
 
 def computeOverlapScore(systemOutputs,goldAnnos,evalMode): 
     if evalMode == EvalMethod.Token:
@@ -365,21 +395,29 @@ def evaluate(evalMode):
         if len(fields) > 0:
             systemId = fields[0]
 
+    #parse the lines in file 
+    systemMentionTable = []
+    goldMentionTable = []
+
+    for sl in sLines:
+        systemOutputs,sytemMentionType,systemRealis = parseLine(sl,evalMode,invisibleIds)
+        systemMentionTable.append(( systemOutputs,sytemMentionType,systemRealis ))
+
+    for gl in gLines:
+        goldAnnos,goldMentionType,goldRealis = parseLine(gl,evalMode,invisibleIds)
+        goldMentionTable.append(( goldAnnos,goldMentionType,goldRealis ))
+    
     #Store list of mappings with the score as a priority queue
     allGoldSystemMappingScores = []
     assignedGold2SystemMapping = [(-1,-1)]*len(gLines) 
     assignedSystem2GoldMapping = [(-1,-1)]*len(sLines)
 
-    for systemIndex, sl in enumerate(sLines):
+    for systemIndex, (systemOutputs,sytemMentionType,systemRealis)in enumerate(systemMentionTable):
         largestOverlap = -1.0
-        
-        systemOutputs = parseLine(sl,evalMode,invisibleIds)
         corresIndex = -1
 
-        for index, gl in enumerate(gLines):
-            goldAnnos = parseLine(gl,evalMode,invisibleIds)
+        for index,  (goldAnnos,goldMentionType,goldRealis)  in enumerate(goldMentionTable):
             overlap = computeOverlapScore(goldAnnos,systemOutputs,evalMode)
-
             if len(goldAnnos) == 0:
                 logger.debug("Found empty gold standard")
                 logger.debug(gl)
@@ -397,17 +435,27 @@ def evaluate(evalMode):
             #the system mention or gold mention is already mapped
             continue
         else:
-            assignedSystem2GoldMapping[mappingSystemIndex] = (mappingGoldIndex,-negMappingScore)
+            #assignedSystem2GoldMapping[mappingSystemIndex] = (mappingGoldIndex,-negMappingScore)
             assignedGold2SystemMapping[mappingGoldIndex] = (mappingSystemIndex,-negMappingScore)
             mappedSystemMentions.add(mappingSystemIndex)
             mappedGoldMentions.add(mappingGoldIndex)
 
     tp = 0.0
     fp = 0.0
+    typeCorrect = 0.0
+    realisCorrect = 0.0
 
-    for systemIndex, score in assignedGold2SystemMapping:
-        if score > 0:
+    for goldIndex, (systemIndex, score) in enumerate(assignedGold2SystemMapping):
+        if score > 0: # -1 indicates no mapping
             tp += score
+
+            if systemMentionTable[systemIndex][2] == goldMentionTable[goldIndex][2]:
+                realisCorrect += 1
+
+            if systemMentionTable[systemIndex][1] == goldMentionTable[goldIndex][1]:
+                typeCorrect += 1
+
+    print realisCorrect,typeCorrect
 
     diffOut.write(bodMarker+" "+docId+"\n")
    # for sIndex, sLine in enumerate(sLines):
@@ -425,7 +473,7 @@ def evaluate(evalMode):
     #unmapped system mentions are considered as false positive
     fp += len(sLines) - len(mappedSystemMentions)
 
-    docScores.append((tp,fp,len(gLines),docId))
+    docScores.append((tp,fp,typeCorrect,realisCorrect,len(gLines),docId))
     return True
     
 if __name__ == "__main__":

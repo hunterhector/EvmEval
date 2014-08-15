@@ -133,7 +133,6 @@ def main():
         docF1 = 2 * prec * recall / (prec + recall) if prec + recall > 0 else float('nan')
         typeAccuracy = typeCorrect/goldMentions
         realisAccuracy = realisCorrect/goldMentions
-        print typeAccuracy,realisAccuracy
         logger.info("TP\tFP\t#Gold\tPrec\tRecall\tF1\tType\tRealis\tDoc Id")
         logger.info("%.2f\t%.2f\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\t%s"%(tp,fp,goldMentions,prec,recall,docF1,typeAccuracy,realisAccuracy,docId))
         
@@ -409,8 +408,9 @@ def evaluate(evalMode):
     
     #Store list of mappings with the score as a priority queue
     allGoldSystemMappingScores = []
-    assignedGold2SystemMapping = [(-1,-1)]*len(gLines) 
-    assignedSystem2GoldMapping = [(-1,-1)]*len(sLines)
+    
+    #first item in middle list store list of system mentions that mapped to it, second item is the overlap score 
+    assignedGold2SystemMapping = [([],-1)]*len(gLines) 
 
     for systemIndex, (systemOutputs,sytemMentionType,systemRealis)in enumerate(systemMentionTable):
         largestOverlap = -1.0
@@ -427,41 +427,39 @@ def evaluate(evalMode):
                 heapq.heappush(allGoldSystemMappingScores,(-overlap,systemIndex,index))
 
     mappedSystemMentions = set()
-    mappedGoldMentions = set()
+    numGoldFound = 0
 
     while len(allGoldSystemMappingScores) != 0:
         negMappingScore,mappingSystemIndex,mappingGoldIndex = heapq.heappop(allGoldSystemMappingScores)
-        if mappingSystemIndex in mappedSystemMentions or mappingGoldIndex in mappedGoldMentions:
-            #the system mention or gold mention is already mapped
-            continue
-        else:
-            #assignedSystem2GoldMapping[mappingSystemIndex] = (mappingGoldIndex,-negMappingScore)
-            assignedGold2SystemMapping[mappingGoldIndex] = (mappingSystemIndex,-negMappingScore)
-            mappedSystemMentions.add(mappingSystemIndex)
-            mappedGoldMentions.add(mappingGoldIndex)
+        if not mappingSystemIndex in mappedSystemMentions:
+                if  assignedGold2SystemMapping[mappingGoldIndex][1] == -1:
+                    assignedGold2SystemMapping[mappingGoldIndex] = ([mappingSystemIndex],-negMappingScore)
+                    numGoldFound += 1
+                else:
+                    assignedGold2SystemMapping[mappingGoldIndex][0].append(mappingSystemIndex)
+
+                mappedSystemMentions.add(mappingSystemIndex)
 
     tp = 0.0
     fp = 0.0
     typeCorrect = 0.0
     realisCorrect = 0.0
 
-    for goldIndex, (systemIndex, score) in enumerate(assignedGold2SystemMapping):
+    for goldIndex, (systemIndices, score) in enumerate(assignedGold2SystemMapping):
         if score > 0: # -1 indicates no mapping
             tp += score
 
-            if systemMentionTable[systemIndex][2] == goldMentionTable[goldIndex][2]:
-                realisCorrect += 1
+            portionalScore = 1.0 / len(systemIndices)
 
-            if systemMentionTable[systemIndex][1] == goldMentionTable[goldIndex][1]:
-                typeCorrect += 1
+            for systemIndex in systemIndices:
+                if systemMentionTable[systemIndex][2] == goldMentionTable[goldIndex][2]:
+                    realisCorrect += portionalScore
 
-    print realisCorrect,typeCorrect
+                if systemMentionTable[systemIndex][1] == goldMentionTable[goldIndex][1]:
+                    typeCorrect += portionalScore
+
 
     diffOut.write(bodMarker+" "+docId+"\n")
-   # for sIndex, sLine in enumerate(sLines):
-    #    goldIndex , mappingScore = assignedSystem2GoldMapping[sIndex]
-     #   scoreOut = "%.4f"%mappingScore if mappingScore != -1 else "-"
-      #  diffOut.write("%s\t%s\n"%(sLine,scoreOut))
 
     for gIndex, gLine in enumerate(gLines):
         goldContent = gLine.split("\t",1)
@@ -471,7 +469,7 @@ def evaluate(evalMode):
     diffOut.write(eodMarker+" "+"\n")
 
     #unmapped system mentions are considered as false positive
-    fp += len(sLines) - len(mappedSystemMentions)
+    fp += len(sLines) - numGoldFound
 
     docScores.append((tp,fp,typeCorrect,realisCorrect,len(gLines),docId))
     return True

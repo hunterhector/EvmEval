@@ -274,7 +274,7 @@ sue	alt.support.divorce_20050113.2451	E26	17	divorce	Divorce	Generic	1	1.0000
 sue	alt.support.divorce_20050113.2451	E27	312	Divorce	Divorce	Generic	1	1.0000
 sue	alt.support.divorce_20050113.2451	E28	1199	trips	Transport-Person	Actual	1	1.0000
 sue	alt.support.divorce_20050113.2451	E29	413	divorce	Divorce	Generic	1	1.0000
-sue	alt.support.divorce_20050113.2451	E30	1199	vacations	Transport-Person	Actual	1	1.0000
+sue	alt.support.divorce_20050113.2451	E30	1199	vacations	Transport-Person	Actual	1	-
 sue	alt.support.divorce_20050113.2451	E32	308	that	Transport-Person	Other	1	1.0000
 #EndOfDocument 
 #BeginOfDocument alt.sys.pc-clone.dell_20050226.2350

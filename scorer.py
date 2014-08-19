@@ -21,7 +21,8 @@ eodMarker = "#EndOfDocument" #mark end of a document
 
 logger = logging.getLogger()
 
-invisible_words = set(['the','a','an','I','you','he','she','we','they','his','her','my','your','mine','yours','our','ours','who','what','where','when'])
+#run this on an annotation to confirm
+invisible_words = set(['the','a','an','I','you','he','she','we','my','your','her','our','who','what','where','when'])
 
 gf = None
 sf = None

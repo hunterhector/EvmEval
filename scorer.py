@@ -99,10 +99,10 @@ def main():
 
     if args.tokenPath is not None:
         if os.path.isdir(args.tokenPath):
-            logger.error("Will search token files in "+args.tokenPath)
+            logger.debug("Will search token files in "+args.tokenPath)
             tokenDir = args.tokenPath
         else:
-            logger.error("Cannot find given token directory at " +args.tokenPath+", will try search for currrent directory")
+            logger.debug("Cannot find given token directory at " +args.tokenPath+", will try search for currrent directory")
 
     #token based eval mode
     evalMode = EvalMethod.Token
@@ -207,9 +207,10 @@ def getNextDoc():
     gdocId = ""
 
     while True:
-        line = gf.readline().strip().rstrip()
+        line = gf.readline()
         if not line:
             break
+        line = line.strip().rstrip()
         if line == eodMarker:
             break
         if line.startswith(commentMarker):
@@ -352,6 +353,8 @@ def computeCharOverlapScore(gSpans,sSpans):
 def computeTokenOverlapScore(gTokens,sTokens):
     """
     token based overlap score
+    
+    It is a set F1 score, which is the same as Dice coefficient
     """
     
     totalOverlap = 0.0
@@ -368,9 +371,11 @@ def computeTokenOverlapScore(gTokens,sTokens):
 
     #deno = gLength if gLength > sLength else sLength
 
+    #alternatively : return totalOverlap / (gLength + sLength)
+
     prec = totalOverlap / sLength
     recall = totalOverlap / gLength
-
+    
     #return totalOverlap/deno
     return 2*prec*recall / (prec+recall)
 
@@ -406,7 +411,7 @@ def evaluate(evalMode):
     for gl in gLines:
         goldAnnos,goldMentionType,goldRealis = parseLine(gl,evalMode,invisibleIds)
         goldMentionTable.append(( goldAnnos,goldMentionType,goldRealis ))
-    
+   
     #Store list of mappings with the score as a priority queue
     allGoldSystemMappingScores = []
     
@@ -449,7 +454,6 @@ def evaluate(evalMode):
     for goldIndex, (systemIndices, score) in enumerate(assignedGold2SystemMapping):
         if score > 0: # -1 indicates no mapping
             tp += score
-
             portionalScore = 1.0 / len(systemIndices)
 
             for systemIndex in systemIndices:

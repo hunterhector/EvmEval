@@ -1,0 +1,8 @@
+#An example to see whether we can handle different cases successfully, using the folloiwng sentence
+#when OH made her way home
+#made way is marked as an event in the gold standard mode
+#also, her is an invisible word so it should be ignore
+
+#BeginOfDocument discontinous_invisible_sample
+gold	discontinous_invisible_sample	E1	3,5	made way	Transport-Person	Actual	1
+#EndOfDocumen#

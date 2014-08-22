@@ -1,4 +1,3 @@
-Will search token files in ../data/tkn/LDC2014R19/
 ========Document results==========
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
 21.33	7.00	23	0.7529	0.9275	0.8312	0.9565	0.9130	0f03cc5a508d630c6c8c8c61396e31a9

@@ -1,18 +1,18 @@
-T1	Injure 5814 5820	slices
-E1	Injure:T1 
+T1	Life_Injure 5814 5820	slices
+E1	Life_Injure:T1 
 A1	Realis E1 Other
-T2	Communicate 7768 7776	question
-E2	Communicate:T2 
+T2	Contact_Communicate 7768 7776	question
+E2	Contact_Communicate:T2 
 A2	Realis E2 Actual
-T3	Attack 7817 7825	invasion
-E3	Attack:T3 
+T3	Conflict_Attack 7817 7825	invasion
+E3	Conflict_Attack:T3 
 A3	Realis E3 Actual
-T4	Die 9318 9325	killing
-E4	Die:T4 
+T4	Life_Die 9318 9325	killing
+E4	Life_Die:T4 
 A4	Realis E4 Actual
-T5	Transport-Person 9892 9898	moving
-E5	Transport-Person:T5 
+T5	Movement_Transport-Person 9892 9898	moving
+E5	Movement_Transport-Person:T5 
 A5	Realis E5 Other
-T6	Transport-Person 7372 7378	moving
-E6	Transport-Person:T6 
+T6	Movement_Transport-Person 7372 7378	moving
+E6	Movement_Transport-Person:T6 
 A6	Realis E6 Other

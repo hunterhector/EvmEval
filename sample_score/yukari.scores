@@ -1,54 +1,54 @@
 Will search token files in ../data/tkn/LDC2014R19/
 ========Document results==========
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-19.00	0.00	21	1.0000	0.9048	0.9500	0.9048	0.7143	0f03cc5a508d630c6c8c8c61396e31a9
+19.00	0.00	23	1.0000	0.8261	0.9048	0.7826	0.6087	0f03cc5a508d630c6c8c8c61396e31a9
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-22.33	0.00	45	1.0000	0.4963	0.6634	0.3778	0.5111	1b268b27094ba9c5feb11192dad940ab
+19.00	3.00	53	0.8636	0.3585	0.5067	0.2830	0.3774	1b268b27094ba9c5feb11192dad940ab
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-17.67	0.00	24	1.0000	0.7361	0.8480	0.7500	0.6667	29f64df7feb04dfb16f4667ce199c9f0
+17.67	0.00	26	1.0000	0.6795	0.8092	0.6923	0.6154	29f64df7feb04dfb16f4667ce199c9f0
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-17.00	0.00	33	1.0000	0.5152	0.6800	0.4545	0.5152	44b011cd504c9ed71beb851324db886a
+16.67	0.00	35	1.0000	0.4762	0.6452	0.4286	0.4857	44b011cd504c9ed71beb851324db886a
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-28.00	1.00	38	0.9655	0.7368	0.8358	0.6053	0.6053	57026b7bcb8f855de3e26d572db35285
+28.00	1.00	36	0.9655	0.7778	0.8615	0.5278	0.6389	57026b7bcb8f855de3e26d572db35285
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-20.57	0.00	33	1.0000	0.6234	0.7680	0.6061	0.6061	7ddae34c4553ef60a76c43144855ec6b
+20.67	0.00	38	1.0000	0.5439	0.7045	0.5263	0.5000	7ddae34c4553ef60a76c43144855ec6b
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-11.00	0.00	38	1.0000	0.2895	0.4490	0.2368	0.3158	90e2a980c22e41e2b25666f676458343
+10.33	1.00	39	0.9118	0.2650	0.4106	0.2051	0.2821	90e2a980c22e41e2b25666f676458343
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-25.67	2.00	31	0.9277	0.8280	0.8750	0.8387	0.7419	alt.support.divorce_20050113.2451
+26.67	1.00	33	0.9639	0.8081	0.8791	0.8182	0.7273	alt.support.divorce_20050113.2451
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-21.33	1.00	28	0.9552	0.7619	0.8477	0.8929	0.5714	alt.sys.pc-clone.dell_20050226.2350
+21.33	1.00	32	0.9552	0.6667	0.7853	0.7812	0.5312	alt.sys.pc-clone.dell_20050226.2350
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-22.00	2.00	42	0.9167	0.5238	0.6667	0.5952	0.5238	be8792abc57847d9a19940579acf8373
+21.67	2.00	39	0.9155	0.5556	0.6915	0.6410	0.5897	be8792abc57847d9a19940579acf8373
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-14.56	3.00	27	0.8291	0.5391	0.6534	0.5556	0.5926	c572dc8353079a5ef9943ae298e4f5b0
+14.72	2.00	30	0.8804	0.4907	0.6302	0.5333	0.5667	c572dc8353079a5ef9943ae298e4f5b0
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-23.00	0.00	36	1.0000	0.6389	0.7797	0.3889	0.6111	d21dc2cb6e6435da7f9d9b0e5759e214
+20.00	3.00	37	0.8696	0.5405	0.6667	0.2973	0.4865	d21dc2cb6e6435da7f9d9b0e5759e214
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-47.00	1.00	69	0.9792	0.6812	0.8034	0.6667	0.4348	misc.legal.moderated_20041202.1648
+47.00	1.00	72	0.9792	0.6528	0.7833	0.6389	0.4306	misc.legal.moderated_20041202.1648
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-27.50	11.00	49	0.7143	0.5612	0.6286	0.4898	0.5714	misc.legal.moderated_20050129.2225
+32.50	6.00	58	0.8442	0.5603	0.6736	0.5000	0.5517	misc.legal.moderated_20050129.2225
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-24.83	2.00	48	0.9255	0.5174	0.6637	0.5208	0.2708	rec.arts.sf.written.robert-jordan_20050208.1350
+21.60	5.00	44	0.8120	0.4909	0.6119	0.5455	0.2273	rec.arts.sf.written.robert-jordan_20050208.1350
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-34.00	0.00	47	1.0000	0.7234	0.8395	0.7234	0.6170	rec.games.chess.politics_20041217.2111
+33.00	1.00	45	0.9706	0.7333	0.8354	0.7556	0.6444	rec.games.chess.politics_20041217.2111
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-4.00	4.00	6	0.5000	0.6667	0.5714	0.6667	0.6667	soc.culture.china_20050203.0639
+4.00	4.00	7	0.5000	0.5714	0.5333	0.5714	0.5714	soc.culture.china_20050203.0639
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-7.67	0.00	15	1.0000	0.5111	0.6765	0.5333	0.4000	soc.culture.iraq_20050211.0445
+7.67	0.00	12	1.0000	0.6389	0.7797	0.6667	0.4167	soc.culture.iraq_20050211.0445
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-8.00	2.00	41	0.8000	0.1951	0.3137	0.1951	0.1220	soc.org.nonprofit_20050218.1902
+9.00	1.00	43	0.9000	0.2093	0.3396	0.2093	0.1628	soc.org.nonprofit_20050218.1902
 TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-17.00	1.00	27	0.9444	0.6296	0.7556	0.6296	0.5556	uk.gay-lesbian-bi_20050127.0311
+17.17	1.00	27	0.9450	0.6358	0.7601	0.6296	0.5556	uk.gay-lesbian-bi_20050127.0311
 
 =======Final Results=========
-Precision (Micro Average): 0.9321
-Recall (Micro Average):0.5904
-F1 (Micro Average):0.7229
-Mention type detection accuracy (Micro Average):0.5616
-Mention realis status accuracy (Micro Average):0.5086
-Precision (Macro Average): 0.9229
-Recall (Macro Average): 0.6040
-F1 (Macro Average): 0.7301
-Mention type detection accuracy (Macro Average):0.5816
-Mention realis status accuracy (Macro Average):0.5307
+Precision (Micro Average): 0.9251
+Recall (Micro Average):0.5592
+F1 (Micro Average):0.6971
+Mention type detection accuracy (Micro Average):0.5322
+Mention realis status accuracy (Micro Average):0.4829
+Precision (Macro Average): 0.9138
+Recall (Macro Average): 0.5741
+F1 (Macro Average): 0.7051
+Mention type detection accuracy (Macro Average):0.5517
+Mention realis status accuracy (Macro Average):0.4985

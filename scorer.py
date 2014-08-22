@@ -57,7 +57,7 @@ def main():
     global diffOut
     global tokenDir
     
-    parser = argparse.ArgumentParser(description="Event mention scorer, which conducts token based scoring, your system and gold standard should follows the token-based format. The character based scoring is currently retained for comparison, which requires character based format.")
+    parser = argparse.ArgumentParser(description="Event mention scorer, which conducts token based scoring, system and gold standard files should follows the token-based format. The character based scoring is currently retained for comparison, which requires character based format.")
     parser.add_argument("-g","--gold",help="Golden Standard",required=True)
     parser.add_argument("-s","--system",help="System output",required=True)
     parser.add_argument("-d","--comparisonOutput",help="Compare and help show the difference between system and gold",required=True) 

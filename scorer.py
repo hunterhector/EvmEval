@@ -33,7 +33,7 @@ diffOut = None
 docScores = []
 
 tokenJoiner = ","
-tokenFileExt = ".tkn"
+tokenFileExt = "tkn"
 
 spanSeperator = ";"
 spanJoiner = "_"
@@ -42,6 +42,7 @@ class EvalMethod:
     Token, Char = range(2)
 
 def createParentDir(p):
+    #create parent directory if not exists
     try:
         head,tail = os.path.split(p)
         if head != "":
@@ -59,11 +60,12 @@ def main():
     parser = argparse.ArgumentParser(description="Event mention scorer, which conducts token based scoring, your system and gold standard should follows the token-based format. The character based scoring is currently retained for comparison, which requires character based format.")
     parser.add_argument("-g","--gold",help="Golden Standard",required=True)
     parser.add_argument("-s","--system",help="System output",required=True)
-    parser.add_argument("-d","--comparisonOutput",help="Compare and help show the difference between system and gold") 
+    parser.add_argument("-d","--comparisonOutput",help="Compare and help show the difference between system and gold",required=True) 
     parser.add_argument("-o","--output",help="Optional evaluation result redirects")
-    parser.add_argument("-c","--charMode",action='store_true',help="Option for character based scoring, the default one is token based")
+    parser.add_argument("-c","--charMode",action='store_true',help="Option for character based scoring, the default one is token based, this argument is only retained for testing purposes")
     parser.set_defaults(charMode=False)
-    parser.add_argument("-p","--tokenPath",help="Path to the directory containing the tokens, will use current directory if not specified, it will be required when token mode is activated to remove invisible words")
+    parser.add_argument("-t","--tokenPath",help="Path to the directory containing the tokens, will use current directory if not specified, it will be required when token mode is activated to remove invisible words")
+    parser.add_argument("-w","--overwrite",help="force overwrite existing comparison file", action='store_true')
     args = parser.parse_args()
     
     stream_handler=None
@@ -76,7 +78,7 @@ def main():
     else:
         stream_handler = logging.StreamHandler(sys.stdout)
     logger.addHandler(stream_handler)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.INFO)
 
     if os.path.isfile(args.gold):
         gf = open(args.gold)
@@ -91,12 +93,15 @@ def main():
 
     if args.comparisonOutput is not None:
         diffOutPath = args.comparisonOutput
-    else:
-        diffOutPath = "diff.tbf"
     
     createParentDir(diffOutPath)
-    diffOut = open(diffOutPath,'w')
+    
+    if not args.overwrite and os.path.isfile(diffOutPath):
+        sys.stderr.write("Output path for comparision [%s] already exists, use '-w' flag to force overwrite\n"%(diffOutPath)) 
+        sys.exit(1)
 
+    diffOut = open(diffOutPath,'w')
+    
     if args.tokenPath is not None:
         if os.path.isdir(args.tokenPath):
             logger.debug("Will search token files in "+args.tokenPath)
@@ -184,8 +189,11 @@ def main():
 def getInvisibleWordIDs(gFileName):
     invisibleIds = set()
     tokenFile = None
+
+    tokenFilePath = os.path.join(tokenDir,gFileName+"."+tokenFileExt)
+
     try:
-        tokenFile = open(os.path.join(tokenDir,gFileName+tokenFileExt))
+        tokenFile = open(tokenFilePath)
 
         for tline in tokenFile:
             fields = tline.rstrip().split(" ")

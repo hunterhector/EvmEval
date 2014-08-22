@@ -40,23 +40,34 @@ def main():
     global outExt
     global engineId
 
-    parser = argparse.ArgumentParser(description="The converter that convert from Brat to EMDF (CMU format) , requires at least the input file name/directory/list, which contains the Brat annotation, it also requires a token offset file that uses the same name as the annotation file, with extension "+tokenOffsetExt)
+    parser = argparse.ArgumentParser(description="This converter converts Brat annotation files to one single token based event mention description file (CMU format). It accepts a single file name or a directory name that contains the Brat annotation output. The converter also requires token offset files that shares the same name with the annotation file, with extension "+tokenOffsetExt + "the converter will search for the token file in the directory specified by '-t' argument")
     group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("-d","--dir",help="directory of the annotations")
+    group.add_argument("-d","--dir",help="directory of the annotation files")
     group.add_argument("-f","--file",help="name of one annotation file")
-    group.add_argument("-l","--filelist",help="a file that each line is a file that will be processed")
+    #group.add_argument("-l","--filelist",help="a file that each line is a file that will be processed")
     
+    parser.add_argument("-t","--tokenPath",help="directory to search for the corresponding token files",required = True)
     parser.add_argument("-o","--out",help="output path, '"+out+"' by default")
     parser.add_argument("-e","--ext",help="output extension, '"+outExt+"' by default")
     parser.add_argument("-i","--eid",help="an engine id that will appears at each line of the output file")
-
-    parser.add_argument("-t","--tokenPath",help="directory to search for the corresponding token files")
+    parser.add_argument("-w","--overwrite",help="force overwrite existing output file", action='store_true')
     
     args = parser.parse_args() 
     stream_handler = logging.StreamHandler(sys.stderr)  
     logger.addHandler(stream_handler)  
     logger.setLevel(logging.DEBUG)
 
+    if args.tokenPath != None:
+        if not os.path.isdir(args.tokenPath):
+            logger.error("Token directory does not exists (or is not a directory) \n\n")
+            parser.print_help()
+            sys.exit(1)
+    else:
+        logger.error("Token directory does not exists (or is not a directory) \n\n")
+        parser.print_help()
+        sys.exit(1)
+
+    #set default value to optional arguments
     if args.out != None:
         out = args.out
     if args.ext != None:
@@ -65,16 +76,21 @@ def main():
         engineId = args.eid
 
     #ensure output directory exists
-    
     try:
         head,tail = os.path.split(out)
         if head != "":
             os.makedirs(head)
-    except OSError as exception:
-        if exception.errno != errno.EEXIST:
+    except (OSError):
+        (t,v,trace) = sys.exc_info()
+        if v.errno != errno.EEXIST:
             raise
 
-    outFile = open(out+"."+outExt,'w')
+    outPath = out+"."+outExt
+    if not args.overwrite and os.path.isfile(outPath):
+        logger.error("Output path [%s] already exists, use '-w' flag to force overwrite"%(outPath))
+        sys.exit(1)
+        
+    outFile = open(outPath,'w')
 
     if args.dir != None:
         #parse directory
@@ -86,14 +102,16 @@ def main():
         if args.file.endswith(bratAnnotationExt):
             basename = os.path.basename(args.file)
             parse_annotation_file(args.file, args.tokenPath,outFile)
-    elif args.filelist != None:
-        #parse the filelist
-        lst = open(args.filelist)
-        for line in lst:
-            l = line.rstrip()
-            if l.endswith(bratAnnotationExt): 
-                basename = os.path.basename(l)
-                parse_annotation_file(l,args.tokenPath,outFile)
+#    elif args.filelist != None:
+#        #parse the filelist
+#        lst = open(args.filelist)
+#        for line in lst:
+#            l = line.rstrip()
+#            if l.endswith(bratAnnotationExt): 
+#                basename = os.path.basename(l)
+#                parse_annotation_file(l,args.tokenPath,outFile)
+    else:
+        logger.error("No annotations provided\n")
 
 def clear():
     textBounds.clear() # all text bounds
@@ -109,15 +127,10 @@ def joinList(items,joiner):
         sep = joiner 
     return s
 
-def parse_annotation_file(filePath,tokenPath,of):
-    logger.debug("Processing file "+filePath)
-    if tokenPath == None:
-        # will use search the same directory of the brat annotation file if not provided
-        tokenPath = filePath[:-len(bratAnnotationExt)]+tokenOffsetExt
-    else:
-        #otherwise use the provided directory to search for it 
-        basename = os.path.basename(filePath)
-        tokenPath = os.path.join(tokenPath,basename[:-len(bratAnnotationExt)]+tokenOffsetExt)
+def parse_annotation_file(filePath,tokenDir,of):
+    #otherwise use the provided directory to search for it 
+    basename = os.path.basename(filePath)
+    tokenPath = os.path.join(tokenDir,basename[:-len(bratAnnotationExt)]+tokenOffsetExt)
 
     if os.path.isfile(filePath) and os.path.isfile(tokenPath):
         f = open(filePath)
@@ -149,8 +162,7 @@ def parse_annotation_file(filePath,tokenPath,of):
         of.write(eodMarker+"\n")
     else:
         #the missing file will be skipped but others will still be done
-        logger.error("Both annotation path %s and token path %s must be given."%(filePath,tokenPath))
-    
+        logger.error("Annotation path %s or token path %s not found. Will still try to process other annotation files"%(filePath,tokenPath))
     clear()
 
 def getTextBound2TokenMapping(tokenFile):

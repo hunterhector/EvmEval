@@ -33,7 +33,7 @@ Further development might allow customized ID convention.
 Usage
 -----
 
-brat2tokenFormat.py [-h] (-d DIR | -f FILE) -t TOKENPATH [-o OUT]
+	brat2tokenFormat.py [-h] (-d DIR | -f FILE) -t TOKENPATH [-o OUT]
                            [-e EXT] [-i EID] [-w]
 
 It accepts a single file name or a directory name that contains the Brat annotation output. 
@@ -65,7 +65,7 @@ read the scoring documentation for more details.
 
 Usage
 -----
-scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] [-c]
+	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] [-c]
                  [-t TOKENPATH] [-w]
 
 Event mention scorer, which conducts token based scoring, system and gold

@@ -40,14 +40,14 @@ def main():
     global outExt
     global engineId
 
-    parser = argparse.ArgumentParser(description="This converter converts Brat annotation files to one single token based event mention description file (CMU format). It accepts a single file name or a directory name that contains the Brat annotation output. The converter also requires token offset files that shares the same name with the annotation file, with extension "+tokenOffsetExt + "the converter will search for the token file in the directory specified by '-t' argument")
+    parser = argparse.ArgumentParser(description="This converter converts Brat annotation files to one single token based event mention description file (CMU format). It accepts a single file name or a directory name that contains the Brat annotation output. The converter also requires token offset files that shares the same name with the annotation file, with extension "+tokenOffsetExt + ". The converter will search for the token file in the directory specified by '-t' argument")
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("-d","--dir",help="directory of the annotation files")
     group.add_argument("-f","--file",help="name of one annotation file")
     #group.add_argument("-l","--filelist",help="a file that each line is a file that will be processed")
     
     parser.add_argument("-t","--tokenPath",help="directory to search for the corresponding token files",required = True)
-    parser.add_argument("-o","--out",help="output path, '"+out+"' by default")
+    parser.add_argument("-o","--out",help="output path, '"+out+"' in the current path by default")
     parser.add_argument("-e","--ext",help="output extension, '"+outExt+"' by default")
     parser.add_argument("-i","--eid",help="an engine id that will appears at each line of the output file")
     parser.add_argument("-w","--overwrite",help="force overwrite existing output file", action='store_true')

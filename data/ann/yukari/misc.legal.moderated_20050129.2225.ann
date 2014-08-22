@@ -1,134 +1,134 @@
-T1	Transport-Person 554 559	moved
-E1	Transport-Person:T1 
+T1	Movement_Transport-Person 554 559	moved
+E1	Movement_Transport-Person:T1 
 A1	Realis E1 Actual
-T2	Transport-Person 1060 1063	get
-E2	Transport-Person:T2 
+T2	Movement_Transport-Person 1060 1063	get
+E2	Movement_Transport-Person:T2 
 A2	Realis E2 Actual
-T3	Transport-Person 1164 1167	got
-E3	Transport-Person:T3 
+T3	Movement_Transport-Person 1164 1167	got
+E3	Movement_Transport-Person:T3 
 A3	Realis E3 Actual
-T4	Communicate 1321 1327	talked
-E4	Communicate:T4 
+T4	Contact_Communicate 1321 1327	talked
+E4	Contact_Communicate:T4 
 A4	Realis E4 Actual
-T5	Communicate 1340 1345	asked
-E5	Communicate:T5 
+T5	Contact_Communicate 1340 1345	asked
+E5	Contact_Communicate:T5 
 A5	Realis E5 Actual
-T7	Transport-Person 1628 1632	take
-E7	Transport-Person:T7 
+T7	Movement_Transport-Person 1628 1632	take
+E7	Movement_Transport-Person:T7 
 A7	Realis E7 Other
-T8	Transport-Person 1662 1666	went
-E8	Transport-Person:T8 
+T8	Movement_Transport-Person 1662 1666	went
+E8	Movement_Transport-Person:T8 
 A8	Realis E8 Actual
-T9	Communicate 1734 1737	cal
-E9	Communicate:T9 
+T9	Contact_Communicate 1734 1737	cal
+E9	Contact_Communicate:T9 
 A9	Realis E9 Actual
-T10	Communicate 1948 1952	call
-E10	Communicate:T10 
+T10	Contact_Communicate 1948 1952	call
+E10	Contact_Communicate:T10 
 A10	Realis E10 Other
-T11	Communicate 2044 2048	call
-E11	Communicate:T11 
+T11	Contact_Communicate 2044 2048	call
+E11	Contact_Communicate:T11 
 A11	Realis E11 Actual
-T12	Transport-Person 2158 2162	come
-E12	Transport-Person:T12 
+T12	Movement_Transport-Person 2158 2162	come
+E12	Movement_Transport-Person:T12 
 A12	Realis E12 Other
-T13	Communicate 2172 2176	talk
-E13	Communicate:T13 
+T13	Contact_Communicate 2172 2176	talk
+E13	Contact_Communicate:T13 
 A13	Realis E13 Other
-T14	Transport-Person 2191 2195	went
-E14	Transport-Person:T14 
+T14	Movement_Transport-Person 2191 2195	went
+E14	Movement_Transport-Person:T14 
 A14	Realis E14 Actual
-T15	Transport-Person 2208 2215	getting
-E15	Transport-Person:T15 
+T15	Movement_Transport-Person 2208 2215	getting
+E15	Movement_Transport-Person:T15 
 A15	Realis E15 Actual
-T16	Attack 2387 2391	beat
-E16	Attack:T16 
+T16	Conflict_Attack 2387 2391	beat
+E16	Conflict_Attack:T16 
 A16	Realis E16 Actual
-T17	Charge-Indict 2447 2454	charges
-E17	Charge-Indict:T17 
+T17	Justice_Charge-Indict 2447 2454	charges
+E17	Justice_Charge-Indict:T17 
 A17	Realis E17 Other
-T18	Communicate 2590 2595	speak
-E18	Communicate:T18 
+T18	Contact_Communicate 2590 2595	speak
+E18	Contact_Communicate:T18 
 A18	Realis E18 Actual
-T19	Attack 2635 2638	hit
-E19	Attack:T19 
+T19	Conflict_Attack 2635 2638	hit
+E19	Conflict_Attack:T19 
 A19	Realis E19 Actual
-T21	Transport-Person 2781 2785	sent
-E21	Transport-Person:T21 
+T21	Movement_Transport-Person 2781 2785	sent
+E21	Movement_Transport-Person:T21 
 A21	Realis E21 Actual
-T22	Transfer-Ownership 2860 2865	given
-E22	Transfer-Ownership:T22 
+T22	Transaction_Transfer-Ownership 2860 2865	given
+E22	Transaction_Transfer-Ownership:T22 
 A22	Realis E22 Actual
-T23	Attack 2898 2905	assault
-E23	Attack:T23 
+T23	Conflict_Attack 2898 2905	assault
+E23	Conflict_Attack:T23 
 A23	Realis E23 Generic
-T24	Transport-Person 2924 2928	went
-E24	Transport-Person:T24 
+T24	Movement_Transport-Person 2924 2928	went
+E24	Movement_Transport-Person:T24 
 A24	Realis E24 Actual
-T25	Transfer-Ownership 3041 3046	given
-E25	Transfer-Ownership:T25 
+T25	Transaction_Transfer-Ownership 3041 3046	given
+E25	Transaction_Transfer-Ownership:T25 
 A25	Realis E25 Actual
-T26	Transfer-Ownership 3131 3137	gotten
-E26	Transfer-Ownership:T26 
+T26	Transaction_Transfer-Ownership 3131 3137	gotten
+E26	Transaction_Transfer-Ownership:T26 
 A26	Realis E26 Actual
-T27	Attack 3214 3220	choked
-E27	Attack:T27 
+T27	Conflict_Attack 3214 3220	choked
+E27	Conflict_Attack:T27 
 A27	Realis E27 Actual
-T28	Attack 3261 3267	struck
-E28	Attack:T28 
+T28	Conflict_Attack 3261 3267	struck
+E28	Conflict_Attack:T28 
 A28	Realis E28 Actual
-T29	Attack 3342 3349	grabbed
-E29	Attack:T29 
+T29	Conflict_Attack 3342 3349	grabbed
+E29	Conflict_Attack:T29 
 A29	Realis E29 Actual
-T30	Transport-Person 4053 4056	get
-E30	Transport-Person:T30 
+T30	Movement_Transport-Person 4053 4056	get
+E30	Movement_Transport-Person:T30 
 A30	Realis E30 Actual
-T31	Transport-Person 5504 5511	sending
-E31	Transport-Person:T31 
+T31	Movement_Transport-Person 5504 5511	sending
+E31	Movement_Transport-Person:T31 
 A31	Realis E31 Other
-T32	Attack 5599 5608	assaulted
-E32	Attack:T32 
+T32	Conflict_Attack 5599 5608	assaulted
+E32	Conflict_Attack:T32 
 A32	Realis E32 Actual
-T33	Sue 5618 5621	Sue
-E33	Sue:T33 
+T33	Justice_Sue 5618 5621	Sue
+E33	Justice_Sue:T33 
 A33	Realis E33 Other
-T34	Communicate 6421 6428	contact
-E34	Communicate:T34 
+T34	Contact_Communicate 6421 6428	contact
+E34	Contact_Communicate:T34 
 A34	Realis E34 Other
-T36	Attack 191 198	assault
-E36	Attack:T36 
+T36	Conflict_Attack 191 198	assault
+E36	Conflict_Attack:T36 
 A36	Realis E36 Generic
-T37	Injure 418 430	hospitalized
-E37	Injure:T37 
+T37	Life_Injure 418 430	hospitalized
+E37	Life_Injure:T37 
 A37	Questionable E37 Mention
 A38	Realis E37 Actual
 #1	AnnotatorNotes E37	ERE guideline says "hospitalized" is an INJURE event, but it sounds like a treatment, not an INJURE event.            
-T38	Communicate 828 833	spoke
-E38	Communicate:T38 
+T38	Contact_Communicate 828 833	spoke
+E38	Contact_Communicate:T38 
 A39	Questionable E38 Mention
 A40	Realis E38 Actual
-T39	Transport-Person 1276 1282	walked
-E39	Transport-Person:T39 
+T39	Movement_Transport-Person 1276 1282	walked
+E39	Movement_Transport-Person:T39 
 A41	Realis E39 Actual
 A42	Questionable E4 Mention
 A43	Questionable E5 Mention
-T6	Transport-Person 1543 1547	come
-E6	Transport-Person:T6 
+T6	Movement_Transport-Person 1543 1547	come
+E6	Movement_Transport-Person:T6 
 A6	Realis E6 Other
-T40	Transfer-Ownership 1809 1814	given
-E40	Transfer-Ownership:T40 
+T40	Transaction_Transfer-Ownership 1809 1814	given
+E40	Transaction_Transfer-Ownership:T40 
 A44	Realis E40 Actual
-T41	Communicate 1965 1969	talk
-E41	Communicate:T41 
+T41	Contact_Communicate 1965 1969	talk
+E41	Contact_Communicate:T41 
 A45	Questionable E41 Mention
 A46	Realis E41 Other
 A47	Questionable E13 Mention
-T42	Communicate 2275 2280	asked
-E42	Communicate:T42 
+T42	Contact_Communicate 2275 2280	asked
+E42	Contact_Communicate:T42 
 A48	Questionable E42 Mention
 A49	Realis E42 Actual
 A50	Questionable E18 Mention
-T20	Attack 3705 3712	assault
-E20	Attack:T20 
+T20	Conflict_Attack 3705 3712	assault
+E20	Conflict_Attack:T20 
 A20	Realis E20 Generic
 #2	AnnotatorNotes E30	This is tricky. He did not get to the hopital until 2:30 but did get there. The Realis is ACTUAL.
 A52	Questionable E34 Mention

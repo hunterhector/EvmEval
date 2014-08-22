@@ -1,0 +1,67 @@
+T1	Movement_Movement_Transport-Person 285 289	come
+E1	Movement_Movement_Transport-Person:T1 
+A1	Realis E1 Other
+T2	Life_Life_Die 323 332	pass away
+E2	Life_Life_Die:T2 
+A2	Realis E2 Other
+T3	Life_Life_Die 352 361	pass away
+E3	Life_Life_Die:T3 
+A3	Realis E3 Other
+T4	Contact_Contact_Communicate 423 430	talking
+E4	Contact_Contact_Communicate:T4 
+A4	Realis E4 Other
+T6	Life_Life_Die 1459 1462	die
+E6	Life_Life_Die:T6 
+A6	Realis E6 Other
+T7	Life_Life_Die 1942 1948	deaths
+E7	Life_Life_Die:T7 
+A7	Realis E7 Actual
+T8	Life_Life_Be-Born 1966 1972	births
+E8	Life_Life_Be-Born:T8 
+A8	Realis E8 Actual
+T9	Life_Life_Be-Born 2024 2030	births
+E9	Life_Life_Be-Born:T9 
+A9	Realis E9 Actual
+T10	Life_Life_Die 2081 2090	mortality
+E10	Life_Life_Die:T10 
+A10	Questionable E10 Mention
+A11	Realis E10 Generic
+#1	AnnotatorNotes E10	noun-noun phrase
+T11	Life_Life_Die 2313 2323	stillbirth
+E11	Life_Life_Die:T11 
+A12	Realis E11 Generic
+T12	Life_Life_Die 2331 2336	death
+E12	Life_Life_Die:T12 
+A13	Realis E12 Generic
+T13	Life_Life_Be-Born 2397 2403	births
+E13	Life_Life_Be-Born:T13 
+A14	Realis E13 Generic
+T14	Life_Life_Die 2424 2429	death
+E14	Life_Life_Die:T14 
+A15	Realis E14 Generic
+A16	Questionable E14 Mention
+#2	AnnotatorNotes E14	noun-noun phrase
+T15	Life_Life_Be-Born 2453 2459	births
+E15	Life_Life_Be-Born:T15 
+A17	Realis E15 Actual
+A18	Questionable E11 Mention
+A19	Questionable E12 Mention
+#4	AnnotatorNotes E12	noun-noun phrase
+T16	Life_Life_Die 2526 2536	stillbirth
+E16	Life_Life_Die:T16 
+A20	Questionable E16 Mention
+A21	Realis E16 Generic
+T17	Life_Life_Die 2550 2556	deaths
+E17	Life_Life_Die:T17 
+A22	Realis E17 Generic
+T18	Life_Life_Be-Born 2834 2840	births
+E18	Life_Life_Be-Born:T18 
+A23	Realis E18 Actual
+A5	Questionable E4 Mention
+T5	Life_Life_Die 1871 1880	mortality
+E5	Life_Life_Die:T5 
+A24	Realis E5 Generic
+T19	Contact_Contact_Communicate 1036 1042	advice
+E19	Contact_Contact_Communicate:T19 
+A25	Questionable E19 Mention
+A26	Realis E19 Other

@@ -1,30 +1,30 @@
-T1	Meet 428 436	meetings
-E1	Meet:T1 
+T1	Contact_Meet 428 436	meetings
+E1	Contact_Meet:T1 
 A1	Realis E1 Generic
-T2	Meet 512 519	meeting
-E2	Meet:T2 
+T2	Contact_Meet 512 519	meeting
+E2	Contact_Meet:T2 
 A2	Realis E2 Generic
-T4	Meet 1299 1307	meetings
-E4	Meet:T4 
+T4	Contact_Meet 1299 1307	meetings
+E4	Contact_Meet:T4 
 A4	Realis E4 Other
-T6	Meet 1470 1477	meeting
-E6	Meet:T6 
+T6	Contact_Meet 1470 1477	meeting
+E6	Contact_Meet:T6 
 A6	Realis E6 Other
-T7	Meet 2288 2300	get together
-E7	Meet:T7 
+T7	Contact_Meet 2288 2300	get together
+E7	Contact_Meet:T7 
 A7	Realis E7 Other
-T9	Transport-Person 5905 5911	travel
-E9	Transport-Person:T9 
+T9	Movement_Transport-Person 5905 5911	travel
+E9	Movement_Transport-Person:T9 
 A9	Realis E9 Generic
-T10	Meet 5940 5948	meetings
-E10	Meet:T10 
+T10	Contact_Meet 5940 5948	meetings
+E10	Contact_Meet:T10 
 A10	Realis E10 Generic
-T11	Transfer-Money 7270 7279	recieving
-E11	Transfer-Money:T11 
+T11	Transaction_Transfer-Money 7270 7279	recieving
+E11	Transaction_Transfer-Money:T11 
 A11	Realis E11 Generic
-T13	Elect 17629 17636	elected
-E13	Elect:T13 
+T13	Personnel_Elect 17629 17636	elected
+E13	Personnel_Elect:T13 
 A13	Realis E13 Actual
-T3	Transfer-Ownership 14774 14783	provision
-E3	Transfer-Ownership:T3 
+T3	Transaction_Transfer-Ownership 14774 14783	provision
+E3	Transaction_Transfer-Ownership:T3 
 A3	Realis E3 Generic

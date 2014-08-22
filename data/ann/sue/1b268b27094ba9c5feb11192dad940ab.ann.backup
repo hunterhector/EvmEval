@@ -1,0 +1,163 @@
+T1	Contact_Communicate 130 136	advice
+E1	Contact_Communicate:T1 
+A1	Realis E1 Other
+T2	Contact_Communicate 140 151	reassurance
+E2	Contact_Communicate:T2 
+A2	Realis E2 Other
+T3	Transport-Person 201 205	came
+E3	Transport-Person:T3 
+A3	Realis E3 Actual
+T4	Transport-Person 286 291	going
+E4	Transport-Person:T4 
+A4	Realis E4 Actual
+T5	Contact_Meet 598 605	talking
+E5	Contact_Meet:T5 
+A5	Realis E5 Actual
+T6	Contact_Communicate 679 683	rang
+E6	Contact_Communicate:T6 
+A6	Realis E6 Actual
+T7	Contact_Communicate 728 732	told
+E7	Contact_Communicate:T7 
+A7	Realis E7 Actual
+T8	Contact_Communicate 771 775	said
+E8	Contact_Communicate:T8 
+A8	Realis E8 Actual
+T9	Contact_Communicate 790 795	asked
+E9	Contact_Communicate:T9 
+A9	Realis E9 Actual
+T10	Contact_Communicate 831 840	mentioned
+E10	Contact_Communicate:T10 
+A10	Realis E10 Actual
+A11	Questionable E7 Mention
+#1	AnnotatorNotes E7	Should each interaction within the telephone conversation be marked as a separate Contact.Communication event?
+A12	Questionable E8 Mention
+#2	AnnotatorNotes E8	Should each interaction within the telephone conversation be marked as a separate Contact.Communication event?
+A13	Questionable E9 Mention
+#3	AnnotatorNotes E9	Should each interaction within the telephone conversation be marked as a separate Contact.Communication event?
+A14	Questionable E10 Mention
+#4	AnnotatorNotes E10	Should each interaction within the telephone conversation be marked as a separate Contact.Communication event?
+T11	Contact_Communicate 859 863	said
+E11	Contact_Communicate:T11 
+A15	Questionable E11 Mention
+A16	Realis E11 Actual
+#5	AnnotatorNotes E11	Should each interaction within the telephone conversation be marked as a separate Contact.Communication event?
+T12	Contact_Communicate 922 926	rang
+E12	Contact_Communicate:T12 
+A17	Realis E12 Actual
+T13	Transport-Person 956 959	way
+E13	Transport-Person:T13 
+A18	Questionable E13 Mention
+A19	Realis E13 Actual
+#6	AnnotatorNotes E13	Is "way" markable as a Movement. Transport-Person event?
+T14	Transport-Person 1110 1118	returned
+E14	Transport-Person:T14 
+A20	Realis E14 Actual
+T15	Contact_Meet 1352 1356	told
+E15	Contact_Meet:T15 
+A21	Realis E15 Actual
+T16	Contact_Meet 1377 1386	explained
+E16	Contact_Meet:T16 
+A22	Questionable E16 Mention
+A23	Realis E16 Actual
+#7	AnnotatorNotes E16	This is the second mention of the conversation with police. Should it be marked?
+T17	Contact_Meet 1410 1414	talk
+E17	Contact_Meet:T17 
+A24	Realis E17 Other
+T18	Contact_Meet 1533 1537	said
+E18	Contact_Meet:T18 
+A25	Questionable E18 Mention
+A26	Realis E18 Actual
+#8	AnnotatorNotes E18	This is the third mention of the conversation with police. Should it be marked?
+T19	Transport-Person 1601 1605	went
+E19	Transport-Person:T19 
+A27	Realis E19 Actual
+T20	Contact_Communicate 1871 1876	heard
+E20	Contact_Communicate:T20 
+A28	Questionable E20 Mention
+A29	Realis E20 Other
+#9	AnnotatorNotes E20	Is not hearing from the police a negated Contact.Communicate event?
+T21	Transport-Person 1924 1931	sending
+E21	Transport-Person:T21 
+A30	Realis E21 Other
+T22	Contact_Meet 1949 1958	explained
+E22	Contact_Meet:T22 
+A31	Questionable E22 Mention
+A32	Realis E22 Actual
+#10	AnnotatorNotes E22	This is from that previously mentioned meeting with the police at their house. Does it still need to be tagged or are we only tagging the first mention of a meeting?
+T23	Transport-Person 2496 2504	visitied
+E23	Transport-Person:T23 
+A33	Realis E23 Actual
+T24	Contact_Meet 2551 2558	adivsed
+E24	Contact_Meet:T24 
+A34	Realis E24 Actual
+T25	Contact_Meet 2605 2615	explaining
+E25	Contact_Meet:T25 
+A35	Questionable E25 Mention
+A36	Realis E25 Actual
+#11	AnnotatorNotes E25	Is this talking during the original police meeting at their house taggable?
+T26	Contact_Meet 2670 2676	answer
+E26	Contact_Meet:T26 
+A37	Questionable E26 Mention
+A38	Realis E26 Other
+#12	AnnotatorNotes E26	This is the couple answering back to the police during their first meeting. Is it markable?
+T27	Contact_Meet 2686 2693	advised
+E27	Contact_Meet:T27 
+A39	Questionable E27 Mention
+A40	Realis E27 Actual
+#13	AnnotatorNotes E27	This is a second mention of advising during the Chief Inspector's meeting with the couple. Is it markable?
+T28	Contact_Meet 2804 2808	said
+E28	Contact_Meet:T28 
+A41	Questionable E28 Mention
+A42	Realis E28 Actual
+#14	AnnotatorNotes E28	Another speaking event inside of the meeting of the Chief Inspector and the couple. Is it markable?
+T29	Transport-Person 3016 3022	coming
+E29	Transport-Person:T29 
+A43	Realis E29 Other
+T30	Contact_Meet 3068 3077	interview
+E30	Contact_Meet:T30 
+A44	Realis E30 Other
+T31	Contact_Communicate 3162 3166	told
+E31	Contact_Communicate:T31 
+A45	Realis E31 Other
+T32	Contact_Meet 3243 3250	grilled
+E32	Contact_Meet:T32 
+A46	Realis E32 Other
+T33	Contact_Communicate 3650 3656	advice
+E33	Contact_Communicate:T33 
+A47	Realis E33 Other
+T34	Justice_Charge-Indict 3727 3737	prosecuted
+E34	Justice_Charge-Indict:T34 
+A48	Realis E34 Other
+T35	Contact_Meet 4016 4022	asking
+E35	Contact_Meet:T35 
+A49	Realis E35 Other
+T36	Contact_Communicate 4141 4148	telling
+E36	Contact_Communicate:T36 
+A50	Realis E36 Actual
+A51	Questionable E36 Realis
+#15	AnnotatorNotes E36	Should this be Actual (since they have told the truth each time they have spoken) or is it Generic (since they are telling the truth universally about this event?)
+T37	Contact_Meet 4182 4191	interview
+E37	Contact_Meet:T37 
+A52	Realis E37 Other
+T38	Contact_Meet 4530 4537	grilled
+E38	Contact_Meet:T38 
+A53	Realis E38 Actual
+T39	Contact_Meet 4563 4572	interview
+E39	Contact_Meet:T39 
+A54	Realis E39 Actual
+T40	Transaction_Transfer-Ownership 4939 4951	handing over
+E40	Transaction_Transfer-Ownership:T40 
+A55	Questionable E40 Mention
+A56	Realis E40 Generic
+#16	AnnotatorNotes E40	Is giving money as an insurance payout a Transaction.Transfer-Ownership event?
+T41	Contact_Communicate 5109 5116	telling
+E41	Contact_Communicate:T41 
+A57	Realis E41 Other
+T42	Contact_Communicate 5572 5576	Tell
+E42	Contact_Communicate:T42 
+A58	Realis E42 Other
+T43	Transaction_Transfer-Ownership 5592 5595	pay
+E43	Transaction_Transfer-Ownership:T43 
+A59	Questionable E43 Mention
+A60	Realis E43 Actual
+#17	AnnotatorNotes E43	Is paying for insurance a Transaction.Transfer-Ownership event?

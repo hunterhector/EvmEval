@@ -1,0 +1,110 @@
+T1	Contact_Communicate 113 117	tell
+E1	Contact_Communicate:T1 
+A1	Realis E1 Other
+T2	Life_Marry 186 193	wedding
+E2	Life_Marry:T2 
+A2	Questionable E2 Mention
+A3	Realis E2 Actual
+#1	AnnotatorNotes E2	Adjectival  N-N phrase; Tag? Also realis=Actual or realis=Generic?
+T3	Life_Marry 150 158	ceromony
+E3	Life_Marry:T3 
+A4	Realis E3 Actual
+T4	Life_Marry 352 360	ceromony
+E4	Life_Marry:T4 
+A5	Realis E4 Actual
+T5	Life_Marry 398 405	wedding
+E5	Life_Marry:T5 
+A6	Questionable E5 Mention
+A7	Realis E5 Generic
+#2	AnnotatorNotes E5	N-N phrase. Tag?
+T6	Transaction_Transfer-Ownership 417 422	hired
+E6	Transaction_Transfer-Ownership:T6 
+A9	Realis E6 Actual
+T7	Life_Marry 453 460	wedding
+E7	Life_Marry:T7 
+A10	Questionable E7 Mention
+A11	Realis E7 Generic
+#4	AnnotatorNotes E7	N-N phrase tag? Also realis=Generic or Actual?
+T8	Transport-Person 740 747	flights
+E8	Transport-Person:T8 
+A12	Realis E8 Actual
+T9	Life_Marry 786 793	wedding
+E9	Life_Marry:T9 
+A13	Realis E9 Actual
+T10	Life_Marry 1006 1013	wedding
+E10	Life_Marry:T10 
+A14	Realis E10 Actual
+T11	Life_Marry 1213 1220	wedding
+E11	Life_Marry:T11 
+A15	Realis E11 Other
+T12	Transaction_Transfer-Ownership 1268 1272	Hire
+E12	Transaction_Transfer-Ownership:T12 
+A16	Questionable E12 Mention
+A17	Realis E12 Other
+#5	AnnotatorNotes E12	Is hire (rent) Transaction.Transfer_Ownership?
+T13	Transport-Person 1478 1482	trip
+E13	Transport-Person:T13 
+A18	Realis E13 Other
+T14	Transaction_Transfer-Ownership 1729 1735	buying
+E14	Transaction_Transfer-Ownership:T14 
+A19	Realis E14 Other
+T15	Transaction_Transfer-Ownership 1750 1754	hire
+E15	Transaction_Transfer-Ownership:T15 
+A20	Questionable E15 Mention
+A21	Realis E15 Other
+#6	AnnotatorNotes E15	Is hire (rent) Transfer-Ownership?
+T16	Life_Marry 1997 2004	wedding
+E16	Life_Marry:T16 
+A22	Questionable E16 Mention
+A23	Realis E16 Generic
+#7	AnnotatorNotes E16	N-N phrase. taggable?
+T17	Life_Marry 2075 2082	married
+E17	Life_Marry:T17 
+A24	Realis E17 Generic
+T18	Life_Marry 2244 2252	weddings
+E18	Life_Marry:T18 
+A25	Realis E18 Generic
+T19	Life_Marry 2436 2443	married
+E19	Life_Marry:T19 
+A26	Realis E19 Other
+T20	Life_Marry 2492 2500	weddings
+E20	Life_Marry:T20 
+A27	Realis E20 Generic
+T21	Life_Marry 2978 2985	wedding
+E21	Life_Marry:T21 
+A28	Realis E21 Other
+T22	Life_Marry 3127 3135	weddings
+E22	Life_Marry:T22 
+A29	Realis E22 Generic
+T23	Life_Marry 3297 3305	marriage
+E23	Life_Marry:T23 
+A30	Realis E23 Other
+T24	Transport-Person 3447 3456	honeymoon
+E24	Transport-Person:T24 
+A31	Realis E24 Generic
+T25	Transport-Person 3543 3550	holiday
+E25	Transport-Person:T25 
+A32	Realis E25 Other
+T26	Transport-Person 1049 1053	went
+E26	Transport-Person:T26 
+A33	Realis E26 Actual
+T27	Transaction_Transfer-Ownership 1339 1345	borrow
+E27	Transaction_Transfer-Ownership:T27 
+A34	Realis E27 Other
+A8	Questionable E6 Mention
+#3	AnnotatorNotes E6	Is renting something a Transaction.Transfer-Ownership event?
+T28	Transaction_Transfer-Ownership 3101 3106	spend
+E28	Transaction_Transfer-Ownership:T28 
+A35	Questionable E28 Mention
+A36	Realis E28 Generic
+#8	AnnotatorNotes E28	Is spending money on weddings a Transaction.Transfer-Ownership event?
+T29	Transaction_Transfer-Ownership 3210 3215	spend
+E29	Transaction_Transfer-Ownership:T29 
+A37	Questionable E29 Mention
+A38	Realis E29 Generic
+#9	AnnotatorNotes E29	Is spending money on weddings a Transaction.Transfer-Ownership event?
+T30	Transaction_Transfer-Ownership 3499 3504	spend
+E30	Transaction_Transfer-Ownership:T30 
+A39	Questionable E30 Mention
+A40	Realis E30 Other
+#10	AnnotatorNotes E30	Is spending money on weddings a Transaction.Transfer-Ownership event?

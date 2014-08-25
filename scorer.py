@@ -196,8 +196,9 @@ def getInvisibleWordIDs(gFileName):
         tokenFile = open(tokenFilePath)
 
         for tline in tokenFile:
-            fields = tline.rstrip().split(" ")
+            fields = tline.rstrip().split("\t")
             if len(fields) != 4:
+                logger.debug("Wierd token line")
                 continue 
             if fields[1].lower().strip().rstrip() in invisible_words:
                 invisibleIds.add(int(fields[0]))

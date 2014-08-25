@@ -168,7 +168,7 @@ def parse_annotation_file(filePath,tokenDir,of):
 def getTextBound2TokenMapping(tokenFile):
     textBoundId2TokenId = {}
     for tokenLine in tokenFile:
-        fields = tokenLine.rstrip().split(" ")
+        fields = tokenLine.rstrip().split("\t")
         if len(fields) != 4:
             continue
         tokenSpan = (int(fields[2]),int(fields[3]))

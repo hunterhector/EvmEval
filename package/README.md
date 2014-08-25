@@ -10,8 +10,8 @@ To use the software, we need to prepare the CMU format annotation file from the 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents 
 
-TokenFileFactory.java
----------------------
+TokenFileMaker.java
+-------------------
 
 Features
 --------
@@ -24,7 +24,7 @@ Requirements
 
 Usage
 -----
-	java evmeval.TokenFileFactory -a <annotation> -e <extension> [-h]
+	java evmeval.TokenFileMaker -a <annotation> -e <extension> [-h]
 	 -o <output> [-s <separator>] -t <text>
 	 -a <annotation>   annotation directory
 	 -e <extension>    text file extension

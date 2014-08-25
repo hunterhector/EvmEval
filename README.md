@@ -1,24 +1,21 @@
 Event Mention Evaluation (EvmEval)
 =========
 
-This repository conducts pre-tokenization, file conversion, and scoring for
-event mention detection.  It consists of the following three pieces of code:
+This repository conducts pre-tokenization, file conversion, and scoring for event mention detection. It consists of the following three pieces of code:
  1. A token file factory based on the Stanford tokenizer
  2. A simple converter from Brat annotation tool format to CMU detection format
  3. A scorer that can score system performance based on CMU detection format
 
-To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tokenFormat.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer.
+To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tokenFormat.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. 
 
-Example shell scripts can be found in the "run" directory
+Example shell scripts can be found in the "run" directory.
 
 TokenFileFactory.java
 ---------------------
 
 Features
 --------
-This java code creates token files for given text files and annotation files.
-The tokenization implementation is based on the tokenizer in the Stanford
-CoreNLP tool.
+This java code creates token files for given text files and annotation files. The tokenization implementation is based on the tokenizer in the Stanford CoreNLP tool.
 
 Requirements
 ------------

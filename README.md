@@ -8,7 +8,7 @@ This repository conducts pre-tokenization, file conversion, and scoring for even
 
 To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tokenFormat.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. 
 
-Example shell scripts can be found in the "run" directory.
+Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents 
 
 TokenFileFactory.java
 ---------------------

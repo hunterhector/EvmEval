@@ -3,11 +3,11 @@ Event Mention Evaluation (EvmEval)
 
 This repository conducts pre-tokenization, file conversion, and scoring for
 event mention detection.  It consists of the following three pieces of code:
-1. A token file factory based on the Stanford tokenizer
-2. A simple converter from Brat annotation tool format to CMU detection format
-3. A scorer that can score system performance based on CMU detection format
+ 1. A token file factory based on the Stanford tokenizer
+ 2. A simple converter from Brat annotation tool format to CMU detection format
+ 3. A scorer that can score system performance based on CMU detection format
 
-To use the software, we need to first convert the Brat annotation tool into the CMU format using "brat2tokenFormat.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer "jar"
+To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tokenFormat.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer.
 
 Example shell scripts can be found in the "run" directory
 
@@ -27,14 +27,14 @@ Requirements
 
 Usage
 -----
-java evmeval.TokenFileFactory -a <annotation> -e <extension> [-h]
-       -o <output> [-s <separator>] -t <text>
- -a <annotation>   annotation directory
- -e <extension>    text file extension
- -h                print this message
- -o <output>       output directory
- -s <separator>    separator chars for tokenization
- -t <text>         text directory
+	java evmeval.TokenFileFactory -a <annotation> -e <extension> [-h]
+	 -o <output> [-s <separator>] -t <text>
+	 -a <annotation>   annotation directory
+	 -e <extension>    text file extension
+	 -h                print this message
+	 -o <output>       output directory
+	 -s <separator>    separator chars for tokenization
+	 -t <text>         text directory
 
 It takes a text file directory path and an annotation file directory path as
 input, instead of individual text files and annotation files.  It outputs the

@@ -178,11 +178,11 @@ public class TokenFileFactory {
       Token token = tokens.get(i);
 
       buf.append(i + 1); // token ID
-      buf.append(" ");
+      buf.append("\t");
       buf.append(token.getCoveredText()); // token
-      buf.append(" ");
+      buf.append("\t");
       buf.append(token.getBegin()); // begin
-      buf.append(" ");
+      buf.append("\t");
       buf.append(token.getEnd()); // end
       buf.append(LINE_BREAK);
     }

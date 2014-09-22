@@ -10,37 +10,6 @@ To use the software, we need to prepare the CMU format annotation file from the 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents 
 
-TokenFileMaker.java
--------------------
-
-Features
---------
-This java code creates token files for given text files and annotation files. The tokenization implementation is based on the tokenizer in the Stanford CoreNLP tool.
-
-Requirements
-------------
-- Java 1.7
-- The same number of text files and brat annotation files (*.ann) with the same file base name
-
-Usage
------
-	java evmeval.TokenFileMaker -a <annotation> -e <extension> [-h]
-	 -o <output> [-s <separator>] -t <text>
-	 -a <annotation>   annotation directory
-	 -e <extension>    text file extension
-	 -h                print this message
-	 -o <output>       output directory
-	 -s <separator>    separator chars for tokenization
-	 -t <text>         text directory
-
-It takes a text file directory path and an annotation file directory path as
-input, instead of individual text files and annotation files.  It outputs the
-same number of output files as that of input files in the text (annotation)
-file directory.  The idea of the additional separator characters given by '-s'
-is to let users control a more fine-grained level of tokenization beyond the
-Stanford tokenization.  The tokenizer is exactly the same as the Stanford one
-by default (without the '-s' option).
-
 brat2tokenFormat.py:
 --------------------
 

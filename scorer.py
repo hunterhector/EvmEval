@@ -1,4 +1,4 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 
 """
     A simple scorer that reads the CMU Event Mention Detection Format 
@@ -33,7 +33,7 @@ diffOut = None
 docScores = []
 
 tokenJoiner = ","
-tokenFileExt = "tkn"
+tokenFileExt = "tab"
 
 spanSeperator = ";"
 spanJoiner = "_"
@@ -56,18 +56,21 @@ def main():
     global sf
     global diffOut
     global tokenDir
-    
+
     parser = argparse.ArgumentParser(description="Event mention scorer, which conducts token based scoring, system and gold standard files should follows the token-based format. The character based scoring is currently retained for comparison, which requires character based format.")
     parser.add_argument("-g","--gold",help="Golden Standard",required=True)
     parser.add_argument("-s","--system",help="System output",required=True)
     parser.add_argument("-d","--comparisonOutput",help="Compare and help show the difference between system and gold",required=True) 
     parser.add_argument("-o","--output",help="Optional evaluation result redirects")
-    parser.add_argument("-c","--charMode",action='store_true',help="Option for character based scoring, the default one is token based, this argument is only retained for testing purposes")
-    parser.set_defaults(charMode=False)
-    parser.add_argument("-t","--tokenPath",help="Path to the directory containing the tokens, will use current directory if not specified, it will be required when token mode is activated to remove invisible words")
+# character mode is disabled
+#    parser.add_argument("-c","--charMode",action='store_true',help="Option for character based scoring, the default one is token based, this argument is only retained for testing purposes")
+#    parser.set_defaults(charMode=False)
+    parser.add_argument("-t","--tokenPath",help="Path to the directory containing the token mappings file", required=True)
     parser.add_argument("-w","--overwrite",help="force overwrite existing comparison file", action='store_true')
+    parser.add_argument("-b", "--debug",help="turn debug mode on", action="store_true")
+    parser.set_defaults(debug=False)
     args = parser.parse_args()
-    
+ 
     stream_handler=None
     evalOut = None
     if args.output is not None:   
@@ -78,8 +81,12 @@ def main():
     else:
         stream_handler = logging.StreamHandler(sys.stdout)
     logger.addHandler(stream_handler)
-    logger.setLevel(logging.INFO)
-
+    
+    if args.debug:
+        logger.setLevel(logging.DEBUG)
+    else:
+        logger.setLevel(logging.INFO)
+    
     if os.path.isfile(args.gold):
         gf = open(args.gold)
     else:
@@ -111,10 +118,11 @@ def main():
 
     #token based eval mode
     evalMode = EvalMethod.Token
-    
-    if args.charMode:
-        evalMode = EvalMethod.Char
-        logger.debug("NOTE: Using character based evaluation")
+
+#charactoer mode is disabled
+#   if args.charMode:
+#        evalMode = EvalMethod.Char
+#       logger.debug("NOTE: Using character based evaluation")
 
     while True:
         res = evaluate(evalMode)
@@ -197,11 +205,11 @@ def getInvisibleWordIDs(gFileName):
 
         for tline in tokenFile:
             fields = tline.rstrip().split("\t")
-            if len(fields) != 4:
-                logger.debug("Wierd token line")
+            if len(fields) != 6:
+                logger.debug("Wierd token line "+tline)
                 continue 
             if fields[1].lower().strip().rstrip() in invisible_words:
-                invisibleIds.add(int(fields[0]))
+                invisibleIds.add(fields[0])
 
     except IOError:
         logger.debug("Cannot find token file for doc [%s], will use empty invisible words list"%gFileName)
@@ -249,7 +257,8 @@ def getNextDoc():
         logger.error("System document IDs are not aligned with gold standard IDs")
         sys.exit(1)
     return (gLines,sLines,gdocId)
-   
+
+
 def parseSpans(s):
     """
     Method to parse the character based span 
@@ -261,27 +270,26 @@ def parseSpans(s):
         spans.append(span)
     return spans
 
+
 def parseTokenIds(s,invisibleIds):
     """
     Method to parse the token ids (instead of a span)
     """
-    tokenStrs = s.split(tokenJoiner)
-    tokenIds = set()
-    for tokenStr in tokenStrs:
-        tokenId = int(tokenStr)
-        if not tokenId in invisibleIds:
-            tokenIds.add(tokenId)
+    filtered_token_ids = set()
+    for token_id in s.split(tokenJoiner):
+        if not token_id in invisibleIds:
+            filtered_token_ids.add(token_id)
         else:
             #logger.debug("Token Id %d is filtered"%(tokenId))
             pass
-    
-    return tokenIds
+    return filtered_token_ids
+
 
 def parseCharBasedLine(l):
-    '''
+    """
     Method to parse the character based line, which does not support
     removal of invisible words
-    '''
+    """
     fields = l.split("\t")
     if (len(fields) != 8):
         logger.error("Output are not correctly formatted")

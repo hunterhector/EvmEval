@@ -55,3 +55,5 @@ docs/_build/
 # LDC data directories
 data/tkn/
 data/source/
+data/R55_test_data/ 
+data/ann

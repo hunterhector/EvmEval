@@ -1,0 +1,72 @@
+T1	Contact_Contact_Meet 150 158	ceromony
+E1	Contact_Contact_Meet:T1 
+A1	Realis E1 Actual
+T2	Movement_Movement_Transport-Person 711 715	went
+E2	Movement_Movement_Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Contact_Contact_Meet 786 793	wedding
+E3	Contact_Contact_Meet:T3 
+A3	Realis E3 Other
+T5	Contact_Contact_Meet 1006 1013	wedding
+E5	Contact_Contact_Meet:T5 
+A5	Realis E5 Actual
+T6	Movement_Movement_Transport-Person 1049 1053	went
+E6	Movement_Movement_Transport-Person:T6 
+A6	Realis E6 Actual
+T7	Contact_Contact_Meet 1213 1220	wedding
+E7	Contact_Contact_Meet:T7 
+A7	Realis E7 Other
+T8	Transaction_Transaction_Transfer-Ownership 1339 1345	borrow
+E8	Transaction_Transaction_Transfer-Ownership:T8 
+A8	Realis E8 Other
+T9	Transaction_Transaction_Transfer-Ownership 1361 1364	get
+E9	Transaction_Transaction_Transfer-Ownership:T9 
+A9	Realis E9 Other
+T10	Movement_Movement_Transport-Person 1478 1482	trip
+E10	Movement_Movement_Transport-Person:T10 
+A10	Realis E10 Other
+T11	Contact_Contact_Meet 1557 1563	dinner
+E11	Contact_Contact_Meet:T11 
+A11	Realis E11 Actual
+T12	Transaction_Transaction_Transfer-Ownership 1729 1735	buying
+E12	Transaction_Transaction_Transfer-Ownership:T12 
+A12	Realis E12 Other
+T13	Transaction_Transaction_Transfer-Ownership 1268 1272	Hire
+E13	Transaction_Transaction_Transfer-Ownership:T13 
+A13	Realis E13 Other
+T14	Transaction_Transaction_Transfer-Ownership 1750 1754	hire
+E14	Transaction_Transaction_Transfer-Ownership:T14 
+A14	Realis E14 Other
+T15	Life_Life_Marry 2075 2082	married
+E15	Life_Life_Marry:T15 
+A15	Realis E15 Generic
+T16	Contact_Contact_Meet 2116 2121	party
+E16	Contact_Contact_Meet:T16 
+A16	Realis E16 Generic
+T17	Contact_Contact_Meet 2244 2252	weddings
+E17	Contact_Contact_Meet:T17 
+A17	Realis E17 Generic
+T18	Life_Life_Marry 2436 2443	married
+E18	Life_Life_Marry:T18 
+A18	Realis E18 Other
+T19	Contact_Contact_Meet 2492 2500	weddings
+E19	Contact_Contact_Meet:T19 
+A19	Realis E19 Generic
+T20	Contact_Contact_Meet 2978 2985	wedding
+E20	Contact_Contact_Meet:T20 
+A20	Realis E20 Other
+T21	Contact_Contact_Meet 3127 3135	weddings
+E21	Contact_Contact_Meet:T21 
+A21	Realis E21 Generic
+A22	Questionable E19 Realis
+T22	Life_Life_Marry 3297 3305	marriage
+E22	Life_Life_Marry:T22 
+A23	Realis E22 Other
+T23	Contact_Contact_Meet 3358 3363	party
+E23	Contact_Contact_Meet:T23 
+A24	Realis E23 Other
+T25	Contact_Contact_Meet 352 360	ceromony
+E25	Contact_Contact_Meet:T25 
+A26	Realis E25 Actual
+A4	Questionable E25 Realis
+#1	AnnotatorNotes E25	Realis can be "other"

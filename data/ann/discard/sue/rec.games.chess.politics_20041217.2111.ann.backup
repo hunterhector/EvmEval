@@ -1,0 +1,135 @@
+T1	Personnel_Personnel_Start-Position 197 203	hiring
+E1	Personnel_Personnel_Start-Position:T1 
+A1	Realis E1 Other
+T2	Personnel_Personnel_End-Position 540 545	leave
+E2	Personnel_Personnel_End-Position:T2 
+A2	Realis E2 Other
+T3	Personnel_Personnel_Start-Position 583 588	hired
+E3	Personnel_Personnel_Start-Position:T3 
+A3	Realis E3 Other
+T4	Transaction_Transaction_Transfer-Money 790 795	given
+E4	Transaction_Transaction_Transfer-Money:T4 
+A4	Realis E4 Other
+T5	Transaction_Transaction_Transfer-Money 882 887	given
+E5	Transaction_Transaction_Transfer-Money:T5 
+A5	Realis E5 Other
+T6	Personnel_Personnel_End-Position 1058 1065	leaving
+E6	Personnel_Personnel_End-Position:T6 
+A6	Realis E6 Other
+T7	Transaction_Transaction_Transfer-Money 1170 1175	given
+E7	Transaction_Transaction_Transfer-Money:T7 
+A7	Realis E7 Other
+T8	Personnel_Personnel_End-Position 1193 1203	expiration
+E8	Personnel_Personnel_End-Position:T8 
+A8	Realis E8 Other
+T9	Transaction_Transaction_Transfer-Money 1329 1333	give
+E9	Transaction_Transaction_Transfer-Money:T9 
+A9	Realis E9 Other
+T10	Transaction_Transaction_Transfer-Money 1380 1384	give
+E10	Transaction_Transaction_Transfer-Money:T10 
+A10	Realis E10 Other
+T11	Contact_Contact_Meet 1523 1533	discussion
+E11	Contact_Contact_Meet:T11 
+A11	Questionable E11 Mention
+A12	Realis E11 Other
+#1	AnnotatorNotes E11	Is discussion within a meeting event taggable?
+T12	Contact_Contact_Meet 1577 1584	meeting
+E12	Contact_Contact_Meet:T12 
+A13	Realis E12 Other
+T13	Transaction_Transaction_Transfer-Money 1778 1790	arrangements
+E13	Transaction_Transaction_Transfer-Money:T13 
+A14	Questionable E13 Mention
+A15	Realis E13 Other
+#2	AnnotatorNotes E13	Anaphoric reference to taggable event - itself taggable?
+T14	Personnel_Personnel_Elect 2231 2236	elect
+E14	Personnel_Personnel_Elect:T14 
+A16	Realis E14 Other
+T15	Personnel_Personnel_End-Position 2336 2341	leave
+E15	Personnel_Personnel_End-Position:T15 
+A17	Realis E15 Other
+T16	Contact_Contact_Meet 2374 2383	discussed
+E16	Contact_Contact_Meet:T16 
+A18	Realis E16 Other
+T17	Transaction_Transaction_Transfer-Money 2390 2401	compensated
+E17	Transaction_Transaction_Transfer-Money:T17 
+A19	Realis E17 Other
+T18	Personnel_Personnel_Start-Position 2490 2494	hire
+E18	Personnel_Personnel_Start-Position:T18 
+A20	Realis E18 Other
+T19	Contact_Contact_Meet 3007 3018	discussions
+E19	Contact_Contact_Meet:T19 
+A21	Realis E19 Actual
+T20	Personnel_Personnel_End-Position 3296 3306	steps down
+E20	Personnel_Personnel_End-Position:T20 
+A22	Realis E20 Other
+T21	Transaction_Transaction_Transfer-Money 3491 3494	get
+E21	Transaction_Transaction_Transfer-Money:T21 
+A23	Realis E21 Other
+T22	Personnel_Personnel_Start-Position 3182 3189	drafted
+E22	Personnel_Personnel_Start-Position:T22 
+A24	Realis E22 Actual
+T23	Personnel_Personnel_Start-Position 3841 3847	retain
+E23	Personnel_Personnel_Start-Position:T23 
+A25	Realis E23 Other
+T24	Personnel_Personnel_Start-Position 4365 4369	hire
+E24	Personnel_Personnel_Start-Position:T24 
+A26	Realis E24 Other
+T25	Personnel_Personnel_Start-Position 4265 4274	designate
+E25	Personnel_Personnel_Start-Position:T25 
+A27	Questionable E25 Mention
+A28	Realis E25 Other
+#3	AnnotatorNotes E25	Is designating someone to do a job a Personnel.Personnel_Personnel_Start-Position event?
+T26	Personnel_Personnel_Elect 5317 5324	elected
+E26	Personnel_Personnel_Elect:T26 
+A29	Realis E26 Actual
+T27	Personnel_Personnel_Elect 5459 5466	elected
+E27	Personnel_Personnel_Elect:T27 
+A30	Questionable E27 Mention
+A31	Realis E27 Generic
+#4	AnnotatorNotes E27	Adjectives marked? Also, can an entire "board" qualify as a Personnel.Personnel_Personnel_Elect event, or does the argument have to be PER?
+T28	Transaction_Transaction_Transfer-Ownership 5869 5872	pay
+E28	Transaction_Transaction_Transfer-Ownership:T28 
+A32	Questionable E28 Mention
+A33	Realis E28 Other
+#5	AnnotatorNotes E28	Is paying legal expenses Transaction_Transaction_Transfer-Ownership?
+T29	Transaction_Transaction_Transfer-Money 5974 5978	loan
+E29	Transaction_Transaction_Transfer-Money:T29 
+A34	Realis E29 Other
+T30	Personnel_Personnel_End-Position 6575 6582	resigns
+E30	Personnel_Personnel_End-Position:T30 
+A35	Realis E30 Other
+T31	Personnel_Personnel_Start-Position 6603 6608	hired
+E31	Personnel_Personnel_Start-Position:T31 
+A36	Realis E31 Other
+T32	Justice_Justice_Sue 6695 6702	lawsuit
+E32	Justice_Justice_Sue:T32 
+A37	Realis E32 Other
+T33	Justice_Justice_Sue 6725 6734	complaint
+E33	Justice_Justice_Sue:T33 
+A38	Realis E33 Actual
+T34	Justice_Justice_Charge-Indict 6736 6744	charging
+E34	Justice_Justice_Charge-Indict:T34 
+A39	Realis E34 Other
+T35	Transaction_Transaction_Transfer-Money 6920 6924	paid
+E35	Transaction_Transaction_Transfer-Money:T35 
+A41	Realis E35 Other
+T36	Contact_Contact_Communicate 6971 6984	communication
+E36	Contact_Contact_Communicate:T36 
+A42	Realis E36 Other
+T37	Justice_Justice_Sue 7062 7069	lawsuit
+E37	Justice_Justice_Sue:T37 
+A43	Realis E37 Other
+T38	Justice_Justice_Sue 7199 7206	lawsuit
+E38	Justice_Justice_Sue:T38 
+A44	Realis E38 Other
+T39	Justice_Justice_Sue 7515 7519	sued
+E39	Justice_Justice_Sue:T39 
+A45	Realis E39 Actual
+T40	Justice_Justice_Sue 7576 7580	sued
+E40	Justice_Justice_Sue:T40 
+A46	Realis E40 Other
+A47	Questionable E26 Mention
+#7	AnnotatorNotes E26	Can a Personnel.Personnel_Personnel_Elect event be for an entire "board", not a PER?
+T41	Contact_Contact_Meet 6541 6548	meeting
+E41	Contact_Contact_Meet:T41 
+A48	Realis E41 Other

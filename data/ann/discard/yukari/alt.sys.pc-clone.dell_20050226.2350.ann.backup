@@ -1,0 +1,79 @@
+T1	Justice_Justice_Sue 171 175	sued
+E1	Justice_Justice_Sue:T1 
+A1	Realis E1 Actual
+T2	Justice_Justice_Sue 441 445	suit
+E2	Justice_Justice_Sue:T2 
+A2	Realis E2 Actual
+T3	Transaction_Transaction_Transfer-Ownership 911 921	purchasing
+E3	Transaction_Transaction_Transfer-Ownership:T3 
+A3	Realis E3 Generic
+T4	Justice_Justice_Sue 2346 2351	suits
+E4	Justice_Justice_Sue:T4 
+A4	Realis E4 Generic
+T5	Justice_Justice_Sue 2430 2435	suits
+E5	Justice_Justice_Sue:T5 
+A5	Realis E5 Generic
+T7	Transaction_Transaction_Transfer-Money 2631 2640	receiving
+E7	Transaction_Transaction_Transfer-Money:T7 
+A9	Realis E7 Actual
+T8	Justice_Justice_Sue 2756 2760	suit
+E8	Justice_Justice_Sue:T8 
+A10	Realis E8 Actual
+T9	Justice_Justice_Sue 4012 4016	suit
+E9	Justice_Justice_Sue:T9 
+A11	Realis E9 Actual
+T10	Justice_Justice_Sue 4720 4724	sued
+E10	Justice_Justice_Sue:T10 
+A12	Realis E10 Actual
+T11	Transaction_Transaction_Transfer-Ownership 4902 4910	purchase
+E11	Transaction_Transaction_Transfer-Ownership:T11 
+A13	Realis E11 Generic
+T12	Transaction_Transaction_Transfer-Money 5121 5127	cashed
+E12	Transaction_Transaction_Transfer-Money:T12 
+A14	Questionable E12 Mention
+A15	Realis E12 Other
+T13	Transaction_Transaction_Transfer-Ownership 5149 5155	bought
+E13	Transaction_Transaction_Transfer-Ownership:T13 
+A16	Realis E13 Other
+T14	Justice_Justice_Sue 8149 8153	suit
+E14	Justice_Justice_Sue:T14 
+A17	Realis E14 Generic
+T15	Justice_Justice_Sue 8180 8185	suits
+E15	Justice_Justice_Sue:T15 
+A18	Realis E15 Other
+T16	Justice_Justice_Sue 10270 10277	actions
+E16	Justice_Justice_Sue:T16 
+A20	Realis E16 Generic
+T17	Justice_Justice_Sue 10328 10332	sued
+E17	Justice_Justice_Sue:T17 
+A21	Realis E17 Other
+T18	Justice_Justice_Sue 10342 10348	action
+E18	Justice_Justice_Sue:T18 
+A23	Realis E18 Other
+T19	Justice_Justice_Sue 10410 10416	action
+E19	Justice_Justice_Sue:T19 
+A25	Realis E19 Other
+T20	Justice_Justice_Sue 10483 10491	lawsuits
+E20	Justice_Justice_Sue:T20 
+A26	Realis E20 Actual
+T22	Justice_Justice_Sue 10617 10621	sued
+E22	Justice_Justice_Sue:T22 
+A28	Realis E22 Actual
+T23	Justice_Justice_Sue 10743 10747	sued
+E23	Justice_Justice_Sue:T23 
+A29	Realis E23 Other
+T24	Justice_Justice_Sue 10805 10811	action
+E24	Justice_Justice_Sue:T24 
+A31	Realis E24 Other
+T25	Justice_Justice_Sue 10824 10831	actions
+E25	Justice_Justice_Sue:T25 
+A33	Realis E25 Generic
+T26	Justice_Justice_Sue 10900 10907	actions
+E26	Justice_Justice_Sue:T26 
+A35	Realis E26 Generic
+T27	Transaction_Transaction_Transfer-Ownership 10952 10955	buy
+E27	Transaction_Transaction_Transfer-Ownership:T27 
+A36	Realis E27 Generic
+T6	Justice_Justice_Sue 2590 2597	actions
+E6	Justice_Justice_Sue:T6 
+A6	Realis E6 Generic

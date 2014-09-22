@@ -1,0 +1,131 @@
+T1	Life_Life_Injure 622 630	injuring
+E1	Life_Life_Injure:T1 
+A1	Realis E1 Actual
+T2	Movement_Movement_Transport-Person 644 648	sped
+E2	Movement_Movement_Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Contact_Contact_Communicate 680 687	calling
+E3	Contact_Contact_Communicate:T3 
+A3	Realis E3 Other
+T4	Contact_Contact_Communicate 702 709	calling
+E4	Contact_Contact_Communicate:T4 
+A4	Realis E4 Other
+T5	Contact_Contact_Communicate 771 775	call
+E5	Contact_Contact_Communicate:T5 
+A5	Realis E5 Other
+T6	Justice_Justice_Charge-Indict 910 917	charged
+E6	Justice_Justice_Charge-Indict:T6 
+A6	Realis E6 Actual
+T7	Justice_Justice_Charge-Indict 961 969	charging
+E7	Justice_Justice_Charge-Indict:T7 
+A7	Realis E7 Other
+T8	Justice_Justice_Charge-Indict 1172 1179	charged
+E8	Justice_Justice_Charge-Indict:T8 
+A8	Realis E8 Other
+T10	Personnel_Personnel_End-Position 1257 1261;1268 1272	lose jobs
+E10	Personnel_Personnel_End-Position:T10 
+A11	Realis E10 Generic
+T14	Justice_Justice_Pardon 2319 2327	pardoned
+E14	Justice_Justice_Pardon:T14 
+A16	Realis E14 Actual
+T16	Justice_Justice_Pardon 2654 2660	pardon
+E16	Justice_Justice_Pardon:T16 
+A18	Realis E16 Actual
+T17	Justice_Justice_Pardon 2899 2906	pardons
+E17	Justice_Justice_Pardon:T17 
+A19	Realis E17 Other
+T19	Justice_Justice_Charge-Indict 2996 3003	charged
+E19	Justice_Justice_Charge-Indict:T19 
+A21	Realis E19 Other
+T20	Justice_Justice_Charge-Indict 3125 3132	charged
+E20	Justice_Justice_Charge-Indict:T20 
+A22	Realis E20 Other
+T21	Justice_Justice_Charge-Indict 3173 3180	charged
+E21	Justice_Justice_Charge-Indict:T21 
+A23	Realis E21 Other
+T22	Justice_Justice_Pardon 3191 3199	pardoned
+E22	Justice_Justice_Pardon:T22 
+A24	Realis E22 Other
+T25	Transaction_Transaction_Transfer-Money 4391 4401	bought off
+E25	Transaction_Transaction_Transfer-Money:T25 
+A27	Realis E25 Other
+T27	Life_Life_Die 5699 5707	murdered
+E27	Life_Life_Die:T27 
+A29	Realis E27 Actual
+T24	Life_Life_Die 5067 5073	murder
+E24	Life_Life_Die:T24 
+A9	Realis E24 Actual
+T28	Movement_Movement_Transport-Person 540 547	driving
+E28	Movement_Movement_Transport-Person:T28 
+A12	Realis E28 Actual
+T9	Justice_Justice_Arrest-Jail 1218 1228	go to jail
+E9	Justice_Justice_Arrest-Jail:T9 
+A10	Realis E9 Generic
+T11	Justice_Justice_Arrest-Jail 1283 1293	go to jail
+E11	Justice_Justice_Arrest-Jail:T11 
+A13	Realis E11 Generic
+T30	Justice_Justice_Arrest-Jail 1569 1575	prison
+E30	Justice_Justice_Arrest-Jail:T30 
+A31	Realis E30 Generic
+#1	AnnotatorNotes E30	N-N phrase
+T31	Justice_Justice_Arrest-Jail 1665 1671	prison
+E31	Justice_Justice_Arrest-Jail:T31 
+A30	Realis E31 Generic
+T32	Justice_Justice_Arrest-Jail 1815 1821	prison
+E32	Justice_Justice_Arrest-Jail:T32 
+A32	Realis E32 Generic
+T12	Justice_Justice_Arrest-Jail 1899 1916	sending to prison
+E12	Justice_Justice_Arrest-Jail:T12 
+A14	Realis E12 Other
+T13	Justice_Justice_Arrest-Jail 2001 2016	gone to prision
+E13	Justice_Justice_Arrest-Jail:T13 
+A15	Realis E13 Other
+T33	Justice_Justice_Trial-Hearing 2021 2026	trial
+E33	Justice_Justice_Trial-Hearing:T33 
+A33	Realis E33 Other
+T34	Movement_Movement_Transport-Person 2451 2460	break-ins
+E34	Movement_Movement_Transport-Person:T34 
+A34	Realis E34 Other
+T35	Movement_Movement_Transport-Person 2574 2584	broke into
+E35	Movement_Movement_Transport-Person:T35 
+A35	Realis E35 Actual
+T36	Justice_Justice_Convict 2723 2732	convicted
+E36	Justice_Justice_Convict:T36 
+A36	Realis E36 Actual
+T23	Justice_Justice_Sentence 3418 3421;3448 3457	get sentences
+E23	Justice_Justice_Sentence:T23 
+A25	Realis E23 Generic
+T38	Justice_Justice_Arrest-Jail 3545 3551	prison
+E38	Justice_Justice_Arrest-Jail:T38 
+A39	Realis E38 Generic
+T39	Justice_Justice_Arrest-Jail 3705 3711	prison
+E39	Justice_Justice_Arrest-Jail:T39 
+A40	Realis E39 Generic
+T40	Justice_Justice_Convict 4184 4194	conviction
+E40	Justice_Justice_Convict:T40 
+A41	Realis E40 Other
+T26	Justice_Justice_Acquit 5721 5727	walked
+E26	Justice_Justice_Acquit:T26 
+A28	Realis E26 Actual
+T41	Justice_Justice_Acquit 5742 5748	walked
+E41	Justice_Justice_Acquit:T41 
+A42	Realis E41 Actual
+T15	Justice_Justice_Pardon 2378 2384;2387 2393	issued pardon
+E15	Justice_Justice_Pardon:T15 
+A17	Realis E15 Actual
+#3	AnnotatorNotes E26	Is "walked" a Justice.Justice_Justice_Acquit event?
+#4	AnnotatorNotes E41	Is "walked" a Justice.Justice_Justice_Acquit event?
+T29	Justice_Justice_Arrest-Jail 3440 3447	prision
+E29	Justice_Justice_Arrest-Jail:T29 
+A26	Realis E29 Generic
+T37	Justice_Justice_Arrest-Jail 3809 3816	in jail
+E37	Justice_Justice_Arrest-Jail:T37 
+A45	Realis E37 Generic
+T18	Transaction_Transaction_Transfer-Money 4974 4980	afford
+E18	Transaction_Transaction_Transfer-Money:T18 
+A20	Realis E18 Generic
+A37	Idiom E26
+A38	Idiom E41
+T42	Justice_Justice_Acquit 5800 5810	Not Guilty
+E42	Justice_Justice_Acquit:T42 
+A43	Realis E42 Generic

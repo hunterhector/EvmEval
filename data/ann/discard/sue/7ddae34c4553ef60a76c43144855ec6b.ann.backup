@@ -1,0 +1,130 @@
+T1	Life_Life_Die 162 167	death
+E1	Life_Life_Die:T1 
+A1	Realis E1 Other
+T2	Life_Life_Die 189 191	go
+E2	Life_Life_Die:T2 
+A2	Questionable E2 Realis
+A3	Realis E2 Other
+#1	AnnotatorNotes E2	Is present tense realis=Other or realis=Actual?
+T3	Life_Life_Die 307 312	death
+E3	Life_Life_Die:T3 
+A4	Realis E3 Generic
+T4	Life_Life_Die 410 414	went
+E4	Life_Life_Die:T4 
+A5	Realis E4 Actual
+T5	Life_Life_Die 592 595	die
+E5	Life_Life_Die:T5 
+A6	Realis E5 Generic
+T6	Life_Life_Die 755 766	passed away
+E6	Life_Life_Die:T6 
+A7	Realis E6 Actual
+T7	Life_Life_Die 843 854	Passed away
+E7	Life_Life_Die:T7 
+A8	Realis E7 Actual
+T8	Life_Life_Die 929 933	died
+E8	Life_Life_Die:T8 
+A9	Realis E8 Actual
+T9	Life_Life_Die 1244 1246	go
+E9	Life_Life_Die:T9 
+A10	Realis E9 Other
+T10	Life_Life_Die 1490 1494	died
+E10	Life_Life_Die:T10 
+A11	Realis E10 Actual
+T11	Life_Life_Die 1574 1578	died
+E11	Life_Life_Die:T11 
+A12	Realis E11 Other
+T12	Life_Life_Be-Born 1796 1800	born
+E12	Life_Life_Be-Born:T12 
+A13	Realis E12 Other
+T13	Life_Life_Die 1832 1843	passed away
+E13	Life_Life_Die:T13 
+A14	Realis E13 Actual
+T14	Movement_Movement_Transport-Person 2110 2115	stuck
+E14	Movement_Movement_Transport-Person:T14 
+A15	Realis E14 Actual
+T15	Contact_Contact_Communicate 2216 2220	told
+E15	Contact_Contact_Communicate:T15 
+A16	Realis E15 Actual
+T16	Movement_Movement_Transport-Person 2236 2241	bring
+E16	Movement_Movement_Transport-Person:T16 
+A17	Realis E16 Actual
+T17	Life_Life_Die 2272 2276	died
+E17	Life_Life_Die:T17 
+A18	Realis E17 Actual
+T18	Contact_Contact_Communicate 2504 2513	referring
+E18	Contact_Contact_Communicate:T18 
+A19	Realis E18 Actual
+T19	Life_Life_Die 2861 2865	went
+E19	Life_Life_Die:T19 
+A20	Realis E19 Actual
+T20	Life_Life_Die 2891 2898	suicide
+E20	Life_Life_Die:T20 
+A21	Realis E20 Actual
+T21	Life_Life_Die 3062 3066	died
+E21	Life_Life_Die:T21 
+A22	Realis E21 Actual
+T22	Contact_Contact_Communicate 3154 3160	shared
+E22	Contact_Contact_Communicate:T22 
+A23	Realis E22 Actual
+T23	Movement_Movement_Transport-Person 3316 3318	go
+E23	Movement_Movement_Transport-Person:T23 
+A24	Realis E23 Other
+T24	Movement_Movement_Transport-Person 3487 3492	moved
+E24	Movement_Movement_Transport-Person:T24 
+A25	Realis E24 Actual
+T25	Movement_Movement_Transport-Person 3510 3513	got
+E25	Movement_Movement_Transport-Person:T25 
+A26	Realis E25 Actual
+T26	Life_Life_Die 3608 3612	gone
+E26	Life_Life_Die:T26 
+A27	Realis E26 Actual
+T27	Contact_Contact_Communicate 3722 3726	told
+E27	Contact_Contact_Communicate:T27 
+A28	Realis E27 Other
+T28	Contact_Contact_Communicate 3649 3653	said
+E28	Contact_Contact_Communicate:T28 
+A29	Realis E28 Actual
+T29	Life_Life_Die 3818 3829	checked out
+E29	Life_Life_Die:T29 
+A30	Realis E29 Actual
+T30	Life_Life_Die 3964 3969	death
+E30	Life_Life_Die:T30 
+A31	Realis E30 Generic
+T31	Life_Life_Die 4782 4788	go out
+E31	Life_Life_Die:T31 
+A32	Realis E31 Other
+A33	Questionable E29 Mention
+#2	AnnotatorNotes E29	Are we marking slang like "check out"?
+A34	Questionable E31 Mention
+#3	AnnotatorNotes E31	Are we marking idioms like "go out with my boots on"?
+T32	Contact_Contact_Meet 913 917	said
+E32	Contact_Contact_Meet:T32 
+A35	Realis E32 Actual
+T33	Life_Life_Die 1295 1301	happen
+E33	Life_Life_Die:T33 
+A36	Questionable E33 Mention
+A37	Realis E33 Other
+#4	AnnotatorNotes E33	Anaphoric reference to death. Taggable?
+T34	Life_Life_Die 1612 1618	happen
+E34	Life_Life_Die:T34 
+A38	Questionable E34 Mention
+A39	Realis E34 Other
+#5	AnnotatorNotes E34	Anaphoric reference to death. Taggable?
+T35	Contact_Contact_Meet 2200 2205	lying
+E35	Contact_Contact_Meet:T35 
+A40	Questionable E35 Mention
+A41	Realis E35 Actual
+#6	AnnotatorNotes E35	Is lying a Contact.Contact_Contact_Meet event?
+T36	Movement_Movement_Transport-Person 3748 3752	come
+E36	Movement_Movement_Transport-Person:T36 
+A42	Realis E36 Other
+T37	Life_Life_Die 3908 3912	time
+E37	Life_Life_Die:T37 
+A43	Questionable E37 Mention
+A44	Realis E37 Other
+#7	AnnotatorNotes E37	the time for death. should time be marked here?
+T38	Life_Life_Die 4243 4247	bury
+E38	Life_Life_Die:T38 
+A45	Questionable E38 Mention
+A46	Realis E38 Other
+#8	AnnotatorNotes E38	Is burying someone a Life.Life_Life_Die event?

@@ -1,0 +1,18 @@
+T5	Contact_Contact_Communicate 7243 7252	consulted
+E5	Contact_Contact_Communicate:T5 
+A5	Realis E5 Other
+T6	Movement_Movement_Transport-Person 7372 7378	moving
+E6	Movement_Movement_Transport-Person:T6 
+A6	Realis E6 Other
+T7	Life_Life_Die 9318 9325	killing
+E7	Life_Life_Die:T7 
+A7	Realis E7 Actual
+T8	Movement_Movement_Transport-Person 9892 9898	moving
+E8	Movement_Movement_Transport-Person:T8 
+A8	Realis E8 Other
+T2	Contact_Contact_Communicate 7757 7763;7768 7776	raised question
+E2	Contact_Contact_Communicate:T2 
+A3	Realis E2 Actual
+T3	Conflict_Conflict_Attack 7817 7825	invasion
+E3	Conflict_Conflict_Attack:T3 
+A4	Realis E3 Actual

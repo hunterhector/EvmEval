@@ -10,37 +10,6 @@ To use the software, we need to prepare the CMU format annotation file from the 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents 
 
-TokenFileMaker.java
--------------------
-
-Features
---------
-This java code creates token files for given text files and annotation files. The tokenization implementation is based on the tokenizer in the Stanford CoreNLP tool.
-
-Requirements
-------------
-- Java 1.7
-- The same number of text files and brat annotation files (*.ann) with the same file base name
-
-Usage
------
-	java evmeval.TokenFileMaker -a <annotation> -e <extension> [-h]
-	 -o <output> [-s <separator>] -t <text>
-	 -a <annotation>   annotation directory
-	 -e <extension>    text file extension
-	 -h                print this message
-	 -o <output>       output directory
-	 -s <separator>    separator chars for tokenization
-	 -t <text>         text directory
-
-It takes a text file directory path and an annotation file directory path as
-input, instead of individual text files and annotation files.  It outputs the
-same number of output files as that of input files in the text (annotation)
-file directory.  The idea of the additional separator characters given by '-s'
-is to let users control a more fine-grained level of tokenization beyond the
-Stanford tokenization.  The tokenizer is exactly the same as the Stanford one
-by default (without the '-s' option).
-
 brat2tokenFormat.py:
 --------------------
 
@@ -86,8 +55,11 @@ specified by '-t' argument
 	  -o OUT, --out OUT     output path, 'converted' in the current path by default
 	  -e EXT, --ext EXT     output extension, 'tbf' by default
 	  -i EID, --eid EID     an engine id that will appears at each line of the
-							output file
+							output file. 'brat_conversion' will be used by default
 	  -w, --overwrite       force overwrite existing output file
+	  -s, --source          true if the annotations are done on source data,
+	                           default is false
+	  -b, --debug           turn debug mode on
 
 scorer.py:
 ----------
@@ -99,8 +71,8 @@ read the scoring documentation for more details.
 
 Usage
 -----
-	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] [-c]
-                 [-t TOKENPATH] [-w]
+	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] -t
+              TOKENPATH [-w]
 
 Event mention scorer, which conducts token based scoring, system and gold
 standard should follow the token-based format. The character based scoring is
@@ -113,17 +85,12 @@ currently retained for testing purpose, which requires character based format.
 	  -d COMPARISONOUTPUT, --comparisonOutput COMPARISONOUTPUT
 							Compare and help show the difference between system
 							and gold
-
+	  -t TOKENPATH, --tokenPath TOKENPATH
+                        	Path to the directory containing the token mappings
+                        	file 
 	Optional arguments:  
 	  -h, --help            show this help message and exit
 	  -o OUTPUT, --output OUTPUT
 							Optional evaluation result redirects
-	  -c, --charMode        Option for character based scoring, the default one is
-							token based, this argument is only retained for
-							testing purposes
-	  -t TOKENPATH, --tokenPath TOKENPATH
-							Path to the directory containing the tokens, will use
-							current directory if not specified, it will be
-							required when token mode is activated to remove
-							invisible words
 	  -w, --overwrite       force overwrite existing comparison file
+	  -b, --debug           turn debug mode on

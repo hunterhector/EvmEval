@@ -176,6 +176,7 @@ def joinList(items, joiner):
 def parse_annotation_file(filePath, tokenDir, of):
     # otherwise use the provided directory to search for it
     basename = os.path.basename(filePath)
+    logger.debug("processing "+basename)
     tokenPath = os.path.join(
         tokenDir, basename[:-len(bratAnnotationExt)] + tokenOffsetExt)
 
@@ -229,9 +230,9 @@ def getTextBound2TokenMapping(tokenFile):
         # important! we need to make sure that what we are evaluating on
         tokenSpan = None
         if annotation_on_source:
-            tokenSpan = (int(fields[2]), int(fields[3]))
+            tokenSpan = (int(fields[2]), int(fields[3]) + 1)
         else:
-            tokenSpan = (int(fields[4]), int(fields[5]))
+            tokenSpan = (int(fields[4]), int(fields[5]) + 1)
 
         # one token maps to multiple text bound is possible
         for textBoundId in findCorrespondingTextBound(tokenSpan):
@@ -249,7 +250,6 @@ def findCorrespondingTextBound(tokenSpan):
                 textBoundIds.append(textBoundId)
             elif covers(tokenSpan, annSpan):
                 textBoundIds.append(textBoundId)
-
     return textBoundIds
 
 

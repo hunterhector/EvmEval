@@ -51,7 +51,7 @@ def main():
     parser.add_argument("-t","--tokenPath",help="directory to search for the corresponding token files",required = True)
     parser.add_argument("-o","--out",help="output path, '"+out+"' in the current path by default")
     parser.add_argument("-e","--ext",help="output extension, '"+outExt+"' by default")
-    parser.add_argument("-i","--eid",help="an engine id that will appears at each line of the output file")
+    parser.add_argument("-i","--eid",help="an engine id that will appears at each line of the output file. '"+engineId+"' will be used by default")
     parser.add_argument("-w","--overwrite",help="force overwrite existing output file", action='store_true')
     parser.add_argument("-s","--source",help="true if the annotations are done on source data, default is false", action='store_true')
     parser.set_defaults(source=False)
@@ -249,6 +249,7 @@ def parse_event(fields):
 def parse_attribute(fields):
     aid = fields[0]
     value = fields[1].split()
+    print value
     attName = value[0]
     targetId = value[1]
     targetValue = True #binary

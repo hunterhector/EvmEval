@@ -203,6 +203,9 @@ def getInvisibleWordIDs(gFileName):
     try:
         tokenFile = open(tokenFilePath)
 
+        #discard the header
+        header = tokenFile.readline()
+
         for tline in tokenFile:
             fields = tline.rstrip().split("\t")
             if len(fields) != 6:

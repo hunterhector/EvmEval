@@ -1,0 +1,76 @@
+T2	Movement_Transport-Person 201 205	came
+E2	Movement_Transport-Person:T2 
+A3	Realis E2 Actual
+T1	Movement_Transport-Person 286 291	going
+E1	Movement_Transport-Person:T1 
+A1	Realis E1 Actual
+T3	Movement_Transport-Person 433 436	got
+E3	Movement_Transport-Person:T3 
+A2	Realis E3 Actual
+T4	Contact_Communicate 679 683	rang
+E4	Contact_Communicate:T4 
+A4	Realis E4 Actual
+T5	Contact_Communicate 922 926	rang
+E5	Contact_Communicate:T5 
+A5	Realis E5 Actual
+T6	Movement_Transport-Person 947 951	made
+E6	Movement_Transport-Person:T6 
+A6	Realis E6 Actual
+T7	Movement_Transport-Person 1110 1118	returned
+E7	Movement_Transport-Person:T7 
+A7	Realis E7 Actual
+T8	Movement_Transport-Person 1601 1605	went
+E8	Movement_Transport-Person:T8 
+A8	Realis E8 Actual
+T9	Contact_Communicate 1871 1876	heard
+E9	Contact_Communicate:T9 
+A9	Realis E9 Other
+T10	Movement_Transport-Person 2496 2504	visitied
+E10	Movement_Transport-Person:T10 
+A10	Realis E10 Actual
+T11	Transaction_Transfer-Ownership 2773 2777	gave
+E11	Transaction_Transfer-Ownership:T11 
+A11	Realis E11 Actual
+T12	Transaction_Transfer-Ownership 2889 2893	gave
+E12	Transaction_Transfer-Ownership:T12 
+A12	Realis E12 Actual
+T13	Movement_Transport-Person 3016 3022	coming
+E13	Movement_Transport-Person:T13 
+A13	Realis E13 Other
+T14	Contact_Meet 3068 3077	interview
+E14	Contact_Meet:T14 
+A14	Realis E14 Other
+T15	Contact_Communicate 4182 4191	interview
+E15	Contact_Communicate:T15 
+A15	Realis E15 Other
+T16	Transaction_Transfer-Money 4939 4946	handing
+E16	Transaction_Transfer-Money:T16 
+A16	Realis E16 Other
+T17	Contact_Communicate 790 795	asked
+E17	Contact_Communicate:T17 
+A17	Questionable E17 Mention
+A18	Realis E17 Actual
+T18	Movement_Transport-Person 1252 1255	got
+E18	Movement_Transport-Person:T18 
+A19	Realis E18 Actual
+A24	Questionable E9 Mention
+T21	Contact_Communicate 1949 1958	explained
+E21	Contact_Communicate:T21 
+A25	Questionable E21 Mention
+A26	Realis E21 Actual
+T19	Contact_Communicate 1352 1356	told
+E19	Contact_Communicate:T19 
+A20	Questionable E19 Mention
+A21	Realis E19 Actual
+T20	Contact_Communicate 2128 2132	told
+E20	Contact_Communicate:T20 
+A22	Questionable E20 Mention
+A23	Realis E20 Actual
+T22	Contact_Communicate 2551 2558	adivsed
+E22	Contact_Communicate:T22 
+A27	Questionable E22 Mention
+A28	Realis E22 Actual
+T23	Contact_Communicate 4016 4022	asking
+E23	Contact_Communicate:T23 
+A29	Questionable E23 Mention
+A30	Realis E23 Other

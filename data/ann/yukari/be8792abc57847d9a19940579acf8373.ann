@@ -1,0 +1,83 @@
+T1	Life_Injure 622 630	injuring
+E1	Life_Injure:T1 
+A1	Realis E1 Actual
+T2	Movement_Transport-Person 644 648	sped
+E2	Movement_Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Contact_Communicate 680 687	calling
+E3	Contact_Communicate:T3 
+A3	Realis E3 Other
+T4	Contact_Communicate 702 709	calling
+E4	Contact_Communicate:T4 
+A4	Realis E4 Other
+T5	Contact_Communicate 771 775	call
+E5	Contact_Communicate:T5 
+A5	Realis E5 Actual
+T6	Justice_Charge-Indict 910 917	charged
+E6	Justice_Charge-Indict:T6 
+A6	Realis E6 Actual
+T7	Justice_Charge-Indict 961 969	charging
+E7	Justice_Charge-Indict:T7 
+A7	Realis E7 Other
+T8	Justice_Charge-Indict 1172 1179	charged
+E8	Justice_Charge-Indict:T8 
+A8	Realis E8 Other
+T10	Personnel_End-Position 1257 1261	lose
+E10	Personnel_End-Position:T10 
+A11	Realis E10 Generic
+T12	Justice_Arrest-Jail 1899 1906	sending
+E12	Justice_Arrest-Jail:T12 
+A14	Realis E12 Other
+T13	Justice_Arrest-Jail 2001 2005	gone
+E13	Justice_Arrest-Jail:T13 
+A15	Realis E13 Actual
+T14	Justice_Pardon 2319 2327	pardoned
+E14	Justice_Pardon:T14 
+A16	Realis E14 Actual
+T15	Justice_Pardon 2387 2393	pardon
+E15	Justice_Pardon:T15 
+A17	Realis E15 Actual
+T16	Justice_Pardon 2654 2660	pardon
+E16	Justice_Pardon:T16 
+A18	Realis E16 Actual
+T17	Justice_Pardon 2899 2906	pardons
+E17	Justice_Pardon:T17 
+A19	Realis E17 Other
+T18	Justice_Appeal 2958 2962	plea
+E18	Justice_Appeal:T18 
+A20	Realis E18 Other
+T19	Justice_Charge-Indict 2996 3003	charged
+E19	Justice_Charge-Indict:T19 
+A21	Realis E19 Other
+T20	Justice_Charge-Indict 3125 3132	charged
+E20	Justice_Charge-Indict:T20 
+A22	Realis E20 Other
+T21	Justice_Charge-Indict 3173 3180	charged
+E21	Justice_Charge-Indict:T21 
+A23	Realis E21 Other
+T22	Justice_Pardon 3191 3199	pardoned
+E22	Justice_Pardon:T22 
+A24	Realis E22 Other
+T23	Justice_Sentence 3448 3457	sentences
+E23	Justice_Sentence:T23 
+A25	Realis E23 Generic
+T25	Transaction_Transfer-Money 4391 4401	bought off
+E25	Transaction_Transfer-Money:T25 
+A27	Realis E25 Actual
+T26	Life_Die 5613 5619	murder
+E26	Life_Die:T26 
+A28	Realis E26 Actual
+T27	Life_Die 5699 5707	murdered
+E27	Life_Die:T27 
+A29	Realis E27 Actual
+T9	Justice_Arrest-Jail 1218 1220	go
+E9	Justice_Arrest-Jail:T9 
+A10	Realis E9 Generic
+#1	AnnotatorNotes E9	How do we mark "go to jail"?
+T11	Justice_Arrest-Jail 1283 1285	go
+E11	Justice_Arrest-Jail:T11 
+A13	Realis E11 Generic
+#2	AnnotatorNotes E11	How do we mark "go to jail"?
+T24	Life_Die 5067 5072	murde
+E24	Life_Die:T24 
+A9	Realis E24 Actual

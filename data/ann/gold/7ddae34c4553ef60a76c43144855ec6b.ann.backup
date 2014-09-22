@@ -1,0 +1,115 @@
+T1	Life_Die 162 167	death
+E1	Life_Die:T1 
+A1	Realis E1 Actual
+T2	Life_Die 307 312	death
+E2	Life_Die:T2 
+A2	Realis E2 Generic
+T3	Life_Die 592 595	die
+E3	Life_Die:T3 
+A3	Realis E3 Generic
+T4	Life_Die 755 766	passed away
+E4	Life_Die:T4 
+A4	Realis E4 Actual
+T5	Life_Die 843 854	Passed away
+E5	Life_Die:T5 
+T6	Life_Die 929 933	died
+E6	Life_Die:T6 
+A5	Realis E6 Actual
+T7	Life_Die 1490 1494	died
+E7	Life_Die:T7 
+A6	Realis E7 Actual
+T8	Life_Die 1574 1578	died
+E8	Life_Die:T8 
+A7	Realis E8 Other
+T9	Life_Be-Born 1796 1800	born
+E9	Life_Be-Born:T9 
+A8	Realis E9 Other
+T10	Life_Die 1832 1843	passed away
+E10	Life_Die:T10 
+A9	Realis E10 Actual
+T11	Life_Die 2272 2276	died
+E11	Life_Die:T11 
+A10	Realis E11 Actual
+T12	Life_Die 2861 2865	went
+E12	Life_Die:T12 
+A11	Realis E12 Actual
+T14	Life_Die 3062 3066	died
+E14	Life_Die:T14 
+A13	Realis E14 Actual
+T15	Movement_Transport-Person 3316 3318	go
+E15	Movement_Transport-Person:T15 
+A14	Realis E15 Other
+T16	Movement_Transport-Person 3487 3492	moved
+E16	Movement_Transport-Person:T16 
+A15	Realis E16 Actual
+T17	Movement_Transport-Person 3510 3513	got
+E17	Movement_Transport-Person:T17 
+A16	Realis E17 Actual
+T18	Life_Die 3608 3612	gone
+E18	Life_Die:T18 
+A17	Realis E18 Actual
+T19	Movement_Transport-Person 3748 3752	come
+E19	Movement_Transport-Person:T19 
+A18	Realis E19 Other
+T20	Life_Die 3964 3969	death
+E20	Life_Die:T20 
+A19	Realis E20 Generic
+T22	Life_Die 189 191	go
+E22	Life_Die:T22 
+A21	Realis E22 Actual
+T23	Life_Die 410 414	went
+E23	Life_Die:T23 
+A22	Realis E23 Actual
+A23	Realis E5 Actual
+T24	Contact_Meet 913 917	said
+E24	Contact_Meet:T24 
+A24	Realis E24 Actual
+T25	Life_Die 1244 1246	go
+E25	Life_Die:T25 
+A25	Realis E25 Other
+T26	Contact_Communicate 2200 2205	lying
+E26	Contact_Communicate:T26 
+A26	Realis E26 Actual
+T27	Contact_Communicate 2216 2220	told
+E27	Contact_Communicate:T27 
+A27	Realis E27 Actual
+T28	Movement_Transport-Person 2236 2241	bring
+E28	Movement_Transport-Person:T28 
+A28	Realis E28 Other
+T29	Contact_Communicate 3154 3160	shared
+E29	Contact_Communicate:T29 
+A29	Realis E29 Actual
+T30	Contact_Communicate 3649 3653	said
+E30	Contact_Communicate:T30 
+A30	Realis E30 Actual
+T31	Contact_Communicate 3722 3726	told
+E31	Contact_Communicate:T31 
+A31	Realis E31 Other
+T32	Life_Die 3818 3829	checked out
+E32	Life_Die:T32 
+A33	Realis E32 Actual
+#1	AnnotatorNotes E32	Not sure about the Mention
+T34	Life_Die 518 520	it
+E34	Life_Die:T34 
+A32	Realis E34 Generic
+T35	Life_Die 565 567	it
+E35	Life_Die:T35 
+A34	Realis E35 Actual
+T36	Life_Die 1292 1294	it
+E36	Life_Die:T36 
+A36	Realis E36 Generic
+T37	Life_Die 1609 1611	it
+E37	Life_Die:T37 
+A37	Realis E37 Other
+T38	Movement_Transport-Person 2110 2115	stuck
+E38	Movement_Transport-Person:T38 
+A38	Realis E38 Actual
+T39	Contact_Communicate 2504 2513	referring
+E39	Contact_Communicate:T39 
+A39	Realis E39 Actual
+T13	Life_Die 2881 2898	committed suicide
+E13	Life_Die:T13 
+A12	Realis E13 Actual
+T21	Life_Die 4782 4788	go out
+E21	Life_Die:T21 
+A20	Realis E21 Other

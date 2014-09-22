@@ -1,0 +1,113 @@
+T1	Life_Life_Marry 71 79	marriage
+E1	Life_Life_Marry:T1 
+A1	Realis E1 Actual
+T2	Contact_Contact_Meet 163 167	tell
+E2	Contact_Contact_Meet:T2 
+A2	Realis E2 Actual
+T3	Contact_Contact_Meet 226 230	says
+E3	Contact_Contact_Meet:T3 
+A3	Realis E3 Other
+T4	Conflict_Conflict_Attack 584 589	smash
+E4	Conflict_Conflict_Attack:T4 
+A4	Realis E4 Other
+T5	Movement_Movement_Transport-Person 640 644	went
+E5	Movement_Movement_Transport-Person:T5 
+A5	Realis E5 Actual
+T6	Movement_Movement_Transport-Person 771 775	came
+E6	Movement_Movement_Transport-Person:T6 
+A6	Realis E6 Actual
+T7	Contact_Contact_Meet 917 923	met up
+E7	Contact_Contact_Meet:T7 
+A7	Realis E7 Actual
+A8	Questionable E7 Mention
+#1	AnnotatorNotes E7	Not sure if this should be just "met" or "met up". WordNet does not have "meet up", but idiom dictionary at thefreedictionary.com does.
+T8	Contact_Contact_Meet 927 931	talk
+E8	Contact_Contact_Meet:T8 
+A9	Questionable E8 Mention
+A10	Realis E8 Other
+#2	AnnotatorNotes E8	Does talking during a meeting need to be marked?
+T9	Contact_Contact_Meet 954 958	said
+E9	Contact_Contact_Meet:T9 
+A11	Questionable E9 Mention
+A12	Realis E9 Actual
+#3	AnnotatorNotes E9	Does saying during a meeting need to be marked?
+T10	Contact_Contact_Meet 1005 1009	told
+E10	Contact_Contact_Meet:T10 
+A13	Realis E10 Actual
+#4	AnnotatorNotes E10	Should "telling" during a meeting be marked?
+T11	Contact_Contact_Meet 1116 1121	reply
+E11	Contact_Contact_Meet:T11 
+A14	Questionable E11 Mention
+A15	Realis E11 Actual
+#5	AnnotatorNotes E11	Is replying during a meeting markable?
+A16	Questionable E10 Mention
+T12	Movement_Movement_Transport-Person 1133 1137	move
+E12	Movement_Movement_Transport-Person:T12 
+A17	Realis E12 Other
+T13	Contact_Contact_Meet 1165 1169	said
+E13	Contact_Contact_Meet:T13 
+A18	Realis E13 Actual
+#6	AnnotatorNotes E13	Is saying during a meeting markable?
+T14	Movement_Movement_Transport-Person 1247 1254	dropped
+E14	Movement_Movement_Transport-Person:T14 
+A19	Realis E14 Actual
+T15	Movement_Movement_Transport-Person 1267 1271	told
+E15	Movement_Movement_Transport-Person:T15 
+A20	Questionable E15 Mention
+A21	Realis E15 Actual
+#7	AnnotatorNotes E15	Is telling during a meeting markable?
+T16	Movement_Movement_Transport-Person 1278 1280	go
+E16	Movement_Movement_Transport-Person:T16 
+A22	Realis E16 Other
+T18	Contact_Contact_Communicate 1465 1469	came
+E18	Contact_Contact_Communicate:T18 
+A24	Realis E18 Actual
+T20	Contact_Contact_Meet 2809 2820	appointment
+E20	Contact_Contact_Meet:T20 
+A26	Realis E20 Other
+T21	Contact_Contact_Communicate 2899 2906	posting
+E21	Contact_Contact_Communicate:T21 
+A27	Realis E21 Other
+T22	Contact_Contact_Communicate 2955 2962	suggest
+E22	Contact_Contact_Communicate:T22 
+A28	Realis E22 Other
+T23	Transaction_Transaction_Transfer-Ownership 3097 3103	paying
+E23	Transaction_Transaction_Transfer-Ownership:T23 
+A29	Questionable E23 Mention
+A30	Realis E23 Other
+#8	AnnotatorNotes E23	Is paying a mortgage a markable Transaction.Transaction_Transaction_Transfer-Ownership event?
+T24	Contact_Contact_Communicate 3253 3256	say
+E24	Contact_Contact_Communicate:T24 
+A31	Realis E24 Other
+T25	Contact_Contact_Communicate 3267 3270	say
+E25	Contact_Contact_Communicate:T25 
+A32	Realis E25 Other
+T26	Contact_Contact_Communicate 3410 3416	advice
+E26	Contact_Contact_Communicate:T26 
+A33	Realis E26 Other
+T27	Contact_Contact_Communicate 3428 3431	say
+E27	Contact_Contact_Communicate:T27 
+A34	Questionable E27 Mention
+A35	Realis E27 Other
+#9	AnnotatorNotes E27	Is saying withing a communication event markable?
+T28	Contact_Contact_Meet 863 869	saying
+E28	Contact_Contact_Meet:T28 
+A36	Realis E28 Other
+T17	Contact_Contact_Communicate 1350 1354	geta
+E17	Contact_Contact_Communicate:T17 
+A23	Realis E17 Actual
+T19	Contact_Contact_Communicate 1579 1582	get
+E19	Contact_Contact_Communicate:T19 
+A25	Realis E19 Actual
+A37	Questionable E17 Mention
+#10	AnnotatorNotes E17	Is "get" the only Contact.Contact_Contact_Communicate event marked for "get a text that says X"?
+A38	Questionable E18 Mention
+#11	AnnotatorNotes E18	Is "came" the only Contact.Contact_Contact_Communicate event marked for "1 (a text) came through that says X"?
+A39	Questionable E19 Mention
+#12	AnnotatorNotes E19	Is "get" the only Contact.Contact_Contact_Communicate event marked for "get a text that says X"?
+T29	Contact_Contact_Communicate 1623 1627	gets
+E29	Contact_Contact_Communicate:T29 
+A40	Realis E29 Actual
+T30	Movement_Movement_Transport-Person 1720 1725	taken
+E30	Movement_Movement_Transport-Person:T30 
+A41	Realis E30 Actual

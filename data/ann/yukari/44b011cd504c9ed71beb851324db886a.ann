@@ -1,0 +1,61 @@
+T1	Movement_Transport-Person 313 317	went
+E1	Movement_Transport-Person:T1 
+A1	Realis E1 Actual
+T2	Contact_Meet 321 324	see
+E2	Contact_Meet:T2 
+A2	Realis E2 Actual
+T4	Transaction_Transfer-Ownership 521 527	bought
+E4	Transaction_Transfer-Ownership:T4 
+A4	Realis E4 Actual
+T5	Movement_Transport-Person 670 677	came in
+E5	Movement_Transport-Person:T5 
+A5	Realis E5 Actual
+T6	Contact_Meet 1490 1494	meet
+E6	Contact_Meet:T6 
+A6	Realis E6 Other
+T7	Contact_Meet 2442 2445	see
+E7	Contact_Meet:T7 
+A7	Realis E7 Other
+T8	Contact_Communicate 4651 4655	rang
+E8	Contact_Communicate:T8 
+A8	Realis E8 Actual
+T9	Contact_Communicate 181 185	told
+E9	Contact_Communicate:T9 
+A9	Questionable E9 Mention
+A10	Realis E9 Actual
+T3	Contact_Communicate 556 560	told
+E3	Contact_Communicate:T3 
+A3	Questionable E3 Mention
+A11	Realis E3 Actual
+T10	Contact_Communicate 1017 1022	asked
+E10	Contact_Communicate:T10 
+A12	Questionable E10 Mention
+A13	Realis E10 Actual
+T11	Contact_Communicate 1090 1094	said
+E11	Contact_Communicate:T11 
+A14	Questionable E11 Mention
+A15	Realis E11 Actual
+T12	Contact_Communicate 1190 1194	told
+E12	Contact_Communicate:T12 
+A16	Questionable E12 Mention
+A17	Realis E12 Actual
+T13	Contact_Communicate 1384 1390	spoken
+E13	Contact_Communicate:T13 
+A18	Questionable E13 Mention
+A19	Realis E13 Actual
+T14	Contact_Communicate 1535 1539	told
+E14	Contact_Communicate:T14 
+A20	Questionable E14 Mention
+A21	Realis E14 Actual
+T15	Contact_Communicate 2234 2238	told
+E15	Contact_Communicate:T15 
+A22	Questionable E15 Mention
+A23	Realis E15 Actual
+T16	Contact_Communicate 2307 2311	said
+E16	Contact_Communicate:T16 
+A24	Questionable E16 Mention
+A25	Realis E16 Actual
+T17	Contact_Communicate 4117 4123	advise
+E17	Contact_Communicate:T17 
+A26	Questionable E17 Mention
+A27	Realis E17 Other

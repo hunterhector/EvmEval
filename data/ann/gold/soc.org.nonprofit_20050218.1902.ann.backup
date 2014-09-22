@@ -1,0 +1,129 @@
+T1	Contact_Meet 428 436	meetings
+E1	Contact_Meet:T1 
+A1	Realis E1 Generic
+T4	Contact_Meet 1299 1307	meetings
+E4	Contact_Meet:T4 
+A4	Realis E4 Generic
+T6	Contact_Meet 1470 1477	meeting
+E6	Contact_Meet:T6 
+A6	Realis E6 Generic
+T7	Contact_Meet 2288 2300	get together
+E7	Contact_Meet:T7 
+A7	Realis E7 Other
+T3	Transaction_Transfer-Ownership 14774 14783	provision
+E3	Transaction_Transfer-Ownership:T3 
+A3	Realis E3 Generic
+T5	Transaction_Transfer-Money 175 187	Compensation
+E5	Transaction_Transfer-Money:T5 
+A5	Realis E5 Generic
+T8	Transaction_Transfer-Money 387 399	compensating
+E8	Transaction_Transfer-Money:T8 
+A8	Realis E8 Generic
+T12	Transaction_Transfer-Money 950 960	compensate
+E12	Transaction_Transfer-Money:T12 
+A12	Realis E12 Generic
+T14	Transaction_Transfer-Money 1084 1093	reimburse
+E14	Transaction_Transfer-Money:T14 
+A14	Realis E14 Generic
+T15	Transaction_Transfer-Money 1363 1374	reimbursing
+E15	Transaction_Transfer-Money:T15 
+A15	Realis E15 Generic
+T17	Business_Start-Org 5739 5752	incorporation
+E17	Business_Start-Org:T17 
+A18	Realis E17 Generic
+T19	Transaction_Transfer-Money 5822 5835	reimbursement
+E19	Transaction_Transfer-Money:T19 
+A20	Realis E19 Generic
+T9	Contact_Meet 5940 5948	meetings
+E9	Contact_Meet:T9 
+A9	Realis E9 Generic
+T10	Transaction_Transfer-Money 6019 6031	compensation
+E10	Transaction_Transfer-Money:T10 
+A10	Realis E10 Generic
+T22	Transaction_Transfer-Money 14733 14746	reimbursement
+E22	Transaction_Transfer-Money:T22 
+A24	Realis E22 Generic
+T23	Contact_Communicate 15921 15929	comments
+E23	Contact_Communicate:T23 
+A25	Realis E23 Actual
+T24	Contact_Communicate 16048 16055	checked
+E24	Contact_Communicate:T24 
+A26	Realis E24 Actual
+T25	Contact_Communicate 16110 16119	explained
+E25	Contact_Communicate:T25 
+A27	Realis E25 Actual
+T26	Transaction_Transfer-Money 16418 16429	compensated
+E26	Transaction_Transfer-Money:T26 
+A28	Realis E26 Generic
+T28	Transaction_Transfer-Money 16610 16619	reimburse
+E28	Transaction_Transfer-Money:T28 
+A31	Realis E28 Generic
+T2	Contact_Meet 512 519	meeting
+E2	Contact_Meet:T2 
+A2	Realis E2 Generic
+T29	Transaction_Transfer-Money 1225 1231	paying
+E29	Transaction_Transfer-Money:T29 
+A16	Realis E29 Generic
+T32	Movement_Transport-Person 14713 14727	Transportation
+E32	Movement_Transport-Person:T32 
+A11	Realis E32 Generic
+T34	Transaction_Transfer-Money 15990 15993	pay
+E34	Transaction_Transfer-Money:T34 
+A35	Realis E34 Generic
+T35	Transaction_Transfer-Money 16795 16801	paying
+E35	Transaction_Transfer-Money:T35 
+A29	Realis E35 Other
+T36	Transaction_Transfer-Money 17619 17622	pay
+E36	Transaction_Transfer-Money:T36 
+A36	Realis E36 Actual
+T37	Transaction_Transfer-Money 547 550	pay
+E37	Transaction_Transfer-Money:T37 
+A37	Realis E37 Generic
+T38	Transaction_Transfer-Money 7160 7167	payment
+E38	Transaction_Transfer-Money:T38 
+A38	Realis E38 Generic
+T39	Transaction_Transfer-Money 16148 16158	remunerate
+E39	Transaction_Transfer-Money:T39 
+A39	Realis E39 Generic
+T41	Transaction_Transfer-Money 17669 17671	do
+E41	Transaction_Transfer-Money:T41 
+A41	Realis E41 Actual
+T16	Transaction_Transfer-Money 5790 5794	paid
+E16	Transaction_Transfer-Money:T16 
+A17	Realis E16 Generic
+T18	Movement_Transport-Person 5905 5911	travel
+E18	Movement_Transport-Person:T18 
+A19	Realis E18 Generic
+T20	Transaction_Transfer-Money 6967 6970	pay
+E20	Transaction_Transfer-Money:T20 
+A21	Realis E20 Generic
+T13	Transaction_Transfer-Money 7042 7046	this
+E13	Transaction_Transfer-Money:T13 
+A13	Realis E13 Generic
+T11	Transaction_Transfer-Money 10591 10595	this
+E11	Transaction_Transfer-Money:T11 
+A22	Realis E11 Generic
+T21	Transaction_Transfer-Money 14633 14639	income
+E21	Transaction_Transfer-Money:T21 
+A23	Realis E21 Generic
+T27	Transaction_Transfer-Money 16435 16437	it
+E27	Transaction_Transfer-Money:T27 
+A30	Realis E27 Generic
+T30	Transaction_Transfer-Money 17527 17529	it
+E30	Transaction_Transfer-Money:T30 
+A33	Realis E30 Generic
+T31	Transaction_Transfer-Money 17543 17545	it
+E31	Transaction_Transfer-Money:T31 
+A40	Realis E31 Generic
+T40	Transaction_Transfer-Money 17704 17706	It
+E40	Transaction_Transfer-Money:T40 
+A42	Realis E40 Generic
+T42	Transaction_Transfer-Money 17721 17723	it
+E42	Transaction_Transfer-Money:T42 
+A43	Realis E42 Generic
+T43	Business_Start-Org 2083 2095	incorporated
+E43	Business_Start-Org:T43 
+A44	Realis E43 Actual
+T33	Personnel_Elect 17629 17636	elected
+E33	Personnel_Elect:T33 
+A32	Realis E33 Actual

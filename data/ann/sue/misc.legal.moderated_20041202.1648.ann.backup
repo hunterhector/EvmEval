@@ -1,0 +1,201 @@
+T1	Justice_Extradite 175 186	extradition
+E1	Justice_Extradite:T1 
+A1	Realis E1 Other
+T2	Transport-Person 391 394	run
+E2	Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Justice_Release-Parole 400 409	probation
+E3	Justice_Release-Parole:T3 
+A3	Realis E3 Actual
+T4	Justice_Trial-Hearing 540 545	court
+E4	Justice_Trial-Hearing:T4 
+A4	Realis E4 Actual
+T5	Justice_Arrest-Jail 636 640	jail
+E5	Justice_Arrest-Jail:T5 
+A5	Realis E5 Actual
+T6	Justice_Extradite 689 700	extradition
+E6	Justice_Extradite:T6 
+A6	Realis E6 Other
+T7	Justice_Extradite 799 810	extradition
+E7	Justice_Extradite:T7 
+A7	Realis E7 Other
+T8	Transport-Person 828 833	skips
+E8	Transport-Person:T8 
+A8	Realis E8 Actual
+T9	Justice_Arrest-Jail 894 900	serves
+E9	Justice_Arrest-Jail:T9 
+A9	Realis E9 Actual
+T10	Justice_Release-Parole 945 953	released
+E10	Justice_Release-Parole:T10 
+A10	Realis E10 Other
+T11	Justice_Release-Parole 966 975	probation
+E11	Justice_Release-Parole:T11 
+A11	Realis E11 Other
+T12	Transport-Person 1004 1009	takes
+E12	Transport-Person:T12 
+A12	Realis E12 Actual
+T13	Transport-Person 991 999	shows up
+E13	Transport-Person:T13 
+A13	Realis E13 Actual
+T14	Justice_Charge-Indict 1047 1054	charges
+E14	Justice_Charge-Indict:T14 
+A14	Realis E14 Actual
+T15	Justice_Release-Parole 1101 1110	probation
+E15	Justice_Release-Parole:T15 
+A15	Realis E15 Actual
+T16	Justice_Sentence 1133 1137	give
+E16	Justice_Sentence:T16 
+A16	Realis E16 Other
+T17	Justice_Extradite 1203 1214	extradition
+E17	Justice_Extradite:T17 
+A17	Realis E17 Other
+T18	Justice_Release-Parole 1237 1246	probation
+E18	Justice_Release-Parole:T18 
+A18	Realis E18 Other
+T19	Contact_Communicate 1267 1270	ask
+E19	Contact_Communicate:T19 
+A19	Realis E19 Actual
+T20	Contact_Communicate 1302 1307	reply
+E20	Contact_Communicate:T20 
+A20	Realis E20 Other
+T21	Contact_Meet 1424 1431	consult
+E21	Contact_Meet:T21 
+A21	Realis E21 Other
+T22	Justice_Extradite 2366 2377	extradition
+E22	Justice_Extradite:T22 
+A22	Realis E22 Other
+T24	Transport-Person 2433 2437	goes
+E24	Transport-Person:T24 
+A24	Realis E24 Other
+T26	Justice_Extradite 2623 2634	extraditing
+E26	Justice_Extradite:T26 
+A26	Realis E26 Other
+T28	Transport-Person 3830 3834	turn
+E28	Transport-Person:T28 
+A28	Questionable E28 Mention
+A29	Realis E28 Other
+#1	AnnotatorNotes E28	Only tagged first part of phrasal verb "turn over" - in "turn her over to them"
+T29	Contact_Communicate 3914 3917	ask
+E29	Contact_Communicate:T29 
+A30	Realis E29 Other
+T31	Justice_Trial-Hearing 4003 4008	trial
+E31	Justice_Trial-Hearing:T31 
+A33	Realis E31 Other
+T32	Justice_Charge-Indict 4020 4026	charge
+E32	Justice_Charge-Indict:T32 
+A34	Realis E32 Actual
+T33	Justice_Arrest-Jail 4056 4063	serving
+E33	Justice_Arrest-Jail:T33 
+A35	Realis E33 Other
+T34	Justice_Release-Parole 4132 4141	probation
+E34	Justice_Release-Parole:T34 
+A36	Realis E34 Actual
+T35	Justice_Extradite 4431 4442	extradition
+E35	Justice_Extradite:T35 
+A37	Realis E35 Other
+T36	Justice_Extradite 4695 4706	extradition
+E36	Justice_Extradite:T36 
+A38	Realis E36 Other
+T37	Justice_Arrest-Jail 4741 4746	serve
+E37	Justice_Arrest-Jail:T37 
+A39	Realis E37 Other
+T38	Justice_Arrest-Jail 4793 4798	serve
+E38	Justice_Arrest-Jail:T38 
+A40	Realis E38 Other
+T39	Justice_Release-Parole 5091 5100	probation
+E39	Justice_Release-Parole:T39 
+A41	Realis E39 Generic
+T40	Justice_Sentence 5240 5249	sentences
+E40	Justice_Sentence:T40 
+A42	Realis E40 Generic
+T41	Transport-Person 5560 5564	ship
+E41	Transport-Person:T41 
+A43	Realis E41 Other
+T42	Justice_Release-Parole 5659 5668	probation
+E42	Justice_Release-Parole:T42 
+A44	Realis E42 Other
+T43	Justice_Arrest-Jail 5769 5773	jail
+E43	Justice_Arrest-Jail:T43 
+A45	Realis E43 Other
+T44	Justice_Release-Parole 5886 5895	probation
+E44	Justice_Release-Parole:T44 
+A46	Realis E44 Other
+T45	Justice_Arrest-Jail 5906 5910	jail
+E45	Justice_Arrest-Jail:T45 
+A47	Realis E45 Other
+T46	Justice_Extradite 5718 5723	right
+E46	Justice_Extradite:T46 
+A48	Questionable E46 Mention
+A49	Realis E46 Other
+#3	AnnotatorNotes E46	Tag anaphoric reference "right"? Refers back to "extradition"
+T48	Justice_Arrest-Jail 6450 6456	served
+E48	Justice_Arrest-Jail:T48 
+A51	Realis E48 Other
+T49	Transport-Person 6492 6496	ship
+E49	Transport-Person:T49 
+A53	Realis E49 Other
+T50	Contact_Communicate 6754 6758	talk
+E50	Contact_Communicate:T50 
+A54	Realis E50 Other
+T51	Contact_Meet 6832 6846	communications
+E51	Contact_Meet:T51 
+A55	Realis E51 Actual
+T52	Contact_Communicate 7155 7161	advice
+E52	Contact_Communicate:T52 
+A56	Realis E52 Other
+T53	Contact_Communicate 7176 7180	post
+E53	Contact_Communicate:T53 
+A57	Realis E53 Generic
+T54	Contact_Communicate 7330 7336	advice
+E54	Contact_Communicate:T54 
+A58	Realis E54 Generic
+T55	Contact_Meet 7338 7345	consult
+E55	Contact_Meet:T55 
+A59	Realis E55 Generic
+T56	Contact_Communicate 7375 7388	communication
+E56	Contact_Communicate:T56 
+A60	Realis E56 Generic
+T57	Contact_Communicate 7117 7127	discussion
+E57	Contact_Communicate:T57 
+A61	Realis E57 Generic
+T47	Justice_Arrest-Jail 6393 6398	serve
+E47	Justice_Arrest-Jail:T47 
+A50	Realis E47 Other
+T23	Transport-Person 2419 2424	skips
+E23	Transport-Person:T23 
+A23	Realis E23 Other
+T25	Transport-Person 2518 2524	hauled
+E25	Transport-Person:T25 
+A25	Realis E25 Other
+T27	Transport-Person 2685 2692	shipped
+E27	Transport-Person:T27 
+A27	Realis E27 Other
+T30	Transport-Person 3979 3983	ship
+E30	Transport-Person:T30 
+A31	Realis E30 Other
+A32	Questionable E2 Mention
+#2	AnnotatorNotes E2	Is being on the run markable as a Transport-Person event? Google defines "trying to avoid being captured"
+T58	Transport-Person 4773 4777	come
+E58	Transport-Person:T58 
+A62	Realis E58 Other
+T59	Justice_Arrest-Jail 2661 2665	pick
+E59	Justice_Arrest-Jail:T59 
+A52	Questionable E59 Mention
+A63	Realis E59 Other
+#4	AnnotatorNotes E59	Marked only first word on phrase "pick her up"
+T60	Transport-Person 3943 3947	pack
+E60	Transport-Person:T60 
+A64	Questionable E60 Mention
+A65	Realis E60 Other
+#5	AnnotatorNotes E60	Marked only first word on "pack her up"
+T61	Transport-Person 4782 4785	get
+E61	Transport-Person:T61 
+A66	Realis E61 Other
+T62	Justice_Arrest-Jail 6515 6517	do
+E62	Justice_Arrest-Jail:T62 
+A67	Questionable E62 Mention
+A68	Realis E62 Other
+#6	AnnotatorNotes E62	"do that time" = serve a sentence. Are we marking "do" here or "time" or neither?
+T63	Contact_Communicate 6884 6888	tell
+E63	Contact_Communicate:T63 
+A69	Realis E63 Other

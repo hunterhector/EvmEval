@@ -1,0 +1,117 @@
+T2	Movement_Transport-Person 640 644	went
+E2	Movement_Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Movement_Transport-Person 771 775	came
+E3	Movement_Transport-Person:T3 
+A3	Realis E3 Actual
+T5	Contact_Meet 1785 1788	see
+E5	Contact_Meet:T5 
+A5	Realis E5 Other
+T6	Contact_Meet 2809 2820	appointment
+E6	Contact_Meet:T6 
+A6	Realis E6 Other
+T7	Contact_Communicate 2899 2906	posting
+E7	Contact_Communicate:T7 
+A7	Realis E7 Other
+T8	Contact_Meet 163 167	tell
+E8	Contact_Meet:T8 
+A9	Realis E8 Actual
+T9	Contact_Meet 1005 1009	told
+E9	Contact_Meet:T9 
+A11	Realis E9 Actual
+T10	Contact_Meet 1267 1271	told
+E10	Contact_Meet:T10 
+A13	Realis E10 Actual
+T13	Contact_Meet 226 230	says
+E13	Contact_Meet:T13 
+A8	Realis E13 Other
+T15	Contact_Meet 863 869	saying
+E15	Contact_Meet:T15 
+A17	Realis E15 Other
+T4	Contact_Meet 917 923	met up
+E4	Contact_Meet:T4 
+A4	Realis E4 Actual
+T16	Contact_Meet 927 931	talk
+E16	Contact_Meet:T16 
+A18	Realis E16 Other
+T17	Contact_Meet 954 958	said
+E17	Contact_Meet:T17 
+A19	Realis E17 Actual
+T18	Contact_Meet 1116 1121	reply
+E18	Contact_Meet:T18 
+A10	Realis E18 Actual
+T14	Movement_Transport-Person 1133 1137;1143 1145	move in
+E14	Movement_Transport-Person:T14 
+A16	Realis E14 Other
+T20	Contact_Meet 1165 1169	said
+E20	Contact_Meet:T20 
+A21	Realis E20 Actual
+T21	Movement_Transport-Person 1247 1254	dropped
+E21	Movement_Transport-Person:T21 
+A22	Realis E21 Actual
+T22	Movement_Transport-Person 1278 1280	go
+E22	Movement_Transport-Person:T22 
+A12	Realis E22 Other
+T25	Movement_Transport-Person 1720 1725	taken
+E25	Movement_Transport-Person:T25 
+A25	Realis E25 Actual
+T26	Contact_Communicate 2955 2962	suggest
+E26	Contact_Communicate:T26 
+A26	Realis E26 Other
+T29	Contact_Communicate 3410 3416	advice
+E29	Contact_Communicate:T29 
+A29	Realis E29 Other
+T30	Contact_Communicate 3428 3431	say
+E30	Contact_Communicate:T30 
+A30	Realis E30 Other
+T33	Transaction_Transfer-Money 1499 1504	cover
+E33	Transaction_Transfer-Money:T33 
+A33	Realis E33 Other
+T34	Transaction_Transfer-Money 1833 1844	cleaned out
+E34	Transaction_Transfer-Money:T34 
+A36	Realis E34 Actual
+T37	Transaction_Transfer-Money 2914 2922	benefits
+E37	Transaction_Transfer-Money:T37 
+A39	Realis E37 Generic
+T38	Transaction_Transfer-Money 2865 2873	benefits
+E38	Transaction_Transfer-Money:T38 
+A40	Realis E38 Other
+T39	Transaction_Transfer-Money 375 383	spending
+E39	Transaction_Transfer-Money:T39 
+A41	Realis E39 Actual
+T32	Transaction_Transfer-Money 1888 1893	cover
+E32	Transaction_Transfer-Money:T32 
+A32	Realis E32 Other
+T27	Contact_Communicate 3253 3270	say or not to say
+E27	Contact_Communicate:T27 
+A27	Realis E27 Other
+T1	Conflict_Attack 584 589	smash
+E1	Conflict_Attack:T1 
+A1	Realis E1 Other
+T12	Contact_Communicate 1579 1582;1586 1589	get ext
+E12	Contact_Communicate:T12 
+A15	Realis E12 Actual
+T19	Transaction_Transfer-Money 3097 3103	paying
+E19	Transaction_Transfer-Money:T19 
+A20	Realis E19 Other
+T28	Transaction_Transfer-Ownership 811 815	took
+E28	Transaction_Transfer-Ownership:T28 
+A28	Realis E28 Actual
+T23	Contact_Communicate 1463 1477	1 came through
+E23	Contact_Communicate:T23 
+A23	Realis E23 Actual
+T24	Contact_Communicate 1623 1635	gets hold of
+E24	Contact_Communicate:T24 
+A24	Realis E24 Actual
+T31	Transaction_Transfer-Money 1905 1911	debits
+E31	Transaction_Transfer-Money:T31 
+A31	Realis E31 Actual
+T36	Life_Die 2401 2404	top
+E36	Life_Die:T36 
+A34	Realis E36 Other
+T40	Contact_Communicate 3635 3638	add
+E40	Contact_Communicate:T40 
+A37	Realis E40 Other
+T41	Life_Marry 71 79	marriage
+E41	Life_Marry:T41 
+A38	Realis E41 Actual

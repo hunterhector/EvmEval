@@ -1,0 +1,57 @@
+T1	Conflict_Attack 230 234	shot
+E1	Conflict_Attack:T1 
+A1	Realis E1 Actual
+T2	Movement_Transport-Person 456 465	returning
+E2	Movement_Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Contact_Communicate 528 535	brought
+E3	Contact_Communicate:T3 
+A3	Realis E3 Actual
+T4	Life_Die 625 630	death
+E4	Life_Die:T4 
+A4	Realis E4 Other
+T5	Movement_Transport-Person 670 678	departed
+E5	Movement_Transport-Person:T5 
+A5	Realis E5 Actual
+T6	Movement_Transport-Person 702 709	reached
+E6	Movement_Transport-Person:T6 
+A6	Realis E6 Actual
+T7	Contact_Communicate 783 791	received
+E7	Contact_Communicate:T7 
+A7	Realis E7 Actual
+T8	Life_Die 841 845	died
+E8	Life_Die:T8 
+A8	Realis E8 Actual
+T9	Movement_Transport-Person 877 884	arrived
+E9	Movement_Transport-Person:T9 
+A9	Realis E9 Actual
+T10	Conflict_Demonstrate 1568 1574	strike
+E10	Conflict_Demonstrate:T10 
+A10	Realis E10 Actual
+T11	Conflict_Demonstrate 1674 1680	strike
+E11	Conflict_Demonstrate:T11 
+A11	Realis E11 Actual
+T12	Personnel_Nominate 3781 3790	appointed
+E12	Personnel_Nominate:T12 
+A12	Realis E12 Actual
+T13	Personnel_Nominate 3824 3833	appointed
+E13	Personnel_Nominate:T13 
+A13	Realis E13 Actual
+T14	Personnel_Nominate 3872 3881	appointed
+E14	Personnel_Nominate:T14 
+A14	Realis E14 Actual
+T15	Personnel_Nominate 4067 4076	appointed
+E15	Personnel_Nominate:T15 
+A15	Realis E15 Actual
+T16	Transaction_Transfer-Money 1710 1717	getting
+E16	Transaction_Transfer-Money:T16 
+A16	Realis E16 Actual
+T17	Contact_Meet 2785 2795	Conference
+E17	Contact_Meet:T17 
+A17	Realis E17 Actual
+T18	Contact_Meet 3211 3221	interviews
+E18	Contact_Meet:T18 
+A18	Realis E18 Actual
+T19	Transaction_Transfer-Ownership 3328 3332	gave
+E19	Transaction_Transfer-Ownership:T19 
+A19	Realis E19 Actual

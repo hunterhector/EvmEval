@@ -1,0 +1,132 @@
+T2	Justice_Release-Parole 575 581	parole
+E2	Justice_Release-Parole:T2 
+A2	Realis E2 Generic
+T4	Movement_Transport-Person 680 685	takes
+E4	Movement_Transport-Person:T4 
+A4	Realis E4 Generic
+T7	Transaction_Transfer-Ownership 974 981	selling
+E7	Transaction_Transfer-Ownership:T7 
+A7	Realis E7 Generic
+T9	Justice_Release-Parole 1135 1140	leave
+E9	Justice_Release-Parole:T9 
+A9	Realis E9 Generic
+T12	Justice_Arrest-Jail 2089 2095	jailed
+E12	Justice_Arrest-Jail:T12 
+A12	Realis E12 Generic
+T13	Transaction_Transfer-Ownership 3131 3138	selling
+E13	Transaction_Transfer-Ownership:T13 
+A13	Realis E13 Generic
+T14	Justice_Trial-Hearing 3175 3180	trial
+E14	Justice_Trial-Hearing:T14 
+A14	Realis E14 Generic
+T15	Justice_Release-Parole 3982 3988	parole
+E15	Justice_Release-Parole:T15 
+A15	Realis E15 Generic
+T18	Justice_Release-Parole 4150 4156	parole
+E18	Justice_Release-Parole:T18 
+A18	Realis E18 Generic
+T21	Justice_Release-Parole 5271 5279	released
+E21	Justice_Release-Parole:T21 
+A21	Realis E21 Generic
+T22	Justice_Release-Parole 5356 5363	release
+E22	Justice_Release-Parole:T22 
+A22	Realis E22 Generic
+T23	Movement_Transport-Person 2051 2056	leave
+E23	Movement_Transport-Person:T23 
+A25	Realis E23 Generic
+T25	Contact_Communicate 2560 2564	call
+E25	Contact_Communicate:T25 
+A28	Realis E25 Generic
+T26	Movement_Transport-Person 2602 2607	leave
+E26	Movement_Transport-Person:T26 
+A29	Realis E26 Generic
+T27	Contact_Communicate 2612 2616	call
+E27	Contact_Communicate:T27 
+A30	Realis E27 Generic
+T28	Justice_Release-Parole 4212 4218	Parole
+E28	Justice_Release-Parole:T28 
+A32	Realis E28 Generic
+T31	Justice_Release-Parole 184 190	Parole
+E31	Justice_Release-Parole:T31 
+A35	Realis E31 Generic
+T1	Justice_Arrest-Jail 376 389	going to jail
+E1	Justice_Arrest-Jail:T1 
+A1	Realis E1 Other
+T32	Justice_Arrest-Jail 464 468	jail
+E32	Justice_Arrest-Jail:T32 
+A23	Realis E32 Generic
+T5	Justice_Release-Parole 704 719	get out of jail
+E5	Justice_Release-Parole:T5 
+A5	Realis E5 Generic
+T33	Movement_Transport-Person 740 750	turfed out
+E33	Movement_Transport-Person:T33 
+A24	Realis E33 Generic
+T34	Justice_Release-Parole 786 792	parole
+E34	Justice_Release-Parole:T34 
+A38	Realis E34 Generic
+T35	Contact_Communicate 924 930	answer
+E35	Contact_Communicate:T35 
+A39	Realis E35 Other
+T37	Justice_Arrest-Jail 1972 1984	serving time
+E37	Justice_Arrest-Jail:T37 
+A41	Realis E37 Generic
+T11	Contact_Communicate 2468 2471	say
+E11	Contact_Communicate:T11 
+A11	Realis E11 Other
+T24	Movement_Transport-Person 2576 2580	come
+E24	Movement_Transport-Person:T24 
+A26	Realis E24 Generic
+T38	Movement_Transport-Person 2581 2585;2590 2592	pick up
+E38	Movement_Transport-Person:T38 
+A27	Realis E38 Generic
+T17	Justice_Release-Parole 5063 5080;5094 5101	release on parole granted
+E17	Justice_Release-Parole:T17 
+A17	Realis E17 Generic
+T20	Justice_Release-Parole 5677 5691	parole release
+E20	Justice_Release-Parole:T20 
+A31	Realis E20 Generic
+T30	Justice_Arrest-Jail 6145 6151	prison
+E30	Justice_Arrest-Jail:T30 
+A34	Realis E30 Generic
+T3	Justice_Release-Parole 591 608	get out on parole
+E3	Justice_Release-Parole:T3 
+A3	Realis E3 Generic
+T10	Justice_Release-Parole 1906 1927	Getting out on parole
+E10	Justice_Release-Parole:T10 
+A10	Realis E10 Generic
+T39	Justice_Release-Parole 2151 2157	parole
+E39	Justice_Release-Parole:T39 
+A36	Realis E39 Generic
+T36	Justice_Arrest-Jail 1119 1121;1126 1130	do time
+E36	Justice_Arrest-Jail:T36 
+A40	Realis E36 Generic
+T45	Personnel_Start-Position 2406 2414;2429 2432	provided job
+E45	Personnel_Start-Position:T45 
+A47	Realis E45 Generic
+T46	Justice_Release-Parole 2450 2452	it
+E46	Justice_Release-Parole:T46 
+A48	Realis E46 Generic
+T47	Justice_Release-Parole 2477 2479	it
+E47	Justice_Release-Parole:T47 
+A49	Realis E47 Generic
+T41	Justice_Release-Parole 4034 4036	It
+E41	Justice_Release-Parole:T41 
+A42	Realis E41 Generic
+T40	Justice_Release-Parole 647 649	it
+E40	Justice_Release-Parole:T40 
+A37	Realis E40 Generic
+T42	Justice_Release-Parole 4238 4250	its granting
+E42	Justice_Release-Parole:T42 
+A43	Realis E42 Generic
+T8	Justice_Release-Parole 1099 1109	get parole
+E8	Justice_Release-Parole:T8 
+A8	Realis E8 Generic
+T16	Justice_Arrest-Jail 4095 4097;4103 4112	go to prison
+E16	Justice_Arrest-Jail:T16 
+A16	Realis E16 Generic
+T6	Justice_Arrest-Jail 1021 1029	put away
+E6	Justice_Arrest-Jail:T6 
+A6	Realis E6 Generic
+T19	Justice_Release-Parole 5578 5584	parole
+E19	Justice_Release-Parole:T19 
+A19	Realis E19 Generic

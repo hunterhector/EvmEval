@@ -1,0 +1,136 @@
+T1	Personnel_Start-Position 583 588	hired
+E1	Personnel_Start-Position:T1 
+A1	Realis E1 Generic
+T4	Personnel_End-Position 1058 1065	leaving
+E4	Personnel_End-Position:T4 
+A4	Realis E4 Generic
+T5	Transaction_Transfer-Money 1170 1175	given
+E5	Transaction_Transfer-Money:T5 
+A5	Realis E5 Other
+T6	Personnel_End-Position 1193 1203	expiration
+E6	Personnel_End-Position:T6 
+A6	Realis E6 Other
+T7	Transaction_Transfer-Money 1329 1333;1353 1358	give money
+E7	Transaction_Transfer-Money:T7 
+A7	Realis E7 Other
+T8	Transaction_Transfer-Money 1380 1384;1403 1408	give money
+E8	Transaction_Transfer-Money:T8 
+A8	Realis E8 Other
+T9	Contact_Meet 1523 1533	discussion
+E9	Contact_Meet:T9 
+A9	Realis E9 Other
+T10	Contact_Meet 1577 1584	meeting
+E10	Contact_Meet:T10 
+A10	Realis E10 Other
+T11	Personnel_Elect 2231 2236	elect
+E11	Personnel_Elect:T11 
+A11	Realis E11 Other
+T12	Personnel_End-Position 2336 2341	leave
+E12	Personnel_End-Position:T12 
+A12	Realis E12 Other
+T13	Contact_Communicate 2374 2383	discussed
+E13	Contact_Communicate:T13 
+A13	Realis E13 Other
+T14	Personnel_Start-Position 2490 2494	hire
+E14	Personnel_Start-Position:T14 
+A14	Realis E14 Other
+T15	Contact_Communicate 3007 3018	discussions
+E15	Contact_Communicate:T15 
+A15	Realis E15 Actual
+T17	Transaction_Transfer-Money 3491 3494;3502 3507	get money
+E17	Transaction_Transfer-Money:T17 
+A17	Realis E17 Other
+T19	Personnel_Start-Position 4365 4369	hire
+E19	Personnel_Start-Position:T19 
+A19	Realis E19 Other
+T20	Personnel_Elect 5317 5324	elected
+E20	Personnel_Elect:T20 
+A20	Realis E20 Actual
+T21	Personnel_Start-Position 197 203	hiring
+E21	Personnel_Start-Position:T21 
+A21	Realis E21 Other
+T22	Personnel_End-Position 540 545	leave
+E22	Personnel_End-Position:T22 
+A22	Realis E22 Generic
+T16	Personnel_End-Position 3296 3306	steps down
+E16	Personnel_End-Position:T16 
+A16	Realis E16 Other
+T25	Transaction_Transfer-Money 5974 5978	loan
+E25	Transaction_Transfer-Money:T25 
+A26	Realis E25 Other
+T26	Contact_Meet 6541 6548	meeting
+E26	Contact_Meet:T26 
+A27	Realis E26 Other
+T27	Personnel_End-Position 6575 6582	resigns
+E27	Personnel_End-Position:T27 
+A28	Realis E27 Other
+T28	Personnel_Start-Position 6603 6608	hired
+E28	Personnel_Start-Position:T28 
+A29	Realis E28 Other
+T30	Justice_Charge-Indict 6736 6744	charging
+E30	Justice_Charge-Indict:T30 
+A31	Realis E30 Other
+T32	Contact_Communicate 6971 6984	communication
+E32	Contact_Communicate:T32 
+A33	Realis E32 Other
+T35	Contact_Communicate 7314 7319	wrote
+E35	Contact_Communicate:T35 
+A36	Realis E35 Actual
+T36	Justice_Sue 7515 7519	sued
+E36	Justice_Sue:T36 
+A37	Realis E36 Actual
+T37	Justice_Sue 7576 7580	sued
+E37	Justice_Sue:T37 
+A38	Realis E37 Other
+T39	Transaction_Transfer-Money 2390 2401	compensated
+E39	Transaction_Transfer-Money:T39 
+A41	Realis E39 Other
+T40	Personnel_Start-Position 3182 3189	drafted
+E40	Personnel_Start-Position:T40 
+A42	Realis E40 Other
+T23	Personnel_Start-Position 3841 3847	retain
+E23	Personnel_Start-Position:T23 
+A23	Realis E23 Other
+T29	Justice_Sue 6682 6686;6695 6702	file lawsuit
+E29	Justice_Sue:T29 
+A24	Realis E29 Other
+T41	Justice_Sue 6725 6734	complaint
+E41	Justice_Sue:T41 
+A30	Realis E41 Actual
+T31	Transaction_Transfer-Money 6890 6896;6938 6944	moneys frozen
+E31	Transaction_Transfer-Money:T31 
+A32	Realis E31 Other
+T42	Transaction_Transfer-Money 6920 6924	paid
+E42	Transaction_Transfer-Money:T42 
+A43	Realis E42 Other
+T33	Justice_Sue 7055 7059;7062 7069	file lawsuit
+E33	Justice_Sue:T33 
+A34	Realis E33 Other
+T34	Justice_Sue 7192 7196;7199 7206	file lawsuit
+E34	Justice_Sue:T34 
+A35	Realis E34 Other
+T44	Contact_Communicate 3600 3607	explain
+E44	Contact_Communicate:T44 
+A46	Realis E44 Other
+T2	Transaction_Transfer-Money 790 801	given money
+E2	Transaction_Transfer-Money:T2 
+A2	Realis E2 Generic
+T3	Transaction_Transfer-Money 882 893	given money
+E3	Transaction_Transfer-Money:T3 
+A3	Realis E3 Generic
+T45	Transaction_Transfer-Money 1046 1051	money
+E45	Transaction_Transfer-Money:T45 
+A47	Realis E45 Generic
+T43	Transaction_Transfer-Money 1691 1714	feathering his/her nest
+E43	Transaction_Transfer-Money:T43 
+A45	Realis E43 Other
+T47	Transaction_Transfer-Money 5869 5872	pay
+E47	Transaction_Transfer-Money:T47 
+A50	Realis E47 Other
+#4	AnnotatorNotes E41	This is ACTUAL, since it is asserted. 
+T24	Personnel_Start-Position 3252 3254	it
+E24	Personnel_Start-Position:T24 
+A25	Realis E24 Other
+T18	Personnel_Elect 5459 5466	elected
+E18	Personnel_Elect:T18 
+A18	Realis E18 Actual

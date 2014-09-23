@@ -146,7 +146,7 @@ def main():
     # charactoer mode is disabled
     # if args.charMode:
     # eval_mode = EvalMethod.Char
-    #       logger.debug("NOTE: Using character based evaluation")
+    # logger.debug("NOTE: Using character based evaluation")
 
     while True:
         if not evaluate(eval_mode):
@@ -167,14 +167,16 @@ def main():
     for (tp, fp, typeCorrect, realisCorrect, goldMentions, docId) in docScores:
         prec = tp / (tp + fp) if tp + fp > 0 else float('nan')
         recall = tp / goldMentions if goldMentions > 0 else float('nan')
-        doc_f1 = 2 * prec * recall / \
-            (prec + recall) if prec + recall > 0 else float('nan')
+        doc_f1 = (2 * prec * recall / (prec + recall) if
+                  prec + recall > 0 else float('nan'))
         type_accuracy = typeCorrect / goldMentions
         realis_accuracy = realisCorrect / goldMentions
-        eval_out.write("TP\tFP\t#Gold\tPrec\tRecall\tF1\tType\tRealis\tDoc Id\n")
-        eval_out.write("%.2f\t%.2f\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\t%s\n" % (
-            tp, fp, goldMentions, prec, recall,
-            doc_f1, type_accuracy, realis_accuracy, docId))
+        eval_out.write(
+            "TP\tFP\t#Gold\tPrec\tRecall\tF1\tType\tRealis\tDoc Id\n")
+        eval_out.write(
+            "%.2f\t%.2f\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\t%s\n" % (
+                tp, fp, goldMentions, prec, recall,
+                doc_f1, type_accuracy, realis_accuracy, docId))
 
         if math.isnan(prec) or math.isnan(recall):
             # no mentions annotated, treat as invalid file
@@ -192,25 +194,26 @@ def main():
             total_type_correct += typeCorrect
 
     eval_out.write("\n=======Final Results=========\n")
-    micro_prec = total_tp / (total_tp + total_fp) \
-        if total_tp + total_fp > 0 else float('nan')
-    micro_recall = total_tp / total_gold_mentions \
-        if total_gold_mentions > 0 else float('nan')
-    micro_f1 = 2 * micro_prec * micro_recall / (micro_prec + micro_recall) \
-        if micro_prec + micro_recall > 0 else float('nan')
-    micro_type_accuracy = total_type_correct / total_gold_mentions \
-        if total_gold_mentions > 0 else float('nan')
-    micro_realis_accuracy = total_realis_correct / \
-                          total_gold_mentions if total_gold_mentions > 0 else float('nan')
+    micro_prec = (total_tp / (total_tp + total_fp) if
+                  total_tp + total_fp > 0 else float('nan'))
+    micro_recall = (total_tp / total_gold_mentions if
+                    total_gold_mentions > 0 else float('nan'))
+    micro_f1 = (2 * micro_prec * micro_recall / (micro_prec + micro_recall) if
+                micro_prec + micro_recall > 0 else float('nan'))
+    micro_type_accuracy = (total_type_correct / total_gold_mentions if
+                           total_gold_mentions > 0 else float('nan'))
+    micro_realis_accuracy = (total_realis_correct / total_gold_mentions if
+                             total_gold_mentions > 0 else float('nan'))
 
     macro_prec = total_prec / valid_docs if valid_docs > 0 else float('nan')
-    macro_recall = total_recall / valid_docs if valid_docs > 0 else float('nan')
-    macro_f1 = 2 * macro_prec * macro_recall / (macro_prec + macro_recall) \
-        if macro_prec + macro_recall > 0 else float('nan')
-    macro_type_accuracy = total_type_accuracy / valid_docs \
-        if valid_docs > 0 else float('nan')
-    macro_realis_accuracy = total_realis_accuracy / valid_docs \
-        if valid_docs > 0 else float('nan')
+    macro_recall = (total_recall / valid_docs if
+                    valid_docs > 0 else float('nan'))
+    macro_f1 = (2 * macro_prec * macro_recall / (macro_prec + macro_recall) if
+                macro_prec + macro_recall > 0 else float('nan'))
+    macro_type_accuracy = (total_type_accuracy / valid_docs if
+                           valid_docs > 0 else float('nan'))
+    macro_realis_accuracy = (total_realis_accuracy / valid_docs if
+                             valid_docs > 0 else float('nan'))
 
     eval_out.write("Precision (Micro Average): %.4f\n" % micro_prec)
     eval_out.write("Recall (Micro Average):%.4f\n" % micro_recall)
@@ -517,28 +520,31 @@ def evaluate(eval_mode):
     # it, second item is the overlap score (negated for easy sorting)
     assigned_gold_2_system_mapping = [([], -1)] * len(g_lines)
 
-    for system_index, (system_outputs, system_mention_type, system_realis) in enumerate(
+    for system_index, (system_outputs,
+                       system_mention_type, system_realis) in enumerate(
             system_mention_table):
         # largestOverlap = -1.0
         # corresIndex = -1
 
         for index, (gold_annos, gold_mention_type, gold_realis) in enumerate(
                 gold_mention_table):
-            overlap = compute_overlap_score(gold_annos, system_outputs, eval_mode)
+            overlap = compute_overlap_score(gold_annos,
+                                            system_outputs, eval_mode)
             if len(gold_annos) == 0:
                 logger.debug("Found empty gold standard")
 
             if overlap > 0:
                 # maintaining a max heap based on overlap score
                 heapq.heappush(
-                    all_gold_system_mapping_scores, (-overlap, system_index, index))
+                    all_gold_system_mapping_scores,
+                    (-overlap, system_index, index))
 
     mapped_system_mentions = set()
     num_gold_found = 0
 
     while len(all_gold_system_mapping_scores) != 0:
-        neg_mapping_score, mapping_system_index, mapping_gold_index = heapq.heappop(
-            all_gold_system_mapping_scores)
+        neg_mapping_score, mapping_system_index, mapping_gold_index = \
+            heapq.heappop(all_gold_system_mapping_scores)
         if mapping_system_index not in mapped_system_mentions:
             if assigned_gold_2_system_mapping[mapping_gold_index][1] == -1:
                 assigned_gold_2_system_mapping[mapping_gold_index] = (
@@ -562,10 +568,12 @@ def evaluate(eval_mode):
             portion_score = 1.0 / len(system_indices)
 
             for system_index in system_indices:
-                if system_mention_table[system_index][2] == gold_mention_table[gold_index][2]:
+                if (system_mention_table[system_index][2] ==
+                        gold_mention_table[gold_index][2]):
                     realis_correct += portion_score
 
-                if system_mention_table[system_index][1] == gold_mention_table[gold_index][1]:
+                if (system_mention_table[system_index][1] ==
+                        gold_mention_table[gold_index][1]):
                     type_correct += portion_score
 
     diff_out.write(bod_marker + " " + doc_id + "\n")
@@ -573,14 +581,15 @@ def evaluate(eval_mode):
         gold_content = gLine.split("\t", 1)
         system_index, mapping_score = assigned_gold_2_system_mapping[gIndex]
         score_out = "%.4f" % mapping_score if mapping_score != -1 else "-"
-        diff_out.write("%s\t%s\t%s\n" % (system_id, gold_content[1], score_out))
+        diff_out.write("%s\t%s\t%s\n" %
+                       (system_id, gold_content[1], score_out))
     diff_out.write(eod_marker + " " + "\n")
-
 
     # unmapped system mentions are considered as false positive
     fp += len(s_lines) - num_gold_found
 
-    docScores.append((tp, fp, type_correct, realis_correct, len(g_lines), doc_id))
+    docScores.append((tp, fp, type_correct, realis_correct,
+                      len(g_lines), doc_id))
     return True
 
 

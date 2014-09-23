@@ -17,10 +17,8 @@ max_num_events = 60
 fs = []
 if os.path.isdir(fname):
     for f in os.listdir(fname):
-        if f.endswith('.txt'):
-            fs.append(open(os.path.join(fname,f)))
+        fs.append(open(os.path.join(fname,f)))
 elif os.path.isfile(fname):
-    if fname.endswith('.txt'):
         in_file = open(fname)
         fs.append(in_file)
 

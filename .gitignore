@@ -52,6 +52,9 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# OS specific
+.DS_Store
+
 # LDC data directories
 data/tkn/
 data/source/

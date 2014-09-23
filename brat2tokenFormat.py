@@ -21,7 +21,7 @@ eodMarker = "#EndOfDocument"  # mark end of a document
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
-textBounds = {}  # all text bounds
+text_bounds = {}  # all text bounds
 events = {}  # all events
 atts = {}  # all attributes
 
@@ -120,50 +120,41 @@ def main():
         head, tail = os.path.split(out)
         if head != "":
             os.makedirs(head)
-    except (OSError):
+    except OSError:
         (t, v, trace) = sys.exc_info()
         if v.errno != errno.EEXIST:
             raise
 
-    outPath = out + "." + outExt
-    if not args.overwrite and os.path.isfile(outPath):
+    out_path = out + "." + outExt
+    if not args.overwrite and os.path.isfile(out_path):
         logger.error(
             "Output path [%s] already exists, "
-            "use '-w' flag to force overwrite" % (outPath))
+            "use '-w' flag to force overwrite" % out_path)
         sys.exit(1)
 
-    outFile = open(outPath, 'w')
+    out_file = open(out_path, 'w')
 
     if args.dir is not None:
         # parse directory
         for f in os.listdir(args.dir):
             if f.endswith(bratAnnotationExt):
                 parse_annotation_file(
-                    os.path.join(args.dir, f), args.tokenPath, outFile)
+                    os.path.join(args.dir, f), args.tokenPath, out_file)
     elif args.file is not None:
         # parse one annotation file
         if args.file.endswith(bratAnnotationExt):
-            basename = os.path.basename(args.file)
-            parse_annotation_file(args.file, args.tokenPath, outFile)
-#    elif args.filelist != None:
-# parse the filelist
-#        lst = open(args.filelist)
-#        for line in lst:
-#            l = line.rstrip()
-#            if l.endswith(bratAnnotationExt):
-#                basename = os.path.basename(l)
-#                parse_annotation_file(l,args.tokenPath,outFile)
+            parse_annotation_file(args.file, args.tokenPath, out_file)
     else:
         logger.error("No annotations provided\n")
 
 
 def clear():
-    textBounds.clear()  # all text bounds
+    text_bounds.clear()  # all text bounds
     events.clear()  # all events
     atts.clear()  # all attributes
 
 
-def joinList(items, joiner):
+def join_list(items, joiner):
     sep = ""
     s = ""
     for item in items:
@@ -173,97 +164,97 @@ def joinList(items, joiner):
     return s
 
 
-def parse_annotation_file(filePath, tokenDir, of):
+def parse_annotation_file(file_path, token_dir, of):
     # otherwise use the provided directory to search for it
-    basename = os.path.basename(filePath)
+    basename = os.path.basename(file_path)
     logger.debug("processing "+basename)
-    tokenPath = os.path.join(
-        tokenDir, basename[:-len(bratAnnotationExt)] + tokenOffsetExt)
+    token_path = os.path.join(
+        token_dir, basename[:-len(bratAnnotationExt)] + tokenOffsetExt)
 
-    if os.path.isfile(filePath) and os.path.isfile(tokenPath):
-        f = open(filePath)
-        tokenFile = open(tokenPath)
-        textId = os.path.splitext(os.path.basename(f.name))[0]
+    if os.path.isfile(file_path) and os.path.isfile(token_path):
+        f = open(file_path)
+        token_file = open(token_path)
+        text_id = os.path.splitext(os.path.basename(f.name))[0]
         read_all_anno(f)
 
         # match from text bound to token id
-        textBoundId2TokenId = getTextBound2TokenMapping(tokenFile)
+        text_bound_id_2_token_id = get_text_bound_2_token_mapping(token_file)
 
         eids = events.keys()
         eids.sort(key=lambda x: int(x[1:]))
 
-        of.write(bodMarker + " " + textId + "\n")
+        of.write(bodMarker + " " + text_id + "\n")
         for eid in eids:
-            eventType = events[eid][0][0]
-            textBoundId = events[eid][0][1]
-            realisStatus = missingAttributePlaceholder
+            event_type = events[eid][0][0]
+            text_bound_id = events[eid][0][1]
+            realis_status = missingAttributePlaceholder
             if eid in atts:
                 att = atts[eid]
                 if "Realis" in att:
-                    realisStatus = att["Realis"][1]
-            textBound = textBounds[textBoundId]
-            spans = textBound[1]
-            tokenIds = textBoundId2TokenId[textBoundId]
-            text = textBound[2]
+                    realis_status = att["Realis"][1]
+            text_bound = text_bounds[text_bound_id]
+            spans = text_bound[1]
+            token_ids = text_bound_id_2_token_id[text_bound_id]
+            text = text_bound[2]
 
             of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
-                engineId, textId, eid, joinList(
-                    tokenIds, tokenJoiner), text, eventType, realisStatus, 1))
+                engineId, text_id, eid, join_list(token_ids, tokenJoiner),
+                text, event_type, realis_status, 1))
         of.write(eodMarker + "\n")
     else:
         # the missing file will be skipped but others will still be done
         logger.error(
             "Annotation path %s or token path %s not found. "
             "Will still try to process other annotation files." % (
-                filePath, tokenPath))
+                file_path, token_path))
     clear()
 
 
-def getTextBound2TokenMapping(tokenFile):
-    textBoundId2TokenId = {}
+def get_text_bound_2_token_mapping(token_file):
+    text_bound_id_2_token_id = {}
     # ignore the header
-    header = tokenFile.readline()
-    for tokenLine in tokenFile:
+    header = token_file.readline()
+    for tokenLine in token_file:
         fields = tokenLine.rstrip().split("\t")
         if len(fields) != 6:
             continue
         # important! we need to make sure that what we are evaluating on
-        tokenSpan = None
         if annotation_on_source:
-            tokenSpan = (int(fields[2]), int(fields[3]) + 1)
+            token_span = (int(fields[2]), int(fields[3]) + 1)
         else:
-            tokenSpan = (int(fields[4]), int(fields[5]) + 1)
+            token_span = (int(fields[4]), int(fields[5]) + 1)
 
         # one token maps to multiple text bound is possible
-        for textBoundId in findCorrespondingTextBound(tokenSpan):
-            if textBoundId not in textBoundId2TokenId:
-                textBoundId2TokenId[textBoundId] = []
-            textBoundId2TokenId[textBoundId].append(fields[0])
-    return textBoundId2TokenId
+        for text_bound_id in find_corresponding_text_bound(token_span):
+            if text_bound_id not in text_bound_id_2_token_id:
+                text_bound_id_2_token_id[text_bound_id] = []
+            text_bound_id_2_token_id[text_bound_id].append(fields[0])
+    return text_bound_id_2_token_id
 
 
-def findCorrespondingTextBound(tokenSpan):
-    textBoundIds = []
-    for textBoundId, textBound in textBounds.iteritems():
-        for annSpan in textBound[1]:
-            if covers(annSpan, tokenSpan):
-                textBoundIds.append(textBoundId)
-            elif covers(tokenSpan, annSpan):
-                textBoundIds.append(textBoundId)
-    return textBoundIds
+def find_corresponding_text_bound(token_span):
+    text_bound_ids = []
+    for text_bound_id, text_bound in text_bounds.iteritems():
+        for annSpan in text_bound[1]:
+            if covers(annSpan, token_span):
+                text_bound_ids.append(text_bound_id)
+            elif covers(token_span, annSpan):
+                text_bound_ids.append(text_bound_id)
+    return text_bound_ids
 
 
-def covers(coveringSpan, coveredSpan):
-    if coveringSpan[0] <= coveredSpan[0] and coveringSpan[1] >= coveredSpan[1]:
+def covers(covering_span, covered_span):
+    if (covering_span[0] <= covered_span[0] and
+            covering_span[1] >= covered_span[1]):
         return True
     return False
 
 
-def parse_span(allSpanStr):
-    spanStrs = allSpanStr.split(";")
+def parse_span(all_span_str):
+    span_strs = all_span_str.split(";")
     spans = []
-    for spanStr in spanStrs:
-        span = spanStr.split()
+    for span_str in span_strs:
+        span = span_str.split()
         spans.append((int(span[0]), int(span[1])))
     return spans
 
@@ -272,37 +263,37 @@ def parse_text_bound(fields):
     if len(fields) != 3:
         logger.error("Incorrect number of fields in a text bound annotation")
     tid = fields[0]
-    typeSpan = fields[1].split(" ", 1)
-    tbType = typeSpan[0]
-    spans = parse_span(typeSpan[1])
+    type_span = fields[1].split(" ", 1)
+    tb_type = type_span[0]
+    spans = parse_span(type_span[1])
     text = fields[2]
-    return (tid, (tbType, spans, text))
+    return tid, (tb_type, spans, text)
 
 
 def parse_event(fields):
     eid = fields[0]
-    triggerAndRoles = fields[1].split()
-    trigger = triggerAndRoles[0].split(":")
+    trigger_and_roles = fields[1].split()
+    trigger = trigger_and_roles[0].split(":")
 
     roles = []
-    for rolesStr in triggerAndRoles[1:]:
+    for rolesStr in trigger_and_roles[1:]:
         role = rolesStr.split(":")
         roles.append(role)
 
-    return (eid, (trigger, roles))
+    return eid, (trigger, roles)
 
 
 def parse_attribute(fields):
     aid = fields[0]
     value = fields[1].split()
-    attName = value[0]
-    targetId = value[1]
-    targetValue = True  # binary
+    att_name = value[0]
+    target_id = value[1]
+    target_value = True  # binary
 
     if len(value) == 3:  # multi-valued
-        targetValue = value[2]
+        target_value = value[2]
 
-    return (aid, targetId, attName, targetValue)
+    return aid, target_id, att_name, target_value
 
 
 def read_all_anno(f):
@@ -311,18 +302,18 @@ def read_all_anno(f):
             pass
         fields = line.rstrip().split("\t", 2)
         if line.startswith(spanMarker):
-            textBound = parse_text_bound(fields)
-            textBounds[textBound[0]] = textBound[1]
+            text_bound = parse_text_bound(fields)
+            text_bounds[text_bound[0]] = text_bound[1]
         if line.startswith(eventMarker):
             event = parse_event(fields)
             events[event[0]] = event[1]
         if line.startswith(attMarker) or line.startswith(attMarkerBack):
-            (aid, targetId, attName, targetValue) = parse_attribute(fields)
-            if targetId in atts:
-                atts[targetId][attName] = (aid, targetValue)
+            (aid, target_id, att_name, target_value) = parse_attribute(fields)
+            if target_id in atts:
+                atts[target_id][att_name] = (aid, target_value)
             else:
-                atts[targetId] = {}
-                atts[targetId][attName] = (aid, targetValue)
+                atts[target_id] = {}
+                atts[target_id][att_name] = (aid, target_value)
 
 if __name__ == "__main__":
     main()

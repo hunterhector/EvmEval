@@ -1,0 +1,43 @@
+========Document results==========
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+20.00	0.00	20	1.0000	1.0000	1.0000	1.0000	1.0000	AFP_ENG_20030311.0491
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+17.00	0.00	17	1.0000	1.0000	1.0000	1.0000	1.0000	AFP_ENG_20030319.0879
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+68.00	0.00	68	1.0000	1.0000	1.0000	1.0000	1.0000	AFP_ENG_20030323.0020
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+8.00	0.00	8	1.0000	1.0000	1.0000	1.0000	1.0000	AFP_ENG_20030401.0476
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+11.00	0.00	11	1.0000	1.0000	1.0000	1.0000	1.0000	AFP_ENG_20030417.0004
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+23.00	0.00	23	1.0000	1.0000	1.0000	1.0000	1.0000	AFP_ENG_20030417.0307
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+10.00	0.00	10	1.0000	1.0000	1.0000	1.0000	1.0000	AFP_ENG_20030418.0556
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+20.00	0.00	20	1.0000	1.0000	1.0000	1.0000	1.0000	AFP_ENG_20030427.0118
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+56.00	0.00	56	1.0000	1.0000	1.0000	1.0000	1.0000	APW_ENG_20030417.0555
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+31.00	0.00	31	1.0000	1.0000	1.0000	1.0000	1.0000	APW_ENG_20030418.0084
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+20.00	0.00	20	1.0000	1.0000	1.0000	1.0000	1.0000	APW_ENG_20030502.0686
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+59.00	0.00	59	1.0000	1.0000	1.0000	1.0000	1.0000	APW_ENG_20030527.0232
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+25.00	0.00	25	1.0000	1.0000	1.0000	1.0000	1.0000	APW_ENG_20030603.0303
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+32.00	0.00	32	1.0000	1.0000	1.0000	1.0000	1.0000	APW_ENG_20030610.0010
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+10.00	0.00	10	1.0000	1.0000	1.0000	1.0000	1.0000	XIN_ENG_20030609.0118
+
+=======Final Results=========
+Precision (Micro Average): 1.0000
+Recall (Micro Average):1.0000
+F1 (Micro Average):1.0000
+Mention type detection accuracy (Micro Average):1.0000
+Mention realis status accuracy (Micro Average):1.0000
+Precision (Macro Average): 1.0000
+Recall (Macro Average): 1.0000
+F1 (Macro Average): 1.0000
+Mention type detection accuracy (Macro Average):1.0000
+Mention realis status accuracy (Macro Average):1.0000

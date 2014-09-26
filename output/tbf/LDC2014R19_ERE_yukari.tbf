@@ -1,0 +1,228 @@
+#BeginOfDocument 0f03cc5a508d630c6c8c8c61396e31a9
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E1	t63	come	Movement_Transport-Person	Other	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E2	t71,t72	pass away	Life_Die	Other	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E3	t79,t80	pass away	Life_Die	Other	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E4	t96	talking	Contact_Communicate	Other	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E5	t415	mortality	Life_Die	Generic	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E6	t315	die	Life_Die	Other	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E7	t425	deaths	Life_Die	Actual	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E8	t429	births	Life_Be-Born	Actual	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E9	t441	births	Life_Be-Born	Actual	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E10	t451	mortality	Life_Die	Generic	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E11	t489	stillbirth	Life_Die	Generic	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E12	t492	death	Life_Die	Generic	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E13	t504	births	Life_Be-Born	Generic	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E14	t511	death	Life_Die	Generic	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E15	t517	births	Life_Be-Born	Actual	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E16	t534	stillbirth	Life_Die	Generic	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E17	t538	deaths	Life_Die	Generic	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E18	t586	births	Life_Be-Born	Actual	1
+brat_conversion	0f03cc5a508d630c6c8c8c61396e31a9	E19	t229	advice	Contact_Communicate	Other	1
+#EndOfDocument
+#BeginOfDocument 1b268b27094ba9c5feb11192dad940ab
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E1	t65	going	Movement_Transport-Person	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E2	t46	came	Movement_Transport-Person	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E3	t100	got	Movement_Transport-Person	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E4	t154	rang	Contact_Communicate	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E5	t210	rang	Contact_Communicate	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E6	t215	made	Movement_Transport-Person	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E7	t250	returned	Movement_Transport-Person	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E8	t349	went	Movement_Transport-Person	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E9	t408	heard	Contact_Communicate	Other	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E10	t533	visitied	Movement_Transport-Person	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E11	t585	gave	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E12	t607	gave	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E13	t631	coming	Movement_Transport-Person	Other	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E14	t642	interview	Contact_Meet	Other	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E15	t886	interview	Contact_Communicate	Other	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E16	t1053	handing	Transaction_Transfer-Money	Other	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E17	t182	asked	Contact_Communicate	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E18	t278	got	Movement_Transport-Person	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E19	t300	told	Contact_Communicate	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E20	t458	told	Contact_Communicate	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E21	t424	explained	Contact_Communicate	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E22	t543	adivsed	Contact_Communicate	Actual	1
+brat_conversion	1b268b27094ba9c5feb11192dad940ab	E23	t845	asking	Contact_Communicate	Other	1
+#EndOfDocument
+#BeginOfDocument 29f64df7feb04dfb16f4667ce199c9f0
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E1	t17	got	Contact_Communicate	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E2	t25	appoitment	Contact_Meet	Other	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E3	t133	appointment	Contact_Meet	Other	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E4	t206	appointment	Contact_Meet	Other	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E5	t223	call	Contact_Communicate	Other	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E6	t459	told	Contact_Communicate	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E7	t518	call	Contact_Communicate	Other	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E8	t625	appt	Contact_Meet	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E9	t724	see	Contact_Meet	Generic	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E10	t738	appointment	Contact_Meet	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E11	t752	saw	Contact_Meet	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E12	t772	meeting	Contact_Meet	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E13	t786	visit	Contact_Meet	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E14	t154	see	Contact_Meet	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E15	t161	see	Contact_Meet	Other	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E16	t232	see	Contact_Meet	Generic	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E17	t258	saw	Contact_Meet	Actual	1
+brat_conversion	29f64df7feb04dfb16f4667ce199c9f0	E18	t324	see	Contact_Meet	Other	1
+#EndOfDocument
+#BeginOfDocument 44b011cd504c9ed71beb851324db886a
+brat_conversion	44b011cd504c9ed71beb851324db886a	E1	t72	went	Movement_Transport-Person	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E2	t74	see	Contact_Meet	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E3	t126	told	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E4	t118	bought	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E5	t149,t150	came in	Movement_Transport-Person	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E6	t332	meet	Contact_Meet	Other	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E7	t540	see	Contact_Meet	Other	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E8	t1053	rang	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E9	t40	told	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E10	t233	asked	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E11	t248	said	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E12	t271	told	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E13	t307	spoken	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E14	t341	told	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E15	t490	told	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E16	t507	said	Contact_Communicate	Actual	1
+brat_conversion	44b011cd504c9ed71beb851324db886a	E17	t940	advise	Contact_Communicate	Other	1
+#EndOfDocument
+#BeginOfDocument 57026b7bcb8f855de3e26d572db35285
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E1	t16	leaves	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E2	t42	visit	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E3	t48	came	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E4	t50	visit	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E5	t56	born	Life_Be-Born	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E6	t80	visit	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E7	t87	left	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E8	t89	called	Contact_Communicate	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E9	t98	send	Movement_Transport-Person	Other	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E10	t115	call	Contact_Communicate	Other	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E11	t124	came	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E12	t131	demonstrations	Conflict_Demonstrate	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E13	t152	flew	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E14	t520	trip	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E15	t526	trip	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E16	t559	trip	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E17	t619	come	Movement_Transport-Person	Other	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E18	t767	birth	Life_Be-Born	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E19	t798	touring	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E20	t801	seeing	Contact_Meet	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E21	t841	sent	Movement_Transport-Person	Other	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E22	t880	phoned	Contact_Communicate	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E23	t921	visit	Movement_Transport-Person	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E24	t164	wedding	Contact_Meet	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E25	t170	said	Contact_Communicate	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E26	t269	leaves	Movement_Transport-Person	Other	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E27	t529	comes	Transaction_Transfer-Money	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E28	t555	tells	Contact_Communicate	Actual	1
+brat_conversion	57026b7bcb8f855de3e26d572db35285	E29	t937	told	Contact_Communicate	Actual	1
+#EndOfDocument
+#BeginOfDocument 7ddae34c4553ef60a76c43144855ec6b
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E1	t35	death	Life_Die	Other	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E2	t67	death	Life_Die	Generic	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E3	t134	die	Life_Die	Generic	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E4	t171,t172	passed away	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E5	t190,t191	Passed away	Life_Die	NOT_ANNOTATED	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E6	t209	died	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E7	t344	died	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E8	t360	died	Life_Die	Other	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E9	t410	born	Life_Be-Born	Other	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E10	t418,t419	passed away	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E11	t511	died	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E12	t640	went	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E13	t645	suicide	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E14	t683	died	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E15	t743	go	Movement_Transport-Person	Other	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E16	t781	moved	Movement_Transport-Person	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E17	t787	got	Movement_Transport-Person	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E18	t808	gone	Life_Die	Actual	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E19	t841	come	Movement_Transport-Person	Other	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E20	t890	death	Life_Die	Generic	1
+brat_conversion	7ddae34c4553ef60a76c43144855ec6b	E21	t1080,t1081	go out	Movement_Transport-Person	Other	1
+#EndOfDocument
+#BeginOfDocument 90e2a980c22e41e2b25666f676458343
+brat_conversion	90e2a980c22e41e2b25666f676458343	E1	t16	marriage	Life_Marry	Actual	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E2	t146	went	Movement_Transport-Person	Actual	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E3	t180	came	Movement_Transport-Person	Actual	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E4	t212	met	Contact_Meet	Actual	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E5	t416	see	Contact_Meet	Other	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E6	t644	appointment	Contact_Meet	Other	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E7	t660	posting	Contact_Communicate	Other	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E8	t34	tell	Contact_Communicate	Actual	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E9	t231	told	Contact_Communicate	Actual	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E10	t291	told	Contact_Communicate	Actual	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E11	t311	get	Contact_Communicate	Actual	1
+brat_conversion	90e2a980c22e41e2b25666f676458343	E12	t365	get	Contact_Communicate	Actual	1
+#EndOfDocument
+#BeginOfDocument be8792abc57847d9a19940579acf8373
+brat_conversion	be8792abc57847d9a19940579acf8373	E1	t131	injuring	Life_Injure	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E2	t136	sped	Movement_Transport-Person	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E3	t142	calling	Contact_Communicate	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E4	t146	calling	Contact_Communicate	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E5	t162	call	Contact_Communicate	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E6	t186	charged	Justice_Charge-Indict	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E7	t194	charging	Justice_Charge-Indict	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E8	t238	charged	Justice_Charge-Indict	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E9	t248	go	Justice_Arrest-Jail	Generic	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E10	t257	lose	Personnel_End-Position	Generic	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E11	t262	go	Justice_Arrest-Jail	Generic	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E12	t376	sending	Justice_Arrest-Jail	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E13	t394	gone	Justice_Arrest-Jail	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E14	t452	pardoned	Justice_Pardon	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E15	t462	pardon	Justice_Pardon	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E16	t513	pardon	Justice_Pardon	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E17	t561	pardons	Justice_Pardon	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E18	t574	plea	Justice_Appeal	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E19	t581	charged	Justice_Charge-Indict	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E20	t607	charged	Justice_Charge-Indict	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E21	t617	charged	Justice_Charge-Indict	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E22	t621	pardoned	Justice_Pardon	Other	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E23	t674	sentences	Justice_Sentence	Generic	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E24	t1026	murde	Life_Die	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E25	t875,t876	bought off	Transaction_Transfer-Money	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E26	t1143	murder	Life_Die	Actual	1
+brat_conversion	be8792abc57847d9a19940579acf8373	E27	t1164	murdered	Life_Die	Actual	1
+#EndOfDocument
+#BeginOfDocument c572dc8353079a5ef9943ae298e4f5b0
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E1	t46	shot	Conflict_Attack	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E2	t86	returning	Movement_Transport-Person	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E3	t100	brought	Contact_Communicate	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E4	t117	death	Life_Die	Other	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E5	t124	departed	Movement_Transport-Person	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E6	t130	reached	Movement_Transport-Person	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E7	t147	received	Contact_Communicate	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E8	t155	died	Life_Die	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E9	t162	arrived	Movement_Transport-Person	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E10	t300	strike	Conflict_Demonstrate	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E11	t321	strike	Conflict_Demonstrate	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E12	t703	appointed	Personnel_Nominate	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E13	t708	appointed	Personnel_Nominate	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E14	t716	appointed	Personnel_Nominate	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E15	t759	appointed	Personnel_Nominate	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E16	t328	getting	Transaction_Transfer-Money	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E17	t530	Conference	Contact_Meet	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E18	t604	interviews	Contact_Meet	Actual	1
+brat_conversion	c572dc8353079a5ef9943ae298e4f5b0	E19	t624	gave	Transaction_Transfer-Ownership	Actual	1
+#EndOfDocument
+#BeginOfDocument d21dc2cb6e6435da7f9d9b0e5759e214
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E1	t36	ceromony	Contact_Meet	Actual	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E2	t162	went	Movement_Transport-Person	Actual	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E3	t179	wedding	Contact_Meet	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E5	t232	wedding	Contact_Meet	Actual	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E6	t238	went	Movement_Transport-Person	Actual	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E7	t276	wedding	Contact_Meet	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E8	t303	borrow	Transaction_Transfer-Ownership	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E9	t307	get	Transaction_Transfer-Ownership	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E10	t334	trip	Movement_Transport-Person	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E11	t352	dinner	Contact_Meet	Actual	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E12	t390	buying	Transaction_Transfer-Ownership	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E13	t287	Hire	Transaction_Transfer-Ownership	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E14	t395	hire	Transaction_Transfer-Ownership	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E15	t470	married	Life_Marry	Generic	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E16	t477	party	Contact_Meet	Generic	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E17	t506	weddings	Contact_Meet	Generic	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E18	t545	married	Life_Marry	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E19	t555	weddings	Contact_Meet	Generic	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E20	t656	wedding	Contact_Meet	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E21	t686	weddings	Contact_Meet	Generic	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E22	t722	marriage	Life_Marry	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E23	t733	party	Contact_Meet	Other	1
+brat_conversion	d21dc2cb6e6435da7f9d9b0e5759e214	E25	t73	ceromony	Contact_Meet	Actual	1
+#EndOfDocument

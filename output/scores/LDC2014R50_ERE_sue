@@ -1,0 +1,43 @@
+========Document results==========
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+24.00	0.00	24	1.0000	1.0000	1.0000	0.9583	1.0000	0929d82f7059353f9593b9558983efba.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+61.00	0.00	61	1.0000	1.0000	1.0000	0.9836	1.0000	204f8f6bdb24c5198175bf1ed483247b.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+26.00	1.00	26	0.9630	1.0000	0.9811	1.0000	0.9615	2b96d1172d37f60aea5ce64a0b410248.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+20.00	0.00	20	1.0000	1.0000	1.0000	1.0000	1.0000	334de29f692ef2c5460b78fcad5c6c9e.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+18.00	0.00	18	1.0000	1.0000	1.0000	1.0000	1.0000	3446f8cbcf53eaca5692913ced012b11.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+36.00	0.00	36	1.0000	1.0000	1.0000	1.0000	1.0000	6aef233fe16a579899ce8589d5cc586a.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+8.00	0.00	8	1.0000	1.0000	1.0000	1.0000	1.0000	7bdd10d9a819c24aac9ebe5af3a81191.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+35.00	0.00	35	1.0000	1.0000	1.0000	0.9714	1.0000	80dda2ceea4cf152c3c3ff9745d7cef0.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+24.00	0.00	24	1.0000	1.0000	1.0000	1.0000	1.0000	8352a6fe195d3e15a7638124fb6b2e0c.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+23.00	0.00	23	1.0000	1.0000	1.0000	1.0000	1.0000	84d4a9b7c2e398926a60fd8054e0ae10.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+34.00	0.00	34	1.0000	1.0000	1.0000	1.0000	1.0000	8f7395c2941730c1ff48effb917bf90f.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+43.00	0.00	43	1.0000	1.0000	1.0000	1.0000	0.9302	ac6d66326a43c5c3fe546d82f66c4f16.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+10.00	0.00	10	1.0000	1.0000	1.0000	1.0000	1.0000	e73f9b988cc678475e9525c8c6ba6ec1.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+17.00	0.00	17	1.0000	1.0000	1.0000	0.8824	1.0000	ed5a9b14dd7654a7ee1678b558fcc3f4.cmp
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+30.00	0.00	30	1.0000	1.0000	1.0000	1.0000	0.9667	fac3fa9cf9ccc0c87916d890ff6a3a52.cmp
+
+=======Final Results=========
+Precision (Micro Average): 0.9976
+Recall (Micro Average):1.0000
+F1 (Micro Average):0.9988
+Mention type detection accuracy (Micro Average):0.9878
+Mention realis status accuracy (Micro Average):0.9878
+Precision (Macro Average): 0.9975
+Recall (Macro Average): 1.0000
+F1 (Macro Average): 0.9988
+Mention type detection accuracy (Macro Average):0.9864
+Mention realis status accuracy (Macro Average):0.9906

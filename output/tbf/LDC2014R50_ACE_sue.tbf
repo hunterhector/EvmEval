@@ -1,0 +1,433 @@
+#BeginOfDocument AFP_ENG_20030311.0491
+brat_conversion	AFP_ENG_20030311.0491	E1	t29	pay	Transaction_Transfer-Money	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E2	t35	suits	Justice_Sue	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E3	t55	auction	Transaction_Transfer-Ownership	Generic	1
+brat_conversion	AFP_ENG_20030311.0491	E4	t67	pay	Transaction_Transfer-Money	Other	1
+brat_conversion	AFP_ENG_20030311.0491	E5	t85	payment	Transaction_Transfer-Money	Other	1
+brat_conversion	AFP_ENG_20030311.0491	E6	t98	suits	Justice_Sue	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E7	t102	auctions	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E8	t125	settlement	Transaction_Transfer-Money	Other	1
+brat_conversion	AFP_ENG_20030311.0491	E9	t135	pay	Transaction_Transfer-Money	Other	1
+brat_conversion	AFP_ENG_20030311.0491	E10	t177,t179	pursue cases	Justice_Sue	Other	1
+brat_conversion	AFP_ENG_20030311.0491	E11	t185	litigation	Justice_Sue	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E12	t189	auctions	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E13	t224	auctions	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E14	t219	claims	Justice_Sue	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E15	t249	convicted	Justice_Convict	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E16	t278	sentenced	Justice_Sentence	Actual	1
+brat_conversion	AFP_ENG_20030311.0491	E17	t330	provide	Transaction_Transfer-Ownership	Other	1
+brat_conversion	AFP_ENG_20030311.0491	E18	t381	funded	Transaction_Transfer-Money	Other	1
+brat_conversion	AFP_ENG_20030311.0491	E19	t384	payments	Transaction_Transfer-Money	Other	1
+brat_conversion	AFP_ENG_20030311.0491	E20	t161	auction	Transaction_Transfer-Ownership	Generic	1
+#EndOfDocument
+#BeginOfDocument AFP_ENG_20030319.0879
+brat_conversion	AFP_ENG_20030319.0879	E1	t26	resigns	Personnel_End-Position	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E2	t60	quit	Personnel_End-Position	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E3	t90,t91	took on	Personnel_Start-Position	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E4	t161,t162	step aside	Personnel_End-Position	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E5	t179	sale	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E6	t199	received	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E7	t216	received	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E8	t411	telecoms	Contact_Communicate	Generic	1
+brat_conversion	AFP_ENG_20030319.0879	E9	t269	replace	Personnel_Start-Position	Other	1
+brat_conversion	AFP_ENG_20030319.0879	E10	t305	ending	Personnel_End-Position	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E11	t349	removal	Personnel_End-Position	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E12	t363	sales	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E13	t374	loss	Transaction_Transfer-Money	Actual	1
+brat_conversion	AFP_ENG_20030319.0879	E14	t448	sale	Transaction_Transfer-Ownership	Other	1
+brat_conversion	AFP_ENG_20030319.0879	E15	t483	divesting	Transaction_Transfer-Ownership	Other	1
+brat_conversion	AFP_ENG_20030319.0879	E16	t489	take	Transaction_Transfer-Ownership	Other	1
+brat_conversion	AFP_ENG_20030319.0879	E17	t446	spinoff	Business_Start-Org	Other	1
+#EndOfDocument
+#BeginOfDocument AFP_ENG_20030323.0020
+brat_conversion	AFP_ENG_20030323.0020	E1	t32	demonstrations	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E2	t63	arrested	Justice_Arrest-Jail	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E3	t67	clashed	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E4	t77	rally	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E5	t86,t87,t88,t89	took to the streets	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E6	t102	marches	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E7	t117	arrested	Justice_Arrest-Jail	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E8	t129	rally	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E9	t148	clashes	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E10	t171,t173	attended rally	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E11	t230	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E12	t240	intervention	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E13	t291	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E14	t294	unelected	Personnel_Elect	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E15	t298	unelected	Personnel_Elect	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E16	t304,t307	Take away	Transaction_Transfer-Ownership	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E17	t336,t337	bombing campaign	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E18	t345	drove	Movement_Transport-Person	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E19	t351,t353	attend rally	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E20	t378	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E21	t388	gathered	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E22	t451	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E23	t457	protests	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E24	t467	bring	Movement_Transport-Person	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E25	t476	former	Personnel_End-Position	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E26	t527	Invading	Conflict_Attack	Generic	1
+brat_conversion	AFP_ENG_20030323.0020	E27	t535	war	Conflict_Attack	Generic	1
+brat_conversion	AFP_ENG_20030323.0020	E28	t537	terrorism	Conflict_Attack	Generic	1
+brat_conversion	AFP_ENG_20030323.0020	E29	t555,t556	Bombs Fall	Conflict_Attack	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E30	t564	thronged	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E31	t579	arrested	Justice_Arrest-Jail	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E32	t596	picketed	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E33	t609	protested	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E34	t617	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E35	t652	explosions	Conflict_Attack	Generic	1
+brat_conversion	AFP_ENG_20030323.0020	E36	t31	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E37	t678	invasion	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E38	t84	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E39	t122	go	Movement_Transport-Person	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E40	t204	rally	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E41	t218	terrorism	Conflict_Attack	Generic	1
+brat_conversion	AFP_ENG_20030323.0020	E42	t314	marched	Movement_Transport-Person	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E43	t670	demonstrations	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E44	t691,t692	turning out	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E45	t870	dead	Life_Die	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E46	t732,t734	kept apart	Movement_Transport-Person	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E47	t761	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E48	t777	go	Personnel_End-Position	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E49	t787	it	Personnel_End-Position	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E50	t814	bombing	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E51	t817	It	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E52	t885	fighting	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E53	t904	fought	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E54	t911	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E55	t912	protests	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E56	t924	bombing	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E57	t933,t934,t935,t936	took to the streets	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E58	t949	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E59	t957	War	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E60	t974,t975	turned out	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E61	t987	gathered	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E62	t1008	block	Movement_Transport-Person	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E63	t1022	snarl	Movement_Transport-Person	Other	1
+brat_conversion	AFP_ENG_20030323.0020	E64	t1029	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E65	t1037	arrested	Justice_Arrest-Jail	Actual	1
+brat_conversion	AFP_ENG_20030323.0020	E66	t730	riot	Conflict_Demonstrate	Generic	1
+brat_conversion	AFP_ENG_20030323.0020	E67	t710	war	Conflict_Attack	Actual	1
+#EndOfDocument
+#BeginOfDocument AFP_ENG_20030401.0476
+brat_conversion	AFP_ENG_20030401.0476	E1	t26	named	Personnel_Start-Position	Actual	1
+brat_conversion	AFP_ENG_20030401.0476	E2	t55	named	Personnel_Start-Position	Actual	1
+brat_conversion	AFP_ENG_20030401.0476	E3	t80	Former	Personnel_End-Position	Actual	1
+brat_conversion	AFP_ENG_20030401.0476	E4	t85,t93	begins jobs	Personnel_Start-Position	Other	1
+brat_conversion	AFP_ENG_20030401.0476	E5	t106,t107	steps down	Personnel_End-Position	Other	1
+brat_conversion	AFP_ENG_20030401.0476	E6	t111	leaving	Personnel_End-Position	Other	1
+brat_conversion	AFP_ENG_20030401.0476	E7	t113	become	Personnel_Start-Position	Other	1
+brat_conversion	AFP_ENG_20030401.0476	E8	t214	formerly	Personnel_End-Position	Actual	1
+#EndOfDocument
+#BeginOfDocument AFP_ENG_20030417.0004
+brat_conversion	AFP_ENG_20030417.0004	E1	t25	hacked	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E2	t27	death	Life_Die	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E3	t60	hacked	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E4	t62	death	Life_Die	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E5	t88	attacked	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E6	t116	dragged	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E7	t125	killed	Life_Die	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E8	t133	fleeing	Movement_Transport-Person	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E9	t206	eliminate	Life_Die	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E10	t216	arrested	Justice_Arrest-Jail	Actual	1
+brat_conversion	AFP_ENG_20030417.0004	E11	t223	killings	Life_Die	Actual	1
+#EndOfDocument
+#BeginOfDocument AFP_ENG_20030417.0307
+brat_conversion	AFP_ENG_20030417.0307	E1	t115	conflict	Conflict_Attack	Other	1
+brat_conversion	AFP_ENG_20030417.0307	E2	t158	advised	Contact_Communicate	Actual	1
+brat_conversion	AFP_ENG_20030417.0307	E3	t191	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0307	E4	t265	Negotiations	Contact_Communicate	Other	1
+brat_conversion	AFP_ENG_20030417.0307	E5	t303	meeting	Contact_Communicate	Other	1
+brat_conversion	AFP_ENG_20030417.0307	E6	t338,t340,t341	placing telephone call	Contact_Communicate	Actual	1
+brat_conversion	AFP_ENG_20030417.0307	E7	t353	spoken	Contact_Communicate	Other	1
+brat_conversion	AFP_ENG_20030417.0307	E8	t364	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0307	E9	t434	antiwar	Transaction_Transfer-Money	NOT_ANNOTATED	1
+brat_conversion	AFP_ENG_20030417.0307	E10	t468	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0307	E11	t538	spoke	Contact_Communicate	Actual	1
+brat_conversion	AFP_ENG_20030417.0307	E12	t556	meet	Contact_Meet	Other	1
+brat_conversion	AFP_ENG_20030417.0307	E13	t584	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0307	E14	t661	war	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030417.0307	E15	t704	revenues	Transaction_Transfer-Money	Generic	1
+brat_conversion	AFP_ENG_20030417.0307	E16	t711	revenues	Transaction_Transfer-Money	Generic	1
+#EndOfDocument
+#BeginOfDocument AFP_ENG_20030418.0556
+brat_conversion	AFP_ENG_20030418.0556	E1	t32	pay	Transaction_Transfer-Money	Other	1
+brat_conversion	AFP_ENG_20030418.0556	E2	t64	pay	Transaction_Transfer-Money	Other	1
+brat_conversion	AFP_ENG_20030418.0556	E3	t76	settlement	Transaction_Transfer-Money	Actual	1
+brat_conversion	AFP_ENG_20030418.0556	E4	t126	split	Transaction_Transfer-Ownership	Other	1
+brat_conversion	AFP_ENG_20030418.0556	E5	t156	get	Transaction_Transfer-Ownership	Other	1
+brat_conversion	AFP_ENG_20030418.0556	E6	t236	divorce	Life_Divorce	Actual	1
+brat_conversion	AFP_ENG_20030418.0556	E7	t75	divorce	Life_Divorce	Actual	1
+brat_conversion	AFP_ENG_20030418.0556	E8	t286	received	Transaction_Transfer-Money	Actual	1
+brat_conversion	AFP_ENG_20030418.0556	E9	t327	divorce	Life_Divorce	Other	1
+brat_conversion	AFP_ENG_20030418.0556	E10	t332	marriage	Life_Marry	Actual	1
+#EndOfDocument
+#BeginOfDocument AFP_ENG_20030427.0118
+brat_conversion	AFP_ENG_20030427.0118	E1	t26,t28	gets imprisonment	Justice_Sentence	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E2	t52	sentenced	Justice_Sentence	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E3	t62	conviction	Justice_Convict	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E4	t83,t86	found guilty	Justice_Convict	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E5	t93,t94	protest rally	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E6	t105,t106,t107	verdict handed down	Justice_Convict	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E7	t114,t116,t117	ordered to pay	Justice_Fine	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E8	t135	accused	Justice_Charge-Indict	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E9	t137,t138	tearing down	Conflict_Attack	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E10	t151	demonstration	Conflict_Demonstrate	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E11	t157,t158	committed suicide	Life_Die	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E12	t180	shot	Life_Die	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E13	t194	convicted	Justice_Convict	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E14	t207	charged	Justice_Charge-Indict	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E15	t245	aquitted	Justice_Acquit	Actual	1
+brat_conversion	AFP_ENG_20030427.0118	E16	t252	uttering	Contact_Communicate	Other	1
+brat_conversion	AFP_ENG_20030427.0118	E17	t264,t265,t266	punishable by death	Justice_Execute	Generic	1
+brat_conversion	AFP_ENG_20030427.0118	E18	t281	executed	Justice_Execute	Generic	1
+brat_conversion	AFP_ENG_20030427.0118	E19	t316	feuds	Conflict_Attack	Generic	1
+brat_conversion	AFP_ENG_20030427.0118	E20	t311	persecute	Conflict_Attack	Generic	1
+#EndOfDocument
+#BeginOfDocument APW_ENG_20030417.0555
+brat_conversion	APW_ENG_20030417.0555	E1	t26	capture	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E2	t35	robbery	Transaction_Transfer-Money	Other	1
+brat_conversion	APW_ENG_20030417.0555	E3	t50	captured	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E4	t67,t68	round up	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E5	t81	robbery	Transaction_Transfer-Money	Other	1
+brat_conversion	APW_ENG_20030417.0555	E6	t89	share	Transaction_Transfer-Money	Other	1
+brat_conversion	APW_ENG_20030417.0555	E7	t113	detailed	Personnel_Start-Position	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E8	t118	looted	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E9	t116	recover	Transaction_Transfer-Ownership	Other	1
+brat_conversion	APW_ENG_20030417.0555	E10	t132	recover	Transaction_Transfer-Ownership	Other	1
+brat_conversion	APW_ENG_20030417.0555	E11	t149	fighting	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E12	t599	robbery	Transaction_Transfer-Money	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E13	t901	former	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E14	t234	meeting	Contact_Meet	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E15	t251	tell	Contact_Communicate	Other	1
+brat_conversion	APW_ENG_20030417.0555	E16	t255	go	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030417.0555	E17	t301	invasion	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E18	t315	capture	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E19	t427	executions	Justice_Execute	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E20	t448	netted	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E21	t455	taken	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E22	t491	captured	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E23	t513	looting	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E24	t1084	it	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E25	t542,t543,t544	act of lawlessness	Transaction_Transfer-Money	Other	1
+brat_conversion	APW_ENG_20030417.0555	E26	t552	robbery	Transaction_Transfer-Money	Other	1
+brat_conversion	APW_ENG_20030417.0555	E27	t567,t568	took away	Transaction_Transfer-Money	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E28	t577	blown	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E29	t584	dropped	Movement_Transport-Person	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E30	t588,t589,t592	bring out cash	Transaction_Transfer-Money	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E31	t605	gathered	Conflict_Demonstrate	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E32	t1097	it	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E33	t617	riot	Conflict_Demonstrate	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E34	t623	it	Conflict_Demonstrate	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E35	t635	robbery	Transaction_Transfer-Money	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E36	t641	arrested	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E38	t665	distribution	Transaction_Transfer-Money	Generic	1
+brat_conversion	APW_ENG_20030417.0555	E39	t701	visit	Movement_Transport-Person	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E40	t706	looting	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E41	t746	gathered	Conflict_Demonstrate	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E43	t761	looted	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E44	t767	recovered	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E46	t851	killed	Life_Die	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E47	t855	clashes	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E48	t880	clashes	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E49	t891	fighting	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E50	t957	took	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E51	t961	gave	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E52	t978	looting	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E53	t984	met	Contact_Meet	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E55	t1007	meeting	Contact_Meet	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E56	t1012	looting	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E57	t1030	remove	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E58	t1052	looting	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E59	t1057	action	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030417.0555	E60	t133	stolen	Transaction_Transfer-Ownership	Actual	1
+#EndOfDocument
+#BeginOfDocument APW_ENG_20030418.0084
+brat_conversion	APW_ENG_20030418.0084	E1	t29	appeal	Justice_Appeal	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E2	t32	conviction	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E3	t53	appeal	Justice_Appeal	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E4	t55	jailed	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E5	t64	conviction	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E6	t223	conviction	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E7	t87	verdict	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E8	t99,t101	found guilty	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E9	t126	appeal	Justice_Appeal	Other	1
+brat_conversion	APW_ENG_20030418.0084	E10	t163	appeal	Justice_Appeal	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E11	t191	released	Justice_Release-Parole	Other	1
+brat_conversion	APW_ENG_20030418.0084	E12	t211	appeal	Justice_Appeal	Other	1
+brat_conversion	APW_ENG_20030418.0084	E13	t328	verdict	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E14	t247,t253	serving sentence	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E15	t265	fired	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E16	t283	protests	Conflict_Demonstrate	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E17	t289	arrested	Justice_Arrest-Jail	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E18	t291	charged	Justice_Charge-Indict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E19	t293	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E20	t486	appeal	Justice_Appeal	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E21	t498	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E22	t508	sentenced	Justice_Sentence	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E23	t520	free	Justice_Release-Parole	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E24	t531	ordered	Justice_Sentence	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E25	t56	former	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E26	t107	former	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E27	t143	verdict	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E28	t226	charges	Justice_Charge-Indict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E29	t298	charges	Justice_Charge-Indict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E30	t303	charges	Justice_Charge-Indict	Actual	1
+brat_conversion	APW_ENG_20030418.0084	E31	t524	appeal	Justice_Appeal	Other	1
+#EndOfDocument
+#BeginOfDocument APW_ENG_20030502.0686
+brat_conversion	APW_ENG_20030502.0686	E1	t214	providing	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E2	t235	postwar	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E3	t338	conference	Contact_Meet	Other	1
+brat_conversion	APW_ENG_20030502.0686	E4	t374	returned	Movement_Transport-Person	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E5	t377	tour	Movement_Transport-Person	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E6	t455	sent	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030502.0686	E7	t534	meet	Contact_Meet	Other	1
+brat_conversion	APW_ENG_20030502.0686	E8	t621	war	Conflict_Attack	Generic	1
+brat_conversion	APW_ENG_20030502.0686	E10	t738	war	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E11	t750	send	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030502.0686	E12	t758	action	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030502.0686	E13	t800	conference	Contact_Meet	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E14	t925	send	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030502.0686	E15	t949,t950	donate money	Transaction_Transfer-Money	Other	1
+brat_conversion	APW_ENG_20030502.0686	E16	t957	met	Contact_Meet	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E17	t983	war	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E18	t994	raids	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E19	t1003	fired	Conflict_Attack	Other	1
+brat_conversion	APW_ENG_20030502.0686	E20	t1016	discussed	Contact_Meet	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E21	t161	displaced	Movement_Transport-Person	Actual	1
+brat_conversion	APW_ENG_20030502.0686	E22	t473	that	Movement_Transport-Person	Other	1
+#EndOfDocument
+#BeginOfDocument APW_ENG_20030527.0232
+brat_conversion	APW_ENG_20030527.0232	E1	t26	kill	Life_Die	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E2	t30	injure	Life_Injure	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E3	t48	shot	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E4	t50	killed	Life_Die	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E5	t61	injured	Life_Injure	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E6	t71	conflicts	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E7	t86	talks	Contact_Communicate	Other	1
+brat_conversion	APW_ENG_20030527.0232	E8	t95	shootings	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E9	t106	attacks	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E10	t109	throwing	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E11	t173	negotiations	Contact_Communicate	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E12	t176	summit	Contact_Meet	Other	1
+brat_conversion	APW_ENG_20030527.0232	E13	t225	meeting	Contact_Meet	Other	1
+brat_conversion	APW_ENG_20030527.0232	E14	t235	summit	Contact_Meet	Other	1
+brat_conversion	APW_ENG_20030527.0232	E15	t257	shot	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E16	t259	killed	Life_Die	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E17	t269	wounded	Life_Injure	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E18	t278,t279	opening fire	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E19	t304	fired	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E20	t307	hit	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E21	t315	threw	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E22	t335,t336	opened fire	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E23	t339	throwing	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E24	t342	hitting	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E25	t356	wounding	Life_Injure	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E26	t360	hitting	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E27	t373	wounding	Life_Injure	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E28	t389	struck	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E29	t402	hurt	Life_Injure	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E30	t420	protests	Conflict_Demonstrate	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E31	t425,t426,t427	use live fire	Conflict_Attack	Other	1
+brat_conversion	APW_ENG_20030527.0232	E32	t451	injured	Life_Injure	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E33	t436	injuries	Life_Injure	Other	1
+brat_conversion	APW_ENG_20030527.0232	E34	t455	detonating	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E35	t484	detonated	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E36	t493	arrived	Movement_Transport-Person	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E37	t498	exploded	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E38	t501	injuring	Life_Injure	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E39	t510	killed	Life_Die	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E40	t519	infiltrating	Movement_Transport-Person	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E41	t556	killed	Life_Die	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E42	t559,t560,t561	exchange of gunfire	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E43	t568	fired	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E44	t588	injuries	Life_Injure	Other	1
+brat_conversion	APW_ENG_20030527.0232	E45	t591	incident	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E46	t609	hit	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E47	t625,t628	fire directed	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E48	t661	leaving	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030527.0232	E49	t671	fired	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E50	t679	skirt	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030527.0232	E51	t684	violence	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E52	t730	withdrawal	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030527.0232	E53	t851	leave	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030527.0232	E54	t899	violence	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E55	t929	conflict	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E56	t934	withdrawal	Movement_Transport-Person	Other	1
+brat_conversion	APW_ENG_20030527.0232	E57	t1029	violence	Conflict_Attack	Generic	1
+brat_conversion	APW_ENG_20030527.0232	E58	t37	violence	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030527.0232	E59	t419	throwing	Conflict_Attack	Actual	1
+#EndOfDocument
+#BeginOfDocument APW_ENG_20030603.0303
+brat_conversion	APW_ENG_20030603.0303	E1	t29	acquitted	Justice_Acquit	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E2	t32	warfare	Conflict_Attack	Generic	1
+brat_conversion	APW_ENG_20030603.0303	E3	t70	accused	Justice_Charge-Indict	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E4	t66	warfare	Conflict_Attack	Generic	1
+brat_conversion	APW_ENG_20030603.0303	E5	t74	poison	Conflict_Attack	Other	1
+brat_conversion	APW_ENG_20030603.0303	E6	t81	acquitted	Justice_Acquit	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E7	t102	accused	Justice_Charge-Indict	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E8	t116	destroying	Conflict_Attack	Other	1
+brat_conversion	APW_ENG_20030603.0303	E9	t138	appeals	Justice_Appeal	Generic	1
+brat_conversion	APW_ENG_20030603.0303	E10	t150	tried	Justice_Trial-Hearing	Other	1
+brat_conversion	APW_ENG_20030603.0303	E11	t154	acquittal	Justice_Acquit	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E12	t87	charges	Justice_Charge-Indict	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E13	t59	retry	Justice_Trial-Hearing	Other	1
+brat_conversion	APW_ENG_20030603.0303	E14	t167	appeal	Justice_Appeal	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E15	t186	trial	Justice_Trial-Hearing	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E16	t199	appeal	Justice_Appeal	Generic	1
+brat_conversion	APW_ENG_20030603.0303	E17	t230	trial	Justice_Trial-Hearing	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E18	t252	poisoned	Conflict_Attack	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E19	t292	accused	Justice_Charge-Indict	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E20	t294	siphoning	Transaction_Transfer-Money	Other	1
+brat_conversion	APW_ENG_20030603.0303	E21	t302	finance	Transaction_Transfer-Money	Other	1
+brat_conversion	APW_ENG_20030603.0303	E22	t312	selling	Transaction_Transfer-Ownership	Other	1
+brat_conversion	APW_ENG_20030603.0303	E23	t269	former	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030603.0303	E24	t121	ruling	Justice_Trial-Hearing	Other	1
+brat_conversion	APW_ENG_20030603.0303	E25	t52	ruled	Justice_Trial-Hearing	Other	1
+#EndOfDocument
+#BeginOfDocument APW_ENG_20030610.0010
+brat_conversion	APW_ENG_20030610.0010	E1	t25	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E2	t31	trial	Justice_Trial-Hearing	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E3	t33	appeal	Justice_Appeal	Other	1
+brat_conversion	APW_ENG_20030610.0010	E4	t35	sentences	Justice_Sentence	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E5	t48	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E6	t58	trial	Justice_Trial-Hearing	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E7	t70	appeal	Justice_Appeal	Other	1
+brat_conversion	APW_ENG_20030610.0010	E8	t73	verdicts	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E9	t84	former	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E10	t92	former	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E11	t102	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E12	t104,t105	receiving bribes	Transaction_Transfer-Money	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E13	t117	trial	Justice_Trial-Hearing	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E14	t161	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E15	t171	sentenced	Justice_Sentence	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E16	t187	appeal	Justice_Appeal	Other	1
+brat_conversion	APW_ENG_20030610.0010	E17	t193	former	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E18	t204	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E19	t206,t210	receiving bribes	Transaction_Transfer-Money	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E20	t223	release	Justice_Release-Parole	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E21	t232	sentenced	Justice_Sentence	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E22	t241	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E23	t243	receiving	Transaction_Transfer-Ownership	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E24	t261	sentenced	Justice_Sentence	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E25	t273	sentenced	Justice_Sentence	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E26	t290,t291	filed appeals	Justice_Appeal	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E27	t302,t303	stood trial	Justice_Trial-Hearing	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E28	t315	convicted	Justice_Convict	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E29	t320	acquitted	Justice_Acquit	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E30	t346	appeal	Justice_Appeal	Other	1
+brat_conversion	APW_ENG_20030610.0010	E31	t62	former	Personnel_End-Position	Actual	1
+brat_conversion	APW_ENG_20030610.0010	E32	t348	sentences	Justice_Sentence	Actual	1
+#EndOfDocument
+#BeginOfDocument XIN_ENG_20030609.0118
+brat_conversion	XIN_ENG_20030609.0118	E1	t26	appoints	Personnel_Nominate	Actual	1
+brat_conversion	XIN_ENG_20030609.0118	E2	t47	appointed	Personnel_Nominate	Actual	1
+brat_conversion	XIN_ENG_20030609.0118	E3	t58	replace	Personnel_Start-Position	Actual	1
+brat_conversion	XIN_ENG_20030609.0118	E4	t62	resigned	Personnel_End-Position	Actual	1
+brat_conversion	XIN_ENG_20030609.0118	E5	t107,t109	submitted resignation	Personnel_End-Position	Actual	1
+brat_conversion	XIN_ENG_20030609.0118	E6	t117	spending	Transaction_Transfer-Money	Actual	1
+brat_conversion	XIN_ENG_20030609.0118	E7	t189	quit	Personnel_End-Position	Other	1
+brat_conversion	XIN_ENG_20030609.0118	E8	t196,t197,t199	give up position	Personnel_End-Position	Other	1
+brat_conversion	XIN_ENG_20030609.0118	E9	t232	appointment	Personnel_Nominate	Actual	1
+brat_conversion	XIN_ENG_20030609.0118	E10	t175,t176	took over	Personnel_Start-Position	Actual	1
+#EndOfDocument

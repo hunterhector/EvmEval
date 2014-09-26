@@ -49,6 +49,8 @@ For brat annotation files, they normally have the following name:
 
 In such case, the file extension is ".tkn.ann", the converter assume this as the default extention. If not, change it with "-ae" argument
 
+The example_run.sh shell demostrate how to deal with extensions other than the default ones
+
 Tokenization table files format:
 --------------------------------
 These are tab-delimited files which map the tokens to their tokenized files. A mapping table contains 3 columns for each row, and the rows contain an orderd listing of the

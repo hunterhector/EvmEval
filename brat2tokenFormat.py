@@ -26,7 +26,7 @@ events = {}  # all events
 atts = {}  # all attributes
 
 out = "converted"
-outExt = "tbf"  # short for token based format
+outExt = ".tbf"  # short for token based format
 engineId = "brat_conversion"
 tokenJoiner = ","
 
@@ -143,7 +143,7 @@ def main():
         if v.errno != errno.EEXIST:
             raise
 
-    out_path = out + "." + outExt
+    out_path = out + outExt
     if not args.overwrite and os.path.isfile(out_path):
         logger.error(
             "Output path [%s] already exists, "

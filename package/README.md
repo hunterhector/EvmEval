@@ -11,23 +11,23 @@ Use the example shell scripts "example_run.sh" to perform all the above steps in
 
 Contents:
 ---------
-├── LICENSE							Contains Licenses
-│   ├── README
-│   └── apache-v2.0
-├── README.md						This file
-├── brat2tokenFormat.py				The BRAT to evaluation format converter
-├── example_data					Example data directory
-│   ├── README.txt						Explain example data
-│   ├── ann								Example annotations folder
-│   │   └── example.tkn.ann1				One example annotation file
-│   ├── sample_system_A.tbf				Example system output A
-│   ├── sample_system_B.tbf				Example system output B
-│   ├── tkn								Example token tables folder
-│   │   └── example.txt.tab1				One example token table
-│   └── txt								Example tokenized data
-│       └── example.txt						One example tokenized file
-├── example_run.sh					Shell script to perform a example run of both conversion and scoring
-└── scorer.py						The scorer
+	├── LICENSE							Contains Licenses
+	│   ├── README
+	│   └── apache-v2.0
+	├── README.md						This file
+	├── brat2tokenFormat.py				The BRAT to evaluation format converter
+	├── example_data					Example data directory
+	│   ├── README.txt						Explain example data
+	│   ├── ann								Example annotations folder
+	│   │   └── example.tkn.ann1				One example annotation file
+	│   ├── sample_system_A.tbf				Example system output A
+	│   ├── sample_system_B.tbf				Example system output B
+	│   ├── tkn								Example token tables folder
+	│   │   └── example.txt.tab1				One example token table
+	│   └── txt								Example tokenized data
+	│       └── example.txt						One example tokenized file
+	├── example_run.sh					Shell script to perform a example run of both conversion and scoring
+	└── scorer.py						The scorer
 
 
 Naming Convention:

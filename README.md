@@ -1,10 +1,9 @@
 Event Mention Evaluation (EvmEval)
 =========
 
-This repository conducts pre-tokenization, file conversion, and scoring for event mention detection. It consists of the following three pieces of code:
- 1. A token file factory based on the Stanford tokenizer
- 2. A simple converter from Brat annotation tool format to CMU detection format
- 3. A scorer that can score system performance based on CMU detection format
+This repository conducts, file conversion, and scoring for event mention detection. It consists of the following three pieces of code:
+ 1. A simple converter from Brat annotation tool format to CMU detection format
+ 2. A scorer that can score system performance based on CMU detection format
 
 To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tokenFormat.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. 
 

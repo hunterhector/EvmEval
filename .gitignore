@@ -59,4 +59,5 @@ docs/_build/
 data/tkn/
 data/source/
 data/R55_test_data/
-data/ann
+data/ann 
+data/private/

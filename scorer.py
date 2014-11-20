@@ -368,7 +368,7 @@ def parse_token_ids(s, invisible_ids):
         if token_id not in invisible_ids:
             filtered_token_ids.add(token_id)
         else:
-            logger.debug("Token Id %d is filtered" % token_id)
+            logger.debug("Token Id %s is filtered" % token_id)
             pass
     return filtered_token_ids
 

@@ -1,0 +1,17 @@
+========Document results==========
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+1.00	0.00	1	1.0000	1.0000	1.0000	1.0000	1.0000	example1
+TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
+0.00	0.00	2	nan	0.0000	nan	0.0000	0.0000	example2
+
+=======Final Results=========
+Precision (Micro Average): 1.0000
+Recall (Micro Average):0.3333
+F1 (Micro Average):0.5000
+Mention type detection accuracy (Micro Average):0.3333
+Mention realis status accuracy (Micro Average):0.3333
+Precision (Macro Average): 0.5000
+Recall (Macro Average): 0.5000
+F1 (Macro Average): 0.5000
+Mention type detection accuracy (Macro Average):0.5000
+Mention realis status accuracy (Macro Average):0.5000

@@ -4,12 +4,12 @@
     A simple scorer that reads the CMU Event Mention Detection Format
     data and produce a mention based F-Scores
 
-    This scorer needs will require token files as well to conduct evaluation
+    This scorer also require token files to conduct evaluation
 """
 
 # Change log:
-# 1. If system produce no mentions, the scorer should penalize it instead of ignore it
-
+#   1. If system produce no mentions, the scorer should penalize it instead of ignore it
+#   2. Enhance the output of the comparison file, add the system actual output side by side for easy debug
 
 import math
 import errno
@@ -200,6 +200,7 @@ def main():
             pass
         elif math.isnan(prec):
             #system produce no mentions, accumulate denominator
+            print 'System produce nothing for document [%s], assigning 0 scores' % docId
             valid_docs += 1
             total_gold_mentions += goldMentions
         else:
@@ -261,8 +262,9 @@ def main():
     diff_out.close()
 
 
-def get_invisible_word_ids(g_file_name):
+def read_token_ids(g_file_name):
     invisible_ids = set()
+    id2token_map  = {}
 
     token_file_path = os.path.join(token_dir, g_file_name + tokenFileExt)
 
@@ -277,8 +279,14 @@ def get_invisible_word_ids(g_file_name):
             if len(fields) < 4:
                 logger.debug("Wierd token line " + tline)
                 continue
-            if fields[1].lower().strip().rstrip() in invisible_words:
-                invisible_ids.add(fields[0])
+
+            token = fields[1].lower().strip().rstrip()
+            token_id = fields[0]
+
+            id2token_map[token_id] = token
+
+            if token in invisible_words:
+                invisible_ids.add(token_id)
 
     except IOError:
         logger.debug(
@@ -286,7 +294,7 @@ def get_invisible_word_ids(g_file_name):
             "will use empty invisible words list" % (g_file_name, token_file_path))
         pass
 
-    return invisible_ids
+    return invisible_ids, id2token_map
 
 
 def read_all_doc(gf, sf):
@@ -308,16 +316,16 @@ def read_all_doc(gf, sf):
     s_minus_g = s_id_set - common_id_set
 
     if len(g_minus_s) > 0:
-        logger.warning("The following document are not found in system")
+        logger.warning("[Warning] The following document are not found in system but in gold standard")
         for d in g_minus_s:
-            logger.warning("\t- " + d)
+            logger.warning("  - " + d)
 
     if len(s_minus_g) > 0:
-        logger.warning("The following document are not found in gold standard")
+        logger.warning("\tThe following document are not found in gold standard but in system")
         for d in s_minus_g:
-            logger.warning("\t- " + d)
+            logger.warning("  - " + d)
 
-    doc_ids_to_score = sorted(common_id_set)
+    doc_ids_to_score = sorted(g_id_set)
 
 
 def read_docs_with_doc_id(f):
@@ -351,7 +359,11 @@ def get_next_doc():
     if evaluating_index < len(doc_ids_to_score):
         doc_id = doc_ids_to_score[evaluating_index]
         evaluating_index += 1
-        return True, gold_docs[doc_id], system_docs[doc_id], doc_id
+
+        if doc_id in system_docs:
+            return True, gold_docs[doc_id], system_docs[doc_id], doc_id
+        else:
+            return True, gold_docs[doc_id], [], doc_id
     else:
         return False, [], [], "End_of_docs"
 
@@ -504,13 +516,30 @@ def compute_overlap_score(system_outputs, gold_annos, eval_mode):
         return compute_char_overlap_score(system_outputs, gold_annos)
 
 
+def format_system_results(system_mention_table, id2token_map, system_index):
+    system_outputs, system_mention_type, system_realis = system_mention_table[system_index]
+
+    ids = ""
+    tokens = ""
+
+    id_sep = ""
+    token_sep = ""
+    for system_output_id in system_outputs:
+        ids += id_sep + system_output_id
+        tokens += token_sep + id2token_map[system_output_id]
+        id_sep = ","
+        token_sep = " "
+
+    return ids,tokens
+
+
 def evaluate(eval_mode):
     res, g_lines, s_lines, doc_id = get_next_doc()
 
     if not res:
         return False
 
-    invisible_ids = get_invisible_word_ids(doc_id) \
+    invisible_ids, id2token_map = read_token_ids(doc_id) \
         if eval_mode == EvalMethod.Token else set()
 
     system_id = ""
@@ -600,10 +629,21 @@ def evaluate(eval_mode):
     diff_out.write(bod_marker + " " + doc_id + "\n")
     for gIndex, gLine in enumerate(g_lines):
         gold_content = gLine.split("\t", 1)
-        system_index, mapping_score = assigned_gold_2_system_mapping[gIndex]
+        system_indices, mapping_score = assigned_gold_2_system_mapping[gIndex]
         score_out = "%.4f" % mapping_score if mapping_score != -1 else "-"
-        diff_out.write("%s\t%s\t%s\n" %
+        diff_out.write("%s\t%s\t%s" %
                        (system_id, gold_content[1], score_out))
+
+        if len(system_indices) == 0:
+            diff_out.write("\t|\tMISS")
+
+        for system_index in system_indices:
+            system_outputs, system_mention_type, system_realis = system_mention_table[system_index]
+            system_id_str, token_str = format_system_results(system_mention_table,id2token_map,system_index)
+            diff_out.write("\t|\t%s\t%s\t%s\t%s" % (system_id_str, token_str, system_mention_type, system_realis))
+
+        diff_out.write("\n")
+
     diff_out.write(eod_marker + " " + "\n")
 
     # unmapped system mentions are considered as false positive

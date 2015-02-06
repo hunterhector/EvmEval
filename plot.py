@@ -11,6 +11,10 @@ def plot(plt,fig_num,subplot_num,data,title,l,h):
     plt.ylim((l,h))
 
 fname = sys.argv[1]
+outpath = sys.argv[2]
+
+if not os.path.isdir(outpath) :
+    os.mkdir(outpath)
 
 max_num_events = 60
 
@@ -25,11 +29,16 @@ elif os.path.isfile(fname):
 f_num = 0
 
 for f in fs:
-    document_result_mode = True
+    document_result_mode = False
     header = []
     all_scores = []
 
+    if os.path.isdir(f.name):
+        print f.name
+        continue
+
     print 'Processing '+f.name
+    
     for line in f:
         if "Document results" in line:
             document_result_mode = True
@@ -87,10 +96,10 @@ for f in fs:
             plot(plt,f_num + 3,313,ss,'Combined',0,1.2)
 
     plt.figure(f_num + 1)
-    plt.savefig(f.name+'_counts.png', bbox_inches='tight')
+    plt.savefig(outpath + '/' + os.path.basename(f.name) + '_counts.png', bbox_inches='tight')
     plt.figure(f_num + 2)
-    plt.savefig(f.name+'_PRF.png', bbox_inches = 'tight')
+    plt.savefig(outpath + '/' + os.path.basename(f.name) + '_PRF.png', bbox_inches = 'tight')
     plt.figure(f_num + 3)
-    plt.savefig(f.name+'_mentoin_realis.png', bbox_inches = 'tight')
+    plt.savefig(outpath + '/' + os.path.basename(f.name) +'_mentoin_realis.png', bbox_inches = 'tight')
 
     f_num += 3

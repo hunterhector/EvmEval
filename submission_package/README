@@ -1,6 +1,0 @@
-This package contains the following items:
-
-1. README					This document
-2. validator.py				A python based validation tool to validate the basic syntax of the system submission
-3. brat2tokenFormat.py		A python based converter that can convert Brat annotation tool output to system output, this tool is intended for annotators who use the Brat tool
-4. Event-Mention-Detection-scoring-latest.pdf	The scoring guideline, which defines the format of input, output, and how scoring is performed

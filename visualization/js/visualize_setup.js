@@ -3,7 +3,7 @@ function loadJson(relativePath){
     $.ajax({
     'async': false,
     'global': false,
-    'url': 'http://localhost:8000/'+relativePath,
+    'url': relativePath,
     'dataType': "json",
     'success': function (data) {
         jsonData = data;

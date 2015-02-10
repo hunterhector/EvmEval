@@ -139,6 +139,15 @@
         }, 
         {
             "values": {
+                "NOT_ANNOTATED": {
+                    "glyph": "N/A"
+                }
+            }, 
+            "bool": "NOT_ANNOTATED", 
+            "type": "NOT_ANNOTATED"
+        }, 
+        {
+            "values": {
                 "realis_wrong": {
                     "glyph": "*"
                 }

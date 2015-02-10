@@ -2,6 +2,8 @@
 
 """
     A validator that check whether the format can be parsed by the scorer
+
+    Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
 import errno
 import argparse
@@ -27,7 +29,7 @@ evaluating_index = 0
 token_dir = "."
 
 token_joiner = ","
-tokenFileExt = ".txt.tab"
+token_file_ext = ".txt.tab"
 
 span_seperator = ";"
 span_joiner = "_"
@@ -54,7 +56,7 @@ def main():
     global diff_out
     global eval_out
     global token_dir
-    global tokenFileExt
+    global token_file_ext
 
     parser = argparse.ArgumentParser(
         description="Validates the system output.")
@@ -105,7 +107,7 @@ def main():
 def get_invisible_word_ids(g_file_name):
     invisible_ids = set()
 
-    token_file_path = os.path.join(token_dir, g_file_name + tokenFileExt)
+    token_file_path = os.path.join(token_dir, g_file_name + token_file_ext)
 
     try:
         token_file = open(token_file_path)

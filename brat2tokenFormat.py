@@ -4,6 +4,8 @@
     A simple piece of python code that could convert the Brat annotation
 tool format into Event Mention Detection format for easy evaluation. For
 detailed features and usage please refer to the README file
+
+    Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
 import argparse
 import logging

@@ -5,11 +5,15 @@
     data and produce a mention based F-Scores
 
     This scorer also require token files to conduct evaluation
+
+    Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
 
-# Change log:
-#   1. If system produce no mentions, the scorer should penalize it instead of ignore it
-#   2. Enhance the output of the comparison file, add the system actual output side by side for easy debug
+# Change log v1.1:
+# 1. If system produce no mentions, the scorer should penalize it instead of ignore it
+# 2. Enhance the output of the comparison file, add the system actual output side by side for easy debug
+# 3. Add the ability to compare system and gold mentions using Brat
+# 4. For realis type not annotated, give full credit
 
 import math
 import errno
@@ -18,14 +22,15 @@ import logging
 import sys
 import os
 import heapq
+import bratDiff
+
 
 comment_marker = "#"
 bod_marker = "#BeginOfDocument"  # mark begin of a document
 eod_marker = "#EndOfDocument"  # mark end of a document
 
 logger = logging.getLogger()
-stream_handler = logging.StreamHandler(sys.stdout)
-logger.addHandler(stream_handler)
+
 
 # run this on an annotation to confirm
 invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
@@ -34,19 +39,29 @@ invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
 gold_docs = {}
 system_docs = {}
 doc_ids_to_score = []
+all_possible_types = set()
 evaluating_index = 0
 token_dir = "."
+text_dir = "."
 
 diff_out = None
 eval_out = None
 
 docScores = []
 
+token_file_ext = ".txt.tab"
+source_file_ext = ".tkn.txt"
+
 token_joiner = ","
-tokenFileExt = ".txt.tab"
 
 span_seperator = ";"
 span_joiner = "_"
+
+visualization_path = "visualization"
+visualization_json_data_subpath = "json"
+do_visualization = False
+
+missingAttributePlaceholder = "NOT_ANNOTATED"
 
 
 class EvalMethod:
@@ -72,7 +87,11 @@ def main():
     global diff_out
     global eval_out
     global token_dir
-    global tokenFileExt
+    global token_file_ext
+    global source_file_ext
+    global visualization_path
+    global do_visualization
+    global text_dir
 
     parser = argparse.ArgumentParser(
         description="Event mention scorer, which conducts token based "
@@ -80,25 +99,36 @@ def main():
                     "the token-based format.")
     parser.add_argument("-g", "--gold", help="Golden Standard", required=True)
     parser.add_argument("-s", "--system", help="System output", required=True)
-    parser.add_argument("-d", "--comparisonOutput",
+    parser.add_argument("-d", "--comparison_output",
                         help="Compare and help show the difference between "
-                             "system and gold", required=True)
+                             "system and gold")
+    parser.add_argument("-v", "--visualization_html_path",
+                        help="To generate Brat visualization, default path is" +
+                             visualization_path)
     parser.add_argument(
-        "-o", "--output", help="Optional evaluation result redirects")
+        "-o", "--output", help="Optional evaluation result redirects, it is suggested"
+                               "to provide when using visualization.")
     parser.add_argument(
         "-t", "--tokenPath", help="Path to the directory containing the "
                                   "token mappings file", required=True)
     parser.add_argument(
+        "-x", "--text", help="Path to the directory containing the original text, "
+                             "only required for HMTL comparison"
+    )
+    parser.add_argument(
         "-w", "--overwrite", help="force overwrite existing comparison "
                                   "file", action='store_true')
-
     parser.add_argument(
-        "-te","--token_table_extension",
+        "-te", "--token_table_extension",
         help="any extension appended after docid of token table files. "
-        "Default is "+ tokenFileExt)
-
+             "Default is " + token_file_ext)
+    parser.add_argument(
+        "-se", "--source_file_extension",
+        help="any extension appended after docid of source files."
+             "Default is " + source_file_ext)
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
+
     parser.set_defaults(debug=False)
     args = parser.parse_args()
 
@@ -109,15 +139,23 @@ def main():
     else:
         eval_out = sys.stdout
 
+    stream_handler = logging.StreamHandler(sys.stdout)
+    formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
+    stream_handler.setFormatter(formatter)
     if args.debug:
+        stream_handler.setLevel(logging.DEBUG)
         logger.setLevel(logging.DEBUG)
     else:
+        stream_handler.setLevel(logging.INFO)
         logger.setLevel(logging.INFO)
 
+    logger.addHandler(stream_handler)
 
     if args.token_table_extension is not None:
-        tokenFileExt = args.token_table_extension
+        token_file_ext = args.token_table_extension
 
+    if args.source_file_extension is not None:
+        source_file_ext = args.source_file_extension
 
     if os.path.isfile(args.gold):
         gf = open(args.gold)
@@ -130,21 +168,17 @@ def main():
         logger.error("Cannot find system file at " + args.system)
         sys.exit(1)
 
-    if args.comparisonOutput is not None:
-        diff_out_path = args.comparisonOutput
+    if args.comparison_output is not None:
+        diff_out_path = args.comparison_output
+        create_parent_dir(diff_out_path)
+        if not args.overwrite and os.path.isfile(diff_out_path):
+            sys.stderr.write(
+                "Output path for comparison [%s] already exists, use '-w' flag "
+                "to force overwrite\n" % diff_out_path)
+            sys.exit(1)
+        diff_out = open(diff_out_path, 'w')
     else:
-        logger.error("Comparison output not specified")
-        sys.exit(1)
-
-    create_parent_dir(diff_out_path)
-
-    if not args.overwrite and os.path.isfile(diff_out_path):
-        sys.stderr.write(
-            "Output path for comparison [%s] already exists, use '-w' flag "
-            "to force overwrite\n" % diff_out_path)
-        sys.exit(1)
-
-    diff_out = open(diff_out_path, 'w')
+        logger.warning("Comparison output not specified")
 
     if args.tokenPath is not None:
         if os.path.isdir(args.tokenPath):
@@ -155,20 +189,48 @@ def main():
                          args.tokenPath +
                          ", will try search for currrent directory")
 
+    if args.text is not None:
+        text_dir = args.text
+
+    if args.visualization_html_path is not None:
+        visualization_path = args.visualization_html_path
+        do_visualization = True
+        if os.path.isdir(visualization_path):
+            json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
+            if not os.path.isdir(json_dir):
+                os.mkdir(json_dir)
+            logger.info("Generating Brat annotation at " + visualization_path)
+        else:
+            logger.error("Visualization directory does not exists! Will not do visualization")
+            do_visualization = False
+        if not os.path.isdir(text_dir):
+            logger.error("Cannot find text directory : [%s], cannot do visualization." % text_dir)
+            do_visualization = False
+
+
     # token based eval mode
     eval_mode = EvalMethod.Token
-
-    read_all_doc(gf, sf)
-
     # charactoer mode is disabled
     # if args.charMode:
     # eval_mode = EvalMethod.Char
     # logger.debug("NOTE: Using character based evaluation")
 
+    read_all_doc(gf, sf)
     while True:
         if not evaluate(eval_mode):
             break
 
+    print_eval_results()
+
+    logger.info("Evaluation Done.")
+
+    if do_visualization:
+        bratDiff.prepare_diff_setting(doc_ids_to_score, all_possible_types,
+                                      os.path.join(visualization_path, visualization_json_data_subpath))
+        bratDiff.start_server(visualization_path, logger)
+
+
+def print_eval_results():
     total_tp = 0
     total_fp = 0
     total_realis_correct = 0
@@ -199,8 +261,8 @@ def main():
             # no gold mentions annotated, treat as invalid file
             pass
         elif math.isnan(prec):
-            #system produce no mentions, accumulate denominator
-            print 'System produce nothing for document [%s], assigning 0 scores' % docId
+            # system produce no mentions, accumulate denominator
+            logger.warning('System produce nothing for document [%s], assigning 0 scores' % docId)
             valid_docs += 1
             total_gold_mentions += goldMentions
         else:
@@ -258,15 +320,20 @@ def main():
         macro_realis_accuracy)
 
     if eval_out is not None:
-        eval_out.close()
-    diff_out.close()
+        eval_out.flush()
+        if not eval_out == sys.stdout:
+            eval_out.close()
+
+    if diff_out is not None:
+        diff_out.close()
 
 
 def read_token_ids(g_file_name):
     invisible_ids = set()
-    id2token_map  = {}
+    id2token_map = {}
+    id2span_map = {}
 
-    token_file_path = os.path.join(token_dir, g_file_name + tokenFileExt)
+    token_file_path = os.path.join(token_dir, g_file_name + token_file_ext)
 
     try:
         token_file = open(token_file_path)
@@ -285,6 +352,11 @@ def read_token_ids(g_file_name):
 
             id2token_map[token_id] = token
 
+            token_begin = int(fields[2])
+            token_end = int(fields[3])
+
+            id2span_map[token_id] = (token_begin, token_end)
+
             if token in invisible_words:
                 invisible_ids.add(token_id)
 
@@ -294,7 +366,7 @@ def read_token_ids(g_file_name):
             "will use empty invisible words list" % (g_file_name, token_file_path))
         pass
 
-    return invisible_ids, id2token_map
+    return invisible_ids, id2token_map, id2span_map
 
 
 def read_all_doc(gf, sf):
@@ -316,7 +388,7 @@ def read_all_doc(gf, sf):
     s_minus_g = s_id_set - common_id_set
 
     if len(g_minus_s) > 0:
-        logger.warning("[Warning] The following document are not found in system but in gold standard")
+        logger.warning("The following document are not found in system but in gold standard")
         for d in g_minus_s:
             logger.warning("  - " + d)
 
@@ -530,7 +602,18 @@ def format_system_results(system_mention_table, id2token_map, system_index):
         id_sep = ","
         token_sep = " "
 
-    return ids,tokens
+    return ids, tokens
+
+
+def write_diff(text):
+    if diff_out is not None:
+        diff_out.write(text)
+
+
+def read_original_text(doc_id):
+    f = open(os.path.join(text_dir, doc_id))
+    if os.path.exists(f.name):
+        return f.read()
 
 
 def evaluate(eval_mode):
@@ -539,7 +622,7 @@ def evaluate(eval_mode):
     if not res:
         return False
 
-    invisible_ids, id2token_map = read_token_ids(doc_id) \
+    invisible_ids, id2token_map, id2span_map = read_token_ids(doc_id) \
         if eval_mode == EvalMethod.Token else set()
 
     system_id = ""
@@ -557,11 +640,13 @@ def evaluate(eval_mode):
             sl, eval_mode, invisible_ids)
         system_mention_table.append(
             (system_outputs, system_mention_type, system_realis))
+        all_possible_types.add(system_mention_type)
 
     for gl in g_lines:
         gold_annos, gold_mention_type, gold_realis = parse_line(
             gl, eval_mode, invisible_ids)
         gold_mention_table.append((gold_annos, gold_mention_type, gold_realis))
+        all_possible_types.add(gold_mention_type)
 
     # Store list of mappings with the score as a priority queue
     all_gold_system_mapping_scores = []
@@ -617,40 +702,50 @@ def evaluate(eval_mode):
             tp += score
             portion_score = 1.0 / len(system_indices)
 
-            for system_index in system_indices:
-                if (system_mention_table[system_index][2] ==
-                        gold_mention_table[gold_index][2]):
-                    realis_correct += portion_score
+            gold_realis = gold_mention_table[gold_index][2]
+            if gold_realis == missingAttributePlaceholder:
+                realis_correct = 1
+                logger.warning(
+                    "Found one realis type for in file [%s] not annotated, give full credit to all system." % doc_id)
+            else:
+                for system_index in system_indices:
+                    if (system_mention_table[system_index][2] ==
+                            gold_mention_table[gold_index][2]):
+                        realis_correct += portion_score
 
-                if (system_mention_table[system_index][1] ==
-                        gold_mention_table[gold_index][1]):
-                    type_correct += portion_score
+                    if (system_mention_table[system_index][1] ==
+                            gold_mention_table[gold_index][1]):
+                        type_correct += portion_score
 
-    diff_out.write(bod_marker + " " + doc_id + "\n")
+    write_diff(bod_marker + " " + doc_id + "\n")
     for gIndex, gLine in enumerate(g_lines):
         gold_content = gLine.split("\t", 1)
         system_indices, mapping_score = assigned_gold_2_system_mapping[gIndex]
         score_out = "%.4f" % mapping_score if mapping_score != -1 else "-"
-        diff_out.write("%s\t%s\t%s" %
-                       (system_id, gold_content[1], score_out))
+        write_diff("%s\t%s\t%s" %
+                   (system_id, gold_content[1], score_out))
 
         if len(system_indices) == 0:
-            diff_out.write("\t|\tMISS")
+            write_diff("\t|\tMISS")
 
         for system_index in system_indices:
             system_outputs, system_mention_type, system_realis = system_mention_table[system_index]
-            system_id_str, token_str = format_system_results(system_mention_table,id2token_map,system_index)
-            diff_out.write("\t|\t%s\t%s\t%s\t%s" % (system_id_str, token_str, system_mention_type, system_realis))
+            system_id_str, token_str = format_system_results(system_mention_table, id2token_map, system_index)
+            write_diff("\t|\t%s\t%s\t%s\t%s" % (system_id_str, token_str, system_mention_type, system_realis))
 
-        diff_out.write("\n")
-
-    diff_out.write(eod_marker + " " + "\n")
+        write_diff("\n")
+    write_diff(eod_marker + " " + "\n")
 
     # unmapped system mentions are considered as false positive
     fp += len(s_lines) - num_gold_found
-
     docScores.append((tp, fp, type_correct, realis_correct,
                       len(g_lines), doc_id))
+
+    if do_visualization:
+        bratDiff.prepare_diff_data(read_original_text(doc_id + source_file_ext),
+                                   gold_mention_table, system_mention_table, id2span_map,
+                                   os.path.join(visualization_path, visualization_json_data_subpath),
+                                   doc_id, assigned_gold_2_system_mapping)
     return True
 
 

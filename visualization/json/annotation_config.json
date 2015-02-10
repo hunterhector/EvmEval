@@ -1,0 +1,159 @@
+{
+    "event_types": [
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "Personnel_End-Position", 
+                "Personnel_End-Position"
+            ], 
+            "type": "Personnel_End-Position"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "Personnel_End-Position", 
+                "Personnel_End-Position"
+            ], 
+            "type": "Personnel_End-Position_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "Personnel_End-Position", 
+                "Personnel_End-Position"
+            ], 
+            "type": "Personnel_End-Position_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "Personnel_Nominate", 
+                "Personnel_Nominate"
+            ], 
+            "type": "Personnel_Nominate"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "Personnel_Nominate", 
+                "Personnel_Nominate"
+            ], 
+            "type": "Personnel_Nominate_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "Personnel_Nominate", 
+                "Personnel_Nominate"
+            ], 
+            "type": "Personnel_Nominate_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "Personnel_Start-Position", 
+                "Personnel_Start-Position"
+            ], 
+            "type": "Personnel_Start-Position"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "Personnel_Start-Position", 
+                "Personnel_Start-Position"
+            ], 
+            "type": "Personnel_Start-Position_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "Personnel_Start-Position", 
+                "Personnel_Start-Position"
+            ], 
+            "type": "Personnel_Start-Position_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "Movement_Transport-Person", 
+                "Movement_Transport-Person"
+            ], 
+            "type": "Movement_Transport-Person"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "Movement_Transport-Person", 
+                "Movement_Transport-Person"
+            ], 
+            "type": "Movement_Transport-Person_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "Movement_Transport-Person", 
+                "Movement_Transport-Person"
+            ], 
+            "type": "Movement_Transport-Person_miss"
+        }
+    ], 
+    "event_attribute_types": [
+        {
+            "values": {
+                "Generic": {
+                    "glyph": "generic"
+                }
+            }, 
+            "bool": "Generic", 
+            "type": "Generic"
+        }, 
+        {
+            "values": {
+                "Other": {
+                    "glyph": "other"
+                }
+            }, 
+            "bool": "Other", 
+            "type": "Other"
+        }, 
+        {
+            "values": {
+                "Generic": {
+                    "glyph": "actual"
+                }
+            }, 
+            "bool": "Actual", 
+            "type": "Actual"
+        }, 
+        {
+            "values": {
+                "realis_wrong": {
+                    "glyph": "*"
+                }
+            }, 
+            "bool": "realis_wrong", 
+            "type": "realis_wrong"
+        }, 
+        {
+            "values": {
+                "type_wrong": {
+                    "glyph": "#"
+                }
+            }, 
+            "bool": "type_wrong", 
+            "type": "type_wrong"
+        }
+    ]
+}

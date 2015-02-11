@@ -1,0 +1,33 @@
+{
+    "text": "when OH made her way home\n", 
+    "attributes": [
+        [
+            "A1", 
+            "Actual", 
+            "E1"
+        ]
+    ], 
+    "events": [
+        [
+            "E1", 
+            "T1", 
+            []
+        ]
+    ], 
+    "triggers": [
+        [
+            "T1", 
+            "Movement_Transport-Person", 
+            [
+                [
+                    8, 
+                    12
+                ], 
+                [
+                    17, 
+                    20
+                ]
+            ]
+        ]
+    ]
+}

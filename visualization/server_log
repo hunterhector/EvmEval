@@ -1,0 +1,35 @@
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /css/style-vis.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/head.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/visualize_setup.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/brat_loader.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /json/annotation_config.json HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /json/doc_ids.json HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/lib/jquery.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/lib/jquery.svg.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/lib/jquery.svgdom.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/src/configuration.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/src/util.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/src/annotation_log.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/lib/webfont.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/src/dispatcher.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/src/url_monitor.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:45] "GET /js/client/src/visualizer.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:46] "GET /json/example1_gold.json HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:46] "GET /json/example1_sys.json HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:46] "GET /js/static/fonts/Astloch-Bold.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:46] "GET /js/static/fonts/PT_Sans-Caption-Web-Regular.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:46] "GET /js/static/fonts/Liberation_Sans-Regular.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [09/Feb/2015 23:16:46] "GET /css/static/fonts/Liberation_Sans-Regular.ttf HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "scorer_v1.1.py", line 753, in <module>
+    main()
+  File "scorer_v1.1.py", line 230, in main
+    bratDiff.start_server(visualization_path, logger)
+  File "/Users/zhengzhongliu/Documents/projects/EvmEval/bratDiff.py", line 84, in start_server
+    httpd.serve_forever()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt

@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding=utf-8
 
 """
     Used together with the scorer, produce a HTML page showing the difference
@@ -58,10 +59,10 @@ def generate_mention_annotation_setting(all_mention_types):
     not_annotated_type = {'type': 'NOT_ANNOTATED', 'values': {"NOT_ANNOTATED": {"glyph": "N/A"}},
                           "bool": "NOT_ANNOTATED"}
 
-    realis_wrong = {'type': realis_mismatch_attr, 'values': {realis_mismatch_attr: {"glyph": "*"}},
+    realis_wrong = {'type': realis_mismatch_attr, 'values': {realis_mismatch_attr: {"glyph": " ★ "}},
                     "bool": realis_mismatch_attr}
 
-    type_wrong = {'type': type_mismatch_attr, 'values': {type_mismatch_attr: {"glyph": "#"}},
+    type_wrong = {'type': type_mismatch_attr, 'values': {type_mismatch_attr: {"glyph": " ✘ "}},
                   "bool": type_mismatch_attr}
 
     event_attribute_types = [generic_type, other_type, actual_type, not_annotated_type, realis_wrong, type_wrong]

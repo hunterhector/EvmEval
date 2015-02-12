@@ -54,7 +54,7 @@ The default set up follows Brat v1.3 ID convention:
   - E: event
   - A: attribute
   - M: modification (alias for attribute, for backward compatibility)
-  - N: normalization [new in v1.3]
+  - N: normalization [new in v1.3 of Brat]
   - #: note
 
 Further development might allow customized ID convention.
@@ -77,7 +77,7 @@ requires token offset files that shares the same name with the annotation
 file, with extension .txt.tab. The converter will search for the token file in
 the directory specified by '-t' argument
 
-	Arguments:
+	Required Arguments:
 	  -d DIR, --dir DIR     directory of the annotation files
 	  -f FILE, --file FILE  name of one annotation file
 	  -t TOKENPATH, --tokenPath TOKENPATH
@@ -104,9 +104,11 @@ scorer.py:
 
 Features
 ---------
-Produce F1-like scoring by mapping system mentions to gold standard mentions,
+1. Produce F1-like scoring by mapping system mentions to gold standard mentions,
 read the scoring documentation for more details.
-
+2. Be able to produce a comparison output indicating system and gold standard differences:
+  a. A text based comparison output (-d option)
+  b. A web based comparison output using Brat's embedded visualization (-v option)
 Usage
 -----
 	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] -t
@@ -130,7 +132,16 @@ standard files should follows the token-based format.
 	  -o OUTPUT, --output OUTPUT
 							Optional evaluation result redirects
 	  -w, --overwrite       force overwrite existing comparison file
+      -v DO_VISUALIZATION, --do_visualization DO_VISUALIZATION
+                        Generate web based visualization data
+      -vp VISUALIZATION_HTML_PATH, --visualization_html_path VISUALIZATION_HTML_PATH
+                        To generate Brat visualization, default path is [visualization]	  
+      -x TEXT, --text TEXT  Path to the directory containing the original text,
+                        only required for HMTL comparison (-v)
 	  -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
 							any extension appended after docid of token table
-							files. Default is .txt.tab
+							files. Default is [.txt.tab]
+      -se SOURCE_FILE_EXTENSION, --source_file_extension SOURCE_FILE_EXTENSION
+                        any extension appended after docid of source
+                        files.Default is [.tkn.txt]							
 	  -b, --debug           turn debug mode on

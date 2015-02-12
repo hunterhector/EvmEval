@@ -149,7 +149,7 @@
         {
             "values": {
                 "realis_wrong": {
-                    "glyph": "*"
+                    "glyph": " \u2605 "
                 }
             }, 
             "bool": "realis_wrong", 
@@ -158,7 +158,7 @@
         {
             "values": {
                 "type_wrong": {
-                    "glyph": "#"
+                    "glyph": " \u2718 "
                 }
             }, 
             "bool": "type_wrong", 

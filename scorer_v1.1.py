@@ -102,8 +102,10 @@ def main():
     parser.add_argument("-d", "--comparison_output",
                         help="Compare and help show the difference between "
                              "system and gold")
-    parser.add_argument("-v", "--visualization_html_path",
-                        help="To generate Brat visualization, default path is" +
+    parser.add_argument("-v", "--do_visualization", help="Generate web based visualization data",
+                        action='store_true')
+    parser.add_argument("-vp", "--visualization_html_path",
+                        help="To generate Brat visualization, default path is [%s]" %
                              visualization_path)
     parser.add_argument(
         "-o", "--output", help="Optional evaluation result redirects, it is suggested"
@@ -113,7 +115,7 @@ def main():
                                   "token mappings file", required=True)
     parser.add_argument(
         "-x", "--text", help="Path to the directory containing the original text, "
-                             "only required for HMTL comparison"
+                             "only required in HTML comparison mode (-v)"
     )
     parser.add_argument(
         "-w", "--overwrite", help="force overwrite existing comparison "
@@ -121,23 +123,16 @@ def main():
     parser.add_argument(
         "-te", "--token_table_extension",
         help="any extension appended after docid of token table files. "
-             "Default is " + token_file_ext)
+             "Default is [%s]" % token_file_ext)
     parser.add_argument(
         "-se", "--source_file_extension",
         help="any extension appended after docid of source files."
-             "Default is " + source_file_ext)
+             "Default is [%s]" % source_file_ext)
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
 
     parser.set_defaults(debug=False)
     args = parser.parse_args()
-
-    if args.output is not None:
-        out_path = args.output
-        create_parent_dir(out_path)
-        eval_out = open(out_path, 'w')
-    else:
-        eval_out = sys.stdout
 
     stream_handler = logging.StreamHandler(sys.stdout)
     formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
@@ -150,6 +145,15 @@ def main():
         logger.setLevel(logging.INFO)
 
     logger.addHandler(stream_handler)
+
+    if args.output is not None:
+        out_path = args.output
+        create_parent_dir(out_path)
+        eval_out = open(out_path, 'w')
+        logger.info("Evaluatoin output will be saved at %s" % out_path)
+    else:
+        eval_out = sys.stdout
+        logger.info("Evaluation output at standard out")
 
     if args.token_table_extension is not None:
         token_file_ext = args.token_table_extension
@@ -191,10 +195,13 @@ def main():
 
     if args.text is not None:
         text_dir = args.text
+    else:
+        logger.warning("Text directory is not specified, will try use current directory")
 
-    if args.visualization_html_path is not None:
-        visualization_path = args.visualization_html_path
+    if args.do_visualization:
         do_visualization = True
+        if args.visualization_html_path is not None:
+            visualization_path = args.visualization_html_path
         if os.path.isdir(visualization_path):
             json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
             if not os.path.isdir(json_dir):
@@ -203,9 +210,11 @@ def main():
         else:
             logger.error("Visualization directory does not exists! Will not do visualization")
             do_visualization = False
+
         if not os.path.isdir(text_dir):
             logger.error("Cannot find text directory : [%s], cannot do visualization." % text_dir)
             do_visualization = False
+
 
 
     # token based eval mode
@@ -611,9 +620,13 @@ def write_diff(text):
 
 
 def read_original_text(doc_id):
-    f = open(os.path.join(text_dir, doc_id))
-    if os.path.exists(f.name):
+    text_path = os.path.join(text_dir, doc_id)
+    if os.path.exists(text_path):
+        f = open(os.path.join(text_dir, doc_id))
         return f.read()
+    else:
+        logger.error("Cannot locate original text, please check parameters")
+        sys.exit(1)
 
 
 def evaluate(eval_mode):

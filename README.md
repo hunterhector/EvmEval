@@ -119,7 +119,8 @@ The text base visualization is straightforward, a text document is produced for 
 The annotation of both systems are displayed in one line, separated by "|"
 
 The web based visualization is composed of two steps: 
-  1. It produces JSON representation into the visualization folder (visualization/json)
+  1. It will use the bratDiff module to produce JSON representation into the visualization 
+  folder (visualization/json)
   2. It will start a server at the visualization folder using localhost:8000
   3. Now user can browse the locally hosted site for comparison
   4. User can stop the server when done, and restart it at anytime using "start.sh", it is 

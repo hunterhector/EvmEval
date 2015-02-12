@@ -109,6 +109,22 @@ read the scoring documentation for more details.
 2. Be able to produce a comparison output indicating system and gold standard differences:
   a. A text based comparison output (-d option)
   b. A web based comparison output using Brat's embedded visualization (-v option)
+  
+About Visualization
+-------------------
+The visualization is provided as a mechanism to compare different output, which is optional
+and can be ignored if one is only interested in the scores.
+
+The text base visualization is straightforward, a text document is produced for comparison.
+The annotation of both systems are displayed in one line, separated by "|"
+
+The web based visualization is composed of two steps: 
+  1. It produces JSON representation into the visualization folder (visualization/json)
+  2. It will start a server at the visualization folder using localhost:8000
+  3. Now user can browse the locally hosted site for comparison
+  4. User can stop the server when done, and restart it at anytime using "start.sh", it is 
+  no longer necessary to regenerate the JSON data if one only wish to use the old ones
+  
 Usage
 -----
 	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] -t

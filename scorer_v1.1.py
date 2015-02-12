@@ -12,8 +12,9 @@
 # Change log v1.1:
 # 1. If system produce no mentions, the scorer should penalize it instead of ignore it
 # 2. Enhance the output of the comparison file, add the system actual output side by side for easy debug
-# 3. Add the ability to compare system and gold mentions using Brat
-# 4. For realis type not annotated, give full credit
+# 3. Add the ability to compare system and gold mentions using Brat embedded visualization
+# 4. For realis type not annotated, give full credit as long as system give a result
+# 5. Add more informative error message
 
 import math
 import errno
@@ -22,15 +23,28 @@ import logging
 import sys
 import os
 import heapq
-import bratDiff
 
+logger = logging.getLogger()
+stream_handler = logging.StreamHandler(sys.stdout)
+formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
+stream_handler.setFormatter(formatter)
+logger.addHandler(stream_handler)
+
+bratFound = True
+try:
+    import bratDiff
+except ImportError as e:
+    logger.warning("Didn't find Brat visualization code, will not do visualization")
+    bratFound = False
 
 comment_marker = "#"
 bod_marker = "#BeginOfDocument"  # mark begin of a document
 eod_marker = "#EndOfDocument"  # mark end of a document
 
-logger = logging.getLogger()
-
+token_file_ext = ".txt.tab"
+source_file_ext = ".tkn.txt"
+visualization_path = "visualization"
+visualization_json_data_subpath = "json"
 
 # run this on an annotation to confirm
 invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
@@ -49,19 +63,13 @@ eval_out = None
 
 docScores = []
 
-token_file_ext = ".txt.tab"
-source_file_ext = ".tkn.txt"
-
 token_joiner = ","
-
 span_seperator = ";"
 span_joiner = "_"
 
-visualization_path = "visualization"
-visualization_json_data_subpath = "json"
-do_visualization = False
-
 missingAttributePlaceholder = "NOT_ANNOTATED"
+
+do_visualization = False
 
 
 class EvalMethod:
@@ -134,17 +142,12 @@ def main():
     parser.set_defaults(debug=False)
     args = parser.parse_args()
 
-    stream_handler = logging.StreamHandler(sys.stdout)
-    formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
-    stream_handler.setFormatter(formatter)
     if args.debug:
         stream_handler.setLevel(logging.DEBUG)
         logger.setLevel(logging.DEBUG)
     else:
         stream_handler.setLevel(logging.INFO)
         logger.setLevel(logging.INFO)
-
-    logger.addHandler(stream_handler)
 
     if args.output is not None:
         out_path = args.output
@@ -198,7 +201,7 @@ def main():
     else:
         logger.warning("Text directory is not specified, will try use current directory")
 
-    if args.do_visualization:
+    if bratFound and args.do_visualization:
         do_visualization = True
         if args.visualization_html_path is not None:
             visualization_path = args.visualization_html_path

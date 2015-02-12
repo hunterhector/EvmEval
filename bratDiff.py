@@ -22,8 +22,10 @@ log_path = "server_log"
 basic_event_color = "lightgreen"
 missing_event_color = "#ffccaa"
 partial_matched_event_color = "#aea0d6"
+wrong_status_event_color = "#1E90FF"
 missing_event_suffix = "_miss"
 partial_matched_suffix = "_part"
+wrong_status_suffix = "_wrong_status"
 realis_mismatch_attr = "realis_wrong"
 type_mismatch_attr = "type_wrong"
 
@@ -51,7 +53,13 @@ def generate_mention_annotation_setting(all_mention_types):
                                       'labels': [mention_type, mention_type],
                                       'bgColor': missing_event_color,
                                       'borderColor': 'darken'}
-        event_types.extend([perfect_event_type_setting, partial_match_event_type_setting, missing_event_type_setting])
+        incorrect_status_event_type_setting = {'type': mention_type + wrong_status_suffix,
+                                               'labels': [mention_type, mention_type],
+                                               'bgColor': wrong_status_event_color,
+                                               'borderColor': 'darken'}
+
+        event_types.extend([perfect_event_type_setting, partial_match_event_type_setting, missing_event_type_setting,
+                            incorrect_status_event_type_setting])
 
     generic_type = {'type': 'Generic', 'values': {"Generic": {"glyph": "generic"}}, "bool": "Generic"}
     other_type = {'type': 'Other', 'values': {"Other": {"glyph": "other"}}, "bool": "Other"}
@@ -61,7 +69,6 @@ def generate_mention_annotation_setting(all_mention_types):
 
     realis_wrong = {'type': realis_mismatch_attr, 'values': {realis_mismatch_attr: {"glyph": " ★ "}},
                     "bool": realis_mismatch_attr}
-
     type_wrong = {'type': type_mismatch_attr, 'values': {type_mismatch_attr: {"glyph": " ✘ "}},
                   "bool": type_mismatch_attr}
 
@@ -147,12 +154,16 @@ def create_brat_json(text, all_annotations, token_map, span_missing_marker, real
     for index, (token_based_annotations, mention_type, realis) in enumerate(all_annotations):
         text_bound_id, annotation = parse_token_annotation(token_based_annotations, token_map, text_bound_id_record)
         span_status = span_missing_marker[index]
+
+        perfect_span = False
+
         if span_status == 0:
             mention = [text_bound_id, mention_type + missing_event_suffix, annotation]
         elif span_status < 1:
             mention = [text_bound_id, mention_type + partial_matched_suffix, annotation]
         else:
-            mention = [text_bound_id, mention_type, annotation]
+            perfect_span = True
+
         event_id = auto_find_id(event_id_record, text_bound_id, "E")
 
         realis_attribute_id = auto_find_id(attribute_id_record, (realis, text_bound_id, event_id), "A")
@@ -171,9 +182,16 @@ def create_brat_json(text, all_annotations, token_map, span_missing_marker, real
             type_mismatch = [type_mismatch_id, type_mismatch_attr, event_id]
             attributes.append(type_mismatch)
 
+        if perfect_span:
+            if type_status == 0 or realis_status == 0:
+                mention = [text_bound_id, mention_type + wrong_status_suffix, annotation]
+            else:
+                mention = [text_bound_id, mention_type, annotation]
+
         events.append(event)
         mentions.append(mention)
         attributes.append(event_realis)
+
     data['triggers'] = mentions
     data['attributes'] = attributes
     data['events'] = events

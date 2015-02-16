@@ -28,24 +28,28 @@ events = {}  # all events
 atts = {}  # all attributes
 
 out = "converted"
-outExt = ".tbf"  # short for token based format
-engineId = "brat_conversion"
+out_ext = ".tbf"  # short for token based format
+engine_id = "brat_conversion"
 tokenJoiner = ","
 
-bratAnnotationExt = ".tkn.ann"
-tokenOffsetExt = ".txt.tab"  # accroding to LDC2014R55
+brat_annotation_ext = ".tkn.ann"
+token_offset_ext = ".txt.tab"  # accroding to LDC2014R55
+
+token_offset_fields = [2, 3]
 
 annotation_on_source = False
 
 logger = logging.getLogger()
 
+
 def main():
     global out
-    global outExt
-    global engineId
+    global out_ext
+    global engine_id
     global annotation_on_source
-    global tokenOffsetExt
-    global bratAnnotationExt
+    global token_offset_ext
+    global brat_annotation_ext
+    global token_offset_fields
 
     parser_description = (
         "This converter converts Brat annotation files to "
@@ -53,11 +57,11 @@ def main():
         "It accepts a single file name or a directory name that contains the "
         "Brat annotation output. The converter also requires token offset "
         "files that shares the same name with the annotation file, with "
-        "extension " + tokenOffsetExt + ". The converter will search for "
-        "the token file in the directory specified by '-t' argument")
+        "extension " + token_offset_ext + ". The converter will search for "
+                                          "the token file in the directory specified by '-t' argument")
 
     parser = argparse.ArgumentParser(description=parser_description)
-    #required arguments first
+    # required arguments first
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("-d", "--dir", help="directory of the annotation files")
     group.add_argument("-f", "--file", help="name of one annotation file")
@@ -66,33 +70,33 @@ def main():
         help="directory to search for the corresponding token files",
         required=True)
 
-    #optional arguments now
+    # optional arguments now
     parser.add_argument(
         "-o", "--out",
         help="output path, '" + out + "' in the current path by default")
     parser.add_argument(
         "-oe", "--ext",
-        help="output extension, '" + outExt + "' by default")
+        help="output extension, '" + out_ext + "' by default")
     parser.add_argument(
         "-i", "--eid",
         help="an engine id that will appears at each line of the output "
-        "file. '" + engineId + "' will be used by default")
+             "file. '" + engine_id + "' will be used by default")
     parser.add_argument(
         "-w", "--overwrite", help="force overwrite existing output file",
         action='store_true')
-#    parser.add_argument(
-#        "-s", "--source",
-#        help="true if the annotations are done on source data, default is "
-#        "false", action='store_true')
-#    parser.set_defaults(source=False)
     parser.add_argument(
-        "-te","--token_table_extension",
+        "-of", "--offset_field", help="A pair of integer indicates which column we should "
+                                      "read the offset in the token mapping file, index starts"
+                                      "at 0, default value will be %s" % token_offset_fields
+    )
+    parser.add_argument(
+        "-te", "--token_table_extension",
         help="any extension appended after docid of token table files. "
-        "Default is "+ tokenOffsetExt)
+             "Default is " + token_offset_ext)
     parser.add_argument(
-        "-ae","--annotation_extension",
+        "-ae", "--annotation_extension",
         help="any extension appended after docid of annotation files. "
-        "Default is "+bratAnnotationExt)
+             "Default is " + brat_annotation_ext)
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
     parser.set_defaults(debug=False)
@@ -105,9 +109,9 @@ def main():
     else:
         logger.setLevel(logging.INFO)
 
-#    if args.source:
-#        annotation_on_source = True
-#        logger.debug("Will use source offsets for tokens")
+    # if args.source:
+    # annotation_on_source = True
+    # logger.debug("Will use source offsets for tokens")
 
     if args.tokenPath is not None:
         if not os.path.isdir(args.tokenPath):
@@ -122,18 +126,24 @@ def main():
         sys.exit(1)
 
     if args.token_table_extension is not None:
-        tokenOffsetExt = args.token_table_extension
+        token_offset_ext = args.token_table_extension
 
     if args.annotation_extension is not None:
-        bratAnnotationExt = args.annotation_extension
+        brat_annotation_ext = args.annotation_extension
+
+    if args.offset_field is not None:
+        try:
+            token_offset_fields = [int(x) for x in args.offset_field.split(",")]
+        except ValueError as _:
+            logger.error("Should provide two integer with comma in between")
 
     # set default value to optional arguments
     if args.out is not None:
         out = args.out
     if args.ext is not None:
-        outExt = args.ext
+        out_ext = args.ext
     if args.eid is not None:
-        engineId = args.eid
+        engine_id = args.eid
 
     # ensure output directory exists
     try:
@@ -145,7 +155,7 @@ def main():
         if v.errno != errno.EEXIST:
             raise
 
-    out_path = out + outExt
+    out_path = out + out_ext
     if not args.overwrite and os.path.isfile(out_path):
         logger.error(
             "Output path [%s] already exists, "
@@ -157,12 +167,12 @@ def main():
     if args.dir is not None:
         # parse directory
         for f in os.listdir(args.dir):
-            if f.endswith(bratAnnotationExt):
+            if f.endswith(brat_annotation_ext):
                 parse_annotation_file(
                     os.path.join(args.dir, f), args.tokenPath, out_file)
     elif args.file is not None:
         # parse one annotation file
-        if args.file.endswith(bratAnnotationExt):
+        if args.file.endswith(brat_annotation_ext):
             parse_annotation_file(args.file, args.tokenPath, out_file)
     else:
         logger.error("No annotations provided\n")
@@ -184,7 +194,7 @@ def join_list(items, joiner):
     return s
 
 
-def rchop(s,ending):
+def rchop(s, ending):
     if s.endswith(ending):
         return s[:-len(ending)]
     return s
@@ -193,16 +203,16 @@ def rchop(s,ending):
 def parse_annotation_file(file_path, token_dir, of):
     # otherwise use the provided directory to search for it
     basename = os.path.basename(file_path)
-    logger.debug("processing "+basename)
+    logger.debug("processing " + basename)
     token_path = os.path.join(
-        token_dir, basename[:-len(bratAnnotationExt)] + tokenOffsetExt)
+        token_dir, basename[:-len(brat_annotation_ext)] + token_offset_ext)
 
     if os.path.isfile(file_path) and os.path.isfile(token_path):
         f = open(file_path)
         token_file = open(token_path)
         # text_id = os.path.splitext(os.path.basename(f.name))[0]
-        text_id = rchop(os.path.basename(f.name), bratAnnotationExt)
-        logger.debug("Document id is "+text_id)
+        text_id = rchop(os.path.basename(f.name), brat_annotation_ext)
+        logger.debug("Document id is " + text_id)
         read_all_anno(f)
 
         # match from text bound to token id
@@ -226,7 +236,7 @@ def parse_annotation_file(file_path, token_dir, of):
             text = text_bound[2]
 
             of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
-                engineId, text_id, eid, join_list(token_ids, tokenJoiner),
+                engine_id, text_id, eid, join_list(token_ids, tokenJoiner),
                 text, event_type, realis_status, 1))
         of.write(eodMarker + "\n")
     else:
@@ -244,16 +254,18 @@ def get_text_bound_2_token_mapping(token_file):
     header = token_file.readline()
     for tokenLine in token_file:
         fields = tokenLine.rstrip().split("\t")
-        if len(fields) < 4:
-            continue
-        # important! we need to make sure that what we are evaluating on
-        
-        token_span = (int(fields[2]), int(fields[3]) + 1) 
-        
-        #if annotation_on_source:
-        #    token_span = (int(fields[2]), int(fields[3]) + 1)
-        #else:
-        #    token_span = (int(fields[4]), int(fields[5]) + 1)
+        if len(fields) <= token_offset_fields[1]:
+            logger.error("Token files only have %s fields, are you setting "
+                         "the correct offset fields?" % len(fields))
+            exit(1)
+        # important! we need to make sure that which offsets we are based on
+
+        token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)
+
+        # if annotation_on_source:
+        # token_span = (int(fields[2]), int(fields[3]) + 1)
+        # else:
+        # token_span = (int(fields[4]), int(fields[5]) + 1)
 
         # one token maps to multiple text bound is possible
         for text_bound_id in find_corresponding_text_bound(token_span):
@@ -276,7 +288,7 @@ def find_corresponding_text_bound(token_span):
 
 def covers(covering_span, covered_span):
     if (covering_span[0] <= covered_span[0] and
-            covering_span[1] >= covered_span[1]):
+                covering_span[1] >= covered_span[1]):
         return True
     return False
 
@@ -345,6 +357,7 @@ def read_all_anno(f):
             else:
                 atts[target_id] = {}
                 atts[target_id][att_name] = (aid, target_value)
+
 
 if __name__ == "__main__":
     main()

@@ -67,6 +67,8 @@ token_joiner = ","
 span_seperator = ";"
 span_joiner = "_"
 
+token_offset_fields = [2, 3]
+
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
 do_visualization = False
@@ -100,6 +102,7 @@ def main():
     global visualization_path
     global do_visualization
     global text_dir
+    global token_offset_fields
 
     parser = argparse.ArgumentParser(
         description="Event mention scorer, which conducts token based "
@@ -128,6 +131,11 @@ def main():
     parser.add_argument(
         "-w", "--overwrite", help="force overwrite existing comparison "
                                   "file", action='store_true')
+    parser.add_argument(
+        "-of", "--offset_field", help="A pair of integer indicates which column we should "
+                                      "read the offset in the token mapping file, index starts"
+                                      "at 0, default value will be %s" % token_offset_fields
+    )
     parser.add_argument(
         "-te", "--token_table_extension",
         help="any extension appended after docid of token table files. "
@@ -196,10 +204,16 @@ def main():
                          args.tokenPath +
                          ", will try search for currrent directory")
 
+    if args.offset_field is not None:
+        try:
+            token_offset_fields = [int(x) for x in args.offset_field.split(",")]
+        except ValueError as _:
+            logger.error("Should provide two integer with comma in between")
+
     if args.text is not None:
         text_dir = args.text
     else:
-        logger.warning("Text directory is not specified, will try use current directory")
+        logger.warning("Text directory is not specified")
 
     if bratFound and args.do_visualization:
         do_visualization = True
@@ -237,6 +251,8 @@ def main():
     logger.info("Evaluation Done.")
 
     if do_visualization:
+        logger.info("Preparing visualization for %d documents" % (len(doc_ids_to_score)))
+
         bratDiff.prepare_diff_setting(doc_ids_to_score, all_possible_types,
                                       os.path.join(visualization_path, visualization_json_data_subpath))
         bratDiff.start_server(visualization_path, logger)
@@ -260,8 +276,8 @@ def print_eval_results():
         recall = tp / goldMentions if goldMentions > 0 else float('nan')
         doc_f1 = (2 * prec * recall / (prec + recall) if
                   prec + recall > 0 else float('nan'))
-        type_accuracy = typeCorrect / goldMentions
-        realis_accuracy = realisCorrect / goldMentions
+        type_accuracy = typeCorrect / goldMentions if goldMentions > 0 else float('nan')
+        realis_accuracy = realisCorrect / goldMentions if goldMentions > 0 else float('nan')
         eval_out.write(
             "TP\tFP\t#Gold\tPrec\tRecall\tF1\tType\tRealis\tDoc Id\n")
         eval_out.write(
@@ -347,6 +363,8 @@ def read_token_ids(g_file_name):
 
     token_file_path = os.path.join(token_dir, g_file_name + token_file_ext)
 
+    logger.debug("Reading token for " + g_file_name)
+
     try:
         token_file = open(token_file_path)
 
@@ -364,10 +382,11 @@ def read_token_ids(g_file_name):
 
             id2token_map[token_id] = token
 
-            token_begin = int(fields[2])
-            token_end = int(fields[3])
-
-            id2span_map[token_id] = (token_begin, token_end)
+            try:
+                token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)
+                id2span_map[token_id] = token_span
+            except ValueError as e:
+                logger.error("Token file is wrong at for file " + g_file_name)
 
             if token in invisible_words:
                 invisible_ids.add(token_id)
@@ -484,7 +503,7 @@ def parse_char_based_line(l):
     removal of invisible words
     """
     fields = l.split("\t")
-    if len(fields) != 8:
+    if len(fields) != 7 and len(fields) != 8:
         logger.error("Output are not correctly formatted")
     spans = parse_spans(fields[3])
     mention_type = fields[5]
@@ -497,7 +516,7 @@ def parse_token_based_line(l, invisible_ids):
     parse the line, get the token ids, remove invisible ones
     """
     fields = l.split("\t")
-    if len(fields) != 8:
+    if len(fields) != 7 and len(fields) != 8:
         logger.error("Output are not correctly formatted")
     token_ids = parse_token_ids(fields[3], invisible_ids)
     mention_type = fields[5]

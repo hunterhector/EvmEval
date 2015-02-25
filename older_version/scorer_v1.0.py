@@ -88,9 +88,9 @@ def main():
                                   "file", action='store_true')
 
     parser.add_argument(
-        "-te","--token_table_extension",
+        "-te", "--token_table_extension",
         help="any extension appended after docid of token table files. "
-        "Default is "+ tokenFileExt)
+             "Default is " + token_file_ext)
 
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
@@ -109,10 +109,8 @@ def main():
     else:
         logger.setLevel(logging.INFO)
 
-
     if args.token_table_extension is not None:
-        tokenFileExt = args.token_table_extension
-
+        token_file_ext = args.token_table_extension
 
     if os.path.isfile(args.gold):
         gf = open(args.gold)
@@ -379,7 +377,7 @@ def parse_char_based_line(l):
     removal of invisible words
     """
     fields = l.split("\t")
-    if len(fields) != 8:
+    if len(fields) != 7 and len(fields) != 8:
         logger.error("Output are not correctly formatted")
     spans = parse_spans(fields[3])
     mention_type = fields[5]
@@ -392,7 +390,7 @@ def parse_token_based_line(l, invisible_ids):
     parse the line, get the token ids, remove invisible ones
     """
     fields = l.split("\t")
-    if len(fields) != 8:
+    if len(fields) != 7 and len(fields) != 8:
         logger.error("Output are not correctly formatted")
     token_ids = parse_token_ids(fields[3], invisible_ids)
     mention_type = fields[5]

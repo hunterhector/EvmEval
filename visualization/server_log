@@ -1,66 +1,42 @@
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /css/style-vis.css HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/head.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/visualize_setup.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/brat_loader.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /json/annotation_config.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /json/doc_ids.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/lib/jquery.min.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/lib/jquery.svg.min.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/lib/jquery.svgdom.min.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/src/configuration.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/src/util.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/src/annotation_log.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/lib/webfont.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/src/dispatcher.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/src/url_monitor.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/client/src/visualizer.js HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /json/example1_gold.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /json/example1_sys.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/static/fonts/Astloch-Bold.ttf HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/static/fonts/PT_Sans-Caption-Web-Regular.ttf HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /js/static/fonts/Liberation_Sans-Regular.ttf HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:42] "GET /css/static/fonts/Liberation_Sans-Regular.ttf HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:49] "GET /json/example2_gold.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:53:49] "GET /json/example2_sys.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:54:34] "GET /json/example1_gold.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:54:34] "GET /json/example1_sys.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:56:18] "GET /json/example2_gold.json HTTP/1.1" 200 -
-127.0.0.1 - - [11/Feb/2015 14:56:18] "GET /json/example2_sys.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /css/style-vis.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/head.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/visualize_setup.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/brat_loader.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /json/annotation_config.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /json/doc_ids.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/lib/jquery.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/lib/jquery.svg.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/lib/jquery.svgdom.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/src/configuration.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/src/util.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/src/annotation_log.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/lib/webfont.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/src/dispatcher.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/src/url_monitor.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/client/src/visualizer.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /json/04debcc4da342dc971bdef4210fe468a.mpdf_gold.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /json/04debcc4da342dc971bdef4210fe468a.mpdf_sys.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/static/fonts/Astloch-Bold.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/static/fonts/PT_Sans-Caption-Web-Regular.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:58] "GET /js/static/fonts/Liberation_Sans-Regular.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:47:59] "GET /css/static/fonts/Liberation_Sans-Regular.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:07] "GET /json/362f9d9707c4da0c8068bc7034aae4b4.mpdf_gold.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:07] "GET /json/362f9d9707c4da0c8068bc7034aae4b4.mpdf_sys.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:10] "GET /json/dd0b65f632f64369c530f9bbb4b024b4.mpdf_gold.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:10] "GET /json/dd0b65f632f64369c530f9bbb4b024b4.mpdf_sys.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:15] "GET /json/04debcc4da342dc971bdef4210fe468a.mpdf_gold.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:15] "GET /json/04debcc4da342dc971bdef4210fe468a.mpdf_sys.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:34] "GET /json/d6bc66d7c8423368aaa8d789b5bdf5db.mpdf_gold.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:34] "GET /json/d6bc66d7c8423368aaa8d789b5bdf5db.mpdf_sys.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:36] "GET /json/1d2911e09a6746b942c3e7b3cbdcb0ce.mpdf_gold.json HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2015 15:48:36] "GET /json/1d2911e09a6746b942c3e7b3cbdcb0ce.mpdf_sys.json HTTP/1.1" 200 -
 Traceback (most recent call last):
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
-    self.process_request(request, client_address)
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 321, in process_request
-    self.finish_request(request, client_address)
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 334, in finish_request
-    self.RequestHandlerClass(request, client_address, self)
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 649, in __init__
-    self.handle()
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py", line 340, in handle
-    self.handle_one_request()
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py", line 310, in handle_one_request
-    self.raw_requestline = self.rfile.readline(65537)
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 476, in readline
-    data = self._sock.recv(self._rbufsize)
-error: [Errno 54] Connection reset by peer
-172.19.3.15 - - [11/Feb/2015 18:42:36] code 404, message File not found
-172.19.3.15 - - [11/Feb/2015 18:42:36] "GET /DyYymLOIaDiZ HTTP/1.1" 404 -
-172.19.3.15 - - [11/Feb/2015 18:42:36] code 404, message File not found
-172.19.3.15 - - [11/Feb/2015 18:42:36] "GET /jmx-console/HtmlAdaptor HTTP/1.1" 404 -
-172.19.3.15 - - [11/Feb/2015 18:42:36] code 404, message File not found
-172.19.3.15 - - [11/Feb/2015 18:42:36] "GET /status HTTP/1.1" 404 -
-172.19.3.15 - - [11/Feb/2015 18:42:36] code 404, message File not found
-172.19.3.15 - - [11/Feb/2015 18:42:36] "GET /web-console/ServerInfo.jsp HTTP/1.1" 404 -
-172.19.3.15 - - [11/Feb/2015 18:42:36] code 404, message File not found
-172.19.3.15 - - [11/Feb/2015 18:42:36] "GET /web-console/Invoker HTTP/1.1" 404 -
-172.19.3.15 - - [11/Feb/2015 18:42:36] code 404, message File not found
-172.19.3.15 - - [11/Feb/2015 18:42:36] "GET /invoker/JMXInvokerServlet HTTP/1.1" 404 -
-Traceback (most recent call last):
-  File "scorer_v1.1.py", line 753, in <module>
+  File "./scorer_v1.1.py", line 788, in <module>
     main()
-  File "scorer_v1.1.py", line 230, in main
+  File "./scorer_v1.1.py", line 258, in main
     bratDiff.start_server(visualization_path, logger)
-  File "/Users/zhengzhongliu/Documents/projects/EvmEval/bratDiff.py", line 85, in start_server
+  File "/Users/zhengzhongliu/Documents/projects/EvmEval/bratDiff.py", line 92, in start_server
     httpd.serve_forever()
   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 236, in serve_forever
     poll_interval)

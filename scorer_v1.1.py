@@ -185,8 +185,6 @@ def main():
         diff_out_path = args.comparison_output
         create_parent_dir(diff_out_path)
         diff_out = open(diff_out_path, 'w')
-    else:
-        logger.warning("Comparison output not specified")
 
     if args.tokenPath is not None:
         if os.path.isdir(args.tokenPath):
@@ -205,8 +203,6 @@ def main():
 
     if args.text is not None:
         text_dir = args.text
-    else:
-        logger.warning("Text directory is not specified")
 
     if bratFound and args.do_visualization:
         do_visualization = True
@@ -731,19 +727,29 @@ def evaluate(eval_mode):
             portion_score = 1.0 / len(system_indices)
 
             gold_realis = gold_mention_table[gold_index][2]
+
+            # it is possible for realis to be empty, however,
+            # mention type should always be there otherwise
+            # the annotation is invalid, we cannot have an
+            # event that does not have a type
+            is_realis_missing = False
             if gold_realis == missingAttributePlaceholder:
-                realis_correct = 1
+                realis_correct += 1
+                is_realis_missing = True
                 logger.warning(
                     "Found one realis type for in file [%s] not annotated, give full credit to all system." % doc_id)
-            else:
-                for system_index in system_indices:
+
+            for system_index in system_indices:
+                if not is_realis_missing:
                     if (system_mention_table[system_index][2] ==
                             gold_mention_table[gold_index][2]):
                         realis_correct += portion_score
 
-                    if (system_mention_table[system_index][1] ==
-                            gold_mention_table[gold_index][1]):
-                        type_correct += portion_score
+                if (system_mention_table[system_index][1] ==
+                        gold_mention_table[gold_index][1]):
+                    type_correct += portion_score
+
+    logger.debug("Type : %.2f, Realis : %.2f" % (type_correct, realis_correct))
 
     write_diff(bod_marker + " " + doc_id + "\n")
     for gIndex, gLine in enumerate(g_lines):

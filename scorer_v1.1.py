@@ -120,7 +120,8 @@ def main():
                              visualization_path)
     parser.add_argument(
         "-o", "--output", help="Optional evaluation result redirects, it is suggested"
-                               "to provide when using visualization.")
+                               "to be sued when using visualization, otherwise the results will"
+                               "be hard to read")
     parser.add_argument(
         "-t", "--tokenPath", help="Path to the directory containing the "
                                   "token mappings file", required=True)
@@ -128,9 +129,6 @@ def main():
         "-x", "--text", help="Path to the directory containing the original text, "
                              "only required in HTML comparison mode (-v)"
     )
-    parser.add_argument(
-        "-w", "--overwrite", help="force overwrite existing comparison "
-                                  "file", action='store_true')
     parser.add_argument(
         "-of", "--offset_field", help="A pair of integer indicates which column we should "
                                       "read the offset in the token mapping file, index starts"
@@ -186,11 +184,6 @@ def main():
     if args.comparison_output is not None:
         diff_out_path = args.comparison_output
         create_parent_dir(diff_out_path)
-        if not args.overwrite and os.path.isfile(diff_out_path):
-            sys.stderr.write(
-                "Output path for comparison [%s] already exists, use '-w' flag "
-                "to force overwrite\n" % diff_out_path)
-            sys.exit(1)
         diff_out = open(diff_out_path, 'w')
     else:
         logger.warning("Comparison output not specified")

@@ -117,7 +117,6 @@ def generate_diff_html(text, gold_annotations, system_annotations, token_map, as
     for gold_index, (system_indices, score) in enumerate(
             assigned_gold_2_system_mapping):
         if score > 0:  # -1 indicates no mapping
-
             for system_index in system_indices:
                 system_missing_marker[system_index] = score
                 gold_missing_marker[gold_index] = score
@@ -229,7 +228,7 @@ def token_annotation_2_character_annotation(token_based_annotations, token_map):
             spans.append([])
         spans[-1].append(token_2_string_id(this_id))
 
-    return [[token_map[s[0]][0], token_map[s[-1]][1] + 1] for s in spans]
+    return [[token_map[s[0]][0], token_map[s[-1]][1]] for s in spans]
 
 
 def token_2_string_id(int_id):

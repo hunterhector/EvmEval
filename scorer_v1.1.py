@@ -417,6 +417,9 @@ def read_all_doc(gf, sf):
         for d in s_minus_g:
             logger.warning("  - " + d)
 
+    if len(common_id_set) == 0:
+        logger.debug("No document to score, file names are all different!")
+
     doc_ids_to_score = sorted(g_id_set)
 
 

@@ -1,7 +1,0 @@
-#BeginOfDocument example1
-brat_conversion	example1	E1	t3,t5	way made	Movement_Transport-Person	Actual	1
-#EndOfDocument
-#BeginOfDocument example2
-brat_conversion	example2	E2	t49	nominating	Personnel_Nominate	Actual	1
-brat_conversion	example2	E3	t771,t774	created jobs	Personnel_Start-Position	Generic	1
-#EndOfDocument

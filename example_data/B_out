@@ -1,7 +1,7 @@
 #BeginOfDocument example1
-system_B	example1	E1	t3,t5	way made	Movement_Transport-Person	Actual	1	1.0000	|	t5,t3	way made	Movement_Transport-Person	Actual
+system_B	E1	t5,t3	Movement_Transport-Person	Actual	|	E1	t5,t3	Movement_Transport-Person	Actual	1.00
 #EndOfDocument 
 #BeginOfDocument example2
-	example2	E2	t49	nominating	Personnel_Nominate	Actual	1	-	|	MISS
-	example2	E3	t771,t774	created jobs	Personnel_Start-Position	Generic	1	-	|	MISS
+	E2	t49	Personnel_Nominate	Actual	|	-	-
+	E3	t774,t771	Personnel_Start-Position	Generic	|	-	-
 #EndOfDocument 

@@ -32,7 +32,7 @@ logger.addHandler(stream_handler)
 
 bratFound = True
 try:
-    import bratDiff
+    import visualize
 except ImportError as e:
     logger.warning("Didn't find Brat visualization code, will not do visualization")
     bratFound = False
@@ -242,9 +242,9 @@ def main():
     if do_visualization:
         logger.info("Preparing visualization for %d documents" % (len(doc_ids_to_score)))
 
-        bratDiff.prepare_diff_setting(doc_ids_to_score, all_possible_types,
+        visualize.prepare_diff_setting(doc_ids_to_score, all_possible_types,
                                       os.path.join(visualization_path, visualization_json_data_subpath))
-        bratDiff.start_server(visualization_path, logger)
+        visualize.start_server(visualization_path, logger)
 
 
 def print_eval_results():
@@ -779,7 +779,7 @@ def evaluate(eval_mode):
                       len(g_lines), doc_id))
 
     if do_visualization:
-        bratDiff.prepare_diff_data(read_original_text(doc_id + source_file_ext),
+        visualize.prepare_diff_data(read_original_text(doc_id + source_file_ext),
                                    gold_mention_table, system_mention_table, id2span_map,
                                    os.path.join(visualization_path, visualization_json_data_subpath),
                                    doc_id, assigned_gold_2_system_mapping)

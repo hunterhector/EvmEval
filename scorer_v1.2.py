@@ -12,7 +12,7 @@
 # 1. Change attribute scoring, combine it with mention span scoring
 # 2. Precision for span is divided by #SYS instead of TP + FP
 # 3. Plain text summary is made better
-# 4. Separate the visualization output
+# 4. Separate the visualization code out into anther file
 
 # Change log v1.1:
 # 1. If system produce no mentions, the scorer should penalize it instead of ignore it
@@ -35,13 +35,6 @@ stream_handler = logging.StreamHandler(sys.stdout)
 formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
 stream_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
-
-bratFound = True
-try:
-    import bratDiff
-except ImportError as e:
-    logger.warning("Didn't find Brat visualization code, will not do visualization")
-    bratFound = False
 
 comment_marker = "#"
 bod_marker = "#BeginOfDocument"  # mark begin of a document
@@ -81,8 +74,6 @@ token_offset_fields = [2, 3]
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
-do_visualization = False
-
 
 class EvalMethod:
     Token, Char = range(2)
@@ -110,7 +101,6 @@ def main():
     global token_file_ext
     global source_file_ext
     global visualization_path
-    global do_visualization
     global text_dir
     global token_offset_fields
     global all_attribute_combinations
@@ -124,22 +114,13 @@ def main():
     parser.add_argument("-d", "--comparison_output",
                         help="Compare and help show the difference between "
                              "system and gold")
-    parser.add_argument("-v", "--do_visualization", help="Generate web based visualization data",
-                        action='store_true')
-    parser.add_argument("-vp", "--visualization_html_path",
-                        help="To generate Brat visualization, default path is [%s]" %
-                             visualization_path)
     parser.add_argument(
         "-o", "--output", help="Optional evaluation result redirects, it is suggested"
                                "to be sued when using visualization, otherwise the results will"
                                "be hard to read")
     parser.add_argument(
-        "-t", "--tokenPath", help="Path to the directory containing the "
-                                  "token mappings file", required=True)
-    parser.add_argument(
-        "-x", "--text", help="Path to the directory containing the original text, "
-                             "only required in HTML comparison mode (-v)"
-    )
+        "-t", "--token_path", help="Path to the directory containing the "
+                                   "token mappings file", required=True)
     parser.add_argument(
         "-of", "--offset_field", help="A pair of integer indicates which column we should "
                                       "read the offset in the token mapping file, index starts"
@@ -149,10 +130,6 @@ def main():
         "-te", "--token_table_extension",
         help="any extension appended after docid of token table files. "
              "Default is [%s]" % token_file_ext)
-    parser.add_argument(
-        "-se", "--source_file_extension",
-        help="any extension appended after docid of source files."
-             "Default is [%s]" % source_file_ext)
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
 
@@ -170,7 +147,7 @@ def main():
         out_path = args.output
         create_parent_dir(out_path)
         eval_out = open(out_path, 'w')
-        logger.info("Evaluatoin output will be saved at %s" % out_path)
+        logger.info("Evaluation output will be saved at %s" % out_path)
     else:
         eval_out = sys.stdout
         logger.info("Evaluation output at standard out")
@@ -178,14 +155,12 @@ def main():
     if args.token_table_extension is not None:
         token_file_ext = args.token_table_extension
 
-    if args.source_file_extension is not None:
-        source_file_ext = args.source_file_extension
-
     if os.path.isfile(args.gold):
         gf = open(args.gold)
     else:
         logger.error("Cannot find gold standard file at " + args.gold)
         sys.exit(1)
+
     if os.path.isfile(args.system):
         sf = open(args.system)
     else:
@@ -197,14 +172,13 @@ def main():
         create_parent_dir(diff_out_path)
         diff_out = open(diff_out_path, 'w')
 
-    if args.tokenPath is not None:
-        if os.path.isdir(args.tokenPath):
-            logger.debug("Will search token files in " + args.tokenPath)
-            token_dir = args.tokenPath
+    if args.token_path is not None:
+        if os.path.isdir(args.token_path):
+            logger.debug("Will search token files in " + args.token_path)
+            token_dir = args.token_path
         else:
-            logger.debug("Cannot find given token directory at " +
-                         args.tokenPath +
-                         ", will try search for currrent directory")
+            logger.debug("Cannot find given token directory at [%s], "
+                         "will try search for current directory" % args.token_path)
 
     if args.offset_field is not None:
         try:
@@ -212,62 +186,25 @@ def main():
         except ValueError as _:
             logger.error("Should provide two integer with comma in between")
 
-    if args.text is not None:
-        text_dir = args.text
-
-    if bratFound and args.do_visualization:
-        do_visualization = True
-        if args.visualization_html_path is not None:
-            visualization_path = args.visualization_html_path
-        if os.path.isdir(visualization_path):
-            json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
-            if not os.path.isdir(json_dir):
-                os.mkdir(json_dir)
-            logger.info("Generating Brat annotation at " + visualization_path)
-        else:
-            logger.error("Visualization directory does not exists! Will not do visualization")
-            do_visualization = False
-
-        if not os.path.isdir(text_dir):
-            logger.error("Cannot find text directory : [%s], cannot do visualization." % text_dir)
-            do_visualization = False
-
-
-
     # token based eval mode
     eval_mode = EvalMethod.Token
-    # charactoer mode is disabled
-    # if args.charMode:
-    # eval_mode = EvalMethod.Char
-    # logger.debug("NOTE: Using character based evaluation")
-
     all_attribute_combinations = get_attr_combinations(attribute_names)
-
     read_all_doc(gf, sf)
     while True:
         if not evaluate(eval_mode):
             break
-
     print_eval_results()
-
     logger.info("Evaluation Done.")
-
-    if do_visualization:
-        logger.info("Preparing visualization for %d documents" % (len(doc_ids_to_score)))
-
-        bratDiff.prepare_diff_setting(doc_ids_to_score, all_possible_types,
-                                      os.path.join(visualization_path, visualization_json_data_subpath))
-        bratDiff.start_server(visualization_path, logger)
 
 
 def get_combined_attribute_header(all_comb, size):
-    header_list = [pad_char_before_until("plain", size) + "\t"]
+    header_list = [pad_char_before_until("plain", size)]
     for comb in all_comb:
         # print comb
         attr_header = []
         for attr_pair in comb:
             attr_header.append(attr_pair[1])
-        header_list.append(pad_char_before_until("+".join(attr_header), size) + "\t")
+        header_list.append(pad_char_before_until("+".join(attr_header), size))
     return header_list
 
 
@@ -285,45 +222,48 @@ def pad_char_before_until(s, n, c=" "):
 
 
 def print_eval_results():
-    total_tp = 0
-    total_fp = 0
     total_gold_mentions = 0
     total_system_mentions = 0
-    total_prec = 0
-    total_recall = 0
     valid_docs = 0
 
-    attribute_based_global_info = [()] * len(all_attribute_combinations)
+    plain_global_scores = [0.0] * 4
+    attribute_based_global_scores = [[0.0] * 4 for _ in xrange(len(all_attribute_combinations))]
 
     doc_id_width = get_cell_width(doc_scores)
 
     eval_out.write("========Document results==========\n")
-    small_header_item = "Prec\tRec \tF1  "
-    big_header_list = get_combined_attribute_header(all_attribute_combinations, len(small_header_item))
+    small_header_item = "Prec  \tRec  \tF1   "
+    attribute_header_list = get_combined_attribute_header(all_attribute_combinations, len(small_header_item))
     small_headers = [small_header_item] * (len(all_attribute_combinations) + 1)
-    eval_out.write(pad_char_before_until("", doc_id_width) + "\t" + "\t|\t".join(big_header_list) + "\n")
+    eval_out.write(pad_char_before_until("", doc_id_width) + "\t" + "\t|\t".join(attribute_header_list) + "\n")
     eval_out.write(pad_char_before_until("Doc ID", doc_id_width) + "\t" + "\t|\t".join(small_headers) + "\n")
 
-    for (tp, fp, attribute_based_counts, numGoldMentions, numSysMentions, docId) in doc_scores:
-        prec = safe_div(tp, numSysMentions)
-        recall = safe_div(tp, numGoldMentions)
+    for (tp, fp, attribute_based_counts, num_gold_mentions, num_sys_mentions, docId) in doc_scores:
+        tp *= 100
+        fp *= 100
+        prec = safe_div(tp, num_sys_mentions)
+        recall = safe_div(tp, num_gold_mentions)
         doc_f1 = f1(prec, recall)
 
-        attribute_based_doc_info = []
+        attribute_based_doc_scores = []
 
         for comb_index, comb in enumerate(all_attribute_combinations):
             counts = attribute_based_counts[comb_index]
-            attr_tp = counts[0]
-            attr_fp = counts[1]
-            attr_prec = safe_div(attr_tp, numSysMentions)
-            attr_recall = safe_div(attr_tp, numGoldMentions)
+            attr_tp = counts[0] * 100
+            attr_fp = counts[1] * 100
+            attr_prec = safe_div(attr_tp, num_sys_mentions)
+            attr_recall = safe_div(attr_tp, num_gold_mentions)
             attr_f1 = f1(attr_prec, attr_recall)
-            attribute_based_doc_info.append("%.2f\t%.2f\t%.2f" % (attr_prec * 100, attr_recall * 100, attr_f1 * 100))
+
+            attribute_based_doc_scores.append("%.2f\t%.2f\t%.2f" % (attr_prec, attr_recall, attr_f1))
+
+            for score_index, score in enumerate([attr_tp, attr_fp, attr_prec, attr_recall]):
+                attribute_based_global_scores[comb_index][score_index] += score
 
         eval_out.write(
             "%s\t%.2f\t%.2f\t%.2f\t|\t%s\n" % (
-                pad_char_before_until(docId, doc_id_width), prec * 100, recall * 100, doc_f1 * 100,
-                "\t|\t".join(attribute_based_doc_info)))
+                pad_char_before_until(docId, doc_id_width), prec, recall, doc_f1,
+                "\t|\t".join(attribute_based_doc_scores)))
 
         if math.isnan(recall):
             # gold produce no mentions, do nothing
@@ -332,31 +272,34 @@ def print_eval_results():
             # system produce no mentions, accumulate denominator
             logger.warning('System produce nothing for document [%s], assigning 0 scores' % docId)
             valid_docs += 1
-            total_gold_mentions += numGoldMentions
+            total_gold_mentions += num_gold_mentions
         else:
             valid_docs += 1
-            total_tp += tp
-            total_fp += fp
-            total_gold_mentions += numGoldMentions
-            total_system_mentions += numSysMentions
-            total_prec += prec
-            total_recall += recall
+            total_gold_mentions += num_gold_mentions
+            total_system_mentions += num_sys_mentions
 
-    micro_prec = safe_div(total_tp, total_system_mentions)
-    micro_recall = safe_div(total_tp, total_gold_mentions)
-    micro_f1 = f1(micro_prec, micro_recall)
-    macro_prec = safe_div(total_prec, valid_docs)
-    macro_recall = safe_div(total_recall, valid_docs)
-    macro_f1 = f1(macro_prec, macro_recall)
+            for score_index, score in enumerate([tp, fp, prec, recall]):
+                plain_global_scores[score_index] += score
+
+    plain_average_scores = get_averages(plain_global_scores, total_gold_mentions, total_system_mentions, valid_docs)
 
     eval_out.write("\n=======Final Results=========\n")
+    max_attribute_name_width = len(max(attribute_header_list, key=len))
+    attributes_name_header = pad_char_before_until("Attributes", max_attribute_name_width)
 
-    eval_out.write("Precision (Micro Average): %.4f\n" % micro_prec)
-    eval_out.write("Recall (Micro Average):%.4f\n" % micro_recall)
-    eval_out.write("F1 (Micro Average):%.4f\n" % micro_f1)
-    eval_out.write("Precision (Macro Average): %.4f\n" % macro_prec)
-    eval_out.write("Recall (Macro Average): %.4f\n" % macro_recall)
-    eval_out.write("F1 (Macro Average): %.4f\n" % macro_f1)
+    final_result_big_header = ["Micro Average", "Macro Average"]
+
+    eval_out.write(
+        pad_char_before_until("", max_attribute_name_width, " ") + "\t" + "\t".join(
+            [pad_char_before_until(h, len(small_header_item)) for h in final_result_big_header]) + "\n")
+    eval_out.write(attributes_name_header + "\t" + "\t".join([small_header_item] * 2) + "\n")
+    eval_out.write(pad_char_before_until(attribute_header_list[0], max_attribute_name_width) + "\t" + "\t".join(
+        "%.2f" % f for f in plain_average_scores) + "\n")
+    for attr_index, attr_based_score in enumerate(attribute_based_global_scores):
+        attr_average_scores = get_averages(attr_based_score, total_gold_mentions, total_system_mentions, valid_docs)
+        eval_out.write(
+            pad_char_before_until(attribute_header_list[attr_index + 1], max_attribute_name_width) + "\t" + "\t".join(
+                "%.2f" % f for f in attr_average_scores) + "\n")
 
     if eval_out is not None:
         eval_out.flush()
@@ -365,6 +308,16 @@ def print_eval_results():
 
     if diff_out is not None:
         diff_out.close()
+
+
+def get_averages(scores, num_gold, num_sys, num_docs):
+    micro_prec = safe_div(scores[0], num_sys)
+    micro_recall = safe_div(scores[0], num_gold)
+    micro_f1 = f1(micro_prec, micro_recall)
+    macro_prec = safe_div(scores[2], num_docs)
+    macro_recall = safe_div(scores[3], num_docs)
+    macro_f1 = f1(macro_prec, macro_recall)
+    return micro_prec, micro_recall, micro_f1, macro_prec, macro_recall, macro_f1
 
 
 def read_token_ids(g_file_name):
@@ -455,10 +408,8 @@ def read_all_doc(gf, sf):
 
 def read_docs_with_doc_id(f):
     all_docs = {}
-
     lines = []
     doc_id = ""
-
     while True:
         line = f.readline()
         if not line:
@@ -484,7 +435,6 @@ def get_next_doc():
     if evaluating_index < len(doc_ids_to_score):
         doc_id = doc_ids_to_score[evaluating_index]
         evaluating_index += 1
-
         if doc_id in system_docs:
             return True, gold_docs[doc_id], system_docs[doc_id], doc_id
         else:
@@ -529,7 +479,7 @@ def parse_token_based_line(l, invisible_ids):
         logger.error("Output are not correctly formatted")
     token_ids = parse_token_ids(fields[3], invisible_ids)
 
-    return token_ids, fields[5:5 + num_attributes]
+    return fields[2], token_ids, fields[5:5 + num_attributes]
 
 
 def parse_line(l, eval_mode, invisible_ids):
@@ -564,32 +514,6 @@ def span_overlap(span1, span2):
         return 0
 
 
-def compute_char_overlap_score(g_spans, s_spans):
-    """
-    character based overlap score
-    """
-    # validate system span
-    validate_spans(s_spans)
-
-    g_length = 0
-    for s in g_spans:
-        g_length += (s[1] - s[0])
-
-    slength = 0
-    for s in s_spans:
-        slength += (s[1] - s[0])
-
-    total_overlap = 0.0
-    for gSpan in g_spans:
-        for sSpan in s_spans:
-            total_overlap += span_overlap(gSpan, sSpan)
-
-    # choose to use the longer length
-    deno = g_length if g_length < slength else slength
-
-    return total_overlap / deno
-
-
 def compute_token_overlap_score(g_tokens, s_tokens):
     """
     token based overlap score
@@ -618,38 +542,13 @@ def compute_token_overlap_score(g_tokens, s_tokens):
 
 
 def compute_overlap_score(system_outputs, gold_annos, eval_mode):
-    if eval_mode == EvalMethod.Token:
-        return compute_token_overlap_score(system_outputs, gold_annos)
-    else:
-        return compute_char_overlap_score(system_outputs, gold_annos)
-
-
-def format_system_results(system_mention_table, id2token_map, system_index):
-    system_outputs, system_mention_type, system_realis = system_mention_table[system_index]
-
-    ids = ""
-    tokens = ""
-
-    id_sep = ""
-    token_sep = ""
-    for system_output_id in system_outputs:
-        ids += id_sep + system_output_id
-        tokens += token_sep + id2token_map[system_output_id]
-        id_sep = ","
-        token_sep = " "
-
-    return ids, tokens
-
-
-def write_diff(text):
-    if diff_out is not None:
-        diff_out.write(text)
+    return compute_token_overlap_score(system_outputs, gold_annos)
 
 
 def read_original_text(doc_id):
-    text_path = os.path.join(text_dir, doc_id)
+    text_path = os.path.join(text_dir, doc_id + source_file_ext)
     if os.path.exists(text_path):
-        f = open(os.path.join(text_dir, doc_id))
+        f = open(os.path.join(text_dir, doc_id + source_file_ext))
         return f.read()
     else:
         logger.error("Cannot locate original text, please check parameters")
@@ -677,14 +576,61 @@ def attribute_based_match(attribute_comb, gold_attrs, sys_attrs, doc_id):
     return True
 
 
+def write_diff(text):
+    if diff_out is not None:
+        diff_out.write(text)
+
+
+def prepare_write_schedule(gold_mention_table, system_mention_table, assigned_gold_2_system_mapping):
+    schedule = []
+    system_mapped_markers = [False] * len(system_mention_table)
+    for gold_index, _ in enumerate(gold_mention_table):
+        mapped_system_indices_and_scores = assigned_gold_2_system_mapping[gold_index]
+        if len(mapped_system_indices_and_scores) == 0:
+            schedule.append((gold_index, -1, -1))
+            continue
+        mapped_system_sorted_by_index = sorted(mapped_system_indices_and_scores, key=lambda t: t[1])
+        for system_index, score in mapped_system_sorted_by_index:
+            schedule.append((gold_index, system_index, score))
+            system_mapped_markers[system_index] = True
+
+    for system_index, m in enumerate(system_mapped_markers):
+        if not m:
+            schedule.append((-1, system_index, -1))
+
+    return schedule
+
+
+def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_mapping, gold_mention_table,
+                                   system_mention_table):
+    schedule = prepare_write_schedule(gold_mention_table, system_mention_table, assigned_gold_2_system_mapping)
+    write_diff(bod_marker + " " + doc_id + "\n")
+
+    for gold_index, system_index, score in schedule:
+        score_str = "%.2f" % score if gold_index >= 0 and system_index >= 0 else "-"
+
+        gold_info = "-"
+        if gold_index != -1:
+            gold_spans, gold_attributes, gold_mention_id = gold_mention_table[gold_index]
+            gold_info = "%s\t%s\t%s" % (gold_mention_id, ",".join(gold_spans), "\t".join(gold_attributes))
+
+        sys_info = "-"
+        if system_index != -1:
+            system_spans, system_attributes, sys_mention_id = system_mention_table[system_index]
+            sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(system_spans), "\t".join(system_attributes))
+
+        write_diff("%s\t%s\t|\t%s\t%s\n" % (system_id, gold_info, sys_info, score_str))
+
+    write_diff(eod_marker + " " + "\n")
+
+
 def evaluate(eval_mode):
     res, g_lines, s_lines, doc_id = get_next_doc()
 
     if not res:
         return False
 
-    invisible_ids, id2token_map, id2span_map = read_token_ids(doc_id) \
-        if eval_mode == EvalMethod.Token else set()
+    invisible_ids, id2token_map, id2span_map = read_token_ids(doc_id)
 
     system_id = ""
     if len(s_lines) > 0:
@@ -697,16 +643,16 @@ def evaluate(eval_mode):
     gold_mention_table = []
 
     for sl in s_lines:
-        system_spans, system_attributes = parse_line(
+        sys_mention_id, system_spans, system_attributes = parse_line(
             sl, eval_mode, invisible_ids)
         system_mention_table.append(
-            (system_spans, system_attributes))
+            (system_spans, system_attributes, sys_mention_id))
         all_possible_types.add(system_attributes[0])
 
     for gl in g_lines:
-        gold_spans, gold_attributes = parse_line(
+        gold_mention_id, gold_spans, gold_attributes = parse_line(
             gl, eval_mode, invisible_ids)
-        gold_mention_table.append((gold_spans, gold_attributes))
+        gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         all_possible_types.add(gold_attributes[0])
 
     # Store list of mappings with the score as a priority queue
@@ -714,9 +660,9 @@ def evaluate(eval_mode):
     all_gold_system_mapping_scores = []
 
     for system_index, (system_spans,
-                       system_attributes) in enumerate(
+                       system_attributes, sys_mention_id) in enumerate(
             system_mention_table):
-        for index, (gold_spans, gold_attributes) in enumerate(
+        for index, (gold_spans, gold_attributes, gold_mention_id) in enumerate(
                 gold_mention_table):
             overlap = compute_overlap_score(gold_spans,
                                             system_spans, eval_mode)
@@ -734,15 +680,14 @@ def evaluate(eval_mode):
     # a list system index and the mapping score for each gold
     assigned_gold_2_system_mapping = [[] for _ in xrange(len(g_lines))]
 
+    # greedily matching gold and system by selecting the highest score first
+    # one system mention can be mapped to only one gold
     while len(all_gold_system_mapping_scores) != 0:
         neg_mapping_score, mapping_system_index, mapping_gold_index = \
             heapq.heappop(all_gold_system_mapping_scores)
         if mapping_system_index not in mapped_system_mentions:
             assigned_gold_2_system_mapping[mapping_gold_index].append((mapping_system_index, -neg_mapping_score))
-            # print assigned_gold_2_system_mapping[mapping_gold_index]
         mapped_system_mentions.add(mapping_system_index)
-
-    # print assigned_gold_2_system_mapping
 
     tp = 0.0
     fp = 0.0
@@ -771,32 +716,8 @@ def evaluate(eval_mode):
                     attribute_based_gold_counts[attr_comb_index] += 1.0
                     break
 
-    # write_diff(bod_marker + " " + doc_id + "\n")
-    #
-    # for gIndex, gLine in enumerate(g_lines):
-    # gold_content = gLine.split("\t", 1)
-    #
-    # mapped_system_mentions = assigned_gold_2_system_mapping[gIndex]
-    #
-    # if len(mapped_system_mentions) == 0:
-    # score_out = "-"
-    # else:
-    # system_indices_with_mapping_scores = assigned_gold_2_system_mapping[gIndex]
-    # score_out = "%.4f" % system_indices_with_mapping_scores[0][1]
-    #
-    # write_diff("%s\t%s\t%s" %
-    # (system_id, gold_content[1], score_out))
-    #
-    # if len(mapped_system_mentions) == 0:
-    # write_diff("\t|\tMISS")
-    #
-    # for system_index in system_indices:
-    # system_spans, system_attributes = system_mention_table[system_index]
-    # system_id_str, token_str = format_system_results(system_mention_table, id2token_map, system_index)
-    # write_diff("\t|\t%s\t%s\t%s" % (system_id_str, token_str, "\t".join(system_attributes)))
-    #
-    # write_diff("\n")
-    # write_diff(eod_marker + " " + "\n")
+    write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_mapping, gold_mention_table,
+                                   system_mention_table)
 
     attribute_based_fps = [0.0] * len(all_attribute_combinations)
     for attribute_comb_index, (abtp, abgc) in enumerate(zip(attribute_based_tps, attribute_based_gold_counts)):
@@ -807,11 +728,6 @@ def evaluate(eval_mode):
     doc_scores.append((tp, fp, zip(attribute_based_tps, attribute_based_fps),
                        len(g_lines), len(s_lines), doc_id))
 
-    if do_visualization:
-        bratDiff.prepare_diff_data(read_original_text(doc_id + source_file_ext),
-                                   gold_mention_table, system_mention_table, id2span_map,
-                                   os.path.join(visualization_path, visualization_json_data_subpath),
-                                   doc_id, assigned_gold_2_system_mapping)
     return True
 
 

@@ -1,17 +1,13 @@
 ========Document results==========
-TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-1.00	0.00	1	1.0000	1.0000	1.0000	1.0000	1.0000	example1
-TP	FP	#Gold	Prec	Recall	F1	Type	Realis	Doc Id
-0.00	0.00	2	nan	0.0000	nan	0.0000	0.0000	example2
+        	             plain	|	      mention_type	|	     realis_status	|	mention_type+realis_status
+  Doc ID	Prec  	Rec  	F1   	|	Prec  	Rec  	F1   	|	Prec  	Rec  	F1   	|	Prec  	Rec  	F1   
+example1	100.00	100.00	100.00	|	100.00	100.00	100.00	|	100.00	100.00	100.00	|	100.00	100.00	100.00
+example2	nan	0.00	nan	|	nan	0.00	nan	|	nan	0.00	nan	|	nan	0.00	nan
 
 =======Final Results=========
-Precision (Micro Average): 1.0000
-Recall (Micro Average):0.3333
-F1 (Micro Average):0.5000
-Mention type detection accuracy (Micro Average):0.3333
-Mention realis status accuracy (Micro Average):0.3333
-Precision (Macro Average): 0.5000
-Recall (Macro Average): 0.5000
-F1 (Macro Average): 0.5000
-Mention type detection accuracy (Macro Average):0.5000
-Mention realis status accuracy (Macro Average):0.5000
+                          	     Micro Average	     Macro Average
+                Attributes	Prec  	Rec  	F1   	Prec  	Rec  	F1   
+                     plain	100.00	33.33	50.00	50.00	50.00	50.00
+              mention_type	100.00	33.33	50.00	nan	50.00	nan
+             realis_status	100.00	33.33	50.00	nan	50.00	nan
+mention_type+realis_status	100.00	33.33	50.00	nan	50.00	nan

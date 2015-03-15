@@ -32,10 +32,10 @@ type_mismatch_attr = "type_wrong"
 
 def prepare_diff_setting(all_doc_ids, all_mention_types, json_path):
     doc_id_list_json_out = open(os.path.join(json_path, "doc_ids.json"), 'w')
-    json.dump(all_doc_ids, doc_id_list_json_out)
+    doc_id_list_json_out.write(json.dumps(all_doc_ids))
 
     annotation_config_json_out = open(os.path.join(json_path, "annotation_config.json"), 'w')
-    json.dump(generate_mention_annotation_setting(all_mention_types), annotation_config_json_out, indent=4)
+    annotation_config_json_out.write(generate_mention_annotation_setting(all_mention_types))
 
 
 def generate_mention_annotation_setting(all_mention_types):
@@ -77,7 +77,7 @@ def generate_mention_annotation_setting(all_mention_types):
     config["event_types"] = event_types
     config["event_attribute_types"] = event_attribute_types
 
-    return config
+    return json.dumps(config, indent=4)
 
 
 def start_server(visualization_path, logger):
@@ -100,8 +100,8 @@ def prepare_diff_data(text, gold_annotations, system_annotations, token_map, jso
                          'w')
     system_json_out = open(os.path.join(json_path, doc_id + "_sys.json"),
                            'w')
-    json.dump(gold_data, gold_json_out, indent=4)
-    json.dump(system_data, system_json_out, indent=4)
+    gold_json_out.write(gold_data)
+    system_json_out.write(system_data)
 
 
 def generate_diff_html(text, gold_annotations, system_annotations, token_map, assigned_gold_2_system_mapping):
@@ -117,6 +117,7 @@ def generate_diff_html(text, gold_annotations, system_annotations, token_map, as
     for gold_index, (system_indices, score) in enumerate(
             assigned_gold_2_system_mapping):
         if score > 0:  # -1 indicates no mapping
+
             for system_index in system_indices:
                 system_missing_marker[system_index] = score
                 gold_missing_marker[gold_index] = score
@@ -194,7 +195,7 @@ def create_brat_json(text, all_annotations, token_map, span_missing_marker, real
     data['triggers'] = mentions
     data['attributes'] = attributes
     data['events'] = events
-    return data
+    return json.dumps(data, indent=4)
 
 
 def parse_token_annotation(token_based_annotations, token_map, text_span_id):
@@ -228,7 +229,7 @@ def token_annotation_2_character_annotation(token_based_annotations, token_map):
             spans.append([])
         spans[-1].append(token_2_string_id(this_id))
 
-    return [[token_map[s[0]][0], token_map[s[-1]][1]] for s in spans]
+    return [[token_map[s[0]][0], token_map[s[-1]][1] + 1] for s in spans]
 
 
 def token_2_string_id(int_id):

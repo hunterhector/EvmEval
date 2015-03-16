@@ -258,7 +258,8 @@ def print_eval_results():
             attribute_based_doc_scores.append("%.2f\t%.2f\t%.2f" % (attr_prec, attr_recall, attr_f1))
 
             for score_index, score in enumerate([attr_tp, attr_fp, attr_prec, attr_recall]):
-                attribute_based_global_scores[comb_index][score_index] += score
+                if not math.isnan(score):
+                    attribute_based_global_scores[comb_index][score_index] += score
 
         eval_out.write(
             "%s\t%.2f\t%.2f\t%.2f\t|\t%s\n" % (

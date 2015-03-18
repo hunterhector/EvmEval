@@ -725,7 +725,11 @@ def evaluate(eval_mode):
         attribute_based_fps[attribute_comb_index] = len(s_lines) - abtp
 
     # unmapped system mentions are considered as false positive
-    fp += len(s_lines) - plain_gold_found
+    # fp = len(s_lines) - plain_gold_found
+
+    # unmapped system mentions and the partial scores are considered as false positive
+    fp = len(s_lines) - tp
+
     doc_scores.append((tp, fp, zip(attribute_based_tps, attribute_based_fps),
                        len(g_lines), len(s_lines), doc_id))
 

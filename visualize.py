@@ -214,6 +214,8 @@ def prepare_diff_data(text, gold_annotations, system_annotations, token_map, jso
                       assigned_gold_2_system_mapping):
     gold_data, system_data = generate_diff_html(text, gold_annotations, system_annotations, token_map,
                                                 assigned_gold_2_system_mapping)
+    # if "Conflict_Demonstrate" in json.dumps(system_data):
+    # print system_data
     gold_json_out = open(os.path.join(json_path, doc_id + "_gold.json"), 'w')
     system_json_out = open(os.path.join(json_path, doc_id + "_sys.json"), 'w')
     json.dump(gold_data, gold_json_out, indent=4)
@@ -221,8 +223,8 @@ def prepare_diff_data(text, gold_annotations, system_annotations, token_map, jso
 
 
 def generate_diff_html(text, gold_annotations, system_annotations, token_map, assigned_gold_2_system_mapping):
-    gold_missing_marker = [1] * len(gold_annotations)
-    system_missing_marker = [0] * len(system_annotations)
+    gold_mapping_score = [1] * len(gold_annotations)
+    system_mapping_score = [0] * len(system_annotations)
 
     system_realis_match_marker = [0] * len(system_annotations)
     system_type_match_marker = [0] * len(system_annotations)
@@ -235,8 +237,8 @@ def generate_diff_html(text, gold_annotations, system_annotations, token_map, as
 
         if len(mapped_system_indices_and_scores) > 0:
             for system_index, mapping_score in mapped_system_indices_and_scores:
-                system_missing_marker[system_index] = mapping_score
-                gold_missing_marker[gold_index] = mapping_score
+                system_mapping_score[system_index] = mapping_score
+                gold_mapping_score[gold_index] = mapping_score
 
                 if (system_annotations[system_index][2] ==
                         gold_annotations[gold_index][2]):
@@ -248,16 +250,16 @@ def generate_diff_html(text, gold_annotations, system_annotations, token_map, as
                     system_type_match_marker[system_index] = 1
                     gold_type_match_marker[gold_index] = 1
         else:
-            gold_missing_marker[gold_index] = 0
+            gold_mapping_score[gold_index] = 0
 
-    gold_data = create_brat_json(text, gold_annotations, token_map, gold_missing_marker, gold_realis_match_marker,
+    gold_data = create_brat_json(text, gold_annotations, token_map, gold_mapping_score, gold_realis_match_marker,
                                  gold_type_match_marker)
-    system_data = create_brat_json(text, system_annotations, token_map, system_missing_marker,
+    system_data = create_brat_json(text, system_annotations, token_map, system_mapping_score,
                                    system_realis_match_marker, system_type_match_marker)
     return gold_data, system_data
 
 
-def create_brat_json(text, all_annotations, token_map, span_missing_marker, realis_match_marker,
+def create_brat_json(text, all_annotations, token_map, span_matching_score, realis_match_marker,
                      type_match_marker):
     data = {'text': text}
     events = []
@@ -269,13 +271,13 @@ def create_brat_json(text, all_annotations, token_map, span_missing_marker, real
 
     for index, (token_based_annotations, (mention_type, realis), mention_id) in enumerate(all_annotations):
         text_bound_id, annotation = parse_token_annotation(token_based_annotations, token_map, text_bound_id_record)
-        span_status = span_missing_marker[index]
+        span_status = span_matching_score[index]
 
         perfect_span = False
 
         if span_status == 0:
             mention = [text_bound_id, mention_type + missing_event_suffix, annotation]
-        elif span_status < 1:
+        elif span_status < 1.0:
             mention = [text_bound_id, mention_type + partial_matched_suffix, annotation]
         else:
             perfect_span = True
@@ -402,7 +404,7 @@ def read_token_ids(g_file_name):
         for tline in token_file:
             fields = tline.rstrip().split("\t")
             if len(fields) < 4:
-                logger.debug("Wierd token line " + tline)
+                logger.debug("Weird token line " + tline)
                 continue
 
             token_id = fields[0]
@@ -447,7 +449,7 @@ def parse_mapping(doc_id, doc_lines):
     for l in doc_lines:
         sys_id, gold_fields, sys_fields, score = parse_mapping_line(l)
         if score != "-":
-            assigned_gold_2_system_mapping[gold_index].append((sys_index, score))
+            assigned_gold_2_system_mapping[gold_index].append((sys_index, float(score)))
             all_possible_types.add(gold_fields[2])
             all_possible_types.add(gold_fields[3])
         if gold_fields[0] != "-":

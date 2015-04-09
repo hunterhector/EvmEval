@@ -10,9 +10,16 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/visualize_setup.js"></script>
     <script>
-		$(document).ready(sync_scroll());
-		var collData = loadJson("json/annotation_config.json");
-        var fileList = loadJson("json/doc_ids.json");
+		$(document).ready(
+		    function(){
+		        showClusterOnly = false
+		        fileChanged = true
+                toggleCluster()
+                syncScroll()
+            }
+		);
+		var collData = loadJson("json/config/annotation_config.json");
+        var fileList = loadJson("json/config/doc_ids.json");
     </script>
 
     <style>
@@ -26,27 +33,34 @@
         width:50%;
         overflow:hidden;
         }
-        #left-box{
-        position : absolute;
+        .bar{
+        width:100%;
+        overflow:hidden;
+        }
+        .left-down{
+        float:left;
         width : 50%;
         left : 0;
         overflow: hidden;
         }
-        #right-box{
-        position : absolute;
+        .right-down{
+        float:right;
         width : 50%;
         left : 50%;
         overflow: hidden;
         }
         .color-box {
-            width: 50px;
-            height: 20px;
-            display: inline-block;
-            position: relative;
-            left: 5px;
-            top: 5px;
-            margin-left: 8px;
-            margin-right: 8px;
+        width: 50px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        left: 5px;
+        top: 5px;
+        margin-left: 8px;
+        margin-right: 8px;
+        }
+        .hidden{
+        display:none;
         }
     </style>
 </head>
@@ -57,38 +71,61 @@
 
 <div class="left">
     <p>Select a document when Brat loaded...</p>
-    <select name="file_selector" id="selector" size="10" style="width:100%" onchange="embed()">
+    <select name="file_selector" id="selector" size="10" style="width:100%" onchange="onFileChange()">
     </select>
 </div>
 <div class="right">
     <h2>Legends</h2>
-<div class="color-box" style="background-color: #ffccaa;"></div>
-<b>Missing Event</b>
-<br/>
-<div class= "color-box" style="background-color: #aea0d6;"></div>
-<b>Partial Matched Event Span</b>
-<br/>
-<div class="color-box" style="background-color: lightgreen;"></div>
-<b>Correct Event</b>
-<br/>
-<div class="color-box" style="background-color: #1E90FF;"></div>
-<b>✘ : Incorrect Event Type</b>
-<br/>
-<div class="color-box" style="background-color: #1E90FF;"></div>
-<b>★ : Incorrect Realis Status</b>
-<br/>
-<div class="color-box" style="background-color: #1E90FF;"></div>
-<b>N/A : Realis Type Not Annotated in Gold Standard</b>
-</div>
-<br style="clear:both" />
 
-<div id='left-box'>
+    <div class="color-box" style="background-color: #ffccaa;"></div>
+    <b>Missing Event</b>
+    <br/>
+
+    <div class="color-box" style="background-color: #aea0d6;"></div>
+    <b>Partial Matched Event Span</b>
+    <br/>
+
+    <div class="color-box" style="background-color: lightgreen;"></div>
+    <b>Correct Event</b>
+    <br/>
+
+    <div class="color-box" style="background-color: #1E90FF;"></div>
+    <b>✘ : Incorrect Event Type</b>
+    <br/>
+
+    <div class="color-box" style="background-color: #1E90FF;"></div>
+    <b>★ : Incorrect Realis Status</b>
+    <br/>
+
+    <div class="color-box" style="background-color: #1E90FF;"></div>
+    <b>N/A : Realis Type Not Annotated in Gold Standard</b>
+</div>
+
+
+<div class="bar" id="main-tool-bar">
+    <input type="checkbox" name="main-tool" value="show_clusters" id="show-cluster-checkbox" onchange="onFileChange()"/> Use Cluster Selectors
+</div>
+
+<div class="left hidden" id="left-cluster-div">
+    <p>Select Left Clusters (hold Ctrl/Command for multiple):</p>
+    <select name="left-cluster-selector" id="left-cluster-selector" size="10" style="width:100%" onchange="embed()" multiple>
+    </select>
+</div>
+<div class='right hidden' id="right-cluster-div">
+    <p>Select Right Clusters (hold Ctrl/Command for multiple):</p>
+    <select name="right-cluster-selector" id="right-cluster-selector" size="10" style="width:100%" onchange="embed()" multiple>
+    </select>
+</div>
+
+<div class='left'>
     <h2>Gold Standard</h2>
+
     <div id='left'>
     </div>
 </div>
-<div id='right-box'>
+<div class='right'>
     <h2>System</h2>
+
     <div id='right'>
     </div>
 </div>
@@ -96,17 +133,27 @@
 <script type="text/javascript">
     var systemData;
     var goldData;
-    setFileList("selector", fileList);
+
+    var systemDataDisplay;
+    var goldDataDisplay;
+
+    var currentFileName
+    var fileChanged
+    var coref
+
+    setSelectorOptions("selector", fileList);
+
     var leftDispatcher;
     var rightDispatcher;
     head.ready(function() {
-        loadSelected();
+        loadDisplayData();
+
         leftDispatcher = Util.embed('left',
             $.extend({'collection': null}, collData),
-            $.extend({}, goldData), webFontURLs);
+            $.extend({}, goldDataDisplay), webFontURLs);
         rightDispatcher = Util.embed('right',
             $.extend({'collection': null}, collData),
-            $.extend({}, systemData), webFontURLs);
+            $.extend({}, systemDataDisplay), webFontURLs);
     });
 </script>
 

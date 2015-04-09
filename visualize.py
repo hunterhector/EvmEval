@@ -35,6 +35,9 @@ token_file_ext = ".txt.tab"
 source_file_ext = ".tkn.txt"
 visualization_path = "visualization"
 visualization_json_data_subpath = "json"
+config_subpath = "config"
+span_subpath = "span"
+
 token_offset_fields = [2, 3]
 
 comment_marker = "#"
@@ -54,6 +57,7 @@ stream_handler = logging.StreamHandler(sys.stdout)
 formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
 stream_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
+logger.setLevel(logging.INFO)
 
 
 def main():
@@ -76,12 +80,11 @@ def main():
         "-t", "--tokenPath", help="Path to the directory containing the "
                                   "token mappings file", required=True)
     parser.add_argument(
-        "-x", "--text", help="Path to the directory containing the original text, "
-                             "only required in HTML comparison mode (-v)"
+        "-x", "--text", help="Path to the directory containing the original text"
     )
 
     parser.add_argument("-v", "--visualization_html_path",
-                        help="To generate Brat visualization, default path is [%s]" %
+                        help="The Path to find visualization web pages, default path is [%s]" %
                              visualization_path)
     parser.add_argument(
         "-of", "--offset_field", help="A pair of integer indicates which column we should "
@@ -141,19 +144,31 @@ def validate():
         logger.error("Cannot find token directory : [%s], cannot do visualization." % text_dir)
     if os.path.isdir(visualization_path):
         json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
-        if not os.path.isdir(json_dir):
-            os.mkdir(json_dir)
+        config_dir = os.path.join(json_dir, config_subpath)
+        span_dir = os.path.join(json_dir, span_subpath)
+        mkdirs(config_dir)
+        mkdirs(span_dir)
         logger.info("Generating Brat annotation at " + visualization_path)
     else:
         logger.error("Visualization directory does not exists! Cannot do visualization")
 
 
+def mkdirs(p):
+    if not os.path.isdir(p):
+        os.makedirs(p)
+
+
 def prepare_diff_setting(all_doc_ids, all_mention_types, json_path):
-    doc_id_list_json_out = open(os.path.join(json_path, "doc_ids.json"), 'w')
+    doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), 'w')
     json.dump(all_doc_ids, doc_id_list_json_out)
 
-    annotation_config_json_out = open(os.path.join(json_path, "annotation_config.json"), 'w')
-    json.dump(generate_mention_annotation_setting(all_mention_types), annotation_config_json_out, indent=4)
+    annotation_config_json_out = open(os.path.join(json_path, config_subpath, "annotation_config.json"), 'w')
+    json.dump(generate_mention_annotation_setting(all_mention_types), annotation_config_json_out,
+              annotation_config_json_out,
+              indent=4)
+
+    doc_id_list_json_out.close()
+    annotation_config_json_out.close()
 
 
 def generate_mention_annotation_setting(all_mention_types):
@@ -216,10 +231,12 @@ def prepare_diff_data(text, gold_annotations, system_annotations, token_map, jso
                                                 assigned_gold_2_system_mapping)
     # if "Conflict_Demonstrate" in json.dumps(system_data):
     # print system_data
-    gold_json_out = open(os.path.join(json_path, doc_id + "_gold.json"), 'w')
-    system_json_out = open(os.path.join(json_path, doc_id + "_sys.json"), 'w')
+    gold_json_out = open(os.path.join(json_path, span_subpath, doc_id + "_gold.json"), 'w')
+    system_json_out = open(os.path.join(json_path, span_subpath, doc_id + "_sys.json"), 'w')
     json.dump(gold_data, gold_json_out, indent=4)
     json.dump(system_data, system_json_out, indent=4)
+    gold_json_out.close()
+    system_json_out.close()
 
 
 def generate_diff_html(text, gold_annotations, system_annotations, token_map, assigned_gold_2_system_mapping):
@@ -267,9 +284,9 @@ def create_brat_json(text, all_annotations, token_map, span_matching_score, real
     attributes = []
     text_bound_id_record = [{}, 1]
     attribute_id_record = [{}, 1]
-    event_id_record = [{}, 1]
+    # event_id_record = [{}, 1]
 
-    for index, (token_based_annotations, (mention_type, realis), mention_id) in enumerate(all_annotations):
+    for index, (token_based_annotations, (mention_type, realis), event_id) in enumerate(all_annotations):
         text_bound_id, annotation = parse_token_annotation(token_based_annotations, token_map, text_bound_id_record)
         span_status = span_matching_score[index]
 
@@ -282,7 +299,7 @@ def create_brat_json(text, all_annotations, token_map, span_matching_score, real
         else:
             perfect_span = True
 
-        event_id = auto_find_id(event_id_record, text_bound_id, "E")
+        # event_id = auto_find_id(event_id_record, text_bound_id, "E")
 
         realis_attribute_id = auto_find_id(attribute_id_record, (realis, text_bound_id, event_id), "A")
         event_realis = [realis_attribute_id, realis, event_id]

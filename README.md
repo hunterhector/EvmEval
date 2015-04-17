@@ -41,7 +41,7 @@ Please note that all 4 fields are required and will be used:
     -- The scorer will use the token_str to detect invisible words 
 
 brat2tokenFormat.py:
---------------------
+====================
 
 Features
 ---------
@@ -100,7 +100,7 @@ the directory specified by '-t' argument
 	  -b, --debug           turn debug mode on
 
 scorer.py:
-----------
+==========
 
 Features
 ---------
@@ -110,14 +110,23 @@ read the scoring documentation for more details.
   a. A text based comparison output (-d option)
   b. A web based comparison output using Brat's embedded visualization (-v option)
   
-About Visualization
--------------------
-The visualization is provided as a mechanism to compare different output, which is optional
-and can be ignored if one is only interested in the scores.
 
+visualize.py
+===================
+
+The visualization is provided as a mechanism to compare different output, which is optional and can be ignored if one is only interested in the scores. This code maybe update frequently. Please refer to the command line "-h" for detailed instructions.
+
+The visualize code represent mention differences in JSON, which is then passed to [Embedded Brat](http://brat.nlplab.org/embed.html) .  
+
+Recent changes make visualizing clusters possible by creating additional JSON object. When enabled, there will be a cluster selector on the webpage, one could select the cluster and all other event mentions will hide.
+
+Text Base Visualization
+-----------------------
 The text base visualization is straightforward, a text document is produced for comparison.
 The annotation of both systems are displayed in one line, separated by "|"
 
+Web Base Visualization
+----------------------
 The web based visualization is composed of two steps: 
   1. It will use the bratDiff module to produce JSON representation into the visualization 
   folder (visualization/json)
@@ -126,8 +135,10 @@ The web based visualization is composed of two steps:
   4. User can stop the server when done, and restart it at anytime using "start.sh", it is 
   no longer necessary to regenerate the JSON data if one only wish to use the old ones
   
+
 Usage
------
+=====
+
 	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] -t
                  TOKENPATH [-w] [-te TOKEN_TABLE_EXTENSION] [-b]
 

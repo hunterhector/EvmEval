@@ -70,12 +70,12 @@ Further development might allow customized ID convention.
                            [-oe EXT] [-i EID] [-w] [-te TOKEN_TABLE_EXTENSION]
                            [-ae ANNOTATION_EXTENSION] [-b]
 
-This converter converts Brat annotation files to one single token based event
-mention description file (CMU format). It accepts a single file name or a
-directory name that contains the Brat annotation output. The converter also
-requires token offset files that shares the same name with the annotation
-file, with extension .txt.tab. The converter will search for the token file in
-the directory specified by '-t' argument
+	This converter converts Brat annotation files to one single token based event
+	mention description file (CMU format). It accepts a single file name or a
+	directory name that contains the Brat annotation output. The converter also
+	requires token offset files that shares the same name with the annotation
+	file, with extension .txt.tab. The converter will search for the token file in
+	the directory specified by '-t' argument
 
 	Required Arguments:
 	  -d DIR, --dir DIR     directory of the annotation files

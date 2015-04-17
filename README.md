@@ -41,10 +41,10 @@ Please note that all 4 fields are required and will be used:
     -- The scorer will use the token_str to detect invisible words 
 
 brat2tokenFormat.py:
-====================
+--------------------
 
-Features
----------
+*Features*
+--------
 
 1. ID convention
 
@@ -63,7 +63,7 @@ Further development might allow customized ID convention.
 
 3. Discontinuous text-bound annotations will be supported
 
-Usage
+*Usage*
 -----
 
 	brat2tokenFormat.py [-h] (-d DIR | -f FILE) -t TOKENPATH [-o OUT]
@@ -100,9 +100,9 @@ the directory specified by '-t' argument
 	  -b, --debug           turn debug mode on
 
 scorer.py:
-==========
+----------
 
-Features
+*Features*
 ---------
 1. Produce F1-like scoring by mapping system mentions to gold standard mentions,
 read the scoring documentation for more details.
@@ -111,8 +111,42 @@ read the scoring documentation for more details.
   b. A web based comparison output using Brat's embedded visualization (-v option)
   
 
+*Usage*
+-----
+
+	usage: scorer_v1.2.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
+	                      [-o OUTPUT] -t TOKEN_PATH [-of OFFSET_FIELD]
+	                      [-te TOKEN_TABLE_EXTENSION] [-b]
+	
+	Event mention scorer, which conducts token based scoring, system and gold
+	standard files should follows the token-based format.
+	
+	optional arguments:
+	  -h, --help            show this help message and exit
+	  -g GOLD, --gold GOLD  Golden Standard
+	  -s SYSTEM, --system SYSTEM
+	                        System output
+	  -d COMPARISON_OUTPUT, --comparison_output COMPARISON_OUTPUT
+	                        Compare and help show the difference between system
+	                        and gold
+	  -o OUTPUT, --output OUTPUT
+	                        Optional evaluation result redirects, it is
+	                        suggestedto be sued when using visualization,
+	                        otherwise the results willbe hard to read
+	  -t TOKEN_PATH, --token_path TOKEN_PATH
+	                        Path to the directory containing the token mappings
+	                        file
+	  -of OFFSET_FIELD, --offset_field OFFSET_FIELD
+	                        A pair of integer indicates which column we should
+	                        read the offset in the token mapping file, index
+	                        startsat 0, default value will be [2, 3]
+	  -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
+	                        any extension appended after docid of token table
+	                        files. Default is [.txt.tab]
+	  -b, --debug           turn debug mode on
+  
 visualize.py
-===================
+------------
 
 The visualization is provided as a mechanism to compare different output, which is optional and can be ignored if one is only interested in the scores. This code maybe update frequently. Please refer to the command line "-h" for detailed instructions.
 
@@ -120,12 +154,12 @@ The visualize code represent mention differences in JSON, which is then passed t
 
 Recent changes make visualizing clusters possible by creating additional JSON object. When enabled, there will be a cluster selector on the webpage, one could select the cluster and all other event mentions will hide.
 
-Text Base Visualization
+*Text Base Visualization*
 -----------------------
 The text base visualization is straightforward, a text document is produced for comparison.
 The annotation of both systems are displayed in one line, separated by "|"
 
-Web Base Visualization
+*Web Base Visualization*
 ----------------------
 The web based visualization is composed of two steps: 
   1. It will use the bratDiff module to produce JSON representation into the visualization 
@@ -137,7 +171,7 @@ The web based visualization is composed of two steps:
   
 
 Usage
-=====
+-----
 
 	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] -t
                  TOKENPATH [-w] [-te TOKEN_TABLE_EXTENSION] [-b]

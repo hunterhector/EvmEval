@@ -11,9 +11,11 @@ import logging
 import sys
 import os
 
+# TODO validator should share the parsing code with scorer
 comment_marker = "#"
 bod_marker = "#BeginOfDocument"  # mark begin of a document
 eod_marker = "#EndOfDocument"  # mark end of a document
+relation_marker = "@"   # mark relation
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -34,8 +36,10 @@ token_file_ext = ".txt.tab"
 span_seperator = ";"
 span_joiner = "_"
 
+
 class EvalMethod:
     Token, Char = range(2)
+
 
 def create_parent_dir(p):
     """
@@ -65,12 +69,11 @@ def main():
         "-t", "--tokenPath", help="Path to the directory containing the "
                                   "token mappings file", required=True)
     parser.add_argument(
-        "-te","--token_table_extension",
+        "-te", "--token_table_extension",
         help="any extension appended after docid of token table files. "
-        "Default is "+ tokenFileExt)
+             "Default is " + token_file_ext)
 
     args = parser.parse_args()
-
 
     if args.tokenPath is not None:
         if os.path.isdir(args.tokenPath):
@@ -103,6 +106,7 @@ def main():
 
     if not eval_fail:
         logger.warning("Syntax validation passed, please still check for system results carefully")
+
 
 def get_invisible_word_ids(g_file_name):
     invisible_ids = set()
@@ -214,6 +218,7 @@ def validate(s_lines, doc_id):
         realis_status = fields[6]
 
     return True
+
 
 if __name__ == "__main__":
     main()

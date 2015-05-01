@@ -1,13 +1,19 @@
 #!/usr/bin/python
 
 """
-    A simple scorer that reads the CMU Event Mention Detection Format
+    A simple scorer that reads the CMU Event Mention Format (tbf)
     data and produce a mention based F-Scores
+
+    It could also call the CoNLL coreference implementation and
+    produce coreference results
 
     This scorer also require token files to conduct evaluation
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.3:
+# 1. add ability to convert input format to conll format, and feed it to the coreference resolver
+
 # Change log v1.2:
 # 1. Change attribute scoring, combine it with mention span scoring
 # 2. Precision for span is divided by #SYS instead of TP + FP
@@ -30,6 +36,9 @@ import os
 import heapq
 import itertools
 
+from tbf2conll import ConllConverter
+
+
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
 formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
@@ -39,6 +48,10 @@ logger.addHandler(stream_handler)
 comment_marker = "#"
 bod_marker = "#BeginOfDocument"  # mark begin of a document
 eod_marker = "#EndOfDocument"  # mark end of a document
+relation_marker = "@"  # mark start of a relation
+
+conll_bod_marker = "#begin document"
+conll_eod_marker = "#end document"
 
 token_file_ext = ".txt.tab"
 source_file_ext = ".tkn.txt"
@@ -63,6 +76,9 @@ text_dir = "."
 
 diff_out = None
 mention_eval_out = None
+coref_out = None
+
+eval_coref = False
 
 doc_scores = []
 
@@ -73,6 +89,9 @@ span_joiner = "_"
 token_offset_fields = [2, 3]
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
+
+temp_conll_out = "temp_conll_out"
+conll_file_out = None
 
 
 class EvalMethod:
@@ -95,7 +114,10 @@ def create_parent_dir(p):
 
 
 def main():
+    global coref_out
+    global conll_file_out
     global diff_out
+    global eval_coref
     global mention_eval_out
     global token_dir
     global token_file_ext
@@ -115,9 +137,10 @@ def main():
                         help="Compare and help show the difference between "
                              "system and gold")
     parser.add_argument(
-        "-o", "--output", help="Optional evaluation result redirects, it is suggested"
-                               "to be sued when using visualization, otherwise the results will"
-                               "be hard to read")
+        "-o", "--output", help="Optional evaluation result redirects, put eval result to file")
+    parser.add_argument(
+        "-c", "--coref", help="Eval Coreference result output, need to put the reference"
+                              "conll coref scorer in the same folder with this scorer")
     parser.add_argument(
         "-t", "--token_path", help="Path to the directory containing the "
                                    "token mappings file", required=True)
@@ -146,10 +169,10 @@ def main():
     if args.output is not None:
         out_path = args.output
         create_parent_dir(out_path)
-        eval_out = open(out_path, 'w')
+        mention_eval_out = open(out_path, 'w')
         logger.info("Evaluation output will be saved at %s" % out_path)
     else:
-        eval_out = sys.stdout
+        mention_eval_out = sys.stdout
         logger.info("Evaluation output at standard out")
 
     if args.token_table_extension is not None:
@@ -160,6 +183,12 @@ def main():
     else:
         logger.error("Cannot find gold standard file at " + args.gold)
         sys.exit(1)
+
+    if args.coref is not None:
+        logger.info("Coreference result will be output at " + args.coref)
+        coref_out = open(args.coref, 'w')
+        conll_file_out = open(temp_conll_out, 'w')
+        eval_coref = True
 
     if os.path.isfile(args.system):
         sf = open(args.system)
@@ -194,7 +223,16 @@ def main():
         if not evaluate(eval_mode):
             break
     print_eval_results()
+
+    # run conll coreference script
+    run_conll_script()
     logger.info("Evaluation Done.")
+
+
+def run_conll_script():
+    logger.info("Running Conll Evaluation reference-coreference-scorers")
+    conll_file_out.close()
+    coref_out.write("TBI")
 
 
 def get_combined_attribute_header(all_comb, size):
@@ -409,7 +447,8 @@ def read_all_doc(gf, sf):
 
 def read_docs_with_doc_id(f):
     all_docs = {}
-    lines = []
+    mention_lines = []
+    relation_lines = []
     doc_id = ""
     while True:
         line = f.readline()
@@ -421,14 +460,21 @@ def read_docs_with_doc_id(f):
             if line.startswith(bod_marker):
                 doc_id = line[len(bod_marker):].strip()
             elif line.startswith(eod_marker):
-                all_docs[doc_id] = lines
-                lines = []
+                all_docs[doc_id] = mention_lines, relation_lines
+                mention_lines = []
+                relation_lines = []
+        elif line.startswith(relation_marker):
+            relation_lines.append(line[len(relation_marker):].strip())
         elif line == "":
             pass
         else:
-            lines.append(line)
+            mention_lines.append(line)
 
     return all_docs
+
+
+def has_next_doc():
+    return evaluating_index < len(doc_ids_to_score)
 
 
 def get_next_doc():
@@ -439,9 +485,10 @@ def get_next_doc():
         if doc_id in system_docs:
             return True, gold_docs[doc_id], system_docs[doc_id], doc_id
         else:
-            return True, gold_docs[doc_id], [], doc_id
+            return True, gold_docs[doc_id], ([], []), doc_id
     else:
-        return False, [], [], "End_of_docs"
+        logger.error("Reaching end of all documents")
+        return False, ([], []), ([], []), "End_Of_Documents"
 
 
 def parse_spans(s):
@@ -626,16 +673,16 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
 
 
 def evaluate(eval_mode):
-    res, g_lines, s_lines, doc_id = get_next_doc()
-
-    if not res:
+    if has_next_doc():
+        res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
+    else:
         return False
 
     invisible_ids, id2token_map, id2span_map = read_token_ids(doc_id)
 
     system_id = ""
-    if len(s_lines) > 0:
-        fields = s_lines[0].split("\t")
+    if len(s_mention_lines) > 0:
+        fields = s_mention_lines[0].split("\t")
         if len(fields) > 0:
             system_id = fields[0]
 
@@ -643,14 +690,14 @@ def evaluate(eval_mode):
     system_mention_table = []
     gold_mention_table = []
 
-    for sl in s_lines:
+    for sl in s_mention_lines:
         sys_mention_id, system_spans, system_attributes = parse_line(
             sl, eval_mode, invisible_ids)
         system_mention_table.append(
             (system_spans, system_attributes, sys_mention_id))
         all_possible_types.add(system_attributes[0])
 
-    for gl in g_lines:
+    for gl in g_mention_lines:
         gold_mention_id, gold_spans, gold_attributes = parse_line(
             gl, eval_mode, invisible_ids)
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
@@ -660,9 +707,8 @@ def evaluate(eval_mode):
     # score is stored using negative for easy sorting
     all_gold_system_mapping_scores = []
 
-    for system_index, (system_spans,
-                       system_attributes, sys_mention_id) in enumerate(
-            system_mention_table):
+    for system_index, (system_spans, system_attributes,
+                       sys_mention_id) in enumerate(system_mention_table):
         for index, (gold_spans, gold_attributes, gold_mention_id) in enumerate(
                 gold_mention_table):
             overlap = compute_overlap_score(gold_spans,
@@ -679,7 +725,7 @@ def evaluate(eval_mode):
     mapped_system_mentions = set()
 
     # a list system index and the mapping score for each gold
-    assigned_gold_2_system_mapping = [[] for _ in xrange(len(g_lines))]
+    assigned_gold_2_system_mapping = [[] for _ in xrange(len(g_mention_lines))]
 
     # greedily matching gold and system by selecting the highest score first
     # one system mention can be mapped to only one gold
@@ -691,7 +737,6 @@ def evaluate(eval_mode):
         mapped_system_mentions.add(mapping_system_index)
 
     tp = 0.0
-    fp = 0.0
     plain_gold_found = 0.0
 
     attribute_based_tps = [0.0] * len(all_attribute_combinations)
@@ -722,16 +767,21 @@ def evaluate(eval_mode):
 
     attribute_based_fps = [0.0] * len(all_attribute_combinations)
     for attribute_comb_index, (abtp, abgc) in enumerate(zip(attribute_based_tps, attribute_based_gold_counts)):
-        attribute_based_fps[attribute_comb_index] = len(s_lines) - abtp
-
-    # unmapped system mentions are considered as false positive
-    # fp = len(s_lines) - plain_gold_found
+        attribute_based_fps[attribute_comb_index] = len(s_mention_lines) - abtp
 
     # unmapped system mentions and the partial scores are considered as false positive
-    fp = len(s_lines) - tp
+    fp = len(s_mention_lines) - tp
 
     doc_scores.append((tp, fp, zip(attribute_based_tps, attribute_based_fps),
-                       len(g_lines), len(s_lines), doc_id))
+                       len(g_mention_lines), len(s_mention_lines), doc_id))
+
+    if eval_coref:
+        # prepare conll style coreference input
+        conll_converter = ConllConverter(id2token_map, id2span_map)
+        conll_lines = conll_converter.prepare_conll_lines()
+        conll_file_out.write("%s (%s)%s" % (bod_marker, doc_id, os.linesep))
+        conll_file_out.writelines([l + os.linesep for l in conll_lines])
+        conll_file_out.write(eod_marker + os.linesep)
 
     return True
 

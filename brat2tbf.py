@@ -13,19 +13,23 @@ import sys
 import os
 import errno
 
-spanMarker = "T"
-eventMarker = "E"
-attMarker = "A"
-attMarkerBack = "M"  # for backward compatibility
-noteMarker = "#"
-bodMarker = "#BeginOfDocument"  # mark begin of a document
-eodMarker = "#EndOfDocument"  # mark end of a document
+bratSpanMarker = "T"
+bratEventMarker = "E"
+bratAttMarker = "A"
+bratAttMarkerBack = "M"  # for backward compatibility
+bratRelationMarker = "R"
+
+outputCommentMarker = "#"
+outputBodMarker = "#BeginOfDocument"  # mark begin of a document
+outputEodMarker = "#EndOfDocument"  # mark end of a document
+outputRelationMarker = "@"  #append before relation
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
 text_bounds = {}  # all text bounds
 events = {}  # all events
 atts = {}  # all attributes
+rels = {}  # all relations
 
 out = "converted"
 out_ext = ".tbf"  # short for token based format
@@ -182,6 +186,7 @@ def clear():
     text_bounds.clear()  # all text bounds
     events.clear()  # all events
     atts.clear()  # all attributes
+    rels.clear()  # all relations
 
 
 def join_list(items, joiner):
@@ -191,6 +196,12 @@ def join_list(items, joiner):
         s += sep
         s += str(item)
         sep = joiner
+    return s
+
+
+def chop(s, begin):
+    if s.startswith(begin):
+        return s[len(begin):]
     return s
 
 
@@ -221,7 +232,9 @@ def parse_annotation_file(file_path, token_dir, of):
         eids = events.keys()
         eids.sort(key=lambda x: int(x[1:]))
 
-        of.write(bodMarker + " " + text_id + "\n")
+        # write begin of document
+        of.write(outputBodMarker + " " + text_id + "\n")
+        # write each mention in a line
         for eid in eids:
             event_type = events[eid][0][0]
             text_bound_id = events[eid][0][1]
@@ -238,7 +251,13 @@ def parse_annotation_file(file_path, token_dir, of):
             of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
                 engine_id, text_id, eid, join_list(token_ids, tokenJoiner),
                 text, event_type, realis_status, 1))
-        of.write(eodMarker + "\n")
+
+        for rel_name, relations in rels.iteritems():
+            for relation in relations:
+                of.write("%s%s\t%s\t%s\t%s\n" % (outputRelationMarker, rel_name, relation[0], relation[1], relation[2]))
+
+        # write end of sentence
+        of.write(outputEodMarker + "\n")
     else:
         # the missing file will be skipped but others will still be done
         logger.error(
@@ -339,24 +358,40 @@ def parse_attribute(fields):
     return aid, target_id, att_name, target_value
 
 
+def parse_relation(fields):
+    """
+    Assumes all relation are binary, argument names are discarded
+    :param fields: correspond to one Brat line seperated by tab
+    :return: relation id, relation name, arg1 and arg2
+    """
+    rel, a1, a2 = fields[1].split(" ")
+    rel_id = fields[0]
+    return rel_id, rel, a1.split(":")[1], a2.split(":")[1]
+
+
 def read_all_anno(f):
     for line in f:
-        if line.startswith(noteMarker):
+        if line.startswith(outputCommentMarker):
             pass
         fields = line.rstrip().split("\t", 2)
-        if line.startswith(spanMarker):
+        if line.startswith(bratSpanMarker):
             text_bound = parse_text_bound(fields)
             text_bounds[text_bound[0]] = text_bound[1]
-        if line.startswith(eventMarker):
+        if line.startswith(bratEventMarker):
             event = parse_event(fields)
             events[event[0]] = event[1]
-        if line.startswith(attMarker) or line.startswith(attMarkerBack):
-            (aid, target_id, att_name, target_value) = parse_attribute(fields)
+        if line.startswith(bratAttMarker) or line.startswith(bratAttMarkerBack):
+            aid, target_id, att_name, target_value = parse_attribute(fields)
             if target_id in atts:
                 atts[target_id][att_name] = (aid, target_value)
             else:
                 atts[target_id] = {}
                 atts[target_id][att_name] = (aid, target_value)
+        if line.startswith(bratRelationMarker):
+            rel_id, rel_name, a1, a2 = parse_relation(fields)
+            if rel_name not in rels:
+                rels[rel_name] = []
+            rels[rel_name].append((rel_id, a1, a2))
 
 
 if __name__ == "__main__":

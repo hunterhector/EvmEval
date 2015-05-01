@@ -59,7 +59,7 @@ token_dir = "."
 text_dir = "."
 
 diff_out = None
-eval_out = None
+mention_eval_out = None
 
 docScores = []
 
@@ -95,7 +95,7 @@ def create_parent_dir(p):
 
 def main():
     global diff_out
-    global eval_out
+    global mention_eval_out
     global token_dir
     global token_file_ext
     global source_file_ext
@@ -259,7 +259,7 @@ def print_eval_results():
     total_type_accuracy = 0
     valid_docs = 0
 
-    eval_out.write("========Document results==========\n")
+    mention_eval_out.write("========Document results==========\n")
     for (tp, fp, typeCorrect, realisCorrect, goldMentions, docId) in docScores:
         prec = tp / (tp + fp) if tp + fp > 0 else float('nan')
         recall = tp / goldMentions if goldMentions > 0 else float('nan')
@@ -267,9 +267,9 @@ def print_eval_results():
                   prec + recall > 0 else float('nan'))
         type_accuracy = typeCorrect / goldMentions if goldMentions > 0 else float('nan')
         realis_accuracy = realisCorrect / goldMentions if goldMentions > 0 else float('nan')
-        eval_out.write(
+        mention_eval_out.write(
             "TP\tFP\t#Gold\tPrec\tRecall\tF1\tType\tRealis\tDoc Id\n")
-        eval_out.write(
+        mention_eval_out.write(
             "%.2f\t%.2f\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\t%s\n" % (
                 tp, fp, goldMentions, prec, recall,
                 doc_f1, type_accuracy, realis_accuracy, docId))
@@ -294,7 +294,7 @@ def print_eval_results():
             total_realis_correct += realisCorrect
             total_type_correct += typeCorrect
 
-    eval_out.write("\n=======Final Results=========\n")
+    mention_eval_out.write("\n=======Final Results=========\n")
     micro_prec = (total_tp / (total_tp + total_fp) if
                   total_tp + total_fp > 0 else float('nan'))
     micro_recall = (total_tp / total_gold_mentions if
@@ -316,30 +316,30 @@ def print_eval_results():
     macro_realis_accuracy = (total_realis_accuracy / valid_docs if
                              valid_docs > 0 else float('nan'))
 
-    eval_out.write("Precision (Micro Average): %.4f\n" % micro_prec)
-    eval_out.write("Recall (Micro Average):%.4f\n" % micro_recall)
-    eval_out.write("F1 (Micro Average):%.4f\n" % micro_f1)
-    eval_out.write(
+    mention_eval_out.write("Precision (Micro Average): %.4f\n" % micro_prec)
+    mention_eval_out.write("Recall (Micro Average):%.4f\n" % micro_recall)
+    mention_eval_out.write("F1 (Micro Average):%.4f\n" % micro_f1)
+    mention_eval_out.write(
         "Mention type detection accuracy (Micro Average):%.4f\n" %
         micro_type_accuracy)
-    eval_out.write(
+    mention_eval_out.write(
         "Mention realis status accuracy (Micro Average):%.4f\n" %
         micro_realis_accuracy)
 
-    eval_out.write("Precision (Macro Average): %.4f\n" % macro_prec)
-    eval_out.write("Recall (Macro Average): %.4f\n" % macro_recall)
-    eval_out.write("F1 (Macro Average): %.4f\n" % macro_f1)
-    eval_out.write(
+    mention_eval_out.write("Precision (Macro Average): %.4f\n" % macro_prec)
+    mention_eval_out.write("Recall (Macro Average): %.4f\n" % macro_recall)
+    mention_eval_out.write("F1 (Macro Average): %.4f\n" % macro_f1)
+    mention_eval_out.write(
         "Mention type detection accuracy (Macro Average):%.4f\n" %
         macro_type_accuracy)
-    eval_out.write(
+    mention_eval_out.write(
         "Mention realis status accuracy (Macro Average):%.4f\n" %
         macro_realis_accuracy)
 
-    if eval_out is not None:
-        eval_out.flush()
-        if not eval_out == sys.stdout:
-            eval_out.close()
+    if mention_eval_out is not None:
+        mention_eval_out.flush()
+        if not mention_eval_out == sys.stdout:
+            mention_eval_out.close()
 
     if diff_out is not None:
         diff_out.close()

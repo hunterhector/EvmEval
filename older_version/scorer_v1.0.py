@@ -33,7 +33,7 @@ evaluating_index = 0
 token_dir = "."
 
 diff_out = None
-eval_out = None
+mention_eval_out = None
 
 docScores = []
 
@@ -65,7 +65,7 @@ def create_parent_dir(p):
 
 def main():
     global diff_out
-    global eval_out
+    global mention_eval_out
     global token_dir
     global token_file_ext
 

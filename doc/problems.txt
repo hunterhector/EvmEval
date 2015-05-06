@@ -1,8 +1,0 @@
-We will probably have cases like the followinig, which will make it inconsistent to get the correct token, currently I will make a guess, but I hope annotations does not have that problem (events should always cover tokens)
-
-Token:
-1199 trips/vacations/whatever 5479 5503
-
-Gold:
-T28     Transport-Person 5479 5484      trips
-T30 	Transport-Person 5485 5494		vacations

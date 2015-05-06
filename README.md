@@ -4,6 +4,7 @@ Event Mention Evaluation (EvmEval)
 This repository conducts, file conversion, and scoring for event mention detection. It consists of the following three pieces of code:
  1. A simple converter from Brat annotation tool format to CMU detection format
  2. A scorer that can score system performance based on CMU detection format
+ 3. A visualizer that use Embedded Brat Viewer
 
 To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tbf.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. 
 
@@ -16,7 +17,7 @@ Table of Contents
 - [Event Mention Evaluation (EvmEval)](#)
 	- [Naming Convention:](#)
 	- [Tokenization table files format:](#)
-	- [brat2tokenFormat.py:](#)
+	- [brat2tbf.py:](#)
 		- [Features](#)
 		- [Usage](#)
 	- [scorer.py:](#)
@@ -59,7 +60,7 @@ Please note that all 4 fields are required and will be used:
 	-- The converter will use token_id, tkn_begin, tkn_end to convert characters to token id
     -- The scorer will use the token_str to detect invisible words 
 
-brat2tokenFormat.py
+brat2tbf.py
 --------------------
 
 ### *Features*
@@ -123,40 +124,46 @@ read the scoring documentation for more details.
 2. Be able to produce a comparison output indicating system and gold standard differences:
   a. A text based comparison output (-d option)
   b. A web based comparison output using Brat's embedded visualization (-v option)
-  
+3. If specified, it will generate temporary conll format files, and use the conll reference-scorer to produce coreference scores
 
 ### *Usage*
 -----
 
-	usage: scorer_v1.2.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
-	                      [-o OUTPUT] -t TOKEN_PATH [-of OFFSET_FIELD]
-	                      [-te TOKEN_TABLE_EXTENSION] [-b]
+	usage: scorer_v1.3.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
+                          [-o OUTPUT] [-c COREF] -t TOKEN_PATH [-of OFFSET_FIELD]
+                          [-te TOKEN_TABLE_EXTENSION] [-b]
+
 	
 Event mention scorer, which conducts token based scoring, system and gold standard files should follows the token-based format.
-	
-	optional arguments:
-	  -h, --help            show this help message and exit
-	  -g GOLD, --gold GOLD  Golden Standard
-	  -s SYSTEM, --system SYSTEM
-	                        System output
-	  -d COMPARISON_OUTPUT, --comparison_output COMPARISON_OUTPUT
-	                        Compare and help show the difference between system
-	                        and gold
-	  -o OUTPUT, --output OUTPUT
-	                        Optional evaluation result redirects, it is
-	                        suggestedto be sued when using visualization,
-	                        otherwise the results willbe hard to read
-	  -t TOKEN_PATH, --token_path TOKEN_PATH
-	                        Path to the directory containing the token mappings
-	                        file
-	  -of OFFSET_FIELD, --offset_field OFFSET_FIELD
-	                        A pair of integer indicates which column we should
-	                        read the offset in the token mapping file, index
-	                        startsat 0, default value will be [2, 3]
-	  -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
-	                        any extension appended after docid of token table
-	                        files. Default is [.txt.tab]
-	  -b, --debug           turn debug mode on
+
+    Required Arguments:
+      -g GOLD, --gold GOLD  Golden Standard
+      -s SYSTEM, --system SYSTEM
+                            System output
+      -t TOKEN_PATH, --token_path TOKEN_PATH
+                            Path to the directory containing the token mappings
+                            file   
+    Optional Arguments:
+      -h, --help            show this help message and exit                                                    
+      -d COMPARISON_OUTPUT, --comparison_output COMPARISON_OUTPUT
+                            Compare and help show the difference between system
+                            and gold
+      -o OUTPUT, --output OUTPUT
+                            Optional evaluation result redirects, put eval result
+                            to file
+      -c COREF, --coref COREF
+                            Eval Coreference result output, need to put the
+                            referenceconll coref scorer in the same folder with
+                            this scorer
+      -of OFFSET_FIELD, --offset_field OFFSET_FIELD
+                            A pair of integer indicates which column we should
+                            read the offset in the token mapping file, index
+                            startsat 0, default value will be [2, 3]
+      -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
+                            any extension appended after docid of token table
+                            files. Default is [.txt.tab]
+      -b, --debug           turn debug mode on
+
   
 visualize.py
 ------------
@@ -185,38 +192,33 @@ The web based visualization is composed of two steps:
 
 ### Usage
 -----
+    usage: visualize.py [-h] -d COMPARISON_OUTPUT -t TOKENPATH [-x TEXT]
+                    [-v VISUALIZATION_HTML_PATH] [-of OFFSET_FIELD]
+                    [-te TOKEN_TABLE_EXTENSION] [-se SOURCE_FILE_EXTENSION]
 
-	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] -t
-                 TOKENPATH [-w] [-te TOKEN_TABLE_EXTENSION] [-b]
+Mention visualizer, will create a side-by-side embedded visualization from the
+mapping
 
-Event mention scorer, which conducts token based scoring, system and gold
-standard files should follows the token-based format.
-
-	Required arguments:
-	  -g GOLD, --gold GOLD  Golden Standard
-	  -s SYSTEM, --system SYSTEM
-							System output
-	  -d COMPARISONOUTPUT, --comparisonOutput COMPARISONOUTPUT
-							Compare and help show the difference between system
-							and gold
-	  -t TOKENPATH, --tokenPath TOKENPATH
-							Path to the directory containing the token mappings
-							file
-	Optional arguments:
-	  -h, --help            show this help message and exit
-	  -o OUTPUT, --output OUTPUT
-							Optional evaluation result redirects
-	  -w, --overwrite       force overwrite existing comparison file
-      -v DO_VISUALIZATION, --do_visualization DO_VISUALIZATION
-                        Generate web based visualization data
-      -vp VISUALIZATION_HTML_PATH, --visualization_html_path VISUALIZATION_HTML_PATH
-                        To generate Brat visualization, default path is [visualization]	  
-      -x TEXT, --text TEXT  Path to the directory containing the original text,
-                        only required for HMTL comparison (-v)
-	  -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
-							any extension appended after docid of token table
-							files. Default is [.txt.tab]
+    Required Arguments:
+      -d COMPARISON_OUTPUT, --comparison_output COMPARISON_OUTPUT
+                            The comparison output file between system and gold,
+                            used to recover the mapping
+      -t TOKENPATH, --tokenPath TOKENPATH
+                            Path to the directory containing the token mappings
+                            file
+    Optional Arguments:
+      -h, --help            show this help message and exit                    
+      -x TEXT, --text TEXT  Path to the directory containing the original text
+      -v VISUALIZATION_HTML_PATH, --visualization_html_path VISUALIZATION_HTML_PATH
+                            The Path to find visualization web pages, default path
+                            is [visualization]
+      -of OFFSET_FIELD, --offset_field OFFSET_FIELD
+                            A pair of integer indicates which column we should
+                            read the offset in the token mapping file, index
+                            startsat 0, default value will be [2, 3]
+      -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
+                            any extension appended after docid of token table
+                            files. Default is [.txt.tab]
       -se SOURCE_FILE_EXTENSION, --source_file_extension SOURCE_FILE_EXTENSION
-                        any extension appended after docid of source
-                        files.Default is [.tkn.txt]							
-	  -b, --debug           turn debug mode on
+                            any extension appended after docid of source
+                            files.Default is [.tkn.txt]

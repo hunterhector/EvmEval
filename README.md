@@ -191,7 +191,7 @@ The web based visualization is composed of two steps:
   no longer necessary to regenerate the JSON data if one only wish to use the old ones
   
 
-### Usage
+### *Usage*
 -----
     usage: visualize.py [-h] -d COMPARISON_OUTPUT -t TOKENPATH [-x TEXT]
                     [-v VISUALIZATION_HTML_PATH] [-of OFFSET_FIELD]

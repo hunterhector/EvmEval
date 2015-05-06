@@ -54,7 +54,12 @@ docs/_build/
 
 # OS specific
 .DS_Store
+.DS_Store*
 
 # LDC data directories
 data/private/ 
-doc/versions/
+doc/versions/ 
+run/
+
+#tmp stuff
+*.tmp.*

@@ -28,7 +28,7 @@ Table of Contents
 		- [Usage](#)
 
 
-Naming Convention:
+Naming Convention
 -------------------
 The following scripts need to find corresponding files by docid and file extension, so the file extension will be provided exactly. The script have default values for these extensions, but may require additional argument if extensions are changed.
 
@@ -46,7 +46,7 @@ For brat annotation files, they normally have the following name:
 
 In such case, the file extension is ".tkn.ann", the converter assume this as the default extention. If not, change it with "-ae" argument
 
-Tokenization table files format:
+Tokenization table files format
 --------------------------------
 These are tab-delimited files which map the tokens to their tokenized files. A mapping table contains 3 columns for each row, and the rows contain an orderd listing of the
 document's tokens. The columns are:
@@ -59,7 +59,7 @@ Please note that all 4 fields are required and will be used:
 	-- The converter will use token_id, tkn_begin, tkn_end to convert characters to token id
     -- The scorer will use the token_str to detect invisible words 
 
-brat2tokenFormat.py:
+brat2tokenFormat.py
 --------------------
 
 ### *Features*
@@ -113,7 +113,7 @@ This converter converts Brat annotation files to one single token based event me
 							files. Default is .tkn.ann
 	  -b, --debug           turn debug mode on
 
-scorer.py:
+scorer.py
 ----------
 
 ### *Features*

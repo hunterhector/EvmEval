@@ -15,18 +15,19 @@ The current version of this tool is 1.3
 Table of Contents
 -------------------
 - [Event Mention Evaluation (EvmEval)](#)
-	- [Naming Convention:](#)
-	- [Tokenization table files format:](#)
-	- [brat2tbf.py:](#)
+	- [Table of Contents](#)
+	- [Naming Convention](#)
+	- [Tokenization table files format](#)
+	- [brat2tbf.py](#)
 		- [Features](#)
 		- [Usage](#)
-	- [scorer.py:](#)
+	- [scorer.py](#)
 		- [Features](#)
 		- [Usage](#)
 	- [visualize.py](#)
 		- [Text Base Visualization](#)
 		- [Web Base Visualization](#)
-		- [Usage](#)
+		- [Usage](#)		
 
 
 Naming Convention

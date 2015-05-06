@@ -70,12 +70,12 @@ def main():
     global token_dir
 
     parser = argparse.ArgumentParser(
-        description="Mention visualizer, will create a side-by-side embedded"
+        description="Mention visualizer, will create a side-by-side embedded "
                     "visualization from the mapping "
     )
     parser.add_argument("-d", "--comparison_output",
                         help="The comparison output file between system and gold,"
-                             " used to recover the mapping")
+                             " used to recover the mapping", required=True)
     parser.add_argument(
         "-t", "--tokenPath", help="Path to the directory containing the "
                                   "token mappings file", required=True)

@@ -5,11 +5,11 @@ This repository conducts, file conversion, and scoring for event mention detecti
  1. A simple converter from Brat annotation tool format to CMU detection format
  2. A scorer that can score system performance based on CMU detection format
 
-To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tokenFormat.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. 
+To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tbf.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory 
 
-The current version of this tool is 1.2
+The current version of this tool is 1.3
 
 Naming Convention:
 -------------------
@@ -45,7 +45,7 @@ Please note that all 4 fields are required and will be used:
 brat2tokenFormat.py:
 --------------------
 
-*Features*
+### *Features*
 --------
 
 1. ID convention
@@ -65,7 +65,7 @@ Further development might allow customized ID convention.
 
 3. Discontinuous text-bound annotations will be supported
 
-*Usage*
+### *Usage*
 -----
 
 	brat2tokenFormat.py [-h] (-d DIR | -f FILE) -t TOKENPATH [-o OUT]
@@ -99,7 +99,7 @@ This converter converts Brat annotation files to one single token based event me
 scorer.py:
 ----------
 
-*Features*
+### *Features*
 ---------
 1. Produce F1-like scoring by mapping system mentions to gold standard mentions,
 read the scoring documentation for more details.
@@ -108,7 +108,7 @@ read the scoring documentation for more details.
   b. A web based comparison output using Brat's embedded visualization (-v option)
   
 
-*Usage*
+### *Usage*
 -----
 
 	usage: scorer_v1.2.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
@@ -150,12 +150,12 @@ The visualize code represent mention differences in JSON, which is then passed t
 
 Recent changes make visualizing clusters possible by creating additional JSON object. When enabled, there will be a cluster selector on the webpage, one could select the cluster and all other event mentions will hide.
 
-*Text Base Visualization*
+### *Text Base Visualization*
 -----------------------
 The text base visualization is straightforward, a text document is produced for comparison.
 The annotation of both systems are displayed in one line, separated by "|"
 
-*Web Base Visualization*
+### *Web Base Visualization*
 ----------------------
 The web based visualization is composed of two steps: 
   1. It will use the bratDiff module to produce JSON representation into the visualization 
@@ -166,7 +166,7 @@ The web based visualization is composed of two steps:
   no longer necessary to regenerate the JSON data if one only wish to use the old ones
   
 
-Usage
+### Usage
 -----
 
 	scorer.py [-h] -g GOLD -s SYSTEM -d COMPARISONOUTPUT [-o OUTPUT] -t

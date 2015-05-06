@@ -35,8 +35,7 @@ import sys
 import os
 import heapq
 import itertools
-
-from tbf2conll import ConllConverter
+import re
 
 
 logger = logging.getLogger()
@@ -49,6 +48,7 @@ comment_marker = "#"
 bod_marker = "#BeginOfDocument"  # mark begin of a document
 eod_marker = "#EndOfDocument"  # mark end of a document
 relation_marker = "@"  # mark start of a relation
+coreference_relation_name = "Coreference"  # mark coreference
 
 conll_bod_marker = "#begin document"
 conll_eod_marker = "#end document"
@@ -90,8 +90,10 @@ token_offset_fields = [2, 3]
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
-temp_conll_out = "temp_conll_out"
-conll_file_out = None
+gold_conll_out = "conll-gold.tmp.conll"
+sys_conll_out = "conll-sys.tmp.conll"
+gold_conll_file_out = None
+sys_conll_file_out = None
 
 
 class EvalMethod:
@@ -115,7 +117,8 @@ def create_parent_dir(p):
 
 def main():
     global coref_out
-    global conll_file_out
+    global gold_conll_file_out
+    global sys_conll_file_out
     global diff_out
     global eval_coref
     global mention_eval_out
@@ -187,7 +190,8 @@ def main():
     if args.coref is not None:
         logger.info("Coreference result will be output at " + args.coref)
         coref_out = open(args.coref, 'w')
-        conll_file_out = open(temp_conll_out, 'w')
+        gold_conll_file_out = open(gold_conll_out, 'w')
+        sys_conll_file_out = open(sys_conll_out, 'w')
         eval_coref = True
 
     if os.path.isfile(args.system):
@@ -225,13 +229,17 @@ def main():
     print_eval_results()
 
     # run conll coreference script
-    run_conll_script()
+    if eval_coref:
+        run_conll_script()
+        coref_out.close()
+        gold_conll_file_out.close()
+
     logger.info("Evaluation Done.")
 
 
 def run_conll_script():
     logger.info("Running Conll Evaluation reference-coreference-scorers")
-    conll_file_out.close()
+
     coref_out.write("TBI")
 
 
@@ -534,6 +542,12 @@ def parse_line(l, eval_mode, invisible_ids):
     return parse_token_based_line(l, invisible_ids)
 
 
+def parse_relation(relation_line):
+    parts = relation_line.split("\t")
+    relation_arguments = parts[2].split(",")
+    return parts[0], parts[1], relation_arguments
+
+
 def validate_spans(spans):
     last_end = -1
     for span in spans:
@@ -775,16 +789,112 @@ def evaluate(eval_mode):
     doc_scores.append((tp, fp, zip(attribute_based_tps, attribute_based_fps),
                        len(g_mention_lines), len(s_mention_lines), doc_id))
 
+    gold_corefs = [coref for coref in [parse_relation(l) for l in g_relation_lines] if
+                   coref[0] == coreference_relation_name]
+
+    sys_corefs = [coref for coref in [parse_relation(l) for l in s_relation_lines] if
+                  coref[0] == coreference_relation_name]
+
     if eval_coref:
         # prepare conll style coreference input
-        conll_converter = ConllConverter(id2token_map, id2span_map)
-        conll_lines = conll_converter.prepare_conll_lines()
-        conll_file_out.write("%s (%s)%s" % (bod_marker, doc_id, os.linesep))
-        conll_file_out.writelines([l + os.linesep for l in conll_lines])
-        conll_file_out.write(eod_marker + os.linesep)
-
+        conll_converter = ConllConverter(id2token_map, doc_id)
+        conll_converter.prepare_conll_lines(gold_corefs, sys_corefs, gold_mention_table, system_mention_table)
     return True
 
+
+def get_num(x):
+    return int(''.join(ele for ele in x if ele.isdigit()))
+
+
+def natural_order(key):
+    convert = lambda text: int(text) if text.isdigit() else text
+    return [convert(c) for c in re.split('([0-9]+)', key)]
+
+
+def transitive_not_resolved(clusters):
+    ids = clusters.keys()
+    for i in range(0, len(ids) - 1):
+        for j in range(i + 1, len(ids)):
+            if len(clusters[i].intersection(clusters[j])) != 0:
+                logger.error("Non empty intersection between clusters found.")
+                logger.error(clusters[i])
+                logger.error(clusters[j])
+                return True
+    return False
+
+
+def add_to_multi_map(map, key, val):
+    if key not in map:
+        map[key] = []
+    map[key].append(val)
+
+
+class ConllConverter:
+    def __init__(self, id2token_map, doc_id):
+        """
+        :param id2token_map: a dict, map from token id to its string
+        :param id2span_map: a dict, map from token id to its character span
+        :param doc_id: the document id
+        :return:
+        """
+        self.id2token = id2token_map
+        self.doc_id = doc_id
+
+    def prepare_conll_lines(self, gold_corefs, sys_corefs, gold_mention_table, system_mention_table):
+        if not self.prepare_lines(gold_corefs, gold_conll_file_out, gold_mention_table):
+            logger.error(
+                "Gold standard has not resolved transitive closure of coreference for doc [%s], quitting..." % self.doc_id)
+            exit(1)
+
+        if not self.prepare_lines(sys_corefs, sys_conll_file_out, system_mention_table):
+            logger.error(
+                "System has not resolved transitive closure for coreference for doc [%s], quitting..." % self.doc_id)
+            exit(1)
+
+    def prepare_lines(self, corefs, out_file, mention_table):
+        clusters = {}
+        for cluster_id, gold_coref in enumerate(corefs):
+            clusters[cluster_id] = set(gold_coref[2])
+
+        if transitive_not_resolved(clusters):
+            return False
+
+        token2event = {}
+
+        singleton_cluster_id = len(corefs)
+        for mention in mention_table:
+            tokens = sorted(mention[0], key=natural_order)
+            event_id = mention[2]
+
+            non_singleton_cluster_id = None
+
+            for cluster_id, cluster_mentions in clusters.iteritems():
+                if event_id in cluster_mentions:
+                    non_singleton_cluster_id = cluster_id
+                    break
+
+            if non_singleton_cluster_id is not None:
+                output_cluster_id = non_singleton_cluster_id
+            else:
+                output_cluster_id = singleton_cluster_id
+                singleton_cluster_id += 1
+
+            if len(tokens) == 1:
+                add_to_multi_map(token2event, tokens[0], "(%s)" % output_cluster_id)
+            else:
+                add_to_multi_map(token2event, tokens[0], "(%s" % output_cluster_id)
+                add_to_multi_map(token2event, tokens[-1], "%s)" % output_cluster_id)
+
+        out_file.write("%s (%s); part 000%s" % (conll_bod_marker, self.doc_id, os.linesep))
+        for token_id, token in sorted(self.id2token.iteritems(), key=lambda key_value: natural_order(key_value[0])):
+            coref_str = "|".join(token2event[token_id]) if token_id in token2event else "-"
+            out_file.write("%s\t%s\t%s\t%s\n" % (self.doc_id, get_num(token_id), token, coref_str))
+        out_file.write(conll_eod_marker + os.linesep)
+
+        return True
+
+# TODO Validation tasks:
+# 1. Discontinuous tokens, need to warn
 
 if __name__ == "__main__":
     main()

@@ -22,7 +22,9 @@ bratRelationMarker = "R"
 outputCommentMarker = "#"
 outputBodMarker = "#BeginOfDocument"  # mark begin of a document
 outputEodMarker = "#EndOfDocument"  # mark end of a document
-outputRelationMarker = "@"  #append before relation
+outputRelationMarker = "@"  # append before relation
+coreference_relation_name = "Coreference"  # mark coreference
+coreference_cluster_prefix = "C"
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
@@ -253,10 +255,20 @@ def parse_annotation_file(file_path, token_dir, of):
                 text, event_type, realis_status, 1))
 
         for rel_name, relations in rels.iteritems():
-            for relation in relations:
-                of.write("%s%s\t%s\t%s\t%s\n" % (outputRelationMarker, rel_name, relation[0], relation[1], relation[2]))
+            if rel_name != coreference_relation_name:
+                for relation in relations:
+                    of.write(
+                        "%s%s\t%s\t%s,%s\n" % (
+                            outputRelationMarker, rel_name, relation[0], relation[1],
+                            relation[2]))
+            else:
+                logger.debug("Resolving coreference")
+                resolved_coref_chains = resolve_transitive_closure(relations)
+                for chain in resolved_coref_chains:
+                    of.write("%s%s\t%s%s\t%s\n" % (
+                        outputRelationMarker, rel_name, coreference_cluster_prefix, chain[0], ",".join(chain[1])))
 
-        # write end of sentence
+                    # write end of sentence
         of.write(outputEodMarker + "\n")
     else:
         # the missing file will be skipped but others will still be done
@@ -265,6 +277,77 @@ def parse_annotation_file(file_path, token_dir, of):
             "Will still try to process other annotation files." % (
                 file_path, token_path))
     clear()
+
+
+def transitive_merge(clusters):
+    merged_clusters = []
+
+    merged_i = -1
+    merged_j = -1
+
+    for i in range(0, len(clusters) - 1):
+        for j in range(i + 1, len(clusters)):
+            if len(clusters[i].intersection(clusters[j])) != 0:
+                union = clusters[i].union(clusters[j])
+                # logger.debug("Intersection is ")
+                # logger.debug(clusters[i].intersection(clusters[j]))
+                # logger.debug("Union is")
+                # logger.debug(union)
+                # logger.debug("Found merging point")
+                merged_clusters.append(union)
+                merged_i = i
+                merged_j = j
+                found = True
+                break
+        else:
+            continue
+        break
+
+    # logger.debug(merged_i)
+
+    if merged_i != -1:
+        # logger.debug("Now is ")
+        # logger.debug(merged_clusters)
+        # logger.debug("Add the rest")
+        merged_clusters.extend(clusters[: merged_i])
+        merged_clusters.extend(clusters[merged_i + 1: merged_j])
+        merged_clusters.extend(clusters[merged_j + 1:])
+    else:
+        merged_clusters.extend(clusters)
+
+    return merged_clusters
+
+
+def resolve_transitive_closure(coref_relations):
+    clusters = []
+
+    for coref_rel in coref_relations:
+        mention1 = coref_rel[1]
+        mention2 = coref_rel[2]
+        for cluster in clusters:
+            if mention1 in cluster or mention2 in cluster:
+                cluster.add(mention1)
+                cluster.add(mention2)
+                break
+        else:
+            new_cluster = {mention1, mention2}
+            clusters.append(new_cluster)
+
+    while True:
+        merged = transitive_merge(clusters)
+        if len(merged) == len(clusters):
+            # if no new merges found
+            break
+        clusters = merged
+
+    # add some cluster id
+    clusters_with_id = []
+    id = 0
+    for cluster in clusters:
+        clusters_with_id.append((id, cluster))
+        id += 1
+
+    return clusters_with_id
 
 
 def get_text_bound_2_token_mapping(token_file):

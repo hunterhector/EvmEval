@@ -1,3 +1,19 @@
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Event Mention Evaluation (EvmEval)](#)
+	- [Naming Convention:](#)
+	- [Tokenization table files format:](#)
+	- [brat2tokenFormat.py:](#)
+		- [Features](#)
+		- [Usage](#)
+	- [scorer.py:](#)
+		- [Features](#)
+		- [Usage](#)
+	- [visualize.py](#)
+		- [Text Base Visualization](#)
+		- [Web Base Visualization](#)
+		- [Usage](#)
+
 Event Mention Evaluation (EvmEval)
 =========
 

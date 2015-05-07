@@ -1,7 +1,0 @@
-#BeginOfDocument example1
-system_B	E1	t5,t3	Movement_Transport-Person	Actual	|	E1	t5,t3	Movement_Transport-Person	Actual	1.00
-#EndOfDocument 
-#BeginOfDocument example2
-	E2	t49	Personnel_Nominate	Actual	|	-	-
-	E3	t774,t771	Personnel_Start-Position	Generic	|	-	-
-#EndOfDocument 

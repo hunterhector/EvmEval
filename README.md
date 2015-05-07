@@ -10,6 +10,24 @@ To use the software, we need to prepare the CMU format annotation file from the 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory 
 
+**Table of Contents**
+
+- [Event Mention Evaluation (EvmEval)](#)
+	- [Naming Convention](#)
+	- [Tokenization table files format](#)
+	- [scorer.py](#)
+		- [Features](#)
+		- [Usage](#)
+	- [validator.py](#)
+		- [Usage](#)
+	- [brat2tbf.py](#)
+		- [Features](#)
+		- [Usage](#)
+	- [visualize.py](#)
+		- [Text Base Visualization](#)
+		- [Web Base Visualization](#)
+		- [Usage](#)
+
 Naming Convention
 -------------------
 The following scripts need to find corresponding files by docid and file extension, so the file extension will be provided exactly. The script have default values for these extensions, but may require additional argument if extensions are changed.

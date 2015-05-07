@@ -141,6 +141,8 @@ The validator check whether the supplied "tbf" file follows assumed structure .
 
 brat2tbf.py
 --------------------
+This is a tool that converts Brat Annotation format to TBF format. We currently try to make as little assumption as possible. However, in order to resolve
+coreference transitive redirect automatically, the relation name for coreference must be named as "Coreference". We also develop for event coreference only.
 
 ### *Features*
 --------

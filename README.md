@@ -12,7 +12,7 @@ Use the example shell scripts "example_run.sh" to perform all the above steps in
 
 **Table of Contents**
 
-- [Event Mention Evaluation (EvmEval)](#)
+- [Event Mention Evaluation (EvmEval)](Event Mention Evaluation)
 	- [Naming Convention](#)
 	- [Tokenization table files format](#)
 	- [scorer.py](#)

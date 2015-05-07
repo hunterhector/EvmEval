@@ -186,13 +186,14 @@ Recent changes make visualizing clusters possible by creating additional JSON ob
 
 ### *Text Base Visualization*
 -----------------------
-The text base visualization is straightforward, a text document is produced for comparison.
+The text based Visualization can be generated using the "scorer.py", by supplying the "-d"
+argument. The format is straightforward, a text document is produced for comparison.
 The annotation of both systems are displayed in one line, separated by "|"
 
 ### *Web Base Visualization*
 ----------------------
-The web based visualization is composed of two steps: 
-  1. It will use the bratDiff module to produce JSON representation into the visualization 
+The web base visualization takes the text visualization file, then: 
+  1. convert them to Brat Embedded JSON format and store it at the visualization 
   folder (visualization/json)
   2. It will start a server at the visualization folder using localhost:8000
   3. Now user can browse the locally hosted site for comparison

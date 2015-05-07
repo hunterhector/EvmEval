@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Event Mention Evaluation (EvmEval)](#event-mention-evaluation-evmeval)
+  - [Naming Convention:](#naming-convention)
+  - [Tokenization table files format:](#tokenization-table-files-format)
+  - [brat2tokenFormat.py:](#brat2tokenformatpy)
+  - [Features](#features)
+  - [Usage](#usage)
+  - [scorer_v1.1.py:](#scorer_v11py)
+  - [Features](#features-1)
+  - [About Visualization](#about-visualization)
+  - [Usage](#usage-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Event Mention Evaluation (EvmEval)
 =========
 

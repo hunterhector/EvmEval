@@ -1,3 +1,33 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Event Mention Evaluation (EvmEval)](#event-mention-evaluation-evmeval)
+  - [Naming Convention](#naming-convention)
+  - [Tokenization table files format](#tokenization-table-files-format)
+  - [scorer.py](#scorerpy)
+  - [### *Features*](####-features)
+    - [*Features*](#features)
+  - [### *Usage*](####-usage)
+    - [*Usage*](#usage)
+  - [validator.py](#validatorpy)
+    - [*Usage*](#usage-1)
+  - [### *Usage*](####-usage-1)
+  - [brat2tbf.py](#brat2tbfpy)
+    - [*Features*](#features-1)
+  - [### *Features*](####-features-1)
+    - [*Usage*](#usage-2)
+  - [### *Usage*](####-usage-2)
+  - [visualize.py](#visualizepy)
+    - [*Text Base Visualization*](#text-base-visualization)
+  - [### *Text Base Visualization*](####-text-base-visualization)
+    - [*Web Base Visualization*](#web-base-visualization)
+  - [### *Web Base Visualization*](####-web-base-visualization)
+    - [*Usage*](#usage-3)
+  - [### *Usage*](####-usage-3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Event Mention Evaluation (EvmEval)
 =========
 
@@ -9,24 +39,6 @@ This repository conducts, file conversion, and scoring for event mention detecti
 To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tbf.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory 
-
-**Table of Contents**
-
-- [Event Mention Evaluation (EvmEval)](Event Mention Evaluation)
-	- [Naming Convention](#)
-	- [Tokenization table files format](#)
-	- [scorer.py](#)
-		- [Features](#)
-		- [Usage](#)
-	- [validator.py](#)
-		- [Usage](#)
-	- [brat2tbf.py](#)
-		- [Features](#)
-		- [Usage](#)
-	- [visualize.py](#)
-		- [Text Base Visualization](#)
-		- [Web Base Visualization](#)
-		- [Usage](#)
 
 Naming Convention
 -------------------

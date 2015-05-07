@@ -36,6 +36,7 @@ import os
 import heapq
 import itertools
 import re
+import subprocess
 
 
 logger = logging.getLogger()
@@ -76,7 +77,6 @@ text_dir = "."
 
 diff_out = None
 mention_eval_out = None
-coref_out = None
 
 eval_coref = False
 
@@ -189,7 +189,6 @@ def main():
 
     if args.coref is not None:
         logger.info("Coreference result will be output at " + args.coref)
-        coref_out = open(args.coref, 'w')
         gold_conll_file_out = open(gold_conll_out, 'w')
         sys_conll_file_out = open(sys_conll_out, 'w')
         eval_coref = True
@@ -230,17 +229,19 @@ def main():
 
     # run conll coreference script
     if eval_coref:
-        run_conll_script()
-        coref_out.close()
+        run_conll_script(args.coref)
         gold_conll_file_out.close()
 
     logger.info("Evaluation Done.")
 
 
-def run_conll_script():
+def run_conll_script(coref_out):
     logger.info("Running Conll Evaluation reference-coreference-scorers")
-
-    coref_out.write("TBI")
+    with open(coref_out, 'wb', 0) as out_file:
+        subprocess.call(
+            ["perl", "./reference-coreference-scorers/v8.01/scorer.pl", "all", gold_conll_out, sys_conll_out],
+            stdout=out_file)
+    logger.info("Coreference Results written to " + coref_out)
 
 
 def get_combined_attribute_header(all_comb, size):
@@ -546,19 +547,6 @@ def parse_relation(relation_line):
     parts = relation_line.split("\t")
     relation_arguments = parts[2].split(",")
     return parts[0], parts[1], relation_arguments
-
-
-def validate_spans(spans):
-    last_end = -1
-    for span in spans:
-        if len(span) == 2 and span[1] > span[0]:
-            pass
-        else:
-            logger.error(span + " is not a valid span")
-            sys.exit(1)
-        if span[0] < last_end:
-            logger.error("Spans cannot overlaps")
-            sys.exit(1)
 
 
 def span_overlap(span1, span2):
@@ -893,8 +881,6 @@ class ConllConverter:
 
         return True
 
-# TODO Validation tasks:
-# 1. Discontinuous tokens, need to warn
 
 if __name__ == "__main__":
     main()

@@ -1,2 +1,4 @@
 This work is licensed under Apache License V2.0
 You should find a copy of the license in this directory
+
+The coreference scoring module calls the CoNLL scorer, distributed under GNU General Public License

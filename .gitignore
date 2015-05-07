@@ -60,6 +60,7 @@ docs/_build/
 data/private/ 
 doc/versions/ 
 run/
+output/
 
 #tmp stuff
 *.tmp.*

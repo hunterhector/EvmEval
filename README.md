@@ -10,26 +10,6 @@ To use the software, we need to prepare the CMU format annotation file from the 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory 
 
-The current version of this tool is 1.3
-
-Table of Contents
--------------------
-- [Event Mention Evaluation (EvmEval)](#)
-	- [Table of Contents](#)
-	- [Naming Convention](#)
-	- [Tokenization table files format](#)
-	- [brat2tbf.py](#)
-		- [Features](#)
-		- [Usage](#)
-	- [scorer.py](#)
-		- [Features](#)
-		- [Usage](#)
-	- [visualize.py](#)
-		- [Text Base Visualization](#)
-		- [Web Base Visualization](#)
-		- [Usage](#)		
-
-
 Naming Convention
 -------------------
 The following scripts need to find corresponding files by docid and file extension, so the file extension will be provided exactly. The script have default values for these extensions, but may require additional argument if extensions are changed.
@@ -38,13 +18,13 @@ Here is how to find the extension:
 
 For tokenization table, they normally have the following name:
 
-<docid>.txt.tab
+    <docid>.txt.tab
 
-In such case, the file extension is ".txt.tab", both the converter and scorer assume this as a default extension. If not, change them with "-te" argument
+In such case, the file extension is ".txt.tab", both the converter and scorer assume this as a default extension. If not, change them with "-te" argument.
 
 For brat annotation files, they normally have the following name:
 
-<docid>.tkn.ann
+    <docid>.tkn.ann
 
 In such case, the file extension is ".tkn.ann", the converter assume this as the default extention. If not, change it with "-ae" argument
 
@@ -52,14 +32,94 @@ Tokenization table files format
 --------------------------------
 These are tab-delimited files which map the tokens to their tokenized files. A mapping table contains 3 columns for each row, and the rows contain an orderd listing of the
 document's tokens. The columns are:
-  token_id:   A string of "t" followed by a token-number beginning at 0
-  token_str:  The literal string of a given-token
-  tkn_begin:  Index of the token's first character in the tkn file
-  tkn_end:    Index of the token's last character in the tkn file
+  - token_id:   A string of "t" followed by a token-number beginning at 0
+  - token_str:  The literal string of a given-token
+  - tkn_begin:  Index of the token's first character in the tkn file
+  - tkn_end:    Index of the token's last character in the tkn file
 
 Please note that all 4 fields are required and will be used:
-	-- The converter will use token_id, tkn_begin, tkn_end to convert characters to token id
-    -- The scorer will use the token_str to detect invisible words 
+  - The converter will use token_id, tkn_begin, tkn_end to convert characters to token id
+  - The scorer will use the token_str to detect invisible words 
+
+scorer.py
+----------
+The current scorer can score event mention detection and coreference based on the (.tbf) format. It also require the token table files to detect invisible words and to generate
+CoNLL style coreference files.
+
+### *Features*
+---------
+1. Produce F1-like scoring by mapping system mentions to gold standard mentions,
+read the scoring documentation for more details.
+2. Be able to produce a comparison output indicating system and gold standard differences:
+  a. A text based comparison output (-d option)
+  b. A web based comparison output using Brat's embedded visualization (-v option)
+3. If specified, it will generate temporary conll format files, and use the conll reference-scorer to produce coreference scores
+
+### *Usage*
+-----
+
+	usage: scorer_v1.3.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
+                          [-o OUTPUT] [-c COREF] -t TOKEN_PATH [-of OFFSET_FIELD]
+                          [-te TOKEN_TABLE_EXTENSION] [-b]
+
+	
+Event mention scorer, which conducts token based scoring, system and gold standard files should follows the token-based format.
+
+    Required Arguments:
+      -g GOLD, --gold GOLD  Golden Standard
+      -s SYSTEM, --system SYSTEM
+                            System output
+      -t TOKEN_PATH, --token_path TOKEN_PATH
+                            Path to the directory containing the token mappings
+                            file   
+    Optional Arguments:
+      -h, --help            show this help message and exit                                                    
+      -d COMPARISON_OUTPUT, --comparison_output COMPARISON_OUTPUT
+                            Compare and help show the difference between system
+                            and gold
+      -o OUTPUT, --output OUTPUT
+                            Optional evaluation result redirects, put eval result
+                            to file
+      -c COREF, --coref COREF
+                            Eval Coreference result output, need to put the
+                            referenceconll coref scorer in the same folder with
+                            this scorer
+      -of OFFSET_FIELD, --offset_field OFFSET_FIELD
+                            A pair of integer indicates which column we should
+                            read the offset in the token mapping file, index
+                            startsat 0, default value will be [2, 3]
+      -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
+                            any extension appended after docid of token table
+                            files. Default is [.txt.tab]
+      -b, --debug           turn debug mode on
+
+validator.py
+--------------------
+The validator check whether the supplied "tbf" file follows assumed structure . 
+
+### *Usage*
+-----
+    validator.py [-h] -s SYSTEM -t TOKEN_PATH [-of OFFSET_FIELD]
+                        [-te TOKEN_TABLE_EXTENSION] [-b]
+    
+    Event mention scorer, which conducts token based scoring, system and gold
+    standard files should follows the token-based format.
+    
+    optional arguments:
+      -h, --help            show this help message and exit
+      -s SYSTEM, --system SYSTEM
+                            System output
+      -t TOKEN_PATH, --token_path TOKEN_PATH
+                            Path to the directory containing the token mappings
+                            file
+      -of OFFSET_FIELD, --offset_field OFFSET_FIELD
+                            A pair of integer indicates which column we should
+                            read the offset in the token mapping file, index
+                            startsat 0, default value will be [2, 3]
+      -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
+                            any extension appended after docid of token table
+                            files. Default is [.txt.tab]
+      -b, --debug           turn debug mode on
 
 brat2tbf.py
 --------------------
@@ -114,58 +174,7 @@ This converter converts Brat annotation files to one single token based event me
 							any extension appended after docid of annotation
 							files. Default is .tkn.ann
 	  -b, --debug           turn debug mode on
-
-scorer.py
-----------
-
-### *Features*
----------
-1. Produce F1-like scoring by mapping system mentions to gold standard mentions,
-read the scoring documentation for more details.
-2. Be able to produce a comparison output indicating system and gold standard differences:
-  a. A text based comparison output (-d option)
-  b. A web based comparison output using Brat's embedded visualization (-v option)
-3. If specified, it will generate temporary conll format files, and use the conll reference-scorer to produce coreference scores
-
-### *Usage*
------
-
-	usage: scorer_v1.3.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
-                          [-o OUTPUT] [-c COREF] -t TOKEN_PATH [-of OFFSET_FIELD]
-                          [-te TOKEN_TABLE_EXTENSION] [-b]
-
-	
-Event mention scorer, which conducts token based scoring, system and gold standard files should follows the token-based format.
-
-    Required Arguments:
-      -g GOLD, --gold GOLD  Golden Standard
-      -s SYSTEM, --system SYSTEM
-                            System output
-      -t TOKEN_PATH, --token_path TOKEN_PATH
-                            Path to the directory containing the token mappings
-                            file   
-    Optional Arguments:
-      -h, --help            show this help message and exit                                                    
-      -d COMPARISON_OUTPUT, --comparison_output COMPARISON_OUTPUT
-                            Compare and help show the difference between system
-                            and gold
-      -o OUTPUT, --output OUTPUT
-                            Optional evaluation result redirects, put eval result
-                            to file
-      -c COREF, --coref COREF
-                            Eval Coreference result output, need to put the
-                            referenceconll coref scorer in the same folder with
-                            this scorer
-      -of OFFSET_FIELD, --offset_field OFFSET_FIELD
-                            A pair of integer indicates which column we should
-                            read the offset in the token mapping file, index
-                            startsat 0, default value will be [2, 3]
-      -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
-                            any extension appended after docid of token table
-                            files. Default is [.txt.tab]
-      -b, --debug           turn debug mode on
-
-  
+ 
 visualize.py
 ------------
 

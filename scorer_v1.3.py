@@ -245,12 +245,12 @@ def get_combined_attribute_header(all_comb, size):
     return header_list
 
 
-def get_cell_width(doc_scores):
+def get_cell_width(scored_infos):
     max_doc_name = 0
-    for info in doc_scores:
-        docId = info[5]
-        if len(docId) > max_doc_name:
-            max_doc_name = len(docId)
+    for info in scored_infos:
+        doc_id = info[5]
+        if len(doc_id) > max_doc_name:
+            max_doc_name = len(doc_id)
     return max_doc_name
 
 
@@ -521,11 +521,11 @@ def parse_token_based_line(l, invisible_ids):
     """
     fields = l.split("\t")
     num_attributes = len(attribute_names)
-    if len(fields) != 6 + num_attributes and len(fields) != 5 + num_attributes:
-        logger.error("Output are not correctly formatted")
+    if len(fields) < 5 + num_attributes:
+        logger.error("System line too few fields")
     token_ids = parse_token_ids(fields[3], invisible_ids)
 
-    return fields[2], token_ids, fields[5:5 + num_attributes]
+    return fields[2], token_ids, fields[5:]
 
 
 def parse_line(l, eval_mode, invisible_ids):

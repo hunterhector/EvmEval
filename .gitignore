@@ -61,6 +61,8 @@ data/private/
 doc/versions/ 
 run/
 output/
+other_scripts/
 
 #tmp stuff
 *.tmp.*
+*.tmp

@@ -84,12 +84,6 @@ def create_parent_dir(p):
 
 
 def main():
-    global coref_out
-    global gold_conll_file_out
-    global sys_conll_file_out
-    global diff_out
-    global eval_coref
-    global mention_eval_out
     global token_dir
     global token_file_ext
     global source_file_ext

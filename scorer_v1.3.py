@@ -207,14 +207,14 @@ def main():
             break
     print_eval_results(mention_eval_out, attribute_comb)
 
-    # run conll coreference script
-    if eval_coref:
-        run_conll_script(args.coref)
-
     # clean up, close files
     close_if_not_none(gold_conll_file_out)
     close_if_not_none(sys_conll_file_out)
     close_if_not_none(diff_out)
+
+    # run conll coreference script
+    if eval_coref:
+        run_conll_script(args.coref)
 
     logger.info("Evaluation Done.")
 

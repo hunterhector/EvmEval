@@ -62,6 +62,7 @@ doc/versions/
 run/
 output/
 other_scripts/
+older_version/
 
 #tmp stuff
 *.tmp.*

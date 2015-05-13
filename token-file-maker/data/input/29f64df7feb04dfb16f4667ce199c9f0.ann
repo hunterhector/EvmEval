@@ -1,0 +1,79 @@
+T1	Contact_Meet 111 121	appoitment
+E1	Contact_Meet:T1 
+A1	Realis E1 Other
+T2	Contact_Communicate 385 389	told
+E2	Contact_Communicate:T2 
+A2	Realis E2 Actual
+T3	Contact_Meet 574 585	appointment
+E3	Contact_Meet:T3 
+A3	Realis E3 Generic
+T4	Contact_Meet 660 663	see
+E4	Contact_Meet:T4 
+A4	Realis E4 Actual
+T5	Contact_Meet 687 690	see
+E5	Contact_Meet:T5 
+A5	Realis E5 Other
+T6	Contact_Meet 1116 1119	saw
+E6	Contact_Meet:T6 
+A6	Realis E6 Actual
+T7	Contact_Meet 1395 1398	see
+E7	Contact_Meet:T7 
+A7	Realis E7 Other
+T8	Contact_Communicate 1995 1999	told
+E8	Contact_Communicate:T8 
+A8	Realis E8 Other
+T9	Contact_Communicate 2085 2090	shout
+E9	Contact_Communicate:T9 
+A9	Realis E9 Other
+T10	Contact_Communicate 2136 2140	tell
+E10	Contact_Communicate:T10 
+A10	Realis E10 Other
+T11	Contact_Communicate 2220 2224	call
+E11	Contact_Communicate:T11 
+A11	Realis E11 Other
+T12	Contact_Meet 2676 2680	appt
+E12	Contact_Meet:T12 
+A12	Realis E12 Actual
+T13	Contact_Meet 3066 3069	see
+E13	Contact_Meet:T13 
+A13	Realis E13 Generic
+T14	Contact_Meet 3118 3129	appointment
+E14	Contact_Meet:T14 
+A14	Realis E14 Actual
+T15	Contact_Meet 3174 3177	saw
+E15	Contact_Meet:T15 
+A15	Realis E15 Actual
+T16	Contact_Meet 3271 3278	meeting
+E16	Contact_Meet:T16 
+A16	Realis E16 Actual
+T17	Contact_Meet 3349 3354	visit
+E17	Contact_Meet:T17 
+A17	Realis E17 Actual
+#1	AnnotatorNotes E17	If they actually thought this visit (it) was her first prenatal visit, but it wasn't really, does that make "first visit" realis=Other?. No she did have a first visit, it did occur, first visit is Actual. What is untrue is that this visit is the first visit.
+T18	Contact_Meet 882 893	appointment
+E18	Contact_Meet:T18 
+A19	Realis E18 Actual
+T19	Contact_Communicate 958 962	call
+E19	Contact_Communicate:T19 
+A20	Realis E19 Other
+T20	Contact_Meet 1006 1009	see
+E20	Contact_Meet:T20 
+A21	Realis E20 Generic
+T21	Contact_Meet 1468 1472	appt
+E21	Contact_Meet:T21 
+A22	Realis E21 Actual
+T22	Contact_Communicate 2232 2240	complain
+E22	Contact_Communicate:T22 
+A24	Realis E22 Other
+T23	Contact_Meet 169 173	seen
+E23	Contact_Meet:T23 
+A25	Realis E23 Other
+T24	Contact_Communicate 71 74;77 83	got letter
+E24	Contact_Communicate:T24 
+A23	Realis E24 Actual
+T25	Contact_Meet 734 738	that
+E25	Contact_Meet:T25 
+A26	Realis E25 Other
+T26	Contact_Meet 3324 3326	it
+E26	Contact_Meet:T26 
+A27	Realis E26 Actual

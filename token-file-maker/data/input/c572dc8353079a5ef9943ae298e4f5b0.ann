@@ -1,0 +1,90 @@
+T2	Movement_Transport-Person 399 407	vacation
+E2	Movement_Transport-Person:T2 
+A2	Realis E2 Actual
+T3	Movement_Transport-Person 473 478	climb
+E3	Movement_Transport-Person:T3 
+A3	Realis E3 Actual
+T4	Movement_Transport-Person 456 465	returning
+E4	Movement_Transport-Person:T4 
+A4	Realis E4 Actual
+T5	Life_Die 625 630	death
+E5	Life_Die:T5 
+A5	Realis E5 Other
+T7	Movement_Transport-Person 670 678	departed
+E7	Movement_Transport-Person:T7 
+A7	Realis E7 Actual
+T8	Movement_Transport-Person 702 709	reached
+E8	Movement_Transport-Person:T8 
+A8	Realis E8 Actual
+T10	Life_Die 841 845	died
+E10	Life_Die:T10 
+A10	Realis E10 Actual
+T11	Movement_Transport-Person 877 884	arrived
+E11	Movement_Transport-Person:T11 
+A11	Realis E11 Actual
+T12	Personnel_Start-Position 920 928	sworn in
+E12	Personnel_Start-Position:T12 
+A12	Realis E12 Actual
+T13	Personnel_Elect 1383 1386	won
+E13	Personnel_Elect:T13 
+A13	Realis E13 Actual
+T14	Transaction_Transfer-Money 1710 1717;1723 1726	getting pay
+E14	Transaction_Transfer-Money:T14 
+A15	Realis E14 Actual
+T15	Movement_Transport-Person 1806 1812	riding
+E15	Movement_Transport-Person:T15 
+A16	Realis E15 Actual
+T16	Movement_Transport-Person 1971 1975	rode
+E16	Movement_Transport-Person:T16 
+A17	Realis E16 Actual
+T17	Transaction_Transfer-Ownership 2583 2587	sold
+E17	Transaction_Transfer-Ownership:T17 
+A18	Realis E17 Generic
+T20	Contact_Communicate 783 791;800 808	received telegram
+E20	Contact_Communicate:T20 
+A24	Realis E20 Actual
+T21	Movement_Transport-Person 2962 2973	immigration
+E21	Movement_Transport-Person:T21 
+A25	Realis E21 Actual
+T22	Personnel_Nominate 3781 3790	appointed
+E22	Personnel_Nominate:T22 
+A26	Realis E22 Actual
+T23	Personnel_Nominate 3824 3833	appointed
+E23	Personnel_Nominate:T23 
+A27	Realis E23 Actual
+T24	Personnel_Nominate 3872 3881	appointed
+E24	Personnel_Nominate:T24 
+A28	Realis E24 Actual
+T25	Personnel_Nominate 4067 4076	appointed
+E25	Personnel_Nominate:T25 
+A29	Realis E25 Actual
+T1	Contact_Communicate 528 535;542 550	brought telegram
+E1	Contact_Communicate:T1 
+A1	Realis E1 Actual
+T6	Conflict_Demonstrate 1560 1574	went on strike
+E6	Conflict_Demonstrate:T6 
+A6	Realis E6 Actual
+T9	Conflict_Demonstrate 1674 1680	strike
+E9	Conflict_Demonstrate:T9 
+A9	Realis E9 Actual
+T19	Transaction_Transfer-Money 5786 5790;5796 5802	grab wealth
+E19	Transaction_Transfer-Money:T19 
+A21	Realis E19 Other
+T28	Conflict_Attack 230 234	shot
+E28	Conflict_Attack:T28 
+A22	Realis E28 Actual
+T27	Movement_Transport-Person 1845 1849	This
+E27	Movement_Transport-Person:T27 
+A14	Realis E27 Actual
+T18	Transaction_Transfer-Money 1578 1581;1593 1598	get wages
+E18	Transaction_Transfer-Money:T18 
+A19	Realis E18 Other
+T26	Movement_Transport-Person 2043 2048	event
+E26	Movement_Transport-Person:T26 
+A20	Realis E26 Actual
+T30	Contact_Meet 2773 2829	White House Conference on the Care of Dependent Children
+E30	Contact_Meet:T30 
+A30	Realis E30 Actual
+T31	Personnel_Elect 3705 3716	re-election
+E31	Personnel_Elect:T31 
+A31	Realis E31 Other

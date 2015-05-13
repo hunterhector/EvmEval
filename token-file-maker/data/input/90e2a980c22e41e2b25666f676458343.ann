@@ -1,0 +1,119 @@
+T2	Contact_Meet 163 167	tell
+E2	Contact_Meet:T2 
+A2	Realis E2 Actual
+T3	Contact_Meet 226 230	says
+E3	Contact_Meet:T3 
+A3	Realis E3 Other
+T5	Movement_Transport-Person 640 644	went
+E5	Movement_Transport-Person:T5 
+A5	Realis E5 Actual
+T6	Movement_Transport-Person 771 775	came
+E6	Movement_Transport-Person:T6 
+A6	Realis E6 Actual
+T7	Contact_Meet 917 923	met up
+E7	Contact_Meet:T7 
+A7	Realis E7 Actual
+#1	AnnotatorNotes E7	Not sure if this should be just "met" or "met up". WordNet does not have "meet up", but idiom dictionary at thefreedictionary.com does.
+T8	Contact_Meet 927 931	talk
+E8	Contact_Meet:T8 
+A10	Realis E8 Other
+T9	Contact_Meet 954 958	said
+E9	Contact_Meet:T9 
+A12	Realis E9 Actual
+T10	Contact_Meet 1005 1009	told
+E10	Contact_Meet:T10 
+A13	Realis E10 Actual
+T11	Contact_Meet 1116 1121	reply
+E11	Contact_Meet:T11 
+A15	Realis E11 Actual
+T12	Movement_Transport-Person 1133 1137;1143 1145	move in
+E12	Movement_Transport-Person:T12 
+A17	Realis E12 Other
+T13	Contact_Meet 1165 1169	said
+E13	Contact_Meet:T13 
+A18	Realis E13 Actual
+#6	AnnotatorNotes E13	Is saying during a meeting markable?
+T14	Movement_Transport-Person 1247 1254	dropped
+E14	Movement_Transport-Person:T14 
+A19	Realis E14 Actual
+T15	Contact_Meet 1267 1271	told
+E15	Contact_Meet:T15 
+A21	Realis E15 Actual
+T16	Movement_Transport-Person 1278 1280	go
+E16	Movement_Transport-Person:T16 
+A22	Realis E16 Other
+T20	Contact_Meet 2809 2820	appointment
+E20	Contact_Meet:T20 
+A26	Realis E20 Other
+T21	Contact_Communicate 2899 2906	posting
+E21	Contact_Communicate:T21 
+A27	Realis E21 Other
+T22	Contact_Communicate 2955 2962	suggest
+E22	Contact_Communicate:T22 
+A28	Realis E22 Other
+T23	Transaction_Transfer-Money 3097 3103	paying
+E23	Transaction_Transfer-Money:T23 
+A30	Realis E23 Other
+T26	Contact_Communicate 3410 3416	advice
+E26	Contact_Communicate:T26 
+A33	Realis E26 Other
+T27	Contact_Communicate 3428 3431	say
+E27	Contact_Communicate:T27 
+A35	Realis E27 Other
+T28	Contact_Meet 863 869	saying
+E28	Contact_Meet:T28 
+A36	Realis E28 Other
+T30	Movement_Transport-Person 1720 1725	taken
+E30	Movement_Transport-Person:T30 
+A41	Realis E30 Actual
+T31	Transaction_Transfer-Money 375 383	spending
+E31	Transaction_Transfer-Money:T31 
+A42	Realis E31 Actual
+T17	Contact_Communicate 1463 1477	1 came through
+E17	Contact_Communicate:T17 
+A8	Realis E17 Actual
+T19	Contact_Communicate 1623 1635	gets hold of
+E19	Contact_Communicate:T19 
+A11	Realis E19 Actual
+T29	Contact_Meet 1785 1788	see
+E29	Contact_Meet:T29 
+A14	Realis E29 Other
+T32	Transaction_Transfer-Money 1833 1844	cleaned out
+E32	Transaction_Transfer-Money:T32 
+A20	Realis E32 Actual
+T33	Transaction_Transfer-Money 1888 1893	cover
+E33	Transaction_Transfer-Money:T33 
+A23	Realis E33 Other
+T34	Transaction_Transfer-Money 1905 1911	debits
+E34	Transaction_Transfer-Money:T34 
+A24	Realis E34 Actual
+T35	Life_Die 2401 2404	top
+E35	Life_Die:T35 
+A37	Realis E35 Other
+T37	Transaction_Transfer-Money 2865 2873	benefits
+E37	Transaction_Transfer-Money:T37 
+A39	Realis E37 Other
+T38	Transaction_Transfer-Money 2914 2922	benefits
+E38	Transaction_Transfer-Money:T38 
+A40	Realis E38 Generic
+T42	Contact_Communicate 3635 3638	add
+E42	Contact_Communicate:T42 
+A34	Realis E42 Other
+T40	Transaction_Transfer-Ownership 811 815	took
+E40	Transaction_Transfer-Ownership:T40 
+A16	Realis E40 Actual
+T1	Conflict_Attack 584 589	smash
+E1	Conflict_Attack:T1 
+A1	Realis E1 Other
+T43	Transaction_Transfer-Money 1499 1504	cover
+E43	Transaction_Transfer-Money:T43 
+A29	Realis E43 Other
+T18	Contact_Communicate 1579 1582;1585 1589	get text
+E18	Contact_Communicate:T18 
+A9	Realis E18 Actual
+T24	Contact_Communicate 3253 3270	say or not to say
+E24	Contact_Communicate:T24 
+A31	Realis E24 Other
+T25	Life_Marry 71 79	marriage
+E25	Life_Marry:T25 
+A32	Realis E25 Actual

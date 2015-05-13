@@ -1,0 +1,117 @@
+T1	Movement_Transport-Person 540 547	driving
+E1	Movement_Transport-Person:T1 
+A1	Realis E1 Actual
+T3	Life_Injure 622 630	injuring
+E3	Life_Injure:T3 
+A3	Realis E3 Actual
+T5	Contact_Communicate 680 687	calling
+E5	Contact_Communicate:T5 
+A5	Realis E5 Other
+T6	Contact_Communicate 702 709	calling
+E6	Contact_Communicate:T6 
+A6	Realis E6 Other
+T7	Contact_Communicate 771 775	call
+E7	Contact_Communicate:T7 
+A7	Realis E7 Actual
+T8	Justice_Charge-Indict 910 917	charged
+E8	Justice_Charge-Indict:T8 
+A8	Realis E8 Actual
+T9	Justice_Charge-Indict 961 969	charging
+E9	Justice_Charge-Indict:T9 
+A9	Realis E9 Other
+T11	Personnel_End-Position 1257 1261;1268 1272	lose jobs
+E11	Personnel_End-Position:T11 
+A12	Realis E11 Generic
+T18	Justice_Trial-Hearing 2021 2026	trial
+E18	Justice_Trial-Hearing:T18 
+A24	Realis E18 Other
+T19	Justice_Pardon 2319 2327	pardoned
+E19	Justice_Pardon:T19 
+A25	Realis E19 Actual
+T21	Movement_Transport-Person 2451 2460	break-ins
+E21	Movement_Transport-Person:T21 
+A28	Realis E21 Actual
+T22	Movement_Transport-Person 2574 2584	broke into
+E22	Movement_Transport-Person:T22 
+A29	Realis E22 Actual
+T23	Justice_Pardon 2654 2660	pardon
+E23	Justice_Pardon:T23 
+A30	Realis E23 Actual
+T24	Justice_Convict 2723 2732	convicted
+E24	Justice_Convict:T24 
+A31	Realis E24 Actual
+T25	Justice_Pardon 2899 2906	pardons
+E25	Justice_Pardon:T25 
+A32	Realis E25 Other
+T26	Justice_Charge-Indict 2996 3003	charged
+E26	Justice_Charge-Indict:T26 
+A33	Realis E26 Other
+T27	Justice_Charge-Indict 3125 3132	charged
+E27	Justice_Charge-Indict:T27 
+A34	Realis E27 Other
+T28	Justice_Charge-Indict 3173 3180	charged
+E28	Justice_Charge-Indict:T28 
+A35	Realis E28 Other
+T29	Justice_Pardon 3191 3199	pardoned
+E29	Justice_Pardon:T29 
+A36	Realis E29 Other
+T30	Justice_Sentence 3234 3245	commutation
+E30	Justice_Sentence:T30 
+A38	Realis E30 Other
+T31	Justice_Sentence 3418 3421;3448 3457	get sentences
+E31	Justice_Sentence:T31 
+A39	Realis E31 Generic
+T35	Transaction_Transfer-Money 3934 3940	paying
+E35	Transaction_Transfer-Money:T35 
+A47	Realis E35 Actual
+T36	Justice_Convict 4184 4194	conviction
+E36	Justice_Convict:T36 
+A48	Realis E36 Other
+T37	Transaction_Transfer-Money 4391 4401	bought off
+E37	Transaction_Transfer-Money:T37 
+A50	Realis E37 Other
+T38	Life_Die 5067 5073	murder
+E38	Life_Die:T38 
+A51	Realis E38 Actual
+T39	Life_Die 5699 5707	murdered
+E39	Life_Die:T39 
+A52	Realis E39 Actual
+T40	Justice_Acquit 5721 5727	walked
+E40	Justice_Acquit:T40 
+A53	Realis E40 Actual
+T41	Justice_Acquit 5742 5748	walked
+E41	Justice_Acquit:T41 
+A54	Realis E41 Actual
+T43	Justice_Charge-Indict 1172 1179	charged
+E43	Justice_Charge-Indict:T43 
+A56	Realis E43 Other
+T2	Movement_Transport-Person 644 653	sped away
+E2	Movement_Transport-Person:T2 
+A4	Realis E2 Actual
+T4	Justice_Arrest-Jail 1218 1228	go to jail
+E4	Justice_Arrest-Jail:T4 
+A10	Realis E4 Generic
+T10	Justice_Arrest-Jail 1283 1293	go to jail
+E10	Justice_Arrest-Jail:T10 
+A11	Realis E10 Generic
+T15	Justice_Arrest-Jail 1899 1916	sending to prison
+E15	Justice_Arrest-Jail:T15 
+A15	Realis E15 Other
+T17	Justice_Arrest-Jail 2001 2016	gone to prision
+E17	Justice_Arrest-Jail:T17 
+A19	Realis E17 Other
+T20	Justice_Pardon 2378 2384;2387 2393	issued pardon
+E20	Justice_Pardon:T20 
+A20	Realis E20 Actual
+T47	Justice_Acquit 5050 5066	gotten away with
+E47	Justice_Acquit:T47 
+A37	Realis E47 Other
+T44	Conflict_Attack 583 586	hit
+E44	Conflict_Attack:T44 
+A45	Realis E44 Actual
+T12	Contact_Communicate 2209 2216	telecom
+E12	Contact_Communicate:T12 
+A2	Realis E12 Generic
+T13	Justice_Charge-Indict 3384 3402	throws the book at
+E13	Justice_Charge-Indict:T13 
+A13	Realis E13 Generic

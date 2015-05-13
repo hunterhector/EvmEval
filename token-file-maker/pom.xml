@@ -1,11 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>evm-eval</groupId>
-  <artifactId>evm-eval</artifactId>
-  <version>1.0.1</version>
+  <groupId>event-nugget-eval</groupId>
+  <artifactId>token-file-maker</artifactId>
+  <version>1.0.2</version>
 
   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -44,13 +46,7 @@
     <dependency>
       <groupId>edu.stanford.nlp</groupId>
       <artifactId>stanford-corenlp</artifactId>
-      <version>3.4</version>
-    </dependency>
-    <dependency>
-      <groupId>edu.stanford.nlp</groupId>
-      <artifactId>stanford-corenlp</artifactId>
-      <version>3.4</version>
-      <classifier>models</classifier>
+      <version>3.5.1</version>
     </dependency>
   </dependencies>
 
@@ -61,7 +57,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>evmeval.TokenFileFactory</mainClass>
+              <mainClass>evmeval.TokenFileMaker</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

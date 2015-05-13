@@ -1,0 +1,105 @@
+T1	Movement_Transport-Person 313 317	went
+E1	Movement_Transport-Person:T1 
+A1	Realis E1 Actual
+T2	Contact_Meet 321 324	see
+E2	Contact_Meet:T2 
+A2	Realis E2 Other
+T3	Contact_Meet 357 361	said
+E3	Contact_Meet:T3 
+A3	Realis E3 Actual
+T4	Contact_Meet 484 488	said
+E4	Contact_Meet:T4 
+A6	Realis E4 Actual
+T5	Movement_Transport-Person 670 674	came
+E5	Movement_Transport-Person:T5 
+A7	Realis E5 Actual
+T6	Contact_Meet 894 897	say
+E6	Contact_Meet:T6 
+A8	Realis E6 Other
+T7	Contact_Communicate 181 185	told
+E7	Contact_Communicate:T7 
+A9	Realis E7 Actual
+T8	Contact_Communicate 249 253	said
+E8	Contact_Communicate:T8 
+A10	Realis E8 Actual
+T9	Contact_Communicate 556 560	told
+E9	Contact_Communicate:T9 
+A11	Realis E9 Actual
+T10	Contact_Meet 1017 1022	asked
+E10	Contact_Meet:T10 
+A14	Realis E10 Actual
+T11	Contact_Meet 1090 1094	said
+E11	Contact_Meet:T11 
+A16	Realis E11 Actual
+T12	Contact_Meet 1098 1102	told
+E12	Contact_Meet:T12 
+A17	Realis E12 Actual
+T13	Contact_Meet 1128 1133	asked
+E13	Contact_Meet:T13 
+A18	Realis E13 Actual
+T14	Contact_Meet 1171 1175	said
+E14	Contact_Meet:T14 
+A20	Realis E14 Actual
+T15	Contact_Communicate 1190 1194	told
+E15	Contact_Communicate:T15 
+A21	Realis E15 Actual
+T16	Contact_Communicate 1303 1310	advised
+E16	Contact_Communicate:T16 
+A22	Realis E16 Actual
+T17	Contact_Communicate 1384 1390	spoken
+E17	Contact_Communicate:T17 
+A23	Realis E17 Actual
+T18	Contact_Communicate 1408 1413	asked
+E18	Contact_Communicate:T18 
+A25	Realis E18 Actual
+T19	Contact_Communicate 1451 1455	said
+E19	Contact_Communicate:T19 
+A27	Realis E19 Actual
+T20	Contact_Meet 1490 1494	meet
+E20	Contact_Meet:T20 
+A28	Realis E20 Other
+T21	Contact_Communicate 1535 1539	told
+E21	Contact_Communicate:T21 
+A29	Realis E21 Actual
+T22	Contact_Communicate 2105 2112	advised
+E22	Contact_Communicate:T22 
+A30	Realis E22 Actual
+T23	Contact_Communicate 2307 2311	said
+E23	Contact_Communicate:T23 
+A31	Realis E23 Actual
+T24	Movement_Transport-Person 2433 2438	going
+E24	Movement_Transport-Person:T24 
+A32	Realis E24 Actual
+T25	Contact_Communicate 2614 2619;2628 2634	offer advice
+E25	Contact_Communicate:T25 
+A33	Realis E25 Other
+T29	Contact_Communicate 4117 4123	advise
+E29	Contact_Communicate:T29 
+A37	Realis E29 Other
+T31	Contact_Communicate 4444 4450	advice
+E31	Contact_Communicate:T31 
+A39	Realis E31 Actual
+T32	Contact_Communicate 4547 4553	advice
+E32	Contact_Communicate:T32 
+A40	Realis E32 Actual
+T33	Contact_Communicate 4651 4655	rang
+E33	Contact_Communicate:T33 
+A41	Realis E33 Actual
+T35	Contact_Meet 1674 1677	say
+E35	Contact_Meet:T35 
+A46	Realis E35 Actual
+T36	Contact_Communicate 2234 2238	told
+E36	Contact_Communicate:T36 
+A47	Realis E36 Actual
+T37	Contact_Meet 2442 2445	see
+E37	Contact_Meet:T37 
+A4	Realis E37 Actual
+T27	Movement_Transport-Person 3126 3128	go
+E27	Movement_Transport-Person:T27 
+A12	Realis E27 Other
+T26	Movement_Transport-Person 4128 4133	going
+E26	Movement_Transport-Person:T26 
+A13	Realis E26 Other
+T28	Transaction_Transfer-Ownership 521 527	bought
+E28	Transaction_Transfer-Ownership:T28 
+A15	Realis E28 Actual

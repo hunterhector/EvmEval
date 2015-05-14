@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deft_ere kit_id="5515696d0000000000000001" doc_id="17a2dc40635ec239e9e16d10b6dd45e8" source_type="multi_post">
+  <entities>
+    <entity id="ent-8" type="PER" specificity="specific">
+      <entity_mention id="m-13" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="81" length="6">
+        <mention_text>xchrom</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-25" type="PER" specificity="specific">
+      <entity_mention id="m-19" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="431" length="41">
+        <mention_text>A protester with the organization Meu Rio</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="433" length="9">protester</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-34" type="ORG" specificity="specific">
+      <entity_mention id="m-28" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="465" length="7">
+        <mention_text>Meu Rio</mention_text>
+      </entity_mention>
+      <entity_mention id="m-94" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="667" length="7">
+        <mention_text>Meu Rio</mention_text>
+      </entity_mention>
+      <entity_mention id="m-148" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="963" length="7">
+        <mention_text>Meu Rio</mention_text>
+      </entity_mention>
+      <entity_mention id="m-452" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="448" length="16">
+        <mention_text>the organization</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="452" length="12">organization</nom_head>
+      </entity_mention>
+      <entity_mention id="m-458" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="650" length="16">
+        <mention_text>the organization</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="654" length="12">organization</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-43" type="LOC" specificity="specific">
+      <entity_mention id="m-37" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="487" length="7">
+        <mention_text>Ipanema</mention_text>
+      </entity_mention>
+      <entity_mention id="m-73" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="580" length="7">
+        <mention_text>Ipanema</mention_text>
+      </entity_mention>
+      <entity_mention id="m-79" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="624" length="7">
+        <mention_text>Ipanema</mention_text>
+      </entity_mention>
+      <entity_mention id="m-247" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1648" length="7">
+        <mention_text>Ipanema</mention_text>
+      </entity_mention>
+      <entity_mention id="m-390" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1523" length="7">
+        <mention_text>Ipanema</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-52" type="GPE" specificity="specific">
+      <entity_mention id="m-46" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="514" length="14">
+        <mention_text>RIO DE JANEIRO</mention_text>
+      </entity_mention>
+      <entity_mention id="m-154" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1025" length="3">
+        <mention_text>Rio</mention_text>
+      </entity_mention>
+      <entity_mention id="m-163" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="793" length="3">
+        <mention_text>Rio</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-61" type="PER" specificity="specific">
+      <entity_mention id="m-55" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="497" length="11">
+        <mention_text>Felipe Dana</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-70" type="PER" specificity="specific">
+      <entity_mention id="m-64" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="566" length="21">
+        <mention_text>the girl from Ipanema</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="570" length="4">girl</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-91" type="LOC" specificity="specific">
+      <entity_mention id="m-85" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="624" length="13">
+        <mention_text>Ipanema beach</mention_text>
+      </entity_mention>
+      <entity_mention id="m-226" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1523" length="13">
+        <mention_text>Ipanema beach</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-106" type="LOC" specificity="specific">
+      <entity_mention id="m-100" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="778" length="26">
+        <mention_text> the ocean off Rios coast</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="783" length="5">ocean</nom_head>
+      </entity_mention>
+      <entity_mention id="m-656" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1082" length="16">
+        <mention_text>the azure waters</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1092" length="6">waters</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-133" type="PER" specificity="specific">
+      <entity_mention id="m-127" noun_type="PRO" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="834" length="2">
+        <mention_text>we</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-136" type="LOC" specificity="specific">
+      <entity_mention id="m-109" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="793" length="12">
+        <mention_text>Rios coast </mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="799" length="5">coast</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-145" type="PER" specificity="specific">
+      <entity_mention id="m-139" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="915" length="16">
+        <mention_text>Leona Deckelbaum</mention_text>
+      </entity_mention>
+      <entity_mention id="m-374" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="933" length="37">
+        <mention_text>the campaign coordinator with Meu Rio</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="946" length="11">coordinator</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-175" type="LOC" specificity="specific">
+      <entity_mention id="m-169" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1152" length="13">
+        <mention_text>Guanabara Bay</mention_text>
+      </entity_mention>
+      <entity_mention id="m-196" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1338" length="7">
+        <mention_text>the bay</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1342" length="3">bay</nom_head>
+      </entity_mention>
+      <entity_mention id="m-202" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1392" length="7">
+        <mention_text>the bay</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1396" length="3">bay</nom_head>
+      </entity_mention>
+      <entity_mention id="m-217" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1492" length="13">
+        <mention_text>Guanabarathe</mention_text>
+      </entity_mention>
+      <entity_mention id="m-621" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1167" length="47">
+        <mention_text>the site of several 2016 Olympic sailing events</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1171" length="4">site</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-184" type="GPE" specificity="specific">
+      <entity_mention id="m-178" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1229" length="8">
+        <mention_text>Brazils</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-193" type="GPE" specificity="specific">
+      <entity_mention id="m-187" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1298" length="4">
+        <mention_text>U.S.</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-214" type="PER" specificity="specific">
+      <entity_mention id="m-208" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1392" length="33">
+        <mention_text>the bay's 15 adjacent communities</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1414" length="11">communities</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-223" type="LOC" specificity="specific">
+      <entity_mention id="m-241" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1637" length="6">
+        <mention_text>Leblon</mention_text>
+      </entity_mention>
+      <entity_mention id="m-396" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1512" length="6">
+        <mention_text>Leblon</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-238" type="ORG" specificity="specific">
+      <entity_mention id="m-232" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1620" length="4">
+        <mention_text>INEA</mention_text>
+      </entity_mention>
+      <entity_mention id="m-262" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1777" length="4">
+        <mention_text>INEA</mention_text>
+      </entity_mention>
+      <entity_mention id="m-482" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1588" length="30">
+        <mention_text>The state environmental agency</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1612" length="6">agency</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-259" type="LOC" specificity="specific">
+      <entity_mention id="m-253" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1704" length="14">
+        <mention_text>Botafogo Beach</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-274" type="ORG" specificity="specific">
+      <entity_mention id="m-268" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1813" length="3">
+        <mention_text>BBC</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-283" type="PER" specificity="specific">
+      <entity_mention id="m-277" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1840" length="7">
+        <mention_text>Demeter</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-292" type="GPE" specificity="specific">
+      <entity_mention id="m-286" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1898" length="7">
+        <mention_text>Beijing</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-301" type="PER" specificity="specific">
+      <entity_mention id="m-295" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1942" length="11">
+        <mention_text>DinahMoeHum</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-424" type="LOC" specificity="specific">
+      <entity_mention id="m-412" noun_type="NAM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1704" length="8">
+        <mention_text>Botafogo</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-470" type="FAC" specificity="specific">
+      <entity_mention id="m-464" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1456" length="17">
+        <mention_text>a former landfill</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1465" length="8">landfill</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-479" type="LOC" specificity="specific">
+      <entity_mention id="m-473" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1506" length="36">
+        <mention_text>ritzy Leblon and Ipanema beach areas</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1537" length="5">areas</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-494" type="ORG" specificity="specific">
+      <entity_mention id="m-488" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1592" length="5">
+        <mention_text>state</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1592" length="5">state</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-518" type="PER" specificity="nonspecific">
+      <entity_mention id="m-627" noun_type="NOM" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1325" length="5">
+        <mention_text>human</mention_text>
+        <nom_head source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1325" length="5">human</nom_head>
+      </entity_mention>
+    </entity>
+  </entities>
+  <fillers>
+    <filler id="f-388" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="946" length="11" type="title">coordinator</filler>
+    <filler id="f-567" source="17a2dc40635ec239e9e16d10b6dd45e8" offset="641" length="7" type="time">January</filler>
+  </fillers>
+  <relations>
+    <relation id="r-809" type="orgaffiliation" subtype="employmentmembership">
+      <relation_mention id="relm-304" realis="true">
+        <rel_arg1 entity_id="ent-25" entity_mention_id="m-19" role="employeemember">A protester with the organization Meu Rio</rel_arg1>
+        <rel_arg2 entity_id="ent-34" entity_mention_id="m-28" role="org">Meu Rio</rel_arg2>
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="443" length="4">with</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-810" type="physical" subtype="locatednear">
+      <relation_mention id="relm-314" realis="true">
+        <rel_arg1 entity_id="ent-25" entity_mention_id="m-19" role="entity">A protester with the organization Meu Rio</rel_arg1>
+        <rel_arg2 entity_id="ent-43" entity_mention_id="m-37" role="loc">Ipanema</rel_arg2>
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="484" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-811" type="generalaffiliation" subtype="more">
+      <relation_mention id="relm-324" realis="true">
+        <rel_arg1 entity_id="ent-70" entity_mention_id="m-64" role="per">the girl from Ipanema</rel_arg1>
+        <rel_arg2 entity_id="ent-43" entity_mention_id="m-73" role="entity">Ipanema</rel_arg2>
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="575" length="4">from</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-812" type="physical" subtype="locatednear">
+      <relation_mention id="relm-334" realis="true">
+        <rel_arg1 entity_id="ent-91" entity_mention_id="m-85" role="entity">Ipanema beach</rel_arg1>
+        <rel_arg2 entity_id="ent-43" entity_mention_id="m-79" role="loc">Ipanema</rel_arg2>
+      </relation_mention>
+      <relation_mention id="relm-402" realis="true">
+        <rel_arg1 entity_id="ent-91" entity_mention_id="m-226" role="entity">Ipanema beach</rel_arg1>
+        <rel_arg2 entity_id="ent-43" entity_mention_id="m-390" role="loc">Ipanema</rel_arg2>
+      </relation_mention>
+    </relation>
+    <relation id="r-813" type="physical" subtype="locatednear">
+      <relation_mention id="relm-344" realis="true">
+        <rel_arg1 entity_id="ent-106" entity_mention_id="m-100" role="entity"> the ocean off Rios coast</rel_arg1>
+        <rel_arg2 entity_id="ent-136" entity_mention_id="m-109" role="loc">Rios coast </rel_arg2>
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="789" length="3">off</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-814" type="physical" subtype="locatednear">
+      <relation_mention id="relm-354" realis="true">
+        <rel_arg1 entity_id="ent-136" entity_mention_id="m-109" role="entity">Rios coast </rel_arg1>
+        <rel_arg2 entity_id="ent-52" entity_mention_id="m-163" role="loc">Rio</rel_arg2>
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="793" length="5">Rios</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-815" type="orgaffiliation" subtype="employmentmembership">
+      <relation_mention id="relm-364" realis="true">
+        <rel_arg1 entity_id="ent-145" entity_mention_id="m-374" role="employeemember">the campaign coordinator with Meu Rio</rel_arg1>
+        <rel_arg2 entity_id="ent-34" entity_mention_id="m-148" role="org">Meu Rio</rel_arg2>
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="958" length="4">with</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-816" type="personalsocial" subtype="role">
+      <relation_mention id="relm-380" realis="true">
+        <rel_arg1 entity_id="ent-145" entity_mention_id="m-374" role="per">the campaign coordinator with Meu Rio</rel_arg1>
+        <rel_arg2 filler_id="f-388" role="role">coordinator</rel_arg2>
+      </relation_mention>
+    </relation>
+    <relation id="r-817" type="physical" subtype="locatednear">
+      <relation_mention id="relm-427" realis="true">
+        <rel_arg1 entity_id="ent-214" entity_mention_id="m-208" role="entity">the bay's 15 adjacent communities</rel_arg1>
+        <rel_arg2 entity_id="ent-175" entity_mention_id="m-202" role="loc">the bay</rel_arg2>
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1405" length="8">adjacent</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-818" type="physical" subtype="locatednear">
+      <relation_mention id="relm-437" realis="true">
+        <rel_arg1 entity_id="ent-259" entity_mention_id="m-253" role="entity">Botafogo Beach</rel_arg1>
+        <rel_arg2 entity_id="ent-424" entity_mention_id="m-412" role="loc">Botafogo</rel_arg2>
+      </relation_mention>
+    </relation>
+  </relations>
+  <hoppers>
+    <hopper id="h-450">
+      <event_mention id="em-542" type="conflict" subtype="demonstrate" realis="actual">
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="684" length="7">protest</trigger>
+        <em_arg entity_id="ent-34" entity_mention_id="m-458" role="entity" realis="true">the organization</em_arg>
+        <em_arg filler_id="f-567" role="time" realis="true">January</em_arg>
+        <em_arg entity_id="ent-91" entity_mention_id="m-85" role="place" realis="true">Ipanema beach</em_arg>
+      </event_mention>
+      <event_mention id="em-579" type="conflict" subtype="demonstrate" realis="actual">
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="842" length="8">protests</trigger>
+        <em_arg entity_id="ent-133" entity_mention_id="m-127" role="entity" realis="true">we</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-570">
+      <event_mention id="em-600" type="contact" subtype="broadcast" realis="actual" audience="oneway" formality="formal" medium="canttell" schedule="canttell">
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="989" length="9">interview</trigger>
+        <em_arg entity_id="ent-145" entity_mention_id="m-139" role="entity" realis="true">Leona Deckelbaum</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-654">
+      <event_mention id="em-633" type="contact" subtype="broadcast" realis="actual" audience="oneway" formality="formal" medium="canttell" schedule="planned">
+        <trigger source="17a2dc40635ec239e9e16d10b6dd45e8" offset="1796" length="9">according</trigger>
+        <em_arg entity_id="ent-274" entity_mention_id="m-268" role="entity" realis="true">BBC</em_arg>
+      </event_mention>
+    </hopper>
+  </hoppers>
+</deft_ere>

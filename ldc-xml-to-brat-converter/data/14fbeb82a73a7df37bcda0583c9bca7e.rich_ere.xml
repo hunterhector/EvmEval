@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deft_ere kit_id="55142ee50000000000000037" doc_id="14fbeb82a73a7df37bcda0583c9bca7e" source_type="multi_post">
+  <entities>
+    <entity id="ent-8" type="PER" specificity="specific">
+      <entity_mention id="m-33" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="148" length="16">
+        <mention_text>Fayhan al Ghamdi</mention_text>
+      </entity_mention>
+      <entity_mention id="m-39" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="207" length="3">
+        <mention_text>his</mention_text>
+      </entity_mention>
+      <entity_mention id="m-222" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1165" length="16">
+        <mention_text>The Saudi rapist</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1175" length="6">rapist</nom_head>
+      </entity_mention>
+      <entity_mention id="m-228" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1182" length="16">
+        <mention_text>Fayhan al-Ghamdi</mention_text>
+      </entity_mention>
+      <entity_mention id="m-384" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2186" length="8">
+        <mention_text>This man</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2191" length="3">man</nom_head>
+      </entity_mention>
+      <entity_mention id="m-390" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2196" length="16">
+        <mention_text>Fayhan al-Ghamdi</mention_text>
+      </entity_mention>
+      <entity_mention id="m-396" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2246" length="2">
+        <mention_text>He</mention_text>
+      </entity_mention>
+      <entity_mention id="m-402" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2357" length="7">
+        <mention_text>the SOB</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2361" length="3">SOB</nom_head>
+      </entity_mention>
+      <entity_mention id="m-417" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2387" length="2">
+        <mention_text>he</mention_text>
+      </entity_mention>
+      <entity_mention id="m-423" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2424" length="2">
+        <mention_text>he</mention_text>
+      </entity_mention>
+      <entity_mention id="m-618" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3947" length="16">
+        <mention_text>The Saudi rapist</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3951" length="5">Saudi</nom_head>
+      </entity_mention>
+      <entity_mention id="m-639" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3964" length="16">
+        <mention_text>Fayhan al-Ghamdi</mention_text>
+      </entity_mention>
+      <entity_mention id="m-672" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4262" length="16">
+        <mention_text>The Saudi rapist</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4272" length="6">rapist</nom_head>
+      </entity_mention>
+      <entity_mention id="m-1221" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="244" length="25">
+        <mention_text>this sick and twisted man</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="266" length="3">man</nom_head>
+      </entity_mention>
+      <entity_mention id="m-2279" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4279" length="16">
+        <mention_text>Fayhan al-Ghamdi</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-57" type="PER" specificity="specific">
+      <entity_mention id="m-51" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="207" length="94">
+        <mention_text>his innocent 5 year old daughter who this sick and twisted man suspected of not being a virgin</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="231" length="8">daughter</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-66" type="PER" specificity="nonspecific">
+      <entity_mention id="m-60" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="378" length="24">
+        <mention_text>every decent human being</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="391" length="11">human being</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-75" type="GPE" specificity="specific">
+      <entity_mention id="m-69" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="451" length="12">
+        <mention_text>Saudi Arabia</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-84" type="PER" specificity="nonspecific">
+      <entity_mention id="m-78" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="465" length="5">
+        <mention_text>a man</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="467" length="3">man</nom_head>
+      </entity_mention>
+      <entity_mention id="m-96" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="502" length="3">
+        <mention_text>his</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-93" type="PER" specificity="nonspecific">
+      <entity_mention id="m-87" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="502" length="20">
+        <mention_text>his children or wife</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="506" length="8">children</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-108" type="PER" specificity="nonspecific">
+      <entity_mention id="m-102" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="502" length="20">
+        <mention_text>his children or wife</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="518" length="4">wife</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-117" type="PER" specificity="nonspecific">
+      <entity_mention id="m-111" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="586" length="11">
+        <mention_text>a Christian</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="588" length="9">Christian</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-126" type="PER" specificity="specific">
+      <entity_mention id="m-120" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="588" length="9">
+        <mention_text>Christian</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-135" type="PER" specificity="nonspecific">
+      <entity_mention id="m-129" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="602" length="30">
+        <mention_text>a member of any other religion</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="604" length="6">member</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-144" type="ORG" specificity="specific">
+      <entity_mention id="m-138" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="640" length="21">
+        <mention_text>World Muslim Congress</mention_text>
+      </entity_mention>
+      <entity_mention id="m-171" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="788" length="4">
+        <mention_text>them</mention_text>
+      </entity_mention>
+      <entity_mention id="m-177" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="871" length="4">
+        <mention_text>they</mention_text>
+      </entity_mention>
+      <entity_mention id="m-195" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="941" length="4">
+        <mention_text>them</mention_text>
+      </entity_mention>
+      <entity_mention id="m-201" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1012" length="4">
+        <mention_text>they</mention_text>
+      </entity_mention>
+      <entity_mention id="m-606" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3923" length="21">
+        <mention_text>World Muslim Congress</mention_text>
+      </entity_mention>
+      <entity_mention id="m-660" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4238" length="21">
+        <mention_text>World Muslim Congress</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-153" type="PER" specificity="nonspecific">
+      <entity_mention id="m-147" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="646" length="6">
+        <mention_text>Muslim</mention_text>
+      </entity_mention>
+      <entity_mention id="m-516" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3181" length="7">
+        <mention_text>Muslims</mention_text>
+      </entity_mention>
+      <entity_mention id="m-522" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3223" length="4">
+        <mention_text>they</mention_text>
+      </entity_mention>
+      <entity_mention id="m-546" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3314" length="7">
+        <mention_text>Muslims</mention_text>
+      </entity_mention>
+      <entity_mention id="m-612" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3929" length="6">
+        <mention_text>Muslim</mention_text>
+      </entity_mention>
+      <entity_mention id="m-654" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4020" length="7">
+        <mention_text>Muslims</mention_text>
+      </entity_mention>
+      <entity_mention id="m-666" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4244" length="6">
+        <mention_text>Muslim</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-162" type="PER" specificity="specific">
+      <entity_mention id="m-156" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="81" length="5">
+        <mention_text>TG123</mention_text>
+      </entity_mention>
+      <entity_mention id="m-165" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="768" length="1">
+        <mention_text>I</mention_text>
+      </entity_mention>
+      <entity_mention id="m-183" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="915" length="2">
+        <mention_text>my</mention_text>
+      </entity_mention>
+      <entity_mention id="m-189" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="928" length="1">
+        <mention_text>I</mention_text>
+      </entity_mention>
+      <entity_mention id="m-207" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1029" length="1">
+        <mention_text>I</mention_text>
+      </entity_mention>
+      <entity_mention id="m-453" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2570" length="1">
+        <mention_text>I</mention_text>
+      </entity_mention>
+      <entity_mention id="m-510" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3036" length="1">
+        <mention_text>I</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-219" type="PER" specificity="nonspecific">
+      <entity_mention id="m-213" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1104" length="27">
+        <mention_text>those who do not show mercy</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1104" length="5">those</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-240" type="PER" specificity="nonspecific">
+      <entity_mention id="m-234" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1274" length="23">
+        <mention_text>the parties in conflict</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1278" length="7">parties</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-249" type="PER" specificity="nonspecific">
+      <entity_mention id="m-243" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1348" length="5">
+        <mention_text>their</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-258" type="PER" specificity="nonspecific">
+      <entity_mention id="m-261" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1693" length="11">
+        <mention_text>an apostate</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1696" length="8">apostate</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-279" type="PER" specificity="specific">
+      <entity_mention id="m-273" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1726" length="25">
+        <mention_text>Those men you have listed</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1732" length="3">men</nom_head>
+      </entity_mention>
+      <entity_mention id="m-336" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1840" length="46">
+        <mention_text>great men with a few exceptions for their time</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1846" length="3">men</nom_head>
+      </entity_mention>
+      <entity_mention id="m-342" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1889" length="4">
+        <mention_text>They</mention_text>
+      </entity_mention>
+      <entity_mention id="m-348" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1994" length="5">
+        <mention_text>their</mention_text>
+      </entity_mention>
+      <entity_mention id="m-354" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2006" length="4">
+        <mention_text>they</mention_text>
+      </entity_mention>
+      <entity_mention id="m-369" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2144" length="5">
+        <mention_text>their</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-288" type="PER" specificity="specific">
+      <entity_mention id="m-282" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1759" length="6">
+        <mention_text>Hanifa</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-297" type="PER" specificity="specific">
+      <entity_mention id="m-291" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1772" length="5">
+        <mention_text>Shafi</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-300" type="PER" specificity="specific">
+      <entity_mention id="m-312" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1784" length="6">
+        <mention_text>Hanbal</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-303" type="PER" specificity="specific">
+      <entity_mention id="m-318" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1797" length="5">
+        <mention_text>Malik</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-306" type="PER" specificity="specific">
+      <entity_mention id="m-324" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1809" length="7">
+        <mention_text>Ghazali</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-309" type="PER" specificity="specific">
+      <entity_mention id="m-330" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1825" length="7">
+        <mention_text>Madoodi</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-366" type="PER" specificity="nonspecific">
+      <entity_mention id="m-360" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2072" length="2">
+        <mention_text>we</mention_text>
+      </entity_mention>
+      <entity_mention id="m-504" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2868" length="2">
+        <mention_text>We</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-381" type="PER" specificity="nonspecific">
+      <entity_mention id="m-375" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2178" length="4">
+        <mention_text>them</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-414" type="PER" specificity="nonspecific">
+      <entity_mention id="m-408" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2282" length="4">
+        <mention_text>they</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-435" type="GPE" specificity="specific">
+      <entity_mention id="m-429" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2453" length="2">
+        <mention_text>US</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-444" type="PER" specificity="nonspecific">
+      <entity_mention id="m-438" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2487" length="20">
+        <mention_text>a hard core criminal</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2499" length="8">criminal</nom_head>
+      </entity_mention>
+      <entity_mention id="m-447" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2533" length="2">
+        <mention_text>he</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-465" type="ORG" specificity="nonspecific">
+      <entity_mention id="m-459" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2594" length="9">
+        <mention_text>the state</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2598" length="5">state</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-474" type="PER" specificity="nonspecific">
+      <entity_mention id="m-468" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2612" length="12">
+        <mention_text>the criminal</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2616" length="8">criminal</nom_head>
+      </entity_mention>
+      <entity_mention id="m-477" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2649" length="12">
+        <mention_text>the criminal</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2653" length="8">criminal</nom_head>
+      </entity_mention>
+      <entity_mention id="m-483" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2697" length="3">
+        <mention_text>him</mention_text>
+      </entity_mention>
+      <entity_mention id="m-489" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2716" length="3">
+        <mention_text>his</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-501" type="PER" specificity="nonspecific">
+      <entity_mention id="m-495" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2808" length="11">
+        <mention_text>the victims</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2812" length="7">victims</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-534" type="PER" specificity="nonspecific">
+      <entity_mention id="m-528" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3247" length="60">
+        <mention_text>those who convert from Islam to other faiths, or blasphemers</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3247" length="5">those</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-543" type="PER" specificity="nonspecific">
+      <entity_mention id="m-537" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3309" length="12">
+        <mention_text>Some Muslims</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3314" length="7">Muslims</nom_head>
+      </entity_mention>
+      <entity_mention id="m-552" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3343" length="5">
+        <mention_text>their</mention_text>
+      </entity_mention>
+      <entity_mention id="m-558" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3356" length="4">
+        <mention_text>they</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-570" type="PER" specificity="nonspecific">
+      <entity_mention id="m-564" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3412" length="7">
+        <mention_text>someone</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-579" type="PER" specificity="specific">
+      <entity_mention id="m-573" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3498" length="17">
+        <mention_text>Some of the Imams</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3498" length="4">Some</nom_head>
+      </entity_mention>
+      <entity_mention id="m-594" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3595" length="4">
+        <mention_text>they</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-588" type="PER" specificity="specific">
+      <entity_mention id="m-582" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3506" length="9">
+        <mention_text>the Imams</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3510" length="5">Imams</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-591" type="PER" specificity="specific">
+      <entity_mention id="m-600" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3645" length="18">
+        <mention_text>the new generation</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3653" length="10">generation</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-630" type="GPE" specificity="specific">
+      <entity_mention id="m-624" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1169" length="5">
+        <mention_text>Saudi</mention_text>
+      </entity_mention>
+      <entity_mention id="m-633" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3951" length="5">
+        <mention_text>Saudi</mention_text>
+      </entity_mention>
+      <entity_mention id="m-678" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4266" length="5">
+        <mention_text>Saudi</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-651" type="PER" specificity="specific">
+      <entity_mention id="m-645" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4008" length="11">
+        <mention_text>Mike Ghouse</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-810" type="FAC" specificity="nonspecific">
+      <entity_mention id="m-804" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2319" length="6">
+        <mention_text>prison</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2319" length="6">prison</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-1805" type="PER" specificity="nonspecific">
+      <entity_mention id="m-1799" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1634" length="37">
+        <mention_text>an idiot by calling Talaq three times</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1637" length="5">idiot</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-1814" type="PER" specificity="nonspecific">
+      <entity_mention id="m-1808" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1591" length="80">
+        <mention_text>a woman who gets thrown out on the whim of an idiot by calling Talaq three times</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1593" length="5">woman</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-1823" type="PER" specificity="nonspecific">
+      <entity_mention id="m-267" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1709" length="14">
+        <mention_text>the blasphemer</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1713" length="10">blasphemer</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-1826" type="PER" specificity="nonspecific">
+      <entity_mention id="m-1817" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1673" length="18">
+        <mention_text>female rape victim</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1673" length="6">female</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-2402" type="PER" specificity="specific">
+      <entity_mention id="m-2396" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="830" length="8">
+        <mention_text>Muhammad</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2405" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="842" length="11">
+        <mention_text>his prophet</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="846" length="7">prophet</nom_head>
+      </entity_mention>
+      <entity_mention id="m-2432" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2056" length="8">
+        <mention_text>Muhammad</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2448" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2937" length="7">
+        <mention_text>Prophet</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2454" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3020" length="7">
+        <mention_text>Prophet</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2460" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3080" length="3">
+        <mention_text>him</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2466" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3085" length="2">
+        <mention_text>He</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2472" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3092" length="24">
+        <mention_text>the ultimate peace maker</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3111" length="5">maker</nom_head>
+      </entity_mention>
+      <entity_mention id="m-2478" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3218" length="3">
+        <mention_text>him</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2490" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3372" length="7">
+        <mention_text>Prophet</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2496" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3431" length="3">
+        <mention_text>him</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2502" noun_type="NAM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3461" length="8">
+        <mention_text>Muhammad</mention_text>
+      </entity_mention>
+      <entity_mention id="m-2518" noun_type="NOM" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3538" length="11">
+        <mention_text>the prophet</mention_text>
+        <nom_head source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3542" length="7">prophet</nom_head>
+      </entity_mention>
+      <entity_mention id="m-2524" noun_type="PRO" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3576" length="3">
+        <mention_text>him</mention_text>
+      </entity_mention>
+    </entity>
+  </entities>
+  <fillers>
+    <filler id="f-752" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1754" length="4" type="title">Imam</filler>
+    <filler id="f-762" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1767" length="4" type="title">Imam</filler>
+    <filler id="f-772" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1779" length="4" type="title">Imam</filler>
+    <filler id="f-782" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1792" length="4" type="title">Imam</filler>
+    <filler id="f-792" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1804" length="4" type="title">Imam</filler>
+    <filler id="f-802" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1820" length="4" type="title">Imam</filler>
+    <filler id="f-2446" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2048" length="7" type="title">Prophet</filler>
+    <filler id="f-2516" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3453" length="7" type="title">Prophet</filler>
+    <filler id="f-1273" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="307" length="21" type="money">fifty thousand dollar</filler>
+    <filler id="f-1280" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="179" length="60" type="crime">beating, raping and burning his innocent 5 year old daughter</filler>
+    <filler id="f-1298" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="307" length="21" type="money">fifty thousand dollar</filler>
+    <filler id="f-1326" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="178" length="61" type="crime"> beating, raping and burning his innocent 5 year old daughter</filler>
+    <filler id="f-1333" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="338" length="11" type="sentence">time served</filler>
+    <filler id="f-1363" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="494" length="28" type="crime">killing his children or wife</filler>
+    <filler id="f-1495" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="559" length="74" type="crime">leaving Islam and becoming a Christian (or a member of any other religion)</filler>
+    <filler id="f-1930" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2233" length="11" type="money">blood money</filler>
+    <filler id="f-1996" source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2398" length="5" type="money">money</filler>
+  </fillers>
+  <relations>
+    <relation id="r-539" type="personalsocial" subtype="family">
+      <relation_mention id="relm-684" realis="true">
+        <rel_arg1 entity_id="ent-57" entity_mention_id="m-51" role="per">his innocent 5 year old daughter who this sick and twisted man suspected of not being a virgin</rel_arg1>
+        <rel_arg2 entity_id="ent-8" entity_mention_id="m-39" role="per">his</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="231" length="8">daughter</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-540" type="personalsocial" subtype="family">
+      <relation_mention id="relm-694" realis="true">
+        <rel_arg1 entity_id="ent-84" entity_mention_id="m-96" role="per">his</rel_arg1>
+        <rel_arg2 entity_id="ent-93" entity_mention_id="m-87" role="per">his children or wife</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="506" length="8">children</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-541" type="personalsocial" subtype="family">
+      <relation_mention id="relm-704" realis="true">
+        <rel_arg1 entity_id="ent-84" entity_mention_id="m-96" role="per">his</rel_arg1>
+        <rel_arg2 entity_id="ent-108" entity_mention_id="m-102" role="per">his children or wife</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="518" length="4">wife</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-542" type="generalaffiliation" subtype="more">
+      <relation_mention id="relm-714" realis="true">
+        <rel_arg1 entity_id="ent-117" entity_mention_id="m-111" role="per">a Christian</rel_arg1>
+        <rel_arg2 entity_id="ent-126" entity_mention_id="m-120" role="entity">Christian</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="588" length="9">Christian</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-543" type="generalaffiliation" subtype="opra">
+      <relation_mention id="relm-724" realis="true">
+        <rel_arg1 entity_id="ent-144" entity_mention_id="m-138" role="org">World Muslim Congress</rel_arg1>
+        <rel_arg2 entity_id="ent-153" entity_mention_id="m-147" role="entity">Muslim</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="646" length="6">Muslim</trigger>
+      </relation_mention>
+      <relation_mention id="relm-853" realis="true">
+        <rel_arg1 entity_id="ent-144" entity_mention_id="m-606" role="org">World Muslim Congress</rel_arg1>
+        <rel_arg2 entity_id="ent-153" entity_mention_id="m-612" role="entity">Muslim</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3929" length="6">Muslim</trigger>
+      </relation_mention>
+      <relation_mention id="relm-873" realis="true">
+        <rel_arg1 entity_id="ent-144" entity_mention_id="m-660" role="org">World Muslim Congress</rel_arg1>
+        <rel_arg2 entity_id="ent-153" entity_mention_id="m-666" role="entity">Muslim</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4244" length="6">Muslim</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-544" type="generalaffiliation" subtype="more">
+      <relation_mention id="relm-734" realis="true">
+        <rel_arg1 entity_id="ent-8" entity_mention_id="m-222" role="per">The Saudi rapist</rel_arg1>
+        <rel_arg2 entity_id="ent-630" entity_mention_id="m-624" role="entity">Saudi</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1169" length="5">Saudi</trigger>
+      </relation_mention>
+      <relation_mention id="relm-863" realis="true">
+        <rel_arg1 entity_id="ent-8" entity_mention_id="m-618" role="per">The Saudi rapist</rel_arg1>
+        <rel_arg2 entity_id="ent-630" entity_mention_id="m-633" role="entity">Saudi</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3951" length="5">Saudi</trigger>
+      </relation_mention>
+      <relation_mention id="relm-883" realis="true">
+        <rel_arg1 entity_id="ent-8" entity_mention_id="m-672" role="per">The Saudi rapist</rel_arg1>
+        <rel_arg2 entity_id="ent-630" entity_mention_id="m-678" role="entity">Saudi</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4266" length="5">Saudi</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-545" type="personalsocial" subtype="role">
+      <relation_mention id="relm-744" realis="true">
+        <rel_arg1 entity_id="ent-288" entity_mention_id="m-282" role="per">Hanifa</rel_arg1>
+        <rel_arg2 filler_id="f-752" role="role">Imam</rel_arg2>
+      </relation_mention>
+    </relation>
+    <relation id="r-546" type="personalsocial" subtype="role">
+      <relation_mention id="relm-754" realis="true">
+        <rel_arg1 entity_id="ent-297" entity_mention_id="m-291" role="per">Shafi</rel_arg1>
+        <rel_arg2 filler_id="f-762" role="role">Imam</rel_arg2>
+      </relation_mention>
+    </relation>
+    <relation id="r-547" type="personalsocial" subtype="role">
+      <relation_mention id="relm-764" realis="true">
+        <rel_arg1 entity_id="ent-300" entity_mention_id="m-312" role="per">Hanbal</rel_arg1>
+        <rel_arg2 filler_id="f-772" role="role">Imam</rel_arg2>
+      </relation_mention>
+    </relation>
+    <relation id="r-548" type="personalsocial" subtype="role">
+      <relation_mention id="relm-774" realis="true">
+        <rel_arg1 entity_id="ent-303" entity_mention_id="m-318" role="per">Malik</rel_arg1>
+        <rel_arg2 filler_id="f-782" role="role">Imam</rel_arg2>
+      </relation_mention>
+    </relation>
+    <relation id="r-549" type="personalsocial" subtype="role">
+      <relation_mention id="relm-784" realis="true">
+        <rel_arg1 entity_id="ent-306" entity_mention_id="m-324" role="per">Ghazali</rel_arg1>
+        <rel_arg2 filler_id="f-792" role="role">Imam</rel_arg2>
+      </relation_mention>
+    </relation>
+    <relation id="r-550" type="personalsocial" subtype="role">
+      <relation_mention id="relm-794" realis="true">
+        <rel_arg1 entity_id="ent-309" entity_mention_id="m-330" role="per">Madoodi</rel_arg1>
+        <rel_arg2 filler_id="f-802" role="role">Imam</rel_arg2>
+      </relation_mention>
+    </relation>
+    <relation id="r-551" type="physical" subtype="locatednear">
+      <relation_mention id="relm-813" realis="true">
+        <rel_arg1 entity_id="ent-444" entity_mention_id="m-438" role="entity">a hard core criminal</rel_arg1>
+        <rel_arg2 entity_id="ent-435" entity_mention_id="m-429" role="loc">US</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2445" length="3">I n</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-552" type="physical" subtype="locatednear">
+      <relation_mention id="relm-823" realis="true">
+        <rel_arg1 entity_id="ent-84" entity_mention_id="m-78" role="entity">a man</rel_arg1>
+        <rel_arg2 entity_id="ent-75" entity_mention_id="m-69" role="loc">Saudi Arabia</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="448" length="2">in</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-553" type="generalaffiliation" subtype="more">
+      <relation_mention id="relm-843" realis="true">
+        <rel_arg1 entity_id="ent-543" entity_mention_id="m-537" role="per">Some Muslims</rel_arg1>
+        <rel_arg2 entity_id="ent-153" entity_mention_id="m-546" role="entity">Muslims</rel_arg2>
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3314" length="7">Muslims</trigger>
+      </relation_mention>
+    </relation>
+    <relation id="r-554" type="personalsocial" subtype="role">
+      <relation_mention id="relm-2438" realis="true">
+        <rel_arg1 entity_id="ent-2402" entity_mention_id="m-2432" role="per">Muhammad</rel_arg1>
+        <rel_arg2 filler_id="f-2446" role="role">Prophet</rel_arg2>
+      </relation_mention>
+      <relation_mention id="relm-2508" realis="true">
+        <rel_arg1 entity_id="ent-2402" entity_mention_id="m-2502" role="per">Muhammad</rel_arg1>
+        <rel_arg2 filler_id="f-2516" role="role">Prophet</rel_arg2>
+      </relation_mention>
+    </relation>
+  </relations>
+  <hoppers>
+    <hopper id="h-895">
+      <event_mention id="em-1051" type="life" subtype="injure" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="179" length="7">beating</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-39" role="agent" realis="true">his</em_arg>
+        <em_arg entity_id="ent-57" entity_mention_id="m-51" role="victim" realis="true">his innocent 5 year old daughter who this sick and twisted man suspected of not being a virgin</em_arg>
+      </event_mention>
+      <event_mention id="em-1109" type="life" subtype="injure" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="188" length="6">raping</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-39" role="agent" realis="true">his</em_arg>
+        <em_arg entity_id="ent-57" entity_mention_id="m-51" role="victim" realis="true">his innocent 5 year old daughter who this sick and twisted man suspected of not being a virgin</em_arg>
+      </event_mention>
+      <event_mention id="em-1165" type="life" subtype="injure" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="199" length="7">burning</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-39" role="agent" realis="true">his</em_arg>
+        <em_arg entity_id="ent-57" entity_mention_id="m-51" role="victim" realis="true">his innocent 5 year old daughter who this sick and twisted man suspected of not being a virgin</em_arg>
+      </event_mention>
+      <event_mention id="em-1688" type="life" subtype="injure" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1175" length="6">rapist</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-222" role="agent" realis="true">The Saudi rapist</em_arg>
+      </event_mention>
+      <event_mention id="em-2195" type="life" subtype="injure" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3957" length="6">rapist</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-618" role="agent" realis="true">The Saudi rapist</em_arg>
+      </event_mention>
+      <event_mention id="em-2306" type="life" subtype="injure" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4272" length="6">rapist</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-672" role="agent" realis="true">The Saudi rapist</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1107">
+      <event_mention id="em-1079" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="179" length="7">beating</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-39" role="attacker" realis="true">his</em_arg>
+        <em_arg entity_id="ent-57" entity_mention_id="m-51" role="target" realis="true">his innocent 5 year old daughter who this sick and twisted man suspected of not being a virgin</em_arg>
+      </event_mention>
+      <event_mention id="em-1137" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="188" length="6">raping</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-39" role="attacker" realis="true">his</em_arg>
+        <em_arg entity_id="ent-57" entity_mention_id="m-51" role="target" realis="true">his innocent 5 year old daughter who this sick and twisted man suspected of not being a virgin</em_arg>
+      </event_mention>
+      <event_mention id="em-1193" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="199" length="7">burning</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-33" role="attacker" realis="true">Fayhan al Ghamdi</em_arg>
+        <em_arg entity_id="ent-57" entity_mention_id="m-51" role="target" realis="true">his innocent 5 year old daughter who this sick and twisted man suspected of not being a virgin</em_arg>
+      </event_mention>
+      <event_mention id="em-1667" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1175" length="6">rapist</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-222" role="attacker" realis="true">The Saudi rapist</em_arg>
+      </event_mention>
+      <event_mention id="em-2216" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3957" length="6">rapist</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-618" role="attacker" realis="true">The Saudi rapist</em_arg>
+      </event_mention>
+      <event_mention id="em-2258" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1214" length="6">murder</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-639" role="attacker" realis="true">Fayhan al-Ghamdi</em_arg>
+      </event_mention>
+      <event_mention id="em-2285" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4272" length="6">rapist</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-672" role="attacker" realis="true">The Saudi rapist</em_arg>
+      </event_mention>
+      <event_mention id="em-2348" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4311" length="6">murder</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-2279" role="attacker" realis="true">Fayhan al-Ghamdi</em_arg>
+      </event_mention>
+      <event_mention id="em-2536" type="conflict" subtype="attack" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3996" length="6">murder</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-2279" role="attacker" realis="true">Fayhan al-Ghamdi</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1290">
+      <event_mention id="em-1248" type="transaction" subtype="transfermoney" realis="actual" ways="involuntarynoforce">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="329" length="4">fine</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-1221" role="giver" realis="true">this sick and twisted man</em_arg>
+        <em_arg filler_id="f-1298" role="money" realis="true">fifty thousand dollar</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1292">
+      <event_mention id="em-1227" type="justice" subtype="fine" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="329" length="4">fine</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-1221" role="entity" realis="true">this sick and twisted man</em_arg>
+        <em_arg filler_id="f-1273" role="money" realis="true">fifty thousand dollar</em_arg>
+        <em_arg filler_id="f-1280" role="crime" realis="true">beating, raping and burning his innocent 5 year old daughter</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1336">
+      <event_mention id="em-1301" type="justice" subtype="sentence" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="343" length="6">served</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-1221" role="defendant" realis="true">this sick and twisted man</em_arg>
+        <em_arg filler_id="f-1326" role="crime" realis="true"> beating, raping and burning his innocent 5 year old daughter</em_arg>
+        <em_arg filler_id="f-1333" role="sentence" realis="true">time served</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1373">
+      <event_mention id="em-1338" type="justice" subtype="execute" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="481" length="8">executed</trigger>
+        <em_arg entity_id="ent-84" entity_mention_id="m-78" role="person" realis="true">a man</em_arg>
+        <em_arg filler_id="f-1363" role="crime" realis="true">killing his children or wife</em_arg>
+        <em_arg entity_id="ent-75" entity_mention_id="m-69" role="place" realis="true">Saudi Arabia</em_arg>
+      </event_mention>
+      <event_mention id="em-1463" type="justice" subtype="execute" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="541" length="13">death penalty</trigger>
+        <em_arg entity_id="ent-84" entity_mention_id="m-78" role="person" realis="true">a man</em_arg>
+        <em_arg filler_id="f-1495" role="crime" realis="true">leaving Islam and becoming a Christian (or a member of any other religion)</em_arg>
+        <em_arg entity_id="ent-75" entity_mention_id="m-69" role="place" realis="true">Saudi Arabia</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1417">
+      <event_mention id="em-1375" type="life" subtype="die" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="494" length="7">killing</trigger>
+        <em_arg entity_id="ent-84" entity_mention_id="m-96" role="agent" realis="true">his</em_arg>
+        <em_arg entity_id="ent-93" entity_mention_id="m-87" role="victim" realis="true">his children or wife</em_arg>
+        <em_arg entity_id="ent-108" entity_mention_id="m-102" role="victim" realis="true">his children or wife</em_arg>
+        <em_arg entity_id="ent-75" entity_mention_id="m-69" role="place" realis="true">Saudi Arabia</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1461">
+      <event_mention id="em-1419" type="conflict" subtype="attack" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="494" length="7">killing</trigger>
+        <em_arg entity_id="ent-84" entity_mention_id="m-78" role="attacker" realis="true">a man</em_arg>
+        <em_arg entity_id="ent-108" entity_mention_id="m-102" role="target" realis="true">his children or wife</em_arg>
+        <em_arg entity_id="ent-75" entity_mention_id="m-69" role="place" realis="true">Saudi Arabia</em_arg>
+        <em_arg entity_id="ent-93" entity_mention_id="m-87" role="target" realis="true">his children or wife</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1535">
+      <event_mention id="em-1507" type="contact" subtype="broadcast" realis="actual" audience="oneway" formality="formal" medium="canttell" schedule="planned">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="678" length="9">statement</trigger>
+        <em_arg entity_id="ent-144" entity_mention_id="m-138" role="entity" realis="true">World Muslim Congress</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1581">
+      <event_mention id="em-1709" type="life" subtype="die" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1214" length="6">murder</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-228" role="agent" realis="true">Fayhan al-Ghamdi</em_arg>
+      </event_mention>
+      <event_mention id="em-2237" type="life" subtype="die" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="3996" length="6">murder</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-228" role="agent" realis="true">Fayhan al-Ghamdi</em_arg>
+      </event_mention>
+      <event_mention id="em-2327" type="life" subtype="die" realis="actual">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="4311" length="6">murder</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-2279" role="agent" realis="true">Fayhan al-Ghamdi</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1836">
+      <event_mention id="em-1772" type="life" subtype="divorce" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1654" length="5">Talaq</trigger>
+        <em_arg entity_id="ent-1814" entity_mention_id="m-1808" role="person" realis="true">a woman who gets thrown out on the whim of an idiot by calling Talaq three times</em_arg>
+        <em_arg entity_id="ent-1805" entity_mention_id="m-1799" role="person" realis="true">an idiot by calling Talaq three times</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1880">
+      <event_mention id="em-1859" type="conflict" subtype="attack" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1680" length="4">rape</trigger>
+        <em_arg entity_id="ent-1826" entity_mention_id="m-1817" role="target" realis="true">female rape victim</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1903">
+      <event_mention id="em-1882" type="life" subtype="injure" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="1680" length="4">rape</trigger>
+        <em_arg entity_id="ent-1826" entity_mention_id="m-1817" role="victim" realis="true">female rape victim</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1933">
+      <event_mention id="em-1905" type="transaction" subtype="transfermoney" realis="actual" ways="voluntary">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2222" length="6">paying</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-390" role="giver" realis="true">Fayhan al-Ghamdi</em_arg>
+        <em_arg filler_id="f-1930" role="money" realis="true">blood money</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1969">
+      <event_mention id="em-1941" type="justice" subtype="arrestjail" realis="other">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2266" length="11">locked away</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-396" role="person" realis="true">He</em_arg>
+        <em_arg entity_id="ent-810" entity_mention_id="m-804" role="place" realis="true">prison</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-1999">
+      <event_mention id="em-1971" type="transaction" subtype="transfermoney" realis="other" ways="voluntary">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2407" length="9">shell out</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-417" role="giver" realis="true">he</em_arg>
+        <em_arg filler_id="f-1996" role="money" realis="false">money</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-2029">
+      <event_mention id="em-2001" type="justice" subtype="releaseparole" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2523" length="4">bail</trigger>
+        <em_arg entity_id="ent-444" entity_mention_id="m-438" role="person" realis="true">a hard core criminal</em_arg>
+        <em_arg entity_id="ent-435" entity_mention_id="m-429" role="place" realis="true">US</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-2080">
+      <event_mention id="em-2052" type="life" subtype="die" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2604" length="7">killing</trigger>
+        <em_arg entity_id="ent-465" entity_mention_id="m-459" role="agent" realis="true">the state</em_arg>
+        <em_arg entity_id="ent-474" entity_mention_id="m-468" role="victim" realis="true">the criminal</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-2110">
+      <event_mention id="em-2082" type="justice" subtype="execute" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2604" length="7">killing</trigger>
+        <em_arg entity_id="ent-465" entity_mention_id="m-459" role="agent" realis="true">the state</em_arg>
+        <em_arg entity_id="ent-474" entity_mention_id="m-468" role="person" realis="true">the criminal</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-2170">
+      <event_mention id="em-2135" type="transaction" subtype="transaction" realis="generic" ways="involuntarynoforce">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2776" length="12">compensation</trigger>
+        <em_arg entity_id="ent-501" entity_mention_id="m-495" role="recipient" realis="true">the victims</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-2193">
+      <event_mention id="em-2172" type="justice" subtype="sentence" realis="generic">
+        <trigger source="14fbeb82a73a7df37bcda0583c9bca7e" offset="2856" length="10">punishment</trigger>
+        <em_arg entity_id="ent-474" entity_mention_id="m-489" role="defendant" realis="true">his</em_arg>
+      </event_mention>
+    </hopper>
+  </hoppers>
+</deft_ere>

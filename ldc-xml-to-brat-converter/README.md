@@ -1,9 +1,14 @@
 # LDC XML to Brat converter
 This software converts LDC's XML format for the [TAC KBP 2015 Event Nugget task](http://cairo.lti.cs.cmu.edu/kbp/2015/event/) to the [Brat format](http://brat.nlplab.org/standoff.html).
 
+# Requirements of the software
+The software requires Java 1.8.  See `pom.xml` for other tools.
+
 # How to run the software
 You can see its usage with the following command:
+```
 $ java LdcXmlToBratConverter
+```
 Option           Description     
 ------           -----------     
 -h               help            

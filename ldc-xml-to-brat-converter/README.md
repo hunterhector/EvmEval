@@ -8,12 +8,12 @@ The software requires Java 1.8.  See `pom.xml` for other tools.
 You can see its usage with the following command:
 ```
 $ java LdcXmlToBratConverter
-```
 Option           Description     
 ------           -----------     
 -h               help            
 -i <input dir>   input directory 
 -o <output dir>  output directory
+```
 
 # Assumptions of the software
 The software assumes that the following two types of input files are given with the fixed file extensions.

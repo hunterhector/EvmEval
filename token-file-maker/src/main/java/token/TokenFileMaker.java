@@ -1,4 +1,4 @@
-package evmeval;
+package token;
 
 import java.io.File;
 import java.io.IOException;
@@ -294,7 +294,7 @@ public class TokenFileMaker {
     String textDirPath = null;
     String textFileExt = null;
     String annDirPath = null;
-    String separatorChars = null;
+    String separatorChars = "/-\\";  // Default
     String outputDirPath = null;
     try {
       CommandLine cmd = parser.parse(options, args);
@@ -302,7 +302,7 @@ public class TokenFileMaker {
       textDirPath = cmd.getOptionValue(optTextDir.getOpt());
       textFileExt = cmd.getOptionValue(optTextFileExt.getOpt());
       annDirPath = cmd.getOptionValue(optAnnDir.getOpt());
-      if (optSepChars.hasArg()) {
+      if (cmd.getOptionValue(optSepChars.getOpt()) != null) {
         separatorChars = cmd.getOptionValue(optSepChars.getOpt());
       }
       outputDirPath = cmd.getOptionValue(optOutputDir.getOpt());

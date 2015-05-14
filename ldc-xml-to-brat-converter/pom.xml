@@ -42,14 +42,6 @@
       <artifactId>jopt-simple</artifactId>
       <version>4.8</version>
     </dependency>
-    <!-- Annobase -->
-    <dependency>
-      <groupId>net.junaraki</groupId>
-      <artifactId>annobase</artifactId>
-      <version>1.0.1</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/lib/annobase-1.0.1.jar</systemPath>
-    </dependency>
   </dependencies>
 
   <build>

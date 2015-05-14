@@ -1,0 +1,5 @@
+Coreference: Recall: (0 / 2) 0%	Precision: (0 / 1) 0%	F1: 0%
+Coreference: Recall: (2 / 4) 50%	Precision: (2.5 / 3) 83.33%	F1: 62.5%
+Coreference: Recall: (3 / 4) 75%	Precision: (3 / 3) 100%	F1: 85.71%
+Coreference: Recall: (1.66666666666667 / 2) 83.33%	Precision: (1.66666666666667 / 2) 83.33%	F1: 83.33%
+BLANC: Recall: (0.5 / 1) 50%	Precision: (1 / 1) 100%	F1: 66.66%

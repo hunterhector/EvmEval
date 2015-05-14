@@ -64,6 +64,9 @@ output/
 other_scripts/
 older_version/
 
+#java, maven generated
+target/
+
 #tmp stuff
 *.tmp.*
 *.tmp

@@ -1,0 +1,135 @@
+version: 8.01 /Users/zhengzhongliu/Documents/projects/EvmEval/reference-coreference-scorers/v8.01/lib/CorScorer.pm
+
+METRIC muc:
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (1,1) (3,3)
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (3,3)
+(doc1); part 000:
+Repeated mention in the key: 1, 1 12
+Total key mentions: 3
+Total response mentions: 3
+Strictly correct identified mentions: 3
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 1
+Recall: (0 / 2) 0%	Precision: (0 / 1) 0%	F1: 0%
+--------------------------------------------------------------------------
+
+====== TOTALS =======
+Identification of Mentions: Recall: (3 / 3) 100%	Precision: (3 / 3) 100%	F1: 100%
+--------------------------------------------------------------------------
+Coreference: Recall: (0 / 2) 0%	Precision: (0 / 1) 0%	F1: 0%
+--------------------------------------------------------------------------
+
+METRIC bcub:
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (1,1) (3,3)
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (3,3)
+(doc1); part 000:
+Repeated mention in the key: 1, 1 12
+Total key mentions: 3
+Total response mentions: 3
+Strictly correct identified mentions: 3
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 1
+Recall: (2 / 4) 50%	Precision: (2.5 / 3) 83.33%	F1: 62.5%
+--------------------------------------------------------------------------
+
+====== TOTALS =======
+Identification of Mentions: Recall: (3 / 3) 100%	Precision: (3 / 3) 100%	F1: 100%
+--------------------------------------------------------------------------
+Coreference: Recall: (2 / 4) 50%	Precision: (2.5 / 3) 83.33%	F1: 62.5%
+--------------------------------------------------------------------------
+
+METRIC ceafm:
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (1,1) (3,3)
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (3,3)
+(doc1); part 000:
+Repeated mention in the key: 1, 1 12
+Total key mentions: 3
+Total response mentions: 3
+Strictly correct identified mentions: 3
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 1
+Recall: (3 / 4) 75%	Precision: (3 / 3) 100%	F1: 85.71%
+--------------------------------------------------------------------------
+
+====== TOTALS =======
+Identification of Mentions: Recall: (3 / 3) 100%	Precision: (3 / 3) 100%	F1: 100%
+--------------------------------------------------------------------------
+Coreference: Recall: (3 / 4) 75%	Precision: (3 / 3) 100%	F1: 85.71%
+--------------------------------------------------------------------------
+
+METRIC ceafe:
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (1,1) (3,3)
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (3,3)
+(doc1); part 000:
+Repeated mention in the key: 1, 1 12
+Total key mentions: 3
+Total response mentions: 3
+Strictly correct identified mentions: 3
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 1
+Recall: (1.66666666666667 / 2) 83.33%	Precision: (1.66666666666667 / 2) 83.33%	F1: 83.33%
+--------------------------------------------------------------------------
+
+====== TOTALS =======
+Identification of Mentions: Recall: (3 / 3) 100%	Precision: (3 / 3) 100%	F1: 100%
+--------------------------------------------------------------------------
+Coreference: Recall: (1.66666666666667 / 2) 83.33%	Precision: (1.66666666666667 / 2) 83.33%	F1: 83.33%
+--------------------------------------------------------------------------
+
+METRIC blanc:
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (1,1) (3,3)
+====> (doc1); part 000:
+File (doc1); part 000:
+Entity 0: (0,0) (1,1)
+Entity 1: (3,3)
+:
+Repeated mention in the key: 1, 1 12
+Total key mentions: 3
+Total response mentions: 3
+Strictly correct identified mentions: 3
+Partially correct identified mentions: 0
+No identified: 0
+Invented: 1
+
+====== TOTALS =======
+Identification of Mentions: Recall: (3 / 3) 100%	Precision: (3 / 3) 100%	F1: 100%
+--------------------------------------------------------------------------
+
+Coreference:
+Coreference links: Recall: (1 / 2) 50%	Precision: (1 / 1) 100%	F1: 66.66%
+--------------------------------------------------------------------------
+Non-coreference links: Recall: (2 / 4) 50%	Precision: (2 / 2) 100%	F1: 66.66%
+--------------------------------------------------------------------------
+BLANC: Recall: (0.5 / 1) 50%	Precision: (1 / 1) 100%	F1: 66.66%
+--------------------------------------------------------------------------

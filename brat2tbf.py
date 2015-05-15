@@ -38,8 +38,12 @@ out_ext = ".tbf"  # short for token based format
 engine_id = "brat_conversion"
 tokenJoiner = ","
 
-brat_annotation_ext = ".tkn.ann"
-token_offset_ext = ".txt.tab"  # accroding to LDC2014R55
+# brat_annotation_ext = ".tkn.ann"
+# token_offset_ext = ".txt.tab"  # accroding to LDC2014R55
+
+brat_annotation_ext = ".ann"
+token_offset_ext = ".tab"  # Simplest extensions
+
 
 token_offset_fields = [2, 3]
 

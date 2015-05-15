@@ -1,0 +1,48 @@
+T1	Movement_Transport-Artifact 174 184	delivering
+E180	Movement_Transport-Artifact:T1
+A1	Realis E180 Generic
+T2	Movement_Transport-Artifact 831 839	delivery
+E578	Movement_Transport-Artifact:T2
+A2	Realis E578 Other
+T3	Movement_Transport-Artifact 641 646	leave
+E658	Movement_Transport-Artifact:T3
+A3	Realis E658 Generic
+T4	Transaction_Transfer-Ownership 213 220	Ordered
+E203	Transaction_Transfer-Ownership:T4
+A4	Realis E203 Other
+T5	Transaction_Transfer-Money 213 220	Ordered
+E246	Transaction_Transfer-Money:T5
+A5	Realis E246 Actual
+T6	Movement_Transport-Artifact 367 376	delivered
+E269	Movement_Transport-Artifact:T6
+A6	Realis E269 Other
+T7	Contact_Correspondence 431 437	Phoned
+E345	Contact_Correspondence:T7
+A7	Realis E345 Actual
+T8	Contact_Correspondence 491 497	Phoned
+E375	Contact_Correspondence:T8
+A8	Realis E375 Actual
+T9	Contact_Correspondence 525 531	Phoned
+E405	Contact_Correspondence:T9
+A9	Realis E405 Actual
+T10	Movement_Transport-Artifact 690 698	delivery
+E435	Movement_Transport-Artifact:T10
+A10	Realis E435 Other
+T11	Movement_Transport-Person 712 719	Arrived
+E465	Movement_Transport-Person:T11
+A11	Realis E465 Actual
+T12	Movement_Transport-Artifact 749 758	delivered
+E495	Movement_Transport-Artifact:T12
+A12	Realis E495 Actual
+T13	Movement_Transport-Artifact 799 803	this
+E693	Movement_Transport-Artifact:T13
+A13	Realis E693 Actual
+T14	Contact_Broadcast 787 791	card
+E541	Contact_Broadcast:T14
+A14	Realis E541 Actual
+T15	Contact_Broadcast 551 555	left
+E622	Contact_Broadcast:T15
+A15	Realis E622 Actual
+R1	Coreference Arg1:E180 Arg2:E658
+R2	Coreference Arg1:E658 Arg2:E578
+R3	Coreference Arg1:E495 Arg2:E693

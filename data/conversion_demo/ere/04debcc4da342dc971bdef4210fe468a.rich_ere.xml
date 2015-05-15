@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deft_ere kit_id="551c08360000000000000001" doc_id="04debcc4da342dc971bdef4210fe468a" source_type="multi_post">
+  <entities>
+    <entity id="ent-8" type="PER" specificity="specific">
+      <entity_mention id="m-13" noun_type="NAM" source="04debcc4da342dc971bdef4210fe468a" offset="81" length="9">
+        <mention_text>Dick here</mention_text>
+      </entity_mention>
+      <entity_mention id="m-28" noun_type="PRO" source="04debcc4da342dc971bdef4210fe468a" offset="197" length="2">
+        <mention_text>my</mention_text>
+      </entity_mention>
+      <entity_mention id="m-79" noun_type="PRO" source="04debcc4da342dc971bdef4210fe468a" offset="570" length="3">
+        <mention_text>you</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-25" type="ORG" specificity="specific">
+      <entity_mention id="m-19" noun_type="NAM" source="04debcc4da342dc971bdef4210fe468a" offset="163" length="6">
+        <mention_text>Amtrak</mention_text>
+      </entity_mention>
+      <entity_mention id="m-43" noun_type="NAM" source="04debcc4da342dc971bdef4210fe468a" offset="380" length="6">
+        <mention_text>Amtrak</mention_text>
+      </entity_mention>
+      <entity_mention id="m-49" noun_type="NAM" source="04debcc4da342dc971bdef4210fe468a" offset="438" length="6">
+        <mention_text>Amtrak</mention_text>
+      </entity_mention>
+      <entity_mention id="m-55" noun_type="PRO" source="04debcc4da342dc971bdef4210fe468a" offset="460" length="2">
+        <mention_text>we</mention_text>
+      </entity_mention>
+      <entity_mention id="m-73" noun_type="NAM" source="04debcc4da342dc971bdef4210fe468a" offset="532" length="6">
+        <mention_text>Amtrak</mention_text>
+      </entity_mention>
+      <entity_mention id="m-85" noun_type="PRO" source="04debcc4da342dc971bdef4210fe468a" offset="620" length="2">
+        <mention_text>we</mention_text>
+      </entity_mention>
+      <entity_mention id="m-109" noun_type="PRO" source="04debcc4da342dc971bdef4210fe468a" offset="808" length="5">
+        <mention_text>their</mention_text>
+      </entity_mention>
+      <entity_mention id="m-115" noun_type="NOM" source="04debcc4da342dc971bdef4210fe468a" offset="848" length="17">
+        <mention_text>a bunch of jokers</mention_text>
+        <nom_head source="04debcc4da342dc971bdef4210fe468a" offset="859" length="6">jokers</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-40" type="ORG" specificity="specific">
+      <entity_mention id="m-34" noun_type="NAM" source="04debcc4da342dc971bdef4210fe468a" offset="251" length="5">
+        <mention_text>Argos</mention_text>
+      </entity_mention>
+      <entity_mention id="m-238" noun_type="PRO" source="04debcc4da342dc971bdef4210fe468a" offset="259" length="3">
+        <mention_text>who</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-70" type="ORG" specificity="specific">
+      <entity_mention id="m-64" noun_type="NOM" source="04debcc4da342dc971bdef4210fe468a" offset="498" length="14">
+        <mention_text>online company</mention_text>
+        <nom_head source="04debcc4da342dc971bdef4210fe468a" offset="505" length="7">company</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-97" type="PER" specificity="nonspecific">
+      <entity_mention id="m-91" noun_type="NOM" source="04debcc4da342dc971bdef4210fe468a" offset="655" length="11">
+        <mention_text>a neighbour</mention_text>
+        <nom_head source="04debcc4da342dc971bdef4210fe468a" offset="657" length="9">neighbour</nom_head>
+      </entity_mention>
+    </entity>
+    <entity id="ent-106" type="FAC" specificity="specific">
+      <entity_mention id="m-100" noun_type="NOM" source="04debcc4da342dc971bdef4210fe468a" offset="720" length="4">
+        <mention_text>home</mention_text>
+        <nom_head source="04debcc4da342dc971bdef4210fe468a" offset="720" length="4">home</nom_head>
+      </entity_mention>
+      <entity_mention id="m-652" noun_type="PRO" source="04debcc4da342dc971bdef4210fe468a" offset="582" length="5">
+        <mention_text>there</mention_text>
+      </entity_mention>
+    </entity>
+    <entity id="ent-522" type="FAC" specificity="specific">
+      <entity_mention id="m-516" noun_type="NOM" source="04debcc4da342dc971bdef4210fe468a" offset="759" length="9">
+        <mention_text>next door</mention_text>
+        <nom_head source="04debcc4da342dc971bdef4210fe468a" offset="764" length="4">door</nom_head>
+      </entity_mention>
+    </entity>
+  </entities>
+  <fillers>
+    <filler id="f-228" source="04debcc4da342dc971bdef4210fe468a" offset="221" length="8" type="commodity">a 32" TV</filler>
+    <filler id="f-294" source="04debcc4da342dc971bdef4210fe468a" offset="221" length="8" type="commodity">a 32" TV</filler>
+    <filler id="f-612" source="04debcc4da342dc971bdef4210fe468a" offset="390" length="7" type="time">Tuesday</filler>
+    <filler id="f-619" source="04debcc4da342dc971bdef4210fe468a" offset="448" length="9" type="time">Wednesday</filler>
+    <filler id="f-690" source="04debcc4da342dc971bdef4210fe468a" offset="725" length="9" type="time">yesterday</filler>
+    <filler id="f-512" source="04debcc4da342dc971bdef4210fe468a" offset="737" length="2" type="commodity">it</filler>
+    <filler id="f-536" source="04debcc4da342dc971bdef4210fe468a" offset="769" length="9" type="time">yesterday</filler>
+    <filler id="f-573" source="04debcc4da342dc971bdef4210fe468a" offset="769" length="9" type="time">yesterday</filler>
+    <filler id="f-647" source="04debcc4da342dc971bdef4210fe468a" offset="559" length="7" type="time">Tuesday</filler>
+  </fillers>
+  <relations/>
+  <hoppers>
+    <hopper id="h-201">
+      <event_mention id="em-180" type="movement" subtype="transportartifact" realis="generic">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="174" length="10">delivering</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-19" role="agent" realis="true">Amtrak</em_arg>
+      </event_mention>
+      <event_mention id="em-578" type="movement" subtype="transportartifact" realis="other">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="831" length="8">delivery</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-109" role="agent" realis="true">their</em_arg>
+      </event_mention>
+      <event_mention id="em-658" type="movement" subtype="transportartifact" realis="generic">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="641" length="5">leave</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-85" role="agent" realis="true">we</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-244">
+      <event_mention id="em-203" type="transaction" subtype="transferownership" realis="other" ways="voluntary">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="213" length="7">Ordered</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-28" role="recipient" realis="true">my</em_arg>
+        <em_arg filler_id="f-228" role="thing" realis="true">a 32" TV</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-267">
+      <event_mention id="em-246" type="transaction" subtype="transfermoney" realis="actual" ways="voluntary">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="213" length="7">Ordered</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-28" role="recipient" realis="true">my</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-297">
+      <event_mention id="em-269" type="movement" subtype="transportartifact" realis="other">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="367" length="9">delivered</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-43" role="agent" realis="true">Amtrak</em_arg>
+        <em_arg filler_id="f-294" role="artifact" realis="true">a 32" TV</em_arg>
+        <em_arg filler_id="f-612" role="time" realis="true">Tuesday</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-366">
+      <event_mention id="em-345" type="contact" subtype="correspondence" realis="actual" audience="twoway" formality="canttell" medium="notinperson" schedule="planned">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="431" length="6">Phoned</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-49" role="entity" realis="true">Amtrak</em_arg>
+        <em_arg entity_id="ent-8" entity_mention_id="m-28" role="entity" realis="true">my</em_arg>
+        <em_arg filler_id="f-619" role="time" realis="true">Wednesday</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-403">
+      <event_mention id="em-375" type="contact" subtype="correspondence" realis="actual" audience="twoway" formality="canttell" medium="notinperson" schedule="planned">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="491" length="6">Phoned</trigger>
+        <em_arg entity_id="ent-70" entity_mention_id="m-64" role="entity" realis="true">online company</em_arg>
+        <em_arg entity_id="ent-8" entity_mention_id="m-28" role="entity" realis="true">my</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-433">
+      <event_mention id="em-405" type="contact" subtype="correspondence" realis="actual" audience="twoway" formality="canttell" medium="notinperson" schedule="planned">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="525" length="6">Phoned</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-73" role="entity" realis="true">Amtrak</em_arg>
+        <em_arg entity_id="ent-8" entity_mention_id="m-79" role="entity" realis="true">you</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-463">
+      <event_mention id="em-435" type="movement" subtype="transportartifact" realis="other">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="690" length="8">delivery</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-73" role="agent" realis="true">Amtrak</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-493">
+      <event_mention id="em-465" type="movement" subtype="transportperson" realis="actual">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="712" length="7">Arrived</trigger>
+        <em_arg entity_id="ent-8" entity_mention_id="m-79" role="person" realis="true">you</em_arg>
+        <em_arg entity_id="ent-106" entity_mention_id="m-100" role="destination" realis="true">home</em_arg>
+        <em_arg filler_id="f-690" role="time" realis="true">yesterday</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-539">
+      <event_mention id="em-495" type="movement" subtype="transportartifact" realis="actual">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="749" length="9">delivered</trigger>
+        <em_arg filler_id="f-512" role="artifact" realis="true">it</em_arg>
+        <em_arg entity_id="ent-522" entity_mention_id="m-516" role="destination" realis="true">next door</em_arg>
+        <em_arg filler_id="f-536" role="time" realis="true">yesterday</em_arg>
+      </event_mention>
+      <event_mention id="em-693" type="movement" subtype="transportartifact" realis="actual">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="799" length="4">this</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-109" role="agent" realis="true">their</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-576">
+      <event_mention id="em-541" type="contact" subtype="broadcast" realis="actual" audience="oneway" formality="formal" medium="notinperson" schedule="planned">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="787" length="4">card</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-109" role="entity" realis="true">their</em_arg>
+        <em_arg entity_id="ent-522" entity_mention_id="m-516" role="place" realis="true">next door</em_arg>
+        <em_arg filler_id="f-573" role="time" realis="true">yesterday</em_arg>
+      </event_mention>
+    </hopper>
+    <hopper id="h-650">
+      <event_mention id="em-622" type="contact" subtype="broadcast" realis="actual" audience="oneway" formality="formal" medium="notinperson" schedule="spontaneous">
+        <trigger source="04debcc4da342dc971bdef4210fe468a" offset="551" length="4">left</trigger>
+        <em_arg entity_id="ent-25" entity_mention_id="m-73" role="entity" realis="true">Amtrak</em_arg>
+        <em_arg filler_id="f-647" role="time" realis="true">Tuesday</em_arg>
+      </event_mention>
+    </hopper>
+  </hoppers>
+</deft_ere>

@@ -1,0 +1,19 @@
+#BeginOfDocument 04debcc4da342dc971bdef4210fe468a
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E180	9	delivering	Movement_Transport-Artifact	Generic	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E203	16	Ordered	Transaction_Transfer-Ownership	Other	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E246	16	Ordered	Transaction_Transfer-Money	Actual	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E269	49	delivered	Movement_Transport-Artifact	Other	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E345	63	Phoned	Contact_Correspondence	Actual	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E375	76	Phoned	Contact_Correspondence	Actual	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E405	83	Phoned	Contact_Correspondence	Actual	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E435	124	delivery	Movement_Transport-Artifact	Other	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E465	128	Arrived	Movement_Transport-Person	Actual	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E495	134	delivered	Movement_Transport-Artifact	Actual	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E541	141	card	Contact_Broadcast	Actual	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E578	149	delivery	Movement_Transport-Artifact	Other	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E622	89	left	Contact_Broadcast	Actual	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E658	114	leave	Movement_Transport-Artifact	Generic	1
+brat_conversion	04debcc4da342dc971bdef4210fe468a	E693	143	this	Movement_Transport-Artifact	Actual	1
+@Coreference	C0	E180,E658,E578
+@Coreference	C1	E693,E495
+#EndOfDocument

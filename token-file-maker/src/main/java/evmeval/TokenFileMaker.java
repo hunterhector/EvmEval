@@ -1,15 +1,21 @@
 package evmeval;
 
-import org.apache.commons.cli.*;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
-import org.apache.commons.lang3.StringUtils;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import org.apache.commons.cli.BasicParser;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.OptionBuilder;
+import org.apache.commons.cli.Options;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * A factory class to create token files for given text files and annotation files.
@@ -288,7 +294,7 @@ public class TokenFileMaker {
     String textDirPath = null;
     String textFileExt = null;
     String annDirPath = null;
-    String separatorChars = null;
+    String separatorChars = "/-\\";  // Default
     String outputDirPath = null;
     try {
       CommandLine cmd = parser.parse(options, args);
@@ -296,7 +302,7 @@ public class TokenFileMaker {
       textDirPath = cmd.getOptionValue(optTextDir.getOpt());
       textFileExt = cmd.getOptionValue(optTextFileExt.getOpt());
       annDirPath = cmd.getOptionValue(optAnnDir.getOpt());
-      if (optSepChars.hasArg()) {
+      if (cmd.getOptionValue(optSepChars.getOpt()) != null) {
         separatorChars = cmd.getOptionValue(optSepChars.getOpt());
       }
       outputDirPath = cmd.getOptionValue(optOutputDir.getOpt());

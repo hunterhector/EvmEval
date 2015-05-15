@@ -117,7 +117,7 @@ public class Tokenizer {
         tmpStr = tmpStr.substring(index + 1);
       }
       // For the last token
-      if (begin > end) {
+      if (begin < end) {
         tmpTokens.add(new Token(token.getDocument(), begin, end));
       }
 

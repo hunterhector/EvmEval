@@ -112,13 +112,20 @@ def main():
     eval_mode = EvalMethod.Token
     read_all_doc(sf)
 
+    validation_success = True
     while True:
         if not validate(eval_mode, token_dir,
                         token_offset_fields, args.token_table_extension):
+            validation_success = False
             break
+
     logger.info("Submission contains %d files, %d mentions" % (len(gold_docs), total_mentions))
-    logger.info("Please fix the warnings/errors if any.")
-    logger.info("Validation Done.")
+
+    if not validation_success:
+        logger.error("Validation failed.")
+        logger.error("Please fix the warnings/errors.")
+
+    logger.info("Validation Finished.")
 
 
 def pad_char_before_until(s, n, c=" "):
@@ -251,8 +258,9 @@ def parse_token_based_line(l, invisible_ids):
     fields = l.split("\t")
     min_len = len(attribute_names) + 5
     if len(fields) < min_len:
-        logger.error("System line too few fields, there should be at least %d" % min_len)
+        logger.error("System line too few fields, there should be at least %d, found %d" % (min_len, len(fields)))
         logger.error(l)
+        logger.error(fields)
         sys.exit()
     token_ids = parse_token_ids(fields[3], invisible_ids)
 

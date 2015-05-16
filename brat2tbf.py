@@ -254,9 +254,9 @@ def parse_annotation_file(file_path, token_dir, of):
             token_ids = text_bound_id_2_token_id[text_bound_id]
             text = text_bound[2]
 
-            of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
+            of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
                 engine_id, text_id, eid, join_list(token_ids, tokenJoiner),
-                text, event_type, realis_status, 1))
+                text, event_type, realis_status))
 
         for rel_name, relations in rels.iteritems():
             if rel_name != coreference_relation_name:

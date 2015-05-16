@@ -38,7 +38,7 @@ import heapq
 import itertools
 import re
 import subprocess
-
+import copy
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -55,7 +55,7 @@ coreference_relation_name = "Coreference"  # mark coreference
 conll_bod_marker = "#begin document"
 conll_eod_marker = "#end document"
 
-default_token_file_ext = ".txt.tab"
+default_token_file_ext = ".tab"
 default_token_offset_fields = [2, 3]
 
 # run this on an annotation to confirm
@@ -375,7 +375,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
         for tline in token_file:
             fields = tline.rstrip().split("\t")
             if len(fields) < 4:
-                logger.debug("Wierd token line " + tline)
+                logger.error("Weird token line " + tline)
                 continue
 
             token = fields[1].lower().strip().rstrip()
@@ -393,7 +393,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
                 invisible_ids.add(token_id)
 
     except IOError:
-        logger.debug(
+        logger.error(
             "Cannot find token file for doc [%s] at [%s], "
             "will use empty invisible words list" % (g_file_name, token_file_path))
         pass
@@ -438,7 +438,7 @@ def read_all_doc(gf, sf):
             logger.warning("  - " + d)
 
     if len(common_id_set) == 0:
-        logger.debug("No document to score, file names are all different!")
+        logger.warning("No document to score, file names are all different!")
 
     doc_ids_to_score = sorted(g_id_set)
 
@@ -653,6 +653,65 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
     write_if_provided(diff_out, eod_marker + " " + "\n")
 
 
+def create_system_choices(mapped_system_mentions):
+    list_of_one_to_one_mappings = []
+    first_mapping = {}
+    list_of_one_to_one_mappings.append(first_mapping)
+    for system_id, mapped_gold_ids in mapped_system_mentions.iteritems():
+        do_branch = False
+        additional_one_to_one_mappings = []
+        if len(mapped_gold_ids) > 1:
+            do_branch = True
+
+        for mapping in list_of_one_to_one_mappings:
+            if do_branch:
+                for mapped_gold_id in mapped_gold_ids[1:]:
+                    mapping_branch = copy.deepcopy(mapping)
+                    mapping_branch[system_id] = mapped_gold_id
+                    additional_one_to_one_mappings.append(mapping_branch)
+            mapping[system_id] = mapped_gold_ids[0]
+        list_of_one_to_one_mappings.extend(additional_one_to_one_mappings)
+    return list_of_one_to_one_mappings
+
+
+def unify_system_mapping(gold_2_system_many_2_many_mapping, system_mapping_choice):
+    gold_2_system_one_2_many_mapping = [[] for _ in xrange(len(gold_2_system_many_2_many_mapping))]
+    for gold_index, mapped_system_indices_and_scores in enumerate(
+            gold_2_system_many_2_many_mapping):
+        for system_index, score in mapped_system_indices_and_scores:
+            if system_mapping_choice[system_index] == gold_index:
+                gold_2_system_one_2_many_mapping[gold_index].append((system_index, score))
+    return gold_2_system_one_2_many_mapping
+
+
+def get_tp(all_attribute_combinations, gold_2_system_one_2_many_mapping, gold_mention_table, system_mention_table,
+           doc_id):
+    tp = 0.0
+    attribute_based_tps = [0.0] * len(all_attribute_combinations)
+
+    print "Trying mapping"
+    print gold_2_system_one_2_many_mapping
+
+    for gold_index, mapped_system_indices_and_scores in enumerate(
+            gold_2_system_one_2_many_mapping):
+        if len(mapped_system_indices_and_scores) > 0:
+            max_mapping_score = mapped_system_indices_and_scores[0][1]
+            tp += max_mapping_score
+
+        gold_attrs = gold_mention_table[gold_index][1]
+
+        for attr_comb_index, attr_comb in enumerate(all_attribute_combinations):
+            for system_index, score in mapped_system_indices_and_scores:
+                system_attrs = system_mention_table[system_index][1]
+                if attribute_based_match(attr_comb, gold_attrs, system_attrs, doc_id):
+                    attribute_based_tps[attr_comb_index] += score
+                    break
+
+    print tp
+
+    return tp, attribute_based_tps
+
+
 def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
              token_offset_fields, token_file_ext,
              diff_out, gold_conll_file_out, sys_conll_file_out):
@@ -690,8 +749,12 @@ def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
     # score is stored using negative for easy sorting
     all_gold_system_mapping_scores = []
 
+    print_score_matrix = False
+
     for system_index, (system_spans, system_attributes,
                        sys_mention_id) in enumerate(system_mention_table):
+        if print_score_matrix:
+            print system_index,
         for index, (gold_spans, gold_attributes, gold_mention_id) in enumerate(
                 gold_mention_table):
             overlap = compute_overlap_score(gold_spans,
@@ -699,63 +762,60 @@ def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
             if len(gold_spans) == 0:
                 logger.warning("Found empty gold standard at doc : %s" % doc_id)
 
+            if print_score_matrix:
+                print "%.1f" % overlap,
+
             if overlap > 0:
                 # maintaining a max heap based on overlap score
                 heapq.heappush(
                     all_gold_system_mapping_scores,
                     (-overlap, system_index, index))
+        if print_score_matrix:
+            print
 
-    mapped_system_mentions = set()
+    mapped_system_mentions = {}
 
     # a list system index and the mapping score for each gold
-    assigned_gold_2_system_mapping = [[] for _ in xrange(len(g_mention_lines))]
+    gold_2_system_many_2_many_mapping = [[] for _ in xrange(len(g_mention_lines))]
 
-    # greedily matching gold and system by selecting the highest score first
-    # one system mention can be mapped to only one gold
     while len(all_gold_system_mapping_scores) != 0:
         neg_mapping_score, mapping_system_index, mapping_gold_index = \
             heapq.heappop(all_gold_system_mapping_scores)
-        if mapping_system_index not in mapped_system_mentions:
-            assigned_gold_2_system_mapping[mapping_gold_index].append((mapping_system_index, -neg_mapping_score))
-        mapped_system_mentions.add(mapping_system_index)
+        gold_2_system_many_2_many_mapping[mapping_gold_index].append((mapping_system_index, -neg_mapping_score))
+        add_to_multi_map(mapped_system_mentions, mapping_system_index, mapping_gold_index)
 
-    tp = 0.0
-    plain_gold_found = 0.0
+    system_2_gold_one_2_one_mappings = create_system_choices(mapped_system_mentions)
 
-    attribute_based_tps = [0.0] * len(all_attribute_combinations)
-    attribute_based_gold_counts = [0.0] * len(all_attribute_combinations)
+    all_possible_gold_2_system_one_2_many_mappings = []
+    for system_2_gold_mapping in system_2_gold_one_2_one_mappings:
+        all_possible_gold_2_system_one_2_many_mappings.append(
+            unify_system_mapping(gold_2_system_many_2_many_mapping, system_2_gold_mapping))
 
-    for gold_index, mapped_system_indices_and_scores in enumerate(
-            assigned_gold_2_system_mapping):
-        if len(mapped_system_indices_and_scores) > 0:
-            plain_gold_found += 1
-        else:
-            continue
+    best_tp = 0
+    best_attribute_based_tps = [0] * len(all_attribute_combinations)
+    best_all_att_mapping = None
+    for possible_gold_2_system_one_2_many_mapping in all_possible_gold_2_system_one_2_many_mappings:
+        temp_tp, temp_abtps = get_tp(all_attribute_combinations, possible_gold_2_system_one_2_many_mapping,
+                                     gold_mention_table, system_mention_table, doc_id)
+        if temp_tp > best_tp:
+            best_tp = temp_tp
+        for att_comb_index, abtp in enumerate(temp_abtps):
+            if abtp > best_attribute_based_tps[att_comb_index]:
+                best_attribute_based_tps[att_comb_index] = abtp
+                if att_comb_index == len(temp_abtps) - 1:
+                    best_all_att_mapping = possible_gold_2_system_one_2_many_mapping
 
-        max_mapping_score = mapped_system_indices_and_scores[0][1]
-        tp += max_mapping_score
-
-        gold_attrs = gold_mention_table[gold_index][1]
-
-        for attr_comb_index, attr_comb in enumerate(all_attribute_combinations):
-            for system_index, score in mapped_system_indices_and_scores:
-                system_attrs = system_mention_table[system_index][1]
-                if attribute_based_match(attr_comb, gold_attrs, system_attrs, doc_id):
-                    attribute_based_tps[attr_comb_index] += score
-                    attribute_based_gold_counts[attr_comb_index] += 1.0
-                    break
-
-    write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_mapping, gold_mention_table,
+    write_gold_and_system_mappings(doc_id, system_id, best_all_att_mapping, gold_mention_table,
                                    system_mention_table, diff_out)
 
     attribute_based_fps = [0.0] * len(all_attribute_combinations)
-    for attribute_comb_index, (abtp, abgc) in enumerate(zip(attribute_based_tps, attribute_based_gold_counts)):
+    for attribute_comb_index, abtp in enumerate(best_attribute_based_tps):
         attribute_based_fps[attribute_comb_index] = len(s_mention_lines) - abtp
 
     # unmapped system mentions and the partial scores are considered as false positive
-    fp = len(s_mention_lines) - tp
+    fp = len(s_mention_lines) - best_tp
 
-    doc_scores.append((tp, fp, zip(attribute_based_tps, attribute_based_fps),
+    doc_scores.append((best_tp, fp, zip(best_attribute_based_tps, attribute_based_fps),
                        len(g_mention_lines), len(s_mention_lines), doc_id))
 
     gold_corefs = [coref for coref in [parse_relation(l) for l in g_relation_lines] if

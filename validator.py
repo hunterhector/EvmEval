@@ -12,6 +12,7 @@ import argparse
 import logging
 import sys
 import os
+import re
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -271,6 +272,20 @@ def parse_relation(relation_line):
     return parts[0], parts[1], relation_arguments
 
 
+def natural_order(key):
+    convert = lambda text: int(text) if text.isdigit() else text
+    return [convert(c) for c in re.split('([0-9]+)', key)]
+
+
+def get_eid_2_sorted_token_map(mention_table):
+    event_mention_id_2_sorted_tokens = {}
+    for mention in mention_table:
+        tokens = sorted(mention[0], key=natural_order)
+        event_id = mention[2]
+        event_mention_id_2_sorted_tokens[event_id] = tokens
+    return event_mention_id_2_sorted_tokens
+
+
 def validate(eval_mode, token_dir, token_offset_fields, token_file_ext):
     global total_mentions
 
@@ -280,12 +295,6 @@ def validate(eval_mode, token_dir, token_offset_fields, token_file_ext):
         return False
 
     invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
-
-    system_id = ""
-    if len(s_mention_lines) > 0:
-        fields = s_mention_lines[0].split("\t")
-        if len(fields) > 0:
-            system_id = fields[0]
 
     # parse the lines in file
     gold_mention_table = []
@@ -308,11 +317,17 @@ def validate(eval_mode, token_dir, token_offset_fields, token_file_ext):
             clusters[cluster_id] = set(relation[2])
             cluster_id += 1
         else:
-            logger.warning("Relation [%s] is not recognized, this task only takes [%s]", relation[0],
-                           coreference_relation_name)
+            logger.error("Relation [%s] is not recognized, this task only takes [%s]", relation[0],
+                         coreference_relation_name)
             pass
     if transitive_not_resolved(clusters):
-        logger.warning("Coreference transitive closure is not resolved! Please resolve before submitting.")
+        logger.error("Coreference transitive closure is not resolved! Please resolve before submitting.")
+
+    for cluster_id, cluster in clusters.iteritems():
+        if mention_span_duplicate(cluster, get_eid_2_sorted_token_map(gold_mention_table)):
+            logger.error("Please remove span duplicates before submitting")
+            return False
+
     return True
 
 
@@ -322,6 +337,21 @@ def check_token(id2token_map, gold_mention_table):
         for tid in spans:
             if tid not in id2token_map:
                 logger.error("Token Id [%s] is not in the given token map" % tid)
+
+
+def mention_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+    # print cluster
+    # print event_mention_id_2_sorted_tokens
+    span_map = {}
+    for eid in cluster:
+        span = tuple(event_mention_id_2_sorted_tokens[eid])
+        if span in span_map:
+            logger.error("Span within the same cluster cannot be the same.")
+            logger.error("%s->[%s]" % (eid, ",".join(span)))
+            logger.error("%s->[%s]" % (span_map[span], ",".join(span)))
+            return True
+        else:
+            span_map[span] = eid
 
 
 def transitive_not_resolved(clusters):

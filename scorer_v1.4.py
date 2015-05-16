@@ -689,8 +689,8 @@ def get_tp(all_attribute_combinations, gold_2_system_one_2_many_mapping, gold_me
     tp = 0.0
     attribute_based_tps = [0.0] * len(all_attribute_combinations)
 
-    print "Trying mapping"
-    print gold_2_system_one_2_many_mapping
+    logger.debug("Calculating scores for the following mapping")
+    logger.debug(gold_2_system_one_2_many_mapping)
 
     for gold_index, mapped_system_indices_and_scores in enumerate(
             gold_2_system_one_2_many_mapping):
@@ -707,7 +707,7 @@ def get_tp(all_attribute_combinations, gold_2_system_one_2_many_mapping, gold_me
                     attribute_based_tps[attr_comb_index] += score
                     break
 
-    print tp
+    logger.debug("Number of true positive %.2f" % tp)
 
     return tp, attribute_based_tps
 
@@ -845,7 +845,8 @@ def transitive_not_resolved(clusters):
     for i in range(0, len(ids) - 1):
         for j in range(i + 1, len(ids)):
             if len(clusters[i].intersection(clusters[j])) != 0:
-                logger.error("Non empty intersection between clusters found.")
+                logger.error(
+                    "Non empty intersection between clusters found. Please resolve transitive closure before submit.")
                 logger.error(clusters[i])
                 logger.error(clusters[j])
                 return True
@@ -856,6 +857,21 @@ def add_to_multi_map(map, key, val):
     if key not in map:
         map[key] = []
     map[key].append(val)
+
+
+def mention_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+    # print cluster
+    # print event_mention_id_2_sorted_tokens
+    span_map = {}
+    for eid in cluster:
+        span = tuple(event_mention_id_2_sorted_tokens[eid])
+        if span in span_map:
+            logger.error("Span within the same cluster cannot be the same.")
+            logger.error("%s->[%s]" % (eid, ",".join(span)))
+            logger.error("%s->[%s]" % (span_map[span], ",".join(span)))
+            return True
+        else:
+            span_map[span] = eid
 
 
 class ConllConverter:
@@ -875,25 +891,27 @@ class ConllConverter:
     def prepare_conll_lines(self, gold_corefs, sys_corefs, gold_mention_table, system_mention_table):
         if not self.prepare_lines(gold_corefs, self.gold_conll_file_out, gold_mention_table):
             logger.error(
-                "Gold standard has not resolved transitive closure of coreference for doc [%s], quitting..."
+                "Gold standard has data problem for doc [%s], please refer to log quitting..."
                 % self.doc_id)
             exit(1)
 
         if not self.prepare_lines(sys_corefs, self.sys_conll_file_out, system_mention_table):
             logger.error(
-                "System has not resolved transitive closure for coreference for doc [%s], quitting..."
+                "System has data problem for doc [%s], please refer to log, quitting..."
                 % self.doc_id)
             exit(1)
 
     def prepare_lines(self, corefs, out, mention_table):
         clusters = {}
-        for cluster_id, gold_coref in enumerate(corefs):
-            clusters[cluster_id] = set(gold_coref[2])
+        for cluster_id, one_coref_cluster in enumerate(corefs):
+            clusters[cluster_id] = set(one_coref_cluster[2])
 
         if transitive_not_resolved(clusters):
             return False
 
+        # first extract the following mapping from the mention_table
         token2event = {}
+        event_mention_id_2_sorted_tokens = {}
 
         singleton_cluster_id = len(corefs)
         for mention in mention_table:
@@ -901,6 +919,8 @@ class ConllConverter:
             event_id = mention[2]
 
             non_singleton_cluster_id = None
+
+            event_mention_id_2_sorted_tokens[event_id] = tokens
 
             for cluster_id, cluster_mentions in clusters.iteritems():
                 if event_id in cluster_mentions:
@@ -918,6 +938,10 @@ class ConllConverter:
             else:
                 add_to_multi_map(token2event, tokens[0], "(%s" % output_cluster_id)
                 add_to_multi_map(token2event, tokens[-1], "%s)" % output_cluster_id)
+
+        for cluster_id, cluster in clusters.iteritems():
+            if mention_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+                return False
 
         out.write("%s (%s); part 000%s" % (conll_bod_marker, self.doc_id, os.linesep))
         for token_id, token in sorted(self.id2token.iteritems(), key=lambda key_value: natural_order(key_value[0])):

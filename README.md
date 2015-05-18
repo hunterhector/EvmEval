@@ -11,23 +11,6 @@ To use the software, we need to prepare the CMU format annotation file from the 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory 
 
-**Table of Contents**
-- [Event Mention Evaluation (EvmEval)](#event-mention-evaluation-evmeval)
-  - [Naming Convention](#naming-convention)
-  - [Tokenization table files format](#tokenization-table-files-format)
-  - [scorer.py](#scorerpy)
-    - [*Features*](#features)
-    - [*Usage*](#usage)
-  - [validator.py](#validatorpy)
-    - [*Usage*](#usage-1)
-  - [brat2tbf.py](#brat2tbfpy)
-    - [*Features*](#features-1)
-    - [*Usage*](#usage-2)
-  - [visualize.py](#visualizepy)
-    - [*Text Base Visualization*](#text-base-visualization)
-    - [*Web Base Visualization*](#web-base-visualization)
-    - [*Usage*](#usage-3)
-
 Naming Convention
 -------------------
 The following scripts need to find corresponding files by docid and file extension, so the file extension will be provided exactly. The script have default values for these extensions, but may require additional argument if extensions are changed.
@@ -36,15 +19,15 @@ Here is how to find the extension:
 
 For tokenization table, they normally have the following name:
 
-    <docid>.txt.tab
+    <docid>.tab
 
-In such case, the file extension is ".txt.tab", both the converter and scorer assume this as a default extension. If not, change them with "-te" argument.
+In such case, the file extension is ".tab", both the converter and scorer assume this as a default extension. If not, change them with "-te" argument.
 
 For brat annotation files, they normally have the following name:
 
-    <docid>.tkn.ann
+    <docid>.ann
 
-In such case, the file extension is ".tkn.ann", the converter assume this as the default extention. If not, change it with "-ae" argument
+In such case, the file extension is ".ann", the converter assume this as the default extention. If not, change it with "-ae" argument
 
 Tokenization table files format
 --------------------------------
@@ -58,6 +41,8 @@ document's tokens. The columns are:
 Please note that all 4 fields are required and will be used:
   - The converter will use token_id, tkn_begin, tkn_end to convert characters to token id
   - The scorer will use the token_str to detect invisible words 
+  
+The tokenization table files are created using our automatic tool, which wraps the Stanford tokenizer and provide boundary checks.
 
 scorer.py
 ----------
@@ -194,6 +179,52 @@ This converter converts Brat annotation files to one single token based event me
 							any extension appended after docid of annotation
 							files. Default is .tkn.ann
 	  -b, --debug           turn debug mode on
+ 
+LDC-XML-to-Brat converter
+------------
+This software converts LDC's XML format for the [TAC KBP 2015 Event Nugget task](http://cairo.lti.cs.cmu.edu/kbp/2015/event/) to the [Brat format](http://brat.nlplab.org/standoff.html).  More specifically, it converts LDC's event nuggets and coreferences to events and coreference links that can be viewed via the Brat web interface.  Brat annotation configurations for output are available at directory `src/main/resources/`.
+The software is located at the direcotry: ldc-xml-to-brat-converter, you can built it from source using Maven.  You can also find a pre-compiled version in the bin/g directory
+
+### Requirements of the software
+------------
+The software requires Java 1.8 and [Annobase](http://junaraki.net/software/annobase) 1.0.1.  See `pom.xml` for other dependencies.
+
+### How to run the software
+------------
+You can see its usage with the following command:
+```
+$ java LdcXmlToBratConverter
+Option           Description     
+------           -----------     
+-h               help            
+-i <input dir>   input directory 
+-o <output dir>  output directory
+```
+
+### Assumptions of the software
+------------
+The software assumes that the following two types of input files are given with the fixed file extensions.
+- text file (with tags): *.mpdf.xml
+- annotation file: *.rich_ere.xml
+ 
+ 
+Token File Maker
+------------
+## Prerequisites
+Our tokenizer implementation is based on the tokenizer in the Stanford CoreNLP tool .  The software is implemented in Java, and its requirements are as follows:
+ 1.	Java 1.8
+ 2.	The same number of text files and brat annotation files (*.ann) with the same file base name
+
+## Usage
+usage: java -jar bin/token-file-maker-1.0.3-jar-with-dependencies.jar -a <annotation> -e <extension> [-h] -o
+       <output> [-s <separator>] -t <text>
+ -a <annotation>   annotation directory
+ -e <extension>    text file extension
+ -h                print this message
+ -o <output>       output directory
+ -s <separator>    separator chars for tokenization
+ -t <text>         text directory
+
  
 visualize.py
 ------------

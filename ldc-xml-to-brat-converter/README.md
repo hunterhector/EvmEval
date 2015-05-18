@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [LDC-XML-to-Brat converter](#ldc-xml-to-brat-converter)
+- [Requirements of the software](#requirements-of-the-software)
+- [How to run the software](#how-to-run-the-software)
+- [Assumptions of the software](#assumptions-of-the-software)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## LDC-XML-to-Brat converter
 This software converts LDC's XML format for the [TAC KBP 2015 Event Nugget task](http://cairo.lti.cs.cmu.edu/kbp/2015/event/) to the [Brat format](http://brat.nlplab.org/standoff.html).  More specifically, it converts LDC's event nuggets and coreferences to events and coreference links that can be viewed via the Brat web interface.  Brat annotation configurations for output are available at directory `src/main/resources/`.
 

@@ -1,3 +1,45 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Event Mention Evaluation (EvmEval)](#event-mention-evaluation-evmeval)
+  - [Naming Convention](#naming-convention)
+  - [Tokenization table files format](#tokenization-table-files-format)
+  - [scorer.py](#scorerpy)
+  - [### *Features*](####-features)
+    - [*Features*](#features)
+  - [### *Usage*](####-usage)
+    - [*Usage*](#usage)
+  - [validator.py](#validatorpy)
+  - [### *Usage*](####-usage-1)
+    - [*Usage*](#usage-1)
+  - [brat2tbf.py](#brat2tbfpy)
+    - [*Features*](#features-1)
+  - [### *Features*](####-features-1)
+  - [### *Usage*](####-usage-2)
+    - [*Usage*](#usage-2)
+  - [LDC-XML-to-Brat converter](#ldc-xml-to-brat-converter)
+  - [### *Requirements of the software*](####-requirements-of-the-software)
+    - [*Requirements of the software*](#requirements-of-the-software)
+    - [*How to run the software*](#how-to-run-the-software)
+  - [### *How to run the software*](####-how-to-run-the-software)
+    - [Assumptions of the software](#assumptions-of-the-software)
+  - [### Assumptions of the software](####-assumptions-of-the-software)
+  - [Token File Maker](#token-file-maker)
+  - [### *Prerequisites*](####-prerequisites)
+    - [*Prerequisites*](#prerequisites)
+    - [*Usage*](#usage-3)
+  - [### *Usage*](####-usage-3)
+  - [visualize.py](#visualizepy)
+  - [### *Text Base Visualization*](####-text-base-visualization)
+    - [*Text Base Visualization*](#text-base-visualization)
+    - [*Web Base Visualization*](#web-base-visualization)
+  - [### *Web Base Visualization*](####-web-base-visualization)
+    - [*Usage*](#usage-4)
+  - [### *Usage*](####-usage-4)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 Event Mention Evaluation (EvmEval)
 =========
@@ -10,6 +52,7 @@ This repository conducts, file conversion, and scoring for event mention detecti
 To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tbf.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory 
+
 
 Naming Convention
 -------------------
@@ -42,7 +85,7 @@ Please note that all 4 fields are required and will be used:
   - The converter will use token_id, tkn_begin, tkn_end to convert characters to token id
   - The scorer will use the token_str to detect invisible words 
   
-The tokenization table files are created using our automatic tool, which wraps the Stanford tokenizer and provide boundary checks.
+The tokenization table files are created using our [automatic tool](#token-file-maker), which wraps the Stanford tokenizer and provide boundary checks.
 
 scorer.py
 ----------
@@ -185,11 +228,11 @@ LDC-XML-to-Brat converter
 This software converts LDC's XML format for the [TAC KBP 2015 Event Nugget task](http://cairo.lti.cs.cmu.edu/kbp/2015/event/) to the [Brat format](http://brat.nlplab.org/standoff.html).  More specifically, it converts LDC's event nuggets and coreferences to events and coreference links that can be viewed via the Brat web interface.  Brat annotation configurations for output are available at directory `src/main/resources/`.
 The software is located at the direcotry: ldc-xml-to-brat-converter, you can built it from source using Maven.  You can also find a pre-compiled version in the bin/g directory
 
-### Requirements of the software
+### *Requirements of the software*
 ------------
 The software requires Java 1.8 and [Annobase](http://junaraki.net/software/annobase) 1.0.1.  See `pom.xml` for other dependencies.
 
-### How to run the software
+### *How to run the software*
 ------------
 You can see its usage with the following command:
 ```
@@ -210,12 +253,14 @@ The software assumes that the following two types of input files are given with 
  
 Token File Maker
 ------------
-## Prerequisites
+### *Prerequisites*
+------------
 Our tokenizer implementation is based on the tokenizer in the Stanford CoreNLP tool .  The software is implemented in Java, and its requirements are as follows:
  1.	Java 1.8
  2.	The same number of text files and brat annotation files (*.ann) with the same file base name
 
-## Usage
+### *Usage*
+------------
 usage: java -jar bin/token-file-maker-1.0.3-jar-with-dependencies.jar -a <annotation> -e <extension> [-h] -o
        <output> [-s <separator>] -t <text>
  -a <annotation>   annotation directory

@@ -313,6 +313,10 @@ def validate(eval_mode, token_dir, token_offset_fields, token_file_ext):
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         all_possible_types.add(gold_attributes[0])
 
+    if mention_span_duplicate_with_same_type(gold_mention_table):
+        logger.error("Mentions with same type cannot have same span")
+        return False
+
     total_mentions += len(gold_mention_table)
 
     check_token(id2token_map, gold_mention_table)
@@ -332,7 +336,7 @@ def validate(eval_mode, token_dir, token_offset_fields, token_file_ext):
         logger.error("Coreference transitive closure is not resolved! Please resolve before submitting.")
 
     for cluster_id, cluster in clusters.iteritems():
-        if mention_span_duplicate(cluster, get_eid_2_sorted_token_map(gold_mention_table)):
+        if within_cluster_span_duplicate(cluster, get_eid_2_sorted_token_map(gold_mention_table)):
             logger.error("Please remove span duplicates before submitting")
             return False
 
@@ -347,7 +351,27 @@ def check_token(id2token_map, gold_mention_table):
                 logger.error("Token Id [%s] is not in the given token map" % tid)
 
 
-def mention_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+def mention_span_duplicate_with_same_type(system_mention_table):
+    span_type_map = {}
+
+    mention_type_attribute_index = attribute_names.index("mention_type")
+
+    for mention in system_mention_table:
+        tokens = tuple(sorted(mention[0], key=natural_order))
+        mention_type = mention[1][mention_type_attribute_index]
+        span_type = (tokens, mention_type)
+        mention_str = "Mention : %s, Type : %s, Span : %s" % (mention[2], mention_type, ",".join(tokens))
+        if span_type in span_type_map:
+            logger.error("The following mentions share the same span and same type.")
+            logger.error(mention_str)
+            logger.error(span_type_map[span_type])
+            return True
+        span_type_map[span_type] = mention_str
+
+    return False
+
+
+def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
     # print cluster
     # print event_mention_id_2_sorted_tokens
     span_map = {}

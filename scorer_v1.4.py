@@ -11,6 +11,10 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.4:
+# 1. global mention span check: do not allow duplicate mention span with same type
+# 2. within cluster mention span check : do not allow duplicate span in one cluster
+
 # Change log v1.3:
 # 1. add ability to convert input format to conll format, and feed it to the coreference resolver
 # 2. clean up and remove global variables
@@ -712,6 +716,31 @@ def get_tp(all_attribute_combinations, gold_2_system_one_2_many_mapping, gold_me
     return tp, attribute_based_tps
 
 
+def mention_span_duplicate_with_same_type(system_mention_table):
+    span_type_map = {}
+
+    mention_type_attribute_index = attribute_names.index("mention_type")
+
+    for mention in system_mention_table:
+        tokens = tuple(sorted(mention[0], key=natural_order))
+        mention_type = mention[1][mention_type_attribute_index]
+        span_type = (tokens, mention_type)
+        mention_str = "Mention : %s, Type : %s, Span : %s" % (mention[2], mention_type, ",".join(tokens))
+        if span_type in span_type_map:
+            logger.error("The following mentions share the same span and same type.")
+            logger.error(mention_str)
+            logger.error(span_type_map[span_type])
+            return True
+        span_type_map[span_type] = mention_str
+
+    return False
+
+
+def terminate_with_error():
+    logger.error("Scorer terminate with error")
+    sys.exit(1)
+
+
 def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
              token_offset_fields, token_file_ext,
              diff_out, gold_conll_file_out, sys_conll_file_out):
@@ -744,6 +773,10 @@ def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
             gl, eval_mode, invisible_ids)
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         all_possible_types.add(gold_attributes[0])
+
+    if mention_span_duplicate_with_same_type(system_mention_table):
+        logger.error("Mentions with same type cannot have same span")
+        terminate_with_error()
 
     # Store list of mappings with the score as a priority queue
     # score is stored using negative for easy sorting
@@ -859,7 +892,7 @@ def add_to_multi_map(map, key, val):
     map[key].append(val)
 
 
-def mention_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
     # print cluster
     # print event_mention_id_2_sorted_tokens
     span_map = {}
@@ -893,13 +926,13 @@ class ConllConverter:
             logger.error(
                 "Gold standard has data problem for doc [%s], please refer to log quitting..."
                 % self.doc_id)
-            exit(1)
+            terminate_with_error()
 
         if not self.prepare_lines(sys_corefs, self.sys_conll_file_out, system_mention_table):
             logger.error(
                 "System has data problem for doc [%s], please refer to log, quitting..."
                 % self.doc_id)
-            exit(1)
+            terminate_with_error()
 
     def prepare_lines(self, corefs, out, mention_table):
         clusters = {}
@@ -940,7 +973,7 @@ class ConllConverter:
                 add_to_multi_map(token2event, tokens[-1], "%s)" % output_cluster_id)
 
         for cluster_id, cluster in clusters.iteritems():
-            if mention_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+            if within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
                 return False
 
         out.write("%s (%s); part 000%s" % (conll_bod_marker, self.doc_id, os.linesep))

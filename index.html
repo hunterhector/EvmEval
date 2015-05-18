@@ -6,7 +6,7 @@
     <title>EvmEval by hunterhector</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,20 +28,9 @@
         </ul>
       </header>
       <section>
-        <h1>
-<a id="event-mention-evaluation-evmeval" class="anchor" href="#event-mention-evaluation-evmeval" aria-hidden="true"><span class="octicon octicon-link"></span></a>Event Mention Evaluation (EvmEval)</h1>
+        
 
-<p>This repository conducts, file conversion, and scoring for event mention detection. It consists of the following three pieces of code:</p>
 
-<ol>
-<li>A simple converter from Brat annotation tool format to CMU detection format</li>
-<li>A scorer that can score system performance based on CMU detection format</li>
-<li>A visualizer that use Embedded Brat Viewer</li>
-</ol>
-
-<p>To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tbf.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. </p>
-
-<p>Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory </p>
 
 <p><strong>Table of Contents</strong></p>
 
@@ -76,17 +65,51 @@
 </ul>
 </li>
 <li>
+<a href="#ldc-xml-to-brat-converter">LDC-XML-to-Brat converter</a>
+
+<ul>
+<li><a href="#requirements-of-the-software"><em>Requirements of the software</em></a></li>
+<li><a href="#how-to-run-the-software"><em>How to run the software</em></a></li>
+<li><a href="#assumptions-of-the-software">Assumptions of the software</a></li>
+</ul>
+</li>
+<li>
+<a href="#token-file-maker">Token File Maker</a>
+
+<ul>
+<li><a href="#prerequisites"><em>Prerequisites</em></a></li>
+<li><a href="#usage-3"><em>Usage</em></a></li>
+</ul>
+</li>
+<li>
 <a href="#visualizepy">visualize.py</a>
 
 <ul>
 <li><a href="#text-base-visualization"><em>Text Base Visualization</em></a></li>
 <li><a href="#web-base-visualization"><em>Web Base Visualization</em></a></li>
-<li><a href="#usage-3"><em>Usage</em></a></li>
+<li><a href="#usage-4"><em>Usage</em></a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
+
+
+
+<h1>
+<a id="event-mention-evaluation-evmeval" class="anchor" href="#event-mention-evaluation-evmeval" aria-hidden="true"><span class="octicon octicon-link"></span></a>Event Mention Evaluation (EvmEval)</h1>
+
+<p>This repository conducts, file conversion, and scoring for event mention detection. It consists of the following three pieces of code:</p>
+
+<ol>
+<li>A simple converter from Brat annotation tool format to CMU detection format</li>
+<li>A scorer that can score system performance based on CMU detection format</li>
+<li>A visualizer that use Embedded Brat Viewer</li>
+</ol>
+
+<p>To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tbf.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. </p>
+
+<p>Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory </p>
 
 <h2>
 <a id="naming-convention" class="anchor" href="#naming-convention" aria-hidden="true"><span class="octicon octicon-link"></span></a>Naming Convention</h2>
@@ -97,17 +120,17 @@
 
 <p>For tokenization table, they normally have the following name:</p>
 
-<pre><code>&lt;docid&gt;.txt.tab
+<pre><code>&lt;docid&gt;.tab
 </code></pre>
 
-<p>In such case, the file extension is ".txt.tab", both the converter and scorer assume this as a default extension. If not, change them with "-te" argument.</p>
+<p>In such case, the file extension is ".tab", both the converter and scorer assume this as a default extension. If not, change them with "-te" argument.</p>
 
 <p>For brat annotation files, they normally have the following name:</p>
 
-<pre><code>&lt;docid&gt;.tkn.ann
+<pre><code>&lt;docid&gt;.ann
 </code></pre>
 
-<p>In such case, the file extension is ".tkn.ann", the converter assume this as the default extention. If not, change it with "-ae" argument</p>
+<p>In such case, the file extension is ".ann", the converter assume this as the default extention. If not, change it with "-ae" argument</p>
 
 <h2>
 <a id="tokenization-table-files-format" class="anchor" href="#tokenization-table-files-format" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tokenization table files format</h2>
@@ -129,6 +152,8 @@ document's tokens. The columns are:</p>
 <li>The scorer will use the token_str to detect invisible words </li>
 </ul>
 
+<p>The tokenization table files are created using our <a href="#token-file-maker">automatic tool</a>, which wraps the Stanford tokenizer and provide boundary checks.</p>
+
 <h2>
 <a id="scorerpy" class="anchor" href="#scorerpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>scorer.py</h2>
 
@@ -138,8 +163,6 @@ CoNLL style coreference files.</p>
 <h3>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Features</em>
 </h3>
-
-<hr>
 
 <ol>
 <li>Produce F1-like scoring by mapping system mentions to gold standard mentions,
@@ -153,8 +176,6 @@ b. A web based comparison output using Brat's embedded visualization (-v option)
 <h3>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Usage</em>
 </h3>
-
-<hr>
 
 <pre><code>usage: scorer_v1.3.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
                       [-o OUTPUT] [-c COREF] -t TOKEN_PATH [-of OFFSET_FIELD]
@@ -201,8 +222,6 @@ Optional Arguments:
 <a id="usage-1" class="anchor" href="#usage-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Usage</em>
 </h3>
 
-<hr>
-
 <pre><code>validator.py [-h] -s SYSTEM -t TOKEN_PATH [-of OFFSET_FIELD]
                     [-te TOKEN_TABLE_EXTENSION] [-b]
 
@@ -236,8 +255,6 @@ coreference transitive redirect automatically, the relation name for coreference
 <a id="features-1" class="anchor" href="#features-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Features</em>
 </h3>
 
-<hr>
-
 <ol>
 <li>ID convention</li>
 </ol>
@@ -264,8 +281,6 @@ coreference transitive redirect automatically, the relation name for coreference
 <h3>
 <a id="usage-2" class="anchor" href="#usage-2" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Usage</em>
 </h3>
-
-<hr>
 
 <pre><code>brat2tokenFormat.py [-h] (-d DIR | -f FILE) -t TOKENPATH [-o OUT]
                        [-oe EXT] [-i EID] [-w] [-te TOKEN_TABLE_EXTENSION]
@@ -298,6 +313,69 @@ Optional arguments:
 </code></pre>
 
 <h2>
+<a id="ldc-xml-to-brat-converter" class="anchor" href="#ldc-xml-to-brat-converter" aria-hidden="true"><span class="octicon octicon-link"></span></a>LDC-XML-to-Brat converter</h2>
+
+<p>This software converts LDC's XML format for the <a href="http://cairo.lti.cs.cmu.edu/kbp/2015/event/">TAC KBP 2015 Event Nugget task</a> to the <a href="http://brat.nlplab.org/standoff.html">Brat format</a>.  More specifically, it converts LDC's event nuggets and coreferences to events and coreference links that can be viewed via the Brat web interface.  Brat annotation configurations for output are available at directory <code>src/main/resources/</code>.
+The software is located at the direcotry: ldc-xml-to-brat-converter, you can built it from source using Maven.  You can also find a pre-compiled version in the bin/g directory</p>
+
+<h3>
+<a id="requirements-of-the-software" class="anchor" href="#requirements-of-the-software" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Requirements of the software</em>
+</h3>
+
+<p>The software requires Java 1.8 and <a href="http://junaraki.net/software/annobase">Annobase</a> 1.0.1.  See <code>pom.xml</code> for other dependencies.</p>
+
+<h3>
+<a id="how-to-run-the-software" class="anchor" href="#how-to-run-the-software" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>How to run the software</em>
+</h3>
+
+<p>You can see its usage with the following command:</p>
+
+<pre><code>$ java LdcXmlToBratConverter
+Option           Description     
+------           -----------     
+-h               help            
+-i &lt;input dir&gt;   input directory 
+-o &lt;output dir&gt;  output directory
+</code></pre>
+
+<h3>
+<a id="assumptions-of-the-software" class="anchor" href="#assumptions-of-the-software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assumptions of the software</h3>
+
+<p>The software assumes that the following two types of input files are given with the fixed file extensions.</p>
+
+<ul>
+<li>text file (with tags): *.mpdf.xml</li>
+<li>annotation file: *.rich_ere.xml</li>
+</ul>
+
+<h2>
+<a id="token-file-maker" class="anchor" href="#token-file-maker" aria-hidden="true"><span class="octicon octicon-link"></span></a>Token File Maker</h2>
+
+<h3>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Prerequisites</em>
+</h3>
+
+<p>Our tokenizer implementation is based on the tokenizer in the Stanford CoreNLP tool .  The software is implemented in Java, and its requirements are as follows:</p>
+
+<ol>
+<li>Java 1.8</li>
+<li>The same number of text files and brat annotation files (*.ann) with the same file base name</li>
+</ol>
+
+<h3>
+<a id="usage-3" class="anchor" href="#usage-3" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Usage</em>
+</h3>
+
+<p>usage: java -jar bin/token-file-maker-1.0.3-jar-with-dependencies.jar -a  -e  [-h] -o
+        [-s ] -t 
+ -a    annotation directory
+ -e     text file extension
+ -h                print this message
+ -o        output directory
+ -s     separator chars for tokenization
+ -t          text directory</p>
+
+<h2>
 <a id="visualizepy" class="anchor" href="#visualizepy" aria-hidden="true"><span class="octicon octicon-link"></span></a>visualize.py</h2>
 
 <p>The visualization is provided as a mechanism to compare different output, which is optional and can be ignored if one is only interested in the scores. This code maybe update frequently. Please refer to the command line "-h" for detailed instructions.</p>
@@ -310,8 +388,6 @@ Optional arguments:
 <a id="text-base-visualization" class="anchor" href="#text-base-visualization" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Text Base Visualization</em>
 </h3>
 
-<hr>
-
 <p>The text based Visualization can be generated using the "scorer.py", by supplying the "-d"
 argument. The format is straightforward, a text document is produced for comparison.
 The annotation of both systems are displayed in one line, separated by "|"</p>
@@ -319,8 +395,6 @@ The annotation of both systems are displayed in one line, separated by "|"</p>
 <h3>
 <a id="web-base-visualization" class="anchor" href="#web-base-visualization" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Web Base Visualization</em>
 </h3>
-
-<hr>
 
 <p>The web base visualization takes the text visualization file, then: </p>
 
@@ -334,10 +408,8 @@ no longer necessary to regenerate the JSON data if one only wish to use the old 
 </ol>
 
 <h3>
-<a id="usage-3" class="anchor" href="#usage-3" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Usage</em>
+<a id="usage-4" class="anchor" href="#usage-4" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Usage</em>
 </h3>
-
-<hr>
 
 <pre><code>usage: visualize.py [-h] -d COMPARISON_OUTPUT -t TOKENPATH [-x TEXT]
                 [-v VISUALIZATION_HTML_PATH] [-of OFFSET_FIELD]

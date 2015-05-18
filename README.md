@@ -80,7 +80,6 @@ The current scorer can score event mention detection and coreference based on th
 CoNLL style coreference files.
 
 ### *Features*
----------
 1. Produce F1-like scoring by mapping system mentions to gold standard mentions,
 read the scoring documentation for more details.
 2. Be able to produce a comparison output indicating system and gold standard differences:
@@ -89,8 +88,6 @@ read the scoring documentation for more details.
 3. If specified, it will generate temporary conll format files, and use the conll reference-scorer to produce coreference scores
 
 ### *Usage*
------
-
 	usage: scorer_v1.3.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
                           [-o OUTPUT] [-c COREF] -t TOKEN_PATH [-of OFFSET_FIELD]
                           [-te TOKEN_TABLE_EXTENSION] [-b]
@@ -131,7 +128,6 @@ validator.py
 The validator check whether the supplied "tbf" file follows assumed structure . 
 
 ### *Usage*
------
     validator.py [-h] -s SYSTEM -t TOKEN_PATH [-of OFFSET_FIELD]
                         [-te TOKEN_TABLE_EXTENSION] [-b]
     
@@ -160,7 +156,6 @@ This is a tool that converts Brat Annotation format to TBF format. We currently 
 coreference transitive redirect automatically, the relation name for coreference must be named as "Coreference". We also develop for event coreference only.
 
 ### *Features*
---------
 
 1. ID convention
 
@@ -180,7 +175,6 @@ Further development might allow customized ID convention.
 3. Discontinuous text-bound annotations will be supported
 
 ### *Usage*
------
 
 	brat2tokenFormat.py [-h] (-d DIR | -f FILE) -t TOKENPATH [-o OUT]
                            [-oe EXT] [-i EID] [-w] [-te TOKEN_TABLE_EXTENSION]
@@ -216,11 +210,9 @@ This software converts LDC's XML format for the [TAC KBP 2015 Event Nugget task]
 The software is located at the direcotry: ldc-xml-to-brat-converter, you can built it from source using Maven.  You can also find a pre-compiled version in the bin/g directory
 
 ### *Requirements of the software*
-------------
 The software requires Java 1.8 and [Annobase](http://junaraki.net/software/annobase) 1.0.1.  See `pom.xml` for other dependencies.
 
 ### *How to run the software*
-------------
 You can see its usage with the following command:
 ```
 $ java LdcXmlToBratConverter
@@ -232,7 +224,6 @@ Option           Description
 ```
 
 ### Assumptions of the software
-------------
 The software assumes that the following two types of input files are given with the fixed file extensions.
 - text file (with tags): *.mpdf.xml
 - annotation file: *.rich_ere.xml
@@ -241,13 +232,11 @@ The software assumes that the following two types of input files are given with 
 Token File Maker
 ------------
 ### *Prerequisites*
-------------
 Our tokenizer implementation is based on the tokenizer in the Stanford CoreNLP tool .  The software is implemented in Java, and its requirements are as follows:
  1.	Java 1.8
  2.	The same number of text files and brat annotation files (*.ann) with the same file base name
 
 ### *Usage*
-------------
 usage: java -jar bin/token-file-maker-1.0.3-jar-with-dependencies.jar -a <annotation> -e <extension> [-h] -o
        <output> [-s <separator>] -t <text>
  -a <annotation>   annotation directory
@@ -268,13 +257,11 @@ The visualize code represent mention differences in JSON, which is then passed t
 Recent changes make visualizing clusters possible by creating additional JSON object. When enabled, there will be a cluster selector on the webpage, one could select the cluster and all other event mentions will hide.
 
 ### *Text Base Visualization*
------------------------
 The text based Visualization can be generated using the "scorer.py", by supplying the "-d"
 argument. The format is straightforward, a text document is produced for comparison.
 The annotation of both systems are displayed in one line, separated by "|"
 
 ### *Web Base Visualization*
-----------------------
 The web base visualization takes the text visualization file, then: 
   1. convert them to Brat Embedded JSON format and store it at the visualization 
   folder (visualization/json)
@@ -285,7 +272,6 @@ The web base visualization takes the text visualization file, then:
   
 
 ### *Usage*
------
     usage: visualize.py [-h] -d COMPARISON_OUTPUT -t TOKENPATH [-x TEXT]
                     [-v VISUALIZATION_HTML_PATH] [-of OFFSET_FIELD]
                     [-te TOKEN_TABLE_EXTENSION] [-se SOURCE_FILE_EXTENSION]

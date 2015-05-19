@@ -657,7 +657,7 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
     write_if_provided(diff_out, eod_marker + " " + "\n")
 
 
-def create_system_choices(mapped_system_mentions):
+def generate_all_system_branches(mapped_system_mentions):
     list_of_one_to_one_mappings = []
     first_mapping = {}
     list_of_one_to_one_mappings.append(first_mapping)
@@ -716,24 +716,24 @@ def get_tp(all_attribute_combinations, gold_2_system_one_2_many_mapping, gold_me
     return tp, attribute_based_tps
 
 
-def mention_span_duplicate_with_same_type(system_mention_table):
-    span_type_map = {}
-
-    mention_type_attribute_index = attribute_names.index("mention_type")
-
-    for mention in system_mention_table:
-        tokens = tuple(sorted(mention[0], key=natural_order))
-        mention_type = mention[1][mention_type_attribute_index]
-        span_type = (tokens, mention_type)
-        mention_str = "Mention : %s, Type : %s, Span : %s" % (mention[2], mention_type, ",".join(tokens))
-        if span_type in span_type_map:
-            logger.error("The following mentions share the same span and same type.")
-            logger.error(mention_str)
-            logger.error(span_type_map[span_type])
-            return True
-        span_type_map[span_type] = mention_str
-
-    return False
+# def mention_span_duplicate_with_same_type(system_mention_table):
+#     span_type_map = {}
+#
+#     mention_type_attribute_index = attribute_names.index("mention_type")
+#
+#     for mention in system_mention_table:
+#         tokens = tuple(sorted(mention[0], key=natural_order))
+#         mention_type = mention[1][mention_type_attribute_index]
+#         span_type = (tokens, mention_type)
+#         mention_str = "Mention : %s, Type : %s, Span : %s" % (mention[2], mention_type, ",".join(tokens))
+#         if span_type in span_type_map:
+#             logger.error("The following mentions share the same span and same type.")
+#             logger.error(mention_str)
+#             logger.error(span_type_map[span_type])
+#             return True
+#         span_type_map[span_type] = mention_str
+#
+#     return False
 
 
 def terminate_with_error():
@@ -774,9 +774,9 @@ def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         all_possible_types.add(gold_attributes[0])
 
-    if mention_span_duplicate_with_same_type(system_mention_table):
-        logger.error("Mentions with same type cannot have same span")
-        terminate_with_error()
+    # if mention_span_duplicate_with_same_type(system_mention_table):
+    #     logger.error("Mentions with same type cannot have same span")
+    #     terminate_with_error()
 
     # Store list of mappings with the score as a priority queue
     # score is stored using negative for easy sorting
@@ -817,7 +817,7 @@ def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
         gold_2_system_many_2_many_mapping[mapping_gold_index].append((mapping_system_index, -neg_mapping_score))
         add_to_multi_map(mapped_system_mentions, mapping_system_index, mapping_gold_index)
 
-    system_2_gold_one_2_one_mappings = create_system_choices(mapped_system_mentions)
+    system_2_gold_one_2_one_mappings = generate_all_system_branches(mapped_system_mentions)
 
     all_possible_gold_2_system_one_2_many_mappings = []
     for system_2_gold_mapping in system_2_gold_one_2_one_mappings:

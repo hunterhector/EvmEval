@@ -25,6 +25,9 @@ package CorScorer;
 # to implement the BLANC metric for predicted mentions
 
 
+# Edited to incorporate Event Coreference, where double tagging is possible
+# Comments marked by #EventCorefChanges are the changes we made
+
 use strict;
 use Algorithm::Munkres;
 use Data::Dumper;
@@ -397,10 +400,13 @@ sub IdentifMentions {
       $i++;
     }
 
+  #EventCorefChanges
+  #Do not remove repeated mentions in the response
+
     # Remove repeated mentions in the response
-    foreach my $i (sort { $b <=> $a } (@remove)) {
-      splice(@$entity, $i, 1);
-    }
+    #foreach my $i (sort { $b <=> $a } (@remove)) {
+     # splice(@$entity, $i, 1);
+    #}
   }
 
 
@@ -602,10 +608,61 @@ sub Indexa {
 
   for (my $i = 0 ; $i < @$arrays ; $i++) {
     foreach my $e (@{$arrays->[$i]}) {
-      $index{$e} = $i;
+        #EventCorefChanges
+        #Keep a list of reverted entity -> position index, even when the same mention confilicts
+    	if (exists $index{$e}){
+    		$index{$e} = join(',',$index{$e}, $i);
+    	} else {
+      		$index{$e} = $i;
+      }
     }
   }
   return \%index;
+}
+
+  #EventCorefChanges
+  #Please comment on the code below
+  
+# Checks if two indices have same coreference pointer in the chain. Handles the case of
+# double tagging of an entity.
+sub Checkifequal {
+  my %indexdict = $_[0];
+  my $id1 = $_[1];
+  my $id2 = $_[2];
+  my $contains=0;
+ 
+  if ((index($indexdict{$id1}, ',') != -1) && (index($indexdict{$id2}, ',') == -1)){
+  	  my @values = split(',', $indexdict{$id1});
+  		foreach my $val (@values) {
+   			if ($indexdict{$id2} == $val){
+   				$contains=1;
+   				goto END;
+   			}   			
+  		}
+  } elsif((index($indexdict{$id2}, ',') != -1) && (index($indexdict{$id1}, ',') == -1)){
+  	 my @values = split(',', $indexdict{$id2});
+  		foreach my $val (@values) {
+   			if ($indexdict{$id1} == $val){
+   				$contains=1;
+   				goto END;
+   			}   			
+  		}
+  } elsif((index($indexdict{$id2}, ',') != -1) && (index($indexdict{$id1}, ',') != -1)){
+  	 my @values1 = split(',', $indexdict{$id1});
+  	 my @values2 = split(',', $indexdict{$id2});
+  		foreach my $val1 (@values1) {
+  			foreach my $val2 (@values2) {
+   				if ($val1 == $val2){
+   					$contains=1;
+   					goto END;
+   				}
+   			}   			
+  		}
+  } elsif($indexdict{$id1}==$indexdict{$id2}){
+  	$contains=1;
+  }
+  
+ END: return $contains;
 }
 
 # Consider the "links" within every coreference chain. For example,
@@ -630,8 +687,9 @@ sub MUCScorer {
         my $id_j = $rEntity->[$j];
         if ( defined($kIndex->{$id_i})
           && defined($kIndex->{$id_j})
-          && $kIndex->{$id_i} == $kIndex->{$id_j})
-        {
+          #EventCorefChanges
+          #Please comment the change you made  
+          && Checkifequal($kIndex,$id_i,$id_j)){
           $correct++;
           last;
         }

@@ -96,15 +96,20 @@ our @TestCases = (
                         "ceafe" => [0.73333, 0.55, 0.62857],
                         "blanc" => [0.35227, 0.27206, 0.30357] }
 },
-{ id => "A9", 
-  key_file => "DataFiles/TC-A.key", 
-  response_file => "DataFiles/TC-A-9.response",
-  expected_metrics => { "muc" => [1/3, 1/3, 1/3],
-                        "bcub" => [(10/3)/6, (1+4/3+1/2)/7, 2*(5/9)*(17/42)/((5/9)+(17/42))],
-                        "ceafm" => [0.66667, 0.57143, 0.61538],
-                        "ceafe" => [0.73333, 0.55, 0.62857],
-                        "blanc" => [0.35227, 0.27206, 0.30357] }
-},
+
+#EventCorefChanges
+#The following test case will not be passed because we do not do any de-dup
+
+#{ id => "A9",
+#  key_file => "DataFiles/TC-A.key",
+#  response_file => "DataFiles/TC-A-9.response",
+#  expected_metrics => { "muc" => [1/3, 1/3, 1/3],
+#                        "bcub" => [(10/3)/6, (1+4/3+1/2)/7, 2*(5/9)*(17/42)/((5/9)+(17/42))],
+#                        "ceafm" => [0.66667, 0.57143, 0.61538],
+#                        "ceafe" => [0.73333, 0.55, 0.62857],
+#                        "blanc" => [0.35227, 0.27206, 0.30357] }
+#},
+
 { id => "A10", 
   key_file => "DataFiles/TC-A.key", 
   response_file => "DataFiles/TC-A-10.response",

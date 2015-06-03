@@ -1,3 +1,11 @@
+#NOTE:
+This scorer is based exactly on the reference-coreference-scorer
+
+   http://conll.github.io/reference-coreference-scorers/
+
+However, the preprocessing is altered in order to allow double tagging (two event mention
+can share the same span)
+
 NAME
    CorScorer: Perl package for scoring coreference resolution systems
    using different metrics.

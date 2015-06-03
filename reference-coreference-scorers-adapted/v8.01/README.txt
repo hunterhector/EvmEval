@@ -1,10 +1,14 @@
+###########################################################################
 #NOTE:
-This scorer is based exactly on the reference-coreference-scorer
-
-   http://conll.github.io/reference-coreference-scorers/
-
-However, the preprocessing is altered in order to allow double tagging (two event mention
-can share the same span)
+#This scorer is based exactly on the reference-coreference-scorer
+#
+#   http://conll.github.io/reference-coreference-scorers/
+#
+#However, the preprocessing is altered in order to allow double tagging
+#(two event mention can share the same span)
+#
+# Comments marked by #EventCorefChanges are the changes we made
+############################################################################
 
 NAME
    CorScorer: Perl package for scoring coreference resolution systems

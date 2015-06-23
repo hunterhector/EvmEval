@@ -17,6 +17,7 @@
 #    In case of double tagging, there are multiple way of mention mappings, we will produce all
 #    possible ways, and use the highest final score mapping.
 # 2. Fix a bug that crashes when generating text output from empty responses
+# 3. Write out the coreference scores into the score output
 
 # Change log v1.4:
 # 1. global mention span check: do not allow duplicate mention span with same type
@@ -50,6 +51,8 @@ import itertools
 import re
 import subprocess
 import copy
+import glob
+import shutil
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -84,7 +87,8 @@ doc_ids_to_score = []
 all_possible_types = set()
 evaluating_index = 0
 
-doc_scores = []
+doc_mention_scores = []
+doc_coref_scores = []
 
 token_joiner = ","
 span_seperator = ";"
@@ -92,9 +96,12 @@ span_joiner = "_"
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
-temp_gold_conll_file_name = "conll-gold.tmp.conll"
-temp_sys_conll_file_name = "conll-sys.tmp.conll"
+temp_conll_file_dir = "tmp"
+temp_gold_conll_file_name = temp_conll_file_dir + os.sep + "conll_tmp.gold"
+temp_sys_conll_file_name = temp_conll_file_dir + os.sep + "conll_tmp.sys"
+temp_conll_score_file_name = temp_conll_file_dir + os.sep + "conll_tmp.score"
 
+coref_eval_output = None
 
 class EvalMethod:
     Token, Char = range(2)
@@ -170,14 +177,10 @@ def main():
         logger.error("Cannot find gold standard file at " + args.gold)
         sys.exit(1)
 
-    gold_conll_file_out = None
-    sys_conll_file_out = None
-    eval_coref = False
     if args.coref is not None:
         logger.info("Coreference result will be output at " + args.coref)
-        gold_conll_file_out = open(temp_gold_conll_file_name, 'w')
-        sys_conll_file_out = open(temp_sys_conll_file_name, 'w')
-        eval_coref = True
+        if not os.path.exists(temp_conll_file_dir):
+            os.makedirs(temp_conll_file_dir)
 
     if os.path.isfile(args.system):
         sf = open(args.system)
@@ -214,20 +217,14 @@ def main():
     attribute_comb = get_attr_combinations(attribute_names)
 
     while True:
-        if not evaluate(eval_mode, token_dir, eval_coref, attribute_comb,
+        if not evaluate(eval_mode, token_dir, args.coref, attribute_comb,
                         token_offset_fields, args.token_table_extension,
-                        diff_out, gold_conll_file_out, sys_conll_file_out):
+                        diff_out):
             break
     print_eval_results(mention_eval_out, attribute_comb)
 
     # clean up, close files
-    close_if_not_none(gold_conll_file_out)
-    close_if_not_none(sys_conll_file_out)
     close_if_not_none(diff_out)
-
-    # run conll coreference script
-    if eval_coref:
-        run_conll_script(args.coref)
 
     logger.info("Evaluation Done.")
 
@@ -237,14 +234,18 @@ def close_if_not_none(f):
         f.close()
 
 
-def run_conll_script(coref_out):
-    logger.info("Running Conll Evaluation reference-coreference-scorers")
+def run_conll_script(gold_path, system_path, coref_out):
+    """
+        Run the Conll script and output result to the path given
+    :param gold_path:
+    :param system_path:
+    :param coref_out: Path to output the scores
+    :return:
+    """
     with open(coref_out, 'wb', 0) as out_file:
         subprocess.call(
-            ["perl", conll_scorer_executable, "all", temp_gold_conll_file_name,
-             temp_sys_conll_file_name],
+            ["perl", conll_scorer_executable, "all", gold_path, system_path],
             stdout=out_file)
-    logger.info("Coreference Results written to " + coref_out)
 
 
 def get_combined_attribute_header(all_comb, size):
@@ -279,21 +280,21 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
     plain_global_scores = [0.0] * 4
     attribute_based_global_scores = [[0.0] * 4 for _ in xrange(len(all_attribute_combinations))]
 
-    doc_id_width = get_cell_width(doc_scores)
+    doc_id_width = get_cell_width(doc_mention_scores)
 
-    mention_eval_out.write("========Document results==========\n")
+    mention_eval_out.write("========Document Mention Detection Results==========\n")
     small_header_item = "Prec  \tRec  \tF1   "
     attribute_header_list = get_combined_attribute_header(all_attribute_combinations, len(small_header_item))
     small_headers = [small_header_item] * (len(all_attribute_combinations) + 1)
     mention_eval_out.write(pad_char_before_until("", doc_id_width) + "\t" + "\t|\t".join(attribute_header_list) + "\n")
     mention_eval_out.write(pad_char_before_until("Doc ID", doc_id_width) + "\t" + "\t|\t".join(small_headers) + "\n")
 
-    for (tp, fp, attribute_based_counts, num_gold_mentions, num_sys_mentions, docId) in doc_scores:
+    for (tp, fp, attribute_based_counts, num_gold_mentions, num_sys_mentions, docId) in doc_mention_scores:
         tp *= 100
         fp *= 100
         prec = safe_div(tp, num_sys_mentions)
         recall = safe_div(tp, num_gold_mentions)
-        doc_f1 = f1(prec, recall)
+        doc_f1 = compute_f1(prec, recall)
 
         attribute_based_doc_scores = []
 
@@ -303,7 +304,7 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
             attr_fp = counts[1] * 100
             attr_prec = safe_div(attr_tp, num_sys_mentions)
             attr_recall = safe_div(attr_tp, num_gold_mentions)
-            attr_f1 = f1(attr_prec, attr_recall)
+            attr_f1 = compute_f1(attr_prec, attr_recall)
 
             attribute_based_doc_scores.append("%.2f\t%.2f\t%.2f" % (attr_prec, attr_recall, attr_f1))
 
@@ -332,9 +333,14 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
             for score_index, score in enumerate([tp, fp, prec, recall]):
                 plain_global_scores[score_index] += score
 
+    if len(doc_coref_scores) > 0:
+        mention_eval_out.write("\n\n========Document Mention Corefrence Results (CoNLL Average)==========\n")
+        for coref_score, doc_id in doc_coref_scores:
+            mention_eval_out.write("%s\t%.2f\n" % (doc_id, coref_score))
+
     plain_average_scores = get_averages(plain_global_scores, total_gold_mentions, total_system_mentions, valid_docs)
 
-    mention_eval_out.write("\n=======Final Results=========\n")
+    mention_eval_out.write("\n=======Final Mention Detection Results=========\n")
     max_attribute_name_width = len(max(attribute_header_list, key=len))
     attributes_name_header = pad_char_before_until("Attributes", max_attribute_name_width)
 
@@ -352,6 +358,13 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
             pad_char_before_until(attribute_header_list[attr_index + 1], max_attribute_name_width) + "\t" + "\t".join(
                 "%.2f" % f for f in attr_average_scores) + "\n")
 
+    if len(doc_coref_scores) > 0:
+        mention_eval_out.write("\n=======Final Mention Coreference Results=========\n")
+        doc_level_conll_average = 0
+        for coref_score, doc_id in doc_coref_scores:
+            doc_level_conll_average += coref_score
+        mention_eval_out.write("Overall Average CoNLL score : %.2f" % (doc_level_conll_average / len(doc_coref_scores)))
+
     if mention_eval_out is not None:
         mention_eval_out.flush()
         if not mention_eval_out == sys.stdout:
@@ -361,10 +374,10 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
 def get_averages(scores, num_gold, num_sys, num_docs):
     micro_prec = safe_div(scores[0], num_sys)
     micro_recall = safe_div(scores[0], num_gold)
-    micro_f1 = f1(micro_prec, micro_recall)
+    micro_f1 = compute_f1(micro_prec, micro_recall)
     macro_prec = safe_div(scores[2], num_docs)
     macro_recall = safe_div(scores[3], num_docs)
-    macro_f1 = f1(macro_prec, macro_recall)
+    macro_f1 = compute_f1(macro_prec, macro_recall)
     return micro_prec, micro_recall, micro_f1, macro_prec, macro_recall, macro_f1
 
 
@@ -383,7 +396,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
         token_file = open(token_file_path)
 
         # discard the header
-        header = token_file.readline()
+        _ = token_file.readline()
 
         for tline in token_file:
             fields = tline.rstrip().split("\t")
@@ -399,7 +412,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
             try:
                 token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)
                 id2span_map[token_id] = token_span
-            except ValueError as e:
+            except ValueError as _:
                 logger.error("Token file is wrong at for file " + g_file_name)
 
             if token in invisible_words:
@@ -418,11 +431,22 @@ def safe_div(n, dn):
     return n / dn if dn > 0 else float('nan')
 
 
-def f1(p, r):
+def compute_f1(p, r):
     return safe_div(2 * p * r, (p + r))
 
 
 def read_all_doc(gf, sf):
+    """
+    Read all the documents, collect the document ids that are shared by both
+    gold and system. It will populate the gold_docs and system_docs, stored
+    as map from doc id to raw annotation strings.
+
+    The document ids considered to be scored are those presented in the gold
+    documents
+    :param gf: Gold standard file
+    :param sf:  System response file
+    :return:
+    """
     global gold_docs
     global system_docs
     global doc_ids_to_score
@@ -457,6 +481,11 @@ def read_all_doc(gf, sf):
 
 
 def read_docs_with_doc_id(f):
+    """
+    Parse file into a map from doc id to mention and relation raw strings
+    :param f: The annotation file
+    :return: A map from doc id to corresponding mention and relation annotations, which are stored as raw string
+    """
     all_docs = {}
     mention_lines = []
     relation_lines = []
@@ -489,6 +518,11 @@ def has_next_doc():
 
 
 def get_next_doc():
+    """
+    Get next document pair of gold standard and system response.
+    :return: A tuple of 4 element
+        (has_next, gold_annotation, system_annotation, doc_id)
+    """
     global evaluating_index
     if evaluating_index < len(doc_ids_to_score):
         doc_id = doc_ids_to_score[evaluating_index]
@@ -546,6 +580,11 @@ def parse_line(l, eval_mode, invisible_ids):
 
 
 def parse_relation(relation_line):
+    """
+    Parse the relation as a tuple
+    :param relation_line: the relation line from annotation
+    :return:
+    """
     parts = relation_line.split("\t")
     relation_arguments = parts[2].split(",")
     return parts[0], parts[1], relation_arguments
@@ -553,7 +592,10 @@ def parse_relation(relation_line):
 
 def span_overlap(span1, span2):
     """
-    return the number of characters that overlaps
+    Compute the number of characters that overlaps
+    :param span1:
+    :param span2:
+    :return: number of overlapping spans
     """
     if span1[1] > span2[0] and span1[0] < span2[1]:
         # find left end
@@ -569,10 +611,11 @@ def span_overlap(span1, span2):
 def compute_token_overlap_score(g_tokens, s_tokens):
     """
     token based overlap score
-
     It is a set F1 score, which is the same as Dice coefficient
+    :param g_tokens: Gold tokens
+    :param s_tokens: System tokens
+    :return: The Dice Coefficient between two sets of tokens
     """
-
     total_overlap = 0.0
 
     for s_token in s_tokens:
@@ -598,6 +641,11 @@ def compute_overlap_score(system_outputs, gold_annos, eval_mode):
 
 
 def get_attr_combinations(attr_names):
+    """
+    Generate all possible combination attributes.
+    :param attr_names: List of attribute names
+    :return:
+    """
     attribute_names_with_id = list(enumerate(attr_names))
     comb = []
     for L in range(1, len(attribute_names_with_id) + 1):
@@ -605,8 +653,16 @@ def get_attr_combinations(attr_names):
     return comb
 
 
-def attribute_based_match(attribute_comb, gold_attrs, sys_attrs, doc_id):
-    for (attribute_index, attribute_name) in attribute_comb:
+def attribute_based_match(target_attributes, gold_attrs, sys_attrs, doc_id):
+    """
+    Return whether the two sets of attributes match on all the given attributes
+    :param target_attributes: The target attributes to check
+    :param gold_attrs: Gold standard attributes
+    :param sys_attrs: System response attributes
+    :param doc_id: Document ID, used mainly for logging
+    :return: True if two sets of attributes matches on given attributes.
+    """
+    for (attribute_index, attribute_name) in target_attributes:
         gold_attr = gold_attrs[attribute_index]
         if gold_attr == missingAttributePlaceholder:
             logger.warning(
@@ -671,11 +727,10 @@ def generate_all_system_branches(mapped_system_mentions):
     first_mapping = {}
     list_of_one_to_one_mappings.append(first_mapping)
     for system_id, mapped_gold_ids in mapped_system_mentions.iteritems():
-        do_branch = False
+        do_branch = len(mapped_gold_ids) > 1
         additional_one_to_one_mappings = []
-        if len(mapped_gold_ids) > 1:
-            do_branch = True
 
+        # branch multiplication for every case from multiple gold to a system
         for mapping in list_of_one_to_one_mappings:
             if do_branch:
                 for mapped_gold_id in mapped_gold_ids[1:]:
@@ -730,9 +785,8 @@ def terminate_with_error():
     sys.exit(1)
 
 
-def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
-             token_offset_fields, token_file_ext,
-             diff_out, gold_conll_file_out, sys_conll_file_out):
+def evaluate(eval_mode, token_dir, coref_out, all_attribute_combinations,
+             token_offset_fields, token_file_ext, diff_out):
     if has_next_doc():
         res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
     else:
@@ -843,29 +897,96 @@ def evaluate(eval_mode, token_dir, eval_coref, all_attribute_combinations,
     # unmapped system mentions and the partial scores are considered as false positive
     fp = len(s_mention_lines) - best_tp
 
-    doc_scores.append((best_tp, fp, zip(best_attribute_based_tps, attribute_based_fps),
-                       len(g_mention_lines), len(s_mention_lines), doc_id))
+    doc_mention_scores.append((best_tp, fp, zip(best_attribute_based_tps, attribute_based_fps),
+                               len(g_mention_lines), len(s_mention_lines), doc_id))
 
-    gold_corefs = [coref for coref in [parse_relation(l) for l in g_relation_lines] if
-                   coref[0] == coreference_relation_name]
+    if coref_out is not None:
+        gold_corefs = [coref for coref in [parse_relation(l) for l in g_relation_lines] if
+                       coref[0] == coreference_relation_name]
 
-    sys_corefs = [coref for coref in [parse_relation(l) for l in s_relation_lines] if
-                  coref[0] == coreference_relation_name]
-
-    if eval_coref:
+        sys_corefs = [coref for coref in [parse_relation(l) for l in s_relation_lines] if
+                      coref[0] == coreference_relation_name]
         # all one to one mappings
         all_gold_2_system_one_2_one_mapping = generate_all_one_to_one_mapping(
             all_possible_gold_2_system_one_2_many_mappings)
         # prepare conll style coreference input
-        conll_converter = ConllConverter(id2token_map, doc_id, gold_conll_file_out, sys_conll_file_out)
+        conll_converter = ConllConverter(id2token_map, doc_id, system_id)
         conll_converter.prepare_conll_lines(gold_corefs, sys_corefs,
                                             gold_mention_table, system_mention_table,
                                             all_gold_2_system_one_2_one_mapping)
+
+        doc_coref_scores.append((select_best_conll_score(system_id, coref_out), doc_id))
+
     return True
 
 
-def get_num(x):
-    return int(''.join(ele for ele in x if ele.isdigit()))
+def select_best_conll_score(system_id, coref_out):
+    """
+    Compute the best CoNLL average score from the possible mappings
+    :param system_id: The id of the system being evaluated
+    :param coref_out: The path to output the best score report
+    :return: The best CoNLL average score
+    """
+    gold_file_basename = "%s_%s_" % (temp_gold_conll_file_name, system_id)
+    system_file_basename = "%s_%s_" % (temp_sys_conll_file_name, system_id)
+    gold_files = glob.glob(gold_file_basename + "*")
+    system_files = glob.glob(system_file_basename + "*")
+
+    sys_file_by_index = {}
+    for sys_file in system_files:
+        index = sys_file[len(system_file_basename):]
+        sys_file_by_index[index] = sys_file
+
+    best_conll_average = 0
+    best_conll_average_score_path = None
+
+    logger.info("Running Conll Evaluation reference-coreference-scorers")
+
+    for gold_file in gold_files:
+        index = gold_file[len(gold_file_basename):]
+        sys_file = sys_file_by_index[index]
+        temp_score_path = temp_conll_score_file_name + index
+        run_conll_script(gold_file, sys_file, temp_conll_score_file_name + index)
+        conll_scores = get_conll_scores(temp_score_path)
+
+        conll_average = 0
+        for metric, f1 in conll_scores.iteritems():
+            if metric != "ceafm":
+                conll_average += f1
+        conll_average /= 4
+
+        if conll_average > best_conll_average:
+            best_conll_average = conll_average
+            best_conll_average_score_path = temp_score_path
+
+    logger.info("Best CoNLL average is %.2f, detailed coreference score report will be written to %s" % (
+        best_conll_average, coref_out))
+
+    # Copy the average score to the designated place.
+    if best_conll_average_score_path is not None:
+        shutil.copyfile(best_conll_average_score_path, coref_out)
+
+    # Delete temp files
+    for f in glob.glob(temp_conll_file_dir + os.sep + "conll_tmp*"):
+        os.remove(f)
+
+    return best_conll_average
+
+
+def get_conll_scores(score_path):
+    metric = "UNKNOWN"
+
+    scores_by_metric = {}
+
+    with open(score_path, 'r') as f:
+        for l in f:
+            if l.startswith("METRIC"):
+                metric = l.split()[-1].strip().strip(":")
+            if l.startswith("Coreference: ") or l.startswith("BLANC: "):
+                f1 = float(l.split("F1:")[-1].strip().strip("%"))
+                scores_by_metric[metric] = f1
+
+    return scores_by_metric
 
 
 def natural_order(key):
@@ -886,10 +1007,10 @@ def transitive_not_resolved(clusters):
     return False
 
 
-def add_to_multi_map(map, key, val):
-    if key not in map:
-        map[key] = []
-    map[key].append(val)
+def add_to_multi_map(multi_map, key, val):
+    if key not in multi_map:
+        multi_map[key] = []
+    multi_map[key].append(val)
 
 
 def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
@@ -908,29 +1029,75 @@ def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
 
 
 def generate_all_one_to_one_mapping(all_possible_gold_2_system_one_2_many_mappings):
+    """
+    Flatten the gold 2 system mapping to list of one to one mappings
+    :param all_possible_gold_2_system_one_2_many_mappings:
+    :return:
+    """
+
+    # create the mapping with one empty mapping inside
     all_one_2_one_mapping = []
-    for mapping in all_possible_gold_2_system_one_2_many_mappings:
-        all_one_2_one_mapping
+
+    for one_2_many_mapping in all_possible_gold_2_system_one_2_many_mappings:
+        flatten_one_2_one_mapping = [[]]
+
+        for mapping_item in one_2_many_mapping:
+            # branches multiplier
+            new_branches = []
+            if len(mapping_item) > 1:
+                for system_index_score in mapping_item[1:]:
+                    for old_mapping in flatten_one_2_one_mapping:
+                        new_branch = copy.deepcopy(old_mapping)
+                        new_branch.append(system_index_score)
+                        new_branches.append(new_branch)
+
+            for old_mapping in flatten_one_2_one_mapping:
+                new_element = mapping_item[0] if len(mapping_item) > 0 else None
+                old_mapping.append(new_element)
+            flatten_one_2_one_mapping.extend(new_branches)
+
+        all_one_2_one_mapping.extend(flatten_one_2_one_mapping)
+        # print all_one_2_one_mapping
+        # sys.stdin.readline()
 
     return all_one_2_one_mapping
 
 
 class ConllConverter:
-    def __init__(self, id2token_map, doc_id, gold_conll_file_out, sys_conll_file_out):
+    def __init__(self, id2token_map, doc_id, system_id):
         """
         :param id2token_map: a dict, map from token id to its string
         :param doc_id: the document id
-        :param gold_conll_file_out
-        :param sys_conll_file_out
+        :param system_id: The id of the participant system
         :return:
         """
         self.id2token = id2token_map
         self.doc_id = doc_id
-        self.gold_conll_file_out = gold_conll_file_out
-        self.sys_conll_file_out = sys_conll_file_out
+        self.system_id = system_id
+
+    @staticmethod
+    def create_aligned_tables(gold_2_system_one_2_one_mapping, gold_mention_table, system_mention_table,
+                              threshold=1.0):
+        aligned_gold_table = []
+        aligned_system_table = []
+        for gold_index, system_aligned in enumerate(gold_2_system_one_2_one_mapping):
+            if system_aligned is None:
+                # indicate nothing aligned with this gold mention
+                aligned_gold_table.append((gold_mention_table[gold_index][0], gold_mention_table[gold_index][2]))
+                aligned_system_table.append(None)
+                continue
+            system_index, alignment_score = system_aligned
+            if alignment_score >= threshold:
+                aligned_gold_table.append((gold_mention_table[gold_index][0], gold_mention_table[gold_index][2]))
+                aligned_system_table.append(
+                    (system_mention_table[system_index][0], system_mention_table[system_index][2]))
+
+        # TODO add system mention singletons
+
+        return aligned_gold_table, aligned_system_table
 
     def prepare_conll_lines(self, gold_corefs, sys_corefs, gold_mention_table, system_mention_table,
-                            all_gold_2_system_one_2_one_mapping):
+                            all_gold_2_system_one_2_one_mapping, threshold=1.0):
         """
         Convert to ConLL style lines
         :param gold_corefs: gold coreference chain
@@ -938,24 +1105,31 @@ class ConllConverter:
         :param gold_mention_table:  gold mention table
         :param system_mention_table: system mention table
         :param all_gold_2_system_one_2_one_mapping: all possible mapping between gold and system
+        :param threshold: To what extent we treat two mention can be aligned, default 1 for exact match
         :return:
         """
-        if not self.prepare_lines(gold_corefs, self.gold_conll_file_out, gold_mention_table):
-            logger.error(
-                "Gold standard has data problem for doc [%s], please refer to log. Quitting..."
-                % self.doc_id)
-            terminate_with_error()
+        for mapping_index, gold_2_system_one_2_one_mapping in enumerate(all_gold_2_system_one_2_one_mapping):
+            aligned_gold_table, aligned_system_table = self.create_aligned_tables(gold_2_system_one_2_one_mapping,
+                                                                                  gold_mention_table,
+                                                                                  system_mention_table,
+                                                                                  threshold)
 
-        if not self.prepare_lines(sys_corefs, self.sys_conll_file_out, system_mention_table):
-            logger.error(
-                "System has data problem for doc [%s], please refer to log. Quitting..."
-                % self.doc_id)
-            terminate_with_error()
+            gold_conll_file_out = open("%s_%s_%d" % (temp_gold_conll_file_name, self.system_id, mapping_index), 'w')
+            sys_conll_file_out = open("%s_%s_%d" % (temp_sys_conll_file_name, self.system_id, mapping_index), 'w')
 
-    def prepare_lines(self, corefs, out, mention_table):
-        print mention_table
-        sys.stdin.readline()
+            if not self.prepare_lines(gold_corefs, aligned_gold_table, gold_conll_file_out):
+                logger.error(
+                    "Gold standard has data problem for doc [%s], please refer to log. Quitting..."
+                    % self.doc_id)
+                terminate_with_error()
 
+            if not self.prepare_lines(sys_corefs, aligned_system_table, sys_conll_file_out):
+                logger.error(
+                    "System has data problem for doc [%s], please refer to log. Quitting..."
+                    % self.doc_id)
+                terminate_with_error()
+
+    def prepare_lines(self, corefs, mention_table, out):
         clusters = {}
         for cluster_id, one_coref_cluster in enumerate(corefs):
             clusters[cluster_id] = set(one_coref_cluster[2])
@@ -963,21 +1137,24 @@ class ConllConverter:
         if transitive_not_resolved(clusters):
             return False
 
-        # first extract the following mapping from the mention_table
-        token2event = {}
         event_mention_id_2_sorted_tokens = {}
-
         singleton_cluster_id = len(corefs)
+
+        coref_fields = []
         for mention in mention_table:
+            if mention is None:
+                coref_fields.append(("None", "-"))
+                continue
+
             tokens = sorted(mention[0], key=natural_order)
-            event_id = mention[2]
+            event_mention_id = mention[1]
 
             non_singleton_cluster_id = None
 
-            event_mention_id_2_sorted_tokens[event_id] = tokens
+            event_mention_id_2_sorted_tokens[event_mention_id] = tokens
 
             for cluster_id, cluster_mentions in clusters.iteritems():
-                if event_id in cluster_mentions:
+                if event_mention_id in cluster_mentions:
                     non_singleton_cluster_id = cluster_id
                     break
 
@@ -987,20 +1164,17 @@ class ConllConverter:
                 output_cluster_id = singleton_cluster_id
                 singleton_cluster_id += 1
 
-            if len(tokens) == 1:
-                add_to_multi_map(token2event, tokens[0], "(%s)" % output_cluster_id)
-            else:
-                add_to_multi_map(token2event, tokens[0], "(%s" % output_cluster_id)
-                add_to_multi_map(token2event, tokens[-1], "%s)" % output_cluster_id)
+            merged_mention_str = "_".join([self.id2token[tid] for tid in tokens])
+
+            coref_fields.append((merged_mention_str, output_cluster_id))
 
         for cluster_id, cluster in clusters.iteritems():
             if within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
                 return False
 
         out.write("%s (%s); part 000%s" % (conll_bod_marker, self.doc_id, os.linesep))
-        for token_id, token in sorted(self.id2token.iteritems(), key=lambda key_value: natural_order(key_value[0])):
-            coref_str = "|".join(token2event[token_id]) if token_id in token2event else "-"
-            out.write("%s\t%s\t%s\t%s\n" % (self.doc_id, get_num(token_id), token, coref_str))
+        for index, (merged_mention_str, cluster_id) in enumerate(coref_fields):
+            out.write("%s\t%s\t%s\t(%s)\n" % (self.doc_id, index, merged_mention_str, cluster_id))
         out.write(conll_eod_marker + os.linesep)
 
         return True

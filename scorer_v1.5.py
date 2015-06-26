@@ -88,7 +88,6 @@ all_possible_types = set()
 evaluating_index = 0
 
 doc_mention_scores = []
-doc_coref_scores = []
 
 token_joiner = ","
 span_seperator = ";"
@@ -100,8 +99,15 @@ temp_conll_file_dir = "tmp"
 temp_gold_conll_file_name = temp_conll_file_dir + os.sep + "conll_tmp.gold"
 temp_sys_conll_file_name = temp_conll_file_dir + os.sep + "conll_tmp.sys"
 temp_conll_score_file_name = temp_conll_file_dir + os.sep + "conll_tmp.score"
+remove_conll_tmp = False  # In actual use set this to true to avoid potential conflicts
 
 coref_eval_output = None
+
+num_total_gold_clusters = 0
+num_total_system_clusters = 0
+
+current_system_id = ""
+
 
 class EvalMethod:
     Token, Char = range(2)
@@ -177,8 +183,10 @@ def main():
         logger.error("Cannot find gold standard file at " + args.gold)
         sys.exit(1)
 
+    eval_coref = False
     if args.coref is not None:
-        logger.info("Coreference result will be output at " + args.coref)
+        logger.info("CoNLL script output will be output at " + args.coref)
+        eval_coref = True
         if not os.path.exists(temp_conll_file_dir):
             os.makedirs(temp_conll_file_dir)
 
@@ -216,15 +224,32 @@ def main():
 
     attribute_comb = get_attr_combinations(attribute_names)
 
+    num_document_evaluated = 0
     while True:
         if not evaluate(eval_mode, token_dir, args.coref, attribute_comb,
                         token_offset_fields, args.token_table_extension,
-                        diff_out):
+                        diff_out, num_document_evaluated):
             break
-    print_eval_results(mention_eval_out, attribute_comb)
+        num_document_evaluated += 1
+
+    best_conll_average = 0
+    if eval_coref:
+        # The empty case is taken care here because MUC will give 0 score for empty cases.
+        if num_total_gold_clusters == 0 and num_total_system_clusters == 0:
+            best_conll_average = 100
+        else:
+            best_conll_average = select_best_conll_score(current_system_id, args.coref)
+
+    print_eval_results(mention_eval_out, attribute_comb, best_conll_average)
 
     # clean up, close files
     close_if_not_none(diff_out)
+
+    # delete temp directory if empty
+    try:
+        os.rmdir(temp_conll_file_dir)
+    except OSError as _:
+        pass
 
     logger.info("Evaluation Done.")
 
@@ -272,7 +297,7 @@ def pad_char_before_until(s, n, c=" "):
     return c * (n - len(s)) + s
 
 
-def print_eval_results(mention_eval_out, all_attribute_combinations):
+def print_eval_results(mention_eval_out, all_attribute_combinations, best_conll_average):
     total_gold_mentions = 0
     total_system_mentions = 0
     valid_docs = 0
@@ -333,11 +358,6 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
             for score_index, score in enumerate([tp, fp, prec, recall]):
                 plain_global_scores[score_index] += score
 
-    if len(doc_coref_scores) > 0:
-        mention_eval_out.write("\n\n========Document Mention Corefrence Results (CoNLL Average)==========\n")
-        for coref_score, doc_id in doc_coref_scores:
-            mention_eval_out.write("%s\t%.2f\n" % (doc_id, coref_score))
-
     plain_average_scores = get_averages(plain_global_scores, total_gold_mentions, total_system_mentions, valid_docs)
 
     mention_eval_out.write("\n=======Final Mention Detection Results=========\n")
@@ -358,12 +378,11 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
             pad_char_before_until(attribute_header_list[attr_index + 1], max_attribute_name_width) + "\t" + "\t".join(
                 "%.2f" % f for f in attr_average_scores) + "\n")
 
-    if len(doc_coref_scores) > 0:
+    if best_conll_average is not None:
         mention_eval_out.write("\n=======Final Mention Coreference Results=========\n")
-        doc_level_conll_average = 0
-        for coref_score, doc_id in doc_coref_scores:
-            doc_level_conll_average += coref_score
-        mention_eval_out.write("Overall Average CoNLL score : %.2f" % (doc_level_conll_average / len(doc_coref_scores)))
+        mention_eval_out.write(
+            "Best CoNLL score : %.2f\n" % best_conll_average)
+        mention_eval_out.write("For details, please refer to the CoNLL scorer output\n")
 
     if mention_eval_out is not None:
         mention_eval_out.flush()
@@ -680,6 +699,13 @@ def write_if_provided(diff_out, text):
 
 
 def prepare_write_schedule(gold_mention_table, system_mention_table, assigned_gold_2_system_mapping):
+    """
+    Sort the mapping according to the system mentions order
+    :param gold_mention_table:
+    :param system_mention_table:
+    :param assigned_gold_2_system_mapping:
+    :return:
+    """
     schedule = []
     system_mapped_markers = [False] * len(system_mention_table)
     for gold_index, _ in enumerate(gold_mention_table):
@@ -786,7 +812,11 @@ def terminate_with_error():
 
 
 def evaluate(eval_mode, token_dir, coref_out, all_attribute_combinations,
-             token_offset_fields, token_file_ext, diff_out):
+             token_offset_fields, token_file_ext, diff_out, num_document_evaluated):
+    global current_system_id
+    global num_total_gold_clusters
+    global num_total_system_clusters
+
     if has_next_doc():
         res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
     else:
@@ -799,6 +829,7 @@ def evaluate(eval_mode, token_dir, coref_out, all_attribute_combinations,
         fields = s_mention_lines[0].split("\t")
         if len(fields) > 0:
             system_id = fields[0]
+    current_system_id = system_id
 
     # parse the lines in file
     system_mention_table = []
@@ -906,17 +937,24 @@ def evaluate(eval_mode, token_dir, coref_out, all_attribute_combinations,
 
         sys_corefs = [coref for coref in [parse_relation(l) for l in s_relation_lines] if
                       coref[0] == coreference_relation_name]
+
+        num_total_gold_clusters += len(gold_corefs)
+        num_total_system_clusters += len(sys_corefs)
+
         # all one to one mappings
         all_gold_2_system_one_2_one_mapping = generate_all_one_to_one_mapping(
             all_possible_gold_2_system_one_2_many_mappings)
+
         # prepare conll style coreference input
         conll_converter = ConllConverter(id2token_map, doc_id, system_id)
+
+        # overwrite if this is the first document, will clean conflicts remained from last time
+        # append if this is not the first document, so we can write multiple document results here
+        conll_tmp_file_writing_mode = 'w' if num_document_evaluated == 0 else 'a'
         conll_converter.prepare_conll_lines(gold_corefs, sys_corefs,
                                             gold_mention_table, system_mention_table,
-                                            all_gold_2_system_one_2_one_mapping)
-
-        doc_coref_scores.append((select_best_conll_score(system_id, coref_out), doc_id))
-
+                                            all_gold_2_system_one_2_one_mapping,
+                                            conll_tmp_file_writing_mode)
     return True
 
 
@@ -949,6 +987,8 @@ def select_best_conll_score(system_id, coref_out):
         run_conll_script(gold_file, sys_file, temp_conll_score_file_name + index)
         conll_scores = get_conll_scores(temp_score_path)
 
+        print conll_scores
+
         conll_average = 0
         for metric, f1 in conll_scores.iteritems():
             if metric != "ceafm":
@@ -967,8 +1007,9 @@ def select_best_conll_score(system_id, coref_out):
         shutil.copyfile(best_conll_average_score_path, coref_out)
 
     # Delete temp files
-    for f in glob.glob(temp_conll_file_dir + os.sep + "conll_tmp*"):
-        os.remove(f)
+    if remove_conll_tmp:
+        for f in glob.glob(temp_conll_file_dir + os.sep + "conll_tmp*"):
+            os.remove(f)
 
     return best_conll_average
 
@@ -990,11 +1031,21 @@ def get_conll_scores(score_path):
 
 
 def natural_order(key):
+    """
+    Compare order based on the numeric values in key, for example, 't1 < t2'
+    :param key:
+    :return:
+    """
     convert = lambda text: int(text) if text.isdigit() else text
     return [convert(c) for c in re.split('([0-9]+)', key)]
 
 
 def transitive_not_resolved(clusters):
+    """
+    Check whether transitive closure is resolved between clusters.
+    :param clusters:
+    :return: False if not resolved
+    """
     ids = clusters.keys()
     for i in range(0, len(ids) - 1):
         for j in range(i + 1, len(ids)):
@@ -1008,12 +1059,26 @@ def transitive_not_resolved(clusters):
 
 
 def add_to_multi_map(multi_map, key, val):
+    """
+    Utility class to make the map behave like a multi-map, a key is mapped to multiple values
+    :param multi_map: A map to insert to
+    :param key:
+    :param val:
+    :return:
+    """
     if key not in multi_map:
         multi_map[key] = []
     multi_map[key].append(val)
 
 
 def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+    """
+    Check whether there is within cluster span duplication, i.e., two mentions in the same cluster have the same span,
+    this is not allowed.
+    :param cluster: The cluster
+    :param event_mention_id_2_sorted_tokens: A map from mention id to span (in terms of tokens)
+    :return:
+    """
     # print cluster
     # print event_mention_id_2_sorted_tokens
     span_map = {}
@@ -1097,7 +1162,7 @@ class ConllConverter:
         return aligned_gold_table, aligned_system_table
 
     def prepare_conll_lines(self, gold_corefs, sys_corefs, gold_mention_table, system_mention_table,
-                            all_gold_2_system_one_2_one_mapping, threshold=1.0):
+                            all_gold_2_system_one_2_one_mapping, write_mode, threshold=1.0):
         """
         Convert to ConLL style lines
         :param gold_corefs: gold coreference chain
@@ -1114,8 +1179,10 @@ class ConllConverter:
                                                                                   system_mention_table,
                                                                                   threshold)
 
-            gold_conll_file_out = open("%s_%s_%d" % (temp_gold_conll_file_name, self.system_id, mapping_index), 'w')
-            sys_conll_file_out = open("%s_%s_%d" % (temp_sys_conll_file_name, self.system_id, mapping_index), 'w')
+            gold_conll_file_out = open("%s_%s_%d" % (temp_gold_conll_file_name, self.system_id, mapping_index),
+                                       write_mode)
+            sys_conll_file_out = open("%s_%s_%d" % (temp_sys_conll_file_name, self.system_id, mapping_index),
+                                      write_mode)
 
             if not self.prepare_lines(gold_corefs, aligned_gold_table, gold_conll_file_out):
                 logger.error(

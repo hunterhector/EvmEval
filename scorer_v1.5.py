@@ -96,11 +96,11 @@ span_joiner = "_"
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
-temp_conll_file_dir = "tmp"
+temp_conll_file_dir = "conll_tmp"
 temp_gold_conll_file_name = temp_conll_file_dir + os.sep + "conll_tmp.gold"
 temp_sys_conll_file_name = temp_conll_file_dir + os.sep + "conll_tmp.sys"
 temp_conll_score_file_name = temp_conll_file_dir + os.sep + "conll_tmp.score"
-remove_conll_tmp = False  # In actual use set this to true to avoid potential conflicts
+remove_conll_tmp = True  # In actual use set this to true to avoid potential conflicts
 
 coref_eval_output = None
 
@@ -184,10 +184,8 @@ def main():
         logger.error("Cannot find gold standard file at " + args.gold)
         sys.exit(1)
 
-    eval_coref = False
     if args.coref is not None:
         logger.info("CoNLL script output will be output at " + args.coref)
-        eval_coref = True
         if not os.path.exists(temp_conll_file_dir):
             os.makedirs(temp_conll_file_dir)
 
@@ -236,10 +234,11 @@ def main():
     close_if_not_none(diff_out)
 
     # delete temp directory if empty
-    try:
-        os.rmdir(temp_conll_file_dir)
-    except OSError as _:
-        pass
+    if remove_conll_tmp:
+        try:
+            os.rmdir(temp_conll_file_dir)
+        except OSError as _:
+            pass
 
     logger.info("Evaluation Done.")
 
@@ -1137,6 +1136,8 @@ class ConllConverter:
                               threshold=1.0):
         aligned_gold_table = []
         aligned_system_table = []
+
+        non_singleton_system_mentions = set()
         for gold_index, system_aligned in enumerate(gold_2_system_one_2_one_mapping):
             if system_aligned is None:
                 # indicate nothing aligned with this gold mention
@@ -1148,8 +1149,14 @@ class ConllConverter:
                 aligned_gold_table.append((gold_mention_table[gold_index][0], gold_mention_table[gold_index][2]))
                 aligned_system_table.append(
                     (system_mention_table[system_index][0], system_mention_table[system_index][2]))
+                non_singleton_system_mentions.add(system_index)
 
-        # TODO add system mention singletons
+        for system_index, system_mention in enumerate(system_mention_table):
+            # add system singletons
+            if system_index not in non_singleton_system_mentions:
+                aligned_gold_table.append(None)
+                aligned_system_table.append(
+                    (system_mention_table[system_index][0], system_mention_table[system_index][2]))
 
         return aligned_gold_table, aligned_system_table
 

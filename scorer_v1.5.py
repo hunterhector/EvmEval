@@ -19,6 +19,7 @@
 # 2. Fix a bug that crashes when generating text output from empty responses.
 # 3. Write out the coreference scores into the score output.
 # 4. Move global variables into class wrappers.
+# 5. Current issue: gold standard coreference cannot be empty!
 
 # Change log v1.4:
 # 1. Global mention span check: do not allow duplicate mention span with same type.
@@ -97,12 +98,12 @@ class Config:
     conll_eod_marker = "#end document"
 
     conll_tmp_marker = "conll_tmp"
-    temp_gold_conll_file_name = conll_tmp_marker + os.sep + "conll_tmp.gold"
-    temp_sys_conll_file_name = conll_tmp_marker + os.sep + "conll_tmp.sys"
-    temp_conll_score_file_name = conll_tmp_marker + os.sep + "conll_tmp.score"
+    temp_gold_conll_file_name = conll_tmp_marker + os.sep + conll_tmp_marker + ".gold"
+    temp_sys_conll_file_name = conll_tmp_marker + os.sep + conll_tmp_marker + ".sys"
+    temp_conll_score_file_name = conll_tmp_marker + os.sep + conll_tmp_marker + ".score"
 
-    conll_gold_best_mapped = "gold.conll"
-    conll_sys_best_mapped = "sys.conll"
+    conll_gold_best_mapped = conll_tmp_marker + os.sep + conll_tmp_marker + ".gold.all"
+    conll_sys_best_mapped = conll_tmp_marker + os.sep + conll_tmp_marker + ".sys.all"
 
     conll_scorer_executable = "./reference-coreference-scorers-8.01/scorer.pl"
 
@@ -287,10 +288,11 @@ def main():
             break
 
     # Run the CoNLL script on the combined files
-    run_conll_script(Config.conll_gold_best_mapped, Config.conll_sys_best_mapped, args.coref)
-
-    # Get the CoNLL scores from output
-    EvalState.overall_coref_scores = get_conll_scores(args.coref)
+    if args.coref is not None:
+        logger.debug("Running coreference script for the final scores.")
+        run_conll_script(Config.conll_gold_best_mapped, Config.conll_sys_best_mapped, args.coref)
+        # Get the CoNLL scores from output
+        EvalState.overall_coref_scores = get_conll_scores(args.coref)
 
     print_eval_results(mention_eval_out, attribute_comb)
 
@@ -441,7 +443,6 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
         for metric, score in EvalState.overall_coref_scores.iteritems():
             formatter = "Metric : %s\tScore : %.2f\n"
             if metric in Config.skipped_scores:
-                print metric
                 formatter = "Metric : %s\tScore : %.2f *\n"
             mention_eval_out.write(formatter % (metric, score))
             conll_average += score
@@ -986,6 +987,8 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
                                          len(g_mention_lines), len(s_mention_lines), doc_id))
 
     if coref_out is not None:
+        logger.debug("Start preparing coreference files.")
+
         gold_corefs = [coref for coref in [parse_relation(l) for l in g_relation_lines] if
                        coref[0] == Config.coreference_relation_name]
 
@@ -1003,9 +1006,16 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
         both_empty = len(gold_corefs) == 0 and len(sys_corefs) == 0
 
+        logger.debug("Both gold and system contains no corefs for [%s]." % doc_id)
+
         # calculate the score for this document
-        best_score = 100 if both_empty else select_best_conll_score(system_id, doc_id)
-        EvalState.doc_coref_scores.append((best_score, doc_id))
+        if both_empty:
+            logger.warning(
+                "There is no coreferece in both gold and system for Document [%s] "
+                "MUC will generate 0 score for this document, final result might be inaccurate." % (
+                    doc_id))
+
+        EvalState.doc_coref_scores.append((select_best_conll_score(system_id, doc_id), doc_id))
 
     return True
 
@@ -1035,11 +1045,13 @@ def select_best_conll_score(system_id, doc_id):
     best_conll_average = 0
     best_conll_mapping = None
 
-    logger.info("Running Conll Evaluation reference-coreference-scorers")
+    logger.info("Selecting mapping using Conll Evaluation reference-coreference-scorers")
 
     for gold_file in gold_files:
         suffix = gold_file[len(gold_file_basename):]
         sys_file = sys_file_by_index[suffix]
+
+        logger.debug("Running Conll for Gold : [%s] vs. System : [%s]" % (gold_file, sys_file))
 
         temp_score_path = ConllConverter.generate_temp_conll_file_base(Config.temp_conll_score_file_name, system_id,
                                                                        doc_id)
@@ -1065,11 +1077,6 @@ def select_best_conll_score(system_id, doc_id):
         write_mode = 'w' if EvalState.claim_write_flag() else 'a'
         shutil.copyfileobj(open(best_conll_mapping[0], 'r'), open(Config.conll_gold_best_mapped, write_mode))
         shutil.copyfileobj(open(best_conll_mapping[1], 'r'), open(Config.conll_sys_best_mapped, write_mode))
-
-    # Delete temp files
-    if MutableConfig.remove_conll_tmp:
-        for f in glob.glob(Config.conll_tmp_marker + os.sep + Config.conll_tmp_marker + "*"):
-            os.remove(f)
 
     return best_conll_average
 

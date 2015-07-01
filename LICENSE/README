@@ -1,7 +1,6 @@
 The coreference scoring module calls the CoNLL scorer, distributed under GNU General Public License v2 or later.
 The Stanford CoreNLP module used by the tokenizer is distributed under GNU General Public License v3 or later.
 
-The Event Mention converter and detection do not depends on external packages and do not link to any GPL licenses,
-which are then licensed under Apache V2.0. You can find a copy of the license in the directory.
+The Event Mention converter and detection do not depends on external packages and do not link to any GPL licenses, which are then licensed under Apache V2.0. You can find a copy of the license in the directory.
 
 GPL V3 http://www.gnu.org/licenses/gpl.html

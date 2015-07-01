@@ -230,7 +230,7 @@ The software assumes that the following two types of input files are given with 
  
 Token File Maker
 ------------
-### *Requirements of the software*
+### *Requirements of the file maker*
 The software requires Java 1.8. A precompiled jar locates at bin directory. To compile the project from source you will also need Maven 2.7+.
 
 ### *Prerequisites*

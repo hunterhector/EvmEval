@@ -209,11 +209,10 @@ LDC-XML-to-Brat converter
 This software converts LDC's XML format for the [TAC KBP 2015 Event Nugget task](http://cairo.lti.cs.cmu.edu/kbp/2015/event/) to the [Brat format](http://brat.nlplab.org/standoff.html).  More specifically, it converts LDC's event nuggets and coreferences to events and coreference links that can be viewed via the Brat web interface.  Brat annotation configurations for output are available at directory `src/main/resources/`.
 The software is located at the direcotry: ldc-xml-to-brat-converter, you can built it from source using Maven.  You can also find a pre-compiled version in the bin/g directory
 
-### *Requirements of the software*
-The software requires Java 1.8 and [Annobase](http://junaraki.net/software/annobase) 1.0.1.  See `pom.xml` for other dependencies.
+### *Requirements of the converter*
+The software requires Java 1.8. A precompiled jar locates at bin directory. To compile the project from source you will also need Maven 2.7+.
 
-### *How to run the software*
-You can see its usage with the following command:
+### *How to run it*
 ```
 $ java LdcXmlToBratConverter
 Option           Description     
@@ -231,20 +230,23 @@ The software assumes that the following two types of input files are given with 
  
 Token File Maker
 ------------
+### *Requirements of the file maker*
+The software requires Java 1.8. A precompiled jar locates at bin directory. To compile the project from source you will also need Maven 2.7+.
+
 ### *Prerequisites*
 Our tokenizer implementation is based on the tokenizer in the Stanford CoreNLP tool .  The software is implemented in Java, and its requirements are as follows:
  1.	Java 1.8
  2.	The same number of text files and brat annotation files (*.ann) with the same file base name
 
 ### *Usage*
-usage: java -jar bin/token-file-maker-1.0.3-jar-with-dependencies.jar -a <annotation> -e <extension> [-h] -o
-       <output> [-s <separator>] -t <text>
- -a <annotation>   annotation directory
- -e <extension>    text file extension
- -h                print this message
- -o <output>       output directory
- -s <separator>    separator chars for tokenization
- -t <text>         text directory
+
+    java -jar bin/token-file-maker-1.0.3-jar-with-dependencies.jar -a <annotation> -e <extension> [-h] -o <output> [-s <separator>] -t <text>
+        -a <annotation>   annotation directory
+        -e <extension>    text file extension
+        -h                print this message
+        -o <output>       output directory
+        -s <separator>    separator chars for tokenization
+        -t <text>         text directory
 
  
 visualize.py

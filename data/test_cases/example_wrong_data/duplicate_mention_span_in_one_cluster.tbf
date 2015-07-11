@@ -1,5 +1,0 @@
-#BeginOfDocument example
-system1	example	E1	t3,t5	way made	Contact_Communicate	Actual
-system1	example	E2	t5,t3	way made	Movement_Transport-Person	Actual
-@Coreference	C1	E1,E2
-#EndOfDocument

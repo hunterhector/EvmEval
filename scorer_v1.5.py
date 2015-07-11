@@ -19,7 +19,7 @@
 # 2. Fix a bug that crashes when generating text output from empty responses.
 # 3. Write out the coreference scores into the score output.
 # 4. Move global variables into class wrappers.
-# 5. Current issue: gold standard coreference cannot be empty!
+# 5. Current issue: gold standard coreference cannot be empty! Maybe file a bug to them.
 
 # Change log v1.4:
 # 1. Global mention span check: do not allow duplicate mention span with same type.
@@ -129,7 +129,6 @@ class MutableConfig:
     values are set here. Do not modify these variables outside
     the Main() function (i.e. outside the setup stage)
     """
-
     def __init__(self):
         pass
 
@@ -287,7 +286,7 @@ def main():
                         diff_out):
             break
 
-    # Run the CoNLL script on the combined files
+    # Run the CoNLL script on the combined files, which is concatenated from the best alignment of all documents.
     if args.coref is not None:
         logger.debug("Running coreference script for the final scores.")
         run_conll_script(Config.conll_gold_best_mapped, Config.conll_sys_best_mapped, args.coref)
@@ -302,6 +301,10 @@ def main():
     # Delete temp directory if empty.
     if MutableConfig.remove_conll_tmp:
         try:
+            # Remove temp files in the directory first.
+            for temp_conll_file in glob.glob(Config.conll_tmp_marker + "/" + Config.conll_tmp_marker + "*"):
+                os.remove(temp_conll_file)
+            # Remove the directory itself.
             os.rmdir(Config.conll_tmp_marker)
         except OSError as _:
             pass
@@ -448,7 +451,7 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
             conll_average += score
         mention_eval_out.write(
             "Overall Average CoNLL score : %.2f\n" % (conll_average / len(EvalState.overall_coref_scores)))
-        mention_eval_out.write("\n* Score not included for final CoNLL score.")
+        mention_eval_out.write("\n* Score not included for final CoNLL score.\n")
 
         if mention_eval_out is not None:
             mention_eval_out.flush()

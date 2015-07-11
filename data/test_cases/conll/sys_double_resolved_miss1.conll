@@ -1,7 +1,0 @@
-#begin document (doc1); part 000
-doc1	0	This	(1)
-doc1	1	is	-
-doc1	1	is	(2)
-doc1	2	an	-
-doc1	3	example	(2)
-#end document

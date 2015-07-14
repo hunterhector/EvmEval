@@ -109,6 +109,8 @@ class Config:
 
     skipped_scores = {"ceafm"}
 
+    token_miss_msg = "Token ID [%s] not found in token list, the score file provided is incorrect."
+
 
 class EvalMethod:
     """
@@ -129,6 +131,7 @@ class MutableConfig:
     values are set here. Do not modify these variables outside
     the Main() function (i.e. outside the setup stage)
     """
+
     def __init__(self):
         pass
 
@@ -274,7 +277,7 @@ def main():
         try:
             token_offset_fields = [int(x) for x in args.offset_field.split(",")]
         except ValueError as _:
-            logger.error("Should provide two integer with comma in between")
+            logger.error("Token offset argument should be two integer with comma in between, i.e. 2,3")
 
     read_all_doc(gf, sf)
 
@@ -473,8 +476,8 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
     tf_ext = Config.default_token_file_ext if provided_token_ext is None else provided_token_ext
 
     invisible_ids = set()
-    id2token_map = {}
-    id2span_map = {}
+    id2token = {}
+    id2span = {}
 
     token_file_path = os.path.join(token_dir, g_file_name + tf_ext)
 
@@ -495,13 +498,16 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
             token = fields[1].lower().strip().rstrip()
             token_id = fields[0]
 
-            id2token_map[token_id] = token
+            id2token[token_id] = token
 
             try:
                 token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)
-                id2span_map[token_id] = token_span
+                id2span[token_id] = token_span
             except ValueError as _:
-                logger.error("Token file is wrong at for file " + g_file_name)
+                logger.error("Token file is wrong at for file [%s], cannot parse token span here." % g_file_name)
+                logger.error("  ---> %s" % tline)
+                logger.error(
+                    "Field %d and Field %d are not integer spans" % (token_offset_fields[0], token_offset_fields[1]))
 
             if token in Config.invisible_words:
                 invisible_ids.add(token_id)
@@ -512,7 +518,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
             "will use empty invisible words list" % (g_file_name, token_file_path))
         pass
 
-    return invisible_ids, id2token_map, id2span_map
+    return invisible_ids, id2token, id2span
 
 
 def safe_div(n, dn):
@@ -649,9 +655,8 @@ def parse_token_based_line(l, invisible_ids):
     fields = l.split("\t")
     num_attributes = len(Config.attribute_names)
     if len(fields) < 5 + num_attributes:
-        logger.error("System line too few fields")
+        terminate_with_error("System line has too few fields:\n ---> %s" % l)
     token_ids = parse_token_ids(fields[3], invisible_ids)
-
     return fields[2], token_ids, fields[5:]
 
 
@@ -867,8 +872,16 @@ def get_tp(all_attribute_combinations, gold_2_system_one_2_many_mapping, gold_me
     return tp, attribute_based_tps
 
 
-def terminate_with_error():
-    logger.error("Scorer terminate with error")
+def get_or_terminate(dictionary, key, error_msg):
+    if key in dictionary:
+        return dictionary[key]
+    else:
+        terminate_with_error(error_msg)
+
+
+def terminate_with_error(msg):
+    logger.error(msg)
+    logger.error("Scorer terminate with error.")
     sys.exit(1)
 
 
@@ -881,7 +894,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
     eval_mode = MutableConfig.eval_mode
 
-    invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
+    invisible_ids, id2token, id2span = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
 
     system_id = ""
     if len(s_mention_lines) > 0:
@@ -914,6 +927,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     # score is stored using negative for easy sorting
     all_gold_system_mapping_scores = []
 
+    # Debug purpose printing.
     print_score_matrix = False
 
     for system_index, (system_spans, system_attributes,
@@ -941,12 +955,12 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     mapped_system_mentions = {}
 
     # a list system index and the mapping score for each gold
-    gold_2_system_many_2_many_mapping = [[] for _ in xrange(len(g_mention_lines))]
+    gold2system_many_2_many_mapping = [[] for _ in xrange(len(g_mention_lines))]
 
     while len(all_gold_system_mapping_scores) != 0:
         neg_mapping_score, mapping_system_index, mapping_gold_index = \
             heapq.heappop(all_gold_system_mapping_scores)
-        gold_2_system_many_2_many_mapping[mapping_gold_index].append((mapping_system_index, -neg_mapping_score))
+        gold2system_many_2_many_mapping[mapping_gold_index].append((mapping_system_index, -neg_mapping_score))
         add_to_multi_map(mapped_system_mentions, mapping_system_index, mapping_gold_index)
 
     # list of possible gold mention that a system can map to, one at a time
@@ -955,17 +969,17 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     # list of all possible mappings that satisfy the following:
     # 1. gold can mapped to multiple systems
     # 2. system can be mapped to only one gold
-    all_possible_gold_2_system_one_2_many_mappings = []
-    for system_2_gold_mapping in system_2_gold_one_2_one_mappings:
-        all_possible_gold_2_system_one_2_many_mappings.append(
-            unify_system_mapping(gold_2_system_many_2_many_mapping, system_2_gold_mapping))
+    all_possible_gold2system_one_2_many_mappings = []
+    for system2gold_mapping in system_2_gold_one_2_one_mappings:
+        all_possible_gold2system_one_2_many_mappings.append(
+            unify_system_mapping(gold2system_many_2_many_mapping, system2gold_mapping))
 
     best_tp = 0
     best_attribute_based_tps = [0] * len(all_attribute_combinations)
-    best_all_att_mapping = all_possible_gold_2_system_one_2_many_mappings[0]  # initialize with the first one
+    best_all_att_mapping = all_possible_gold2system_one_2_many_mappings[0]  # initialize with the first one
 
-    for possible_gold_2_system_one_2_many_mapping in all_possible_gold_2_system_one_2_many_mappings:
-        temp_tp, temp_abtps = get_tp(all_attribute_combinations, possible_gold_2_system_one_2_many_mapping,
+    for possible_gold2system_one_2_many_mapping in all_possible_gold2system_one_2_many_mappings:
+        temp_tp, temp_abtps = get_tp(all_attribute_combinations, possible_gold2system_one_2_many_mapping,
                                      gold_mention_table, system_mention_table, doc_id)
         if temp_tp > best_tp:
             best_tp = temp_tp
@@ -973,7 +987,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
             if abtp > best_attribute_based_tps[att_comb_index]:
                 best_attribute_based_tps[att_comb_index] = abtp
                 if att_comb_index == len(temp_abtps) - 1:
-                    best_all_att_mapping = possible_gold_2_system_one_2_many_mapping
+                    best_all_att_mapping = possible_gold2system_one_2_many_mapping
 
     if diff_out is not None:
         write_gold_and_system_mappings(doc_id, system_id, best_all_att_mapping, gold_mention_table,
@@ -999,10 +1013,10 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
                       coref[0] == Config.coreference_relation_name]
         # all one to one mappings
         all_gold_2_system_one_2_one_mapping = generate_all_one_to_one_mapping(
-            all_possible_gold_2_system_one_2_many_mappings)
+            all_possible_gold2system_one_2_many_mappings)
 
         # prepare conll style coreference input for this document
-        conll_converter = ConllConverter(id2token_map, doc_id, system_id)
+        conll_converter = ConllConverter(id2token, doc_id, system_id)
         conll_converter.prepare_conll_lines(gold_corefs, sys_corefs,
                                             gold_mention_table, system_mention_table,
                                             all_gold_2_system_one_2_one_mapping)
@@ -1149,11 +1163,10 @@ def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
     :param event_mention_id_2_sorted_tokens: A map from mention id to span (in terms of tokens)
     :return:
     """
-    # print cluster
-    # print event_mention_id_2_sorted_tokens
     span_map = {}
     for eid in cluster:
-        span = tuple(event_mention_id_2_sorted_tokens[eid])
+        span = tuple(get_or_terminate(event_mention_id_2_sorted_tokens, eid,
+                                      "Cluster contains event that is not in mention list : [%s]" % eid))
         if span in span_map:
             logger.error("Span within the same cluster cannot be the same.")
             logger.error("%s->[%s]" % (eid, ",".join(span)))
@@ -1197,14 +1210,14 @@ def generate_all_one_to_one_mapping(all_possible_gold_2_system_one_2_many_mappin
 
 
 class ConllConverter:
-    def __init__(self, id2token_map, doc_id, system_id):
+    def __init__(self, id2token, doc_id, system_id):
         """
-        :param id2token_map: a dict, map from token id to its string
+        :param id2token: a dict, map from token id to its string
         :param doc_id: the document id
         :param system_id: The id of the participant system
         :return:
         """
-        self.id2token = id2token_map
+        self.id2token = id2token
         self.doc_id = doc_id
         self.system_id = system_id
 
@@ -1241,6 +1254,14 @@ class ConllConverter:
     def generate_temp_conll_file_base(temp_header, system_id, doc_id):
         return "%s_%s_%s" % (temp_header, system_id, doc_id)
 
+    @staticmethod
+    def extract_token_map(mention_table):
+        event_mention_id2sorted_tokens = {}
+        for mention in mention_table:
+            tokens = sorted(mention[0], key=natural_order)
+            event_mention_id2sorted_tokens[mention[2]] = tokens
+        return event_mention_id2sorted_tokens
+
     def prepare_conll_lines(self, gold_corefs, sys_corefs, gold_mention_table, system_mention_table,
                             all_gold_2_system_one_2_one_mapping, threshold=1.0):
         """
@@ -1268,19 +1289,17 @@ class ConllConverter:
                     self.generate_temp_conll_file_base(Config.temp_sys_conll_file_name, self.system_id, self.doc_id),
                     mapping_index), 'w')
 
-            if not self.prepare_lines(gold_corefs, aligned_gold_table, gold_conll_file_out):
-                logger.error(
-                    "Gold standard has data problem for doc [%s], please refer to log. Quitting..."
-                    % self.doc_id)
-                terminate_with_error()
+            if not self.prepare_lines(gold_corefs, aligned_gold_table, self.extract_token_map(gold_mention_table),
+                                      gold_conll_file_out):
+                terminate_with_error("Gold standard has data problem for doc [%s], please refer to log. Quitting..."
+                                     % self.doc_id)
 
-            if not self.prepare_lines(sys_corefs, aligned_system_table, sys_conll_file_out):
-                logger.error(
-                    "System has data problem for doc [%s], please refer to log. Quitting..."
-                    % self.doc_id)
-                terminate_with_error()
+            if not self.prepare_lines(sys_corefs, aligned_system_table, self.extract_token_map(system_mention_table),
+                                      sys_conll_file_out):
+                terminate_with_error("System has data problem for doc [%s], please refer to log. Quitting..."
+                                     % self.doc_id)
 
-    def prepare_lines(self, corefs, mention_table, out):
+    def prepare_lines(self, corefs, mention_table, event_mention_id2sorted_tokens, out):
         clusters = {}
         for cluster_id, one_coref_cluster in enumerate(corefs):
             clusters[cluster_id] = set(one_coref_cluster[2])
@@ -1288,7 +1307,6 @@ class ConllConverter:
         if transitive_not_resolved(clusters):
             return False
 
-        event_mention_id_2_sorted_tokens = {}
         singleton_cluster_id = len(corefs)
 
         coref_fields = []
@@ -1297,12 +1315,9 @@ class ConllConverter:
                 coref_fields.append(("None", "-"))
                 continue
 
-            tokens = sorted(mention[0], key=natural_order)
             event_mention_id = mention[1]
 
             non_singleton_cluster_id = None
-
-            event_mention_id_2_sorted_tokens[event_mention_id] = tokens
 
             for cluster_id, cluster_mentions in clusters.iteritems():
                 if event_mention_id in cluster_mentions:
@@ -1315,12 +1330,14 @@ class ConllConverter:
                 output_cluster_id = singleton_cluster_id
                 singleton_cluster_id += 1
 
-            merged_mention_str = "_".join([self.id2token[tid] for tid in tokens])
+            merged_mention_str = "_".join([get_or_terminate(self.id2token, tid,
+                                                            Config.token_miss_msg % tid)
+                                           for tid in event_mention_id2sorted_tokens[event_mention_id]])
 
             coref_fields.append((merged_mention_str, output_cluster_id))
 
         for cluster_id, cluster in clusters.iteritems():
-            if within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+            if within_cluster_span_duplicate(cluster, event_mention_id2sorted_tokens):
                 return False
 
         out.write("%s (%s); part 000%s" % (Config.conll_bod_marker, self.doc_id, os.linesep))

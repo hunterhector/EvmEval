@@ -930,6 +930,8 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     # Debug purpose printing.
     print_score_matrix = False
 
+    print gold_mention_table
+
     for system_index, (system_spans, system_attributes,
                        sys_mention_id) in enumerate(system_mention_table):
         if print_score_matrix:

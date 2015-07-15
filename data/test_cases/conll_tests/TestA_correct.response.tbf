@@ -1,0 +1,8 @@
+#BeginOfDocument doc1
+system1	doc1	E1	t1	This	Contact_Communicate	Actual
+system1	doc1	E2	t2	is	Contact_Communicate	Actual
+system1	doc1	E3	t3	another	Contact_Communicate	Actual
+system1	doc1	E4	t4	example	Contact_Communicate	Actual
+@Coreference	C1	E1,E2
+@Coreference	C2	E3,E4
+#EndOfDocument

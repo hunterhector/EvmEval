@@ -1,0 +1,5 @@
+token_id	token_str	tkn_begin	tkn_end
+t1	This	0	3
+t2	is	5	6
+t3	another	8	8
+t4	test	10	13

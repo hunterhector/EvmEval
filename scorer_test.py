@@ -146,8 +146,8 @@ class ScorerTest:
 
     def run_conll_tests(self, conll_test_dir):
         """
-        Run through the test cases for conll scoring. The result is verify by comparing
-        the results of the mention scorer on the test case and the results of the conll
+        Run through the test cases for CoNLL scoring. The result is verify by comparing
+        the results of the mention scorer on the test case and the results of the CoNLL
         reference scores on the expected test case. These two result should match.
         Hence, each test case contains 4 files, for two pair of results.
         :param conll_test_dir:

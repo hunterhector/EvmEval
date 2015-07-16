@@ -44,7 +44,6 @@ tokenJoiner = ","
 brat_annotation_ext = ".ann"
 token_offset_ext = ".tab"  # Simplest extensions
 
-
 token_offset_fields = [2, 3]
 
 annotation_on_source = False
@@ -118,6 +117,7 @@ def main():
         logger.setLevel(logging.DEBUG)
     else:
         logger.setLevel(logging.INFO)
+    stream_handler.setFormatter(logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s'))
 
     # if args.source:
     # annotation_on_source = True
@@ -357,13 +357,21 @@ def resolve_transitive_closure(coref_relations):
 def get_text_bound_2_token_mapping(token_file):
     text_bound_id_2_token_id = {}
     # ignore the header
-    header = token_file.readline()
+    # _ = token_file.readline()
+    is_first_line = True
     for tokenLine in token_file:
         fields = tokenLine.rstrip().split("\t")
         if len(fields) <= token_offset_fields[1]:
-            logger.error("Token files only have %s fields, are you setting "
-                         "the correct offset fields?" % len(fields))
-            exit(1)
+            if is_first_line:
+                # The first one might just be a header.
+                logger.warning("Ignoring the token file header.")
+                continue
+            else:
+                logger.error("Token files only have %s fields, are you setting "
+                             "the correct token offset fields?" % len(fields))
+                exit(1)
+        is_first_line = False
+
         # important! we need to make sure that which offsets we are based on
 
         token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)

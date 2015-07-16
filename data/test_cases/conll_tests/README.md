@@ -1,5 +1,7 @@
 Test cases for CoNLL tests
 ==========================
+This is the folder for CoNLL test (run automatically by scorer_test.py)
+
 The test works this way, we create two sets of key-response files:
 
  1. Set 1 (in tbf format):

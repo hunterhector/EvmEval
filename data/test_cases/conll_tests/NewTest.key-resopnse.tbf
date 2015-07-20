@@ -1,0 +1,8 @@
+#BeginOfDocument doc1
+brat_conversion	doc1	E1	1	This	Transaction_Transfer-Money	NOT_ANNOTATED
+brat_conversion	doc1	E2	2	is	Transaction_Transfer-Money	NOT_ANNOTATED
+brat_conversion	doc1	E3	3	another	Transaction_Transfer-Money	NOT_ANNOTATED
+brat_conversion	doc1	E4	4	example	Transaction_Transfer-Money	NOT_ANNOTATED
+@Coreference	C0	E1,E2
+@Coreference	C1	E4,E3
+#EndOfDocument

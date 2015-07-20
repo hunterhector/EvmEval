@@ -1,0 +1,10 @@
+T1	Transaction_Transfer-Money 0 4	This
+E1	Transaction_Transfer-Money:T1 
+T2	Transaction_Transfer-Money 5 7	is
+E2	Transaction_Transfer-Money:T2 
+T3	Transaction_Transfer-Money 8 15	another
+E3	Transaction_Transfer-Money:T3 
+T4	Transaction_Transfer-Money 16 23	example
+E4	Transaction_Transfer-Money:T4 
+R1	Coreference Arg1:E1 Arg2:E2	
+R2	Coreference Arg1:E3 Arg2:E4	

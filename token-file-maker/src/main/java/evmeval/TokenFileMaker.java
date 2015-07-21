@@ -17,6 +17,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 
+import token.Logger;
+
 /**
  * A factory class to create token files for given text files and annotation files.
  * 
@@ -83,8 +85,12 @@ public class TokenFileMaker {
 
         if (evmSpanEnd <= tokenBegin) {
           // Case 2
-          // If the event mention span precedes the token completely, then we should move on to the
-          // next event mention span.
+          // If the event mention span precedes the token completely, the token is fine if the event
+          // mention span is the last one; otherwise we should move on to the next event mention
+          // span for the token alignment.
+          if (i == numEvmSpans - 1) {
+            alignedTokens.add(token);
+          }
           continue;
         }
 
@@ -150,9 +156,8 @@ public class TokenFileMaker {
         }
 
         // The loop should not reach this point.
-        throw new RuntimeException(
-                "Unexpected boundary relation between a token and an event mention: " + token
-                        + " / " + evmSpan);
+        Logger.warn("Unexpected boundary relation between a token and an event mention: " + token
+                + " / " + evmSpan);
       }
     }
 
@@ -294,7 +299,7 @@ public class TokenFileMaker {
     String textDirPath = null;
     String textFileExt = null;
     String annDirPath = null;
-    String separatorChars = "/-\\";  // Default
+    String separatorChars = "/-\\"; // Default
     String outputDirPath = null;
     try {
       CommandLine cmd = parser.parse(options, args);

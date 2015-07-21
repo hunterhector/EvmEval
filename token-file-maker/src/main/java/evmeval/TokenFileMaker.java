@@ -17,8 +17,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import token.Logger;
-
 /**
  * A factory class to create token files for given text files and annotation files.
  * 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #change this line to the LDC annotation data folder
-ldc_annotation_dir=data/private/merged
+ldc_annotation_dir=data/private/LDC2015E68
 
 #change the following lines to your desired output folder
 brat_output_dir=data/private/conversion_test/ann

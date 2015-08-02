@@ -66,7 +66,7 @@ def main():
         "It accepts a single file name or a directory name that contains the "
         "Brat annotation output. The converter also requires token offset "
         "files that shares the same name with the annotation file, with "
-        "extension " + token_offset_ext + ". The converter will search for "
+        "extension " + token_offset_ext + ". The converter will search for ("
                                           "the token file in the directory specified by '-t' argument")
 
     parser = argparse.ArgumentParser(description=parser_description)
@@ -251,6 +251,13 @@ def parse_annotation_file(file_path, token_dir, of):
                     realis_status = att["Realis"][1]
             text_bound = text_bounds[text_bound_id]
             spans = text_bound[1]
+
+            if text_bound_id not in text_bound_id_2_token_id:
+                logger.warning("Cannot find corresponding token for text bound [%s] - [%s]"% 
+                        (text_bound_id, text_bound[2]))
+                logger.warning("The corresponding text bound will be ignored")
+                continue
+
             token_ids = text_bound_id_2_token_id[text_bound_id]
             text = text_bound[2]
 
@@ -360,20 +367,19 @@ def get_text_bound_2_token_mapping(token_file):
     # _ = token_file.readline()
     is_first_line = True
     for tokenLine in token_file:
-        fields = tokenLine.rstrip().split("\t")
+        # We assume no whitespaces within fields.
+        fields = tokenLine.rstrip().split()
         if len(fields) <= token_offset_fields[1]:
             if is_first_line:
                 # The first one might just be a header.
                 logger.warning("Ignoring the token file header.")
-                continue
             else:
                 logger.error("Token files only have %s fields, are you setting "
                              "the correct token offset fields?" % len(fields))
                 exit(1)
         is_first_line = False
 
-        # important! we need to make sure that which offsets we are based on
-
+        # Important! we need to make sure that which offsets we are based on.
         token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)
 
         # if annotation_on_source:
@@ -381,7 +387,7 @@ def get_text_bound_2_token_mapping(token_file):
         # else:
         # token_span = (int(fields[4]), int(fields[5]) + 1)
 
-        # one token maps to multiple text bound is possible
+        # One token maps to multiple text bound is possible
         for text_bound_id in find_corresponding_text_bound(token_span):
             if text_bound_id not in text_bound_id_2_token_id:
                 text_bound_id_2_token_id[text_bound_id] = []
@@ -392,17 +398,16 @@ def get_text_bound_2_token_mapping(token_file):
 def find_corresponding_text_bound(token_span):
     text_bound_ids = []
     for text_bound_id, text_bound in text_bounds.iteritems():
-        for annSpan in text_bound[1]:
-            if covers(annSpan, token_span):
+        for ann_span in text_bound[1]:
+            if covers(ann_span, token_span):
                 text_bound_ids.append(text_bound_id)
-            elif covers(token_span, annSpan):
+            elif covers(token_span, ann_span):
                 text_bound_ids.append(text_bound_id)
     return text_bound_ids
 
 
 def covers(covering_span, covered_span):
-    if (covering_span[0] <= covered_span[0] and
-                covering_span[1] >= covered_span[1]):
+    if covering_span[0] <= covered_span[0] or covering_span[1] >= covered_span[1]:
         return True
     return False
 

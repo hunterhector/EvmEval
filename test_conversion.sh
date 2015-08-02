@@ -13,4 +13,4 @@ java -jar bin/converter-1.0.0-jar-with-dependencies.jar -i "$ldc_annotation_dir"
 echo "Running tokenizer..."
 java -jar bin/token-file-maker-1.0.4-jar-with-dependencies.jar -a "$brat_output_dir" -t "$brat_output_dir" -e txt -o "$token_table_dir"
 echo "Converting to TBF format"
-python ./brat2tbf.py -t "$token_table_dir" -d "$brat_output_dir" -o "$output_tbf_basename" -b -w
+python ./brat2tbf.py -t "$token_table_dir" -d "$brat_output_dir" -o "$output_tbf_basename" -w

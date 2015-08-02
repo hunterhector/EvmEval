@@ -176,10 +176,13 @@ def main():
 
     if args.dir is not None:
         # parse directory
+        count = 0
         for f in os.listdir(args.dir):
             if f.endswith(brat_annotation_ext):
                 parse_annotation_file(
                     os.path.join(args.dir, f), args.tokenPath, out_file)
+                count += 1
+        logger.info("Finish converting %d files" % count)
     elif args.file is not None:
         # parse one annotation file
         if args.file.endswith(brat_annotation_ext):
@@ -220,7 +223,7 @@ def rchop(s, ending):
 def parse_annotation_file(file_path, token_dir, of):
     # otherwise use the provided directory to search for it
     basename = os.path.basename(file_path)
-    logger.debug("processing " + basename)
+    logger.info("Processing file " + basename)
     token_path = os.path.join(
         token_dir, basename[:-len(brat_annotation_ext)] + token_offset_ext)
 
@@ -253,8 +256,8 @@ def parse_annotation_file(file_path, token_dir, of):
             spans = text_bound[1]
 
             if text_bound_id not in text_bound_id_2_token_id:
-                logger.warning("Cannot find corresponding token for text bound [%s] - [%s]"% 
-                        (text_bound_id, text_bound[2]))
+                logger.warning("Cannot find corresponding token for text bound [%s] - [%s] in document [%s]"% 
+                        (text_bound_id, text_bound[2], text_id))
                 logger.warning("The corresponding text bound will be ignored")
                 continue
 

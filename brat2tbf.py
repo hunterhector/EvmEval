@@ -427,6 +427,7 @@ def parse_span(all_span_str):
 def parse_text_bound(fields):
     if len(fields) != 3:
         logger.error("Incorrect number of fields in a text bound annotation")
+        logger.error(fields)
     tid = fields[0]
     type_span = fields[1].split(" ", 1)
     tb_type = type_span[0]

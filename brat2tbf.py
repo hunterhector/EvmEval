@@ -223,7 +223,7 @@ def rchop(s, ending):
 def parse_annotation_file(file_path, token_dir, of):
     # otherwise use the provided directory to search for it
     basename = os.path.basename(file_path)
-    logger.info("Processing file " + basename)
+    logger.debug("Processing file " + basename)
     token_path = os.path.join(
         token_dir, basename[:-len(brat_annotation_ext)] + token_offset_ext)
 

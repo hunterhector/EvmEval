@@ -1,1 +1,3 @@
-!lib/
+# Eclipse IDE files and directories
+.settings/
+target/

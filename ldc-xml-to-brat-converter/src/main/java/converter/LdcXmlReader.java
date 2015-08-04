@@ -18,14 +18,14 @@ import net.junaraki.annobase.type.element.EventMention;
 
 public class LdcXmlReader extends AbstractReader {
 
-  public static final String INPUT_TEXT_FILE_EXT = "mpdf.xml";
-
-  public static final String INPUT_ANN_FILE_EXT = "rich_ere.xml";
-
   /** An XML parser; input annotation files are given in the XML format */
   private SAXBuilder builder;
 
-  public LdcXmlReader() {
+  private String textFileExt, annFileExt;
+
+  public LdcXmlReader(String textFileExt, String annFileExt) {
+    this.textFileExt = textFileExt;
+    this.annFileExt = annFileExt;
     builder = new SAXBuilder();
     builder.setDTDHandler(null);
   }
@@ -37,11 +37,11 @@ public class LdcXmlReader extends AbstractReader {
 
     String dir = file.getParent();
     String fileName = file.getName();
-    String baseName = fileName.substring(0, fileName.length() - INPUT_TEXT_FILE_EXT.length() - 1);
+    String baseName = fileName.substring(0, fileName.length() - textFileExt.length() - 1);
 
     // Annotate gold standard annotations.
     // Logger.debug(baseName);
-    File inputAnnFile = new File(dir, baseName + "." + INPUT_ANN_FILE_EXT);
+    File inputAnnFile = new File(dir, baseName + "." + annFileExt);
 
     AnnotationBase annBase = new AnnotationBase(detaggedText, baseName);
     parse(annBase, inputAnnFile);
@@ -180,8 +180,8 @@ public class LdcXmlReader extends AbstractReader {
 
       EventMention evm = annotateEventMention(annBase, begin, end, evmId, eventType, realis);
       if (!evmStr.equals(evm.getText())) {
-        Logger.warn(String.format("Invalid offset %d, %d of event mention [%s] for string [%s]",
-                begin, end, evm.getText(), evmStr));
+        Logger.warn(String.format("Invalid offset %d, %d of event mention [%s] for string [%s] at doc [%s]",
+                begin, end, evm.getText(), evmStr, annBase.getSourceDocument().getId()));
       }
 
       evms.add(evm);

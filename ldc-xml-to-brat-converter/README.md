@@ -18,12 +18,14 @@ The software requires Java 1.8 and [Annobase](http://junaraki.net/software/annob
 ## How to run the software
 You can see its usage with the following command:
 ```
-$ java LdcXmlToBratConverter
-Option           Description     
-------           -----------     
--h               help            
--i <input dir>   input directory 
--o <output dir>  output directory
+$ java -jar target/converter-1.0.1-jar-with-dependencies.jar
+Option                            Description
+------                            -----------
+--ae <annotation file extension>  annotation file extension
+-h                                help
+-i <input dir>                    input directory
+-o <output dir>                   output directory
+--te <text file extension>        text file extension
 ```
 
 ## Assumptions of the software

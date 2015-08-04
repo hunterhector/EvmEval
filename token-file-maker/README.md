@@ -16,6 +16,7 @@ Our tokenizer implementation is based on the tokenizer in the Stanford CoreNLP t
  2.	The same number of text files and brat annotation files (*.ann) with the same file base name
 
 ### *Usage*
+```
 usage: java -jar bin/token-file-maker-1.0.4-jar-with-dependencies.jar -a <annotation> -e <extension> [-h] -o
        <output> [-s <separator>] -t <text>
  -a <annotation>   annotation directory
@@ -24,3 +25,4 @@ usage: java -jar bin/token-file-maker-1.0.4-jar-with-dependencies.jar -a <annota
  -o <output>       output directory
  -s <separator>    separator chars for tokenization
  -t <text>         text directory
+```

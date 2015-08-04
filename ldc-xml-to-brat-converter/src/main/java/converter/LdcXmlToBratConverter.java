@@ -12,9 +12,9 @@ import net.junaraki.annobase.pipeline.AbstractPipeline;
 
 public class LdcXmlToBratConverter extends AbstractPipeline {
 
-  public LdcXmlToBratConverter() {
+  public LdcXmlToBratConverter(String textFileExt, String annFileExt) {
     super();
-    reader = new LdcXmlReader();
+    reader = new LdcXmlReader(textFileExt, annFileExt);
     writer = new BratWriter();
   }
 
@@ -25,6 +25,10 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
             .ofType(String.class).describedAs("input dir");
     OptionSpec<String> optOutputDir = parser.accepts("o", "output directory").withRequiredArg()
             .ofType(String.class).describedAs("output dir");
+    OptionSpec<String> optTextFileExt = parser.accepts("te", "text file extension")
+            .withRequiredArg().ofType(String.class).describedAs("text file extension");
+    OptionSpec<String> optAnnFileExt = parser.accepts("ae", "annotation file extension")
+            .withRequiredArg().ofType(String.class).describedAs("annotation file extension");
 
     OptionSet options = null;
     try {
@@ -39,9 +43,11 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
       return;
     }
 
-    LdcXmlToBratConverter converter = new LdcXmlToBratConverter();
     File inputDir = new File(options.valueOf(optInputDir));
-    String[] extensions = new String[] { LdcXmlReader.INPUT_TEXT_FILE_EXT };
+    String textFileExt = options.valueOf(optTextFileExt);
+    String annFileExt = options.valueOf(optAnnFileExt);
+    LdcXmlToBratConverter converter = new LdcXmlToBratConverter(textFileExt, annFileExt);
+    String[] extensions = new String[] { textFileExt };
     List<File> inputFiles = converter.getReader().collect(inputDir, extensions, false);
 
     File outputDir = new File(options.valueOf(optOutputDir));

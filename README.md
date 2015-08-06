@@ -204,29 +204,31 @@ This converter converts Brat annotation files to one single token based event me
 							files. Default is .tkn.ann
 	  -b, --debug           turn debug mode on
  
-LDC-XML-to-Brat converter
-------------
+## LDC-XML-to-Brat converter
 This software converts LDC's XML format for the [TAC KBP 2015 Event Nugget task](http://cairo.lti.cs.cmu.edu/kbp/2015/event/) to the [Brat format](http://brat.nlplab.org/standoff.html).  More specifically, it converts LDC's event nuggets and coreferences to events and coreference links that can be viewed via the Brat web interface.  Brat annotation configurations for output are available at directory `src/main/resources/`.
-The software is located at the direcotry: ldc-xml-to-brat-converter, you can built it from source using Maven.  You can also find a pre-compiled version in the bin/g directory
 
-### *Requirements of the converter*
-The software requires Java 1.8. A precompiled jar locates at bin directory. To compile the project from source you will also need Maven 2.7+.
+## Requirements of the software
+The software requires Java 1.8 and [Annobase](http://junaraki.net/software/annobase) 1.0.1.  See `pom.xml` for other dependencies.
 
-### *How to run it*
+## How to run the software
+You can see its usage with the following command:
 ```
-$ java LdcXmlToBratConverter
-Option           Description     
-------           -----------     
--h               help            
--i <input dir>   input directory 
--o <output dir>  output directory
+$ java -jar target/converter-1.0.1-jar-with-dependencies.jar
+Option                            Description
+------                            -----------
+--ae <annotation file extension>  annotation file extension
+-h                                help
+-i <input dir>                    input directory
+-o <output dir>                   output directory
+--te <text file extension>        text file extension
 ```
 
-### Assumptions of the software
-The software assumes that the following two types of input files are given with the fixed file extensions.
+## Assumptions of the software
+1. It assumes all text files and annotation files are put into the same folder
+2.  The software assumes that the following two types of input files are given with the fixed file extensions.
 - text file (with tags): *.mpdf.xml
 - annotation file: *.rich_ere.xml
- 
+However, you could change the them with --ae and --te extensions.
  
 Token File Maker
 ------------

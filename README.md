@@ -225,10 +225,11 @@ Option                            Description
 
 ## Assumptions of the software
 1. It assumes all text files and annotation files are put into the same folder
-2.  The software assumes that the following two types of input files are given with the fixed file extensions.
-- text file (with tags): *.mpdf.xml
-- annotation file: *.rich_ere.xml
-However, you could change the them with --ae and --te extensions.
+2. The software assumes that the following two types of input files are given with the fixed file extensions.
+ - text file (with tags): *.mpdf.xml
+ - annotation file: *.rich_ere.xml
+   
+   However, you could change the them with --ae and --te extensions.
  
 Token File Maker
 ------------

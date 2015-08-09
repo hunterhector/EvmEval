@@ -4,7 +4,6 @@
 - [LDC-XML-to-Brat converter](#ldc-xml-to-brat-converter)
 - [Requirements of the software](#requirements-of-the-software)
 - [How to run the software](#how-to-run-the-software)
-- [Assumptions of the software](#assumptions-of-the-software)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -26,9 +25,3 @@ Option                            Description
 -o <output dir>                   output directory
 --te <text file extension>        text file extension
 ```
-
-## Assumptions of the software
-The software assumes that the following two types of input files are given with the fixed file extensions.
-- text file (with tags): *.mpdf.xml
-- annotation file: *.rich_ere.xml
-

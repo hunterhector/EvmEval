@@ -12,23 +12,26 @@ import net.junaraki.annobase.pipeline.AbstractPipeline;
 
 public class LdcXmlToBratConverter extends AbstractPipeline {
 
-  public LdcXmlToBratConverter(String textFileExt, String annFileExt) {
+  public LdcXmlToBratConverter(File annDir, String textFileExt, String annFileExt, boolean detagText) {
     super();
-    reader = new LdcXmlReader(textFileExt, annFileExt);
+    reader = new LdcXmlReader(annDir, textFileExt, annFileExt, detagText);
     writer = new BratWriter();
   }
 
   public static void main(String[] args) throws Exception {
     OptionParser parser = new OptionParser();
     parser.accepts("h", "help").forHelp();
-    OptionSpec<String> optInputDir = parser.accepts("i", "input directory").withRequiredArg()
-            .ofType(String.class).describedAs("input dir");
-    OptionSpec<String> optOutputDir = parser.accepts("o", "output directory").withRequiredArg()
-            .ofType(String.class).describedAs("output dir");
+    OptionSpec<String> optTextDir = parser.accepts("t", "text directory").withRequiredArg()
+            .ofType(String.class).describedAs("text dir");
     OptionSpec<String> optTextFileExt = parser.accepts("te", "text file extension")
             .withRequiredArg().ofType(String.class).describedAs("text file extension");
+    OptionSpec<String> optAnnDir = parser.accepts("a", "annotation directory").withRequiredArg()
+            .ofType(String.class).describedAs("annotation dir");
     OptionSpec<String> optAnnFileExt = parser.accepts("ae", "annotation file extension")
             .withRequiredArg().ofType(String.class).describedAs("annotation file extension");
+    OptionSpec<String> optOutputDir = parser.accepts("o", "output directory").withRequiredArg()
+            .ofType(String.class).describedAs("output dir");
+    OptionSpec<Void> optDetag = parser.accepts("d", "whether to detag text");
 
     OptionSet options = null;
     try {
@@ -43,12 +46,14 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
       return;
     }
 
-    File inputDir = new File(options.valueOf(optInputDir));
+    File textDir = new File(options.valueOf(optTextDir));
     String textFileExt = options.valueOf(optTextFileExt);
+    File annDir = new File(options.valueOf(optAnnDir));
     String annFileExt = options.valueOf(optAnnFileExt);
-    LdcXmlToBratConverter converter = new LdcXmlToBratConverter(textFileExt, annFileExt);
+    boolean detagText = options.has(optDetag);
+    LdcXmlToBratConverter converter = new LdcXmlToBratConverter(annDir, textFileExt, annFileExt, detagText);
     String[] extensions = new String[] { textFileExt };
-    List<File> inputFiles = converter.getReader().collect(inputDir, extensions, false);
+    List<File> inputFiles = converter.getReader().collect(textDir, extensions, false);
 
     File outputDir = new File(options.valueOf(optOutputDir));
     List<File> outputFiles = new ArrayList<File>();

@@ -21,11 +21,17 @@ public class LdcXmlReader extends AbstractReader {
   /** An XML parser; input annotation files are given in the XML format */
   private SAXBuilder builder;
 
+  private File annDir;
+
   private String textFileExt, annFileExt;
 
-  public LdcXmlReader(String textFileExt, String annFileExt) {
+  private boolean detagText;
+
+  public LdcXmlReader(File annDir, String textFileExt, String annFileExt, boolean detagText) {
+    this.annDir = annDir;
     this.textFileExt = textFileExt;
     this.annFileExt = annFileExt;
+    this.detagText = detagText;
     builder = new SAXBuilder();
     builder.setDTDHandler(null);
   }
@@ -33,20 +39,20 @@ public class LdcXmlReader extends AbstractReader {
   @Override
   public AnnotationBase read(File file) throws Exception {
     String docText = FileUtils.readFileToString(file);
-    String detaggedText = Detagger.detag(docText, true);
+    if (detagText) {
+      docText = Detagger.detag(docText, true);
+    }
 
-    String dir = file.getParent();
     String fileName = file.getName();
     String baseName = fileName.substring(0, fileName.length() - textFileExt.length() - 1);
 
     // Annotate gold standard annotations.
-    // Logger.debug(baseName);
-    File inputAnnFile = new File(dir, baseName + "." + annFileExt);
+    File inputAnnFile = new File(annDir, baseName + "." + annFileExt);
 
-    AnnotationBase annBase = new AnnotationBase(detaggedText, baseName);
+    AnnotationBase annBase = new AnnotationBase(docText, baseName);
     parse(annBase, inputAnnFile);
 
-    BratAnnotationBase bratAnnBase = new BratAnnotationBase(detaggedText, baseName);
+    BratAnnotationBase bratAnnBase = new BratAnnotationBase(docText, baseName);
     bratAnnBase.consume(annBase);
 
     return bratAnnBase;
@@ -179,7 +185,7 @@ public class LdcXmlReader extends AbstractReader {
       String evmStr = triggerElm.getValue();
 
       EventMention evm = annotateEventMention(annBase, begin, end, evmId, eventType, realis);
-      if (!evmStr.equals(evm.getText())) {
+      if (!evmStr.equals(evm.getText().replace('\n', ' '))) {
         Logger.warn(String.format("Invalid offset %d, %d of event mention [%s] for string [%s] at doc [%s]",
                 begin, end, evm.getText(), evmStr, annBase.getSourceDocument().getId()));
       }

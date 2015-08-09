@@ -410,7 +410,7 @@ def find_corresponding_text_bound(token_span):
 
 
 def covers(covering_span, covered_span):
-    if covering_span[0] <= covered_span[0] or covering_span[1] >= covered_span[1]:
+    if covering_span[0] <= covered_span[0] and covering_span[1] >= covered_span[1]:
         return True
     return False
 
@@ -433,7 +433,7 @@ def parse_text_bound(fields):
     tb_type = type_span[0]
     spans = parse_span(type_span[1])
     if len(fields) < 3:
-        return tid, (tb_type, spans, "") # partial hack to avoid incorrect field problem.
+        return tid, (tb_type, spans, "-") # partial hack to avoid incorrect field problem.
     text = fields[2]
     return tid, (tb_type, spans, text)
 

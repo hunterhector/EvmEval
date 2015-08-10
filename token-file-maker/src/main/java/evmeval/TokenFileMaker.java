@@ -182,7 +182,7 @@ public class TokenFileMaker {
 
       buf.append(i + 1); // token ID
       buf.append("\t");
-      buf.append(token.getCoveredText()); // token
+      buf.append(token.getCoveredText().replaceAll("\t", " ").replaceAll("\n"," ")); // token
       buf.append("\t");
       buf.append(token.getBegin()); // begin
       buf.append("\t");

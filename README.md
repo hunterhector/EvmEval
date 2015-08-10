@@ -214,22 +214,16 @@ The software requires Java 1.8 and [Annobase](http://junaraki.net/software/annob
 You can see its usage with the following command:
 ```
 $ java -jar target/converter-1.0.1-jar-with-dependencies.jar
-Option                            Description
-------                            -----------
+Option                            Description              
+------                            -----------              
+-t <text dir>                     text directory           
+--te <text file extension>        text file extension      
+-a <annotation dir>               annotation directory     
 --ae <annotation file extension>  annotation file extension
--h                                help
--i <input dir>                    input directory
--o <output dir>                   output directory
---te <text file extension>        text file extension
+-o <output dir>                   output directory         
+-d                                whether to detag text    
+-h                                help                     
 ```
-
-## Assumptions of the software
-1. It assumes all text files and annotation files are put into the same folder
-2. The software assumes that the following two types of input files are given with the fixed file extensions.
- - text file (with tags): *.mpdf.xml
- - annotation file: *.rich_ere.xml
-   
-   However, you could change the them with --ae and --te extensions.
  
 Token File Maker
 ------------

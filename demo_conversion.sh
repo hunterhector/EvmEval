@@ -2,7 +2,7 @@
 
 #change this line to the LDC annotation data folder
 # NOTE: these two directory can be different in reality
-ldc_annotation_dir=data/conversion_demo/ere/
+ldc_text_dir=data/conversion_demo/ere/
 ldc_ann_dir=data/conversion_demo/ere/
 
 #change the following lines to your desired output folder

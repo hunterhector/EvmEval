@@ -1,10 +1,10 @@
-                                           
-                      
-                                                                
+<doc id="04debcc4da342dc971bdef4210fe468a">
+<headline> </headline>
+<post author="Dick here" datetime="2008-01-11T12:18:00" id="p1">
 Don't order anything online if Amtrak are delivering it - here's my experience.
 
 Ordered a 32" TV online, cheaper than Argos - who didn't have it in stock - but with the delivery charge the cost was the same.
 
 Advised that it would be delivered by Amtrak on Tuesday. Tuesday came and went, no sign. Phoned Amtrak on Wednesday, "we need a consignment number". Phoned online company and got it. Phoned Amtrak "a card was left on Tuesday as you weren't there" (no it wasn't of course), and "we're not allowed to leave it with a neighbour". Arranged for another delivery on Saturday. Arrived home yesterday - it had been delivered next door yesterday, with a card saying this was their first attempt at delivery... What a bunch of jokers.
-       
-      
+</post>
+</doc>

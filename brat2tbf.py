@@ -371,7 +371,7 @@ def get_text_bound_2_token_mapping(token_file):
     is_first_line = True
     for tokenLine in token_file:
         # We assume no whitespaces within fields.
-        fields = tokenLine.rstrip().split()
+        fields = tokenLine.rstrip().split("\t")
         if len(fields) <= token_offset_fields[1]:
             if is_first_line:
                 # The first one might just be a header.

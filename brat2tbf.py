@@ -12,6 +12,7 @@ import logging
 import sys
 import os
 import errno
+import re
 
 bratSpanMarker = "T"
 bratEventMarker = "E"
@@ -230,7 +231,6 @@ def parse_annotation_file(file_path, token_dir, of):
     if os.path.isfile(file_path) and os.path.isfile(token_path):
         f = open(file_path)
         token_file = open(token_path)
-        # text_id = os.path.splitext(os.path.basename(f.name))[0]
         text_id = rchop(os.path.basename(f.name), brat_annotation_ext)
         logger.debug("Document id is " + text_id)
         read_all_anno(f)
@@ -239,7 +239,9 @@ def parse_annotation_file(file_path, token_dir, of):
         text_bound_id_2_token_id = get_text_bound_2_token_mapping(token_file)
 
         eids = events.keys()
-        eids.sort(key=lambda x: int(x[1:]))
+        eids.sort(key=natural_order)
+
+        eid2sorted_tokens = {}
 
         # write begin of document
         of.write(outputBodMarker + " " + text_id + "\n")
@@ -253,16 +255,17 @@ def parse_annotation_file(file_path, token_dir, of):
                 if "Realis" in att:
                     realis_status = att["Realis"][1]
             text_bound = text_bounds[text_bound_id]
-            spans = text_bound[1]
 
             if text_bound_id not in text_bound_id_2_token_id:
-                logger.warning("Cannot find corresponding token for text bound [%s] - [%s] in document [%s]"% 
-                        (text_bound_id, text_bound[2], text_id))
+                logger.warning("Cannot find corresponding token for text bound [%s] - [%s] in document [%s]" %
+                               (text_bound_id, text_bound[2], text_id))
                 logger.warning("The corresponding text bound will be ignored")
                 continue
 
-            token_ids = text_bound_id_2_token_id[text_bound_id]
+            token_ids = sorted(text_bound_id_2_token_id[text_bound_id], key=natural_order)
             text = text_bound[2]
+
+            eid2sorted_tokens[eid] = tuple(token_ids)  # make it a tuple to be hashable
 
             of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
                 engine_id, text_id, eid, join_list(token_ids, tokenJoiner),
@@ -277,7 +280,7 @@ def parse_annotation_file(file_path, token_dir, of):
                             relation[2]))
             else:
                 logger.debug("Resolving coreference")
-                resolved_coref_chains = resolve_transitive_closure(relations)
+                resolved_coref_chains = resolve_transitive_closure_and_duplicates(relations, eid2sorted_tokens)
                 for chain in resolved_coref_chains:
                     of.write("%s%s\t%s%s\t%s\n" % (
                         outputRelationMarker, rel_name, coreference_cluster_prefix, chain[0], ",".join(chain[1])))
@@ -303,26 +306,15 @@ def transitive_merge(clusters):
         for j in range(i + 1, len(clusters)):
             if len(clusters[i].intersection(clusters[j])) != 0:
                 union = clusters[i].union(clusters[j])
-                # logger.debug("Intersection is ")
-                # logger.debug(clusters[i].intersection(clusters[j]))
-                # logger.debug("Union is")
-                # logger.debug(union)
-                # logger.debug("Found merging point")
                 merged_clusters.append(union)
                 merged_i = i
                 merged_j = j
-                found = True
                 break
         else:
             continue
         break
 
-    # logger.debug(merged_i)
-
     if merged_i != -1:
-        # logger.debug("Now is ")
-        # logger.debug(merged_clusters)
-        # logger.debug("Add the rest")
         merged_clusters.extend(clusters[: merged_i])
         merged_clusters.extend(clusters[merged_i + 1: merged_j])
         merged_clusters.extend(clusters[merged_j + 1:])
@@ -332,16 +324,27 @@ def transitive_merge(clusters):
     return merged_clusters
 
 
-def resolve_transitive_closure(coref_relations):
+def natural_order(key):
+    convert = lambda text: int(text) if text.isdigit() else text
+    return [convert(c) for c in re.split('([0-9]+)', key)]
+
+
+def resolve_transitive_closure_and_duplicates(coref_relations, eid2sorted_tokens):
+    """
+    Resolve
+    :param coref_relations: Raw coreference relation string read from annotation file.
+    :param eid2sorted_tokens: Map from event id to a list of sorted tokens.
+    :return:
+    """
     clusters = []
 
     for coref_rel in coref_relations:
         mention1 = coref_rel[1]
         mention2 = coref_rel[2]
-        for cluster in clusters:
-            if mention1 in cluster or mention2 in cluster:
-                cluster.add(mention1)
-                cluster.add(mention2)
+        for raw_cluster_mentions in clusters:
+            if mention1 in raw_cluster_mentions or mention2 in raw_cluster_mentions:
+                raw_cluster_mentions.add(mention1)
+                raw_cluster_mentions.add(mention2)
                 break
         else:
             new_cluster = {mention1, mention2}
@@ -354,11 +357,22 @@ def resolve_transitive_closure(coref_relations):
             break
         clusters = merged
 
-    # add some cluster id
+    # add some cluster id and check for mention span duplicates
     clusters_with_id = []
     id = 0
-    for cluster in clusters:
-        clusters_with_id.append((id, cluster))
+
+    for raw_cluster_mentions in clusters:
+        cluster_span_control = set()
+        deduplicated_cluster_mentions = []
+        for mention in raw_cluster_mentions:
+            span = eid2sorted_tokens[mention]
+            if span not in cluster_span_control:
+                deduplicated_cluster_mentions.append(mention)
+            else:
+                logger.warning("Removing duplicated annotations from annotation file: [%s]" % mention)
+            cluster_span_control.add(span)
+
+        clusters_with_id.append((id, deduplicated_cluster_mentions))
         id += 1
 
     return clusters_with_id
@@ -383,12 +397,7 @@ def get_text_bound_2_token_mapping(token_file):
         is_first_line = False
 
         # Important! we need to make sure that which offsets we are based on.
-        token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)
-
-        # if annotation_on_source:
-        # token_span = (int(fields[2]), int(fields[3]) + 1)
-        # else:
-        # token_span = (int(fields[4]), int(fields[5]) + 1)
+        token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]))
 
         # One token maps to multiple text bound is possible
         for text_bound_id in find_corresponding_text_bound(token_span):
@@ -398,14 +407,17 @@ def get_text_bound_2_token_mapping(token_file):
     return text_bound_id_2_token_id
 
 
+# TODO this is a worst possible search ...
 def find_corresponding_text_bound(token_span):
     text_bound_ids = []
+
     for text_bound_id, text_bound in text_bounds.iteritems():
         for ann_span in text_bound[1]:
             if covers(ann_span, token_span):
                 text_bound_ids.append(text_bound_id)
             elif covers(token_span, ann_span):
                 text_bound_ids.append(text_bound_id)
+
     return text_bound_ids
 
 
@@ -426,14 +438,16 @@ def parse_span(all_span_str):
 
 def parse_text_bound(fields):
     if len(fields) != 3:
-        logger.error("Incorrect number of fields in a text bound annotation, the process will try to continue but you should check the ann input.")
+        logger.error(
+            "Incorrect number of fields in a text bound annotation, the process will try "
+            "to continue but you should check the ann input.")
         logger.error(fields)
     tid = fields[0]
     type_span = fields[1].split(" ", 1)
     tb_type = type_span[0]
     spans = parse_span(type_span[1])
     if len(fields) < 3:
-        return tid, (tb_type, spans, "-") # partial hack to avoid incorrect field problem.
+        return tid, (tb_type, spans, "-")  # partial hack to avoid incorrect field problem.
     text = fields[2]
     return tid, (tb_type, spans, text)
 

@@ -29,7 +29,7 @@ coreference_relation_name = "Coreference"  # mark coreference
 conll_bod_marker = "#begin document"
 conll_eod_marker = "#end document"
 
-default_token_file_ext = ".txt.tab"
+default_token_file_ext = ".tab"
 default_token_offset_fields = [2, 3]
 
 # run this on an annotation to confirm
@@ -113,9 +113,9 @@ def main():
     read_all_doc(sf)
 
     validation_success = True
-    while True:
-        if not validate(eval_mode, token_dir,
-                        token_offset_fields, args.token_table_extension):
+    while has_next_doc():
+        if not validate_next(eval_mode, token_dir,
+                             token_offset_fields, args.token_table_extension):
             validation_success = False
             break
 
@@ -124,6 +124,8 @@ def main():
     if not validation_success:
         logger.error("Validation failed.")
         logger.error("Please fix the warnings/errors.")
+    else:
+        logger.info("Validation did not find obvious errors.")
 
     logger.info("Validation Finished.")
 
@@ -294,13 +296,10 @@ def get_eid_2_sorted_token_map(mention_table):
     return event_mention_id_2_sorted_tokens
 
 
-def validate(eval_mode, token_dir, token_offset_fields, token_file_ext):
+def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
     global total_mentions
 
-    if has_next_doc():
-        res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
-    else:
-        return False
+    res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
 
     invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
 
@@ -312,10 +311,6 @@ def validate(eval_mode, token_dir, token_offset_fields, token_file_ext):
             gl, eval_mode, invisible_ids)
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         all_possible_types.add(gold_attributes[0])
-
-    # if mention_span_duplicate_with_same_type(gold_mention_table):
-    #     logger.error("Mentions with same type cannot have same span")
-    #     return False
 
     total_mentions += len(gold_mention_table)
 
@@ -329,15 +324,17 @@ def validate(eval_mode, token_dir, token_offset_fields, token_file_ext):
             clusters[cluster_id] = set(relation[2])
             cluster_id += 1
         else:
-            logger.error("Relation [%s] is not recognized, this task only takes [%s]", relation[0],
-                         coreference_relation_name)
+            logger.warning("Relation [%s] is not recognized, this task only takes [%s]", relation[0],
+                           coreference_relation_name)
             pass
     if transitive_not_resolved(clusters):
         logger.error("Coreference transitive closure is not resolved! Please resolve before submitting.")
+        logger.error("Problem was found in file %s" % doc_id)
 
     for cluster_id, cluster in clusters.iteritems():
         if within_cluster_span_duplicate(cluster, get_eid_2_sorted_token_map(gold_mention_table)):
             logger.error("Please remove span duplicates before submitting")
+            logger.error("Problem was found in file %s" % doc_id)
             return False
 
     return True
@@ -349,26 +346,6 @@ def check_token(id2token_map, gold_mention_table):
         for tid in spans:
             if tid not in id2token_map:
                 logger.error("Token Id [%s] is not in the given token map" % tid)
-
-
-# def mention_span_duplicate_with_same_type(system_mention_table):
-#     span_type_map = {}
-#
-#     mention_type_attribute_index = attribute_names.index("mention_type")
-#
-#     for mention in system_mention_table:
-#         tokens = tuple(sorted(mention[0], key=natural_order))
-#         mention_type = mention[1][mention_type_attribute_index]
-#         span_type = (tokens, mention_type)
-#         mention_str = "Mention : %s, Type : %s, Span : %s" % (mention[2], mention_type, ",".join(tokens))
-#         if span_type in span_type_map:
-#             logger.error("The following mentions share the same span and same type.")
-#             logger.error(mention_str)
-#             logger.error(span_type_map[span_type])
-#             return True
-#         span_type_map[span_type] = mention_str
-#
-#     return False
 
 
 def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):

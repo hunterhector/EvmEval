@@ -736,8 +736,6 @@ def compute_token_overlap_score(g_tokens, s_tokens):
     if total_overlap == 0:
         return 0
 
-    # alternatively : return total_overlap / (glength + slength)
-
     prec = total_overlap / slength
     recall = total_overlap / glength
 
@@ -1010,7 +1008,6 @@ def select_best_conll_score(system_id, doc_id):
     Compute the best CoNLL average score from the possible mappings.
     :param system_id: The id of the system being evaluated
     :param doc_id: doc id being evaluated
-    :param coref_out: The path to output the best score report
     :return: The best CoNLL average score
     """
     gold_file_basename = ConllConverter.generate_temp_conll_file_base(Config.temp_gold_conll_file_name, system_id,

@@ -88,7 +88,7 @@ read the scoring documentation for more details.
 3. If specified, it will generate temporary conll format files, and use the conll reference-scorer to produce coreference scores
 
 ### *Usage*
-	usage: scorer_v1.3.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
+	usage: scorer_vX.X.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
                           [-o OUTPUT] [-c COREF] -t TOKEN_PATH [-of OFFSET_FIELD]
                           [-te TOKEN_TABLE_EXTENSION] [-b]
 
@@ -121,6 +121,8 @@ Event mention scorer, which conducts token based scoring, system and gold standa
       -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
                             any extension appended after docid of token table
                             files. Default is [.txt.tab]
+      -ct COREFERENCE_THRESHOLD, --coreference_threshold COREFERENCE_THRESHOLD
+                            Threshold for coreference mention mapping                            
       -b, --debug           turn debug mode on
 
 validator.py

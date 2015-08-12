@@ -11,6 +11,12 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.6:
+# 1. Because there are too many double annotation, now such ambiguity are resolved arbitrarily:
+#    a. For mention scoring, the system mention is mapped to a gold mention greedily.
+#    b. The coreference evaluation relies on the mapping produced by mention mapping at mention type level. This means
+#        that a system mention can only be mapped to a gold mention when their mention type matches.
+
 # Change log v1.5:
 # 1. Given that the CoNLL scorer only score exact matched mentions, we convert input format.
 #    to a simplified form. We produce a mention mappings and feed to the scorer.
@@ -52,7 +58,6 @@ import heapq
 import itertools
 import re
 import subprocess
-import copy
 import glob
 import shutil
 
@@ -110,6 +115,8 @@ class Config:
     skipped_scores = {"ceafm"}
 
     token_miss_msg = "Token ID [%s] not found in token list, the score file provided is incorrect."
+
+    coref_criteria = ((0, "mention_type"),)
 
 
 class EvalMethod:
@@ -189,6 +196,17 @@ def create_parent_dir(p):
             raise
 
 
+def remove_conll_tmp():
+    try:
+        # Remove temp files in the directory first.
+        for temp_conll_file in glob.glob(Config.conll_tmp_marker + "/" + Config.conll_tmp_marker + "*"):
+            os.remove(temp_conll_file)
+        # Remove the directory itself.
+        os.rmdir(Config.conll_tmp_marker)
+    except OSError as _:
+        pass
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Event mention scorer, which conducts token based "
@@ -225,8 +243,7 @@ def main():
     if args.debug:
         stream_handler.setLevel(logging.DEBUG)
         logger.setLevel(logging.DEBUG)
-        MutableConfig.remove_conll_tmp = False
-        logger.debug("Entered debug mode, temporary files will not be deleted")
+        logger.debug("Entered debug mode.")
     else:
         stream_handler.setLevel(logging.INFO)
         logger.setLevel(logging.INFO)
@@ -238,7 +255,7 @@ def main():
         logger.info("Evaluation output will be saved at %s" % out_path)
     else:
         mention_eval_out = sys.stdout
-        logger.info("Evaluation output at standard out")
+        logger.info("Evaluation output at standard out.")
 
     if os.path.isfile(args.gold):
         gf = open(args.gold)
@@ -248,8 +265,10 @@ def main():
 
     if args.coref is not None:
         logger.info("CoNLL script output will be output at " + args.coref)
-        if not os.path.exists(Config.conll_tmp_marker):
-            os.makedirs(Config.conll_tmp_marker)
+        if os.path.exists(Config.conll_tmp_marker):
+            # Clean up the directory to avoid scoring errors.
+            remove_conll_tmp()
+        os.makedirs(Config.conll_tmp_marker)
 
     if os.path.isfile(args.system):
         sf = open(args.system)
@@ -279,9 +298,13 @@ def main():
         except ValueError as _:
             logger.error("Token offset argument should be two integer with comma in between, i.e. 2,3")
 
+    # Read all documents.
     read_all_doc(gf, sf)
 
+    # Take all attribute combinations, which will be used to produce scores.
     attribute_comb = get_attr_combinations(Config.attribute_names)
+
+    logger.info("Coreference mentions need to match %s before consideration" % Config.coref_criteria[0][1])
 
     while True:
         if not evaluate(token_dir, args.coref, attribute_comb,
@@ -303,14 +326,7 @@ def main():
 
     # Delete temp directory if empty.
     if MutableConfig.remove_conll_tmp:
-        try:
-            # Remove temp files in the directory first.
-            for temp_conll_file in glob.glob(Config.conll_tmp_marker + "/" + Config.conll_tmp_marker + "*"):
-                os.remove(temp_conll_file)
-            # Remove the directory itself.
-            os.rmdir(Config.conll_tmp_marker)
-        except OSError as _:
-            pass
+        remove_conll_tmp()
 
     logger.info("Evaluation Done.")
 
@@ -531,12 +547,14 @@ def compute_f1(p, r):
 
 def read_all_doc(gf, sf):
     """
-    Read all the documents, collect the document ids that are shared by both
-    gold and system. It will populate the gold_docs and system_docs, stored
-    as map from doc id to raw annotation strings.
+    Read all the documents, collect the document ids that are shared by both gold and system. It will populate the
+    gold_docs and system_docs, stored as map from doc id to raw annotation strings.
 
-    The document ids considered to be scored are those presented in the gold
-    documents
+    The document ids considered to be scored are those presented in the gold documents.
+
+    TODO
+    This is not particularly optimized and assumes the system response and gold response file can be fit into memory.
+
     :param gf: Gold standard file
     :param sf:  System response file
     :return:
@@ -735,6 +753,8 @@ def get_attr_combinations(attr_names):
     comb = []
     for L in range(1, len(attribute_names_with_id) + 1):
         comb.extend(itertools.combinations(attribute_names_with_id, L))
+    logger.debug("Will score on the following attribute combinations : ")
+    logger.debug(", ".join([str(x) for x in comb]))
     return comb
 
 
@@ -764,39 +784,11 @@ def write_if_provided(diff_out, text):
         diff_out.write(text)
 
 
-def prepare_write_schedule(gold_mention_table, system_mention_table, assigned_gold_2_system_mapping):
-    """
-    Sort the mapping according to the system mentions order
-    :param gold_mention_table:
-    :param system_mention_table:
-    :param assigned_gold_2_system_mapping:
-    :return:
-    """
-    schedule = []
-    system_mapped_markers = [False] * len(system_mention_table)
-    for gold_index, _ in enumerate(gold_mention_table):
-        mapped_system_indices_and_scores = assigned_gold_2_system_mapping[gold_index]
-        if len(mapped_system_indices_and_scores) == 0:
-            schedule.append((gold_index, -1, -1))
-            continue
-        mapped_system_sorted_by_index = sorted(mapped_system_indices_and_scores, key=lambda t: t[1])
-        for system_index, score in mapped_system_sorted_by_index:
-            schedule.append((gold_index, system_index, score))
-            system_mapped_markers[system_index] = True
-
-    for system_index, m in enumerate(system_mapped_markers):
-        if not m:
-            schedule.append((-1, system_index, -1))
-
-    return schedule
-
-
 def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_mapping, gold_mention_table,
                                    system_mention_table, diff_out):
-    schedule = prepare_write_schedule(gold_mention_table, system_mention_table, assigned_gold_2_system_mapping)
     write_if_provided(diff_out, Config.bod_marker + " " + doc_id + "\n")
 
-    for gold_index, system_index, score in schedule:
+    for gold_index, (system_index, score) in enumerate(assigned_gold_2_system_mapping):
         score_str = "%.2f" % score if gold_index >= 0 and system_index >= 0 else "-"
 
         gold_info = "-"
@@ -814,62 +806,44 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
 
 
-def generate_all_system_branches(mapped_system_mentions):
-    list_of_one_to_one_mappings = []
-    first_mapping = {}
-    list_of_one_to_one_mappings.append(first_mapping)
-    for system_id, mapped_gold_ids in mapped_system_mentions.iteritems():
-        do_branch = len(mapped_gold_ids) > 1
-        additional_one_to_one_mappings = []
+def get_tp_greedy(all_attribute_combinations, gold2system_scores, gold_mention_table, system_mention_table, doc_id):
+    # For mention only and attribute augmented true positives.
+    tp = 0.0  # span only true positive
+    attribute_based_tps = [0.0] * len(all_attribute_combinations)  # attribute based true positive
 
-        # branch multiplication for every case from multiple gold to a system
-        for mapping in list_of_one_to_one_mappings:
-            if do_branch:
-                for mapped_gold_id in mapped_gold_ids[1:]:
-                    mapping_branch = copy.deepcopy(mapping)
-                    mapping_branch[system_id] = mapped_gold_id
-                    additional_one_to_one_mappings.append(mapping_branch)
-            mapping[system_id] = mapped_gold_ids[0]
-        list_of_one_to_one_mappings.extend(additional_one_to_one_mappings)
-    return list_of_one_to_one_mappings
+    # For mention only and attribute augmented true positives.
+    greedy_all_attributed_mapping = [[None] * len(gold_mention_table) for _ in
+                                     xrange(len(all_attribute_combinations))]
+    greedy_mention_only_mapping = [None] * len(gold_mention_table)
 
+    # Record already mapped system index for each case.
+    mapped_system = set()
+    mapped_system_with_attributes = [set() for _ in xrange(len(all_attribute_combinations))]
 
-def unify_system_mapping(gold_2_system_many_2_many_mapping, system_mapping_choice):
-    gold_2_system_one_2_many_mapping = [[] for _ in xrange(len(gold_2_system_many_2_many_mapping))]
-    for gold_index, mapped_system_indices_and_scores in enumerate(
-            gold_2_system_many_2_many_mapping):
+    for gold_index, mapped_system_indices_and_scores in enumerate(gold2system_scores):
         for system_index, score in mapped_system_indices_and_scores:
-            if system_mapping_choice[system_index] == gold_index:
-                gold_2_system_one_2_many_mapping[gold_index].append((system_index, score))
-    return gold_2_system_one_2_many_mapping
-
-
-def get_tp(all_attribute_combinations, gold_2_system_one_2_many_mapping, gold_mention_table, system_mention_table,
-           doc_id):
-    tp = 0.0
-    attribute_based_tps = [0.0] * len(all_attribute_combinations)
-
-    logger.debug("Calculating scores for the following mapping")
-    logger.debug(gold_2_system_one_2_many_mapping)
-
-    for gold_index, mapped_system_indices_and_scores in enumerate(
-            gold_2_system_one_2_many_mapping):
-        if len(mapped_system_indices_and_scores) > 0:
-            max_mapping_score = mapped_system_indices_and_scores[0][1]
-            tp += max_mapping_score
+            if system_index not in mapped_system:
+                tp += score
+                greedy_mention_only_mapping[gold_index] = (system_index, score)
+                mapped_system.add(system_index)
+                break
 
         gold_attrs = gold_mention_table[gold_index][1]
 
+        # For each attribute combination.
         for attr_comb_index, attr_comb in enumerate(all_attribute_combinations):
+            # Find the first one that matches the attributes.
             for system_index, score in mapped_system_indices_and_scores:
                 system_attrs = system_mention_table[system_index][1]
-                if attribute_based_match(attr_comb, gold_attrs, system_attrs, doc_id):
-                    attribute_based_tps[attr_comb_index] += score
-                    break
-
-    logger.debug("Number of true positive %.2f" % tp)
-
-    return tp, attribute_based_tps
+                # Check whether already assigned.
+                if system_index not in mapped_system_with_attributes[attr_comb_index]:
+                    # Check attribute matches.
+                    if attribute_based_match(attr_comb, gold_attrs, system_attrs, doc_id):
+                        attribute_based_tps[attr_comb_index] += score
+                        greedy_all_attributed_mapping[attr_comb_index][gold_index] = (system_index, score)
+                        mapped_system_with_attributes[attr_comb_index].add(system_index)
+                        break
+    return tp, attribute_based_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping
 
 
 def get_or_terminate(dictionary, key, error_msg):
@@ -887,10 +861,22 @@ def terminate_with_error(msg):
 
 def evaluate(token_dir, coref_out, all_attribute_combinations,
              token_offset_fields, token_file_ext, diff_out):
+    """
+    Conduct the main evaluation steps.
+    :param token_dir:
+    :param coref_out:
+    :param all_attribute_combinations:
+    :param token_offset_fields:
+    :param token_file_ext:
+    :param diff_out:
+    :return:
+    """
     if EvalState.has_next_doc():
         res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
     else:
         return False
+
+    logger.info("Evaluating Document %s" % doc_id)
 
     eval_mode = MutableConfig.eval_mode
 
@@ -906,6 +892,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     system_mention_table = []
     gold_mention_table = []
 
+    logger.debug("Reading gold and response mentions.")
     for sl in s_mention_lines:
         sys_mention_id, system_spans, system_attributes = parse_line(
             sl, eval_mode, invisible_ids)
@@ -919,19 +906,13 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         EvalState.all_possible_types.add(gold_attributes[0])
 
-    # if mention_span_duplicate_with_same_type(system_mention_table):
-    #     logger.error("Mentions with same type cannot have same span")
-    #     terminate_with_error()
-
-    # Store list of mappings with the score as a priority queue
-    # score is stored using negative for easy sorting
+    # Store list of mappings with the score as a priority queue. Score is stored using negative for easy sorting.
     all_gold_system_mapping_scores = []
 
     # Debug purpose printing.
     print_score_matrix = False
 
-    print gold_mention_table
-
+    logger.debug("Computing overlap scores.")
     for system_index, (system_spans, system_attributes,
                        sys_mention_id) in enumerate(system_mention_table):
         if print_score_matrix:
@@ -948,62 +929,49 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
             if overlap > 0:
                 # maintaining a max heap based on overlap score
-                heapq.heappush(
-                    all_gold_system_mapping_scores,
-                    (-overlap, system_index, index))
+                heapq.heappush(all_gold_system_mapping_scores, (-overlap, system_index, index))
         if print_score_matrix:
             print
 
+    # A map from the system to the gold mentions that it can map to.
     mapped_system_mentions = {}
 
-    # a list system index and the mapping score for each gold
+    # A list for each gold mention, records the system index and the mapping score that can be mapped to it, sorted.
     gold2system_many_2_many_mapping = [[] for _ in xrange(len(g_mention_lines))]
 
     while len(all_gold_system_mapping_scores) != 0:
-        neg_mapping_score, mapping_system_index, mapping_gold_index = \
-            heapq.heappop(all_gold_system_mapping_scores)
+        neg_mapping_score, mapping_system_index, mapping_gold_index = heapq.heappop(all_gold_system_mapping_scores)
         gold2system_many_2_many_mapping[mapping_gold_index].append((mapping_system_index, -neg_mapping_score))
         add_to_multi_map(mapped_system_mentions, mapping_system_index, mapping_gold_index)
 
-    # list of possible gold mention that a system can map to, one at a time
-    system_2_gold_one_2_one_mappings = generate_all_system_branches(mapped_system_mentions)
-
-    # list of all possible mappings that satisfy the following:
-    # 1. gold can mapped to multiple systems
-    # 2. system can be mapped to only one gold
-    all_possible_gold2system_one_2_many_mappings = []
-    for system2gold_mapping in system_2_gold_one_2_one_mappings:
-        all_possible_gold2system_one_2_many_mappings.append(
-            unify_system_mapping(gold2system_many_2_many_mapping, system2gold_mapping))
-
-    best_tp = 0
-    best_attribute_based_tps = [0] * len(all_attribute_combinations)
-    best_all_att_mapping = all_possible_gold2system_one_2_many_mappings[0]  # initialize with the first one
-
-    for possible_gold2system_one_2_many_mapping in all_possible_gold2system_one_2_many_mappings:
-        temp_tp, temp_abtps = get_tp(all_attribute_combinations, possible_gold2system_one_2_many_mapping,
-                                     gold_mention_table, system_mention_table, doc_id)
-        if temp_tp > best_tp:
-            best_tp = temp_tp
-        for att_comb_index, abtp in enumerate(temp_abtps):
-            if abtp > best_attribute_based_tps[att_comb_index]:
-                best_attribute_based_tps[att_comb_index] = abtp
-                if att_comb_index == len(temp_abtps) - 1:
-                    best_all_att_mapping = possible_gold2system_one_2_many_mapping
+    greedy_tp, greed_attribute_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping = get_tp_greedy(
+        all_attribute_combinations,
+        gold2system_many_2_many_mapping,
+        gold_mention_table, system_mention_table,
+        doc_id)
 
     if diff_out is not None:
-        write_gold_and_system_mappings(doc_id, system_id, best_all_att_mapping, gold_mention_table,
+        write_gold_and_system_mappings(doc_id, system_id, greedy_all_attributed_mapping[-1], gold_mention_table,
                                        system_mention_table, diff_out)
 
     attribute_based_fps = [0.0] * len(all_attribute_combinations)
-    for attribute_comb_index, abtp in enumerate(best_attribute_based_tps):
+    for attribute_comb_index, abtp in enumerate(greed_attribute_tps):
         attribute_based_fps[attribute_comb_index] = len(s_mention_lines) - abtp
 
-    # unmapped system mentions and the partial scores are considered as false positive
-    fp = len(s_mention_lines) - best_tp
+    # Unmapped system mentions and the partial scores are considered as false positive
+    fp = len(s_mention_lines) - greedy_tp
 
-    EvalState.doc_mention_scores.append((best_tp, fp, zip(best_attribute_based_tps, attribute_based_fps),
+    EvalState.doc_mention_scores.append((greedy_tp, fp, zip(greed_attribute_tps, attribute_based_fps),
                                          len(g_mention_lines), len(s_mention_lines), doc_id))
+
+    # Select a computed mapping, we currently select the mapping based on mention type. This means that in order to get
+    # coreference right, your mention type should also be right.
+    selected_one2one_mapping = None
+    for attribute_comb_index, attribute_comb in enumerate(all_attribute_combinations):
+        if attribute_comb == Config.coref_criteria:
+            selected_one2one_mapping = greedy_all_attributed_mapping[attribute_comb_index]
+            logger.debug("Select mapping that matches criteria [%s]" % (Config.coref_criteria[0][1]))
+            break
 
     if coref_out is not None:
         logger.debug("Start preparing coreference files.")
@@ -1013,26 +981,19 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
         sys_corefs = [coref for coref in [parse_relation(l) for l in s_relation_lines] if
                       coref[0] == Config.coreference_relation_name]
-        # all one to one mappings
-        all_gold_2_system_one_2_one_mapping = generate_all_one_to_one_mapping(
-            all_possible_gold2system_one_2_many_mappings)
 
         # prepare conll style coreference input for this document
         conll_converter = ConllConverter(id2token, doc_id, system_id)
-        conll_converter.prepare_conll_lines(gold_corefs, sys_corefs,
-                                            gold_mention_table, system_mention_table,
-                                            all_gold_2_system_one_2_one_mapping)
+        conll_converter.prepare_conll_lines(gold_corefs, sys_corefs, gold_mention_table, system_mention_table,
+                                            [selected_one2one_mapping])
 
         both_empty = len(gold_corefs) == 0 and len(sys_corefs) == 0
 
-        logger.debug("Both gold and system contains no corefs for [%s]." % doc_id)
-
-        # calculate the score for this document
+        # Calculate the score for this document.
         if both_empty:
+            logger.debug("Both gold and system contains no corefs for [%s]." % doc_id)
             logger.warning(
-                "There is no coreferece in both gold and system for Document [%s] "
-                "MUC will generate 0 score for this document, final result might be inaccurate." % (
-                    doc_id))
+                "There is no coreferece in both gold and system for Document [%s] " % doc_id)
 
         EvalState.doc_coref_scores.append((select_best_conll_score(system_id, doc_id), doc_id))
 
@@ -1041,7 +1002,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
 def select_best_conll_score(system_id, doc_id):
     """
-    Compute the best CoNLL average score from the possible mappings
+    Compute the best CoNLL average score from the possible mappings.
     :param system_id: The id of the system being evaluated
     :param doc_id: doc id being evaluated
     :param coref_out: The path to output the best score report
@@ -1064,7 +1025,7 @@ def select_best_conll_score(system_id, doc_id):
     best_conll_average = 0
     best_conll_mapping = None
 
-    logger.info("Selecting mapping using Conll Evaluation reference-coreference-scorers")
+    logger.debug("Selecting mapping using Conll Evaluation reference-coreference-scorers")
 
     for gold_file in gold_files:
         suffix = gold_file[len(gold_file_basename):]
@@ -1178,39 +1139,6 @@ def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
             span_map[span] = eid
 
 
-def generate_all_one_to_one_mapping(all_possible_gold_2_system_one_2_many_mappings):
-    """
-    Flatten the gold 2 system mapping to list of one to one mappings
-    :param all_possible_gold_2_system_one_2_many_mappings:
-    :return:
-    """
-
-    # create the mapping with one empty mapping inside
-    all_one_2_one_mapping = []
-
-    for one_2_many_mapping in all_possible_gold_2_system_one_2_many_mappings:
-        flatten_one_2_one_mapping = [[]]
-
-        for mapping_item in one_2_many_mapping:
-            # branches multiplier
-            new_branches = []
-            if len(mapping_item) > 1:
-                for system_index_score in mapping_item[1:]:
-                    for old_mapping in flatten_one_2_one_mapping:
-                        new_branch = copy.deepcopy(old_mapping)
-                        new_branch.append(system_index_score)
-                        new_branches.append(new_branch)
-
-            for old_mapping in flatten_one_2_one_mapping:
-                new_element = mapping_item[0] if len(mapping_item) > 0 else None
-                old_mapping.append(new_element)
-            flatten_one_2_one_mapping.extend(new_branches)
-
-        all_one_2_one_mapping.extend(flatten_one_2_one_mapping)
-
-    return all_one_2_one_mapping
-
-
 class ConllConverter:
     def __init__(self, id2token, doc_id, system_id):
         """
@@ -1226,10 +1154,19 @@ class ConllConverter:
     @staticmethod
     def create_aligned_tables(gold_2_system_one_2_one_mapping, gold_mention_table, system_mention_table,
                               threshold=1.0):
+        """
+        Create coreference alignment for gold and system mentions by taking an alignment threshold.
+        :param gold_2_system_one_2_one_mapping: Gold index to (system index, score) mapping, indexed by gold index.
+        :param gold_mention_table:
+        :param system_mention_table:
+        :param threshold:
+        :return:
+        """
         aligned_gold_table = []
         aligned_system_table = []
 
-        non_singleton_system_mentions = set()
+        unaligned_system_mentions = set()
+
         for gold_index, system_aligned in enumerate(gold_2_system_one_2_one_mapping):
             if system_aligned is None:
                 # Indicate nothing aligned with this gold mention.
@@ -1241,11 +1178,11 @@ class ConllConverter:
                 aligned_gold_table.append((gold_mention_table[gold_index][0], gold_mention_table[gold_index][2]))
                 aligned_system_table.append(
                     (system_mention_table[system_index][0], system_mention_table[system_index][2]))
-                non_singleton_system_mentions.add(system_index)
+                unaligned_system_mentions.add(system_index)
 
         for system_index, system_mention in enumerate(system_mention_table):
-            # Add system singletons.
-            if system_index not in non_singleton_system_mentions:
+            # Add unaligned system mentions.
+            if system_index not in unaligned_system_mentions:
                 aligned_gold_table.append(None)
                 aligned_system_table.append(
                     (system_mention_table[system_index][0], system_mention_table[system_index][2]))

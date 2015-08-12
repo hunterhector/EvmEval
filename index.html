@@ -104,7 +104,7 @@
 <ol>
 <li>A simple converter from Brat annotation tool format to CMU detection format</li>
 <li>A scorer that can score system performance based on CMU detection format</li>
-<li>A visualizer that use Embedded Brat Viewer</li>
+<li>A visualizer that use Embedded Brat Viewer (not actively maintained)</li>
 </ol>
 
 <p>To use the software, we need to prepare the CMU format annotation file from the Brat annotation output using "brat2tbf.py". The scorer can then take 2 documents in such format, one as gold standard data, one as system output. The scorer also need the token files produced by the tokenizer. The usage of these codes are described below. </p>
@@ -177,7 +177,7 @@ b. A web based comparison output using Brat's embedded visualization (-v option)
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Usage</em>
 </h3>
 
-<pre><code>usage: scorer_v1.3.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
+<pre><code>usage: scorer_vX.X.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
                       [-o OUTPUT] [-c COREF] -t TOKEN_PATH [-of OFFSET_FIELD]
                       [-te TOKEN_TABLE_EXTENSION] [-b]
 </code></pre>
@@ -210,6 +210,8 @@ Optional Arguments:
   -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
                         any extension appended after docid of token table
                         files. Default is [.txt.tab]
+  -ct COREFERENCE_THRESHOLD, --coreference_threshold COREFERENCE_THRESHOLD
+                        Threshold for coreference mention mapping                            
   -b, --debug           turn debug mode on
 </code></pre>
 
@@ -315,36 +317,29 @@ Optional arguments:
 <h2>
 <a id="ldc-xml-to-brat-converter" class="anchor" href="#ldc-xml-to-brat-converter" aria-hidden="true"><span class="octicon octicon-link"></span></a>LDC-XML-to-Brat converter</h2>
 
-<p>This software converts LDC's XML format for the <a href="http://cairo.lti.cs.cmu.edu/kbp/2015/event/">TAC KBP 2015 Event Nugget task</a> to the <a href="http://brat.nlplab.org/standoff.html">Brat format</a>.  More specifically, it converts LDC's event nuggets and coreferences to events and coreference links that can be viewed via the Brat web interface.  Brat annotation configurations for output are available at directory <code>src/main/resources/</code>.
-The software is located at the direcotry: ldc-xml-to-brat-converter, you can built it from source using Maven.  You can also find a pre-compiled version in the bin/g directory</p>
+<p>This software converts LDC's XML format for the <a href="http://cairo.lti.cs.cmu.edu/kbp/2015/event/">TAC KBP 2015 Event Nugget task</a> to the <a href="http://brat.nlplab.org/standoff.html">Brat format</a>.  More specifically, it converts LDC's event nuggets and coreferences to events and coreference links that can be viewed via the Brat web interface.  Brat annotation configurations for output are available at directory <code>src/main/resources/</code>.</p>
 
-<h3>
-<a id="requirements-of-the-converter" class="anchor" href="#requirements-of-the-converter" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Requirements of the converter</em>
-</h3>
+<h2>
+<a id="requirements-of-the-software" class="anchor" href="#requirements-of-the-software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements of the software</h2>
 
-<p>The software requires Java 1.8. A precompiled jar locates at bin directory. To compile the project from source you will also need Maven 2.7+.</p>
+<p>The software requires Java 1.8 and <a href="http://junaraki.net/software/annobase">Annobase</a> 1.0.1.  See <code>pom.xml</code> for other dependencies.</p>
 
-<h3>
-<a id="how-to-run-it" class="anchor" href="#how-to-run-it" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>How to run it</em>
-</h3>
+<h2>
+<a id="how-to-run-the-software" class="anchor" href="#how-to-run-the-software" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to run the software</h2>
 
-<pre><code>$ java LdcXmlToBratConverter
-Option           Description     
-------           -----------     
--h               help            
--i &lt;input dir&gt;   input directory 
--o &lt;output dir&gt;  output directory
+<p>You can see its usage with the following command:</p>
+
+<pre><code>$ java -jar target/converter-1.0.1-jar-with-dependencies.jar
+Option                            Description              
+------                            -----------              
+-t &lt;text dir&gt;                     text directory           
+--te &lt;text file extension&gt;        text file extension      
+-a &lt;annotation dir&gt;               annotation directory     
+--ae &lt;annotation file extension&gt;  annotation file extension
+-o &lt;output dir&gt;                   output directory         
+-d                                whether to detag text    
+-h                                help                     
 </code></pre>
-
-<h3>
-<a id="assumptions-of-the-software" class="anchor" href="#assumptions-of-the-software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assumptions of the software</h3>
-
-<p>The software assumes that the following two types of input files are given with the fixed file extensions.</p>
-
-<ul>
-<li>text file (with tags): *.mpdf.xml</li>
-<li>annotation file: *.rich_ere.xml</li>
-</ul>
 
 <h2>
 <a id="token-file-maker" class="anchor" href="#token-file-maker" aria-hidden="true"><span class="octicon octicon-link"></span></a>Token File Maker</h2>

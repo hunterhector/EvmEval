@@ -811,7 +811,7 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
 
 
-def get_tp_greedy_real(all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
+def get_tp_greedy(all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
                        system_mention_table, doc_id):
     tp = 0.0  # span only true positive
     attribute_based_tps = [0.0] * len(all_attribute_combinations)  # attribute based true positive
@@ -847,46 +847,6 @@ def get_tp_greedy_real(all_gold_system_mapping_scores, all_attribute_combination
                     greedy_all_attributed_mapping[attr_comb_index][gold_index] = (system_index, score)
                     mapped_system_with_attributes[attr_comb_index].add(system_index)
                     mapped_gold_with_attributes[attr_comb_index].add(gold_index)
-    return tp, attribute_based_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping
-
-
-def get_tp_greedy(all_attribute_combinations, gold2system_scores, gold_mention_table, system_mention_table, doc_id):
-    # For mention only and attribute augmented true positives.
-    tp = 0.0  # span only true positive
-    attribute_based_tps = [0.0] * len(all_attribute_combinations)  # attribute based true positive
-
-    # For mention only and attribute augmented true positives.
-    greedy_all_attributed_mapping = [[(-1, 0)] * len(gold_mention_table) for _ in
-                                     xrange(len(all_attribute_combinations))]
-    greedy_mention_only_mapping = [(-1, 0)] * len(gold_mention_table)
-
-    # Record already mapped system index for each case.
-    mapped_system = set()
-    mapped_system_with_attributes = [set() for _ in xrange(len(all_attribute_combinations))]
-
-    for gold_index, mapped_system_indices_and_scores in enumerate(gold2system_scores):
-        for system_index, score in mapped_system_indices_and_scores:
-            if system_index not in mapped_system:
-                tp += score
-                greedy_mention_only_mapping[gold_index] = (system_index, score)
-                mapped_system.add(system_index)
-                break
-
-        gold_attrs = gold_mention_table[gold_index][1]
-
-        # For each attribute combination.
-        for attr_comb_index, attr_comb in enumerate(all_attribute_combinations):
-            # Find the first one that matches the attributes.
-            for system_index, score in mapped_system_indices_and_scores:
-                system_attrs = system_mention_table[system_index][1]
-                # Check whether already assigned.
-                if system_index not in mapped_system_with_attributes[attr_comb_index]:
-                    # Check attribute matches.
-                    if attribute_based_match(attr_comb, gold_attrs, system_attrs, doc_id):
-                        attribute_based_tps[attr_comb_index] += score
-                        greedy_all_attributed_mapping[attr_comb_index][gold_index] = (system_index, score)
-                        mapped_system_with_attributes[attr_comb_index].add(system_index)
-                        break
     return tp, attribute_based_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping
 
 
@@ -977,7 +937,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         if print_score_matrix:
             print
 
-    greedy_tp, greed_attribute_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping = get_tp_greedy_real(
+    greedy_tp, greed_attribute_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping = get_tp_greedy(
         all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
         system_mention_table, doc_id)
 

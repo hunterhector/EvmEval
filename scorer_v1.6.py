@@ -76,7 +76,7 @@ class Config:
     def __init__(self):
         pass
 
-    # TBF file formats
+    # TBF file formats.
     comment_marker = "#"
     bod_marker = "#BeginOfDocument"  # mark begin of a document
     eod_marker = "#EndOfDocument"  # mark end of a document
@@ -95,10 +95,10 @@ class Config:
     invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
                        'your', 'her', 'our', 'who', 'what', 'where', 'when'}
 
-    # attribute names
+    # Attribute names.
     attribute_names = ["mention_type", "realis_status"]
 
-    # Conll related settings
+    # Conll related settings.
     conll_bod_marker = "#begin document"
     conll_eod_marker = "#end document"
 
@@ -144,6 +144,7 @@ class MutableConfig:
 
     remove_conll_tmp = True
     eval_mode = EvalMethod.Token
+    coref_mention_threshold = 1.0
 
 
 class EvalState:
@@ -236,6 +237,7 @@ def main():
              "Default is [%s]" % Config.default_token_file_ext)
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
+    parser.add_argument("-ct", "--coreference_threshold", type=float, help="Threshold for coreference mention mapping")
 
     parser.set_defaults(debug=False)
     args = parser.parse_args()
@@ -297,6 +299,9 @@ def main():
             token_offset_fields = [int(x) for x in args.offset_field.split(",")]
         except ValueError as _:
             logger.error("Token offset argument should be two integer with comma in between, i.e. 2,3")
+
+    if args.coreference_threshold is not None:
+        MutableConfig.coref_mention_threshold = args.coreference_threshold
 
     # Read all documents.
     read_all_doc(gf, sf)
@@ -958,7 +963,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     for attribute_comb_index, abtp in enumerate(greed_attribute_tps):
         attribute_based_fps[attribute_comb_index] = len(s_mention_lines) - abtp
 
-    # Unmapped system mentions and the partial scores are considered as false positive
+    # Unmapped system mentions and the partial scores are considered as false positive.
     fp = len(s_mention_lines) - greedy_tp
 
     EvalState.doc_mention_scores.append((greedy_tp, fp, zip(greed_attribute_tps, attribute_based_fps),
@@ -985,7 +990,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         # prepare conll style coreference input for this document
         conll_converter = ConllConverter(id2token, doc_id, system_id)
         conll_converter.prepare_conll_lines(gold_corefs, sys_corefs, gold_mention_table, system_mention_table,
-                                            [selected_one2one_mapping])
+                                            [selected_one2one_mapping], MutableConfig.coref_mention_threshold)
 
         both_empty = len(gold_corefs) == 0 and len(sys_corefs) == 0
 
@@ -1013,7 +1018,7 @@ def select_best_conll_score(system_id, doc_id):
     system_file_basename = ConllConverter.generate_temp_conll_file_base(Config.temp_sys_conll_file_name, system_id,
                                                                         doc_id)
 
-    # get all generated pairs for this system and doc
+    # Get all generated pairs for this system and doc.
     gold_files = glob.glob(gold_file_basename + "*")
     system_files = glob.glob(system_file_basename + "*")
 
@@ -1052,7 +1057,7 @@ def select_best_conll_score(system_id, doc_id):
     logger.debug("Best CoNLL average for doc [%s] is %.2f, with mapping file [%s]" % (
         doc_id, best_conll_average, best_conll_mapping))
 
-    # Copy the best mapping
+    # Copy the best mapping.
     if best_conll_mapping is not None:
         write_mode = 'w' if EvalState.claim_write_flag() else 'a'
         shutil.copyfileobj(open(best_conll_mapping[0], 'r'), open(Config.conll_gold_best_mapped, write_mode))
@@ -1218,7 +1223,7 @@ class ConllConverter:
                                                                                   gold_mention_table,
                                                                                   system_mention_table,
                                                                                   threshold)
-
+            logger.debug("Preparing CoNLL files using mapping threhold %.2f" % threshold)
             gold_conll_file_out = open(
                 "%s_%d" % (
                     self.generate_temp_conll_file_base(Config.temp_gold_conll_file_name, self.system_id, self.doc_id),

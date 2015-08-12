@@ -112,7 +112,9 @@ class Config:
 
     conll_scorer_executable = "./reference-coreference-scorers-8.01/scorer.pl"
 
-    skipped_scores = {"ceafm"}
+    skipped_metrics = {"ceafm"}
+
+    zero_for_empty_metrics = {"muc"}
 
     token_miss_msg = "Token ID [%s] not found in token list, the score file provided is incorrect."
 
@@ -469,7 +471,7 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
         conll_average = 0.0
         for metric, score in EvalState.overall_coref_scores.iteritems():
             formatter = "Metric : %s\tScore : %.2f\n"
-            if metric in Config.skipped_scores:
+            if metric in Config.skipped_metrics:
                 formatter = "Metric : %s\tScore : %.2f *\n"
             mention_eval_out.write(formatter % (metric, score))
             conll_average += score
@@ -998,24 +1000,27 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         conll_converter.prepare_conll_lines(gold_corefs, sys_corefs, gold_mention_table, system_mention_table,
                                             [selected_one2one_mapping], MutableConfig.coref_mention_threshold)
 
-        both_empty = len(gold_corefs) == 0 and len(sys_corefs) == 0
+        both_all_singleton = len(gold_corefs) == 0 and len(sys_corefs) == 0
 
         # Calculate the score for this document.
-        if both_empty:
+        if both_all_singleton:
             logger.debug("Both gold and system contains no corefs for [%s]." % doc_id)
             logger.warning(
-                "There is no coreferece in both gold and system for Document [%s] " % doc_id)
+                "There is no coreferece links in both gold and system for Document [%s] " % doc_id)
+            logger.warning("MUC score will 0, hence will not be included for this document's average. "
+                           "This will not affect the final benchmark result.")
 
-        EvalState.doc_coref_scores.append((select_best_conll_score(system_id, doc_id), doc_id))
+        EvalState.doc_coref_scores.append((select_best_conll_score(system_id, doc_id, both_all_singleton), doc_id))
 
     return True
 
 
-def select_best_conll_score(system_id, doc_id):
+def select_best_conll_score(system_id, doc_id, both_all_singleton=False):
     """
     Compute the best CoNLL average score from the possible mappings.
     :param system_id: The id of the system being evaluated
     :param doc_id: doc id being evaluated
+    :param both_all_singleton : Whether both the seystem and the gold standard are both singletons.
     :return: The best CoNLL average score
     """
     gold_file_basename = ConllConverter.generate_temp_conll_file_base(Config.temp_gold_conll_file_name, system_id,
@@ -1050,10 +1055,16 @@ def select_best_conll_score(system_id, doc_id):
         conll_scores = get_conll_scores(temp_score_path)
 
         conll_average = 0
+        num_metrics_used = 0
         for metric, f1 in conll_scores.iteritems():
-            if metric not in Config.skipped_scores:
+            if metric in Config.skipped_metrics:
+                pass
+            elif both_all_singleton and metric in Config.zero_for_empty_metrics:
+                pass
+            else:
                 conll_average += f1
-        conll_average /= 4
+                num_metrics_used += 1
+        conll_average /= num_metrics_used
 
         if conll_average > best_conll_average:
             best_conll_average = conll_average

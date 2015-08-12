@@ -235,9 +235,9 @@ def main():
         "-te", "--token_table_extension",
         help="any extension appended after docid of token table files. "
              "Default is [%s]" % Config.default_token_file_ext)
+    parser.add_argument("-ct", "--coreference_threshold", type=float, help="Threshold for coreference mention mapping")
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
-    parser.add_argument("-ct", "--coreference_threshold", type=float, help="Threshold for coreference mention mapping")
 
     parser.set_defaults(debug=False)
     args = parser.parse_args()
@@ -815,9 +815,9 @@ def get_tp_greedy(all_attribute_combinations, gold2system_scores, gold_mention_t
     attribute_based_tps = [0.0] * len(all_attribute_combinations)  # attribute based true positive
 
     # For mention only and attribute augmented true positives.
-    greedy_all_attributed_mapping = [[None] * len(gold_mention_table) for _ in
+    greedy_all_attributed_mapping = [[(-1, 0)] * len(gold_mention_table) for _ in
                                      xrange(len(all_attribute_combinations))]
-    greedy_mention_only_mapping = [None] * len(gold_mention_table)
+    greedy_mention_only_mapping = [(-1, 0)] * len(gold_mention_table)
 
     # Record already mapped system index for each case.
     mapped_system = set()
@@ -953,6 +953,10 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         gold_mention_table, system_mention_table,
         doc_id)
 
+    # print greedy_mention_only_mapping
+    #
+    # print greedy_all_attributed_mapping
+
     if diff_out is not None:
         write_gold_and_system_mappings(doc_id, system_id, greedy_all_attributed_mapping[-1], gold_mention_table,
                                        system_mention_table, diff_out)
@@ -975,6 +979,10 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
             selected_one2one_mapping = greedy_all_attributed_mapping[attribute_comb_index]
             logger.debug("Select mapping that matches criteria [%s]" % (Config.coref_criteria[0][1]))
             break
+
+    if selected_one2one_mapping is None:
+        # In case when we don't do attribute scoring.
+        selected_one2one_mapping = greedy_mention_only_mapping
 
     if coref_out is not None:
         logger.debug("Start preparing coreference files.")

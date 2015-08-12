@@ -811,6 +811,45 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
 
 
+def get_tp_greedy_real(all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
+                       system_mention_table, doc_id):
+    tp = 0.0  # span only true positive
+    attribute_based_tps = [0.0] * len(all_attribute_combinations)  # attribute based true positive
+
+    # For mention only and attribute augmented true positives.
+    greedy_all_attributed_mapping = [[(-1, 0)] * len(gold_mention_table) for _ in
+                                     xrange(len(all_attribute_combinations))]
+    greedy_mention_only_mapping = [(-1, 0)] * len(gold_mention_table)
+
+    # Record already mapped system index for each case.
+    mapped_system = set()
+    mapped_gold = set()
+    mapped_system_with_attributes = [set() for _ in xrange(len(all_attribute_combinations))]
+    mapped_gold_with_attributes = [set() for _ in xrange(len(all_attribute_combinations))]
+
+    while len(all_gold_system_mapping_scores) != 0:
+        neg_mapping_score, system_index, gold_index = heapq.heappop(all_gold_system_mapping_scores)
+        score = -neg_mapping_score
+        if system_index not in mapped_system and gold_index not in mapped_gold:
+            tp += score
+            greedy_mention_only_mapping[gold_index] = (system_index, score)
+            mapped_system.add(system_index)
+            mapped_gold.add(gold_index)
+
+        # For each attribute combination.
+        gold_attrs = gold_mention_table[gold_index][1]
+        system_attrs = system_mention_table[system_index][1]
+        for attr_comb_index, attr_comb in enumerate(all_attribute_combinations):
+            if system_index not in mapped_system_with_attributes[attr_comb_index] and gold_index not in \
+                    mapped_gold_with_attributes[attr_comb_index]:
+                if attribute_based_match(attr_comb, gold_attrs, system_attrs, doc_id):
+                    attribute_based_tps[attr_comb_index] += score
+                    greedy_all_attributed_mapping[attr_comb_index][gold_index] = (system_index, score)
+                    mapped_system_with_attributes[attr_comb_index].add(system_index)
+                    mapped_gold_with_attributes[attr_comb_index].add(gold_index)
+    return tp, attribute_based_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping
+
+
 def get_tp_greedy(all_attribute_combinations, gold2system_scores, gold_mention_table, system_mention_table, doc_id):
     # For mention only and attribute augmented true positives.
     tp = 0.0  # span only true positive
@@ -938,26 +977,9 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         if print_score_matrix:
             print
 
-    # A map from the system to the gold mentions that it can map to.
-    mapped_system_mentions = {}
-
-    # A list for each gold mention, records the system index and the mapping score that can be mapped to it, sorted.
-    gold2system_many_2_many_mapping = [[] for _ in xrange(len(g_mention_lines))]
-
-    while len(all_gold_system_mapping_scores) != 0:
-        neg_mapping_score, mapping_system_index, mapping_gold_index = heapq.heappop(all_gold_system_mapping_scores)
-        gold2system_many_2_many_mapping[mapping_gold_index].append((mapping_system_index, -neg_mapping_score))
-        add_to_multi_map(mapped_system_mentions, mapping_system_index, mapping_gold_index)
-
-    greedy_tp, greed_attribute_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping = get_tp_greedy(
-        all_attribute_combinations,
-        gold2system_many_2_many_mapping,
-        gold_mention_table, system_mention_table,
-        doc_id)
-
-    # print greedy_mention_only_mapping
-    #
-    # print greedy_all_attributed_mapping
+    greedy_tp, greed_attribute_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping = get_tp_greedy_real(
+        all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
+        system_mention_table, doc_id)
 
     if diff_out is not None:
         write_gold_and_system_mappings(doc_id, system_id, greedy_all_attributed_mapping[-1], gold_mention_table,

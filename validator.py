@@ -7,7 +7,7 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
-#TODO Check +1 why, see if duplicated mentions can output a file path
+
 import argparse
 import logging
 import sys
@@ -162,7 +162,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
             id2token_map[token_id] = token
 
             try:
-                token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)
+                token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]))
                 id2span_map[token_id] = token_span
             except ValueError as e:
                 logger.error("Cannot find field %s and %s in token file %s in the following line: " % (token_offset_fields[0], token_offset_fields[1], token_file))

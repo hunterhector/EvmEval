@@ -524,7 +524,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
             id2token[token_id] = token
 
             try:
-                token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]) + 1)
+                token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]))
                 id2span[token_id] = token_span
             except ValueError as _:
                 logger.error("Token file is wrong at for file [%s], cannot parse token span here." % g_file_name)

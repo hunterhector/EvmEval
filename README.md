@@ -136,6 +136,10 @@ The validator check whether the supplied "tbf" file follows assumed structure .
     Event mention scorer, which conducts token based scoring, system and gold
     standard files should follows the token-based format.
     
+    The validator will exit at status 255 if any errors are found, validation
+    logs will be written at the same directory of the validator with "errlog"
+    as extension.
+    
     optional arguments:
       -h, --help            show this help message and exit
       -s SYSTEM, --system SYSTEM

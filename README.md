@@ -127,7 +127,7 @@ Event mention scorer, which conducts token based scoring, system and gold standa
 
 validator.py
 --------------------
-The validator check whether the supplied "tbf" file follows assumed structure . 
+The validator check whether the supplied "tbf" file follows assumed structure . The validator will exit at status 255 if any errors are found, validation logs will be written at the same directory of the validator with "errlog" as extension.
 
 ### *Usage*
     validator.py [-h] -s SYSTEM -t TOKEN_PATH [-of OFFSET_FIELD]

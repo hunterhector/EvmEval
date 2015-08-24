@@ -1,0 +1,18 @@
+#BeginOfDocument example
+system1	example	E1	t3,t5	way made	Contact_Communicate	Actual
+system1	example	E2	t6	home	Contact_Communicate	Actual
+@Coref	C1	E1,E2
+@Coref	C2	E2,E3
+@Coref	C1	E4,E5
+@Coref	C1	E5,E6
+@Coref	C1	E7,E8
+@Coref	C1	E9,E10
+@Coref	C1	E11,E12
+@Coref	C1	E13,E14
+@Coref	C1	E15,E16
+@Coref	C1	E17,E18
+@Coref	C1	E19,E20
+@Coref	C1	E21,E22
+@Coref	C1	E23,E24
+@Coref	C1	E26,E25
+#EndOfDocument

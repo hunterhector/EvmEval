@@ -1,0 +1,3 @@
+system1	example	E1	t3,t5	way made	Contact_Communicate	Actual
+system1	example	E2	t6	home	Contact_Communicate	Actual
+@Coreference	C1	E1,E2

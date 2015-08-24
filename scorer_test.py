@@ -208,6 +208,9 @@ class ScorerTest:
 
                 # Reason file stores the reason why this tbf is wrong, must be matched to pass this test.
                 reason_file = os.path.join(wrong_format_test_dir, basename + Config.format_test_suffix)
+                if not os.path.exists(reason_file):
+                    continue
+
                 command_run = run_scorer(reference_gold, f, token_path, scoring_out, conll_out)
                 self.logger.info("Test command is  : %s" % command_run)
 

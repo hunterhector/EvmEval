@@ -218,7 +218,7 @@ Optional Arguments:
 <h2>
 <a id="validatorpy" class="anchor" href="#validatorpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>validator.py</h2>
 
-<p>The validator check whether the supplied "tbf" file follows assumed structure . </p>
+<p>The validator check whether the supplied "tbf" file follows assumed structure . The validator will exit at status 255 if any errors are found, validation logs will be written at the same directory of the validator with "errlog" as extension.</p>
 
 <h3>
 <a id="usage-1" class="anchor" href="#usage-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Usage</em>
@@ -229,6 +229,10 @@ Optional Arguments:
 
 Event mention scorer, which conducts token based scoring, system and gold
 standard files should follows the token-based format.
+
+The validator will exit at status 255 if any errors are found, validation
+logs will be written at the same directory of the validator with "errlog"
+as extension.
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -322,7 +326,7 @@ Optional arguments:
 <h2>
 <a id="requirements-of-the-software" class="anchor" href="#requirements-of-the-software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements of the software</h2>
 
-<p>The software requires Java 1.8 and <a href="http://junaraki.net/software/annobase">Annobase</a> 1.0.1.  See <code>pom.xml</code> for other dependencies.</p>
+<p>The software requires Java 1.8.  See <code>pom.xml</code> for other dependencies.</p>
 
 <h2>
 <a id="how-to-run-the-software" class="anchor" href="#how-to-run-the-software" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to run the software</h2>

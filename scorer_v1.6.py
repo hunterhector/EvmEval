@@ -11,6 +11,10 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.6.1:
+# 1. Minor change that remove punctuation and whitespace in attribute types and lowercase all types to make system
+# output more flexible.
+
 # Change log v1.6:
 # 1. Because there are too many double annotation, now such ambiguity are resolved arbitrarily:
 #    a. For mention scoring, the system mention is mapped to a gold mention greedily.
@@ -60,6 +64,7 @@ import re
 import subprocess
 import glob
 import shutil
+import string
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -95,7 +100,7 @@ class Config:
     invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
                        'your', 'her', 'our', 'who', 'what', 'where', 'when'}
 
-    # Attribute names.
+    # Attribute names, these are the same order as they appear in submissions.
     attribute_names = ["mention_type", "realis_status"]
 
     # Conll related settings.
@@ -119,6 +124,8 @@ class Config:
     token_miss_msg = "Token ID [%s] not found in token list, the score file provided is incorrect."
 
     coref_criteria = ((0, "mention_type"),)
+
+    canonicalize_types = True
 
 
 class EvalMethod:
@@ -682,7 +689,15 @@ def parse_token_based_line(l, invisible_ids):
     if len(fields) < 5 + num_attributes:
         terminate_with_error("System line has too few fields:\n ---> %s" % l)
     token_ids = parse_token_ids(fields[3], invisible_ids)
-    return fields[2], token_ids, fields[5:]
+    attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
+    return fields[2], token_ids, attributes
+
+
+def canonicalize_string(str):
+    if Config.canonicalize_types:
+        return "".join(str.lower().split()).translate(string.maketrans("", ""), string.punctuation)
+    else:
+        return str
 
 
 def parse_line(l, eval_mode, invisible_ids):
@@ -812,7 +827,7 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
 
 
 def get_tp_greedy(all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
-                       system_mention_table, doc_id):
+                  system_mention_table, doc_id):
     tp = 0.0  # span only true positive
     attribute_based_tps = [0.0] * len(all_attribute_combinations)  # attribute based true positive
 
@@ -898,15 +913,12 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
     logger.debug("Reading gold and response mentions.")
     for sl in s_mention_lines:
-        sys_mention_id, system_spans, system_attributes = parse_line(
-            sl, eval_mode, invisible_ids)
-        system_mention_table.append(
-            (system_spans, system_attributes, sys_mention_id))
+        sys_mention_id, system_spans, system_attributes = parse_line(sl, eval_mode, invisible_ids)
+        system_mention_table.append((system_spans, system_attributes, sys_mention_id))
         EvalState.all_possible_types.add(system_attributes[0])
 
     for gl in g_mention_lines:
-        gold_mention_id, gold_spans, gold_attributes = parse_line(
-            gl, eval_mode, invisible_ids)
+        gold_mention_id, gold_spans, gold_attributes = parse_line(gl, eval_mode, invisible_ids)
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         EvalState.all_possible_types.add(gold_attributes[0])
 
@@ -917,14 +929,11 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     print_score_matrix = False
 
     logger.debug("Computing overlap scores.")
-    for system_index, (system_spans, system_attributes,
-                       sys_mention_id) in enumerate(system_mention_table):
+    for system_index, (system_spans, system_attributes, sys_mention_id) in enumerate(system_mention_table):
         if print_score_matrix:
             print system_index,
-        for index, (gold_spans, gold_attributes, gold_mention_id) in enumerate(
-                gold_mention_table):
-            overlap = compute_overlap_score(gold_spans,
-                                            system_spans, eval_mode)
+        for index, (gold_spans, gold_attributes, gold_mention_id) in enumerate(gold_mention_table):
+            overlap = compute_overlap_score(gold_spans, system_spans, eval_mode)
             if len(gold_spans) == 0:
                 logger.warning("Found empty gold standard at doc : %s" % doc_id)
 

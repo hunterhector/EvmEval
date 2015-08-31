@@ -69,3 +69,4 @@ target/
 #tmp stuff
 *.tmp*
 *_tmp*
+*.errlog

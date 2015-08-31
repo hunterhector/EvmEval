@@ -219,16 +219,17 @@ The software requires Java 1.8.  See `pom.xml` for other dependencies.
 ## How to run the software
 You can see its usage with the following command:
 ```
-$ java -jar target/converter-1.0.1-jar-with-dependencies.jar
+$ java -jar target/converter-1.0.3-jar-with-dependencies.jar -h
 Option                            Description              
 ------                            -----------              
--t <text dir>                     text directory           
---te <text file extension>        text file extension      
--a <annotation dir>               annotation directory     
---ae <annotation file extension>  annotation file extension
--o <output dir>                   output directory         
--d                                whether to detag text    
--h                                help                     
+-a <annotation dir>               annotation directory       
+--ae <annotation file extension>  annotation file extension  
+-d                                whether to detag text      
+-h                                help                       
+-i <input mode>                   input mode ("event-nugget")
+-o <output dir>                   output directory           
+-t <text dir>                     text directory             
+--te <text file extension>        text file extension        
 ```
  
 Token File Maker

@@ -16,7 +16,7 @@ The software requires Java 1.8 and [Annobase](http://junaraki.net/software/annob
 ## How to run the software
 You can see its usage with the following command:
 ```
-$ java -jar target/converter-1.0.1-jar-with-dependencies.jar -h
+$ java -jar target/converter-1.0.3-jar-with-dependencies.jar -h
 Option                            Description              
 ------                            -----------              
 -a <annotation dir>               annotation directory       

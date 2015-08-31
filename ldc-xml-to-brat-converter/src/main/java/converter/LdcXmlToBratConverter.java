@@ -12,9 +12,10 @@ import net.junaraki.annobase.pipeline.AbstractPipeline;
 
 public class LdcXmlToBratConverter extends AbstractPipeline {
 
-  public LdcXmlToBratConverter(File annDir, String textFileExt, String annFileExt, boolean detagText) {
+  public LdcXmlToBratConverter(File annDir, String textFileExt, String annFileExt,
+          boolean detagText, String inputMode) {
     super();
-    reader = new LdcXmlReader(annDir, textFileExt, annFileExt, detagText);
+    reader = new LdcXmlReader(annDir, textFileExt, annFileExt, detagText, inputMode);
     writer = new BratWriter();
   }
 
@@ -32,12 +33,14 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
     OptionSpec<String> optOutputDir = parser.accepts("o", "output directory").withRequiredArg()
             .ofType(String.class).describedAs("output dir");
     OptionSpec<Void> optDetag = parser.accepts("d", "whether to detag text");
+    OptionSpec<String> optInputMode = parser.accepts("i", "input mode (\"event-nugget\")")
+            .withRequiredArg().ofType(String.class).describedAs("input mode");
 
     OptionSet options = null;
     try {
       options = parser.parse(args);
 
-      if (!options.hasOptions()) {
+      if (!options.hasOptions() || options.has("h")) {
         parser.printHelpOn(System.out);
         return;
       }
@@ -51,7 +54,14 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
     File annDir = new File(options.valueOf(optAnnDir));
     String annFileExt = options.valueOf(optAnnFileExt);
     boolean detagText = options.has(optDetag);
-    LdcXmlToBratConverter converter = new LdcXmlToBratConverter(annDir, textFileExt, annFileExt, detagText);
+    String inputMode = options.valueOf(optInputMode);
+    if (inputMode != null && !inputMode.equals(LdcXmlReader.INPUT_MODE_EVENT_NUGGET)) {
+      Logger.error(String.format("Invalid input mode: %s", inputMode));
+      return;
+    }
+
+    LdcXmlToBratConverter converter = new LdcXmlToBratConverter(annDir, textFileExt, annFileExt,
+            detagText, inputMode);
     String[] extensions = new String[] { textFileExt };
     List<File> inputFiles = converter.getReader().collect(textDir, extensions, false);
 
@@ -72,6 +82,8 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
     }
 
     converter.run(inputFiles, outputFiles);
+
+    Logger.info("Finished the conversion from LDC XML data to Brat data.");
   }
 
 }

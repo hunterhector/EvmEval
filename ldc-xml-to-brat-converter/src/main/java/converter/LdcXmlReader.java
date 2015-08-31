@@ -18,6 +18,9 @@ import net.junaraki.annobase.type.element.EventMention;
 
 public class LdcXmlReader extends AbstractReader {
 
+  /** For reading the event nugget data in LDC2015E73 V2 */
+  public static final String INPUT_MODE_EVENT_NUGGET = "event-nugget";
+
   /** An XML parser; input annotation files are given in the XML format */
   private SAXBuilder builder;
 
@@ -27,11 +30,15 @@ public class LdcXmlReader extends AbstractReader {
 
   private boolean detagText;
 
-  public LdcXmlReader(File annDir, String textFileExt, String annFileExt, boolean detagText) {
+  private String inputMode;
+
+  public LdcXmlReader(File annDir, String textFileExt, String annFileExt, boolean detagText,
+          String inputMode) {
     this.annDir = annDir;
     this.textFileExt = textFileExt;
     this.annFileExt = annFileExt;
     this.detagText = detagText;
+    this.inputMode = inputMode;
     builder = new SAXBuilder();
     builder.setDTDHandler(null);
   }
@@ -62,10 +69,11 @@ public class LdcXmlReader extends AbstractReader {
     Document doc = builder.build(file);
 
     Element rootElm = doc.getRootElement();
-    Element hoppersElm = rootElm.getChild("hoppers");
-    List<Element> hopperElms = hoppersElm.getChildren("hopper");
-
-    annotateEvents(annBase, hopperElms);
+    if (INPUT_MODE_EVENT_NUGGET.equals(inputMode)) {
+      annotateEventMentions(annBase, rootElm);
+    } else {
+      annotateEvents(annBase, rootElm.getChild("hoppers").getChildren("hopper"));
+    }
   }
 
   /**
@@ -79,14 +87,14 @@ public class LdcXmlReader extends AbstractReader {
       Event event = new Event(annBase);
       String eventIdStr = hopperElm.getAttributeValue("id");
       if (!eventIdStr.startsWith("h-") && StringUtils.isNumeric(eventIdStr.substring(2))) {
-        throw new RuntimeException(String.format("Invalid event id: %s", eventIdStr));
+        Logger.warn(String.format("Invalid event id: %s", eventIdStr));
       }
       int eventId = Integer.parseInt(eventIdStr.substring(2));
       event.setId(eventId);
       event.addToBase();
 
       // Extract event mentions belonging to this event.
-      List<EventMention> evms = annotateEventMentions(annBase, event, hopperElm);
+      List<EventMention> evms = annotateEventMentions(annBase, hopperElm);
       event.setEventMentions(evms);
       for (EventMention evm : evms) {
         evm.setEvent(event);
@@ -98,19 +106,17 @@ public class LdcXmlReader extends AbstractReader {
    * Annotates event mentions from the given event data structure.
    * 
    * @param annBase
-   * @param event
-   * @param hopperElm
+   * @param parentElm
    */
-  private List<EventMention> annotateEventMentions(AnnotationBase annBase, Event event,
-          Element hopperElm) {
+  private List<EventMention> annotateEventMentions(AnnotationBase annBase, Element parentElm) {
     List<EventMention> evms = new ArrayList<EventMention>();
 
     // Annotate event mentions.
-    for (Element evmElm : hopperElm.getChildren("event_mention")) {
+    for (Element evmElm : parentElm.getChildren("event_mention")) {
       // First annotate event mention, and then attach things to it.
       String evmIdStr = evmElm.getAttributeValue("id");
       if (!evmIdStr.startsWith("em-") && StringUtils.isNumeric(evmIdStr.substring(3))) {
-        throw new RuntimeException(String.format("Invalid event mention id: %s", evmIdStr));
+        Logger.warn(String.format("Invalid event mention id: %s", evmIdStr));
       }
       int evmId = Integer.parseInt(evmIdStr.substring(3));
       String type = WordUtils.capitalize(evmElm.getAttributeValue("type"));
@@ -186,8 +192,9 @@ public class LdcXmlReader extends AbstractReader {
 
       EventMention evm = annotateEventMention(annBase, begin, end, evmId, eventType, realis);
       if (!evmStr.equals(evm.getText().replace('\n', ' '))) {
-        Logger.warn(String.format("Invalid offset %d, %d of event mention [%s] for string [%s] at doc [%s]",
-                begin, end, evm.getText(), evmStr, annBase.getSourceDocument().getId()));
+        Logger.warn(String.format(
+                "Invalid offset %d, %d of event mention [%s] for string [%s] at doc [%s]", begin,
+                end, evm.getText(), evmStr, annBase.getSourceDocument().getId()));
       }
 
       evms.add(evm);

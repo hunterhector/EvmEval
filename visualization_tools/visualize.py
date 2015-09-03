@@ -17,6 +17,7 @@ import os
 import sys
 import argparse
 import logging
+import re
 
 PORT = 8000
 
@@ -31,9 +32,9 @@ wrong_status_suffix = "_wrong_status"
 realis_mismatch_attr = "realis_wrong"
 type_mismatch_attr = "type_wrong"
 
-token_file_ext = ".txt.tab"
-source_file_ext = ".tkn.txt"
-visualization_path = "visualization"
+token_file_ext = ".tab"
+source_file_ext = ".txt"
+visualization_path = "../visualization"
 visualization_json_data_subpath = "json"
 config_subpath = "config"
 span_subpath = "span"
@@ -50,7 +51,8 @@ token_dir = "."
 text_dir = "."
 
 doc_ids_to_score = []
-all_possible_types = set()
+all_possible_mention_types = set()
+all_possible_realis_types = set()
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -80,7 +82,7 @@ def main():
         "-t", "--tokenPath", help="Path to the directory containing the "
                                   "token mappings file", required=True)
     parser.add_argument(
-        "-x", "--text", help="Path to the directory containing the original text"
+        "-x", "--text", help="Path to the directory containing the original text", required=True
     )
 
     parser.add_argument("-v", "--visualization_html_path",
@@ -132,7 +134,7 @@ def main():
     validate()
     parse_mapping_file(open(args.comparison_output))
 
-    prepare_diff_setting(doc_ids_to_score, all_possible_types,
+    prepare_diff_setting(doc_ids_to_score, all_possible_mention_types, all_possible_realis_types,
                          os.path.join(visualization_path, visualization_json_data_subpath))
     start_server()
 
@@ -150,7 +152,8 @@ def validate():
         mkdirs(span_dir)
         logger.info("Generating Brat annotation at " + visualization_path)
     else:
-        logger.error("Visualization directory does not exists! Cannot do visualization")
+        logger.error("Visualization directory does not exists! Cannot do visualization. You could specify with -v.")
+        sys.exit(1)
 
 
 def mkdirs(p):
@@ -158,20 +161,19 @@ def mkdirs(p):
         os.makedirs(p)
 
 
-def prepare_diff_setting(all_doc_ids, all_mention_types, json_path):
+def prepare_diff_setting(all_doc_ids, all_mention_types, all_realis_types, json_path):
     doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), 'w')
     json.dump(all_doc_ids, doc_id_list_json_out)
 
     annotation_config_json_out = open(os.path.join(json_path, config_subpath, "annotation_config.json"), 'w')
-    json.dump(generate_mention_annotation_setting(all_mention_types), annotation_config_json_out,
-              annotation_config_json_out,
-              indent=4)
+    json.dump(generate_mention_annotation_setting(all_mention_types, all_realis_types),
+              annotation_config_json_out, indent=4)
 
     doc_id_list_json_out.close()
     annotation_config_json_out.close()
 
 
-def generate_mention_annotation_setting(all_mention_types):
+def generate_mention_annotation_setting(all_mention_types, all_realis_types):
     config = {}
     event_types = []
     for mention_type in all_mention_types:
@@ -194,18 +196,22 @@ def generate_mention_annotation_setting(all_mention_types):
         event_types.extend([perfect_event_type_setting, partial_match_event_type_setting, missing_event_type_setting,
                             incorrect_status_event_type_setting])
 
-    generic_type = {'type': 'Generic', 'values': {"Generic": {"glyph": "generic"}}, "bool": "Generic"}
-    other_type = {'type': 'Other', 'values': {"Other": {"glyph": "other"}}, "bool": "Other"}
-    actual_type = {'type': 'Actual', 'values': {"Generic": {"glyph": "actual"}}, "bool": "Actual"}
-    not_annotated_type = {'type': 'NOT_ANNOTATED', 'values': {"NOT_ANNOTATED": {"glyph": "N/A"}},
+    not_annotated_type = {'type': 'NOT_ANNOTATED',
+                          'values': {"NOT_ANNOTATED": {"glyph": "N/A"}},
                           "bool": "NOT_ANNOTATED"}
-
     realis_wrong = {'type': realis_mismatch_attr, 'values': {realis_mismatch_attr: {"glyph": " ★ "}},
                     "bool": realis_mismatch_attr}
     type_wrong = {'type': type_mismatch_attr, 'values': {type_mismatch_attr: {"glyph": " ✘ "}},
                   "bool": type_mismatch_attr}
 
-    event_attribute_types = [generic_type, other_type, actual_type, not_annotated_type, realis_wrong, type_wrong]
+    event_attribute_types = [not_annotated_type, realis_wrong, type_wrong]
+
+    for realis_type in all_realis_types:
+        type_name = realis_type.title()
+        realis_setting = {'type': realis_type,
+                          'values': {type_name: {"glyph": type_name}},
+                          "bool": type_name}
+        event_attribute_types.append(realis_setting)
 
     config["event_types"] = event_types
     config["event_attribute_types"] = event_attribute_types
@@ -249,25 +255,24 @@ def generate_diff_html(text, gold_annotations, system_annotations, token_map, as
     gold_realis_match_marker = [0] * len(gold_annotations)
     gold_type_match_marker = [0] * len(gold_annotations)
 
-    for gold_index, mapped_system_indices_and_scores in enumerate(
-            assigned_gold_2_system_mapping):
-
+    for gold_index, mapped_system_indices_and_scores in enumerate(assigned_gold_2_system_mapping):
         if len(mapped_system_indices_and_scores) > 0:
             for system_index, mapping_score in mapped_system_indices_and_scores:
                 system_mapping_score[system_index] = mapping_score
                 gold_mapping_score[gold_index] = mapping_score
 
-                if (system_annotations[system_index][2] ==
-                        gold_annotations[gold_index][2]):
+                if system_annotations[system_index][1][1] == gold_annotations[gold_index][1][1]:
                     system_realis_match_marker[system_index] = 1
                     gold_realis_match_marker[gold_index] = 1
 
-                if (system_annotations[system_index][1] ==
-                        gold_annotations[gold_index][1]):
+                if system_annotations[system_index][1][0] == gold_annotations[gold_index][1][0]:
                     system_type_match_marker[system_index] = 1
                     gold_type_match_marker[gold_index] = 1
         else:
             gold_mapping_score[gold_index] = 0
+
+    # print gold_type_match_marker
+    # sys.stdin.readline()
 
     gold_data = create_brat_json(text, gold_annotations, token_map, gold_mapping_score, gold_realis_match_marker,
                                  gold_type_match_marker)
@@ -348,8 +353,7 @@ def parse_token_annotation(token_based_annotations, token_map, text_span_id):
 
 def token_annotation_2_character_annotation(token_based_annotations, token_map):
     """
-    Convert a token based annotation into character based. Assuming token id in
-    't1, t2' format. Discontinuous annotations are handled
+    Convert a token based annotation into character based. Discontinuous annotations are handled
 
     :param token_based_annotations: Annotations in terms of tokens
     :param token_map: Token id to character span mapping
@@ -358,20 +362,27 @@ def token_annotation_2_character_annotation(token_based_annotations, token_map):
     spans = []
     last_id = -1
 
-    for sorted_token in sorted(token_based_annotations, key=lambda x: token_2_int_id(x)):
-        this_id = token_2_int_id(sorted_token)
+    for sorted_token in sorted(token_based_annotations, key=natural_key):
+        this_id = natural_key(sorted_token)
         if last_id == -1 or this_id != last_id + 1:
             spans.append([])
-        spans[-1].append(token_2_string_id(this_id))
-    return [[token_map[s[0]][0], token_map[s[-1]][1]] for s in spans]
+        spans[-1].append(sorted_token)
+    return [[token_map[s[0]][0], token_map[s[-1]][1] - 1] for s in spans]
 
+
+def natural_key(string_):
+    return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', string_)]
 
 def token_2_string_id(int_id):
-    return "t%d" % int_id
+    # return "t%d" % int_id
+    # Assuming token id in 't1, t2' format.
+    return "%d" % int_id
 
 
 def token_2_int_id(token_id):
-    return int(token_id[1:])
+    # Assuming token id in 't1, t2' format.
+    # return int(token_id[1:])
+    return int(token_id)
 
 
 def auto_find_id(id_record, key, prefix):
@@ -465,16 +476,22 @@ def parse_mapping(doc_id, doc_lines):
     sys_index = 0
     for l in doc_lines:
         sys_id, gold_fields, sys_fields, score = parse_mapping_line(l)
+        # print l
+        # print gold_fields, sys_fields, score
+        # sys.stdin.readline()
         if score != "-":
             assigned_gold_2_system_mapping[gold_index].append((sys_index, float(score)))
-            all_possible_types.add(gold_fields[2])
-            all_possible_types.add(gold_fields[3])
         if gold_fields[0] != "-":
             gold_annotations.append((gold_fields[1].split(token_joiner), gold_fields[2:], gold_fields[0]))
+            all_possible_mention_types.add(gold_fields[2])
+            all_possible_realis_types.add(gold_fields[3])
             gold_index += 1
         if sys_fields[0] != "-":
             system_annotations.append((sys_fields[1].split(token_joiner), sys_fields[2:], gold_fields[0]))
+            all_possible_mention_types.add(sys_fields[2])
+            all_possible_realis_types.add(sys_fields[3])
             sys_index += 1
+
     text = read_original_text(doc_id)
 
     prepare_diff_data(text, gold_annotations, system_annotations, token_map,

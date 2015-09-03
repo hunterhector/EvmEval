@@ -67,9 +67,11 @@ function generateClusterSurfaceName(coref, surfaceMap){
 }
 
 function setClusterList(goldCoref, sysCoref){
-    clusterOptions = getClusterNameList(goldCoref, sysCoref)
-    setSelectorOptions("left-cluster-selector", clusterOptions.goldNames)
-    setSelectorOptions("right-cluster-selector", clusterOptions.sysNames)
+    if (goldCoref && sysCoref){
+        clusterOptions = getClusterNameList(goldCoref, sysCoref)
+        setSelectorOptions("left-cluster-selector", clusterOptions.goldNames)
+        setSelectorOptions("right-cluster-selector", clusterOptions.sysNames)
+    }
 }
 
 function getSelectorText(selectorId){

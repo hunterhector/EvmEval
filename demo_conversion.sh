@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# This demo is based on LDC V1, see test_conversion for commands for V2
+
 #change this line to the LDC annotation data folder
 # NOTE: these two directory can be different in reality
 ldc_text_dir=data/conversion_demo/ere/

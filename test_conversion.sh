@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# This file demostrate how to run the end-to-end conversion procedures. There are two possible type of annotated data:
+# 1. Event Nugget only
+# 2. Nugget and hopper
+# 3. This file shows both conversion, user might just pick one of them for their specific use case.
 
 #change these lines to the LDC annotation data folder
 ldc_text_dir=data/private/LDC2015E73_TAC_KBP_2015_Event_Nugget_Training_Data_Annotation_V2/data/source

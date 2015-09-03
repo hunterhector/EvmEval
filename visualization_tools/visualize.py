@@ -34,7 +34,7 @@ type_mismatch_attr = "type_wrong"
 
 token_file_ext = ".tab"
 source_file_ext = ".txt"
-visualization_path = "../visualization"
+visualization_path = "visualization"
 visualization_json_data_subpath = "json"
 config_subpath = "config"
 span_subpath = "span"

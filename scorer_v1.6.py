@@ -951,6 +951,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         system_mention_table, doc_id)
 
     if diff_out is not None:
+        # Here if you change the mapping used, you will see what's wrong on different level!
         write_gold_and_system_mappings(doc_id, system_id, greedy_all_attributed_mapping[-1], gold_mention_table,
                                        system_mention_table, diff_out)
 

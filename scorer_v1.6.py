@@ -808,6 +808,8 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
                                    system_mention_table, diff_out):
     write_if_provided(diff_out, Config.bod_marker + " " + doc_id + "\n")
 
+    mapped_system_mentions = set()
+
     for gold_index, (system_index, score) in enumerate(assigned_gold_2_system_mapping):
         score_str = "%.2f" % score if gold_index >= 0 and system_index >= 0 else "-"
 
@@ -820,8 +822,15 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
         if system_index != -1:
             system_spans, system_attributes, sys_mention_id = system_mention_table[system_index]
             sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(system_spans), "\t".join(system_attributes))
+            mapped_system_mentions.add(system_index)
 
         write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, gold_info, sys_info, score_str))
+
+    # Write out system mentions that does not map to anything.
+    for system_index, (system_spans, system_attributes, sys_mention_id) in enumerate(system_mention_table):
+        if system_index not in mapped_system_mentions:
+            sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(system_spans), "\t".join(system_attributes))
+            write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, "-", sys_info, "-"))
 
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
 

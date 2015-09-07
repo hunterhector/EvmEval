@@ -271,13 +271,11 @@ def generate_diff_html(text, gold_annotations, system_annotations, token_map, as
         else:
             gold_mapping_score[gold_index] = 0
 
-    # print gold_type_match_marker
-    # sys.stdin.readline()
-
     gold_data = create_brat_json(text, gold_annotations, token_map, gold_mapping_score, gold_realis_match_marker,
                                  gold_type_match_marker)
     system_data = create_brat_json(text, system_annotations, token_map, system_mapping_score,
                                    system_realis_match_marker, system_type_match_marker)
+
     return gold_data, system_data
 
 
@@ -363,15 +361,23 @@ def token_annotation_2_character_annotation(token_based_annotations, token_map):
     last_id = -1
 
     for sorted_token in sorted(token_based_annotations, key=natural_key):
-        this_id = natural_key(sorted_token)
+        print sorted_token
+        sys.stdin.readline()
+        this_id = ''.join(str(x) for x in natural_key(sorted_token))
         if last_id == -1 or this_id != last_id + 1:
             spans.append([])
+            # if last_id != -1:
+            #     print "Adding %s to %s" % (this_id, last_id)
+            #     sys.stdin.readline()
+            # else:
+            #     print "Adding %s" % this_id
         spans[-1].append(sorted_token)
     return [[token_map[s[0]][0], token_map[s[-1]][1] - 1] for s in spans]
 
 
 def natural_key(string_):
     return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', string_)]
+
 
 def token_2_string_id(int_id):
     # return "t%d" % int_id

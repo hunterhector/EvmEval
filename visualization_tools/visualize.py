@@ -233,7 +233,7 @@ def start_server():
 
 def prepare_diff_data(text, gold_annotations, system_annotations, token_map, json_path, doc_id,
                       assigned_gold_2_system_mapping):
-    gold_data, system_data = generate_diff_html(text, gold_annotations, system_annotations, token_map,
+    gold_data, system_data = generate_diff_json(text, gold_annotations, system_annotations, token_map,
                                                 assigned_gold_2_system_mapping)
     # if "Conflict_Demonstrate" in json.dumps(system_data):
     # print system_data
@@ -245,7 +245,7 @@ def prepare_diff_data(text, gold_annotations, system_annotations, token_map, jso
     system_json_out.close()
 
 
-def generate_diff_html(text, gold_annotations, system_annotations, token_map, assigned_gold_2_system_mapping):
+def generate_diff_json(text, gold_annotations, system_annotations, token_map, assigned_gold_2_system_mapping):
     gold_mapping_score = [1] * len(gold_annotations)
     system_mapping_score = [0] * len(system_annotations)
 
@@ -467,7 +467,7 @@ def parse_mapping(doc_id, doc_lines):
 
     num_gold_mentions = 0
     for l in doc_lines:
-        sys_id, gold_fields, sys_fields, score = parse_mapping_line(l)
+        _, gold_fields, _, _ = parse_mapping_line(l)
         if gold_fields[0] != "-":
             num_gold_mentions += 1
 
@@ -477,18 +477,17 @@ def parse_mapping(doc_id, doc_lines):
     sys_index = 0
     for l in doc_lines:
         sys_id, gold_fields, sys_fields, score = parse_mapping_line(l)
-        # print l
-        # print gold_fields, sys_fields, score
-        # sys.stdin.readline()
+
         if score != "-":
             assigned_gold_2_system_mapping[gold_index].append((sys_index, float(score)))
+
         if gold_fields[0] != "-":
             gold_annotations.append((gold_fields[1].split(token_joiner), gold_fields[2:], gold_fields[0]))
             all_possible_mention_types.add(gold_fields[2])
             all_possible_realis_types.add(gold_fields[3])
             gold_index += 1
         if sys_fields[0] != "-":
-            system_annotations.append((sys_fields[1].split(token_joiner), sys_fields[2:], gold_fields[0]))
+            system_annotations.append((sys_fields[1].split(token_joiner), sys_fields[2:], sys_fields[0]))
             all_possible_mention_types.add(sys_fields[2])
             all_possible_realis_types.add(sys_fields[3])
             sys_index += 1

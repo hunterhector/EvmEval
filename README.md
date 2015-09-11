@@ -262,6 +262,9 @@ The visualize code represent mention differences in JSON, which is then passed t
 
 Recent changes make visualizing clusters possible by creating additional JSON object. When enabled, there will be a cluster selector on the webpage, one could select the cluster and all other event mentions will hide.
 
+### *A Note about visualization*
+The visualization mapping does not fully reflect the scoring process, it is just a mean to help compare the data. Note that there are up to 2^k different way of aligning the mentions, where k is the number of attributes. The input to the visualization system is the most basic mapping (span only). It need not capture the true mapping of mention type or realis status because several mapping options are identical in span only mapping, the visualization system simply choose whichever comes first.
+
 ### *Text Base Visualization*
 The text based Visualization can be generated using the "scorer.py", by supplying the "-d"
 argument. The format is straightforward, a text document is produced for comparison.

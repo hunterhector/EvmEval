@@ -6,8 +6,10 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Brat Embedded annotation comparison</title>
     <link rel="stylesheet" type="text/css" href="css/style-vis.css">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
     <script type="text/javascript" src="js/head.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/visualize_setup.js"></script>
     <script>
 		$(document).ready(
@@ -16,6 +18,42 @@
 		        fileChanged = true
                 toggleCluster()
                 syncScroll()
+
+                // Control resize.
+                var resize= $("#left-panel");
+                var containerWidth = $("#container").width();
+
+                $(resize).resizable({
+                      handles: 'e',
+                      minWidth: 120,
+                      resize: function(event, ui){
+                          var currentWidth = ui.size.width;
+
+                          // this accounts for padding in the panels +
+                          // borders, you could calculate this using jQuery
+                          var padding = 12;
+
+                          // this accounts for some lag in the ui.size value, if you take this away
+                          // you'll get some instable behaviour
+                          $(this).width(currentWidth);
+
+                          // set the content panel width
+                          var rightWidth = containerWidth - currentWidth - padding;
+                          $("#right-panel").width(rightWidth);
+
+                          // Remove content in the data holder and attributes.
+                          $('#left').empty();
+                          $('#right').empty();
+                          $('#left').removeClass("hasSVG");
+                          $('#right').removeClass("hasSVG");
+
+                          // Resize to fit the width.
+                          $("#left").children().width($("#left").width());
+                          $("#right").children().width($("#right").width());
+
+                          embed();
+                      },
+                });
             }
 		);
 		var collData = loadJson("json/config/annotation_config.json");
@@ -23,6 +61,24 @@
     </script>
 
     <style>
+        .container{
+            width: 100%;
+            /* Disable selection so it doesn't get annoying when dragging. */
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: moz-none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #left-panel{
+        width: 49%;
+        float: left;
+        }
+        #right-panel{
+        width: 49%;
+        float: left;
+        }
         .left{
         float:left;
         width:50%;
@@ -37,18 +93,6 @@
         width:100%;
         overflow:hidden;
         }
-        .left-down{
-        float:left;
-        width : 50%;
-        left : 0;
-        overflow: hidden;
-        }
-        .right-down{
-        float:right;
-        width : 50%;
-        left : 50%;
-        overflow: hidden;
-        }
         .color-box {
         width: 50px;
         height: 20px;
@@ -61,6 +105,9 @@
         }
         .hidden{
         display:none;
+        }
+        .clear{
+        clear:both;
         }
     </style>
 </head>
@@ -108,26 +155,27 @@
 
 <div class="left hidden" id="left-cluster-div">
     <p>Select Left Clusters (hold Ctrl/Command for multiple):</p>
-    <select name="left-cluster-selector" id="left-cluster-selector" size="10" style="width:100%" onchange="embed()" multiple>
+    <select name="left-cluster-selector" id="left-cluster-selector" size="10" style="width:100%" onchange="updateData()" multiple>
     </select>
 </div>
 <div class='right hidden' id="right-cluster-div">
     <p>Select Right Clusters (hold Ctrl/Command for multiple):</p>
-    <select name="right-cluster-selector" id="right-cluster-selector" size="10" style="width:100%" onchange="embed()" multiple>
+    <select name="right-cluster-selector" id="right-cluster-selector" size="10" style="width:100%" onchange="updateData()" multiple>
     </select>
 </div>
 
-<div class='left'>
+<div id="container">
+<div id='left-panel'>
     <h2>Gold Standard</h2>
-
     <div id='left'>
     </div>
 </div>
-<div class='right'>
+<div id='right-panel'>
     <h2>System</h2>
-
     <div id='right'>
     </div>
+</div>
+<div class="clear"></div>
 </div>
 
 <script type="text/javascript">
@@ -147,13 +195,7 @@
     var rightDispatcher;
     head.ready(function() {
         loadDisplayData();
-
-        leftDispatcher = Util.embed('left',
-            $.extend({'collection': null}, collData),
-            $.extend({}, goldDataDisplay), webFontURLs);
-        rightDispatcher = Util.embed('right',
-            $.extend({'collection': null}, collData),
-            $.extend({}, systemDataDisplay), webFontURLs);
+        embed();
     });
 </script>
 

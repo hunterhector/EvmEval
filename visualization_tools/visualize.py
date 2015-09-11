@@ -273,6 +273,7 @@ def generate_diff_json(text, gold_annotations, system_annotations, token_map, as
 
     gold_data = create_brat_json(text, gold_annotations, token_map, gold_mapping_score, gold_realis_match_marker,
                                  gold_type_match_marker)
+
     system_data = create_brat_json(text, system_annotations, token_map, system_mapping_score,
                                    system_realis_match_marker, system_type_match_marker)
 
@@ -482,12 +483,23 @@ def parse_mapping(doc_id, doc_lines):
             assigned_gold_2_system_mapping[gold_index].append((sys_index, float(score)))
 
         if gold_fields[0] != "-":
-            gold_annotations.append((gold_fields[1].split(token_joiner), gold_fields[2:], gold_fields[0]))
+            tokens = gold_fields[1].split(token_joiner)
+            if len(tokens) == 0:
+                logger.error("Doc line is wrong, empty token found in Gold for the following line: ")
+                logger.error(l)
+                sys.exit(1)
+            gold_annotations.append((tokens, gold_fields[2:], gold_fields[0]))
             all_possible_mention_types.add(gold_fields[2])
             all_possible_realis_types.add(gold_fields[3])
             gold_index += 1
         if sys_fields[0] != "-":
-            system_annotations.append((sys_fields[1].split(token_joiner), sys_fields[2:], sys_fields[0]))
+            tokens = sys_fields[1].split(token_joiner)
+            if len(tokens) == 0:
+                logger.error("Doc line is wrong, empty token found in System for the following line: ")
+                logger.error(l)
+                logger.error(sys_fields)
+                sys.exit(1)
+            system_annotations.append((tokens, sys_fields[2:], sys_fields[0]))
             all_possible_mention_types.add(sys_fields[2])
             all_possible_realis_types.add(sys_fields[3])
             sys_index += 1

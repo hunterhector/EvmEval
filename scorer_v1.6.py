@@ -671,13 +671,14 @@ def parse_token_ids(s, invisible_ids):
     Method to parse the token ids (instead of a span)
     """
     filtered_token_ids = set()
-    for token_id in s.split(Config.token_joiner):
+    original_token_ids = s.split(Config.token_joiner)
+    for token_id in original_token_ids:
         if token_id not in invisible_ids:
             filtered_token_ids.add(token_id)
         else:
             logger.debug("Token Id %s is filtered" % token_id)
             pass
-    return filtered_token_ids
+    return filtered_token_ids, original_token_ids
 
 
 def parse_token_based_line(l, invisible_ids):
@@ -688,9 +689,9 @@ def parse_token_based_line(l, invisible_ids):
     num_attributes = len(Config.attribute_names)
     if len(fields) < 5 + num_attributes:
         terminate_with_error("System line has too few fields:\n ---> %s" % l)
-    token_ids = parse_token_ids(fields[3], invisible_ids)
+    token_ids, original_token_ids = parse_token_ids(fields[3], invisible_ids)
     attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
-    return fields[2], token_ids, attributes
+    return fields[2], token_ids, attributes, original_token_ids
 
 
 def canonicalize_string(str):
@@ -815,21 +816,22 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
 
         gold_info = "-"
         if gold_index != -1:
-            gold_spans, gold_attributes, gold_mention_id = gold_mention_table[gold_index]
-            gold_info = "%s\t%s\t%s" % (gold_mention_id, ",".join(gold_spans), "\t".join(gold_attributes))
+            gold_spans, gold_attributes, gold_mention_id, gold_origin_spans = gold_mention_table[gold_index]
+            gold_info = "%s\t%s\t%s" % (gold_mention_id, ",".join(gold_origin_spans), "\t".join(gold_attributes))
 
         sys_info = "-"
         if system_index != -1:
-            system_spans, system_attributes, sys_mention_id = system_mention_table[system_index]
-            sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(system_spans), "\t".join(system_attributes))
+            system_spans, system_attributes, sys_mention_id, sys_origin_spans = system_mention_table[system_index]
+            sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(sys_origin_spans), "\t".join(system_attributes))
             mapped_system_mentions.add(system_index)
 
         write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, gold_info, sys_info, score_str))
 
     # Write out system mentions that does not map to anything.
-    for system_index, (system_spans, system_attributes, sys_mention_id) in enumerate(system_mention_table):
+    for system_index, (system_spans, system_attributes, sys_mention_id, sys_origin_spans) in enumerate(
+            system_mention_table):
         if system_index not in mapped_system_mentions:
-            sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(system_spans), "\t".join(system_attributes))
+            sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(sys_origin_spans), "\t".join(system_attributes))
             write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, "-", sys_info, "-"))
 
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
@@ -922,13 +924,13 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
     logger.debug("Reading gold and response mentions.")
     for sl in s_mention_lines:
-        sys_mention_id, system_spans, system_attributes = parse_line(sl, eval_mode, invisible_ids)
-        system_mention_table.append((system_spans, system_attributes, sys_mention_id))
+        sys_mention_id, system_spans, system_attributes, origin_system_spans = parse_line(sl, eval_mode, invisible_ids)
+        system_mention_table.append((system_spans, system_attributes, sys_mention_id, origin_system_spans))
         EvalState.all_possible_types.add(system_attributes[0])
 
     for gl in g_mention_lines:
-        gold_mention_id, gold_spans, gold_attributes = parse_line(gl, eval_mode, invisible_ids)
-        gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
+        gold_mention_id, gold_spans, gold_attributes, origin_gold_spans = parse_line(gl, eval_mode, invisible_ids)
+        gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id, origin_gold_spans))
         EvalState.all_possible_types.add(gold_attributes[0])
 
     # Store list of mappings with the score as a priority queue. Score is stored using negative for easy sorting.
@@ -938,10 +940,10 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     print_score_matrix = False
 
     logger.debug("Computing overlap scores.")
-    for system_index, (system_spans, system_attributes, sys_mention_id) in enumerate(system_mention_table):
+    for system_index, (system_spans, system_attributes, sys_mention_id, _) in enumerate(system_mention_table):
         if print_score_matrix:
             print system_index,
-        for index, (gold_spans, gold_attributes, gold_mention_id) in enumerate(gold_mention_table):
+        for index, (gold_spans, gold_attributes, gold_mention_id, _) in enumerate(gold_mention_table):
             overlap = compute_overlap_score(gold_spans, system_spans, eval_mode)
             if len(gold_spans) == 0:
                 logger.warning("Found empty gold standard at doc : %s" % doc_id)

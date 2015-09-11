@@ -109,7 +109,7 @@ function loadSelectedFile(){
 
 function onFileChange(){
     fileChanged = true
-    embed()
+    updateData()
 }
 
 
@@ -184,8 +184,7 @@ function loadDisplayData(){
     selectSubset()
 }
 
-
-function embed() {
+function updateData() {
     try {
         loadDisplayData();
         leftDispatcher.post('requestRenderData', [$.extend({}, goldDataDisplay)]);
@@ -193,4 +192,13 @@ function embed() {
     } catch(e) {
         console.error('requestRenderData went down with:', e);
     }
+}
+
+function embed() {
+    leftDispatcher = Util.embed('left',
+        $.extend({'collection': null}, collData),
+        $.extend({}, goldDataDisplay), webFontURLs);
+    rightDispatcher = Util.embed('right',
+        $.extend({'collection': null}, collData),
+        $.extend({}, systemDataDisplay), webFontURLs);
 }

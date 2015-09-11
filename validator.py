@@ -183,12 +183,19 @@ def read_all_doc(gf):
         gold_docs.pop("")
     g_doc_ids = gold_docs.keys()
     g_id_set = set(g_doc_ids)
+
     doc_ids_to_score = sorted(g_id_set)
 
     if len(g_doc_ids) == 0:
-        logger.error("No document id found, please check begin and end marker")
+        logger.error("No document id found for [%s], please check begin and end marker.")
         return False
     return True
+
+
+def check_unique(keys):
+    key_set = set(keys)
+    if len(keys) != len(key_set):
+        return False
 
 
 def read_docs_with_doc_id(f):
@@ -300,6 +307,10 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
 
     invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
 
+    if not check_unique(id2token_map.keys()):
+        logger.error("Duplicated mention id for doc %s" % doc_id)
+        return False
+
     # parse the lines in file
     gold_mention_table = []
 
@@ -312,7 +323,7 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
     total_mentions += len(gold_mention_table)
 
     if has_invented_token(id2token_map, gold_mention_table):
-        logger.error("Invented token id was found for doc %s" % (doc_id))
+        logger.error("Invented token id was found for doc %s" % doc_id)
         logger.error("Tokens not in tbf not found in token map : %d" % total_tokens_not_found)        
         return False
 

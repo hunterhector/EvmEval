@@ -51,6 +51,7 @@ total_mentions = 0
 unrecognized_relation_count = 0
 total_tokens_not_found = 0
 
+
 class EvalMethod:
     Token, Char = range(2)
 
@@ -59,6 +60,7 @@ def exit_on_fail():
     logger.error("Validation failed.")
     logger.error("Please fix the warnings/errors.")
     sys.exit(255)
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -123,7 +125,7 @@ def main():
 
     validation_success = True
     while has_next_doc():
-        if not validate_next(eval_mode, token_dir,token_offset_fields, args.token_table_extension):
+        if not validate_next(eval_mode, token_dir, token_offset_fields, args.token_table_extension):
             validation_success = False
             break
 
@@ -165,12 +167,14 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
                 token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]))
                 id2span_map[token_id] = token_span
             except ValueError as e:
-                logger.error("Cannot find field %s and %s in token file %s in the following line: " % (token_offset_fields[0], token_offset_fields[1], token_file))
+                logger.error("Cannot find field %s and %s in token file %s in the following line: " % (
+                token_offset_fields[0], token_offset_fields[1], token_file))
                 logger.error(tline)
             if token in invisible_words:
                 invisible_ids.add(token_id)
     except IOError:
-        logger.error("Cannot find token file for doc [%s] at [%s], did you use correct file paths?" % (g_file_name, token_file_path))
+        logger.error("Cannot find token file for doc [%s] at [%s], did you use correct file paths?" % (
+        g_file_name, token_file_path))
         pass
     return invisible_ids, id2token_map, id2span_map
 
@@ -193,9 +197,7 @@ def read_all_doc(gf):
 
 
 def check_unique(keys):
-    key_set = set(keys)
-    if len(keys) != len(key_set):
-        return False
+    return len(keys) == len(set(keys))
 
 
 def read_docs_with_doc_id(f):
@@ -262,7 +264,9 @@ def parse_token_based_line(l, invisible_ids):
     fields = l.split("\t")
     min_len = len(attribute_names) + 5
     if len(fields) < min_len:
-        logger.error("System line too few fields, there should be at least %d, found %d. Incorrect lines are logged below:" % (min_len, len(fields)))
+        logger.error(
+            "System line too few fields, there should be at least %d, found %d. Incorrect lines are logged below:" % (
+            min_len, len(fields)))
         logger.error(l)
         logger.error(fields)
         exit_on_fail()
@@ -324,7 +328,7 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
 
     if has_invented_token(id2token_map, gold_mention_table):
         logger.error("Invented token id was found for doc %s" % doc_id)
-        logger.error("Tokens not in tbf not found in token map : %d" % total_tokens_not_found)        
+        logger.error("Tokens not in tbf not found in token map : %d" % total_tokens_not_found)
         return False
 
     clusters = {}

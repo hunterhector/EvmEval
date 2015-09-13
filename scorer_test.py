@@ -50,8 +50,12 @@ def run_scorer(gold_path, system_path, token_path, result_out, coref_log):
     :param result_out: Path to output the scores
     :return:
     """
-    cmd = ["python", Config.scorer_executable, '-g', gold_path, '-s', system_path, '-t', token_path, '-c',
-           coref_log]
+
+    cmd = ["python", Config.scorer_executable, '-g', gold_path, '-s', system_path, '-t', token_path]
+
+    if coref_log:
+        cmd.append('-c')
+        cmd.append(coref_log)
 
     with open(result_out, 'wb', 0) as out_file:
         subprocess.call(cmd, stdout=out_file)
@@ -226,7 +230,6 @@ class ScorerTest:
         self.run_conll_tests(Config.conll_test_cases)
         test_finish = self.test_finish_info()
         self.logger.info(test_finish)
-        print test_finish
 
     def test_finish_info(self):
         return "All test finished.\nNumber of tests : %d, number of tests passed : %d, number of tests failed : %d\n" % (

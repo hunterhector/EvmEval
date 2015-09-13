@@ -517,7 +517,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
         token_file = open(token_file_path)
 
         # Discard the header.
-        _ = token_file.readline()
+        # _ = token_file.readline()
 
         for tline in token_file:
             fields = tline.rstrip().split("\t")
@@ -890,8 +890,6 @@ def terminate_with_error(msg):
 
 
 def check_unique(keys):
-    print keys
-    print len(keys), len(set(keys))
     return len(keys) == len(set(keys))
 
 
@@ -1306,8 +1304,7 @@ class ConllConverter:
                 output_cluster_id = singleton_cluster_id
                 singleton_cluster_id += 1
 
-            merged_mention_str = "_".join([get_or_terminate(self.id2token, tid,
-                                                            Config.token_miss_msg % tid)
+            merged_mention_str = "_".join([get_or_terminate(self.id2token, tid, Config.token_miss_msg % tid)
                                            for tid in event_mention_id2sorted_tokens[event_mention_id]])
 
             coref_fields.append((merged_mention_str, output_cluster_id))

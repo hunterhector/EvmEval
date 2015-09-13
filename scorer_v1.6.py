@@ -889,6 +889,12 @@ def terminate_with_error(msg):
     sys.exit(1)
 
 
+def check_unique(keys):
+    print keys
+    print len(keys), len(set(keys))
+    return len(keys) == len(set(keys))
+
+
 def evaluate(token_dir, coref_out, all_attribute_combinations,
              token_offset_fields, token_file_ext, diff_out):
     """
@@ -923,10 +929,17 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     gold_mention_table = []
 
     logger.debug("Reading gold and response mentions.")
+
+    mention_ids = []
     for sl in s_mention_lines:
         sys_mention_id, system_spans, system_attributes, origin_system_spans = parse_line(sl, eval_mode, invisible_ids)
         system_mention_table.append((system_spans, system_attributes, sys_mention_id, origin_system_spans))
         EvalState.all_possible_types.add(system_attributes[0])
+        mention_ids.append(sys_mention_id)
+
+    if not check_unique(mention_ids):
+        logger.error("Duplicated mention id for doc %s" % doc_id)
+        return False
 
     for gl in g_mention_lines:
         gold_mention_id, gold_spans, gold_attributes, origin_gold_spans = parse_line(gl, eval_mode, invisible_ids)

@@ -168,13 +168,13 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
                 id2span_map[token_id] = token_span
             except ValueError as e:
                 logger.error("Cannot find field %s and %s in token file %s in the following line: " % (
-                token_offset_fields[0], token_offset_fields[1], token_file))
+                    token_offset_fields[0], token_offset_fields[1], token_file))
                 logger.error(tline)
             if token in invisible_words:
                 invisible_ids.add(token_id)
     except IOError:
         logger.error("Cannot find token file for doc [%s] at [%s], did you use correct file paths?" % (
-        g_file_name, token_file_path))
+            g_file_name, token_file_path))
         pass
     return invisible_ids, id2token_map, id2span_map
 
@@ -266,7 +266,7 @@ def parse_token_based_line(l, invisible_ids):
     if len(fields) < min_len:
         logger.error(
             "System line too few fields, there should be at least %d, found %d. Incorrect lines are logged below:" % (
-            min_len, len(fields)))
+                min_len, len(fields)))
         logger.error(l)
         logger.error(fields)
         exit_on_fail()
@@ -311,20 +311,22 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
 
     invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
 
-    if not check_unique(id2token_map.keys()):
-        logger.error("Duplicated mention id for doc %s" % doc_id)
-        return False
-
     # parse the lines in file
     gold_mention_table = []
 
+    mention_ids = []
     for gl in g_mention_lines:
         gold_mention_id, gold_spans, gold_attributes = parse_line(
             gl, eval_mode, invisible_ids)
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
+        mention_ids.append(gold_mention_id)
         all_possible_types.add(gold_attributes[0])
 
     total_mentions += len(gold_mention_table)
+
+    if not check_unique(mention_ids):
+        logger.error("Duplicated mention id for doc %s" % doc_id)
+        return False
 
     if has_invented_token(id2token_map, gold_mention_table):
         logger.error("Invented token id was found for doc %s" % doc_id)

@@ -171,9 +171,12 @@ def mkdirs(p):
 
 
 def prepare_diff_setting(all_doc_ids, all_mention_types, all_realis_types, json_path):
-    add_mode = 'a' if append_json else 'w'
-    doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), add_mode)
-    json.dump(all_doc_ids, doc_id_list_json_out)
+    doc_id_data = []
+    if append_json:
+        doc_id_data.append(json.load(open(os.path.join(json_path, config_subpath, "doc_ids.json"))))
+
+    doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), 'w')
+    json.dump(doc_id_data, doc_id_list_json_out)
 
     annotation_config_json_out = open(os.path.join(json_path, config_subpath, "annotation_config.json"), 'w')
     json.dump(generate_mention_annotation_setting(all_mention_types, all_realis_types),

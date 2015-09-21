@@ -191,10 +191,11 @@ def prepare_diff_setting(all_doc_ids, all_mention_types, all_realis_types, json_
     mention_config = generate_mention_annotation_setting(all_mention_types, all_realis_types)
     new_mention_types = set([x["type"] for x in mention_config["event_types"]])
 
-    for mention_anno in old_config_data['event_types']:
-        old_mention_type = mention_anno["type"]
-        if old_mention_type not in new_mention_types:
-            mention_config["event_types"].append(mention_anno)
+    if "event_types" in old_config_data:
+        for mention_anno in old_config_data["event_types"]:
+            old_mention_type = mention_anno["type"]
+            if old_mention_type not in new_mention_types:
+                mention_config["event_types"].append(mention_anno)
 
     annotation_config_json_out = open(os.path.join(json_path, config_subpath, "annotation_config.json"), 'w')
     json.dump(mention_config, annotation_config_json_out, indent=4)

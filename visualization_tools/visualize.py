@@ -54,6 +54,8 @@ doc_ids_to_score = []
 all_possible_mention_types = set()
 all_possible_realis_types = set()
 
+append_json = False
+
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
 formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
@@ -70,6 +72,7 @@ def main():
     global token_offset_fields
     global text_dir
     global token_dir
+    global append_json
 
     parser = argparse.ArgumentParser(
         description="Mention visualizer, will create a side-by-side embedded "
@@ -92,6 +95,9 @@ def main():
         "-of", "--offset_field", help="A pair of integer indicates which column we should "
                                       "read the offset in the token mapping file, index starts"
                                       "at 0, default value will be %s" % token_offset_fields
+    )
+    parser.add_argument(
+        "-a", "--append", help="Append the JSON data with previous generated ones", action='store_true'
     )
     parser.add_argument(
         "-te", "--token_table_extension",
@@ -131,6 +137,9 @@ def main():
     if args.source_file_extension is not None:
         source_file_ext = args.source_file_extension
 
+    if args.append:
+        append_json = True
+
     validate()
     parse_mapping_file(open(args.comparison_output))
 
@@ -162,7 +171,8 @@ def mkdirs(p):
 
 
 def prepare_diff_setting(all_doc_ids, all_mention_types, all_realis_types, json_path):
-    doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), 'w')
+    add_mode = 'a' if append_json else 'w'
+    doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), add_mode)
     json.dump(all_doc_ids, doc_id_list_json_out)
 
     annotation_config_json_out = open(os.path.join(json_path, config_subpath, "annotation_config.json"), 'w')

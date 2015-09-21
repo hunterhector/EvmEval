@@ -175,7 +175,9 @@ def prepare_diff_setting(all_doc_ids, all_mention_types, all_realis_types, json_
     if append_json:
         current_doc_id_path = os.path.join(json_path, config_subpath, "doc_ids.json")
         if os.path.exists(current_doc_id_path):
-            doc_id_data.append(json.load(open(current_doc_id_path)))
+            doc_id_data.extend(json.load(open(current_doc_id_path)))
+
+    doc_id_data.extend(all_doc_ids)
 
     doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), 'w')
     json.dump(doc_id_data, doc_id_list_json_out)

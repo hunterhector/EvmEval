@@ -42,8 +42,8 @@ function setSelectorOptions(selectorId, optionsJson){
 function getClusterNameList(goldCoref, sysCoref){
     var sysSurfaceMap = getAnnotationJson("surface", currentFileName+ "_surface_sys")
     var goldSurfacemap = getAnnotationJson("surface", currentFileName+ "_surface_gold")
-    var goldNames = generateClusterSurfaceName(goldCoref, sysSurfaceMap)
-    var sysNames= generateClusterSurfaceName(sysCoref, goldSurfacemap)
+    var goldNames = generateClusterSurfaceName(goldCoref, goldSurfacemap)
+    var sysNames= generateClusterSurfaceName(sysCoref, sysSurfaceMap)
 
     return {
         goldNames:goldNames,
@@ -166,8 +166,6 @@ function selectSubset(){
 
     if(document.getElementById("show-cluster-checkbox").checked){
         var clusterSelected = loadEventClusterSelected()
-        console.log(coref)
-        console.log(goldData)
         goldDataDisplay = filterEvents(goldData, coref.goldCoref, clusterSelected.goldCluster)
         systemDataDisplay = filterEvents(systemData, coref.sysCoref, clusterSelected.sysCluster)
     }else{
@@ -179,7 +177,6 @@ function selectSubset(){
 function loadDisplayData(){
     if (fileChanged){
         loadSelectedFile()
-        console.log(currentFileName)
     }
     selectSubset()
 }

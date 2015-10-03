@@ -36,14 +36,18 @@ token_file_ext = ".tab"
 source_file_ext = ".txt"
 visualization_path = "visualization"
 visualization_json_data_subpath = "json"
+
 config_subpath = "config"
 span_subpath = "span"
+coref_subpath = "coref"
+surface_subpath = "surface"
 
 token_offset_fields = [2, 3]
 
 comment_marker = "#"
 bod_marker = "#BeginOfDocument"  # mark begin of a document
 eod_marker = "#EndOfDocument"  # mark end of a document
+coref_marker = "@coref"
 
 token_joiner = ","
 
@@ -157,8 +161,13 @@ def validate():
         json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
         config_dir = os.path.join(json_dir, config_subpath)
         span_dir = os.path.join(json_dir, span_subpath)
+        coref_dir = os.path.join(json_dir, coref_subpath)
+        surface_dir = os.path.join(json_dir, surface_subpath)
+
         mkdirs(config_dir)
         mkdirs(span_dir)
+        mkdirs(coref_dir)
+        mkdirs(surface_dir)
         logger.info("Generating Brat annotation at " + visualization_path)
     else:
         logger.error("Visualization directory does not exists! Cannot do visualization. You could specify with -v.")
@@ -179,8 +188,11 @@ def prepare_diff_setting(all_doc_ids, all_mention_types, all_realis_types, json_
 
     doc_id_data.extend(all_doc_ids)
 
-    doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), 'w')
-    json.dump(doc_id_data, doc_id_list_json_out)
+    # doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), 'w')
+    # json.dump(doc_id_data, doc_id_list_json_out)
+    # doc_id_list_json_out.close()
+
+    dump_json(doc_id_data, os.path.join(json_path, config_subpath), "doc_ids.json")
 
     old_config_data = {}
     if append_json:
@@ -197,11 +209,11 @@ def prepare_diff_setting(all_doc_ids, all_mention_types, all_realis_types, json_
             if old_mention_type not in new_mention_types:
                 mention_config["event_types"].append(mention_anno)
 
-    annotation_config_json_out = open(os.path.join(json_path, config_subpath, "annotation_config.json"), 'w')
-    json.dump(mention_config, annotation_config_json_out, indent=4)
+    # annotation_config_json_out = open(os.path.join(json_path, config_subpath, "annotation_config.json"), 'w')
+    # json.dump(mention_config, annotation_config_json_out, indent=4)
+    # annotation_config_json_out.close()
 
-    doc_id_list_json_out.close()
-    annotation_config_json_out.close()
+    dump_json(mention_config, os.path.join(json_path, config_subpath), "annotation_config.json")
 
 
 def generate_mention_annotation_setting(all_mention_types, all_realis_types):
@@ -257,26 +269,44 @@ def start_server():
     os.chdir(visualization_path)
     log_file = open(log_path, 'w')
     sys.stderr = log_file
-    Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
-    httpd = SocketServer.TCPServer(("", PORT), Handler)
+    handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+    httpd = SocketServer.TCPServer(("", PORT), handler)
     httpd.serve_forever()
 
 
-def prepare_diff_data(text, gold_annotations, system_annotations, token_map, json_path, doc_id,
-                      assigned_gold_2_system_mapping):
-    gold_data, system_data = generate_diff_json(text, gold_annotations, system_annotations, token_map,
-                                                assigned_gold_2_system_mapping)
+def dump_json(data, json_path, fname):
+    if not os.path.isdir(json_path):
+        os.makedirs(json_path)
+    o = open(os.path.join(json_path, fname), 'w')
+    json.dump(data, o, indent=4)
+    o.close()
+
+
+# def dump_json(data, json_path, text_id, suffix):
+#     if not os.path.isdir(json_path):
+#         os.makedirs(json_path)
+#     o = open(os.path.join(json_path, text_id + suffix), 'w')
+#     json.dump(data, o, indent=4)
+#     o.close()
+
+
+def write_mention_diff_data(text, gold_annotations, system_annotations, token_map, json_path, doc_id,
+                            assigned_gold_2_system_mapping):
+    gold_data, system_data = mention_data_by_error_type(text, gold_annotations, system_annotations, token_map,
+                                                        assigned_gold_2_system_mapping)
     # if "Conflict_Demonstrate" in json.dumps(system_data):
     # print system_data
-    gold_json_out = open(os.path.join(json_path, span_subpath, doc_id + "_gold.json"), 'w')
-    system_json_out = open(os.path.join(json_path, span_subpath, doc_id + "_sys.json"), 'w')
-    json.dump(gold_data, gold_json_out, indent=4)
-    json.dump(system_data, system_json_out, indent=4)
-    gold_json_out.close()
-    system_json_out.close()
+    dump_json(gold_data, os.path.join(json_path, span_subpath), doc_id + "_gold.json")
+    dump_json(system_data, os.path.join(json_path, span_subpath), doc_id + "_sys.json")
+    # gold_json_out = open(os.path.join(json_path, span_subpath, doc_id + "_gold.json"), 'w')
+    # system_json_out = open(os.path.join(json_path, span_subpath, doc_id + "_sys.json"), 'w')
+    # json.dump(gold_data, gold_json_out, indent=4)
+    # json.dump(system_data, system_json_out, indent=4)
+    # gold_json_out.close()
+    # system_json_out.close()
 
 
-def generate_diff_json(text, gold_annotations, system_annotations, token_map, assigned_gold_2_system_mapping):
+def mention_data_by_error_type(text, gold_annotations, system_annotations, token_map, assigned_gold_2_system_mapping):
     gold_mapping_score = [1] * len(gold_annotations)
     system_mapping_score = [0] * len(system_annotations)
 
@@ -302,17 +332,16 @@ def generate_diff_json(text, gold_annotations, system_annotations, token_map, as
         else:
             gold_mapping_score[gold_index] = 0
 
-    gold_data = create_brat_json(text, gold_annotations, token_map, gold_mapping_score, gold_realis_match_marker,
-                                 gold_type_match_marker)
+    gold_data = create_mention_json(text, gold_annotations, token_map, gold_mapping_score, gold_realis_match_marker,
+                                    gold_type_match_marker)
 
-    system_data = create_brat_json(text, system_annotations, token_map, system_mapping_score,
-                                   system_realis_match_marker, system_type_match_marker)
+    system_data = create_mention_json(text, system_annotations, token_map, system_mapping_score,
+                                      system_realis_match_marker, system_type_match_marker)
 
     return gold_data, system_data
 
 
-def create_brat_json(text, all_annotations, token_map, span_matching_score, realis_match_marker,
-                     type_match_marker):
+def create_mention_json(text, all_annotations, token_map, span_matching_score, realis_match_marker, type_match_marker):
     data = {'text': text}
     events = []
     mentions = []
@@ -441,7 +470,7 @@ def assign_text_bound_id(character_based_annotations, text_bound_id_record):
     return tid, character_based_annotations
 
 
-def parse_mapping_line(l):
+def parse_mention_mapping_line(l):
     main_parts = l.split("\t|\t")
     gold_parts = main_parts[0].split("\t")
     sys_parts = main_parts[1].split("\t")
@@ -452,6 +481,19 @@ def parse_mapping_line(l):
     return sys_id, gold_fields, sys_fields, score
 
 
+def parse_coref_lines(lines):
+    gold_corefs = []
+    sys_corefs = []
+    for l in lines:
+        _, source, mentions = l.split("\t")
+        mid2text = dict([(m.split(":")) for m in mentions.split(",")])
+        if source == "gold":
+            gold_corefs.append(mid2text)
+        else:
+            sys_corefs.append(mid2text)
+    return gold_corefs, sys_corefs
+
+
 def read_token_ids(g_file_name):
     id2token_map = {}
     token_file_path = os.path.join(token_dir, g_file_name + token_file_ext)
@@ -459,8 +501,8 @@ def read_token_ids(g_file_name):
 
     try:
         token_file = open(token_file_path)
-        # discard the header
-        header = token_file.readline()
+        # Discard the header.
+        _ = token_file.readline()
 
         for tline in token_file:
             fields = tline.rstrip().split("\t")
@@ -492,6 +534,31 @@ def read_original_text(doc_id):
         sys.exit(1)
 
 
+def generate_coref_json(corefs):
+    cluster_json = []
+    event_text_json = {}
+    for cluster in corefs:
+        cluster_json.append(cluster.keys())
+        event_text_json.update(cluster)
+    return cluster_json, event_text_json
+
+
+def prepare_coref_data(doc_id, coref_lines):
+    gold_corefs, sys_corefs = parse_coref_lines(coref_lines)
+
+    gold_clusters, gold_surface = generate_coref_json(gold_corefs)
+    sys_clusters, sys_surface = generate_coref_json(sys_corefs)
+
+    json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
+    coref_dir = os.path.join(json_dir, coref_subpath)
+    surface_dir = os.path.join(json_dir, surface_subpath)
+
+    dump_json(gold_clusters, coref_dir, doc_id + "_coref_gold.json")
+    dump_json(gold_surface, surface_dir, doc_id + "_surface_gold.json")
+    dump_json(sys_clusters, coref_dir, doc_id + "_coref_sys.json")
+    dump_json(sys_surface, surface_dir, doc_id + "_surface_sys.json")
+
+
 def parse_mapping(doc_id, doc_lines):
     gold_annotations = []
     system_annotations = []
@@ -499,7 +566,7 @@ def parse_mapping(doc_id, doc_lines):
 
     num_gold_mentions = 0
     for l in doc_lines:
-        _, gold_fields, _, _ = parse_mapping_line(l)
+        _, gold_fields, _, _ = parse_mention_mapping_line(l)
         if gold_fields[0] != "-":
             num_gold_mentions += 1
 
@@ -508,7 +575,7 @@ def parse_mapping(doc_id, doc_lines):
     gold_index = 0
     sys_index = 0
     for l in doc_lines:
-        sys_id, gold_fields, sys_fields, score = parse_mapping_line(l)
+        sys_id, gold_fields, sys_fields, score = parse_mention_mapping_line(l)
 
         if score != "-":
             assigned_gold_2_system_mapping[gold_index].append((sys_index, float(score)))
@@ -537,15 +604,16 @@ def parse_mapping(doc_id, doc_lines):
 
     text = read_original_text(doc_id)
 
-    prepare_diff_data(text, gold_annotations, system_annotations, token_map,
-                      os.path.join(visualization_path, visualization_json_data_subpath), doc_id,
-                      assigned_gold_2_system_mapping)
+    write_mention_diff_data(text, gold_annotations, system_annotations, token_map,
+                            os.path.join(visualization_path, visualization_json_data_subpath), doc_id,
+                            assigned_gold_2_system_mapping)
 
     doc_ids_to_score.append(doc_id)
 
 
 def parse_mapping_file(f):
-    doc_lines = []
+    mention_lines = []
+    coref_lines = []
     doc_id = ""
 
     for l in f.readlines():
@@ -554,12 +622,17 @@ def parse_mapping_file(f):
             if l.startswith(bod_marker):
                 doc_id = l[len(bod_marker):].strip()
             elif l.startswith(eod_marker):
-                parse_mapping(doc_id, doc_lines)
-                doc_lines = []
+                parse_mapping(doc_id, mention_lines)
+                prepare_coref_data(doc_id, coref_lines)
+                mention_lines = []
+                coref_lines = []
         elif l == "":
             pass
         else:
-            doc_lines.append(l)
+            if l.startswith(coref_marker):
+                coref_lines.append(l)
+            else:
+                mention_lines.append(l)
 
 
 if __name__ == "__main__":

@@ -2,15 +2,18 @@
 
 """
     A simple scorer that reads the CMU Event Mention Format (tbf)
-    data and produce a mention based F-Scores
+    data and produce a mention based F-Scores.
 
     It could also call the CoNLL coreference implementation and
-    produce coreference results
+    produce coreference results.
 
-    This scorer also require token files to conduct evaluation
+    This scorer also require token files to conduct evaluation.
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.6.2:
+# 1. Add clusters in the comparison output. No substantial changes in scoring.
+
 # Change log v1.6.1:
 # 1. Minor change that remove punctuation and whitespace in attribute types and lowercase all types to make system
 # output more flexible.
@@ -668,7 +671,10 @@ def parse_spans(s):
 
 def parse_token_ids(s, invisible_ids):
     """
-    Method to parse the token ids (instead of a span)
+     Method to parse the token ids (instead of a span).
+    :param s: The input token id field string.
+    :param invisible_ids: Ids that should be regarded as invisible.
+    :return: The token ids and filtered token ids.
     """
     filtered_token_ids = set()
     original_token_ids = s.split(Config.token_joiner)
@@ -691,7 +697,7 @@ def parse_token_based_line(l, invisible_ids):
         terminate_with_error("System line has too few fields:\n ---> %s" % l)
     token_ids, original_token_ids = parse_token_ids(fields[3], invisible_ids)
     attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
-    return fields[2], token_ids, attributes, original_token_ids
+    return fields[2], token_ids, attributes, original_token_ids, fields[4]
 
 
 def canonicalize_string(str):
@@ -807,8 +813,6 @@ def write_if_provided(diff_out, text):
 
 def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_mapping, gold_mention_table,
                                    system_mention_table, diff_out):
-    write_if_provided(diff_out, Config.bod_marker + " " + doc_id + "\n")
-
     mapped_system_mentions = set()
 
     for gold_index, (system_index, score) in enumerate(assigned_gold_2_system_mapping):
@@ -834,7 +838,12 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
             sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(sys_origin_spans), "\t".join(system_attributes))
             write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, "-", sys_info, "-"))
 
-    write_if_provided(diff_out, Config.eod_marker + " " + "\n")
+
+def write_gold_and_system_corefs(diff_out, gold_coref, sys_coref, sys_id_2_text, gold_id_2_text):
+    for c in gold_coref:
+        write_if_provided(diff_out, "@coref\tgold\t%s\n" % ",".join([c + ":" + sys_id_2_text[c] for c in c[2]]))
+    for c in sys_coref:
+        write_if_provided(diff_out, "@coref\tsystem\t%s\n" % ",".join([c + ":" + gold_id_2_text[c] for c in c[2]]))
 
 
 def get_tp_greedy(all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
@@ -922,27 +931,33 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         if len(fields) > 0:
             system_id = fields[0]
 
-    # parse the lines in file
+    # Parse the lines and save them as a table from id to content.
     system_mention_table = []
     gold_mention_table = []
+
+    # Save the raw text for visualization.
+    sys_id_2_text = {}
+    gold_id_2_text = {}
 
     logger.debug("Reading gold and response mentions.")
 
     mention_ids = []
     for sl in s_mention_lines:
-        sys_mention_id, system_spans, system_attributes, origin_system_spans = parse_line(sl, eval_mode, invisible_ids)
-        system_mention_table.append((system_spans, system_attributes, sys_mention_id, origin_system_spans))
-        EvalState.all_possible_types.add(system_attributes[0])
+        sys_mention_id, sys_spans, sys_attributes, origin_sys_spans, text = parse_line(sl, eval_mode, invisible_ids)
+        system_mention_table.append((sys_spans, sys_attributes, sys_mention_id, origin_sys_spans))
+        EvalState.all_possible_types.add(sys_attributes[0])
         mention_ids.append(sys_mention_id)
+        sys_id_2_text[sys_mention_id] = text
 
     if not check_unique(mention_ids):
         logger.error("Duplicated mention id for doc %s" % doc_id)
         return False
 
     for gl in g_mention_lines:
-        gold_mention_id, gold_spans, gold_attributes, origin_gold_spans = parse_line(gl, eval_mode, invisible_ids)
+        gold_mention_id, gold_spans, gold_attributes, origin_gold_spans, text = parse_line(gl, eval_mode, invisible_ids)
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id, origin_gold_spans))
         EvalState.all_possible_types.add(gold_attributes[0])
+        gold_id_2_text[gold_mention_id] = text
 
     # Store list of mappings with the score as a priority queue. Score is stored using negative for easy sorting.
     all_gold_system_mapping_scores = []
@@ -951,11 +966,11 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     print_score_matrix = False
 
     logger.debug("Computing overlap scores.")
-    for system_index, (system_spans, system_attributes, sys_mention_id, _) in enumerate(system_mention_table):
+    for system_index, (sys_spans, sys_attributes, sys_mention_id, _) in enumerate(system_mention_table):
         if print_score_matrix:
             print system_index,
         for index, (gold_spans, gold_attributes, gold_mention_id, _) in enumerate(gold_mention_table):
-            overlap = compute_overlap_score(gold_spans, system_spans, eval_mode)
+            overlap = compute_overlap_score(gold_spans, sys_spans, eval_mode)
             if len(gold_spans) == 0:
                 logger.warning("Found empty gold standard at doc : %s" % doc_id)
 
@@ -972,6 +987,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
         system_mention_table, doc_id)
 
+    write_if_provided(diff_out, Config.bod_marker + " " + doc_id + "\n")
     if diff_out is not None:
         # Here if you change the mapping used, you will see what's wrong on different level!
         write_gold_and_system_mappings(doc_id, system_id, greedy_mention_only_mapping, gold_mention_table,
@@ -1009,7 +1025,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         sys_corefs = [coref for coref in [parse_relation(l) for l in s_relation_lines] if
                       coref[0] == Config.coreference_relation_name]
 
-        # prepare conll style coreference input for this document
+        # Prepare CoNLL style coreference input for this document.
         conll_converter = ConllConverter(id2token, doc_id, system_id)
         conll_converter.prepare_conll_lines(gold_corefs, sys_corefs, gold_mention_table, system_mention_table,
                                             [selected_one2one_mapping], MutableConfig.coref_mention_threshold)
@@ -1025,6 +1041,11 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
                            "This will not affect the final benchmark result.")
 
         EvalState.doc_coref_scores.append((select_best_conll_score(system_id, doc_id, both_all_singleton), doc_id))
+
+        if diff_out is not None:
+            write_gold_and_system_corefs(diff_out, gold_corefs, sys_corefs, sys_id_2_text, gold_id_2_text)
+
+    write_if_provided(diff_out, Config.eod_marker + " " + "\n")
 
     return True
 

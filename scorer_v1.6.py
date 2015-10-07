@@ -839,11 +839,11 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
             write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, "-", sys_info, "-"))
 
 
-def write_gold_and_system_corefs(diff_out, gold_coref, sys_coref, sys_id_2_text, gold_id_2_text):
+def write_gold_and_system_corefs(diff_out, gold_coref, sys_coref, gold_id_2_text, sys_id_2_text):
     for c in gold_coref:
-        write_if_provided(diff_out, "@coref\tgold\t%s\n" % ",".join([c + ":" + sys_id_2_text[c] for c in c[2]]))
+        write_if_provided(diff_out, "@coref\tgold\t%s\n" % ",".join([c + ":" + gold_id_2_text[c] for c in c[2]]))
     for c in sys_coref:
-        write_if_provided(diff_out, "@coref\tsystem\t%s\n" % ",".join([c + ":" + gold_id_2_text[c] for c in c[2]]))
+        write_if_provided(diff_out, "@coref\tsystem\t%s\n" % ",".join([c + ":" + sys_id_2_text[c] for c in c[2]]))
 
 
 def get_tp_greedy(all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
@@ -1043,7 +1043,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         EvalState.doc_coref_scores.append((select_best_conll_score(system_id, doc_id, both_all_singleton), doc_id))
 
         if diff_out is not None:
-            write_gold_and_system_corefs(diff_out, gold_corefs, sys_corefs, sys_id_2_text, gold_id_2_text)
+            write_gold_and_system_corefs(diff_out, gold_corefs, sys_corefs, gold_id_2_text, sys_id_2_text)
 
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
 

@@ -194,6 +194,23 @@ class EvalState:
         return r
 
 
+def supermakedirs(path, mode=0777):
+    """
+    A custom makedirs method that get around the umask exception.
+    :param path: The path to make directories
+    :param mode: The mode of the directory
+    :return:
+    """
+    if not path or os.path.exists(path):
+        return []
+    (head, tail) = os.path.split(path)
+    res = supermakedirs(head, mode)
+    os.mkdir(path)
+    os.chmod(path, mode)
+    res += [path]
+    return res
+
+
 def create_parent_dir(p):
     """
     Create parent directory if not exists.
@@ -203,7 +220,7 @@ def create_parent_dir(p):
     try:
         head, tail = os.path.split(p)
         if head != "":
-            os.makedirs(head)
+            supermakedirs(head)
     except OSError as exception:
         if exception.errno != errno.EEXIST:
             raise
@@ -282,7 +299,7 @@ def main():
         if os.path.exists(Config.conll_tmp_marker):
             # Clean up the directory to avoid scoring errors.
             remove_conll_tmp()
-        os.makedirs(Config.conll_tmp_marker)
+        supermakedirs(Config.conll_tmp_marker)
 
     if os.path.isfile(args.system):
         sf = open(args.system)

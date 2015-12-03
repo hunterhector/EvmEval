@@ -200,7 +200,7 @@ class EvalState:
         return r
 
 
-def supermakedirs(path, mode=0777):
+def supermakedirs(path, mode=0775):
     """
     A custom makedirs method that get around the umask exception.
     :param path: The path to make directories

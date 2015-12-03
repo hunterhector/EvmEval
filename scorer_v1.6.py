@@ -504,13 +504,13 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
         mention_eval_out.write("\n=======Final Mention Coreference Results=========\n")
         conll_average = 0.0
         for metric, score in EvalState.overall_coref_scores.iteritems():
-            formatter = "Metric : %s\tScore : %.2f\n"
+            formatter = "Metric : %s\tScore\t%.2f\n"
             if metric in Config.skipped_metrics:
-                formatter = "Metric : %s\tScore : %.2f *\n"
+                formatter = "Metric : %s\tScore\t%.2f *\n"
             mention_eval_out.write(formatter % (metric, score))
             conll_average += score
         mention_eval_out.write(
-            "Overall Average CoNLL score : %.2f\n" % (conll_average / len(EvalState.overall_coref_scores)))
+            "Overall Average CoNLL score\t%.2f\n" % (conll_average / len(EvalState.overall_coref_scores)))
         mention_eval_out.write("\n* Score not included for final CoNLL score.\n")
 
         if mention_eval_out is not None:

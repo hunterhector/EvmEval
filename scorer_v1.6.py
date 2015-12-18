@@ -11,9 +11,6 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
-# Change log v1.6.3:
-# 1. Faster version.
-
 # Change log v1.6.2:
 # 1. Add clusters in the comparison output. No substantial changes in scoring.
 

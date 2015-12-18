@@ -14,8 +14,10 @@
 # Change log v1.7.0
 # 1. Changing the way of mention mapping to coreference, so that it will not favor too much on recall.
 # 2. Speed up on the coreference scoring since we don't need to select the best, we can convert in one single step.
-# 3. Removing "what" from invisible list.
-# 4. Small changes on the way of looking for the scorer.
+# 3. Removing "what", "it" from invisible list.
+# 4. Small changes on the way of looking for the conll scorer.
+# 5. Small changes on the layout of the scores.
+# 6. New per mention type scoring is also provided in the score report.
 
 # Change log v1.6.2:
 # 1. Add clusters in the comparison output. No substantial changes in scoring.
@@ -180,6 +182,10 @@ class EvalState:
     doc_mention_scores = []
     doc_coref_scores = []
     overall_coref_scores = {}
+
+    per_type_tp = {}
+    per_type_num_response = {}
+    per_type_num_gold = {}
 
     use_new_conll_file = True
 
@@ -361,7 +367,7 @@ def main():
     close_if_not_none(diff_out)
 
     # # Delete temp directory if empty.
-    # if MutableConfig.remove_conll_tmp:
+    # if MutableConfig.remove_conll_tmp
     #     remove_conll_tmp()
 
     logger.info("Evaluation Done.")
@@ -477,6 +483,22 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
         for coref_score, doc_id in EvalState.doc_coref_scores:
             mention_eval_out.write("%s\t%.2f\n" % (doc_id, coref_score))
 
+    per_type_precision, per_type_recall, per_type_f1 = summarize_type_scores()
+
+    mention_eval_out.write("\n\n========Mention Type Results==========\n")
+    if len(per_type_f1) > 0:
+        max_type_name_width = len(max(per_type_f1.keys(), key=len))
+        mention_eval_out.write("%s\tPrec\tRec\tF1\t#Gold\t#Sys\n" % pad_char_before_until("Type", max_type_name_width))
+        for mention_type, f1 in per_type_f1.iteritems():
+            mention_eval_out.write("%s\t%.2f\t%.2f\t%.2f\t%d\t%d\n" % (
+                pad_char_before_until(mention_type, max_type_name_width),
+                get_or_else(per_type_precision, mention_type, 0),
+                get_or_else(per_type_recall, mention_type, 0),
+                get_or_else(per_type_f1, mention_type, 0),
+                get_or_else(EvalState.per_type_num_gold, mention_type, 0),
+                get_or_else(EvalState.per_type_num_response, mention_type, 0)
+            ))
+
     plain_average_scores = get_averages(plain_global_scores, total_gold_mentions, total_system_mentions, valid_docs)
 
     mention_eval_out.write("\n=======Final Mention Detection Results=========\n")
@@ -558,9 +580,9 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
                 token_span = (int(fields[token_offset_fields[0]]), int(fields[token_offset_fields[1]]))
                 id2span[token_id] = token_span
             except ValueError as _:
-                logger.error("Token file is wrong at for file [%s], cannot parse token span here." % g_file_name)
-                logger.error("  ---> %s" % tline)
-                logger.error(
+                logger.warn("Token file is wrong at for file [%s], cannot parse token span here." % g_file_name)
+                logger.warn("  ---> %s" % tline.strip())
+                logger.warn(
                     "Field %d and Field %d are not integer spans" % (token_offset_fields[0], token_offset_fields[1]))
 
             if token in Config.invisible_words:
@@ -909,6 +931,13 @@ def get_tp_greedy(all_gold_system_mapping_scores, all_attribute_combinations, go
     return tp, attribute_based_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping
 
 
+def get_or_else(dictionary, key, value):
+    if key in dictionary:
+        return dictionary[key]
+    else:
+        return value
+
+
 def get_or_terminate(dictionary, key, error_msg):
     if key in dictionary:
         return dictionary[key]
@@ -924,6 +953,71 @@ def terminate_with_error(msg):
 
 def check_unique(keys):
     return len(keys) == len(set(keys))
+
+
+def put_or_increment(table, key, value):
+    try:
+        table[key] += value
+    except KeyError:
+        table[key] = value
+
+
+def per_type_eval(system_mention_table, gold_mention_table, type_mapping):
+    """
+    Accumulate per type statistics.
+    :param system_mention_table:
+    :param gold_mention_table:
+    :param type_mapping:
+    :return:
+    """
+    # print type_mapping
+
+    for gold_index, (sys_index, score) in enumerate(type_mapping):
+        _, attributes, _, _ = gold_mention_table[gold_index]
+        mention_type = attributes[0]
+
+        # print sys_index, gold_index, score
+        # print "Gold", gold_mention_table[gold_index]
+        # print "System", system_mention_table[sys_index]
+
+        if sys_index >= 0:
+            put_or_increment(EvalState.per_type_tp, mention_type, score)
+
+    for _, attributes, _, _ in gold_mention_table:
+        mention_type = attributes[0]
+        put_or_increment(EvalState.per_type_num_gold, mention_type, 1)
+
+    for _, attributes, _, _ in system_mention_table:
+        mention_type = attributes[0]
+        put_or_increment(EvalState.per_type_num_response, mention_type, 1)
+
+        # print EvalState.per_type_tp
+        # print EvalState.per_type_num_gold
+        # print EvalState.per_type_num_response
+        #
+        # sys.stdin.readline()
+
+
+def summarize_type_scores():
+    """
+    Calculate the overall type scores from the accumulated statistics.
+    :return:
+    """
+    per_type_precision = {}
+    per_type_recall = {}
+    per_type_f1 = {}
+
+    for mention_type, tp in EvalState.per_type_tp.iteritems():
+        num_gold = get_or_else(EvalState.per_type_num_gold, mention_type, 0)
+        num_sys = get_or_else(EvalState.per_type_num_response, mention_type, 0)
+        prec = safe_div(tp, num_sys)
+        recall = safe_div(tp, num_gold)
+        f_score = safe_div(2 * prec * recall, prec + recall)
+        per_type_precision[mention_type] = prec
+        per_type_recall[mention_type] = recall
+        per_type_f1[mention_type] = f_score
+
+    return per_type_precision, per_type_recall, per_type_f1
 
 
 def evaluate(token_dir, coref_out, all_attribute_combinations,
@@ -1008,7 +1102,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         if print_score_matrix:
             print
 
-    greedy_tp, greed_attribute_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping = get_tp_greedy(
+    greedy_tp, greedy_attribute_tps, greedy_mention_only_mapping, greedy_all_attribute_mapping = get_tp_greedy(
         all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
         system_mention_table, doc_id)
 
@@ -1019,27 +1113,32 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
                                        system_mention_table, diff_out)
 
     attribute_based_fps = [0.0] * len(all_attribute_combinations)
-    for attribute_comb_index, abtp in enumerate(greed_attribute_tps):
+    for attribute_comb_index, abtp in enumerate(greedy_attribute_tps):
         attribute_based_fps[attribute_comb_index] = len(s_mention_lines) - abtp
 
     # Unmapped system mentions and the partial scores are considered as false positive.
     fp = len(s_mention_lines) - greedy_tp
 
-    EvalState.doc_mention_scores.append((greedy_tp, fp, zip(greed_attribute_tps, attribute_based_fps),
+    EvalState.doc_mention_scores.append((greedy_tp, fp, zip(greedy_attribute_tps, attribute_based_fps),
                                          len(g_mention_lines), len(s_mention_lines), doc_id))
 
     # Select a computed mapping, we currently select the mapping based on mention type. This means that in order to get
-    # coreference right, your mention type should also be right.
-    selected_one2one_mapping = None
+    # coreference right, your mention type should also be right. This can be changed by change Config.coref_criteria
+    # settings.
+    coref_mapping = None
+    type_mapping = None
     for attribute_comb_index, attribute_comb in enumerate(all_attribute_combinations):
         if attribute_comb == Config.coref_criteria:
-            selected_one2one_mapping = greedy_all_attributed_mapping[attribute_comb_index]
+            coref_mapping = greedy_all_attribute_mapping[attribute_comb_index]
             logger.debug("Select mapping that matches criteria [%s]" % (Config.coref_criteria[0][1]))
-            break
+        if attribute_comb[0][1] == "mention_type":
+            type_mapping = greedy_all_attribute_mapping[attribute_comb_index]
 
-    if selected_one2one_mapping is None:
+    per_type_eval(system_mention_table, gold_mention_table, type_mapping)
+
+    if coref_mapping is None:
         # In case when we don't do attribute scoring.
-        selected_one2one_mapping = greedy_mention_only_mapping
+        coref_mapping = greedy_mention_only_mapping
 
     if coref_out is not None:
         logger.debug("Start preparing coreference files.")
@@ -1055,7 +1154,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         gold_conll_lines, sys_conll_lines = conll_converter.prepare_conll_lines(gold_corefs, sys_corefs,
                                                                                 gold_mention_table,
                                                                                 system_mention_table,
-                                                                                selected_one2one_mapping,
+                                                                                coref_mapping,
                                                                                 MutableConfig.coref_mention_threshold)
 
         # If we are selecting among multiple mappings, it is easy to write in our file.

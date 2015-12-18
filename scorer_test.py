@@ -6,17 +6,17 @@
     This run the scorer in an external way and go through the scores in file to determine the correctness. Though
     calling the functions and checking the return values might be a better way, a standalone tester like this is easier
 """
-import subprocess
-import os
 import glob
 import logging
+import os
+import subprocess
 
 
 class Config:
     """
     Configuration variables
     """
-    scorer_executable = "scorer_v1.6.py"
+    scorer_executable = "scorer_v1.7.py"
     test_temp = "test_tmp"
     test_base = "data/test_cases"
     test_log_output = "test.log"
@@ -115,6 +115,7 @@ class ScorerTest:
         whether it give expected values.
         """
         self.logger.info("Running mention tests")
+        print "Running mention tests"
 
     def conll_result_check(self, conll_out_reference, conll_out_test):
         return cmp(self.get_conll_scores(conll_out_reference), self.get_conll_scores(conll_out_test)) == 0
@@ -157,7 +158,8 @@ class ScorerTest:
         :param conll_test_dir:
         :return:
         """
-        self.logger.info("Running CoNLL tests")
+        self.logger.info("Running CoNLL tests.")
+        print "Running CoNLL tests."
         token_path = os.path.join(conll_test_dir, "tkn")
         for f in glob.glob(os.path.join(conll_test_dir, "*" + Config.tbf_response_suffix)):
             basename = os.path.basename(f)[:-len(Config.tbf_response_suffix)]
@@ -201,6 +203,7 @@ class ScorerTest:
         :return:
         """
         self.logger.info("Running format error test cases.")
+        print "Running format error test cases."
         reference_gold = os.path.join(wrong_format_test_dir, "correct_example.key.tbf")
         token_path = os.path.join(wrong_format_test_dir, "tkn")
 
@@ -230,6 +233,7 @@ class ScorerTest:
         self.run_conll_tests(Config.conll_test_cases)
         test_finish = self.test_finish_info()
         self.logger.info(test_finish)
+        print test_finish
 
     def test_finish_info(self):
         return "All test finished.\nNumber of tests : %d, number of tests passed : %d, number of tests failed : %d\n" % (

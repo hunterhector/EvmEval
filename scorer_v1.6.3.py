@@ -11,6 +11,9 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Cahgne log v1.6.3:
+# 1. This is a faster implementation of the v1.6 scorer.
+
 # Change log v1.6.2:
 # 1. Add clusters in the comparison output. No substantial changes in scoring.
 

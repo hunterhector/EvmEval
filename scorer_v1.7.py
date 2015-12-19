@@ -462,6 +462,9 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
                 pad_char_before_until(docId, doc_id_width), prec, recall, doc_f1,
                 "\t|\t".join(attribute_based_doc_scores)))
 
+        # Compute the denominators:
+        # 1. Number of valid doc does not include gold standard files that contains no mentions.
+        # 2. Gold mention count and system mention count are accumulated, used to compute prec, recall.
         if math.isnan(recall):
             # gold produce no mentions, do nothing
             pass
@@ -489,16 +492,17 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
     if len(per_type_f1) > 0:
         max_type_name_width = len(max(per_type_f1.keys(), key=len))
         mention_eval_out.write("%s\tPrec\tRec\tF1\t#Gold\t#Sys\n" % pad_char_before_until("Type", max_type_name_width))
-        for mention_type, f1 in per_type_f1.iteritems():
+        for mention_type, f1 in sorted(per_type_f1.items()):
             mention_eval_out.write("%s\t%.2f\t%.2f\t%.2f\t%d\t%d\n" % (
                 pad_char_before_until(mention_type, max_type_name_width),
-                get_or_else(per_type_precision, mention_type, 0),
-                get_or_else(per_type_recall, mention_type, 0),
-                get_or_else(per_type_f1, mention_type, 0),
-                get_or_else(EvalState.per_type_num_gold, mention_type, 0),
-                get_or_else(EvalState.per_type_num_response, mention_type, 0)
+                nan_as_zero(get_or_else(per_type_precision, mention_type, 0)),
+                nan_as_zero(get_or_else(per_type_recall, mention_type, 0)),
+                nan_as_zero(get_or_else(per_type_f1, mention_type, 0)),
+                nan_as_zero(get_or_else(EvalState.per_type_num_gold, mention_type, 0)),
+                nan_as_zero(get_or_else(EvalState.per_type_num_response, mention_type, 0))
             ))
 
+    # Use the denominators above to calculate the averages.
     plain_average_scores = get_averages(plain_global_scores, total_gold_mentions, total_system_mentions, valid_docs)
 
     mention_eval_out.write("\n=======Final Mention Detection Results=========\n")
@@ -934,6 +938,15 @@ def get_tp_greedy(all_gold_system_mapping_scores, all_attribute_combinations, go
     return tp, attribute_based_tps, greedy_mention_only_mapping, greedy_all_attributed_mapping
 
 
+def nan_as_zero(v):
+    """
+    Treat NaN as zero, should only be used for printing.
+    :param v:
+    :return:
+    """
+    return 0 if math.isnan(v) else v
+
+
 def get_or_else(dictionary, key, value):
     if key in dictionary:
         return dictionary[key]
@@ -1010,8 +1023,8 @@ def summarize_type_scores():
     per_type_recall = {}
     per_type_f1 = {}
 
-    for mention_type, tp in EvalState.per_type_tp.iteritems():
-        num_gold = get_or_else(EvalState.per_type_num_gold, mention_type, 0)
+    for mention_type, num_gold in EvalState.per_type_num_gold.iteritems():
+        tp = get_or_else(EvalState.per_type_tp, mention_type, 0)
         num_sys = get_or_else(EvalState.per_type_num_response, mention_type, 0)
         prec = safe_div(tp, num_sys)
         recall = safe_div(tp, num_gold)

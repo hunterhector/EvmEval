@@ -749,6 +749,10 @@ def parse_token_based_line(l, invisible_ids):
     if len(fields) < 5 + num_attributes:
         terminate_with_error("System line has too few fields:\n ---> %s" % l)
     token_ids, original_token_ids = parse_token_ids(fields[3], invisible_ids)
+
+    if len(token_ids) == 0:
+        logger.warn("Find mention with only invisible words, will not be mapped to anything")
+
     attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
     return fields[2], token_ids, attributes, original_token_ids, fields[4]
 
@@ -1258,9 +1262,10 @@ def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
         span = tuple(get_or_terminate(event_mention_id_2_sorted_tokens, eid,
                                       "Cluster contains event that is not in mention list : [%s]" % eid))
         if span in span_map:
-            logger.error("Span within the same cluster cannot be the same.")
-            logger.error("%s->[%s]" % (eid, ",".join(span)))
-            logger.error("%s->[%s]" % (span_map[span], ",".join(span)))
+            if span is not ():
+                logger.error("Span within the same cluster cannot be the same.")
+                logger.error("%s->[%s]" % (eid, ",".join(span)))
+                logger.error("%s->[%s]" % (span_map[span], ",".join(span)))
             return True
         else:
             span_map[span] = eid

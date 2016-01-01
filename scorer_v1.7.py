@@ -135,6 +135,10 @@ class Config:
 
     coref_criteria = ((0, "mention_type"),)
 
+    possible_coref_mapping = [((-1, "span_only"),),
+                              ((0, "mention_type"),), ((1, "realis_status"),),
+                              ((0, "mention_type"), (1, "realis_status"))]
+
     canonicalize_types = True
 
 
@@ -258,6 +262,9 @@ def main():
         "-t", "--token_path", help="Path to the directory containing the "
                                    "token mappings file", required=True)
     parser.add_argument(
+        "-m", "--coref_mapping", help="Which mapping will be used to perform coreference mapping.", type=int
+    )
+    parser.add_argument(
         "-of", "--offset_field", help="A pair of integer indicates which column we should "
                                       "read the offset in the token mapping file, index starts"
                                       "at 0, default value will be %s" % Config.default_token_offset_fields
@@ -315,6 +322,15 @@ def main():
     else:
         logger.error("Cannot find system file at " + args.system)
         sys.exit(1)
+
+    if args.coref_mapping is not None:
+        if args.coref_mapping < 4:
+            Config.coref_criteria = Config.possible_coref_mapping[args.coref_mapping]
+        else:
+            logger.error("Possible mapping : 0: Span only 1: Mention Type 2: Realis 3 Type and Realis")
+            terminate_with_error("Must provide a mapping between 0 to 3")
+    else:
+        Config.coref_criteria = Config.possible_coref_mapping[1]
 
     diff_out = None
     if args.comparison_output is not None:
@@ -593,8 +609,8 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
                 logger.warn(
                     "Field %d and Field %d are not integer spans" % (token_offset_fields[0], token_offset_fields[1]))
 
-            # if token in Config.invisible_words:
-            #     invisible_ids.add(token_id)
+                # if token in Config.invisible_words:
+                #     invisible_ids.add(token_id)
 
     except IOError:
         logger.error(
@@ -1158,6 +1174,10 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         if attribute_comb[0][1] == "mention_type":
             type_mapping = greedy_all_attribute_mapping[attribute_comb_index]
 
+    if Config.coref_criteria == "span_only":
+        coref_mapping == greedy_mention_only_mapping
+
+    # Evaluate how the performance of each type.
     per_type_eval(system_mention_table, gold_mention_table, type_mapping)
 
     if coref_mapping is None:

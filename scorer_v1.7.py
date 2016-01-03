@@ -107,8 +107,8 @@ class Config:
     default_token_offset_fields = [2, 3]
 
     # We should probably remove this as a whole.
-    # invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
-    #                    'your', 'her', 'our', 'who', 'where', 'when'}
+    invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
+                       'your', 'her', 'our', 'who', 'where', 'when'}
 
     # Attribute names, these are the same order as they appear in submissions.
     attribute_names = ["mention_type", "realis_status"]
@@ -609,8 +609,8 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
                 logger.warn(
                     "Field %d and Field %d are not integer spans" % (token_offset_fields[0], token_offset_fields[1]))
 
-                # if token in Config.invisible_words:
-                #     invisible_ids.add(token_id)
+            if token in Config.invisible_words:
+                invisible_ids.add(token_id)
 
     except IOError:
         logger.error(
@@ -1100,9 +1100,9 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     mention_ids = []
     for sl in s_mention_lines:
         sys_mention_id, sys_spans, sys_attributes, origin_sys_spans, text = parse_line(sl, eval_mode, invisible_ids)
-        if len(sys_spans) == 0:
-            # Temporarily ignoring empty mentions.
-            continue
+        # if len(sys_spans) == 0:
+        #     # Temporarily ignoring empty mentions.
+        #     continue
         system_mention_table.append((sys_spans, sys_attributes, sys_mention_id, origin_sys_spans))
         EvalState.all_possible_types.add(sys_attributes[0])
         mention_ids.append(sys_mention_id)

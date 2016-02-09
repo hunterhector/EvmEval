@@ -13,6 +13,8 @@
 """
 # Change log v1.7.1
 # 1. Add character based evaluation back, which can support languages such as Chinese.
+# 2. Within cluster duplicate check is currently disabled because of valid cases might exist:
+#   a. If the argument is an appositive (multiple nouns), sometimes multiple event mentions are annotated.
 
 # Change log v1.7.0
 # 1. Changing the way of mention mapping to coreference, so that it will not favor too much on recall.
@@ -742,16 +744,19 @@ def get_next_doc():
         return False, ([], []), ([], []), "End_Of_Documents"
 
 
-def parse_spans(s):
+def parse_characters(s):
     """
     Method to parse the character based span
+    :param s:
     """
     span_strs = s.split(Config.span_seperator)
-    spans = []
+    characters = []
     for span_strs in span_strs:
         span = list(map(int, span_strs.split(Config.span_joiner)))
-        spans.append(span)
-    return spans
+        for c in range(span[0], span[1]):
+            characters.append(c)
+
+    return characters
 
 
 def parse_token_ids(s, invisible_ids):
@@ -788,7 +793,7 @@ def parse_line(l, invisible_ids):
         if len(spans) == 0:
             logger.warn("Find mention with only invisible words, will not be mapped to anything")
     else:
-        spans = parse_spans(fields[3])
+        spans = parse_characters(fields[3])
         original_spans = spans
 
     attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
@@ -866,11 +871,16 @@ def compute_token_overlap_score(g_tokens, s_tokens):
     return 2 * prec * recall / (prec + recall)
 
 
-def compute_overlap_score(system_outputs, gold_annos):
-    if MutableConfig.eval_mode == EvalMethod.Token:
-        return compute_token_overlap_score(system_outputs, gold_annos)
-    elif MutableConfig.eval_mode == EvalMethod.Char:
-        return span_overlap(system_outputs, gold_annos)
+def compute_overlap(items1, items2):
+    intersect = set(items1).intersection(set(items2))
+    return 2 * len(intersect) / (len(items1) + len(items2))
+
+
+# def compute_overlap_score(system_outputs, gold_annos):
+#     if MutableConfig.eval_mode == EvalMethod.Token:
+#         return compute_token_overlap_score(system_outputs, gold_annos)
+#     elif MutableConfig.eval_mode == EvalMethod.Char:
+#         return span_overlap(system_outputs, gold_annos)
 
 
 def get_attr_combinations(attr_names):
@@ -924,12 +934,14 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
         gold_info = "-"
         if gold_index != -1:
             gold_spans, gold_attributes, gold_mention_id, gold_origin_spans = gold_mention_table[gold_index]
-            gold_info = "%s\t%s\t%s" % (gold_mention_id, ",".join(gold_origin_spans), "\t".join(gold_attributes))
+            gold_info = "%s\t%s\t%s" % (
+                gold_mention_id, ",".join(str(x) for x in gold_origin_spans), "\t".join(gold_attributes))
 
         sys_info = "-"
         if system_index != -1:
             system_spans, system_attributes, sys_mention_id, sys_origin_spans = system_mention_table[system_index]
-            sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(sys_origin_spans), "\t".join(system_attributes))
+            sys_info = "%s\t%s\t%s" % (
+                sys_mention_id, ",".join(str(x) for x in sys_origin_spans), "\t".join(system_attributes))
             mapped_system_mentions.add(system_index)
 
         write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, gold_info, sys_info, score_str))
@@ -938,7 +950,8 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
     for system_index, (system_spans, system_attributes, sys_mention_id, sys_origin_spans) in enumerate(
             system_mention_table):
         if system_index not in mapped_system_mentions:
-            sys_info = "%s\t%s\t%s" % (sys_mention_id, ",".join(sys_origin_spans), "\t".join(system_attributes))
+            sys_info = "%s\t%s\t%s" % (
+                sys_mention_id, ",".join(str(x) for x in sys_origin_spans), "\t".join(system_attributes))
             write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, "-", sys_info, "-"))
 
 
@@ -1152,7 +1165,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         if print_score_matrix:
             print system_index,
         for index, (gold_spans, gold_attributes, gold_mention_id, _) in enumerate(gold_mention_table):
-            overlap = compute_overlap_score(gold_spans, sys_spans)
+            overlap = compute_overlap(gold_spans, sys_spans)
             if len(gold_spans) == 0:
                 logger.warning("Found empty span gold standard at doc : %s, mention : %s" % (doc_id, gold_mention_id))
 
@@ -1261,6 +1274,8 @@ def natural_order(key):
     :param key:
     :return:
     """
+    if type(key) is int:
+        return key
     convert = lambda text: int(text) if text.isdigit() else text
     return [convert(c) for c in re.split('([0-9]+)', key)]
 
@@ -1311,8 +1326,8 @@ def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
         if span in span_map:
             if span is not ():
                 logger.error("Span within the same cluster cannot be the same.")
-                logger.error("%s->[%s]" % (eid, ",".join(span)))
-                logger.error("%s->[%s]" % (span_map[span], ",".join(span)))
+                logger.error("%s->[%s]" % (eid, ",".join(str(x) for x in span)))
+                logger.error("%s->[%s]" % (span_map[span], ",".join(str(x) for x in span)))
             return True
         else:
             span_map[span] = eid
@@ -1455,9 +1470,9 @@ class ConllConverter:
 
             coref_fields.append((merged_mention_str, output_cluster_id))
 
-        for cluster_id, cluster in clusters.iteritems():
-            if within_cluster_span_duplicate(cluster, event_mention_id2sorted_tokens):
-                return False
+        # for cluster_id, cluster in clusters.iteritems():
+        #     if within_cluster_span_duplicate(cluster, event_mention_id2sorted_tokens):
+        #         return False
 
         lines = []
 

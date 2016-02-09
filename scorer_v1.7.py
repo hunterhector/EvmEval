@@ -11,6 +11,9 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.7.1
+# 1. Add character based evaluation back, which can support languages such as Chinese.
+
 # Change log v1.7.0
 # 1. Changing the way of mention mapping to coreference, so that it will not favor too much on recall.
 # 2. Speed up on the coreference scoring since we don't need to select the best, we can convert in one single step.
@@ -99,7 +102,7 @@ class Config:
 
     token_joiner = ","
     span_seperator = ";"
-    span_joiner = "_"
+    span_joiner = ","
 
     missing_attribute_place_holder = "NOT_ANNOTATED"
 
@@ -245,37 +248,42 @@ def create_parent_dir(p):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Event mention scorer, which conducts token based "
-                    "scoring, system and gold standard files should follows "
-                    "the token-based format.")
+            description="Event mention scorer, which conducts token based "
+                        "scoring, system and gold standard files should follows "
+                        "the token-based format.")
     parser.add_argument("-g", "--gold", help="Golden Standard", required=True)
     parser.add_argument("-s", "--system", help="System output", required=True)
     parser.add_argument("-d", "--comparison_output",
                         help="Compare and help show the difference between "
                              "system and gold")
     parser.add_argument(
-        "-o", "--output", help="Optional evaluation result redirects, put eval result to file")
+            "-o", "--output", help="Optional evaluation result redirects, put eval result to file")
     parser.add_argument(
-        "-c", "--coref", help="Eval Coreference result output, need to put the reference"
-                              "conll coref scorer in the same folder with this scorer")
+            "-c", "--coref", help="Eval Coreference result output, need to put the reference"
+                                  "conll coref scorer in the same folder with this scorer")
     parser.add_argument(
-        "-t", "--token_path", help="Path to the directory containing the "
-                                   "token mappings file", required=True)
+            "-t", "--token_path", help="Path to the directory containing the "
+                                       "token mappings file")
     parser.add_argument(
-        "-m", "--coref_mapping", help="Which mapping will be used to perform coreference mapping.", type=int
+            "-m", "--coref_mapping", help="Which mapping will be used to perform coreference mapping.", type=int
     )
     parser.add_argument(
-        "-of", "--offset_field", help="A pair of integer indicates which column we should "
-                                      "read the offset in the token mapping file, index starts"
-                                      "at 0, default value will be %s" % Config.default_token_offset_fields
+            "-of", "--offset_field", help="A pair of integer indicates which column we should "
+                                          "read the offset in the token mapping file, index starts"
+                                          "at 0, default value will be %s" % Config.default_token_offset_fields
     )
     parser.add_argument(
-        "-te", "--token_table_extension",
-        help="any extension appended after docid of token table files. "
-             "Default is [%s]" % Config.default_token_file_ext)
+            "-te", "--token_table_extension",
+            help="any extension appended after docid of token table files. "
+                 "Default is [%s]" % Config.default_token_file_ext)
     parser.add_argument("-ct", "--coreference_threshold", type=float, help="Threshold for coreference mention mapping")
     parser.add_argument(
-        "-b", "--debug", help="turn debug mode on", action="store_true")
+            "-b", "--debug", help="turn debug mode on", action="store_true")
+
+    parser.add_argument("--eval_mode", choices=["char", "token"], default="token",
+                        help="Use Span Overlap or Token Overlap mode. The Span Overlap mode will take a span as range "
+                             "[start:end], while the Token Overlap mode consider each token is provided as a single "
+                             "id.")
 
     parser.set_defaults(debug=False)
     args = parser.parse_args()
@@ -287,6 +295,11 @@ def main():
     else:
         stream_handler.setLevel(logging.INFO)
         logger.setLevel(logging.INFO)
+
+    if args.eval_mode == "char":
+        MutableConfig.eval_mode = EvalMethod.Char
+    else:
+        MutableConfig.eval_mode = EvalMethod.Token
 
     if args.output is not None:
         out_path = args.output
@@ -311,7 +324,7 @@ def main():
         logger.info("CoNLL script output will be output at " + Config.conll_out)
 
         logger.info(
-            "Gold and system conll files will generated at " + Config.conll_gold_file + " and " + Config.conll_sys_file)
+                "Gold and system conll files will generated at " + Config.conll_gold_file + " and " + Config.conll_sys_file)
         # if os.path.exists(Config.conll_tmp_marker):
         #     # Clean up the directory to avoid scoring errors.
         #     remove_conll_tmp()
@@ -340,6 +353,8 @@ def main():
 
     token_dir = "."
     if args.token_path is not None:
+        if args.eval_mode == EvalMethod.Token:
+            terminate_with_error("Token table (-t) must be provided in token mode")
         if os.path.isdir(args.token_path):
             logger.debug("Will search token files in " + args.token_path)
             token_dir = args.token_path
@@ -406,8 +421,8 @@ def run_conll_script(gold_path, system_path, script_out):
     logger.info("Running reference CoNLL scorer.")
     with open(script_out, 'wb', 0) as out_file:
         subprocess.call(
-            ["perl", Config.conll_scorer_executable, "all", gold_path, system_path],
-            stdout=out_file)
+                ["perl", Config.conll_scorer_executable, "all", gold_path, system_path],
+                stdout=out_file)
     logger.info("Done running CoNLL scorer.")
 
 
@@ -475,9 +490,9 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
                     attribute_based_global_scores[comb_index][score_index] += score
 
         mention_eval_out.write(
-            "%s\t%.2f\t%.2f\t%.2f\t|\t%s\n" % (
-                pad_char_before_until(docId, doc_id_width), prec, recall, doc_f1,
-                "\t|\t".join(attribute_based_doc_scores)))
+                "%s\t%.2f\t%.2f\t%.2f\t|\t%s\n" % (
+                    pad_char_before_until(docId, doc_id_width), prec, recall, doc_f1,
+                    "\t|\t".join(attribute_based_doc_scores)))
 
         # Compute the denominators:
         # 1. Number of valid doc does not include gold standard files that contains no mentions.
@@ -529,16 +544,17 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
     final_result_big_header = ["Micro Average", "Macro Average"]
 
     mention_eval_out.write(
-        pad_char_before_until("", max_attribute_name_width, " ") + "\t" + "\t".join(
-            [pad_char_before_until(h, len(small_header_item)) for h in final_result_big_header]) + "\n")
+            pad_char_before_until("", max_attribute_name_width, " ") + "\t" + "\t".join(
+                    [pad_char_before_until(h, len(small_header_item)) for h in final_result_big_header]) + "\n")
     mention_eval_out.write(attributes_name_header + "\t" + "\t".join([small_header_item] * 2) + "\n")
     mention_eval_out.write(pad_char_before_until(attribute_header_list[0], max_attribute_name_width) + "\t" + "\t".join(
-        "%.2f" % f for f in plain_average_scores) + "\n")
+            "%.2f" % f for f in plain_average_scores) + "\n")
     for attr_index, attr_based_score in enumerate(attribute_based_global_scores):
         attr_average_scores = get_averages(attr_based_score, total_gold_mentions, total_system_mentions, valid_docs)
         mention_eval_out.write(
-            pad_char_before_until(attribute_header_list[attr_index + 1], max_attribute_name_width) + "\t" + "\t".join(
-                "%.2f" % f for f in attr_average_scores) + "\n")
+                pad_char_before_until(attribute_header_list[attr_index + 1],
+                                      max_attribute_name_width) + "\t" + "\t".join(
+                        "%.2f" % f for f in attr_average_scores) + "\n")
 
     if len(EvalState.overall_coref_scores) > 0:
         mention_eval_out.write("\n=======Final Mention Coreference Results=========\n")
@@ -553,7 +569,7 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
                 num_metric += 1
             mention_eval_out.write(formatter % (metric, score))
         mention_eval_out.write(
-            "Overall Average CoNLL score\t%.2f\n" % (conll_sum / num_metric))
+                "Overall Average CoNLL score\t%.2f\n" % (conll_sum / num_metric))
         mention_eval_out.write("\n* Score not included for final CoNLL score.\n")
 
         if mention_eval_out is not None:
@@ -607,15 +623,16 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
                 logger.warn("Token file is wrong at for file [%s], cannot parse token span here." % g_file_name)
                 logger.warn("  ---> %s" % tline.strip())
                 logger.warn(
-                    "Field %d and Field %d are not integer spans" % (token_offset_fields[0], token_offset_fields[1]))
+                        "Field %d and Field %d are not integer spans" % (
+                            token_offset_fields[0], token_offset_fields[1]))
 
             if token in Config.invisible_words:
                 invisible_ids.add(token_id)
 
     except IOError:
         logger.error(
-            "Cannot find token file for doc [%s] at [%s], "
-            "will use empty invisible words list" % (g_file_name, token_file_path))
+                "Cannot find token file for doc [%s] at [%s], "
+                "will use empty invisible words list" % (g_file_name, token_file_path))
         pass
 
     return invisible_ids, id2token, id2span
@@ -755,7 +772,7 @@ def parse_token_ids(s, invisible_ids):
     return filtered_token_ids, original_token_ids
 
 
-def parse_token_based_line(l, invisible_ids):
+def parse_line(l, invisible_ids):
     """
     Parse the line, get the token ids, remove invisible ones.
     :param l: A line in the tbf file.
@@ -765,13 +782,17 @@ def parse_token_based_line(l, invisible_ids):
     num_attributes = len(Config.attribute_names)
     if len(fields) < 5 + num_attributes:
         terminate_with_error("System line has too few fields:\n ---> %s" % l)
-    token_ids, original_token_ids = parse_token_ids(fields[3], invisible_ids)
 
-    if len(token_ids) == 0:
-        logger.warn("Find mention with only invisible words, will not be mapped to anything")
+    if MutableConfig.eval_mode == EvalMethod.Token:
+        spans, original_spans = parse_token_ids(fields[3], invisible_ids)
+        if len(spans) == 0:
+            logger.warn("Find mention with only invisible words, will not be mapped to anything")
+    else:
+        spans = parse_spans(fields[3])
+        original_spans = spans
 
     attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
-    return fields[2], token_ids, attributes, original_token_ids, fields[4]
+    return fields[2], spans, attributes, original_spans, fields[4]
 
 
 def canonicalize_string(str):
@@ -781,8 +802,11 @@ def canonicalize_string(str):
         return str
 
 
-def parse_line(l, eval_mode, invisible_ids):
-    return parse_token_based_line(l, invisible_ids)
+#
+# def parse_line(l, invisible_ids):
+#     if MutableConfig.eval_mode == EvalMethod.Token:
+#         return parse_token_based_line(l, invisible_ids)
+#     elif MutableConfig.eval_mode == EvalMethod.Char:
 
 
 def parse_relation(relation_line):
@@ -803,15 +827,17 @@ def span_overlap(span1, span2):
     :param span2:
     :return: number of overlapping spans
     """
-    if span1[1] > span2[0] and span1[0] < span2[1]:
-        # find left end
-        left_end = span1[0] if span1[0] < span2[0] else span2[0]
-        # find right end
-        right_end = span1[1] if span1[1] > span2[1] else span2[1]
-        return right_end - left_end
-    else:
-        # no overlap
-        return 0
+    characters1 = set()
+    characters2 = set()
+    for s in span1:
+        for i in range(s[0], s[1]):
+            characters1.add(i)
+    for s in span2:
+        for i in range(s[0], s[1]):
+            characters2.add(i)
+
+    intersect = characters1.intersection(characters2)
+    return 2 * len(intersect) / (len(characters1) + len(characters2))
 
 
 def compute_token_overlap_score(g_tokens, s_tokens):
@@ -840,8 +866,11 @@ def compute_token_overlap_score(g_tokens, s_tokens):
     return 2 * prec * recall / (prec + recall)
 
 
-def compute_overlap_score(system_outputs, gold_annos, eval_mode):
-    return compute_token_overlap_score(system_outputs, gold_annos)
+def compute_overlap_score(system_outputs, gold_annos):
+    if MutableConfig.eval_mode == EvalMethod.Token:
+        return compute_token_overlap_score(system_outputs, gold_annos)
+    elif MutableConfig.eval_mode == EvalMethod.Char:
+        return span_overlap(system_outputs, gold_annos)
 
 
 def get_attr_combinations(attr_names):
@@ -872,8 +901,8 @@ def attribute_based_match(target_attributes, gold_attrs, sys_attrs, doc_id):
         gold_attr = gold_attrs[attribute_index]
         if gold_attr == Config.missing_attribute_place_holder:
             logger.warning(
-                "Found one attribute [%s] in file [%s] not annotated, give full credit to all system." % (
-                    Config.attribute_names[attribute_index], doc_id))
+                    "Found one attribute [%s] in file [%s] not annotated, give full credit to all system." % (
+                        Config.attribute_names[attribute_index], doc_id))
             continue
         if gold_attr != sys_attrs[attribute_index]:
             return False
@@ -1077,15 +1106,9 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
     logger.info("Evaluating Document %s" % doc_id)
 
-    eval_mode = MutableConfig.eval_mode
-
-    invisible_ids, id2token, id2span = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
-
-    # system_id = ""
-    # if len(s_mention_lines) > 0:
-    #     fields = s_mention_lines[0].split("\t")
-    #     if len(fields) > 0:
-    #         system_id = fields[0]
+    invisible_ids = []
+    if MutableConfig.eval_mode == EvalMethod.Token:
+        invisible_ids, id2token, id2span = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
 
     # Parse the lines and save them as a table from id to content.
     system_mention_table = []
@@ -1099,7 +1122,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
     mention_ids = []
     for sl in s_mention_lines:
-        sys_mention_id, sys_spans, sys_attributes, origin_sys_spans, text = parse_line(sl, eval_mode, invisible_ids)
+        sys_mention_id, sys_spans, sys_attributes, origin_sys_spans, text = parse_line(sl, invisible_ids)
         # if len(sys_spans) == 0:
         #     # Temporarily ignoring empty mentions.
         #     continue
@@ -1113,7 +1136,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         return False
 
     for gl in g_mention_lines:
-        gold_mention_id, gold_spans, gold_attributes, origin_gold_spans, text = parse_line(gl, eval_mode, invisible_ids)
+        gold_mention_id, gold_spans, gold_attributes, origin_gold_spans, text = parse_line(gl, invisible_ids)
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id, origin_gold_spans))
         EvalState.all_possible_types.add(gold_attributes[0])
         gold_id_2_text[gold_mention_id] = text
@@ -1129,7 +1152,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         if print_score_matrix:
             print system_index,
         for index, (gold_spans, gold_attributes, gold_mention_id, _) in enumerate(gold_mention_table):
-            overlap = compute_overlap_score(gold_spans, sys_spans, eval_mode)
+            overlap = compute_overlap_score(gold_spans, sys_spans)
             if len(gold_spans) == 0:
                 logger.warning("Found empty span gold standard at doc : %s, mention : %s" % (doc_id, gold_mention_id))
 
@@ -1143,8 +1166,8 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
             print
 
     greedy_tp, greedy_attribute_tps, greedy_mention_only_mapping, greedy_all_attribute_mapping = get_tp_greedy(
-        all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
-        system_mention_table, doc_id)
+            all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
+            system_mention_table, doc_id)
 
     write_if_provided(diff_out, Config.bod_marker + " " + doc_id + "\n")
     if diff_out is not None:
@@ -1194,7 +1217,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
                       coref[0] == Config.coreference_relation_name]
 
         # Prepare CoNLL style coreference input for this document.
-        conll_converter = ConllConverter(id2token, doc_id, system_id)
+        conll_converter = ConllConverter(doc_id, system_id, sys_id_2_text, gold_id_2_text)
         gold_conll_lines, sys_conll_lines = conll_converter.prepare_conll_lines(gold_corefs, sys_corefs,
                                                                                 gold_mention_table,
                                                                                 system_mention_table,
@@ -1253,7 +1276,7 @@ def transitive_not_resolved(clusters):
         for j in range(i + 1, len(ids)):
             if len(clusters[i].intersection(clusters[j])) != 0:
                 logger.error(
-                    "Non empty intersection between clusters found. Please resolve transitive closure before submit.")
+                        "Non empty intersection between clusters found. Please resolve transitive closure before submit.")
                 logger.error(clusters[i])
                 logger.error(clusters[j])
                 return True
@@ -1296,16 +1319,18 @@ def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
 
 
 class ConllConverter:
-    def __init__(self, id2token, doc_id, system_id):
+    def __init__(self, doc_id, system_id, sys_id_2_text, gold_id_2_text):
         """
-        :param id2token: a dict, map from token id to its string
         :param doc_id: the document id
         :param system_id: The id of the participant system
+        :param sys_id_2_text
+        :param gold_id_2_text
         :return:
         """
-        self.id2token = id2token
         self.doc_id = doc_id
         self.system_id = system_id
+        self.sys_id_2_text = sys_id_2_text
+        self.gold_id_2_text = gold_id_2_text
 
     @staticmethod
     def create_aligned_tables(gold_2_system_one_2_one_mapping, gold_mention_table, system_mention_table,
@@ -1332,7 +1357,7 @@ class ConllConverter:
             system_index, alignment_score = system_aligned
             if alignment_score >= threshold:
                 aligned_system_table.append(
-                    (system_mention_table[system_index][0], system_mention_table[system_index][2]))
+                        (system_mention_table[system_index][0], system_mention_table[system_index][2]))
                 aligned_system_mentions.add(system_index)
             else:
                 aligned_system_table.append(None)
@@ -1342,7 +1367,7 @@ class ConllConverter:
             if system_index not in aligned_system_mentions:
                 aligned_gold_table.append(None)
                 aligned_system_table.append(
-                    (system_mention_table[system_index][0], system_mention_table[system_index][2]))
+                        (system_mention_table[system_index][0], system_mention_table[system_index][2]))
 
         return aligned_gold_table, aligned_system_table
 
@@ -1377,10 +1402,10 @@ class ConllConverter:
         logger.debug("Preparing CoNLL files using mapping threhold %.2f" % threshold)
 
         gold_conll_lines = self.prepare_lines(gold_corefs, aligned_gold_table,
-                                              self.extract_token_map(gold_mention_table))
+                                              self.extract_token_map(gold_mention_table), self.gold_id_2_text)
 
         sys_conll_lines = self.prepare_lines(sys_corefs, aligned_system_table,
-                                             self.extract_token_map(system_mention_table))
+                                             self.extract_token_map(system_mention_table), self.sys_id_2_text)
 
         if not gold_conll_lines:
             terminate_with_error("Gold standard has data problem for doc [%s], please refer to log. Quitting..."
@@ -1392,7 +1417,7 @@ class ConllConverter:
 
         return gold_conll_lines, sys_conll_lines
 
-    def prepare_lines(self, corefs, mention_table, event_mention_id2sorted_tokens):
+    def prepare_lines(self, corefs, mention_table, event_mention_id2sorted_tokens, id_2_text):
         clusters = {}
         for cluster_id, one_coref_cluster in enumerate(corefs):
             clusters[cluster_id] = set(one_coref_cluster[2])
@@ -1423,8 +1448,10 @@ class ConllConverter:
                 output_cluster_id = singleton_cluster_id
                 singleton_cluster_id += 1
 
-            merged_mention_str = "_".join([get_or_terminate(self.id2token, tid, Config.token_miss_msg % tid)
-                                           for tid in event_mention_id2sorted_tokens[event_mention_id]])
+            merged_mention_str = "_".join(id_2_text[event_mention_id].split())
+
+            # merged_mention_str = "_".join([get_or_terminate(self.id2token, tid, Config.token_miss_msg % tid)
+            #                                for tid in event_mention_id2sorted_tokens[event_mention_id]])
 
             coref_fields.append((merged_mention_str, output_cluster_id))
 

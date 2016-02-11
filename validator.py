@@ -361,10 +361,10 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
             logger.error("Found invented id in clusters at doc [%s]" % doc_id)
             return False
 
-        if within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
-            logger.error("Please remove span duplicates before submitting")
-            logger.error("Problem was found in file %s" % doc_id)
-            return False
+        # if within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+        #     logger.error("Please remove span duplicates before submitting")
+        #     logger.error("Problem was found in file %s" % doc_id)
+        #     return False
 
     return True
 

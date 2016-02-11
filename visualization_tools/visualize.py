@@ -10,14 +10,14 @@
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
 
-import json
 import SimpleHTTPServer
 import SocketServer
-import os
-import sys
 import argparse
+import json
 import logging
+import os
 import re
+import sys
 
 PORT = 8000
 
@@ -60,6 +60,8 @@ all_possible_realis_types = set()
 
 append_json = False
 
+char_based = True
+
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
 formatter = logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s')
@@ -79,52 +81,55 @@ def main():
     global append_json
 
     parser = argparse.ArgumentParser(
-        description="Mention visualizer, will create a side-by-side embedded "
-                    "visualization from the mapping "
+            description="Mention visualizer, will create a side-by-side embedded "
+                        "visualization from the mapping "
     )
     parser.add_argument("-d", "--comparison_output",
                         help="The comparison output file between system and gold,"
                              " used to recover the mapping", required=True)
     parser.add_argument(
-        "-t", "--tokenPath", help="Path to the directory containing the "
-                                  "token mappings file", required=True)
+            "-t", "--tokenPath", help="Path to the directory containing the token mappings file")
     parser.add_argument(
-        "-x", "--text", help="Path to the directory containing the original text", required=True
+            "-x", "--text", help="Path to the directory containing the original text", required=True
     )
 
     parser.add_argument("-v", "--visualization_html_path",
                         help="The Path to find visualization web pages, default path is [%s]" %
                              visualization_path)
     parser.add_argument(
-        "-of", "--offset_field", help="A pair of integer indicates which column we should "
-                                      "read the offset in the token mapping file, index starts"
-                                      "at 0, default value will be %s" % token_offset_fields
+            "-of", "--offset_field", help="A pair of integer indicates which column we should "
+                                          "read the offset in the token mapping file, index starts"
+                                          "at 0, default value will be %s" % token_offset_fields
     )
     parser.add_argument(
-        "-a", "--append", help="Append the JSON data with previous generated ones", action='store_true'
+            "-a", "--append", help="Append the JSON data with previous generated ones", action='store_true'
     )
     parser.add_argument(
-        "-te", "--token_table_extension",
-        help="any extension appended after docid of token table files. "
-             "Default is [%s]" % token_file_ext)
+            "-te", "--token_table_extension",
+            help="any extension appended after docid of token table files. "
+                 "Default is [%s]" % token_file_ext)
     parser.add_argument(
-        "-se", "--source_file_extension",
-        help="any extension appended after docid of source files."
-             "Default is [%s]" % source_file_ext)
+            "-se", "--source_file_extension",
+            help="any extension appended after docid of source files."
+                 "Default is [%s]" % source_file_ext)
+    parser.add_argument("--char_based", action="store_true")
 
     args = parser.parse_args()
 
     if args.text is not None:
         text_dir = args.text
 
-    if args.tokenPath is not None:
-        if os.path.isdir(args.tokenPath):
-            logger.debug("Will search token files in " + args.tokenPath)
-            token_dir = args.tokenPath
-        else:
-            logger.debug("Cannot find given token directory at " +
-                         args.tokenPath +
-                         ", will try search for current directory")
+    char_based = args.char_based
+
+    if not char_based:
+        if args.tokenPath is not None:
+            if os.path.isdir(args.tokenPath):
+                logger.debug("Will search token files in " + args.tokenPath)
+                token_dir = args.tokenPath
+            else:
+                logger.debug(
+                        "Cannot find given token directory at %s, will try search for current directory"
+                        % args.tokenPath)
 
     if args.visualization_html_path is not None:
         visualization_path = args.visualization_html_path
@@ -155,7 +160,7 @@ def main():
 def validate():
     if not os.path.isdir(text_dir):
         logger.error("Cannot find text directory : [%s], cannot do visualization." % text_dir)
-    if not os.path.isdir(token_dir):
+    if not char_based and not os.path.isdir(token_dir):
         logger.error("Cannot find token directory : [%s], cannot do visualization." % text_dir)
     if os.path.isdir(visualization_path):
         json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
@@ -350,8 +355,8 @@ def create_mention_json(text, all_annotations, token_map, span_matching_score, r
     attribute_id_record = [{}, 1]
     # event_id_record = [{}, 1]
 
-    for index, (token_based_annotations, (mention_type, realis), event_id) in enumerate(all_annotations):
-        text_bound_id, annotation = parse_token_annotation(token_based_annotations, token_map, text_bound_id_record)
+    for index, (id_based_annotations, (mention_type, realis), event_id) in enumerate(all_annotations):
+        text_bound_id, annotation = parse_as_char_annotation(id_based_annotations, token_map, text_bound_id_record)
         span_status = span_matching_score[index]
 
         perfect_span = False
@@ -397,20 +402,57 @@ def create_mention_json(text, all_annotations, token_map, span_matching_score, r
     return data
 
 
-def parse_token_annotation(token_based_annotations, token_map, text_span_id):
+def parse_as_char_annotation(id_based_annotations, token_map, text_span_id):
     """
     Create JSON based annotation to be embedded using Brat
-    :param token_based_annotations: The annotations, in terms of token ids
+    :param id_based_annotations: The annotations, in terms of ids (token or character)
     :param token_map: The token id to character span mapping
     :param mention_type: The mention_type of the annotation
     :param text_span_id: Map from text span to id
     :return: JSON data representing the annotation
     """
-    return assign_text_bound_id(token_annotation_2_character_annotation(token_based_annotations, token_map),
-                                text_span_id)
+    return assign_text_bound_id(get_character_annotation(id_based_annotations, token_map), text_span_id)
 
 
-def token_annotation_2_character_annotation(token_based_annotations, token_map):
+def get_character_annotation(id_based_annotations, token_map):
+    """
+    Convert a token based annotation into character based. Discontinuous annotations are handled
+
+    :param id_based_annotations: Annotations in terms of tokens
+    :param token_map: Token id to character span mapping
+    :return: The result character based annotation
+    """
+    # spans = []
+    # last_id = -1
+    #
+    # for sorted_token in sorted(token_based_annotations, key=natural_key):
+    #     this_id = int(''.join(str(x) for x in natural_key(sorted_token)))
+    #     if last_id == -1 or this_id != last_id + 1:
+    #         spans.append([])
+    #     last_id = this_id
+    #
+    #     spans[-1].append(sorted_token)
+    # return [[token_map[s[0]][0], token_map[s[-1]][1] - 1] for s in spans]
+    #
+    if char_based:
+        return get_char_annotation_from_chars(id_based_annotations)
+    else:
+        return get_char_annotation_from_tokens(id_based_annotations, token_map)
+
+
+def get_char_annotation_from_chars(char_based_annotations):
+    spans = []
+    last_id = -1
+    for sorted_char in sorted(char_based_annotations):
+        this_id = int(sorted_char)
+        if last_id == -1 or this_id != last_id + 1:
+            spans.append([])
+        last_id = this_id
+        spans[-1].append(this_id)
+    return [[s[0], s[-1] + 1] for s in spans]
+
+
+def get_char_annotation_from_tokens(token_based_annotations, token_map):
     """
     Convert a token based annotation into character based. Discontinuous annotations are handled
 
@@ -519,7 +561,7 @@ def read_token_ids(g_file_name):
                 logger.error("Token file is wrong at for file " + g_file_name)
     except IOError:
         logger.debug(
-            "Cannot find token file for doc [%s] at [%s]" % (g_file_name, token_file_path))
+                "Cannot find token file for doc [%s] at [%s]" % (g_file_name, token_file_path))
         pass
     return id2token_map
 
@@ -530,7 +572,7 @@ def read_original_text(doc_id):
         f = open(os.path.join(text_dir, doc_id + source_file_ext))
         return f.read()
     else:
-        logger.error("Cannot locate original text, please check parameters")
+        logger.error("Cannot locate original text at [%s], please check parameters." % text_path)
         sys.exit(1)
 
 
@@ -581,23 +623,24 @@ def parse_mapping(doc_id, doc_lines):
             assigned_gold_2_system_mapping[gold_index].append((sys_index, float(score)))
 
         if gold_fields[0] != "-":
-            tokens = gold_fields[1].split(token_joiner)
-            if len(tokens) == 0:
+            # A id can be a token ID or a character ID.
+            ids = gold_fields[1].split(token_joiner)
+            if len(ids) == 0:
                 logger.error("Doc line is wrong, empty token found in Gold for the following line: ")
                 logger.error(l)
                 sys.exit(1)
-            gold_annotations.append((tokens, gold_fields[2:], gold_fields[0]))
+            gold_annotations.append((ids, gold_fields[2:], gold_fields[0]))
             all_possible_mention_types.add(gold_fields[2])
             all_possible_realis_types.add(gold_fields[3])
             gold_index += 1
         if sys_fields[0] != "-":
-            tokens = sys_fields[1].split(token_joiner)
-            if len(tokens) == 0:
+            ids = sys_fields[1].split(token_joiner)
+            if len(ids) == 0:
                 logger.error("Doc line is wrong, empty token found in System for the following line: ")
                 logger.error(l)
                 logger.error(sys_fields)
                 sys.exit(1)
-            system_annotations.append((tokens, sys_fields[2:], sys_fields[0]))
+            system_annotations.append((ids, sys_fields[2:], sys_fields[0]))
             all_possible_mention_types.add(sys_fields[2])
             all_possible_realis_types.add(sys_fields[3])
             sys_index += 1

@@ -60,7 +60,7 @@ all_possible_realis_types = set()
 
 append_json = False
 
-char_based = True
+char_based = False
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -130,6 +130,8 @@ def main():
                 logger.debug(
                         "Cannot find given token directory at %s, will try search for current directory"
                         % args.tokenPath)
+        else:
+            logger.warn("Tokens not provided")
 
     if args.visualization_html_path is not None:
         visualization_path = args.visualization_html_path

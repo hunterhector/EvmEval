@@ -872,6 +872,8 @@ def compute_token_overlap_score(g_tokens, s_tokens):
 
 
 def compute_overlap(items1, items2):
+    if len(items1) + len(items2) == 0:
+        return 0
     intersect = set(items1).intersection(set(items2))
     return 2 * len(intersect) / (len(items1) + len(items2))
 
@@ -1165,9 +1167,12 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         if print_score_matrix:
             print system_index,
         for index, (gold_spans, gold_attributes, gold_mention_id, _) in enumerate(gold_mention_table):
-            overlap = compute_overlap(gold_spans, sys_spans)
             if len(gold_spans) == 0:
                 logger.warning("Found empty span gold standard at doc : %s, mention : %s" % (doc_id, gold_mention_id))
+            if len(sys_spans) == 0:
+                logger.warning("Found empty span system standard at doc : %s, mention : %s" % (doc_id, sys_mention_id))
+
+            overlap = compute_overlap(gold_spans, sys_spans)
 
             if print_score_matrix:
                 print "%.1f" % overlap,

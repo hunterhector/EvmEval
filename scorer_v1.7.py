@@ -641,7 +641,7 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
 
 
 def safe_div(n, dn):
-    return n / dn if dn > 0 else float('nan')
+    return 1.0 * n / dn if dn > 0 else float('nan')
 
 
 def compute_f1(p, r):

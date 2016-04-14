@@ -115,7 +115,7 @@ def main():
             help="any extension appended after docid of source files."
                  "Default is [%s]" % source_file_ext)
     parser.add_argument("--char_based", action="store_true")
-    parser.add_argument("--start_server", action="store_false")
+    parser.add_argument("-ns", "--no_server", action="store_false")
 
     args = parser.parse_args()
 
@@ -123,7 +123,7 @@ def main():
         text_dir = args.text
 
     char_based = args.char_based
-    start_server = args.start_server
+    start_server = args.no_server
 
     if not char_based:
         if args.tokenPath is not None:

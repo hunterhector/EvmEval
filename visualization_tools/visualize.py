@@ -62,7 +62,7 @@ append_json = False
 
 char_based = False
 
-start_server = True
+use_server = True
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -123,7 +123,7 @@ def main():
         text_dir = args.text
 
     char_based = args.char_based
-    start_server = args.no_server
+    use_server = args.no_server
 
     if not char_based:
         if args.tokenPath is not None:
@@ -160,7 +160,8 @@ def main():
 
     prepare_diff_setting(doc_ids_to_score, all_possible_mention_types, all_possible_realis_types,
                          os.path.join(visualization_path, visualization_json_data_subpath))
-    start_server()
+    if use_server:
+        start_server()
 
 
 def validate():

@@ -535,7 +535,13 @@ def parse_coref_lines(lines):
     sys_corefs = []
     for l in lines:
         _, source, mentions = l.split("\t")
-        mid2text = dict([(m.split(":")) for m in mentions.split(",")])
+        try:
+            mid2text = dict([(m.split(":")) for m in mentions.split(",")])
+        except ValueError as e:
+            logger.error("Cannot parse the following coreference line:")
+            logger.error(l)
+            logger.error(e)
+
         if source == "gold":
             gold_corefs.append(mid2text)
         else:

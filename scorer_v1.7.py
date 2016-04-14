@@ -250,37 +250,37 @@ def create_parent_dir(p):
 
 def main():
     parser = argparse.ArgumentParser(
-            description="Event mention scorer, which conducts token based "
-                        "scoring, system and gold standard files should follows "
-                        "the token-based format.")
+        description="Event mention scorer, which conducts token based "
+                    "scoring, system and gold standard files should follows "
+                    "the token-based format.")
     parser.add_argument("-g", "--gold", help="Golden Standard", required=True)
     parser.add_argument("-s", "--system", help="System output", required=True)
     parser.add_argument("-d", "--comparison_output",
                         help="Compare and help show the difference between "
                              "system and gold")
     parser.add_argument(
-            "-o", "--output", help="Optional evaluation result redirects, put eval result to file")
+        "-o", "--output", help="Optional evaluation result redirects, put eval result to file")
     parser.add_argument(
-            "-c", "--coref", help="Eval Coreference result output, need to put the reference"
-                                  "conll coref scorer in the same folder with this scorer")
+        "-c", "--coref", help="Eval Coreference result output, need to put the reference"
+                              "conll coref scorer in the same folder with this scorer")
     parser.add_argument(
-            "-t", "--token_path", help="Path to the directory containing the "
-                                       "token mappings file")
+        "-t", "--token_path", help="Path to the directory containing the "
+                                   "token mappings file")
     parser.add_argument(
-            "-m", "--coref_mapping", help="Which mapping will be used to perform coreference mapping.", type=int
+        "-m", "--coref_mapping", help="Which mapping will be used to perform coreference mapping.", type=int
     )
     parser.add_argument(
-            "-of", "--offset_field", help="A pair of integer indicates which column we should "
-                                          "read the offset in the token mapping file, index starts"
-                                          "at 0, default value will be %s" % Config.default_token_offset_fields
+        "-of", "--offset_field", help="A pair of integer indicates which column we should "
+                                      "read the offset in the token mapping file, index starts"
+                                      "at 0, default value will be %s" % Config.default_token_offset_fields
     )
     parser.add_argument(
-            "-te", "--token_table_extension",
-            help="any extension appended after docid of token table files. "
-                 "Default is [%s]" % Config.default_token_file_ext)
+        "-te", "--token_table_extension",
+        help="any extension appended after docid of token table files. "
+             "Default is [%s]" % Config.default_token_file_ext)
     parser.add_argument("-ct", "--coreference_threshold", type=float, help="Threshold for coreference mention mapping")
     parser.add_argument(
-            "-b", "--debug", help="turn debug mode on", action="store_true")
+        "-b", "--debug", help="turn debug mode on", action="store_true")
 
     parser.add_argument("--eval_mode", choices=["char", "token"], default="token",
                         help="Use Span Overlap or Token Overlap mode. The Span Overlap mode will take a span as range "
@@ -326,7 +326,7 @@ def main():
         logger.info("CoNLL script output will be output at " + Config.conll_out)
 
         logger.info(
-                "Gold and system conll files will generated at " + Config.conll_gold_file + " and " + Config.conll_sys_file)
+            "Gold and system conll files will generated at " + Config.conll_gold_file + " and " + Config.conll_sys_file)
         # if os.path.exists(Config.conll_tmp_marker):
         #     # Clean up the directory to avoid scoring errors.
         #     remove_conll_tmp()
@@ -423,8 +423,8 @@ def run_conll_script(gold_path, system_path, script_out):
     logger.info("Running reference CoNLL scorer.")
     with open(script_out, 'wb', 0) as out_file:
         subprocess.call(
-                ["perl", Config.conll_scorer_executable, "all", gold_path, system_path],
-                stdout=out_file)
+            ["perl", Config.conll_scorer_executable, "all", gold_path, system_path],
+            stdout=out_file)
     logger.info("Done running CoNLL scorer.")
 
 
@@ -492,9 +492,9 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
                     attribute_based_global_scores[comb_index][score_index] += score
 
         mention_eval_out.write(
-                "%s\t%.2f\t%.2f\t%.2f\t|\t%s\n" % (
-                    pad_char_before_until(docId, doc_id_width), prec, recall, doc_f1,
-                    "\t|\t".join(attribute_based_doc_scores)))
+            "%s\t%.2f\t%.2f\t%.2f\t|\t%s\n" % (
+                pad_char_before_until(docId, doc_id_width), prec, recall, doc_f1,
+                "\t|\t".join(attribute_based_doc_scores)))
 
         # Compute the denominators:
         # 1. Number of valid doc does not include gold standard files that contains no mentions.
@@ -546,17 +546,17 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
     final_result_big_header = ["Micro Average", "Macro Average"]
 
     mention_eval_out.write(
-            pad_char_before_until("", max_attribute_name_width, " ") + "\t" + "\t".join(
-                    [pad_char_before_until(h, len(small_header_item)) for h in final_result_big_header]) + "\n")
+        pad_char_before_until("", max_attribute_name_width, " ") + "\t" + "\t".join(
+            [pad_char_before_until(h, len(small_header_item)) for h in final_result_big_header]) + "\n")
     mention_eval_out.write(attributes_name_header + "\t" + "\t".join([small_header_item] * 2) + "\n")
     mention_eval_out.write(pad_char_before_until(attribute_header_list[0], max_attribute_name_width) + "\t" + "\t".join(
-            "%.2f" % f for f in plain_average_scores) + "\n")
+        "%.2f" % f for f in plain_average_scores) + "\n")
     for attr_index, attr_based_score in enumerate(attribute_based_global_scores):
         attr_average_scores = get_averages(attr_based_score, total_gold_mentions, total_system_mentions, valid_docs)
         mention_eval_out.write(
-                pad_char_before_until(attribute_header_list[attr_index + 1],
-                                      max_attribute_name_width) + "\t" + "\t".join(
-                        "%.2f" % f for f in attr_average_scores) + "\n")
+            pad_char_before_until(attribute_header_list[attr_index + 1],
+                                  max_attribute_name_width) + "\t" + "\t".join(
+                "%.2f" % f for f in attr_average_scores) + "\n")
 
     if len(EvalState.overall_coref_scores) > 0:
         mention_eval_out.write("\n=======Final Mention Coreference Results=========\n")
@@ -571,7 +571,7 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
                 num_metric += 1
             mention_eval_out.write(formatter % (metric, score))
         mention_eval_out.write(
-                "Overall Average CoNLL score\t%.2f\n" % (conll_sum / num_metric))
+            "Overall Average CoNLL score\t%.2f\n" % (conll_sum / num_metric))
         mention_eval_out.write("\n* Score not included for final CoNLL score.\n")
 
         if mention_eval_out is not None:
@@ -625,16 +625,16 @@ def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fiel
                 logger.warn("Token file is wrong at for file [%s], cannot parse token span here." % g_file_name)
                 logger.warn("  ---> %s" % tline.strip())
                 logger.warn(
-                        "Field %d and Field %d are not integer spans" % (
-                            token_offset_fields[0], token_offset_fields[1]))
+                    "Field %d and Field %d are not integer spans" % (
+                        token_offset_fields[0], token_offset_fields[1]))
 
             if token in Config.invisible_words:
                 invisible_ids.add(token_id)
 
     except IOError:
         logger.error(
-                "Cannot find token file for doc [%s] at [%s], "
-                "will use empty invisible words list" % (g_file_name, token_file_path))
+            "Cannot find token file for doc [%s] at [%s], "
+            "will use empty invisible words list" % (g_file_name, token_file_path))
         pass
 
     return invisible_ids, id2token, id2span
@@ -913,17 +913,17 @@ def attribute_based_match(target_attributes, gold_attrs, sys_attrs, doc_id):
         gold_attr = gold_attrs[attribute_index]
         if gold_attr == Config.missing_attribute_place_holder:
             logger.warning(
-                    "Found one attribute [%s] in file [%s] not annotated, give full credit to all system." % (
-                        Config.attribute_names[attribute_index], doc_id))
+                "Found one attribute [%s] in file [%s] not annotated, give full credit to all system." % (
+                    Config.attribute_names[attribute_index], doc_id))
             continue
         if gold_attr != sys_attrs[attribute_index]:
             return False
     return True
 
 
-def write_if_provided(diff_out, text):
-    if diff_out is not None:
-        diff_out.write(text)
+def write_if_provided(out_file, text):
+    if out_file is not None:
+        out_file.write(text)
 
 
 def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_mapping, gold_mention_table,
@@ -959,9 +959,11 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
 
 def write_gold_and_system_corefs(diff_out, gold_coref, sys_coref, gold_id_2_text, sys_id_2_text):
     for c in gold_coref:
-        write_if_provided(diff_out, "@coref\tgold\t%s\n" % ",".join([c + ":" + gold_id_2_text[c] for c in c[2]]))
+        write_if_provided(diff_out, "@coref\tgold\t%s\n" %
+                          ",".join([c + ":" + gold_id_2_text[c].replace(",", "") for c in c[2]]))
     for c in sys_coref:
-        write_if_provided(diff_out, "@coref\tsystem\t%s\n" % ",".join([c + ":" + sys_id_2_text[c] for c in c[2]]))
+        write_if_provided(diff_out, "@coref\tsystem\t%s\n" %
+                          ",".join([c + ":" + sys_id_2_text[c].replace(",", "") for c in c[2]]))
 
 
 def get_tp_greedy(all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
@@ -1184,8 +1186,8 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
             print
 
     greedy_tp, greedy_attribute_tps, greedy_mention_only_mapping, greedy_all_attribute_mapping = get_tp_greedy(
-            all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
-            system_mention_table, doc_id)
+        all_gold_system_mapping_scores, all_attribute_combinations, gold_mention_table,
+        system_mention_table, doc_id)
 
     write_if_provided(diff_out, Config.bod_marker + " " + doc_id + "\n")
     if diff_out is not None:
@@ -1296,7 +1298,7 @@ def transitive_not_resolved(clusters):
         for j in range(i + 1, len(ids)):
             if len(clusters[i].intersection(clusters[j])) != 0:
                 logger.error(
-                        "Non empty intersection between clusters found. Please resolve transitive closure before submit.")
+                    "Non empty intersection between clusters found. Please resolve transitive closure before submit.")
                 logger.error(clusters[i])
                 logger.error(clusters[j])
                 return True
@@ -1377,7 +1379,7 @@ class ConllConverter:
             system_index, alignment_score = system_aligned
             if alignment_score >= threshold:
                 aligned_system_table.append(
-                        (system_mention_table[system_index][0], system_mention_table[system_index][2]))
+                    (system_mention_table[system_index][0], system_mention_table[system_index][2]))
                 aligned_system_mentions.add(system_index)
             else:
                 aligned_system_table.append(None)
@@ -1387,7 +1389,7 @@ class ConllConverter:
             if system_index not in aligned_system_mentions:
                 aligned_gold_table.append(None)
                 aligned_system_table.append(
-                        (system_mention_table[system_index][0], system_mention_table[system_index][2]))
+                    (system_mention_table[system_index][0], system_mention_table[system_index][2]))
 
         return aligned_gold_table, aligned_system_table
 

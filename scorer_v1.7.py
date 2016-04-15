@@ -796,7 +796,8 @@ def parse_line(l, invisible_ids):
         spans = parse_characters(fields[3])
         original_spans = spans
 
-    attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
+    # attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
+    attributes = fields[5:5 + num_attributes]
     return fields[2], spans, attributes, original_spans, fields[4]
 
 
@@ -875,7 +876,7 @@ def compute_overlap(items1, items2):
     if len(items1) + len(items2) == 0:
         return 0
     intersect = set(items1).intersection(set(items2))
-    return 2 * len(intersect) / (len(items1) + len(items2))
+    return 2.0 * len(intersect) / (len(items1) + len(items2))
 
 
 # def compute_overlap_score(system_outputs, gold_annos):
@@ -910,13 +911,14 @@ def attribute_based_match(target_attributes, gold_attrs, sys_attrs, doc_id):
     :return: True if two sets of attributes matches on given attributes
     """
     for (attribute_index, attribute_name) in target_attributes:
-        gold_attr = gold_attrs[attribute_index]
-        if gold_attr == Config.missing_attribute_place_holder:
+        gold_attr = canonicalize_string(gold_attrs[attribute_index])
+        if gold_attr == canonicalize_string(Config.missing_attribute_place_holder):
             logger.warning(
                 "Found one attribute [%s] in file [%s] not annotated, give full credit to all system." % (
                     Config.attribute_names[attribute_index], doc_id))
             continue
-        if gold_attr != sys_attrs[attribute_index]:
+        sys_attr = canonicalize_string(sys_attrs[attribute_index])
+        if gold_attr != sys_attr:
             return False
     return True
 

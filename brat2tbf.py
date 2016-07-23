@@ -3,7 +3,7 @@
 """
     A simple piece of python code that could convert the Brat annotation
 tool format into Event Mention Detection format for easy evaluation. For
-detailed features and usage please refer to the README file
+detailed features and usage please refer to the README file.
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
@@ -37,7 +37,8 @@ rels = {}  # all relations
 out = "converted"
 out_ext = ".tbf"  # short for token based format
 engine_id = "brat_conversion"
-tokenJoiner = ","
+inner_span_joiner = ","
+inter_span_joiner = ";"
 
 # brat_annotation_ext = ".tkn.ann"
 # token_offset_ext = ".txt.tab"  # accroding to LDC2014R55
@@ -62,25 +63,22 @@ def main():
     global token_offset_fields
 
     parser_description = (
-        "This converter converts Brat annotation files to "
-        "one single token based event mention description file (CMU format). "
-        "It accepts a single file name or a directory name that contains the "
-        "Brat annotation output. The converter also requires token offset "
-        "files that shares the same name with the annotation file, with "
-        "extension " + token_offset_ext + ". The converter will search for ("
-                                          "the token file in the directory specified by '-t' argument")
+        "This converter converts Brat annotation files to one single token based event mention description file. It "
+        "accepts a single file name or a directory name that contains the Brat annotation output. If in toke mode, "
+        "the converter also requires token offset files that shares the same name with the annotation file, with "
+        "extension %s. The converter will search for the token file in the directory specified by '-t' argument"
+        % token_offset_ext)
 
     parser = argparse.ArgumentParser(description=parser_description)
-    # required arguments first
+    # Required arguments first.
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("-d", "--dir", help="directory of the annotation files")
     group.add_argument("-f", "--file", help="name of one annotation file")
-    parser.add_argument(
-        "-t", "--tokenPath",
-        help="directory to search for the corresponding token files",
-        required=True)
 
-    # optional arguments now
+    # Optional arguments now.
+    parser.add_argument("-t", "--token_path", help="provide directory to search for the corresponding token files if "
+                                                  "you use the token based format.")
+
     parser.add_argument(
         "-o", "--out",
         help="output path, '" + out + "' in the current path by default")
@@ -120,21 +118,13 @@ def main():
         logger.setLevel(logging.INFO)
     stream_handler.setFormatter(logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s'))
 
-    # if args.source:
-    # annotation_on_source = True
-    # logger.debug("Will use source offsets for tokens")
-
-    if args.tokenPath is not None:
-        if not os.path.isdir(args.tokenPath):
-            logger.error(
-                "Token directory does not exists (or is not a directory) \n\n")
+    if args.token_path is not None:
+        if not os.path.isdir(args.token_path):
+            logger.error("Token directory does not exists (or is not a directory) \n\n")
             parser.print_help()
             sys.exit(1)
     else:
-        logger.error(
-            "Token directory does not exists (or is not a directory) \n\n")
-        parser.print_help()
-        sys.exit(1)
+        logger.info("Token directory not provided, will generate character based format.")
 
     if args.token_table_extension is not None:
         token_offset_ext = args.token_table_extension
@@ -148,7 +138,7 @@ def main():
         except ValueError as _:
             logger.error("Should provide two integer with comma in between")
 
-    # set default value to optional arguments
+    # Set default value to optional arguments.
     if args.out is not None:
         out = args.out
     if args.ext is not None:
@@ -156,7 +146,7 @@ def main():
     if args.eid is not None:
         engine_id = args.eid
 
-    # ensure output directory exists
+    # Ensure output directory exists.
     try:
         head, tail = os.path.split(out)
         if head != "":
@@ -181,13 +171,13 @@ def main():
         for f in os.listdir(args.dir):
             if f.endswith(brat_annotation_ext):
                 parse_annotation_file(
-                    os.path.join(args.dir, f), args.tokenPath, out_file)
+                    os.path.join(args.dir, f), args.token_path, out_file)
                 count += 1
         logger.info("Finish converting %d files" % count)
     elif args.file is not None:
         # parse one annotation file
         if args.file.endswith(brat_annotation_ext):
-            parse_annotation_file(args.file, args.tokenPath, out_file)
+            parse_annotation_file(args.file, args.token_path, out_file)
     else:
         logger.error("No annotations provided\n")
 
@@ -197,16 +187,6 @@ def clear():
     events.clear()  # all events
     atts.clear()  # all attributes
     rels.clear()  # all relations
-
-
-def join_list(items, joiner):
-    sep = ""
-    s = ""
-    for item in items:
-        s += sep
-        s += str(item)
-        sep = joiner
-    return s
 
 
 def chop(s, begin):
@@ -225,18 +205,21 @@ def parse_annotation_file(file_path, token_dir, of):
     # otherwise use the provided directory to search for it
     basename = os.path.basename(file_path)
     logger.debug("Processing file " + basename)
-    token_path = os.path.join(
-        token_dir, basename[:-len(brat_annotation_ext)] + token_offset_ext)
 
-    if os.path.isfile(file_path) and os.path.isfile(token_path):
+    is_token_mode = token_dir is not None
+
+    if os.path.isfile(file_path):
         f = open(file_path)
-        token_file = open(token_path)
         text_id = rchop(os.path.basename(f.name), brat_annotation_ext)
         logger.debug("Document id is " + text_id)
         read_all_anno(f)
 
-        # match from text bound to token id
-        text_bound_id_2_token_id = get_text_bound_2_token_mapping(token_file)
+        # Match from text bound to token ids.
+        if is_token_mode:
+            token_path = os.path.join(token_dir, basename[:-len(brat_annotation_ext)] + token_offset_ext)
+            if os.path.isfile(token_path):
+                token_file = open(token_path)
+                text_bound_id_2_token_id = get_text_bound_2_token_mapping(token_file)
 
         eids = events.keys()
         eids.sort(key=natural_order)
@@ -256,20 +239,26 @@ def parse_annotation_file(file_path, token_dir, of):
                     realis_status = att["Realis"][1]
             text_bound = text_bounds[text_bound_id]
 
-            if text_bound_id not in text_bound_id_2_token_id:
+            if is_token_mode and text_bound_id not in text_bound_id_2_token_id:
                 logger.warning("Cannot find corresponding token for text bound [%s] - [%s] in document [%s]" %
                                (text_bound_id, text_bound[2], text_id))
                 logger.warning("The corresponding text bound will be ignored")
                 continue
 
-            token_ids = sorted(text_bound_id_2_token_id[text_bound_id], key=natural_order)
+            if is_token_mode:
+                span_tuple = tuple(sorted(text_bound_id_2_token_id[text_bound_id], key=natural_order))
+                span_str = inner_span_joiner.join(span_tuple)
+            else:
+                span_tuple = tuple(text_bounds[text_bound_id][1])
+                span_str = inter_span_joiner.join(
+                    str(span[0]) + inner_span_joiner + str(span[1]) for span in span_tuple)
+
             text = text_bound[2]
 
-            eid2sorted_tokens[eid] = tuple(token_ids)  # make it a tuple to be hashable
+            eid2sorted_tokens[eid] = tuple(span_tuple)
 
             of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
-                engine_id, text_id, eid, join_list(token_ids, tokenJoiner),
-                text, event_type, realis_status))
+                engine_id, text_id, eid, span_str, text, event_type, realis_status))
 
         for rel_name, relations in rels.iteritems():
             if rel_name != coreference_relation_name:
@@ -289,10 +278,7 @@ def parse_annotation_file(file_path, token_dir, of):
         of.write(outputEodMarker + "\n")
     else:
         # the missing file will be skipped but others will still be done
-        logger.error(
-            "Annotation path %s or token path %s not found. "
-            "Will still try to process other annotation files." % (
-                file_path, token_path))
+        logger.error("Annotation path %s not found. Will still try to process other annotation files." % file_path)
     clear()
 
 
@@ -329,11 +315,11 @@ def natural_order(key):
     return [convert(c) for c in re.split('([0-9]+)', key)]
 
 
-def resolve_transitive_closure_and_duplicates(coref_relations, eid2sorted_tokens):
+def resolve_transitive_closure_and_duplicates(coref_relations, eid2span):
     """
     Resolve
     :param coref_relations: Raw coreference relation string read from annotation file.
-    :param eid2sorted_tokens: Map from event id to a list of sorted tokens.
+    :param eid2span: Map from event id to its span representation.
     :return:
     """
     clusters = []
@@ -365,7 +351,7 @@ def resolve_transitive_closure_and_duplicates(coref_relations, eid2sorted_tokens
         cluster_span_control = set()
         deduplicated_cluster_mentions = []
         for mention in raw_cluster_mentions:
-            span = eid2sorted_tokens[mention]
+            span = eid2span[mention]
             if span not in cluster_span_control:
                 deduplicated_cluster_mentions.append(mention)
             else:
@@ -380,8 +366,7 @@ def resolve_transitive_closure_and_duplicates(coref_relations, eid2sorted_tokens
 
 def get_text_bound_2_token_mapping(token_file):
     text_bound_id_2_token_id = {}
-    # ignore the header
-    # _ = token_file.readline()
+
     is_first_line = True
     for tokenLine in token_file:
         # We assume no whitespaces within fields.
@@ -389,7 +374,7 @@ def get_text_bound_2_token_mapping(token_file):
         if len(fields) <= token_offset_fields[1]:
             if is_first_line:
                 # The first one might just be a header.
-                logger.warning("Ignoring the token file header.")
+                logger.info("Ignoring the token file header.")
             else:
                 logger.error("Token files only have %s fields, are you setting "
                              "the correct token offset fields?" % len(fields))
@@ -407,7 +392,6 @@ def get_text_bound_2_token_mapping(token_file):
     return text_bound_id_2_token_id
 
 
-# TODO this is a worst possible search ...
 def find_corresponding_text_bound(token_span):
     text_bound_ids = []
 

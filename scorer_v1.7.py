@@ -11,6 +11,9 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.7.2
+# 1. Remove invisible word list, it is too arbitrary.
+
 # Change log v1.7.1
 # 1. Add character based evaluation back, which can support languages such as Chinese.
 # 2. Within cluster duplicate check is currently disabled because of valid cases might exist:
@@ -112,8 +115,7 @@ class Config:
     default_token_offset_fields = [2, 3]
 
     # We should probably remove this as a whole.
-    invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
-                       'your', 'her', 'our', 'who', 'where', 'when'}
+    invisible_words = {}
 
     # Attribute names, these are the same order as they appear in submissions.
     attribute_names = ["mention_type", "realis_status"]
@@ -1220,7 +1222,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
             type_mapping = greedy_all_attribute_mapping[attribute_comb_index]
 
     if Config.coref_criteria == "span_only":
-        coref_mapping == greedy_mention_only_mapping
+        coref_mapping = greedy_mention_only_mapping
 
     # Evaluate how the performance of each type.
     per_type_eval(system_mention_table, gold_mention_table, type_mapping)

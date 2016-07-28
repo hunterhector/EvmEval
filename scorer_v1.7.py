@@ -844,8 +844,7 @@ def span_overlap(span1, span2):
         for i in range(s[0], s[1]):
             characters2.add(i)
 
-    intersect = characters1.intersection(characters2)
-    return 2 * len(intersect) / (len(characters1) + len(characters2))
+    return compute_dice(characters1, characters2)
 
 
 def compute_token_overlap_score(g_tokens, s_tokens):
@@ -871,21 +870,23 @@ def compute_token_overlap_score(g_tokens, s_tokens):
     prec = total_overlap / slength
     recall = total_overlap / glength
 
-    return 2 * prec * recall / (prec + recall)
+    f1 = 2 * prec * recall / (prec + recall)
+
+    return compute_dice(g_tokens, s_tokens)
 
 
-def compute_overlap(items1, items2):
+def compute_dice(items1, items2):
     if len(items1) + len(items2) == 0:
         return 0
     intersect = set(items1).intersection(set(items2))
     return 2.0 * len(intersect) / (len(items1) + len(items2))
 
 
-# def compute_overlap_score(system_outputs, gold_annos):
-#     if MutableConfig.eval_mode == EvalMethod.Token:
-#         return compute_token_overlap_score(system_outputs, gold_annos)
-#     elif MutableConfig.eval_mode == EvalMethod.Char:
-#         return span_overlap(system_outputs, gold_annos)
+def compute_overlap_score(system_outputs, gold_annos):
+    if MutableConfig.eval_mode == EvalMethod.Token:
+        return compute_token_overlap_score(system_outputs, gold_annos)
+    elif MutableConfig.eval_mode == EvalMethod.Char:
+        return span_overlap(system_outputs, gold_annos)
 
 
 def get_attr_combinations(attr_names):
@@ -1171,14 +1172,14 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     logger.debug("Computing overlap scores.")
     for system_index, (sys_spans, sys_attributes, sys_mention_id, _) in enumerate(system_mention_table):
         if print_score_matrix:
-            print system_index,
+            print system_index, sys_mention_id,
         for index, (gold_spans, gold_attributes, gold_mention_id, _) in enumerate(gold_mention_table):
             if len(gold_spans) == 0:
                 logger.warning("Found empty span gold standard at doc : %s, mention : %s" % (doc_id, gold_mention_id))
             if len(sys_spans) == 0:
                 logger.warning("Found empty span system standard at doc : %s, mention : %s" % (doc_id, sys_mention_id))
 
-            overlap = compute_overlap(gold_spans, sys_spans)
+            overlap = compute_overlap_score(gold_spans, sys_spans)
 
             if print_score_matrix:
                 print "%.1f" % overlap,
@@ -1259,6 +1260,9 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
             write_gold_and_system_corefs(diff_out, gold_corefs, sys_corefs, gold_id_2_text, sys_id_2_text)
 
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
+
+    # import sys
+    # sys.stdin.readline()
 
     return True
 

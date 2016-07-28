@@ -38,16 +38,18 @@ def main():
 
     with open(args.source) as source, open(args.output, 'w') as output:
         for line in source:
-            fields = line.split()
             if line.startswith("#BeginOfDocument"):
                 docid = line.split()[1]
                 token_id_2_span = parse_token_file(os.path.join(args.token_dir, docid + token_suffix))
+                output.write(line)
+                continue
+
+            fields = line.split("\t")
             if len(fields) >= 7:
-                fields = line.split()
                 span = fields[3]
                 converted_span = convert_func(span, token_id_2_span)
                 fields[3] = converted_span
-                output.write("\t".join(fields) + "\n")
+                output.write("\t".join(fields))
             else:
                 output.write(line)
 

@@ -40,6 +40,7 @@ To use the software, we need to prepare the CMU format annotation file from the 
 
 Use the example shell scripts "example_run.sh" to perform all the above steps in the sample documents, if success, you will find scoring results in the example_data directory 
 
+Most utility code can be found in the util directory.
 
 Naming Convention
 -------------------

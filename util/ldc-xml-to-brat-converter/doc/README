@@ -1,0 +1,47 @@
+Annobase version 1.0.1
+
+Copyright (C) 2015 Jun Araki
+
+Table of contents
+1. Introduction
+2. How to use this software
+3. License information
+
+1. Introduction
+Annobase is a light-weight but comprehensive representation for text annotation
+implemented in Java. A main goal of the software is to provide a human-readable
+representation for text annotation that is easy to parse and extend, while also
+providing linguistically-motivated sets of annotations and operations for them.
+
+2. How to use this software
+The software requires Java 8, or any later version of Java.  Below is an example
+ of using Annobase.
+
+  String text = "This is a sentence. This is another sentence";
+  AnnotationBase annBase = new AnnotationBase(text);
+  // Run your sentence segmenter and tokenizer, and set sentences and tokens to
+  // the annotation base instance.
+  List<Sentence> sents = annBase.getSentences();
+  Sentence firstSent = sents.get(0);
+  Token firstToken = firstSent.getFirstToken();
+
+For more information about the software, see the javadoc and following website:
+http://junaraki.net/software/annobase/ .
+
+3. License information
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+Place - Suite 330, Boston, MA 02111-1307, USA.
+
+For more information, bug reports and fixes, you can contact:
+  Jun Araki
+  mail@junaraki.net

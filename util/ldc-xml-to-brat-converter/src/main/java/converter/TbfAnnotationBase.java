@@ -59,8 +59,6 @@ public class TbfAnnotationBase extends AnnotationBase {
 
         sb.append("#BeginOfDocument ").append(srcDoc.getId()).append("\n");
 
-        Logger.info("There are " + getEventMentions().size() + " event mentions.");
-
         for (EventMention eventMention : getEventMentions()) {
             sb.append(String.format("rich_ere\t%s\tE%d\t%d,%d\t%s\t%s\t%s\n", srcDoc.getId(), eventMention.getId(),
                     eventMention.getBegin(), eventMention.getEnd(), eventMention.getText(), eventMention.getEventType

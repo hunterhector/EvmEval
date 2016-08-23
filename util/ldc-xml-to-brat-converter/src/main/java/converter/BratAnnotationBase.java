@@ -1,13 +1,7 @@
 package converter;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
-
 import net.junaraki.annobase.AnnotationBase;
 import net.junaraki.annobase.type.Annotation;
 import net.junaraki.annobase.type.concept.Event;
@@ -15,6 +9,11 @@ import net.junaraki.annobase.type.element.ElementAnnotation;
 import net.junaraki.annobase.type.element.EntityMention;
 import net.junaraki.annobase.type.element.EventMention;
 import net.junaraki.annobase.type.relation.element.EventArgument;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class BratAnnotationBase extends AnnotationBase {
 

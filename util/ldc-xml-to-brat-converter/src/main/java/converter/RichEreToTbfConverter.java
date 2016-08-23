@@ -1,30 +1,31 @@
 package converter;
 
+import com.google.common.io.Files;
 import joptsimple.OptionException;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
 import net.junaraki.annobase.AnnotationBase;
 import net.junaraki.annobase.pipeline.AbstractPipeline;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LdcXmlToBratConverter extends AbstractPipeline {
+public class RichEreToTbfConverter extends AbstractPipeline {
 
-    public LdcXmlToBratConverter(File annDir, String textFileExt, String annFileExt,
-                                 boolean detagText, String inputMode) {
+    public RichEreToTbfConverter(File annDir, String textFileExt, String annFileExt, String inputMode) {
         super();
-        reader = new LdcXmlReader(annDir, textFileExt, annFileExt, detagText, inputMode) {
+        reader = new LdcXmlReader(annDir, textFileExt, annFileExt, false, inputMode) {
             @Override
             protected AnnotationBase consume(AnnotationBase annBase, String docText, String baseName) {
-                BratAnnotationBase bratAnnBase = new BratAnnotationBase(docText, baseName);
-                bratAnnBase.consume(annBase);
-                return bratAnnBase;
+                TbfAnnotationBase annoBase = new TbfAnnotationBase(docText, baseName);
+                annoBase.consume(annBase);
+                return annoBase;
             }
         };
-        writer = new BratWriter();
+        writer = new TbfWriter();
     }
 
     public static void main(String[] args) throws Exception {
@@ -38,9 +39,10 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
                 .ofType(String.class).describedAs("annotation dir");
         OptionSpec<String> optAnnFileExt = parser.accepts("ae", "annotation file extension")
                 .withRequiredArg().ofType(String.class).describedAs("annotation file extension");
-        OptionSpec<String> optOutputDir = parser.accepts("o", "output directory").withRequiredArg()
-                .ofType(String.class).describedAs("output dir");
-        OptionSpec<Void> optDetag = parser.accepts("d", "whether to detag text");
+        OptionSpec<String> optOutputFile = parser.accepts("o", "output file").withRequiredArg()
+                .ofType(String.class).describedAs("output file");
+//        OptionSpec<String> optOutputDir = parser.accepts("d", "output directory").withRequiredArg()
+//                .ofType(String.class).describedAs("output dir");
         OptionSpec<String> optInputMode = parser.accepts("i", "input mode (\"event-nugget\")")
                 .withRequiredArg().ofType(String.class).describedAs("input mode");
 
@@ -61,20 +63,20 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
         String textFileExt = options.valueOf(optTextFileExt);
         File annDir = new File(options.valueOf(optAnnDir));
         String annFileExt = options.valueOf(optAnnFileExt);
-        boolean detagText = options.has(optDetag);
         String inputMode = options.valueOf(optInputMode);
         if (inputMode != null && !inputMode.equals(LdcXmlReader.INPUT_MODE_EVENT_NUGGET)) {
             Logger.error(String.format("Invalid input mode: %s", inputMode));
             return;
         }
 
-        LdcXmlToBratConverter converter = new LdcXmlToBratConverter(annDir, textFileExt, annFileExt,
-                detagText, inputMode);
+        RichEreToTbfConverter converter = new RichEreToTbfConverter(annDir, textFileExt, annFileExt, inputMode);
         String[] extensions = new String[]{textFileExt};
         List<File> inputFiles = converter.getReader().collect(textDir, extensions, false);
 
-        File outputDir = new File(options.valueOf(optOutputDir));
-        List<File> outputFiles = new ArrayList<File>();
+        Logger.info(String.format("There are %d files to be processed.", inputFiles.size()));
+
+        File outputDir = Files.createTempDir();
+        List<File> outputFiles = new ArrayList<>();
         for (File inputFile : inputFiles) {
             for (String extension : extensions) {
                 String fileName = inputFile.getName();
@@ -91,7 +93,13 @@ public class LdcXmlToBratConverter extends AbstractPipeline {
 
         converter.run(inputFiles, outputFiles);
 
-        Logger.info("Finished the conversion from LDC XML data to Brat data.");
-    }
+        File finalOutputFile = new File(options.valueOf(optOutputFile));
+        boolean append = false;
+        for (File outputFile : outputFiles) {
+            FileUtils.write(finalOutputFile, FileUtils.readFileToString(outputFile), append);
+            append = true;
+        }
 
+        Logger.info("Finished the conversion from LDC XML data to TBF data.");
+    }
 }

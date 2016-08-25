@@ -27,7 +27,7 @@ We've created two self-contained JAR files in the bin/ directory under project r
 ### How to run the Rich ERE to Brat converter (rich_ere_to_brat_converter.jar)
 You can see its usage with the following command:
 ```
-$ java -jar target/converter-1.0.3-jar-with-dependencies.jar -h
+$ java -jar bin/rich_ere_to_brat_converter.jar -h
 Option                            Description              
 ------                            -----------              
 -a <annotation dir>               annotation directory       

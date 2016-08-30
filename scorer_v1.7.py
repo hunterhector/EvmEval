@@ -173,7 +173,7 @@ class MutableConfig:
         pass
 
     remove_conll_tmp = False
-    eval_mode = EvalMethod.Token
+    eval_mode = EvalMethod.Char
     coref_mention_threshold = 1.0
 
 
@@ -855,22 +855,22 @@ def compute_token_overlap_score(g_tokens, s_tokens):
     :param s_tokens: System tokens
     :return: The Dice Coefficient between two sets of tokens
     """
-    total_overlap = 0.0
-
-    for s_token in s_tokens:
-        if s_token in g_tokens:
-            total_overlap += 1
-
-    glength = len(g_tokens)
-    slength = len(s_tokens)
-
-    if total_overlap == 0:
-        return 0
-
-    prec = total_overlap / slength
-    recall = total_overlap / glength
-
-    f1 = 2 * prec * recall / (prec + recall)
+    # total_overlap = 0.0
+    #
+    # for s_token in s_tokens:
+    #     if s_token in g_tokens:
+    #         total_overlap += 1
+    #
+    # glength = len(g_tokens)
+    # slength = len(s_tokens)
+    #
+    # if total_overlap == 0:
+    #     return 0
+    #
+    # prec = total_overlap / slength
+    # recall = total_overlap / glength
+    #
+    # f1 = 2 * prec * recall / (prec + recall)
 
     return compute_dice(g_tokens, s_tokens)
 
@@ -883,10 +883,7 @@ def compute_dice(items1, items2):
 
 
 def compute_overlap_score(system_outputs, gold_annos):
-    if MutableConfig.eval_mode == EvalMethod.Token:
-        return compute_token_overlap_score(system_outputs, gold_annos)
-    elif MutableConfig.eval_mode == EvalMethod.Char:
-        return span_overlap(system_outputs, gold_annos)
+    compute_dice(system_outputs, gold_annos)
 
 
 def get_attr_combinations(attr_names):

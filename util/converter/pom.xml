@@ -58,7 +58,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>converter.LdcXmlToBratConverter</mainClass>
+              <mainClass>converter.RichEreToTbfConverter</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

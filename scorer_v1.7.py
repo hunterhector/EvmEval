@@ -883,7 +883,7 @@ def compute_dice(items1, items2):
 
 
 def compute_overlap_score(system_outputs, gold_annos):
-    compute_dice(system_outputs, gold_annos)
+    return compute_dice(system_outputs, gold_annos)
 
 
 def get_attr_combinations(attr_names):

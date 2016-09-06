@@ -284,7 +284,7 @@ def main():
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
 
-    parser.add_argument("--eval_mode", choices=["char", "token"], default="token",
+    parser.add_argument("--eval_mode", choices=["char", "token"], default="char",
                         help="Use Span Overlap or Token Overlap mode. The Span Overlap mode will take a span as range "
                              "[start:end], while the Token Overlap mode consider each token is provided as a single "
                              "id.")
@@ -1124,6 +1124,11 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         return False
 
     logger.info("Evaluating Document %s" % doc_id)
+
+    if len(g_mention_lines) == 0:
+        logger.warn(
+            "[%s] does not contain gold standard mentions. Document level F score will not be valid, but the micro "
+            "score will be fine." % doc_id)
 
     invisible_ids = []
     if MutableConfig.eval_mode == EvalMethod.Token:

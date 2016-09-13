@@ -83,37 +83,37 @@ def main():
     global append_json
 
     parser = argparse.ArgumentParser(
-            description="Mention visualizer, will create a side-by-side embedded "
-                        "visualization from the mapping "
+        description="Mention visualizer, will create a side-by-side embedded "
+                    "visualization from the mapping "
     )
     parser.add_argument("-d", "--comparison_output",
                         help="The comparison output file between system and gold,"
                              " used to recover the mapping", required=True)
     parser.add_argument(
-            "-t", "--tokenPath", help="Path to the directory containing the token mappings file")
+        "-t", "--tokenPath", help="Path to the directory containing the token mappings file")
     parser.add_argument(
-            "-x", "--text", help="Path to the directory containing the original text", required=True
+        "-x", "--text", help="Path to the directory containing the original text", required=True
     )
 
     parser.add_argument("-v", "--visualization_html_path",
                         help="The Path to find visualization web pages, default path is [%s]" %
                              visualization_path)
     parser.add_argument(
-            "-of", "--offset_field", help="A pair of integer indicates which column we should "
-                                          "read the offset in the token mapping file, index starts"
-                                          "at 0, default value will be %s" % token_offset_fields
+        "-of", "--offset_field", help="A pair of integer indicates which column we should "
+                                      "read the offset in the token mapping file, index starts"
+                                      "at 0, default value will be %s" % token_offset_fields
     )
     parser.add_argument(
-            "-a", "--append", help="Append the JSON data with previous generated ones", action='store_true'
+        "-a", "--append", help="Append the JSON data with previous generated ones", action='store_true'
     )
     parser.add_argument(
-            "-te", "--token_table_extension",
-            help="any extension appended after docid of token table files. "
-                 "Default is [%s]" % token_file_ext)
+        "-te", "--token_table_extension",
+        help="any extension appended after docid of token table files. "
+             "Default is [%s]" % token_file_ext)
     parser.add_argument(
-            "-se", "--source_file_extension",
-            help="any extension appended after docid of source files."
-                 "Default is [%s]" % source_file_ext)
+        "-se", "--source_file_extension",
+        help="any extension appended after docid of source files."
+             "Default is [%s]" % source_file_ext)
     parser.add_argument("--char_based", action="store_true")
     parser.add_argument("-ns", "--no_server", action="store_false")
 
@@ -132,8 +132,8 @@ def main():
                 token_dir = args.tokenPath
             else:
                 logger.debug(
-                        "Cannot find given token directory at %s, will try search for current directory"
-                        % args.tokenPath)
+                    "Cannot find given token directory at %s, will try search for current directory"
+                    % args.tokenPath)
         else:
             logger.warn("Tokens not provided")
 
@@ -574,7 +574,7 @@ def read_token_ids(g_file_name):
                 logger.error("Token file is wrong at for file " + g_file_name)
     except IOError:
         logger.debug(
-                "Cannot find token file for doc [%s] at [%s]" % (g_file_name, token_file_path))
+            "Cannot find token file for doc [%s] at [%s]" % (g_file_name, token_file_path))
         pass
     return id2token_map
 
@@ -585,8 +585,8 @@ def read_original_text(doc_id):
         f = open(os.path.join(text_dir, doc_id + source_file_ext))
         return f.read()
     else:
-        logger.error("Cannot locate original text at [%s], please check parameters." % text_path)
-        sys.exit(1)
+        logger.warn("Cannot locate original text at [%s], please check parameters." % text_path)
+        return False
 
 
 def generate_coref_json(corefs):
@@ -659,6 +659,9 @@ def parse_mapping(doc_id, doc_lines):
             sys_index += 1
 
     text = read_original_text(doc_id)
+
+    if not text:
+        return
 
     write_mention_diff_data(text, gold_annotations, system_annotations, token_map,
                             os.path.join(visualization_path, visualization_json_data_subpath), doc_id,

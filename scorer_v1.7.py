@@ -937,21 +937,21 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
 
         gold_info = "-"
         if gold_index != -1:
-            gold_spans, gold_attributes, gold_mention_id, gold_origin_spans = gold_mention_table[gold_index]
-            gold_info = "%s\t%s\t%s" % (
-                gold_mention_id, ",".join(str(x) for x in gold_origin_spans), "\t".join(gold_attributes))
+            gold_spans, gold_attributes, gold_mention_id, gold_origin_spans, text = gold_mention_table[gold_index]
+            gold_info = "%s\t%s\t%s\t%s" % (
+                gold_mention_id, ",".join(str(x) for x in gold_origin_spans), "\t".join(gold_attributes), text)
 
         sys_info = "-"
         if system_index != -1:
-            system_spans, system_attributes, sys_mention_id, sys_origin_spans = system_mention_table[system_index]
-            sys_info = "%s\t%s\t%s" % (
-                sys_mention_id, ",".join(str(x) for x in sys_origin_spans), "\t".join(system_attributes))
+            system_spans, system_attributes, sys_mention_id, sys_origin_spans, text = system_mention_table[system_index]
+            sys_info = "%s\t%s\t%s\t%s" % (
+                sys_mention_id, ",".join(str(x) for x in sys_origin_spans), "\t".join(system_attributes), text)
             mapped_system_mentions.add(system_index)
 
         write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, gold_info, sys_info, score_str))
 
     # Write out system mentions that does not map to anything.
-    for system_index, (system_spans, system_attributes, sys_mention_id, sys_origin_spans) in enumerate(
+    for system_index, (system_spans, system_attributes, sys_mention_id, sys_origin_spans, _) in enumerate(
             system_mention_table):
         if system_index not in mapped_system_mentions:
             sys_info = "%s\t%s\t%s" % (
@@ -1058,7 +1058,7 @@ def per_type_eval(system_mention_table, gold_mention_table, type_mapping):
     # print type_mapping
 
     for gold_index, (sys_index, score) in enumerate(type_mapping):
-        _, attributes, _, _ = gold_mention_table[gold_index]
+        _, attributes, _, _, _ = gold_mention_table[gold_index]
         mention_type = attributes[0]
 
         # print sys_index, gold_index, score
@@ -1068,11 +1068,11 @@ def per_type_eval(system_mention_table, gold_mention_table, type_mapping):
         if sys_index >= 0:
             put_or_increment(EvalState.per_type_tp, mention_type, score)
 
-    for _, attributes, _, _ in gold_mention_table:
+    for _, attributes, _, _, _ in gold_mention_table:
         mention_type = attributes[0]
         put_or_increment(EvalState.per_type_num_gold, mention_type, 1)
 
-    for _, attributes, _, _ in system_mention_table:
+    for _, attributes, _, _, _ in system_mention_table:
         mention_type = attributes[0]
         put_or_increment(EvalState.per_type_num_response, mention_type, 1)
 
@@ -1150,7 +1150,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
         # if len(sys_spans) == 0:
         #     # Temporarily ignoring empty mentions.
         #     continue
-        system_mention_table.append((sys_spans, sys_attributes, sys_mention_id, origin_sys_spans))
+        system_mention_table.append((sys_spans, sys_attributes, sys_mention_id, origin_sys_spans, text))
         EvalState.all_possible_types.add(sys_attributes[0])
         mention_ids.append(sys_mention_id)
         sys_id_2_text[sys_mention_id] = text
@@ -1161,7 +1161,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
     for gl in g_mention_lines:
         gold_mention_id, gold_spans, gold_attributes, origin_gold_spans, text = parse_line(gl, invisible_ids)
-        gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id, origin_gold_spans))
+        gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id, origin_gold_spans, text))
         EvalState.all_possible_types.add(gold_attributes[0])
         gold_id_2_text[gold_mention_id] = text
 
@@ -1172,10 +1172,10 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     print_score_matrix = False
 
     logger.debug("Computing overlap scores.")
-    for system_index, (sys_spans, sys_attributes, sys_mention_id, _) in enumerate(system_mention_table):
+    for system_index, (sys_spans, sys_attributes, sys_mention_id, _, _) in enumerate(system_mention_table):
         if print_score_matrix:
             print system_index, sys_mention_id,
-        for index, (gold_spans, gold_attributes, gold_mention_id, _) in enumerate(gold_mention_table):
+        for index, (gold_spans, gold_attributes, gold_mention_id, _, _) in enumerate(gold_mention_table):
             if len(gold_spans) == 0:
                 logger.warning("Found empty span gold standard at doc : %s, mention : %s" % (doc_id, gold_mention_id))
             if len(sys_spans) == 0:

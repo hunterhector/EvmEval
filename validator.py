@@ -10,9 +10,9 @@
 
 import argparse
 import logging
-import sys
 import os
 import re
+import sys
 
 logger = logging.getLogger()
 
@@ -41,8 +41,8 @@ all_possible_types = set()
 evaluating_index = 0
 
 token_joiner = ","
-span_seperator = ";"
-span_joiner = "_"
+span_separator = ";"
+span_joiner = ","
 
 missingAttributePlaceholder = "NOT_ANNOTATED"
 
@@ -66,9 +66,9 @@ def main():
     parser = argparse.ArgumentParser(
         description="Validator to see if it can pass the scorer successfully")
     parser.add_argument("-s", "--system", help="System output", required=True)
+    parser.add_argument("-c", "--char_mode", help="Character mode", action="store_true")
     parser.add_argument(
-        "-t", "--token_path", help="Path to the directory containing the "
-                                   "token mappings file", required=True)
+        "-t", "--token_path", help="Path to the directory containing the token mappings file")
     parser.add_argument(
         "-of", "--offset_field", help="A pair of integer indicates which column we should "
                                       "read the offset in the token mapping file, index starts"
@@ -102,14 +102,18 @@ def main():
         handler.setLevel(logging.INFO)
         logger.setLevel(logging.INFO)
 
+    # token based eval mode
+    eval_mode = EvalMethod.Char if args.char_mode else EvalMethod.Token
+
     token_dir = "."
-    if args.token_path is not None:
-        if os.path.isdir(args.token_path):
-            logger.debug("Will search token files in " + args.token_path)
-            token_dir = args.token_path
-        else:
-            logger.debug("Cannot find given token directory at [%s], "
-                         "will try search for current directory" % args.token_path)
+    if eval_mode == EvalMethod.Token:
+        if args.token_path is not None:
+            if os.path.isdir(args.token_path):
+                logger.debug("Will search token files in " + args.token_path)
+                token_dir = args.token_path
+            else:
+                logger.debug("Cannot find given token directory at [%s], "
+                             "will try search for current directory" % args.token_path)
 
     token_offset_fields = default_token_offset_fields
     if args.offset_field is not None:
@@ -118,8 +122,6 @@ def main():
         except ValueError as _:
             logger.error("Should provide two integer with comma in between")
 
-    # token based eval mode
-    eval_mode = EvalMethod.Token
     if not read_all_doc(sf):
         exit_on_fail()
 
@@ -257,26 +259,37 @@ def parse_token_ids(s, invisible_ids):
     return filtered_token_ids
 
 
-def parse_token_based_line(l, invisible_ids):
+def parse_characters(s):
     """
-    parse the line, get the token ids, remove invisible ones
+    Method to parse the character based span
+    :param s:
     """
-    fields = l.split("\t")
-    min_len = len(attribute_names) + 5
-    if len(fields) < min_len:
-        logger.error(
-            "System line too few fields, there should be at least %d, found %d. Incorrect lines are logged below:" % (
-                min_len, len(fields)))
-        logger.error(l)
-        logger.error(fields)
-        exit_on_fail()
-    token_ids = parse_token_ids(fields[3], invisible_ids)
+    span_strs = s.split(span_separator)
+    characters = []
+    for span_strs in span_strs:
+        span = list(map(int, span_strs.split(span_joiner)))
+        for c in range(span[0], span[1]):
+            characters.append(c)
 
-    return fields[2], token_ids, fields[5:]
+    return characters
 
 
 def parse_line(l, eval_mode, invisible_ids):
-    return parse_token_based_line(l, invisible_ids)
+    fields = l.split("\t")
+    num_attributes = len(attribute_names)
+    min_len = num_attributes + 5
+    if len(fields) < min_len:
+        logger.error("System line has too few fields:\n ---> %s" % l)
+        exit_on_fail()
+
+    if eval_mode == EvalMethod.Token:
+        spans, original_spans = parse_token_ids(fields[3], invisible_ids)
+        if len(spans) == 0:
+            logger.warn("Find mention with only invisible words, will not be mapped to anything")
+    else:
+        spans = parse_characters(fields[3])
+
+    return fields[2], spans, fields[5:]
 
 
 def parse_relation(relation_line):
@@ -303,13 +316,27 @@ def get_eid_2_sorted_token_map(mention_table):
     return event_mention_id_2_sorted_tokens
 
 
+def get_eid_2_character_span(mention_table):
+    event_mention_id_2_span = {}
+    for mention in mention_table:
+        spans = sorted(mention[0])
+        event_id = mention[2]
+        event_mention_id_2_span[event_id] = spans
+    return event_mention_id_2_span
+
+
 def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
     global total_mentions
     global unrecognized_relation_count
 
     res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
 
-    invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext, token_offset_fields)
+    if eval_mode == EvalMethod.Token:
+        invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext,
+                                                                  token_offset_fields)
+    else:
+        invisible_ids = set()
+        id2token_map = {}
 
     # parse the lines in file
     gold_mention_table = []
@@ -328,7 +355,7 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
         logger.error("Duplicated mention id for doc %s" % doc_id)
         return False
 
-    if has_invented_token(id2token_map, gold_mention_table):
+    if eval_mode == EvalMethod.Token and has_invented_token(id2token_map, gold_mention_table):
         logger.error("Invented token id was found for doc %s" % doc_id)
         logger.error("Tokens not in tbf not found in token map : %d" % total_tokens_not_found)
         return False
@@ -354,17 +381,20 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
         logger.error("Problem was found in file %s" % doc_id)
         return False
 
-    event_mention_id_2_sorted_tokens = get_eid_2_sorted_token_map(gold_mention_table)
+    if EvalMethod.Char:
+        event_mention_id_2_span = get_eid_2_character_span(gold_mention_table)
+    else:
+        event_mention_id_2_span = get_eid_2_sorted_token_map(gold_mention_table)
 
     for cluster_id, cluster in clusters.iteritems():
-        if invented_mention_check(cluster, event_mention_id_2_sorted_tokens):
+        if invented_mention_check(cluster, event_mention_id_2_span):
             logger.error("Found invented id in clusters at doc [%s]" % doc_id)
             return False
 
-        # if within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
-        #     logger.error("Please remove span duplicates before submitting")
-        #     logger.error("Problem was found in file %s" % doc_id)
-        #     return False
+            # if within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
+            #     logger.error("Please remove span duplicates before submitting")
+            #     logger.error("Problem was found in file %s" % doc_id)
+            #     return False
 
     return True
 

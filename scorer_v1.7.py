@@ -11,6 +11,9 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.7.3
+# 1. Allow user to configure specific types for evaluation.
+
 # Change log v1.7.2
 # 1. Remove invisible word list, it is too arbitrary.
 
@@ -79,7 +82,6 @@ import logging
 import math
 import os
 import re
-import string
 import subprocess
 import sys
 
@@ -203,6 +205,8 @@ class EvalState:
 
     system_id = "_id_"
 
+    white_listed_types = None
+
     @staticmethod
     def advance_index():
         EvalState.evaluating_index += 1
@@ -289,6 +293,10 @@ def main():
                              "[start:end], while the Token Overlap mode consider each token is provided as a single "
                              "id.")
 
+    parser.add_argument("-wl", "--type_white_list", type=argparse.FileType('r'),
+                        help="Provide a file, where each line list a mention type subtype pair to be evaluated. Types "
+                             "that are out of this white list will be ignored.")
+
     parser.set_defaults(debug=False)
     args = parser.parse_args()
 
@@ -299,6 +307,13 @@ def main():
     else:
         stream_handler.setLevel(logging.INFO)
         logger.setLevel(logging.INFO)
+
+    if args.type_white_list is not None:
+        logger.info("Only the following types in the white list will be evaluated.")
+        EvalState.white_listed_types = set()
+        for line in args.type_white_list:
+            logger.info(line.strip())
+            EvalState.white_listed_types.add(canonicalize_string(line))
 
     if args.eval_mode == "char":
         MutableConfig.eval_mode = EvalMethod.Char
@@ -798,23 +813,22 @@ def parse_line(l, invisible_ids):
         spans = parse_characters(fields[3])
         original_spans = spans
 
-    # attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
-    attributes = fields[5:5 + num_attributes]
+    attributes = [canonicalize_string(a) for a in fields[5:5 + num_attributes]]
+
+    if EvalState.white_listed_types:
+        if attributes[0] not in EvalState.white_listed_types:
+            return None
+
+    # attributes = fields[5:5 + num_attributes]
     return fields[2], spans, attributes, original_spans, fields[4]
 
 
 def canonicalize_string(str):
     if Config.canonicalize_types:
-        return "".join(str.lower().split()).translate(string.maketrans("", ""), string.punctuation)
+        return "".join(c.lower() for c in str if c.isalnum())
+        # return "".join(str.lower().split()).translate(string.maketrans("", ""), string.punctuation)
     else:
         return str
-
-
-#
-# def parse_line(l, invisible_ids):
-#     if MutableConfig.eval_mode == EvalMethod.Token:
-#         return parse_token_based_line(l, invisible_ids)
-#     elif MutableConfig.eval_mode == EvalMethod.Char:
 
 
 def parse_relation(relation_line):
@@ -1144,26 +1158,45 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
     logger.debug("Reading gold and response mentions.")
 
-    mention_ids = []
+    sys_mention_ids = []
     for sl in s_mention_lines:
-        sys_mention_id, sys_spans, sys_attributes, origin_sys_spans, text = parse_line(sl, invisible_ids)
+        parse_result = parse_line(sl, invisible_ids)
+
+        # If parse result is rejected, we ignore this line.
+        if parse_result:
+            sys_mention_id, sys_spans, sys_attributes, origin_sys_spans, text = parse_result
+        else:
+            continue
         # if len(sys_spans) == 0:
         #     # Temporarily ignoring empty mentions.
         #     continue
         system_mention_table.append((sys_spans, sys_attributes, sys_mention_id, origin_sys_spans, text))
         EvalState.all_possible_types.add(sys_attributes[0])
-        mention_ids.append(sys_mention_id)
+        sys_mention_ids.append(sys_mention_id)
         sys_id_2_text[sys_mention_id] = text
 
-    if not check_unique(mention_ids):
+    remaining_sys_ids = set(sys_mention_ids)
+    if not len(sys_mention_ids) == len(remaining_sys_ids):
         logger.error("Duplicated mention id for doc %s" % doc_id)
         return False
 
+    remaining_gold_ids = set()
     for gl in g_mention_lines:
-        gold_mention_id, gold_spans, gold_attributes, origin_gold_spans, text = parse_line(gl, invisible_ids)
+        parse_result = parse_line(gl, invisible_ids)
+
+        # If parse result is rejected, we ignore this line.
+        if parse_result:
+            gold_mention_id, gold_spans, gold_attributes, origin_gold_spans, text = parse_result
+        else:
+            continue
+
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id, origin_gold_spans, text))
         EvalState.all_possible_types.add(gold_attributes[0])
         gold_id_2_text[gold_mention_id] = text
+        remaining_gold_ids.add(gold_mention_id)
+
+    num_system_predictions = len(system_mention_table)
+    num_gold_predictions = len(gold_mention_table)
 
     # Store list of mappings with the score as a priority queue. Score is stored using negative for easy sorting.
     all_gold_system_mapping_scores = []
@@ -1204,13 +1237,13 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
 
     attribute_based_fps = [0.0] * len(all_attribute_combinations)
     for attribute_comb_index, abtp in enumerate(greedy_attribute_tps):
-        attribute_based_fps[attribute_comb_index] = len(s_mention_lines) - abtp
+        attribute_based_fps[attribute_comb_index] = num_system_predictions - abtp
 
     # Unmapped system mentions and the partial scores are considered as false positive.
-    fp = len(s_mention_lines) - greedy_tp
+    fp = len(sys_mention_ids) - greedy_tp
 
     EvalState.doc_mention_scores.append((greedy_tp, fp, zip(greedy_attribute_tps, attribute_based_fps),
-                                         len(g_mention_lines), len(s_mention_lines), doc_id))
+                                         num_gold_predictions, num_system_predictions, doc_id))
 
     # Select a computed mapping, we currently select the mapping based on mention type. This means that in order to get
     # coreference right, your mention type should also be right. This can be changed by change Config.coref_criteria
@@ -1230,6 +1263,14 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     # Evaluate how the performance of each type.
     per_type_eval(system_mention_table, gold_mention_table, type_mapping)
 
+    # Parse relations.
+    g_relations = [parse_relation(l) for l in g_relation_lines]
+    s_relations = [parse_relation(l) for l in s_relation_lines]
+
+    if EvalState.white_listed_types:
+        g_relations = filter_relations(g_relations, remaining_gold_ids)
+        s_relations = filter_relations(s_relations, remaining_sys_ids)
+
     if coref_mapping is None:
         # In case when we don't do attribute scoring.
         coref_mapping = greedy_mention_only_mapping
@@ -1237,11 +1278,9 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     if coref_out is not None:
         logger.debug("Start preparing coreference files.")
 
-        gold_corefs = [coref for coref in [parse_relation(l) for l in g_relation_lines] if
-                       coref[0] == Config.coreference_relation_name]
+        gold_corefs = [coref for coref in g_relations if coref[0] == Config.coreference_relation_name]
 
-        sys_corefs = [coref for coref in [parse_relation(l) for l in s_relation_lines] if
-                      coref[0] == Config.coreference_relation_name]
+        sys_corefs = [coref for coref in s_relations if coref[0] == Config.coreference_relation_name]
 
         # Prepare CoNLL style coreference input for this document.
         conll_converter = ConllConverter(doc_id, system_id, sys_id_2_text, gold_id_2_text)
@@ -1267,6 +1306,30 @@ def evaluate(token_dir, coref_out, all_attribute_combinations,
     # sys.stdin.readline()
 
     return True
+
+
+def filter_relations(relations, remaining_ids):
+    results = []
+    for r in relations:
+        filtered = filter_relation_by_mention_id(r, remaining_ids)
+        if filtered:
+            results.append(filtered)
+    return results
+
+
+def filter_relation_by_mention_id(relation, remaining_ids):
+    r, r_id, ids = relation
+
+    filtered_ids = []
+    for id in ids:
+        if id in remaining_ids:
+            filtered_ids.append(id)
+
+    # We don't take singleton relations, and clearly we ignore empty relations.
+    if len(filtered_ids) > 1:
+        return [r, r_id, filtered_ids]
+    else:
+        return None
 
 
 def get_conll_scores(score_path):

@@ -29,8 +29,7 @@ default_token_file_ext = ".tab"
 default_token_offset_fields = [2, 3]
 
 # run this on an annotation to confirm
-invisible_words = {'the', 'a', 'an', 'I', 'you', 'he', 'she', 'we', 'my',
-                   'your', 'her', 'our', 'who', 'what', 'where', 'when'}
+invisible_words = set()
 
 # attribute names
 attribute_names = ["mention_type", "realis_status"]
@@ -79,6 +78,12 @@ def main():
         help="any extension appended after docid of token table files. "
              "Default is [%s]" % default_token_file_ext)
     parser.add_argument(
+        "-wc", "--word_count_file",
+        help="Provide a word count file that can be used to help validation, such as the character_counts.tsv in "
+             "LDC2016E64"
+    )
+
+    parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
 
     parser.set_defaults(debug=False)
@@ -94,6 +99,12 @@ def main():
     else:
         logger.error("Cannot find system file at " + args.system)
         exit_on_fail()
+
+    doc_lengths = None
+    if args.word_count_file is not None and os.path.isfile(args.word_count_file):
+        doc_lengths = get_document_length(open(args.word_count_file))
+    else:
+        logger.warn("Word count file not provided, will not validate document id.")
 
     if args.debug:
         handler.setLevel(logging.DEBUG)
@@ -127,7 +138,7 @@ def main():
 
     validation_success = True
     while has_next_doc():
-        if not validate_next(eval_mode, token_dir, token_offset_fields, args.token_table_extension):
+        if not validate_next(eval_mode, doc_lengths, token_dir, token_offset_fields, args.token_table_extension):
             validation_success = False
             break
 
@@ -139,6 +150,14 @@ def main():
         logger.info("Validation did not find obvious errors.")
 
     logger.info("Validation Finished.")
+
+
+def get_document_length(wc):
+    doc_lengths = {}
+    for line in wc:
+        fields = line.split()
+        doc_lengths[fields[0]] = int(fields[1])
+    return doc_lengths
 
 
 def read_token_ids(token_dir, g_file_name, provided_token_ext, token_offset_fields):
@@ -325,11 +344,19 @@ def get_eid_2_character_span(mention_table):
     return event_mention_id_2_span
 
 
-def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
+def validate_next(eval_mode, doc_lengths, token_dir, token_offset_fields, token_file_ext):
     global total_mentions
     global unrecognized_relation_count
 
     res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
+
+    max_length = None
+    if doc_lengths is not None:
+        if doc_id not in doc_lengths:
+            logger.error("Document id not listed in evaluation set : %s", doc_id)
+            return False
+        else:
+            max_length = doc_lengths[doc_id]
 
     if eval_mode == EvalMethod.Token:
         invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext,
@@ -338,13 +365,18 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
         invisible_ids = set()
         id2token_map = {}
 
-    # parse the lines in file
+    # Parse the lines in file.
     gold_mention_table = []
 
     mention_ids = []
     for gl in g_mention_lines:
         gold_mention_id, gold_spans, gold_attributes = parse_line(
             gl, eval_mode, invisible_ids)
+        if not check_range(gold_spans, max_length):
+            logger.error(
+                "The following mention line exceed the character range %d of document [%s]" % (max_length, doc_id))
+            logger.error(gl)
+            return False
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         mention_ids.append(gold_mention_id)
         all_possible_types.add(gold_attributes[0])
@@ -397,6 +429,12 @@ def validate_next(eval_mode, token_dir, token_offset_fields, token_file_ext):
             #     return False
 
     return True
+
+
+def check_range(spans, max_length):
+    for span in spans:
+        if span < 0 or span >= max_length:
+            return False
 
 
 def has_invented_token(id2token_map, gold_mention_table):

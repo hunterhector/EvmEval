@@ -82,6 +82,8 @@ def main():
         help="Provide a word count file that can be used to help validation, such as the character_counts.tsv in "
              "LDC2016E64"
     )
+    parser.add_argument("-ty", "--type_file",
+                        help="If provided, the validator will check whether the type subtype pair is valid.")
 
     parser.add_argument(
         "-b", "--debug", help="turn debug mode on", action="store_true")
@@ -105,6 +107,12 @@ def main():
         doc_lengths = get_document_length(open(args.word_count_file))
     else:
         logger.warn("Word count file not provided, will not validate document id.")
+
+    possible_types = None
+    if args.type_file is not None and os.path.isfile(args.type_file):
+        possible_types = read_type_file(open(args.type_file))
+    else:
+        logger.warn("Will not validate mention type, all type will be considered valid.")
 
     if args.debug:
         handler.setLevel(logging.DEBUG)
@@ -138,7 +146,8 @@ def main():
 
     validation_success = True
     while has_next_doc():
-        if not validate_next(eval_mode, doc_lengths, token_dir, token_offset_fields, args.token_table_extension):
+        if not validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offset_fields,
+                             args.token_table_extension):
             validation_success = False
             break
 
@@ -150,6 +159,13 @@ def main():
         logger.info("Validation did not find obvious errors.")
 
     logger.info("Validation Finished.")
+
+
+def read_type_file(type_file):
+    all_types = set()
+    for line in type_file:
+        all_types.add("".join(line.split()))
+    return all_types
 
 
 def get_document_length(wc):
@@ -344,7 +360,7 @@ def get_eid_2_character_span(mention_table):
     return event_mention_id_2_span
 
 
-def validate_next(eval_mode, doc_lengths, token_dir, token_offset_fields, token_file_ext):
+def validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offset_fields, token_file_ext):
     global total_mentions
     global unrecognized_relation_count
 
@@ -372,11 +388,19 @@ def validate_next(eval_mode, doc_lengths, token_dir, token_offset_fields, token_
     for gl in g_mention_lines:
         gold_mention_id, gold_spans, gold_attributes = parse_line(
             gl, eval_mode, invisible_ids)
-        if not check_range(gold_spans, max_length):
+
+        if max_length is not None and not check_range(gold_spans, max_length):
             logger.error(
                 "The following mention line exceed the character range %d of document [%s]" % (max_length, doc_id))
             logger.error(gl)
             return False
+
+        if possible_types is not None:
+            mtype = canonicalize_string(gold_attributes[0])
+            if not check_type(possible_types, mtype):
+                logger.error("Submission contains type [%s] that is not in evaluation." % mtype)
+                return False
+
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         mention_ids.append(gold_mention_id)
         all_possible_types.add(gold_attributes[0])
@@ -431,10 +455,21 @@ def validate_next(eval_mode, doc_lengths, token_dir, token_offset_fields, token_
     return True
 
 
+def canonicalize_string(str):
+    return "".join(c.lower() for c in str if c.isalnum())
+
+
+def check_type(possible_types, mtype):
+    if mtype not in possible_types:
+        return False
+    return True
+
+
 def check_range(spans, max_length):
     for span in spans:
         if span < 0 or span >= max_length:
             return False
+    return True
 
 
 def has_invented_token(id2token_map, gold_mention_table):

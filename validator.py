@@ -164,7 +164,7 @@ def main():
 def read_type_file(type_file):
     all_types = set()
     for line in type_file:
-        all_types.add("".join(line.split()))
+        all_types.add("".join(line.split()).lower())
     return all_types
 
 

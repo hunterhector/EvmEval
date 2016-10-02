@@ -965,11 +965,11 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
         write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, gold_info, sys_info, score_str))
 
     # Write out system mentions that does not map to anything.
-    for system_index, (system_spans, system_attributes, sys_mention_id, sys_origin_spans, _) in enumerate(
+    for system_index, (system_spans, system_attributes, sys_mention_id, sys_origin_spans, text) in enumerate(
             system_mention_table):
         if system_index not in mapped_system_mentions:
-            sys_info = "%s\t%s\t%s" % (
-                sys_mention_id, ",".join(str(x) for x in sys_origin_spans), "\t".join(system_attributes))
+            sys_info = "%s\t%s\t%s\t%s" % (
+                sys_mention_id, ",".join(str(x) for x in sys_origin_spans), "\t".join(system_attributes), text)
             write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, "-", sys_info, "-"))
 
 

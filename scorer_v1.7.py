@@ -153,7 +153,7 @@ def main():
         "-c", "--coref", help="Eval Coreference result output, need to put the reference"
                               "conll coref scorer in the same folder with this scorer")
     parser.add_argument(
-        "-a", "--after", help="Eval After result output"
+        "-a", "--sequencing", help="Eval Event sequencing result output (After and Subevent)"
     )
     parser.add_argument(
         "-t", "--token_path", help="Path to the directory containing the "
@@ -239,8 +239,8 @@ def main():
         #     remove_conll_tmp()
         # supermakedirs(Config.conll_tmp_marker)
 
-    if args.after is not None:
-        Config.temporal_result_dir = args.after
+    if args.sequencing is not None:
+        Config.temporal_result_dir = args.sequencing
         utils.supermakedirs(os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir))
         utils.supermakedirs(os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir))
 
@@ -966,8 +966,7 @@ def summarize_type_scores():
     return per_type_precision, per_type_recall, per_type_f1
 
 
-def evaluate(token_dir, coref_out, all_attribute_combinations,
-             token_offset_fields, token_file_ext, diff_out):
+def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fields, token_file_ext, diff_out):
     """
     Conduct the main evaluation steps.
     :param token_dir:

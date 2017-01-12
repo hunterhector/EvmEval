@@ -53,7 +53,7 @@ def main():
             else:
                 output.write(line)
 
-
+# Check here? probably not correct.
 def char_2_token(char_span_str, token_id_2_span):
     ids = []
     for char_span in char_span_str.split(inter_span_joiner):

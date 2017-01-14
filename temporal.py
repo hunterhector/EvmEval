@@ -103,15 +103,16 @@ class TemporalEval:
         # if not validate(events, edges):
         #     raise RuntimeError("The edges cannot form a valid temporal graph.")
 
-        self.gold_nodes = []
-        self.sys_nodes = []
-
         self.normalized_system_nodes = {}
         self.normalized_gold_nodes = {}
-        self.convert_to_t_mapping(g2s_mapping, gold_nuggets, sys_nuggets)
 
         self.gold_nuggets = gold_nuggets
         self.sys_nuggets = sys_nuggets
+
+        self.gold_nodes = []
+        self.sys_nodes = []
+
+        self.store_nodes(g2s_mapping)
 
         self.gold_time_ml = self.make_time_ml(convert_links(gold_links), self.normalized_gold_nodes, self.gold_nodes)
         self.sys_time_ml = self.make_time_ml(convert_links(sys_links), self.normalized_system_nodes, self.sys_nodes)
@@ -157,8 +158,7 @@ class TemporalEval:
                 if l.startswith("Temporal Score"):
                     score_line = True
 
-
-    def convert_to_t_mapping(self, e_mapping, gold_nuggets, system_nuggets):
+    def store_nodes(self, e_mapping):
         mapped_system_mentions = set()
 
         tid = 0
@@ -168,22 +168,22 @@ class TemporalEval:
 
             print "Gold %d is mapped to system %d, node id %s" % (gold_index, system_index, node_id)
 
-            gold_temporal_instance_id = gold_nuggets[gold_index][5]
+            gold_temporal_instance_id = self.gold_nuggets[gold_index][2]
             self.normalized_gold_nodes[gold_temporal_instance_id] = node_id
             self.gold_nodes.append(node_id)
 
             if system_index != -1:
-                system_temporal_instance_id = system_nuggets[system_index][5]
+                system_temporal_instance_id = self.sys_nuggets[system_index][2]
                 self.normalized_system_nodes[system_temporal_instance_id] = node_id
                 self.sys_nodes.append(node_id)
                 mapped_system_mentions.add(system_index)
 
-        for system_index, system_nugget in enumerate(system_nuggets):
+        for system_index, system_nugget in enumerate(self.sys_nuggets):
             if system_index not in mapped_system_mentions:
                 node_id = "te%d" % tid
                 tid += 1
 
-                system_temporal_instance_id = system_nugget[5]
+                system_temporal_instance_id = system_nugget[2]
                 self.normalized_system_nodes[system_temporal_instance_id] = node_id
                 self.sys_nodes.append(node_id)
 
@@ -217,6 +217,14 @@ class TemporalEval:
         lid = 0
 
         for left, right, rType in links:
+            if left not in normalized_nodes:
+                logger.error("Node %s is not a event mention." % left)
+                continue
+
+            if right not in normalized_nodes:
+                logger.error("Node %s is not a event mention." % right)
+                continue
+
             normalized_left = normalized_nodes[left]
             normalized_right = normalized_nodes[right]
 

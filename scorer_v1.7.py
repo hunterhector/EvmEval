@@ -717,12 +717,11 @@ def parse_line(l, invisible_ids):
     # The temporal column is after the last attribute.
     temporal_column = 5 + num_attributes
 
-    span_id = fields[temporal_column] if len(fields) > temporal_column else None
+    event_id = fields[2]
+    text = fields[4]
+    # span_id = fields[temporal_column] if len(fields) > temporal_column else None
 
-    # sys_spans, sys_attributes, sys_mention_id, origin_sys_spans, text, tid
-    # sys_mention_id, sys_spans, sys_attributes, origin_sys_spans, text, tid
-
-    return spans, attributes, fields[2], original_spans, fields[4], span_id
+    return spans, attributes, event_id, original_spans, text
 
 
 def canonicalize_string(str):
@@ -1057,10 +1056,10 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     print_score_matrix = False
 
     logger.debug("Computing overlap scores.")
-    for system_index, (sys_spans, sys_attributes, sys_mention_id, _, _, _) in enumerate(system_mention_table):
+    for system_index, (sys_spans, sys_attributes, sys_mention_id, _, _) in enumerate(system_mention_table):
         if print_score_matrix:
             print system_index, sys_mention_id,
-        for index, (gold_spans, gold_attributes, gold_mention_id, _, _, _) in enumerate(gold_mention_table):
+        for index, (gold_spans, gold_attributes, gold_mention_id, _, _) in enumerate(gold_mention_table):
             if len(gold_spans) == 0:
                 logger.warning("Found empty span gold standard at doc : %s, mention : %s" % (doc_id, gold_mention_id))
             if len(sys_spans) == 0:

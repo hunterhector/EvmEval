@@ -166,7 +166,7 @@ class TemporalEval:
             node_id = "te%d" % tid
             tid += 1
 
-            print "Gold %d is mapped to system %d, node id %s" % (gold_index, system_index, node_id)
+            # print "Gold %d is mapped to system %d, node id %s" % (gold_index, system_index, node_id)
 
             gold_temporal_instance_id = self.gold_nuggets[gold_index][2]
             self.normalized_gold_nodes[gold_temporal_instance_id] = node_id

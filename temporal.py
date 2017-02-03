@@ -12,6 +12,7 @@ from xml.etree import ElementTree
 from xml.etree.ElementTree import Element, SubElement
 
 from config import Config
+from utils import DisjointSet
 
 logger = logging.getLogger(__name__)
 
@@ -69,9 +70,8 @@ def create_root():
 def convert_links(links):
     converted = []
     for l in links:
-        relation_name = convert_name(l[0])
-        args = l[2]
-        converted.append((args[0], args[1], relation_name))
+        relation_name = convert_name(l[2])
+        converted.append((l[0], l[1], relation_name))
     return converted
 
 
@@ -89,6 +89,67 @@ def pretty_print(element):
     return reparsed.toprettyxml(indent="  ")
 
 
+def resolve_equivalent_links(links, nuggets):
+    nodes = [nugget[2] for nugget in nuggets]
+
+    disjoint_set = DisjointSet()
+
+    for link in links:
+        arg1, arg2 = link[2]
+        disjoint_set.add(arg1, arg2)
+
+    node_2_set = {}
+    set_2_nodes = {}
+    non_singletons = set()
+
+    set_id = 0
+    for leader, cluster in disjoint_set.group.iteritems():
+        for element in cluster:
+            node_2_set[element] = set_id
+            non_singletons.add(element)
+
+            try:
+                set_2_nodes[set_id].append(element)
+            except KeyError:
+                set_2_nodes[set_id] = [element]
+
+        set_id += 1
+
+    for node in nodes:
+        if node not in non_singletons:
+            node_2_set[node] = set_id
+            try:
+                set_2_nodes[set_id].append(node)
+            except KeyError:
+                set_2_nodes[set_id] = [node]
+
+            set_id += 1
+
+    return set_2_nodes, node_2_set
+
+
+def propagate_through_equivalence(links, equivalent_links, nuggets):
+    set_2_nodes, node_2_set = resolve_equivalent_links(equivalent_links, nuggets)
+
+    set_links = []
+
+    for link in links:
+        relation = link[0]
+        arg1, arg2 = link[2]
+        set_links.append((node_2_set[arg1], node_2_set[arg2], relation))
+
+    expanded_links = set()
+
+    for link in set_links:
+        arg1, arg2, relation = link
+
+        for node1 in set_2_nodes[arg1]:
+            for node2 in set_2_nodes[arg2]:
+                expanded_links.add((node1, node2, relation))
+
+    return list(expanded_links)
+
+
 class TemporalEval:
     """
     This class help us converting the input into TLINK format and evaluate them using the temporal evaluation tools
@@ -99,9 +160,12 @@ class TemporalEval:
     Interpreting the Temporal Aspects of Language, Naushad UzZaman, 2012
     """
 
-    def __init__(self, doc_id, g2s_mapping, gold_nuggets, gold_links, sys_nuggets, sys_links):
+    def __init__(self, doc_id, g2s_mapping, gold_nuggets, gold_links, sys_nuggets, sys_links, gold_corefs, sys_corefs):
         # if not validate(events, edges):
         #     raise RuntimeError("The edges cannot form a valid temporal graph.")
+
+        expanded_gold_links = propagate_through_equivalence(gold_links, gold_corefs, gold_nuggets)
+        expanded_sys_links = propagate_through_equivalence(sys_links, sys_corefs, sys_nuggets)
 
         self.normalized_system_nodes = {}
         self.normalized_gold_nodes = {}
@@ -114,8 +178,10 @@ class TemporalEval:
 
         self.store_nodes(g2s_mapping)
 
-        self.gold_time_ml = self.make_time_ml(convert_links(gold_links), self.normalized_gold_nodes, self.gold_nodes)
-        self.sys_time_ml = self.make_time_ml(convert_links(sys_links), self.normalized_system_nodes, self.sys_nodes)
+        self.gold_time_ml = self.make_time_ml(convert_links(expanded_gold_links), self.normalized_gold_nodes,
+                                              self.gold_nodes)
+        self.sys_time_ml = self.make_time_ml(convert_links(expanded_sys_links), self.normalized_system_nodes,
+                                             self.sys_nodes)
 
         self.doc_id = doc_id
 

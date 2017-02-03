@@ -1139,20 +1139,33 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
         # In case when we don't do attribute scoring.
         coref_mapping = greedy_mention_only_mapping
 
-    # Evaluate after links.
-    gold_afters = [after for after in g_relations if after[0] == Config.after_relation_name]
-    sys_afters = [after for after in s_relations if after[0] == Config.after_relation_name]
+    gold_relations_by_type = separate_relations(g_relations)
+    sys_relations_by_type = separate_relations(s_relations)
 
-    after_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_afters, system_mention_table, sys_afters)
+    # Evaluate after links.
+    gold_afters = []
+    if Config.after_relation_name in gold_relations_by_type:
+        gold_afters = gold_relations_by_type[Config.after_relation_name]
+
+    sys_afters = []
+    if Config.after_relation_name in sys_relations_by_type:
+        sys_afters = gold_relations_by_type[Config.after_relation_name]
+
+    gold_corefs = []
+    if Config.coreference_relation_name in gold_relations_by_type:
+        gold_corefs = gold_relations_by_type[Config.coreference_relation_name]
+
+    sys_corefs = []
+    if Config.coreference_relation_name in sys_relations_by_type:
+        sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
+
+    after_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_afters, system_mention_table, sys_afters,
+                              gold_corefs, sys_corefs)
     after_eval.write_time_ml()
 
     # Evaluate coreference links.
     if coref_out is not None:
         logger.debug("Start preparing coreference files.")
-
-        gold_corefs = [coref for coref in g_relations if coref[0] == Config.coreference_relation_name]
-
-        sys_corefs = [coref for coref in s_relations if coref[0] == Config.coreference_relation_name]
 
         # Prepare CoNLL style coreference input for this document.
         conll_converter = ConllEvaluator(doc_id, system_id, sys_id_2_text, gold_id_2_text)
@@ -1175,6 +1188,16 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
 
     return True
+
+
+def separate_relations(relations):
+    relations_by_type = {}
+    for r in relations:
+        try:
+            relations_by_type[r[0]].append(r)
+        except KeyError:
+            relations_by_type[r[0]] = [r]
+    return relations_by_type
 
 
 def filter_relations(relations, remaining_ids):

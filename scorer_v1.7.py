@@ -705,6 +705,7 @@ def parse_line(l, invisible_ids):
         if len(spans) == 0:
             logger.warn("Find mention with only invisible words, will not be mapped to anything")
     else:
+        # There is no filtering thing in the character mode.
         spans = parse_characters(fields[3])
         original_spans = spans
 
@@ -713,9 +714,6 @@ def parse_line(l, invisible_ids):
     if EvalState.white_listed_types:
         if attributes[0] not in EvalState.white_listed_types:
             return None
-
-    # The temporal column is after the last attribute.
-    temporal_column = 5 + num_attributes
 
     event_id = fields[2]
     text = fields[4]
@@ -848,7 +846,7 @@ def write_gold_and_system_mappings(system_id, assigned_gold_2_system_mapping, go
         write_if_provided(diff_out, "%s\t%s\t|\t%s\t%s\n" % (system_id, gold_info, sys_info, score_str))
 
     # Write out system mentions that does not map to anything.
-    for system_index, (system_spans, system_attributes, sys_mention_id, sys_origin_spans, text, _) in enumerate(
+    for system_index, (system_spans, system_attributes, sys_mention_id, sys_origin_spans, text) in enumerate(
             system_table):
         if system_index not in mapped_system_mentions:
             sys_info = "%s\t%s\t%s\t%s" % (

@@ -826,8 +826,7 @@ def write_if_provided(out_file, text):
         out_file.write(text)
 
 
-def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_mapping, gold_table,
-                                   system_table, diff_out):
+def write_gold_and_system_mappings(system_id, assigned_gold_2_system_mapping, gold_table, system_table, diff_out):
     mapped_system_mentions = set()
 
     for gold_index, (system_index, score) in enumerate(assigned_gold_2_system_mapping):
@@ -835,13 +834,13 @@ def write_gold_and_system_mappings(doc_id, system_id, assigned_gold_2_system_map
 
         gold_info = "-"
         if gold_index != -1:
-            gold_spans, gold_attributes, gold_mention_id, gold_origin_spans, text, _ = gold_table[gold_index]
+            gold_spans, gold_attributes, gold_mention_id, gold_origin_spans, text = gold_table[gold_index]
             gold_info = "%s\t%s\t%s\t%s" % (
                 gold_mention_id, ",".join(str(x) for x in gold_origin_spans), "\t".join(gold_attributes), text)
 
         sys_info = "-"
         if system_index != -1:
-            system_spans, system_attributes, sys_mention_id, sys_origin_spans, text, _ = system_table[system_index]
+            system_spans, system_attributes, sys_mention_id, sys_origin_spans, text = system_table[system_index]
             sys_info = "%s\t%s\t%s\t%s" % (
                 sys_mention_id, ",".join(str(x) for x in sys_origin_spans), "\t".join(system_attributes), text)
             mapped_system_mentions.add(system_index)
@@ -1087,8 +1086,8 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
         # write_gold_and_system_mappings(doc_id, system_id, greedy_all_attribute_mapping[0], gold_mention_table,
         #                                system_mention_table, diff_out)
 
-        write_gold_and_system_mappings(doc_id, system_id, greedy_mention_only_mapping, gold_mention_table,
-                                       system_mention_table, diff_out)
+        write_gold_and_system_mappings(system_id, greedy_mention_only_mapping, gold_mention_table, system_mention_table,
+                                       diff_out)
 
     attribute_based_fps = [0.0] * len(all_attribute_combinations)
     for attribute_comb_index, abtp in enumerate(greedy_attribute_tps):

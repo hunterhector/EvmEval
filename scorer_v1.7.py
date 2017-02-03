@@ -737,7 +737,19 @@ def parse_relation(relation_line):
     :return:
     """
     parts = relation_line.split("\t")
+
+    if not len(parts) == 3:
+        logger.error("Incorrect format of relation line:")
+        logger.error(relation_line)
+        exit(1)
+
     relation_arguments = parts[2].split(",")
+
+    if len(relation_arguments) < 2:
+        logger.error("A relation should have at least two arguments, maybe incorrect formatted:")
+        logger.error(relation_line)
+        exit(1)
+
     return parts[0], parts[1], relation_arguments
 
 

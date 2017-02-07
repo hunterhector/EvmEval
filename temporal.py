@@ -124,13 +124,7 @@ def resolve_equivalent_links(clusters, nuggets):
 
 
 def propagate_through_equivalence(links, equivalent_links, nuggets):
-    print equivalent_links
-
     set_2_nodes, node_2_set = resolve_equivalent_links(equivalent_links, nuggets)
-
-    print set_2_nodes
-
-    print node_2_set
 
     set_links = []
 

@@ -308,7 +308,8 @@ def main():
         EvalState.overall_coref_scores = ConllEvaluator.get_conll_scores(Config.conll_out)
 
     # Run the TimeML evaluation script.
-    TemporalEval.eval_time_ml()
+    if Config.temporal_result_dir:
+        TemporalEval.eval_time_ml()
 
     print_eval_results(mention_eval_out, attribute_comb)
 

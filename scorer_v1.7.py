@@ -1150,7 +1150,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
 
     sys_afters = []
     if Config.after_relation_name in sys_relations_by_type:
-        sys_afters = gold_relations_by_type[Config.after_relation_name]
+        sys_afters = sys_relations_by_type[Config.after_relation_name]
 
     gold_corefs = []
     if Config.coreference_relation_name in gold_relations_by_type:

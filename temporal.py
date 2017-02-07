@@ -100,7 +100,6 @@ def resolve_equivalent_links(clusters, nuggets):
 
     for cluster in clusters:
         for element in cluster[2]:
-            print element
             node_2_set[element] = set_id
             non_singletons.add(element)
 

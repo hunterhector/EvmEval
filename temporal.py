@@ -89,22 +89,18 @@ def pretty_print(element):
     return reparsed.toprettyxml(indent="  ")
 
 
-def resolve_equivalent_links(links, nuggets):
+def resolve_equivalent_links(clusters, nuggets):
     nodes = [nugget[2] for nugget in nuggets]
-
-    disjoint_set = DisjointSet()
-
-    for link in links:
-        arg1, arg2 = link[2]
-        disjoint_set.add(arg1, arg2)
 
     node_2_set = {}
     set_2_nodes = {}
     non_singletons = set()
 
     set_id = 0
-    for leader, cluster in disjoint_set.group.iteritems():
-        for element in cluster:
+
+    for cluster in clusters:
+        for element in cluster[2]:
+            print element
             node_2_set[element] = set_id
             non_singletons.add(element)
 
@@ -129,7 +125,13 @@ def resolve_equivalent_links(links, nuggets):
 
 
 def propagate_through_equivalence(links, equivalent_links, nuggets):
+    print equivalent_links
+
     set_2_nodes, node_2_set = resolve_equivalent_links(equivalent_links, nuggets)
+
+    print set_2_nodes
+
+    print node_2_set
 
     set_links = []
 

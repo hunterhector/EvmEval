@@ -1159,9 +1159,10 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     if Config.coreference_relation_name in sys_relations_by_type:
         sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
 
-    after_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_afters, system_mention_table, sys_afters,
+    if Config.temporal_result_dir:
+        after_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_afters, system_mention_table, sys_afters,
                               gold_corefs, sys_corefs)
-    after_eval.write_time_ml()
+        after_eval.write_time_ml()
 
     # Evaluate coreference links.
     if coref_out is not None:

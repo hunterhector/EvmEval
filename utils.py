@@ -4,6 +4,7 @@ import re
 import sys
 import os
 import errno
+from collections import defaultdict
 
 logger = logging.getLogger(__name__)
 
@@ -151,27 +152,80 @@ class DisjointSet(object):
         self.group = {}  # maps a group leader to the group (which is a set)
 
     def add(self, a, b):
-        leadera = self.leader.get(a)
-        leaderb = self.leader.get(b)
-        if leadera is not None:
-            if leaderb is not None:
-                if leadera == leaderb:
+        leader_a = self.leader.get(a)
+        leader_b = self.leader.get(b)
+        if leader_a is not None:
+            if leader_b is not None:
+                if leader_a == leader_b:
                     return  # nothing to do
-                groupa = self.group[leadera]
-                groupb = self.group[leaderb]
-                if len(groupa) < len(groupb):
-                    a, leadera, groupa, b, leaderb, groupb = b, leaderb, groupb, a, leadera, groupa
-                groupa |= groupb
-                del self.group[leaderb]
-                for k in groupb:
-                    self.leader[k] = leadera
+                group_a = self.group[leader_a]
+                group_b = self.group[leader_b]
+                if len(group_a) < len(group_b):
+                    a, leader_a, group_a, b, leader_b, group_b = b, leader_b, group_b, a, leader_a, group_a
+                group_a |= group_b
+                del self.group[leader_b]
+                for k in group_b:
+                    self.leader[k] = leader_a
             else:
-                self.group[leadera].add(b)
-                self.leader[b] = leadera
+                self.group[leader_a].add(b)
+                self.leader[b] = leader_a
         else:
-            if leaderb is not None:
-                self.group[leaderb].add(a)
-                self.leader[a] = leaderb
+            if leader_b is not None:
+                self.group[leader_b].add(a)
+                self.leader[a] = leader_b
             else:
                 self.leader[a] = self.leader[b] = a
                 self.group[a] = {a, b}
+
+
+def get_nodes(relations):
+    nodes = set()
+    node_index = {}
+
+    for arg1, arg2, relation in relations:
+        nodes.add(arg1)
+        nodes.add(arg2)
+
+    print nodes
+
+    for index, n in enumerate(list(nodes)):
+        node_index[n] = index
+
+    return node_index
+
+
+class TransitiveGraph:
+    def __init__(self, vertices):
+        # No. of vertices
+        self.V = vertices
+
+        # default dictionary to store graph
+        self.graph = defaultdict(list)
+
+        # To store transitive closure
+        self.tc = [[0 for j in range(self.V)] for i in range(self.V)]
+
+    # function to add an edge to graph
+    def add_edge(self, u, v):
+        self.graph[u].append(v)
+
+    # A recursive DFS traversal function that finds
+    # all reachable vertices for s
+    def dfs_until(self, s, v):
+
+        # Mark reachability from s to v as true.
+        self.tc[s][v] = 1
+
+        # Find all the vertices reachable through v
+        for i in self.graph[v]:
+            if self.tc[s][i] == 0:
+                self.dfs_until(s, i)
+
+    # The function to find transitive closure. It uses
+    # recursive DFSUtil()
+    def transitive_closure(self):
+        # Call the recursive helper function to print DFS
+        # traversal starting from all vertices one by one
+        for i in range(self.V):
+            self.dfs_until(i, i)
+        return self.tc

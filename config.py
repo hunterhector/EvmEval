@@ -18,6 +18,8 @@ class Config:
     coreference_relation_name = "Coreference"  # mark coreference
     after_relation_name = "After"  # mark after
 
+    directed_relations = {"After", "Subevent"}
+
     token_joiner = ","
     span_seperator = ";"
     span_joiner = ","
@@ -72,7 +74,6 @@ class Config:
     temporal_out = "temporal.out"
 
     temp_eval_executable = os.path.dirname(os.path.realpath(__file__)) + "/evaluation-relations/temporal_evaluation.py"
-
 
 
 class EvalMethod:

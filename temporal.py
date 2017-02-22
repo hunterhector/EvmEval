@@ -12,28 +12,29 @@ from xml.etree import ElementTree
 from xml.etree.ElementTree import Element, SubElement
 
 from config import Config
-from utils import DisjointSet
+from utils import TransitiveGraph
+import utils
 
 logger = logging.getLogger(__name__)
 
 
-def validate(events, edges):
+def validate(nuggets, edges):
     """
     Validate whether the edges are valid. Currently, the validation only check whether the reverse is also included,
     which is not possible for after links.
-    :param edges:
+    :param nuggets: The set of possible nuggets.
+    :param edges: Edges in the system.
     :return:
     """
+
     reverse_edges = set()
 
     for edge in edges:
-        left = edge[0]
-        right = edge[1]
-        t = edges[2]
+        left, right, t = edge
 
-        if left not in events:
+        if left not in nuggets:
             logger.error("Relation contains unknown event %s." % left)
-        if right not in events:
+        if right not in nuggets:
             logger.error("Relation contains unknown event %s." % right)
 
         if edge in reverse_edges:
@@ -89,7 +90,7 @@ def pretty_print(element):
     return reparsed.toprettyxml(indent="  ")
 
 
-def resolve_equivalent_links(clusters, nuggets):
+def find_equivalent_sets(clusters, nuggets):
     nodes = [nugget[2] for nugget in nuggets]
 
     node_2_set = {}
@@ -123,26 +124,67 @@ def resolve_equivalent_links(clusters, nuggets):
     return set_2_nodes, node_2_set
 
 
-def propagate_through_equivalence(links, equivalent_links, nuggets):
-    set_2_nodes, node_2_set = resolve_equivalent_links(equivalent_links, nuggets)
+def propagate_through_equivalence(links_by_name, equivalent_links, nuggets):
+    set_2_nodes, node_2_set = find_equivalent_sets(equivalent_links, nuggets)
 
-    set_links = []
+    all_expanded_links = []
 
-    for link in links:
-        relation = link[0]
-        arg1, arg2 = link[2]
-        set_links.append((node_2_set[arg1], node_2_set[arg2], relation))
+    for name, links in links_by_name.iteritems():
+        set_links = []
 
-    expanded_links = set()
+        for link in links:
+            relation = link[0]
+            arg1, arg2 = link[2]
+            set_links.append((node_2_set[arg1], node_2_set[arg2], relation))
 
-    for link in set_links:
-        arg1, arg2, relation = link
+        reduced_set_links = compute_reduced_graph(set_links)
 
-        for node1 in set_2_nodes[arg1]:
-            for node2 in set_2_nodes[arg2]:
-                expanded_links.add((node1, node2, relation))
+        expanded_links = set()
 
-    return list(expanded_links)
+        for link in reduced_set_links:
+            arg1, arg2, relation = link
+
+            for node1 in set_2_nodes[arg1]:
+                for node2 in set_2_nodes[arg2]:
+                    expanded_links.add((node1, node2, relation))
+
+        all_expanded_links.extend(expanded_links)
+
+    return all_expanded_links
+
+
+def compute_reduced_graph(set_links):
+    node_indices = utils.get_nodes(set_links)
+
+    graph = TransitiveGraph(len(node_indices))
+
+    for arg1, arg2, relation in set_links:
+        node_index1 = node_indices[arg1]
+        node_index2 = node_indices[arg2]
+        graph.add_edge(node_index1, node_index2)
+
+    closure_matrix = graph.transitive_closure()
+
+    indirect_links = set()
+
+    for from_node, to_nodes in enumerate(closure_matrix):
+        for to_node, reachable in enumerate(to_nodes):
+            if from_node != to_node and reachable == 1:
+                for indirect_node, indirect_reachable in enumerate(closure_matrix[to_node]):
+                    if indirect_node != to_node:
+                        if indirect_reachable == 1:
+                            indirect_links.add((from_node, indirect_node))
+
+    reduced_links = []
+
+    for arg1, arg2, relation in set_links:
+        node_index1 = node_indices[arg1]
+        node_index2 = node_indices[arg2]
+
+        if (node_index1, node_index2) not in indirect_links:
+            reduced_links.append((arg1, arg2, relation))
+
+    return reduced_links
 
 
 class TemporalEval:
@@ -156,11 +198,8 @@ class TemporalEval:
     """
 
     def __init__(self, doc_id, g2s_mapping, gold_nuggets, gold_links, sys_nuggets, sys_links, gold_corefs, sys_corefs):
-        # if not validate(events, edges):
-        #     raise RuntimeError("The edges cannot form a valid temporal graph.")
-
         expanded_gold_links = propagate_through_equivalence(gold_links, gold_corefs, gold_nuggets)
-        expanded_sys_links = propagate_through_equivalence(sys_links, sys_corefs, sys_nuggets)
+        expanded_sys_links = propagate_through_equivalence(sys_links, sys_corefs, gold_nuggets)
 
         self.normalized_system_nodes = {}
         self.normalized_gold_nodes = {}
@@ -172,6 +211,12 @@ class TemporalEval:
         self.sys_nodes = []
 
         self.store_nodes(g2s_mapping)
+
+        if not validate(set([nugget[2] for nugget in gold_nuggets]), expanded_gold_links):
+            raise RuntimeError("The gold standard edges cannot form a valid temporal graph.")
+
+        if not validate(set([nugget[2] for nugget in sys_nuggets]), expanded_sys_links):
+            raise RuntimeError("The system edges cannot form a valid temporal graph.")
 
         self.gold_time_ml = self.make_time_ml(convert_links(expanded_gold_links), self.normalized_gold_nodes,
                                               self.gold_nodes)
@@ -277,7 +322,7 @@ class TemporalEval:
     def create_tlinks(self, time_ml, links, normalized_nodes):
         lid = 0
 
-        for left, right, rType in links:
+        for left, right, relation_type in links:
             if left not in normalized_nodes:
                 logger.error("Node %s is not a event mention." % left)
                 continue
@@ -291,6 +336,6 @@ class TemporalEval:
 
             link = SubElement(time_ml, "TLINK")
             link.set("lid", "l%d" % lid)
-            link.set("relType", rType)
+            link.set("relType", relation_type)
             link.set("eventInstanceID", normalized_left)
             link.set("relatedToEventInstance", normalized_right)

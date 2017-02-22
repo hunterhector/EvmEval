@@ -1143,14 +1143,25 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     gold_relations_by_type = separate_relations(g_relations)
     sys_relations_by_type = separate_relations(s_relations)
 
-    # Evaluate after links.
-    gold_afters = []
-    if Config.after_relation_name in gold_relations_by_type:
-        gold_afters = gold_relations_by_type[Config.after_relation_name]
+    # Evaluate other directed links.
 
-    sys_afters = []
-    if Config.after_relation_name in sys_relations_by_type:
-        sys_afters = sys_relations_by_type[Config.after_relation_name]
+    gold_directed_relations = {}
+    sys_directed_relations = {}
+
+    for name in Config.directed_relations:
+        if name in gold_relations_by_type:
+            gold_directed_relations[name] = gold_relations_by_type[name]
+
+        if name in sys_relations_by_type:
+            sys_directed_relations[name] = sys_relations_by_type[name]
+
+    # gold_afters = []
+    # if Config.after_relation_name in gold_relations_by_type:
+    #     gold_afters = gold_relations_by_type[Config.after_relation_name]
+    #
+    # sys_afters = []
+    # if Config.after_relation_name in sys_relations_by_type:
+    #     sys_afters = sys_relations_by_type[Config.after_relation_name]
 
     gold_corefs = []
     if Config.coreference_relation_name in gold_relations_by_type:
@@ -1161,8 +1172,8 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
         sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
 
     if Config.temporal_result_dir:
-        after_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_afters, system_mention_table, sys_afters,
-                              gold_corefs, sys_corefs)
+        after_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_directed_relations,
+                                  system_mention_table, sys_directed_relations, gold_corefs, sys_corefs)
         after_eval.write_time_ml()
 
     # Evaluate coreference links.

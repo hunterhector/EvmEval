@@ -226,7 +226,10 @@ class TemporalEval:
         self.doc_id = doc_id
 
     def write_time_ml(self):
-        # Write out the temporal files to disk.
+        """
+        Write the TimeML file to disk.
+        :return:
+        """
         gold_temp_file = open(
             os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir, "%s.tml" % self.doc_id), 'w')
         sys_temp_file = open(os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir,
@@ -271,8 +274,6 @@ class TemporalEval:
         for gold_index, (system_index, _) in enumerate(e_mapping):
             node_id = "te%d" % tid
             tid += 1
-
-            # print "Gold %d is mapped to system %d, node id %s" % (gold_index, system_index, node_id)
 
             gold_temporal_instance_id = self.gold_nuggets[gold_index][2]
             self.normalized_gold_nodes[gold_temporal_instance_id] = node_id

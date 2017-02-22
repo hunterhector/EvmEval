@@ -241,8 +241,15 @@ def main():
 
     if args.sequencing is not None:
         Config.temporal_result_dir = args.sequencing
-        utils.supermakedirs(os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir))
-        utils.supermakedirs(os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir))
+
+        gold_tml_dir = os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir)
+        sys_tml_dir = os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir)
+
+        utils.supermakedirs(gold_tml_dir)
+        utils.supermakedirs(sys_tml_dir)
+
+        utils.remove_file_by_extension(gold_tml_dir, ".tml")
+        utils.remove_file_by_extension(sys_tml_dir, ".tml")
 
     if os.path.isfile(args.system):
         sf = open(args.system)

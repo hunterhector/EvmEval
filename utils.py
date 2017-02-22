@@ -5,6 +5,7 @@ import sys
 import os
 import errno
 from collections import defaultdict
+import glob
 
 logger = logging.getLogger(__name__)
 
@@ -131,6 +132,11 @@ def supermakedirs(path, mode=0775):
     return res
 
 
+def remove_file_by_extension(folder, ext):
+    for path in glob.glob(os.path.join(folder, ext)):
+        os.remove(path)
+
+
 def create_parent_dir(p):
     """
     Create parent directory if not exists.
@@ -185,8 +191,6 @@ def get_nodes(relations):
     for arg1, arg2, relation in relations:
         nodes.add(arg1)
         nodes.add(arg2)
-
-    print nodes
 
     for index, n in enumerate(list(nodes)):
         node_index[n] = index

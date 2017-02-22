@@ -133,7 +133,7 @@ def supermakedirs(path, mode=0775):
 
 
 def remove_file_by_extension(folder, ext):
-    for path in glob.glob(os.path.join(folder, ext)):
+    for path in glob.glob(os.path.join(folder, "*" + ext)):
         os.remove(path)
 
 

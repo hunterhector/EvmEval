@@ -248,6 +248,8 @@ def main():
         utils.supermakedirs(gold_tml_dir)
         utils.supermakedirs(sys_tml_dir)
 
+        print "Clean up directories"
+
         utils.remove_file_by_extension(gold_tml_dir, ".tml")
         utils.remove_file_by_extension(sys_tml_dir, ".tml")
 

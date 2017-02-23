@@ -1,0 +1,8 @@
+title: EvmEval
+description: The event mention detection and corefrene evaluators, and associated utilities (converters, validators)
+google_analytics: UA-62709601-1
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions

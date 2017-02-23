@@ -123,11 +123,9 @@ class ConllEvaluator:
                                                                               threshold)
         logger.debug("Preparing CoNLL files using mapping threhold %.2f" % threshold)
 
-        gold_conll_lines = self.prepare_lines(gold_corefs, aligned_gold_table,
-                                              self.extract_token_map(gold_mention_table), self.gold_id_2_text)
+        gold_conll_lines = self.prepare_lines(gold_corefs, aligned_gold_table, self.gold_id_2_text)
 
-        sys_conll_lines = self.prepare_lines(sys_corefs, aligned_system_table,
-                                             self.extract_token_map(system_mention_table), self.sys_id_2_text)
+        sys_conll_lines = self.prepare_lines(sys_corefs, aligned_system_table, self.sys_id_2_text)
 
         if not gold_conll_lines:
             utils.terminate_with_error("Gold standard has data problem for doc [%s], please refer to log. Quitting..."
@@ -139,7 +137,7 @@ class ConllEvaluator:
 
         return gold_conll_lines, sys_conll_lines
 
-    def prepare_lines(self, corefs, mention_table, event_mention_id2sorted_tokens, id_2_text):
+    def prepare_lines(self, corefs, mention_table, id_2_text):
         clusters = {}
         for cluster_id, one_coref_cluster in enumerate(corefs):
             clusters[cluster_id] = set(one_coref_cluster[2])

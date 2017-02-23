@@ -73,15 +73,35 @@ def convert_links(links):
     for l in links:
         relation_name = convert_name(l[2])
         converted.append((l[0], l[1], relation_name))
+
     return converted
 
 
 def convert_name(name):
+    '''
+    Convert the Event Sequencing names to an corresponding TimeML name for evaluation.
+    Note that, the meaning of After in event sequencing is different from TimeML specification.
+
+    In Event Sequencing task, E1 --after--> E2 represent a directed link, where the latter one happens later. In TIMEML,
+    E1 --after--> E2 actually says E1 is after E2. So we use the BEFORE tag instead.
+
+    This conversion is just for the sake of logically corresponding, in fact, converting to "BEFORE" and "AFTER" will
+    produce the same scores.
+
+    In addiction, in TIMEML, there is no definition for Subevent, but "INCLUDES" have a similar semantic with that.
+
+    :param name:
+    :return:
+    '''
     if name == "After":
-        return "AFTER"
+        return "BEFORE"
+    elif name == "Subevent":
+        return "INCLUDES"
+    else:
+        logger.warn("Unsupported relations name %s found." % name)
 
 
-def pretty_print(element):
+def pretty_xml(element):
     """
     Return a pretty-printed XML string for the Element.
     """
@@ -235,8 +255,8 @@ class TemporalEval:
         sys_temp_file = open(os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir,
                                           "%s.tml" % self.doc_id), 'w')
 
-        gold_temp_file.write(pretty_print(self.gold_time_ml))
-        sys_temp_file.write(pretty_print(self.sys_time_ml))
+        gold_temp_file.write(pretty_xml(self.gold_time_ml))
+        sys_temp_file.write(pretty_xml(self.sys_time_ml))
 
         gold_temp_file.close()
         sys_temp_file.close()
@@ -298,14 +318,12 @@ class TemporalEval:
         # Create the root.
         time_ml = create_root()
 
-        # Add the text node.
-        text = SubElement(time_ml, "TEXT")
-        self.annotate_timeml_events(text, nodes)
+        # Add TEXT.
+        self.annotate_timeml_events(time_ml, nodes)
 
         # Add instances.
         self.create_instance(time_ml, nodes)
 
-        # Add TLINKs.
         self.create_tlinks(time_ml, links, normalized_nodes)
 
         return time_ml
@@ -316,9 +334,10 @@ class TemporalEval:
             instance.set("eiid", "instance_" + node)
             instance.set("eid", node)
 
-    def annotate_timeml_events(self, text_node, nodes):
+    def annotate_timeml_events(self, parent, nodes):
+        text = SubElement(parent, "TEXT")
         for tid in nodes:
-            make_event(text_node, tid)
+            make_event(text, tid)
 
     def create_tlinks(self, time_ml, links, normalized_nodes):
         lid = 0

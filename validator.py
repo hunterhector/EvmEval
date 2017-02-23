@@ -63,24 +63,24 @@ def exit_on_fail():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Validator to see if it can pass the scorer successfully")
+        description="The validator check whether the supplied 'tbf' file follows assumed structure . The validator"
+                    " will exit at status 255 if any errors are found, validation logs will be written at the same "
+                    "directory of the validator with 'errlog' as extension.")
     parser.add_argument("-s", "--system", help="System output", required=True)
-    parser.add_argument("-c", "--char_mode", help="Character mode", action="store_true")
+    parser.add_argument("-tm", "--token_mode", help="Token mode, default is false.", action="store_true")
     parser.add_argument(
-        "-t", "--token_path", help="Path to the directory containing the token mappings file")
+        "-t", "--token_path", help="Path to the directory containing the token mappings file, only in token mode.")
     parser.add_argument(
-        "-of", "--offset_field", help="A pair of integer indicates which column we should "
-                                      "read the offset in the token mapping file, index starts"
-                                      "at 0, default value will be %s" % default_token_offset_fields
+        "-of", "--offset_field", help="A pair of integer indicates which column we should read the offset in the token "
+                                      "mapping file, index starts at 0, default value will be %s. Only used in token "
+                                      "mode." % default_token_offset_fields
     )
     parser.add_argument(
         "-te", "--token_table_extension",
-        help="any extension appended after docid of token table files. "
-             "Default is [%s]" % default_token_file_ext)
+        help="any extension appended after docid of token table files. Default is [%s]" % default_token_file_ext)
     parser.add_argument(
         "-wc", "--word_count_file",
-        help="Provide a word count file that can be used to help validation, such as the character_counts.tsv in "
-             "LDC2016E64"
+        help="A word count file that can be used to help validation, such as the character_counts.tsv in LDC2016E64."
     )
     parser.add_argument("-ty", "--type_file",
                         help="If provided, the validator will check whether the type subtype pair is valid.")
@@ -122,7 +122,7 @@ def main():
         logger.setLevel(logging.INFO)
 
     # token based eval mode
-    eval_mode = EvalMethod.Char if args.char_mode else EvalMethod.Token
+    eval_mode = EvalMethod.Token if args.token_mode else  EvalMethod.Char
 
     token_dir = "."
     if eval_mode == EvalMethod.Token:

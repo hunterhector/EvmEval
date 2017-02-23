@@ -11,6 +11,9 @@
 
     Author: Zhengzhong Liu ( liu@cs.cmu.edu )
 """
+# Change log v1.8
+# 1. Adding supports for Event Sequencing evaluation by calling TIMEML evaluators.
+
 # Change log v1.7.3
 # 1. Allow user to configure specific types for evaluation.
 
@@ -139,9 +142,8 @@ class EvalState:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Event mention scorer, which conducts token based "
-                    "scoring, system and gold standard files should follows "
-                    "the token-based format.")
+        description="Event mention scorer, provides support to Event Nugget scoring, Event Coreference and Event "
+                    "Sequencing scoring.")
     parser.add_argument("-g", "--gold", help="Golden Standard", required=True)
     parser.add_argument("-s", "--system", help="System output", required=True)
     parser.add_argument("-d", "--comparison_output",
@@ -156,8 +158,7 @@ def main():
         "-a", "--sequencing", help="Eval Event sequencing result output (After and Subevent)"
     )
     parser.add_argument(
-        "-t", "--token_path", help="Path to the directory containing the "
-                                   "token mappings file")
+        "-t", "--token_path", help="Path to the directory containing the token mappings file, only used in token mode.")
     parser.add_argument(
         "-m", "--coref_mapping", help="Which mapping will be used to perform coreference mapping.", type=int
     )
@@ -168,16 +169,14 @@ def main():
     )
     parser.add_argument(
         "-te", "--token_table_extension",
-        help="any extension appended after docid of token table files. "
-             "Default is [%s]" % Config.default_token_file_ext)
+        help="any extension appended after docid of token table files. Default is [%s], only used in token mode."
+             % Config.default_token_file_ext)
     parser.add_argument("-ct", "--coreference_threshold", type=float, help="Threshold for coreference mention mapping")
-    parser.add_argument(
-        "-b", "--debug", help="turn debug mode on", action="store_true")
+    parser.add_argument(        "-b", "--debug", help="turn debug mode on", action="store_true")
 
     parser.add_argument("--eval_mode", choices=["char", "token"], default="char",
-                        help="Use Span Overlap or Token Overlap mode. The Span Overlap mode will take a span as range "
-                             "[start:end], while the Token Overlap mode consider each token is provided as a single "
-                             "id.")
+                        help="Use Span or Token mode. The Span mode will take a span as range [start:end], while the "
+                             "Token mode consider each token is provided as a single id.")
 
     parser.add_argument("-wl", "--type_white_list", type=argparse.FileType('r'),
                         help="Provide a file, where each line list a mention type subtype pair to be evaluated. Types "

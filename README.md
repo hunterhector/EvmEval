@@ -1,10 +1,9 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Event Mention Evaluation (EvmEval)](#event-mention-evaluation-evmeval)
   - [Naming Convention](#naming-convention)
-  - [Tokenization table files format](#tokenization-table-files-format)
   - [scorer.py](#scorerpy)
     - [*Features*](#features)
     - [*Usage*](#usage)
@@ -14,13 +13,15 @@
     - [*Features*](#features-1)
     - [*Usage*](#usage-2)
   - [LDC-XML-to-Brat converter](#ldc-xml-to-brat-converter)
-    - [*Requirements of the software*](#requirements-of-the-software)
-    - [*How to run the software*](#how-to-run-the-software)
-    - [Assumptions of the software](#assumptions-of-the-software)
+  - [Requirements of the software](#requirements-of-the-software)
+  - [How to run the software](#how-to-run-the-software)
   - [Token File Maker](#token-file-maker)
+    - [*Requirements of the file maker*](#requirements-of-the-file-maker)
     - [*Prerequisites*](#prerequisites)
     - [*Usage*](#usage-3)
+  - [Tokenization table files format](#tokenization-table-files-format)
   - [visualize.py](#visualizepy)
+    - [*A Note about visualization*](#a-note-about-visualization)
     - [*Text Base Visualization*](#text-base-visualization)
     - [*Web Base Visualization*](#web-base-visualization)
     - [*Usage*](#usage-4)
@@ -48,32 +49,18 @@ The following scripts need to find corresponding files by docid and file extensi
 
 Here is how to find the extension:
 
-For tokenization table, they normally have the following name:
+For brat annotation files, they normally have the following name:
+
+    <docid>.ann
+
+In such case, the file extension is ".ann", the converter assume this as the default extension. If not, change it with "-ae" argument
+
+In the past evaluations, tokenization tables are provided, for tokenization table, they normally have the following name:
 
     <docid>.tab
 
 In such case, the file extension is ".tab", both the converter and scorer assume this as a default extension. If not, change them with "-te" argument.
 
-For brat annotation files, they normally have the following name:
-
-    <docid>.ann
-
-In such case, the file extension is ".ann", the converter assume this as the default extention. If not, change it with "-ae" argument
-
-Tokenization table files format
---------------------------------
-These are tab-delimited files which map the tokens to their tokenized files. A mapping table contains 3 columns for each row, and the rows contain an orderd listing of the
-document's tokens. The columns are:
-  - token_id:   A string of "t" followed by a token-number beginning at 0
-  - token_str:  The literal string of a given-token
-  - tkn_begin:  Index of the token's first character in the tkn file
-  - tkn_end:    Index of the token's last character in the tkn file
-
-Please note that all 4 fields are required and will be used:
-  - The converter will use token_id, tkn_begin, tkn_end to convert characters to token id
-  - The scorer will use the token_str to detect invisible words 
-  
-The tokenization table files are created using our [automatic tool](#token-file-maker), which wraps the Stanford tokenizer and provide boundary checks.
 
 scorer.py
 ----------
@@ -87,24 +74,23 @@ read the scoring documentation for more details.
   a. A text based comparison output (-d option)
   b. A web based comparison output using Brat's embedded visualization (-v option)
 3. If specified, it will generate temporary conll format files, and use the conll reference-scorer to produce coreference scores
+4. Be able to conduct temporal evaluation as well if specified with the "-a" argument.
 
 ### *Usage*
-	usage: scorer_vX.X.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
-                          [-o OUTPUT] [-c COREF] -t TOKEN_PATH [-of OFFSET_FIELD]
-                          [-te TOKEN_TABLE_EXTENSION] [-b]
+    usage: scorer_v1.8.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]
+                          [-o OUTPUT] [-c COREF] [-a SEQUENCING] [-t TOKEN_PATH]
+                          [-m COREF_MAPPING] [-of OFFSET_FIELD]
+                          [-te TOKEN_TABLE_EXTENSION] [-ct COREFERENCE_THRESHOLD]
+                          [-b] [--eval_mode {char,token}] [-wl TYPE_WHITE_LIST]
+                          [-dn DOC_ID_TO_EVAL]
+    
+Event mention scorer, provides support to Event Nugget scoring, Event Coreference and Event Sequencing scoring.
 
-	
-Event mention scorer, which conducts token based scoring, system and gold standard files should follows the token-based format.
-
-    Required Arguments:
+    core arguments:
       -g GOLD, --gold GOLD  Golden Standard
-      -s SYSTEM, --system SYSTEM
-                            System output
-      -t TOKEN_PATH, --token_path TOKEN_PATH
-                            Path to the directory containing the token mappings
-                            file   
-    Optional Arguments:
-      -h, --help            show this help message and exit                                                    
+      -s SYSTEM, --system SYSTEM System output
+
+    optional arguments:
       -d COMPARISON_OUTPUT, --comparison_output COMPARISON_OUTPUT
                             Compare and help show the difference between system
                             and gold
@@ -115,46 +101,73 @@ Event mention scorer, which conducts token based scoring, system and gold standa
                             Eval Coreference result output, need to put the
                             referenceconll coref scorer in the same folder with
                             this scorer
+      -a SEQUENCING, --sequencing SEQUENCING
+                            Eval Event sequencing result output (After and
+                            Subevent)
+      -t TOKEN_PATH, --token_path TOKEN_PATH
+                            Path to the directory containing the token mappings
+                            file, only used in token mode.
+      -m COREF_MAPPING, --coref_mapping COREF_MAPPING
+                            Which mapping will be used to perform coreference
+                            mapping.
       -of OFFSET_FIELD, --offset_field OFFSET_FIELD
                             A pair of integer indicates which column we should
                             read the offset in the token mapping file, index
                             startsat 0, default value will be [2, 3]
       -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
                             any extension appended after docid of token table
-                            files. Default is [.txt.tab]
+                            files. Default is [.tab], only used in token mode.
       -ct COREFERENCE_THRESHOLD, --coreference_threshold COREFERENCE_THRESHOLD
-                            Threshold for coreference mention mapping                            
+                            Threshold for coreference mention mapping
       -b, --debug           turn debug mode on
+      --eval_mode {char,token}
+                            Use Span or Token mode. The Span mode will take a span
+                            as range [start:end], while the Token mode consider
+                            each token is provided as a single id.
+      -wl TYPE_WHITE_LIST, --type_white_list TYPE_WHITE_LIST
+                            Provide a file, where each line list a mention type
+                            subtype pair to be evaluated. Types that are out of
+                            this white list will be ignored.
+      -dn DOC_ID_TO_EVAL, --doc_id_to_eval DOC_ID_TO_EVAL
+                            Provide one single doc id to evaluate.
 
 validator.py
 --------------------
 The validator check whether the supplied "tbf" file follows assumed structure . The validator will exit at status 255 if any errors are found, validation logs will be written at the same directory of the validator with "errlog" as extension.
 
 ### *Usage*
-    validator.py [-h] -s SYSTEM -t TOKEN_PATH [-of OFFSET_FIELD]
-                        [-te TOKEN_TABLE_EXTENSION] [-b]
+    usage: validator.py [-h] -s SYSTEM [-tm] [-t TOKEN_PATH] [-of OFFSET_FIELD]
+                        [-te TOKEN_TABLE_EXTENSION] [-wc WORD_COUNT_FILE]
+                        [-ty TYPE_FILE] [-b]
     
-    Event mention scorer, which conducts token based scoring, system and gold
-    standard files should follows the token-based format.
-    
+    The validator check whether the supplied 'tbf' file follows assumed structure.
     The validator will exit at status 255 if any errors are found, validation
-    logs will be written at the same directory of the validator with "errlog"
-    as extension.
+    logs will be written at the same directory of the validator with 'errlog' as
+    extension.
+    
+    core arguments:
+      -s SYSTEM, --system SYSTEM System output
     
     optional arguments:
       -h, --help            show this help message and exit
-      -s SYSTEM, --system SYSTEM
-                            System output
+      -tm, --token_mode     Token mode, default is false.
       -t TOKEN_PATH, --token_path TOKEN_PATH
                             Path to the directory containing the token mappings
-                            file
+                            file, only in token mode.
       -of OFFSET_FIELD, --offset_field OFFSET_FIELD
                             A pair of integer indicates which column we should
                             read the offset in the token mapping file, index
-                            startsat 0, default value will be [2, 3]
+                            starts at 0, default value will be [2, 3]. Only used
+                            in token mode.
       -te TOKEN_TABLE_EXTENSION, --token_table_extension TOKEN_TABLE_EXTENSION
                             any extension appended after docid of token table
-                            files. Default is [.txt.tab]
+                            files. Default is [.tab]
+      -wc WORD_COUNT_FILE, --word_count_file WORD_COUNT_FILE
+                            A word count file that can be used to help validation,
+                            such as the character_counts.tsv in LDC2016E64.
+      -ty TYPE_FILE, --type_file TYPE_FILE
+                            If provided, the validator will check whether the type
+                            subtype pair is valid.
       -b, --debug           turn debug mode on
 
 brat2tbf.py
@@ -252,6 +265,22 @@ Our tokenizer implementation is based on the tokenizer in the Stanford CoreNLP t
         -o <output>       output directory
         -s <separator>    separator chars for tokenization
         -t <text>         text directory
+
+
+Tokenization table files format
+--------------------------------
+These are tab-delimited files which map the tokens to their tokenized files. A mapping table contains 3 columns for each row, and the rows contain an orderd listing of the
+document's tokens. The columns are:
+  - token_id:   A string of "t" followed by a token-number beginning at 0
+  - token_str:  The literal string of a given-token
+  - tkn_begin:  Index of the token's first character in the tkn file
+  - tkn_end:    Index of the token's last character in the tkn file
+
+Please note that all 4 fields are required and will be used:
+  - The converter will use token_id, tkn_begin, tkn_end to convert characters to token id
+  - The scorer will use the token_str to detect invisible words 
+  
+The tokenization table files are created using our [automatic tool](#token-file-maker), which wraps the Stanford tokenizer and provide boundary checks.
 
  
 visualize.py

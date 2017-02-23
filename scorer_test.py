@@ -16,7 +16,7 @@ class Config:
     """
     Configuration variables
     """
-    scorer_executable = "scorer_v1.7.py"
+    scorer_executable = "scorer_v1.8.py"
     test_temp = "test_tmp"
     test_base = "data/test_cases"
     test_log_output = "test.log"

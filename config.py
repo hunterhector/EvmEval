@@ -75,6 +75,8 @@ class Config:
 
     temp_eval_executable = os.path.dirname(os.path.realpath(__file__)) + "/evaluation-relations/temporal_evaluation.py"
 
+    no_temporal_validation = False
+
 
 class EvalMethod:
     """

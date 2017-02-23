@@ -158,6 +158,9 @@ def main():
         "-a", "--sequencing", help="Eval Event sequencing result output (After and Subevent)"
     )
     parser.add_argument(
+        "-nv", "--no_temporal_validation", help="Whether to turn off temporal validation", action="store_true"
+    )
+    parser.add_argument(
         "-t", "--token_path", help="Path to the directory containing the token mappings file, only used in token mode.")
     parser.add_argument(
         "-m", "--coref_mapping", help="Which mapping will be used to perform coreference mapping.", type=int
@@ -172,7 +175,7 @@ def main():
         help="any extension appended after docid of token table files. Default is [%s], only used in token mode."
              % Config.default_token_file_ext)
     parser.add_argument("-ct", "--coreference_threshold", type=float, help="Threshold for coreference mention mapping")
-    parser.add_argument(        "-b", "--debug", help="turn debug mode on", action="store_true")
+    parser.add_argument("-b", "--debug", help="turn debug mode on", action="store_true")
 
     parser.add_argument("--eval_mode", choices=["char", "token"], default="char",
                         help="Use Span or Token mode. The Span mode will take a span as range [start:end], while the "
@@ -251,6 +254,9 @@ def main():
 
         utils.remove_file_by_extension(gold_tml_dir, ".tml")
         utils.remove_file_by_extension(sys_tml_dir, ".tml")
+
+        if args.no_temporal_validation:
+            Config.no_temporal_validation = True
 
     if os.path.isfile(args.system):
         sf = open(args.system)

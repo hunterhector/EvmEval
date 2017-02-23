@@ -232,11 +232,12 @@ class TemporalEval:
 
         self.store_nodes(g2s_mapping)
 
-        if not validate(set([nugget[2] for nugget in gold_nuggets]), expanded_gold_links):
-            raise RuntimeError("The gold standard edges cannot form a valid temporal graph.")
+        if not Config.no_temporal_validation:
+            if not validate(set([nugget[2] for nugget in gold_nuggets]), expanded_gold_links):
+                raise RuntimeError("The gold standard edges cannot form a valid temporal graph.")
 
-        if not validate(set([nugget[2] for nugget in sys_nuggets]), expanded_sys_links):
-            raise RuntimeError("The system edges cannot form a valid temporal graph.")
+            if not validate(set([nugget[2] for nugget in sys_nuggets]), expanded_sys_links):
+                raise RuntimeError("The system edges cannot form a valid temporal graph.")
 
         self.gold_time_ml = self.make_time_ml(convert_links(expanded_gold_links), self.normalized_gold_nodes,
                                               self.gold_nodes)

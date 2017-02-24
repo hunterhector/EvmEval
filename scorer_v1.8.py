@@ -244,16 +244,10 @@ def main():
     if args.sequencing is not None:
         Config.temporal_result_dir = args.sequencing
 
-        gold_tml_dir = os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir)
-        sys_tml_dir = os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir)
+        logger.info("Temporal files will be ouput at " + Config.temporal_result_dir)
 
-        utils.supermakedirs(gold_tml_dir)
-        utils.supermakedirs(sys_tml_dir)
-
-        print "Clean up directories"
-
-        utils.remove_file_by_extension(gold_tml_dir, ".tml")
-        utils.remove_file_by_extension(sys_tml_dir, ".tml")
+        utils.remove_file_by_extension(Config.temporal_result_dir, ".tml")
+        utils.remove_file_by_extension(Config.temporal_result_dir, ".tml")
 
         if args.no_temporal_validation:
             Config.no_temporal_validation = True
@@ -486,10 +480,16 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
 
     if Config.temporal_result_dir is not None:
         mention_eval_out.write("\n")
-        temporal_output = os.path.join(Config.temporal_result_dir, Config.temporal_out)
-        with open(temporal_output, 'r') as f:
-            for l in f:
-                mention_eval_out.write(l)
+
+        for root, dirs, files in os.walk(Config.temporal_result_dir):
+            for f in files:
+                if f == Config.temporal_out:
+                    link_type = os.path.basename(root)
+                    temporal_output = os.path.join(root, f)
+                    with open(temporal_output, 'r') as out:
+                        mention_eval_out.write("=======Event Sequencing Results for %s =======\n" % link_type)
+                        for l in out:
+                            mention_eval_out.write(l)
 
     if mention_eval_out is not None:
         mention_eval_out.flush()

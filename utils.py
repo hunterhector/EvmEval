@@ -133,8 +133,10 @@ def supermakedirs(path, mode=0775):
 
 
 def remove_file_by_extension(folder, ext):
-    for path in glob.glob(os.path.join(folder, "*" + ext)):
-        os.remove(path)
+    for root, dirs, files in os.walk(folder):
+        for f in files:
+            if f.lower().endswith(ext):
+                os.remove(os.path.join(root, f))
 
 
 def create_parent_dir(p):

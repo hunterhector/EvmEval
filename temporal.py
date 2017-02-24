@@ -18,7 +18,7 @@ import utils
 logger = logging.getLogger(__name__)
 
 
-def validate(nuggets, edges):
+def validate(nuggets, edges_by_type):
     """
     Validate whether the edges are valid. Currently, the validation only check whether the reverse is also included,
     which is not possible for after links.
@@ -26,23 +26,23 @@ def validate(nuggets, edges):
     :param edges: Edges in the system.
     :return:
     """
+    for name, edges in edges_by_type.iteritems():
+        reverse_edges = set()
 
-    reverse_edges = set()
+        for edge in edges:
+            left, right, t = edge
 
-    for edge in edges:
-        left, right, t = edge
+            if left not in nuggets:
+                logger.error("Relation contains unknown event %s." % left)
+            if right not in nuggets:
+                logger.error("Relation contains unknown event %s." % right)
 
-        if left not in nuggets:
-            logger.error("Relation contains unknown event %s." % left)
-        if right not in nuggets:
-            logger.error("Relation contains unknown event %s." % right)
+            if edge in reverse_edges:
+                logger.error("There is a link from %s to %s and %s to %s, this is not allowed."
+                             % (left, right, right, left))
+                return False
+            reverse_edges.add((right, left, t))
 
-        if edge in reverse_edges:
-            logger.error("There is a link from %s to %s and %s to %s, this is not allowed."
-                         % (left, right, right, left))
-            return False
-
-        reverse_edges.add((right, left, t))
     return True
 
 
@@ -68,13 +68,16 @@ def create_root():
     return timeml
 
 
-def convert_links(links):
-    converted = []
-    for l in links:
-        relation_name = convert_name(l[2])
-        converted.append((l[0], l[1], relation_name))
+def convert_links(links_by_name):
+    all_converted = {}
+    for name, links in links_by_name.iteritems():
+        converted = []
+        for l in links:
+            relation_name = convert_name(l[2])
+            converted.append((l[0], l[1], relation_name))
+        all_converted[name] = converted
 
-    return converted
+    return all_converted
 
 
 def convert_name(name):
@@ -147,7 +150,7 @@ def find_equivalent_sets(clusters, nuggets):
 def propagate_through_equivalence(links_by_name, equivalent_links, nuggets):
     set_2_nodes, node_2_set = find_equivalent_sets(equivalent_links, nuggets)
 
-    all_expanded_links = []
+    all_expanded_links = {}
 
     for name, links in links_by_name.iteritems():
         set_links = []
@@ -168,7 +171,7 @@ def propagate_through_equivalence(links_by_name, equivalent_links, nuggets):
                 for node2 in set_2_nodes[arg2]:
                     expanded_links.add((node1, node2, relation))
 
-        all_expanded_links.extend(expanded_links)
+        all_expanded_links[name] = list(expanded_links)
 
     return all_expanded_links
 
@@ -218,8 +221,8 @@ class TemporalEval:
     """
 
     def __init__(self, doc_id, g2s_mapping, gold_nuggets, gold_links, sys_nuggets, sys_links, gold_corefs, sys_corefs):
-        expanded_gold_links = propagate_through_equivalence(gold_links, gold_corefs, gold_nuggets)
-        expanded_sys_links = propagate_through_equivalence(sys_links, sys_corefs, gold_nuggets)
+        gold_links_by_type = propagate_through_equivalence(gold_links, gold_corefs, gold_nuggets)
+        sys_links_by_type = propagate_through_equivalence(sys_links, sys_corefs, gold_nuggets)
 
         self.normalized_system_nodes = {}
         self.normalized_gold_nodes = {}
@@ -233,16 +236,16 @@ class TemporalEval:
         self.store_nodes(g2s_mapping)
 
         if not Config.no_temporal_validation:
-            if not validate(set([nugget[2] for nugget in gold_nuggets]), expanded_gold_links):
+            if not validate(set([nugget[2] for nugget in gold_nuggets]), gold_links_by_type):
                 raise RuntimeError("The gold standard edges cannot form a valid temporal graph.")
 
-            if not validate(set([nugget[2] for nugget in sys_nuggets]), expanded_sys_links):
+            if not validate(set([nugget[2] for nugget in sys_nuggets]), sys_links_by_type):
                 raise RuntimeError("The system edges cannot form a valid temporal graph.")
 
-        self.gold_time_ml = self.make_time_ml(convert_links(expanded_gold_links), self.normalized_gold_nodes,
-                                              self.gold_nodes)
-        self.sys_time_ml = self.make_time_ml(convert_links(expanded_sys_links), self.normalized_system_nodes,
-                                             self.sys_nodes)
+        self.gold_time_ml = self.make_all_time_ml(convert_links(gold_links_by_type), self.normalized_gold_nodes,
+                                                  self.gold_nodes)
+        self.sys_time_ml = self.make_all_time_ml(convert_links(sys_links_by_type), self.normalized_system_nodes,
+                                                 self.sys_nodes)
 
         self.doc_id = doc_id
 
@@ -251,29 +254,44 @@ class TemporalEval:
         Write the TimeML file to disk.
         :return:
         """
-        gold_temp_file = open(
-            os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir, "%s.tml" % self.doc_id), 'w')
-        sys_temp_file = open(os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir,
-                                          "%s.tml" % self.doc_id), 'w')
+        self.write(self.gold_time_ml, Config.temporal_gold_dir)
+        self.write(self.sys_time_ml, Config.temporal_sys_dir)
 
-        gold_temp_file.write(pretty_xml(self.gold_time_ml))
-        sys_temp_file.write(pretty_xml(self.sys_time_ml))
+    def write(self, time_ml_data, subdir):
+        """
+        Write out time ml files into sub directories.
+        :param time_ml_data:
+        :param time_ml_dir:
+        :param subdir:
+        :return:
+        """
+        for name, time_ml in time_ml_data.iteritems():
+            output_dir = os.path.join(Config.temporal_result_dir, name, subdir)
 
-        gold_temp_file.close()
-        sys_temp_file.close()
+            if not os.path.isdir(output_dir):
+                utils.supermakedirs(output_dir)
+
+            temp_file = open(os.path.join(output_dir, "%s.tml" % self.doc_id), 'w')
+            temp_file.write(pretty_xml(time_ml))
+            temp_file.close()
 
     @staticmethod
     def eval_time_ml():
         logger.info("Running TimeML scorer.")
 
-        temporal_output = os.path.join(Config.temporal_result_dir, Config.temporal_out)
+        # gold_dir = os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir)
+        # sys_dir = os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir)
 
-        gold_dir = os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir)
-        sys_dir = os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir)
+        for link_type in os.listdir(Config.temporal_result_dir):
+            print link_type
+            temporal_output = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_out)
 
-        with open(temporal_output, 'wb', 0) as out_file:
-            subprocess.call(["python", Config.temp_eval_executable, gold_dir, sys_dir, '0', "implicit_in_recall"],
-                            stdout=out_file)
+            gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_gold_dir)
+            sys_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_sys_dir)
+
+            with open(temporal_output, 'wb', 0) as out_file:
+                subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,
+                                 '0', "implicit_in_recall"], stdout=out_file)
 
     @staticmethod
     def get_eval_output():
@@ -315,16 +333,27 @@ class TemporalEval:
                 self.normalized_system_nodes[system_temporal_instance_id] = node_id
                 self.sys_nodes.append(node_id)
 
+    def make_all_time_ml(self, links_by_name, normalized_nodes, nodes):
+        all_time_ml = {}
+
+        all_links = []
+
+        for name, links in links_by_name.iteritems():
+            all_time_ml[name] = self.make_time_ml(links, normalized_nodes, nodes)
+            all_links.extend(links)
+
+        all_time_ml["All"] = self.make_time_ml(all_links, normalized_nodes, nodes)
+
+        return all_time_ml
+
     def make_time_ml(self, links, normalized_nodes, nodes):
         # Create the root.
         time_ml = create_root()
-
         # Add TEXT.
         self.annotate_timeml_events(time_ml, nodes)
 
         # Add instances.
         self.create_instance(time_ml, nodes)
-
         self.create_tlinks(time_ml, links, normalized_nodes)
 
         return time_ml

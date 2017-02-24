@@ -275,12 +275,11 @@ class TemporalEval:
             temp_file.write(pretty_xml(time_ml))
             temp_file.close()
 
+            logger.info("Write out tml into " + temp_file)
+
     @staticmethod
     def eval_time_ml():
         logger.info("Running TimeML scorer.")
-
-        # gold_dir = os.path.join(Config.temporal_result_dir, Config.temporal_gold_dir)
-        # sys_dir = os.path.join(Config.temporal_result_dir, Config.temporal_sys_dir)
 
         for link_type in os.listdir(Config.temporal_result_dir):
             print link_type

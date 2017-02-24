@@ -275,7 +275,7 @@ class TemporalEval:
             temp_file.write(pretty_xml(time_ml))
             temp_file.close()
 
-            logger.info("Write out tml into " + temp_file)
+            logger.info("Write out tml into " + output_dir+  "/" + self.doc_id)
 
     @staticmethod
     def eval_time_ml():

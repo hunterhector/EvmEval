@@ -81,7 +81,7 @@ def convert_links(links_by_name):
 
 
 def convert_name(name):
-    '''
+    """
     Convert the Event Sequencing names to an corresponding TimeML name for evaluation.
     Note that, the meaning of After in event sequencing is different from TimeML specification.
 
@@ -95,7 +95,7 @@ def convert_name(name):
 
     :param name:
     :return:
-    '''
+    """
     if name == "After":
         return "BEFORE"
     elif name == "Subevent":
@@ -343,6 +343,8 @@ class TemporalEval:
                 links = links_by_name[name]
                 all_time_ml[name] = self.make_time_ml(links, normalized_nodes, nodes)
                 all_links.extend(links)
+            else:
+                all_time_ml[name] = self.make_time_ml([], normalized_nodes, nodes)
 
         all_time_ml["All"] = self.make_time_ml(all_links, normalized_nodes, nodes)
 

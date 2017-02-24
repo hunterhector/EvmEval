@@ -224,6 +224,8 @@ class TemporalEval:
         gold_links_by_type = propagate_through_equivalence(gold_links, gold_corefs, gold_nuggets)
         sys_links_by_type = propagate_through_equivalence(sys_links, sys_corefs, gold_nuggets)
 
+        self.possible_types = gold_links_by_type.keys()
+
         self.normalized_system_nodes = {}
         self.normalized_gold_nodes = {}
 
@@ -275,14 +277,13 @@ class TemporalEval:
             temp_file.write(pretty_xml(time_ml))
             temp_file.close()
 
-            logger.info("Write out tml into " + output_dir+  "/" + self.doc_id)
+            logger.info("Write out tml into " + output_dir + "/" + self.doc_id)
 
     @staticmethod
     def eval_time_ml():
         logger.info("Running TimeML scorer.")
 
         for link_type in os.listdir(Config.temporal_result_dir):
-            print link_type
             temporal_output = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_out)
 
             gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_gold_dir)
@@ -337,9 +338,11 @@ class TemporalEval:
 
         all_links = []
 
-        for name, links in links_by_name.iteritems():
-            all_time_ml[name] = self.make_time_ml(links, normalized_nodes, nodes)
-            all_links.extend(links)
+        for name in self.possible_types:
+            if name in links_by_name:
+                links = links_by_name[name]
+                all_time_ml[name] = self.make_time_ml(links, normalized_nodes, nodes)
+                all_links.extend(links)
 
         all_time_ml["All"] = self.make_time_ml(all_links, normalized_nodes, nodes)
 

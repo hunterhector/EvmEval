@@ -152,6 +152,8 @@ def propagate_through_equivalence(links_by_name, equivalent_links, nuggets):
 
     all_expanded_links = {}
 
+    all_set_links = {}
+
     for name, links in links_by_name.iteritems():
         set_links = []
 
@@ -172,8 +174,9 @@ def propagate_through_equivalence(links_by_name, equivalent_links, nuggets):
                     expanded_links.add((node1, node2, relation))
 
         all_expanded_links[name] = list(expanded_links)
+        all_set_links[name] = list(all_set_links)
 
-    return all_expanded_links
+    return all_expanded_links, all_set_links
 
 
 def compute_reduced_graph(set_links):
@@ -221,8 +224,8 @@ class TemporalEval:
     """
 
     def __init__(self, doc_id, g2s_mapping, gold_nuggets, gold_links, sys_nuggets, sys_links, gold_corefs, sys_corefs):
-        gold_links_by_type = propagate_through_equivalence(gold_links, gold_corefs, gold_nuggets)
-        sys_links_by_type = propagate_through_equivalence(sys_links, sys_corefs, gold_nuggets)
+        gold_links_by_type, gold_cluster_links = propagate_through_equivalence(gold_links, gold_corefs, gold_nuggets)
+        sys_links_by_type, sys_cluster_links = propagate_through_equivalence(sys_links, sys_corefs, gold_nuggets)
 
         self.possible_types = gold_links_by_type.keys()
 
@@ -249,6 +252,11 @@ class TemporalEval:
         self.sys_time_ml = self.make_all_time_ml(convert_links(sys_links_by_type), self.normalized_system_nodes,
                                                  self.sys_nodes)
 
+        self.gold_cluster_time_ml = self.make_all_time_ml(convert_links(gold_cluster_links), self.normalized_gold_nodes,
+                                                          self.gold_nodes)
+        self.sys_cluster_time_ml = self.make_all_time_ml(convert_links(sys_cluster_links), self.normalized_system_nodes,
+                                                         self.sys_nodes)
+
         self.doc_id = doc_id
 
     def write_time_ml(self):
@@ -258,6 +266,9 @@ class TemporalEval:
         """
         self.write(self.gold_time_ml, Config.temporal_gold_dir)
         self.write(self.sys_time_ml, Config.temporal_sys_dir)
+
+        self.write(self.gold_cluster_time_ml, Config.temporal_gold_dir + "_cluster")
+        self.write(self.sys_cluster_time_ml, Config.temporal_sys_dir + "_cluster")
 
     def write(self, time_ml_data, subdir):
         """
@@ -286,6 +297,15 @@ class TemporalEval:
 
             gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_gold_dir)
             sys_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_sys_dir)
+
+            with open(temporal_output, 'wb', 0) as out_file:
+                subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,
+                                 '0', "implicit_in_recall"], stdout=out_file)
+
+            temporal_output = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_out + "_cluster")
+
+            gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_gold_dir + "_cluster")
+            sys_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_sys_dir + "_cluster")
 
             with open(temporal_output, 'wb', 0) as out_file:
                 subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,

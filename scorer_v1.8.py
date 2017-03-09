@@ -485,9 +485,15 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
             for f in files:
                 if f == Config.temporal_out:
                     link_type = os.path.basename(root)
-                    temporal_output = os.path.join(root, f)
-                    with open(temporal_output, 'r') as out:
+                    with open(os.path.join(root, f), 'r') as out:
                         mention_eval_out.write("=======Event Sequencing Results for %s =======\n" % link_type)
+                        for l in out:
+                            mention_eval_out.write(l)
+
+                elif f == Config.temporal_out_cluster:
+                    link_type = os.path.basename(root)
+                    with open(os.path.join(root, f), 'r') as out:
+                        mention_eval_out.write("=======Event Sequencing Results for %s (Cluster) =======\n" % link_type)
                         for l in out:
                             mention_eval_out.write(l)
 
@@ -1186,9 +1192,9 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
         sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
 
     if Config.temporal_result_dir:
-        after_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_directed_relations,
-                                  system_mention_table, sys_directed_relations, gold_corefs, sys_corefs)
-        after_eval.write_time_ml()
+        seq_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_directed_relations,
+                                system_mention_table, sys_directed_relations, gold_corefs, sys_corefs)
+        seq_eval.write_time_ml()
 
     # Evaluate coreference links.
     if coref_out is not None:

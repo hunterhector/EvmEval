@@ -113,46 +113,58 @@ def pretty_xml(element):
     return reparsed.toprettyxml(indent="  ")
 
 
-def find_equivalent_sets(clusters, nuggets):
-    nodes = [nugget[2] for nugget in nuggets]
-
+def find_equivalent_sets(clusters, nodes):
     node_2_set = {}
     set_2_nodes = {}
     non_singletons = set()
 
-    set_id = 0
+    set_index = 0
 
     for cluster in clusters:
         for element in cluster[2]:
-            node_2_set[element] = set_id
+            node_2_set[element] = "c%d" % set_index
             non_singletons.add(element)
 
             try:
-                set_2_nodes[set_id].append(element)
+                set_2_nodes["c%d" % set_index].append(element)
             except KeyError:
-                set_2_nodes[set_id] = [element]
+                set_2_nodes["c%d" % set_index] = [element]
 
-        set_id += 1
+        set_index += 1
 
     for node in nodes:
         if node not in non_singletons:
-            node_2_set[node] = set_id
+            node_2_set[node] = "c%d" % set_index
             try:
-                set_2_nodes[set_id].append(node)
+                set_2_nodes["c%d" % set_index].append(node)
             except KeyError:
-                set_2_nodes[set_id] = [node]
+                set_2_nodes["c%d" % set_index] = [node]
 
-            set_id += 1
+            set_index += 1
 
     return set_2_nodes, node_2_set
 
 
-def propagate_through_equivalence(links_by_name, equivalent_links, nuggets):
-    set_2_nodes, node_2_set = find_equivalent_sets(equivalent_links, nuggets)
+def convert_to_cluster_links(node_links_by_name, cluster_lookup):
+    cluster_links_by_name = {}
+
+    for name, node_links in node_links_by_name.iteritems():
+        cluster_links = set()
+
+        for node1, node2, link_type in node_links:
+            cluster1 = cluster_lookup[node1]
+            cluster2 = cluster_lookup[node2]
+            cluster_links.add((cluster1, cluster2, link_type))
+
+        cluster_links_by_name[name] = cluster_links
+
+    return cluster_links_by_name
+
+
+def propagate_through_equivalence(links_by_name, set_2_nodes, node_2_set):
+    # set_2_nodes, node_2_set = find_equivalent_sets(equivalent_links, nuggets)
 
     all_expanded_links = {}
-
-    all_set_links = {}
 
     for name, links in links_by_name.iteritems():
         set_links = []
@@ -174,9 +186,8 @@ def propagate_through_equivalence(links_by_name, equivalent_links, nuggets):
                     expanded_links.add((node1, node2, relation))
 
         all_expanded_links[name] = list(expanded_links)
-        all_set_links[name] = list(all_set_links)
 
-    return all_expanded_links, all_set_links
+    return all_expanded_links
 
 
 def compute_reduced_graph(set_links):
@@ -213,6 +224,15 @@ def compute_reduced_graph(set_links):
     return reduced_links
 
 
+def run_eval(link_type, temporal_output, gold_dir, sys_dir):
+    gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, gold_dir)
+    sys_sub_dir = os.path.join(Config.temporal_result_dir, link_type, sys_dir)
+
+    with open(temporal_output, 'wb', 0) as out_file:
+        subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,
+                         '0', "implicit_in_recall"], stdout=out_file)
+
+
 class TemporalEval:
     """
     This class help us converting the input into TLINK format and evaluate them using the temporal evaluation tools
@@ -223,39 +243,64 @@ class TemporalEval:
     Interpreting the Temporal Aspects of Language, Naushad UzZaman, 2012
     """
 
-    def __init__(self, doc_id, g2s_mapping, gold_nuggets, gold_links, sys_nuggets, sys_links, gold_corefs, sys_corefs):
-        gold_links_by_type, gold_cluster_links = propagate_through_equivalence(gold_links, gold_corefs, gold_nuggets)
-        sys_links_by_type, sys_cluster_links = propagate_through_equivalence(sys_links, sys_corefs, gold_nuggets)
+    def __init__(self, doc_id, g2s_mapping, gold_nugget_table, raw_gold_links,
+                 sys_nugget_table, raw_sys_links, gold_corefs, sys_corefs):
 
-        self.possible_types = gold_links_by_type.keys()
+        # Store how the event nugget ids.
+        self.gold_nuggets = []
+        self.sys_nuggets = []
 
-        self.normalized_system_nodes = {}
-        self.normalized_gold_nodes = {}
-
-        self.gold_nuggets = gold_nuggets
-        self.sys_nuggets = sys_nuggets
-
+        # Stores time ML nodes that actually exists in gold standard and system.
         self.gold_nodes = []
         self.sys_nodes = []
 
-        self.store_nodes(g2s_mapping)
+        # Store the mapping from nugget id to unified time ML node id.
+        self.system_nugget_to_node = {}
+        self.gold_nugget_to_node = {}
+
+        # Store another set of time ML nodes that represents clusters.
+        self.cluster_nodes = []
+        self.cluster_id_to_node = {}
+
+        self.store_nugget_nodes(gold_nugget_table, sys_nugget_table, g2s_mapping)
+        self.gold_clusters, self.gold_cluster_lookup = find_equivalent_sets(gold_corefs, self.gold_nuggets)
+        self.sys_clusters, self.sys_cluster_lookup = find_equivalent_sets(sys_corefs, self.sys_nuggets)
+        self.store_cluster_nodes(self.gold_clusters)
+
+        gold_links_by_type = propagate_through_equivalence(raw_gold_links, self.gold_clusters, self.gold_cluster_lookup)
+        sys_links_by_type = propagate_through_equivalence(raw_sys_links, self.sys_clusters, self.sys_cluster_lookup)
+
+        gold_cluster_links = convert_to_cluster_links(gold_links_by_type, self.gold_cluster_lookup)
+        sys_cluster_links = convert_to_cluster_links(sys_links_by_type, self.gold_cluster_lookup)
+
+        # print "Gold links"
+        # print gold_links_by_type
+        # print "Sys links"
+        # print sys_links_by_type
+        #
+        # print "Gold cluster links"
+        # print gold_cluster_links
+        # print "Sys cluster links"
+        # print sys_cluster_links
+
+        self.possible_types = gold_links_by_type.keys()
 
         if not Config.no_temporal_validation:
-            if not validate(set([nugget[2] for nugget in gold_nuggets]), gold_links_by_type):
+            if not validate(set([nugget[2] for nugget in gold_nugget_table]), gold_links_by_type):
                 raise RuntimeError("The gold standard edges cannot form a valid temporal graph.")
 
-            if not validate(set([nugget[2] for nugget in sys_nuggets]), sys_links_by_type):
+            if not validate(set([nugget[2] for nugget in sys_nugget_table]), sys_links_by_type):
                 raise RuntimeError("The system edges cannot form a valid temporal graph.")
 
-        self.gold_time_ml = self.make_all_time_ml(convert_links(gold_links_by_type), self.normalized_gold_nodes,
+        self.gold_time_ml = self.make_all_time_ml(convert_links(gold_links_by_type), self.gold_nugget_to_node,
                                                   self.gold_nodes)
-        self.sys_time_ml = self.make_all_time_ml(convert_links(sys_links_by_type), self.normalized_system_nodes,
+        self.sys_time_ml = self.make_all_time_ml(convert_links(sys_links_by_type), self.system_nugget_to_node,
                                                  self.sys_nodes)
 
-        self.gold_cluster_time_ml = self.make_all_time_ml(convert_links(gold_cluster_links), self.normalized_gold_nodes,
-                                                          self.gold_nodes)
-        self.sys_cluster_time_ml = self.make_all_time_ml(convert_links(sys_cluster_links), self.normalized_system_nodes,
-                                                         self.sys_nodes)
+        self.gold_cluster_time_ml = self.make_all_time_ml(convert_links(gold_cluster_links), self.cluster_id_to_node,
+                                                          self.cluster_nodes)
+        self.sys_cluster_time_ml = self.make_all_time_ml(convert_links(sys_cluster_links), self.cluster_id_to_node,
+                                                         self.cluster_nodes)
 
         self.doc_id = doc_id
 
@@ -293,23 +338,28 @@ class TemporalEval:
         logger.info("Running TimeML scorer.")
 
         for link_type in os.listdir(Config.temporal_result_dir):
-            temporal_output = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_out)
+            # gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_gold_dir)
+            # sys_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_sys_dir)
+            #
+            # with open(temporal_output, 'wb', 0) as out_file:
+            #     subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,
+            #                      '0', "implicit_in_recall"], stdout=out_file)
 
-            gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_gold_dir)
-            sys_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_sys_dir)
+            run_eval(link_type, os.path.join(Config.temporal_result_dir, link_type, Config.temporal_out),
+                     Config.temporal_gold_dir, Config.temporal_sys_dir)
 
-            with open(temporal_output, 'wb', 0) as out_file:
-                subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,
-                                 '0', "implicit_in_recall"], stdout=out_file)
+            # # Evaluate the part using the clustering.
+            temporal_output = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_out_cluster)
 
-            temporal_output = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_out + "_cluster")
+            # gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_gold_dir + "_cluster")
+            # sys_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_sys_dir + "_cluster")
+            #
+            # with open(temporal_output, 'wb', 0) as out_file:
+            #     subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,
+            #                      '0', "implicit_in_recall"], stdout=out_file)
 
-            gold_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_gold_dir + "_cluster")
-            sys_sub_dir = os.path.join(Config.temporal_result_dir, link_type, Config.temporal_sys_dir + "_cluster")
-
-            with open(temporal_output, 'wb', 0) as out_file:
-                subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,
-                                 '0', "implicit_in_recall"], stdout=out_file)
+            run_eval(link_type, os.path.join(Config.temporal_result_dir, link_type, Config.temporal_out_cluster),
+                     Config.temporal_gold_dir + "_cluster", Config.temporal_sys_dir + "_cluster")
 
     @staticmethod
     def get_eval_output():
@@ -324,21 +374,33 @@ class TemporalEval:
                 if l.startswith("Temporal Score"):
                     score_line = True
 
-    def store_nodes(self, e_mapping):
+    def store_cluster_nodes(self, clusters):
+        tid = 0
+
+        for cluster_id, cluster in clusters.iteritems():
+            node_id = "te%d" % tid
+            self.cluster_nodes.append(cluster_id)
+            self.cluster_id_to_node[cluster_id] = node_id
+            tid += 1
+
+    def store_nugget_nodes(self, gold_nugget_table, sys_nugget_table, m_mapping):
         mapped_system_mentions = set()
 
+        self.gold_nuggets = [nugget[2] for nugget in gold_nugget_table]
+        self.sys_nuggets = [nugget[2] for nugget in sys_nugget_table]
+
         tid = 0
-        for gold_index, (system_index, _) in enumerate(e_mapping):
+        for gold_index, (system_index, _) in enumerate(m_mapping):
             node_id = "te%d" % tid
             tid += 1
 
-            gold_temporal_instance_id = self.gold_nuggets[gold_index][2]
-            self.normalized_gold_nodes[gold_temporal_instance_id] = node_id
+            gold_temporal_instance_id = self.gold_nuggets[gold_index]
+            self.gold_nugget_to_node[gold_temporal_instance_id] = node_id
             self.gold_nodes.append(node_id)
 
             if system_index != -1:
-                system_temporal_instance_id = self.sys_nuggets[system_index][2]
-                self.normalized_system_nodes[system_temporal_instance_id] = node_id
+                system_temporal_instance_id = self.sys_nuggets[system_index]
+                self.system_nugget_to_node[system_temporal_instance_id] = node_id
                 self.sys_nodes.append(node_id)
                 mapped_system_mentions.add(system_index)
 
@@ -348,7 +410,7 @@ class TemporalEval:
                 tid += 1
 
                 system_temporal_instance_id = system_nugget[2]
-                self.normalized_system_nodes[system_temporal_instance_id] = node_id
+                self.system_nugget_to_node[system_temporal_instance_id] = node_id
                 self.sys_nodes.append(node_id)
 
     def make_all_time_ml(self, links_by_name, normalized_nodes, nodes):
@@ -380,27 +442,30 @@ class TemporalEval:
 
         return time_ml
 
-    def create_instance(self, parent, nodes):
+    @staticmethod
+    def create_instance(parent, nodes):
         for node in nodes:
             instance = SubElement(parent, "MAKEINSTANCE")
             instance.set("eiid", "instance_" + node)
             instance.set("eid", node)
 
-    def annotate_timeml_events(self, parent, nodes):
+    @staticmethod
+    def annotate_timeml_events(parent, nodes):
         text = SubElement(parent, "TEXT")
         for tid in nodes:
             make_event(text, tid)
 
-    def create_tlinks(self, time_ml, links, normalized_nodes):
+    @staticmethod
+    def create_tlinks(time_ml, links, normalized_nodes):
         lid = 0
 
         for left, right, relation_type in links:
             if left not in normalized_nodes:
-                logger.error("Node %s is not a event mention." % left)
+                logger.error("Node %s is not a known node." % left)
                 continue
 
             if right not in normalized_nodes:
-                logger.error("Node %s is not a event mention." % right)
+                logger.error("Node %s is not a known node." % right)
                 continue
 
             normalized_left = normalized_nodes[left]

@@ -71,7 +71,9 @@ class Config:
 
     temporal_sys_dir = "sys"
 
-    temporal_out = "temporal.out"
+    temporal_out = "seq.out"
+
+    temporal_out_cluster = "seq_cluster.out"
 
     temp_eval_executable = os.path.dirname(os.path.realpath(__file__)) + "/evaluation-relations/temporal_evaluation.py"
 

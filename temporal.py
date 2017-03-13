@@ -233,6 +233,31 @@ def run_eval(link_type, temporal_output, gold_dir, sys_dir):
                          '0', "implicit_in_recall"], stdout=out_file)
 
 
+def rewrite_lookup(gold_cluster_lookup, g2s_mapping, gold_nugget_table, sys_nugget_table):
+    """
+    Rewrite the gold nugget id to cluster id lookup, as system nugget id to cluster id lookup.
+    :param gold_cluster_lookup: The gold cluster id lookup table.
+    :param g2s_mapping: Mapping from gold to system.
+    :param gold_nugget_table: Stores the gold nugget id.
+    :param sys_nugget_table: Stores the system nugget id.
+    :return:
+    """
+    rewritten_lookup = {}
+
+    gold_id_2_system_id = {}
+    for gold_index, (sys_index, _) in enumerate(g2s_mapping):
+        gold_nugget_id = gold_nugget_table[gold_index][2]
+        sys_nugget_id = sys_nugget_table[sys_index][2]
+
+        gold_id_2_system_id[gold_nugget_id] = sys_nugget_id
+
+    for gold_nugget_id, cluster_id in gold_cluster_lookup.iteritems():
+        sys_nugget_id = gold_id_2_system_id[gold_nugget_id]
+        rewritten_lookup[sys_nugget_id] = cluster_id
+
+    return rewritten_lookup
+
+
 class TemporalEval:
     """
     This class help us converting the input into TLINK format and evaluate them using the temporal evaluation tools
@@ -270,18 +295,10 @@ class TemporalEval:
         gold_links_by_type = propagate_through_equivalence(raw_gold_links, self.gold_clusters, self.gold_cluster_lookup)
         sys_links_by_type = propagate_through_equivalence(raw_sys_links, self.sys_clusters, self.sys_cluster_lookup)
 
-        gold_cluster_links = convert_to_cluster_links(gold_links_by_type, self.gold_cluster_lookup)
-        sys_cluster_links = convert_to_cluster_links(sys_links_by_type, self.gold_cluster_lookup)
+        rewritten_lookup = rewrite_lookup(self.gold_cluster_lookup, g2s_mapping, gold_nugget_table, sys_nugget_table)
 
-        # print "Gold links"
-        # print gold_links_by_type
-        # print "Sys links"
-        # print sys_links_by_type
-        #
-        # print "Gold cluster links"
-        # print gold_cluster_links
-        # print "Sys cluster links"
-        # print sys_cluster_links
+        gold_cluster_links = convert_to_cluster_links(gold_links_by_type, self.gold_cluster_lookup)
+        sys_cluster_links = convert_to_cluster_links(sys_links_by_type, rewritten_lookup)
 
         self.possible_types = gold_links_by_type.keys()
 
@@ -399,8 +416,8 @@ class TemporalEval:
             self.gold_nodes.append(node_id)
 
             if system_index != -1:
-                system_temporal_instance_id = self.sys_nuggets[system_index]
-                self.system_nugget_to_node[system_temporal_instance_id] = node_id
+                system_nugget_id = self.sys_nuggets[system_index]
+                self.system_nugget_to_node[system_nugget_id] = node_id
                 self.sys_nodes.append(node_id)
                 mapped_system_mentions.add(system_index)
 
@@ -409,8 +426,7 @@ class TemporalEval:
                 node_id = "te%d" % tid
                 tid += 1
 
-                system_temporal_instance_id = system_nugget[2]
-                self.system_nugget_to_node[system_temporal_instance_id] = node_id
+                self.system_nugget_to_node[system_nugget] = node_id
                 self.sys_nodes.append(node_id)
 
     def make_all_time_ml(self, links_by_name, normalized_nodes, nodes):
@@ -459,13 +475,15 @@ class TemporalEval:
     def create_tlinks(time_ml, links, normalized_nodes):
         lid = 0
 
+        unknown_nodes = set()
+
         for left, right, relation_type in links:
             if left not in normalized_nodes:
-                logger.error("Node %s is not a known node." % left)
+                unknown_nodes.add(left)
                 continue
 
             if right not in normalized_nodes:
-                logger.error("Node %s is not a known node." % right)
+                unknown_nodes.add(right)
                 continue
 
             normalized_left = normalized_nodes[left]
@@ -476,3 +494,6 @@ class TemporalEval:
             link.set("relType", relation_type)
             link.set("eventInstanceID", normalized_left)
             link.set("relatedToEventInstance", normalized_right)
+
+        for node in unknown_nodes:
+            logger.error("Node %s is not a known node." % node)

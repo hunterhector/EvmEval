@@ -244,7 +244,9 @@ def main():
     if args.sequencing is not None:
         Config.temporal_result_dir = args.sequencing
 
-        logger.info("Temporal files will be ouput at " + Config.temporal_result_dir)
+        logger.info("Temporal files will be output at " + Config.temporal_result_dir)
+
+        utils.supermakedirs(Config.temporal_result_dir)
 
         utils.remove_file_by_extension(Config.temporal_result_dir, ".tml")
         utils.remove_file_by_extension(Config.temporal_result_dir, ".tml")
@@ -1056,8 +1058,8 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
 
     remaining_sys_ids = set(sys_mention_ids)
     if not len(sys_mention_ids) == len(remaining_sys_ids):
-        logger.error("Duplicated mention id for doc %s" % doc_id)
-        return False
+        logger.warn("Duplicated mention id for doc %s, one of them is randomly removed." % doc_id)
+    sys_mention_ids = list(remaining_sys_ids)
 
     remaining_gold_ids = set()
     for gl in g_mention_lines:

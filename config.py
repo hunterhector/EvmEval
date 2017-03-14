@@ -63,21 +63,25 @@ class Config:
 
     canonicalize_types = True
 
-    # Temporal link settings.
+    # script link settings.
 
-    temporal_result_dir = None
+    script_result_dir = None
 
-    temporal_gold_dir = "gold"
+    script_gold_dir = "gold"
 
-    temporal_sys_dir = "sys"
+    script_sys_dir = "sys"
 
-    temporal_out = "seq.out"
+    script_out = "seq.out"
 
-    temporal_out_cluster = "seq_cluster.out"
+    script_out_cluster = "seq_cluster.out"
 
     temp_eval_executable = os.path.dirname(os.path.realpath(__file__)) + "/evaluation-relations/temporal_evaluation.py"
 
-    no_temporal_validation = False
+    no_script_validation = False
+
+    script_types = ["Subevent", "After"]
+
+    eval_cluster_level_links = False
 
 
 class EvalMethod:

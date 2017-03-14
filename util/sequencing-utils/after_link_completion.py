@@ -30,24 +30,25 @@ def complete_links(src_file):
 
     for line in relations:
         fields = line.split("\t")
-        if line.startswith("R") and fields[1].startswith("After"):
+        if line.startswith("R"):
             r_content = fields[1].split(" ")
-            arg1 = r_content[1][5:]
-            arg2 = r_content[2][5:]
+            if r_content[0] == "After" or r_content[0] == "Subevent":
+                arg1 = r_content[1].split(":")[1]
+                arg2 = r_content[2].split(":")[1]
 
-            arg1_span = event_to_span[arg1]
-            arg2_span = event_to_span[arg2]
+                arg1_span = event_to_span[arg1]
+                arg2_span = event_to_span[arg2]
 
-            span_based_relations.add((arg1_span, arg2_span))
-            event_based_relations.add((arg1, arg2))
+                span_based_relations.add((r_content[0], arg1_span, arg2_span))
+                event_based_relations.add((r_content[0], arg1, arg2))
 
-    for span1, span2 in span_based_relations:
+    for t, span1, span2 in span_based_relations:
         # print span1, span2
         for event1 in span_to_events[span1]:
             for event2 in span_to_events[span2]:
-                if (event1, event2) not in event_based_relations:
-                    new_line = "R%d\tAfter Arg1:%s Arg2:%s" % (rid, event1, event2)
-                    print "Adding new line: %s to file %s." %(new_line, basename)
+                if (t, event1, event2) not in event_based_relations:
+                    new_line = "R%d\t%s Arg1:%s Arg2:%s" % (rid, t, event1, event2)
+                    print "Adding new line: %s to file %s." % (new_line, basename)
                     result_lines.append(new_line)
 
     return result_lines

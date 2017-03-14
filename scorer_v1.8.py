@@ -158,7 +158,7 @@ def main():
         "-a", "--sequencing", help="Eval Event sequencing result output (After and Subevent)"
     )
     parser.add_argument(
-        "-nv", "--no_temporal_validation", help="Whether to turn off temporal validation", action="store_true"
+        "-nv", "--no_script_validation", help="Whether to turn off script validation", action="store_true"
     )
     parser.add_argument(
         "-t", "--token_path", help="Path to the directory containing the token mappings file, only used in token mode.")
@@ -236,23 +236,22 @@ def main():
 
         logger.info(
             "Gold and system conll files will generated at " + Config.conll_gold_file + " and " + Config.conll_sys_file)
-        # if os.path.exists(Config.conll_tmp_marker):
-        #     # Clean up the directory to avoid scoring errors.
-        #     remove_conll_tmp()
-        # supermakedirs(Config.conll_tmp_marker)
 
     if args.sequencing is not None:
-        Config.temporal_result_dir = args.sequencing
+        Config.script_result_dir = args.sequencing
 
-        logger.info("Temporal files will be output at " + Config.temporal_result_dir)
+        logger.info("Temporal files will be output at " + Config.script_result_dir)
+        utils.supermakedirs(Config.script_result_dir)
 
-        utils.supermakedirs(Config.temporal_result_dir)
+        logger.info("Will evaluate link type: %s." % ",".join(Config.script_types))
+        for t in Config.script_types:
+            utils.supermakedirs(os.path.join(Config.script_result_dir, t))
 
-        utils.remove_file_by_extension(Config.temporal_result_dir, ".tml")
-        utils.remove_file_by_extension(Config.temporal_result_dir, ".tml")
+        utils.remove_file_by_extension(Config.script_result_dir, ".tml")
+        utils.remove_file_by_extension(Config.script_result_dir, ".tml")
 
-        if args.no_temporal_validation:
-            Config.no_temporal_validation = True
+        if args.no_script_validation:
+            Config.no_script_validation = True
 
     if os.path.isfile(args.system):
         sf = open(args.system)
@@ -318,7 +317,7 @@ def main():
         EvalState.overall_coref_scores = ConllEvaluator.get_conll_scores(Config.conll_out)
 
     # Run the TimeML evaluation script.
-    if Config.temporal_result_dir:
+    if Config.script_result_dir:
         TemporalEval.eval_time_ml()
 
     print_eval_results(mention_eval_out, attribute_comb)
@@ -480,24 +479,26 @@ def print_eval_results(mention_eval_out, all_attribute_combinations):
             "Overall Average CoNLL score\t%.2f\n" % (conll_sum / num_metric))
         mention_eval_out.write("\n* Score not included for final CoNLL score.\n")
 
-    if Config.temporal_result_dir is not None:
+    if Config.script_result_dir is not None:
         mention_eval_out.write("\n")
 
-        for root, dirs, files in os.walk(Config.temporal_result_dir):
-            for f in files:
-                if f == Config.temporal_out:
-                    link_type = os.path.basename(root)
-                    with open(os.path.join(root, f), 'r') as out:
-                        mention_eval_out.write("=======Event Sequencing Results for %s =======\n" % link_type)
-                        for l in out:
-                            mention_eval_out.write(l)
+        for eval_type in Config.script_types + ["All"]:
+            for filename in os.listdir(os.path.join(Config.script_result_dir, eval_type)):
+                script_eval_path = os.path.join(Config.script_result_dir, eval_type, filename)
+                if os.path.isfile(script_eval_path):
+                    if filename == Config.script_out:
+                        with open(script_eval_path, 'r') as out:
+                            mention_eval_out.write("=======Event Sequencing Results for %s =======\n" % eval_type)
+                            for l in out:
+                                mention_eval_out.write(l)
 
-                elif f == Config.temporal_out_cluster:
-                    link_type = os.path.basename(root)
-                    with open(os.path.join(root, f), 'r') as out:
-                        mention_eval_out.write("=======Event Sequencing Results for %s (Cluster) =======\n" % link_type)
-                        for l in out:
-                            mention_eval_out.write(l)
+                    if Config.eval_cluster_level_links:
+                        if filename == Config.script_out_cluster:
+                            with open(script_eval_path, 'r') as out:
+                                mention_eval_out.write(
+                                    "=======Event Sequencing Results for %s (Cluster) =======\n" % eval_type)
+                                for l in out:
+                                    mention_eval_out.write(l)
 
     if mention_eval_out is not None:
         mention_eval_out.flush()
@@ -740,7 +741,7 @@ def parse_line(l, invisible_ids):
 
     event_id = fields[2]
     text = fields[4]
-    # span_id = fields[temporal_column] if len(fields) > temporal_column else None
+    # span_id = fields[script_column] if len(fields) > script_column else None
 
     return spans, attributes, event_id, original_spans, text
 
@@ -859,10 +860,10 @@ def write_if_provided(out_file, text):
         out_file.write(text)
 
 
-def write_gold_and_system_mappings(system_id, assigned_gold_2_system_mapping, gold_table, system_table, diff_out):
+def write_gold_and_system_mappings(system_id, gold_2_system_mapping, gold_table, system_table, diff_out):
     mapped_system_mentions = set()
 
-    for gold_index, (system_index, score) in enumerate(assigned_gold_2_system_mapping):
+    for gold_index, (system_index, score) in enumerate(gold_2_system_mapping):
         score_str = "%.2f" % score if gold_index >= 0 and system_index >= 0 else "-"
 
         gold_info = "-"
@@ -1193,7 +1194,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     if Config.coreference_relation_name in sys_relations_by_type:
         sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
 
-    if Config.temporal_result_dir:
+    if Config.script_result_dir:
         seq_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_directed_relations,
                                 system_mention_table, sys_directed_relations, gold_corefs, sys_corefs)
         seq_eval.write_time_ml()

@@ -581,9 +581,6 @@ def read_all_doc(gf, sf, single_doc_id_to_eval):
 
     The document ids considered to be scored are those presented in the gold documents.
 
-    TODO
-    This is not particularly optimized and assumes the system response and gold response file can be fit into memory.
-
     :param gf: Gold standard file
     :param sf:  System response file
     :param single_doc_id_to_eval: If not None, we will evaluate only this doc id.
@@ -770,9 +767,12 @@ def parse_relation(relation_line):
     relation_arguments = parts[2].split(",")
 
     if len(relation_arguments) < 2:
-        logger.error("A relation should have at least two arguments, maybe incorrect formatted:")
-        logger.error(relation_line)
-        exit(1)
+        if parts[0] == "Coreference":
+            logger.warn("Singleton clusters are not necessary")
+        else:
+            logger.error("A relation should have at least two arguments, maybe incorrect formatted:")
+            logger.error(relation_line)
+            exit(1)
 
     return parts[0], parts[1], relation_arguments
 

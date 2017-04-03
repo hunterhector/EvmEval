@@ -23,7 +23,7 @@ java -jar bin/converter-1.0.3-jar-with-dependencies.jar -t "$ldc_text_dir" -te "
 echo "Running tokenizer..."
 java -jar bin/token-file-maker-1.0.4-jar-with-dependencies.jar -a "$brat_output_dir" -t "$brat_output_dir" -e "txt" -o "$token_table_dir"
 echo "Converting to TBF format"
-python ./brat2tbf.py -t "$token_table_dir" -d "$brat_output_dir" -o "$nugget_output_tbf_basename" -w
+python bin/brat2tbf.py -t "$token_table_dir" -d "$brat_output_dir" -o "$nugget_output_tbf_basename" -w
 echo "Validating converted files."
 python ./validator.py -t "$token_table_dir" -s "$nugget_output_tbf_basename"".tbf"
 echo "Validation done, see log at : "$nugget_output_tbf_filename".tbf.errlog"
@@ -34,8 +34,8 @@ java -jar bin/converter-1.0.3-jar-with-dependencies.jar -t "$ldc_text_dir" -te "
 echo "Running tokenizer..."
 java -jar bin/token-file-maker-1.0.4-jar-with-dependencies.jar -a "$brat_output_dir" -t "$brat_output_dir" -e "txt" -o "$token_table_dir"
 echo "Converting to TBF format"
-python ./brat2tbf.py -t "$token_table_dir" -d "$brat_output_dir" -o "$hopper_output_tbf_basename" -w
+python bin/brat2tbf.py -t "$token_table_dir" -d "$brat_output_dir" -o "$hopper_output_tbf_basename" -w
 echo "Validating converted files."
-python ./validator.py -t "$token_table_dir" -s "$hopper_output_tbf_basename"".tbf"
+python bin/validator.py -t "$token_table_dir" -s "$hopper_output_tbf_basename"".tbf"
 echo "Validation done, see log at : "$hopper_output_tbf_filename".tbf.errlog"
 

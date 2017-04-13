@@ -74,6 +74,8 @@ def find_same_span(lines):
             span = tuple(fields[1].split()[1:])
             tid_to_span[fields[0]] = span
 
+    for line in lines:
+        fields = line.split("\t")
         if line.startswith("E"):
             eid = fields[0]
             span = tid_to_span[fields[1].split(":")[1]]

@@ -18,7 +18,7 @@ import utils
 logger = logging.getLogger(__name__)
 
 
-def validate(nuggets, edges_by_type):
+def validate(nuggets, edges_by_type, gold_cluster_lookup, gold_clusters):
     """
     Validate whether the edges are valid. Currently, the validation only check whether the reverse is also included,
     which is not possible for after links.
@@ -38,8 +38,16 @@ def validate(nuggets, edges_by_type):
                 logger.error("Relation contains unknown event %s." % right)
 
             if edge in reverse_edges:
-                logger.error("There is a link from %s to %s and %s to %s, this is not allowed."
-                             % (left, right, right, left))
+                left_cluster = gold_cluster_lookup[left]
+                right_cluster = gold_cluster_lookup[right]
+
+                logger.error("There is link from clusters A to cluster B, and from cluster B to cluster A. "
+                             "This is create a cyclic graph, which is not allowed.")
+                logger.error("Cluster A contains: %s." % ",".join(gold_clusters[left_cluster]))
+                logger.error("Cluster B contains: %s." % ",".join(gold_clusters[right_cluster]))
+
+                # logger.error("There is a link from %s to %s and %s to %s, this is not allowed."
+                #              % (left, right, right, left))
                 return False
             reverse_edges.add((right, left, t))
 
@@ -394,11 +402,19 @@ class TemporalEval:
         gold_cluster_links = convert_to_cluster_links(gold_links_by_type, gold_cluster_lookup)
         sys_cluster_links = convert_to_cluster_links(sys_links_by_type, rewritten_lookup)
 
+        # import sys
+        # print gold_clusters
+        # print gold_cluster_lookup
+        # print gold_links_by_type
+        # sys.stdin.readline()
+
         if not Config.no_script_validation:
-            if not validate(set([nugget[2] for nugget in gold_nugget_table]), gold_links_by_type):
+            if not validate(set([nugget[2] for nugget in gold_nugget_table]), gold_links_by_type,
+                            gold_cluster_lookup, gold_clusters):
                 raise RuntimeError("The gold standard edges cannot form a valid script graph.")
 
-            if not validate(set([nugget[2] for nugget in sys_nugget_table]), sys_links_by_type):
+            if not validate(set([nugget[2] for nugget in sys_nugget_table]), sys_links_by_type,
+                            gold_cluster_lookup, gold_clusters):
                 raise RuntimeError("The system edges cannot form a valid script graph.")
 
         self.gold_time_ml = self.make_all_time_ml(convert_links(gold_links_by_type), gold_nugget_to_node,

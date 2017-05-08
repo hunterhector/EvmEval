@@ -1,0 +1,20 @@
+========Document Mention Detection Results==========
+        	             plain	|	      mention_type	|	     realis_status	|	mention_type+realis_status
+  Doc ID	Prec  	Rec  	F1   	|	Prec  	Rec  	F1   	|	Prec  	Rec  	F1   	|	Prec  	Rec  	F1   
+example1	nan	0.00	nan	|	nan	0.00	nan	|	nan	0.00	nan	|	nan	0.00	nan
+example2	nan	0.00	nan	|	nan	0.00	nan	|	nan	0.00	nan	|	nan	0.00	nan
+
+
+========Mention Type Results==========
+                     Type	Prec	Rec	F1	#Gold	#Sys
+Movement_Transport-Person	0.00	0.00	0.00	1	0
+       Personnel_Nominate	0.00	0.00	0.00	1	0
+ Personnel_Start-Position	0.00	0.00	0.00	1	0
+
+=======Final Mention Detection Results=========
+                          	     Micro Average	     Macro Average
+                Attributes	Prec  	Rec  	F1   	Prec  	Rec  	F1   
+                     plain	nan	0.00	nan	0.00	0.00	nan
+              mention_type	nan	0.00	nan	0.00	0.00	nan
+             realis_status	nan	0.00	nan	0.00	0.00	nan
+mention_type+realis_status	nan	0.00	nan	0.00	0.00	nan

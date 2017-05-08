@@ -1,0 +1,6 @@
+T2	Personnel_Nominate 279 289	nominating
+E2	Personnel_Nominate:T2
+A2	Realis E2 Actual
+T3	Personnel_Start-Position 3858 3865;3877 3881	created jobs
+E3	Personnel_Start-Position:T3
+A3	Realis E3 Generic

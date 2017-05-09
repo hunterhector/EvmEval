@@ -87,7 +87,7 @@ import re
 import sys
 
 import utils
-from config import Config, MutableConfig, EvalMethod
+from config import Config, MutableConfig, EvalMethod, EvalState
 from conll_coref import ConllEvaluator
 from temporal import TemporalEval
 
@@ -95,49 +95,6 @@ logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
 stream_handler.setFormatter(logging.Formatter('[%(levelname)s] %(asctime)s : %(message)s'))
 logger.addHandler(stream_handler)
-
-
-class EvalState:
-    """
-    Hold evaluation state variables.
-    """
-
-    def __init__(self):
-        pass
-
-    gold_docs = {}
-    system_docs = {}
-    doc_ids_to_score = []
-    all_possible_types = set()
-    evaluating_index = 0
-
-    doc_mention_scores = []
-    doc_coref_scores = []
-    overall_coref_scores = {}
-
-    per_type_tp = {}
-    per_type_num_response = {}
-    per_type_num_gold = {}
-
-    use_new_conll_file = True
-
-    system_id = "_id_"
-
-    white_listed_types = None
-
-    @staticmethod
-    def advance_index():
-        EvalState.evaluating_index += 1
-
-    @staticmethod
-    def has_next_doc():
-        return EvalState.evaluating_index < len(EvalState.doc_ids_to_score)
-
-    @staticmethod
-    def claim_write_flag():
-        r = EvalState.use_new_conll_file
-        EvalState.use_new_conll_file = False
-        return r
 
 
 def main():
@@ -751,32 +708,6 @@ def canonicalize_string(str):
         return str
 
 
-def parse_relation(relation_line):
-    """
-    Parse the relation as a tuple.
-    :param relation_line: the relation line from annotation
-    :return:
-    """
-    parts = relation_line.split("\t")
-
-    if not len(parts) == 3:
-        logger.error("Incorrect format of relation line:")
-        logger.error(relation_line)
-        exit(1)
-
-    relation_arguments = parts[2].split(",")
-
-    if len(relation_arguments) < 2:
-        if parts[0] == "Coreference":
-            logger.warn("Singleton clusters are not necessary")
-        else:
-            logger.error("A relation should have at least two arguments, maybe incorrect formatted:")
-            logger.error(relation_line)
-            exit(1)
-
-    return parts[0], parts[1], relation_arguments
-
-
 def span_overlap(span1, span2):
     """
     Compute the number of characters that overlaps
@@ -1036,7 +967,8 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
 
     logger.debug("Reading gold and response mentions.")
 
-    sys_mention_ids = []
+    remaining_sys_ids = set()
+    num_system_mentions = 0
     for sl in s_mention_lines:
         parse_result = parse_line(sl, invisible_ids)
 
@@ -1044,9 +976,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
         if not parse_result:
             continue
 
-        # if len(sys_spans) == 0:
-        #     # Temporarily ignoring empty mentions.
-        #     continue
+        num_system_mentions += 1
 
         sys_attributes = parse_result[1]
         sys_mention_id = parse_result[2]
@@ -1054,13 +984,11 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
 
         system_mention_table.append(parse_result)
         EvalState.all_possible_types.add(sys_attributes[0])
-        sys_mention_ids.append(sys_mention_id)
+        remaining_sys_ids.add(sys_mention_id)
         sys_id_2_text[sys_mention_id] = text
 
-    remaining_sys_ids = set(sys_mention_ids)
-    if not len(sys_mention_ids) == len(remaining_sys_ids):
+    if not num_system_mentions == len(remaining_sys_ids):
         logger.warn("Duplicated mention id for doc %s, one of them is randomly removed." % doc_id)
-    sys_mention_ids = list(remaining_sys_ids)
 
     remaining_gold_ids = set()
     for gl in g_mention_lines:
@@ -1128,7 +1056,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
         attribute_based_fps[attribute_comb_index] = num_system_predictions - abtp
 
     # Unmapped system mentions and the partial scores are considered as false positive.
-    fp = len(sys_mention_ids) - greedy_tp
+    fp = len(remaining_sys_ids) - greedy_tp
 
     EvalState.doc_mention_scores.append((greedy_tp, fp, zip(greedy_attribute_tps, attribute_based_fps),
                                          num_gold_predictions, num_system_predictions, doc_id))
@@ -1136,68 +1064,73 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     # Select a computed mapping, we currently select the mapping based on mention type. This means that in order to get
     # coreference right, your mention type should also be right. This can be changed by change Config.coref_criteria
     # settings.
-    coref_mapping = None
+    mention_mapping = None
     type_mapping = None
     for attribute_comb_index, attribute_comb in enumerate(all_attribute_combinations):
         if attribute_comb == Config.coref_criteria:
-            coref_mapping = greedy_all_attribute_mapping[attribute_comb_index]
+            mention_mapping = greedy_all_attribute_mapping[attribute_comb_index]
             logger.debug("Select mapping that matches criteria [%s]" % (Config.coref_criteria[0][1]))
         if attribute_comb[0][1] == "mention_type":
             type_mapping = greedy_all_attribute_mapping[attribute_comb_index]
 
     if Config.coref_criteria == "span_only":
-        coref_mapping = greedy_mention_only_mapping
+        mention_mapping = greedy_mention_only_mapping
+
+    if mention_mapping is None:
+        # In case when we don't do attribute scoring.
+        mention_mapping = greedy_mention_only_mapping
 
     # Evaluate how the performance of each type.
     per_type_eval(system_mention_table, gold_mention_table, type_mapping)
 
-    # Parse relations.
-    g_relations = [parse_relation(l) for l in g_relation_lines]
-    s_relations = [parse_relation(l) for l in s_relation_lines]
+    gold_directed_relations, gold_corefs = utils.parse_relation_lines(g_relation_lines, remaining_gold_ids)
+    sys_directed_relations, sys_corefs = utils.parse_relation_lines(s_relation_lines, remaining_sys_ids)
 
-    if EvalState.white_listed_types:
-        g_relations = filter_relations(g_relations, remaining_gold_ids)
-        s_relations = filter_relations(s_relations, remaining_sys_ids)
-
-    if coref_mapping is None:
-        # In case when we don't do attribute scoring.
-        coref_mapping = greedy_mention_only_mapping
-
-    gold_relations_by_type = separate_relations(g_relations)
-    sys_relations_by_type = separate_relations(s_relations)
-
-    # Evaluate other directed links.
-
-    gold_directed_relations = {}
-    sys_directed_relations = {}
-
-    for name in Config.directed_relations:
-        if name in gold_relations_by_type:
-            gold_directed_relations[name] = gold_relations_by_type[name]
-
-        if name in sys_relations_by_type:
-            sys_directed_relations[name] = sys_relations_by_type[name]
-
-    # gold_afters = []
-    # if Config.after_relation_name in gold_relations_by_type:
-    #     gold_afters = gold_relations_by_type[Config.after_relation_name]
+    # # Parse relations.
+    # g_relations = [utils.parse_relation_line(l) for l in g_relation_lines]
+    # s_relations = [utils.parse_relation_line(l) for l in s_relation_lines]
     #
-    # sys_afters = []
-    # if Config.after_relation_name in sys_relations_by_type:
-    #     sys_afters = sys_relations_by_type[Config.after_relation_name]
-
-    gold_corefs = []
-    if Config.coreference_relation_name in gold_relations_by_type:
-        gold_corefs = gold_relations_by_type[Config.coreference_relation_name]
-
-    sys_corefs = []
-    if Config.coreference_relation_name in sys_relations_by_type:
-        sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
+    # if EvalState.white_listed_types:
+    #     g_relations = filter_relations(g_relations, remaining_gold_ids)
+    #     s_relations = filter_relations(s_relations, remaining_sys_ids)
+    #
+    #
+    # gold_relations_by_type = separate_relations(g_relations)
+    # sys_relations_by_type = separate_relations(s_relations)
+    #
+    # # Evaluate other directed links.
+    # gold_directed_relations = {}
+    # sys_directed_relations = {}
+    #
+    # for name in Config.directed_relations:
+    #     if name in gold_relations_by_type:
+    #         gold_directed_relations[name] = gold_relations_by_type[name]
+    #
+    #     if name in sys_relations_by_type:
+    #         sys_directed_relations[name] = sys_relations_by_type[name]
+    #
+    # gold_corefs = []
+    # if Config.coreference_relation_name in gold_relations_by_type:
+    #     gold_corefs = gold_relations_by_type[Config.coreference_relation_name]
+    #
+    # sys_corefs = []
+    # if Config.coreference_relation_name in sys_relations_by_type:
+    #     sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
 
     if Config.script_result_dir:
-        seq_eval = TemporalEval(doc_id, coref_mapping, gold_mention_table, gold_directed_relations,
-                                system_mention_table, sys_directed_relations, gold_corefs, sys_corefs)
-        seq_eval.write_time_ml()
+        seq_eval = TemporalEval(mention_mapping, gold_mention_table, gold_directed_relations, system_mention_table,
+                                sys_directed_relations, gold_corefs, sys_corefs)
+
+        if not Config.no_script_validation:
+            if seq_eval.validate_gold():
+                logger.error("The gold edges cannot form a valid script graph.")
+                utils.exit_on_fail()
+
+            if seq_eval.validate_sys():
+                logger.error("The system edges cannot form a valid script graph.")
+                utils.exit_on_fail()
+
+        seq_eval.write_time_ml(doc_id)
 
     # Evaluate coreference links.
     if coref_out is not None:
@@ -1208,7 +1141,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
         gold_conll_lines, sys_conll_lines = conll_converter.prepare_conll_lines(gold_corefs, sys_corefs,
                                                                                 gold_mention_table,
                                                                                 system_mention_table,
-                                                                                coref_mapping,
+                                                                                mention_mapping,
                                                                                 MutableConfig.coref_mention_threshold)
 
         # If we are selecting among multiple mappings, it is easy to write in our file.
@@ -1226,38 +1159,38 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     return True
 
 
-def separate_relations(relations):
-    relations_by_type = {}
-    for r in relations:
-        try:
-            relations_by_type[r[0]].append(r)
-        except KeyError:
-            relations_by_type[r[0]] = [r]
-    return relations_by_type
-
-
-def filter_relations(relations, remaining_ids):
-    results = []
-    for r in relations:
-        filtered = filter_relation_by_mention_id(r, remaining_ids)
-        if filtered:
-            results.append(filtered)
-    return results
-
-
-def filter_relation_by_mention_id(relation, remaining_ids):
-    r, r_id, ids = relation
-
-    filtered_ids = []
-    for id in ids:
-        if id in remaining_ids:
-            filtered_ids.append(id)
-
-    # We don't take singleton relations, and clearly we ignore empty relations.
-    if len(filtered_ids) > 1:
-        return [r, r_id, filtered_ids]
-    else:
-        return None
+# def separate_relations(relations):
+#     relations_by_type = {}
+#     for r in relations:
+#         try:
+#             relations_by_type[r[0]].append(r)
+#         except KeyError:
+#             relations_by_type[r[0]] = [r]
+#     return relations_by_type
+#
+#
+# def filter_relations(relations, remaining_ids):
+#     results = []
+#     for r in relations:
+#         filtered = filter_relation_by_mention_id(r, remaining_ids)
+#         if filtered:
+#             results.append(filtered)
+#     return results
+#
+#
+# def filter_relation_by_mention_id(relation, remaining_ids):
+#     r, r_id, ids = relation
+#
+#     filtered_ids = []
+#     for id in ids:
+#         if id in remaining_ids:
+#             filtered_ids.append(id)
+#
+#     # We don't take singleton relations, and clearly we ignore empty relations.
+#     if len(filtered_ids) > 1:
+#         return [r, r_id, filtered_ids]
+#     else:
+#         return None
 
 
 def natural_order(key):

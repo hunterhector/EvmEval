@@ -20,6 +20,8 @@ class Config:
 
     directed_relations = {"After", "Subevent"}
 
+    all_relations = {"After", "Subevent", "Coreference"}
+
     token_joiner = ","
     span_seperator = ";"
     span_joiner = ","
@@ -109,3 +111,46 @@ class MutableConfig:
     remove_conll_tmp = False
     eval_mode = EvalMethod.Char
     coref_mention_threshold = 1.0
+
+
+class EvalState:
+    """
+    Hold evaluation state variables.
+    """
+
+    def __init__(self):
+        pass
+
+    gold_docs = {}
+    system_docs = {}
+    doc_ids_to_score = []
+    all_possible_types = set()
+    evaluating_index = 0
+
+    doc_mention_scores = []
+    doc_coref_scores = []
+    overall_coref_scores = {}
+
+    per_type_tp = {}
+    per_type_num_response = {}
+    per_type_num_gold = {}
+
+    use_new_conll_file = True
+
+    system_id = "_id_"
+
+    white_listed_types = None
+
+    @staticmethod
+    def advance_index():
+        EvalState.evaluating_index += 1
+
+    @staticmethod
+    def has_next_doc():
+        return EvalState.evaluating_index < len(EvalState.doc_ids_to_score)
+
+    @staticmethod
+    def claim_write_flag():
+        r = EvalState.use_new_conll_file
+        EvalState.use_new_conll_file = False
+        return r

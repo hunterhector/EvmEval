@@ -15,16 +15,20 @@ from config import Config
 from utils import TransitiveGraph
 import utils
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger()
 
 
 def validate(nuggets, edges_by_type, gold_cluster_lookup, gold_clusters):
     """
-    Validate whether the edges are valid. Currently, the validation only check whether the reverse is also included,
+        Validate whether the edges are valid. Currently, the validation only check whether the reverse is also included,
     which is not possible for after links.
-    :param nuggets: The set of possible nuggets.
-    :param edges: Edges in the system.
-    :return:
+
+    :param nuggets: 
+    :param edges_by_type: 
+    :param gold_cluster_lookup: 
+    :param gold_clusters: 
+    :param logger: 
+    :return: 
     """
     for name, edges in edges_by_type.iteritems():
         reverse_edges = set()
@@ -42,7 +46,7 @@ def validate(nuggets, edges_by_type, gold_cluster_lookup, gold_clusters):
                 right_cluster = gold_cluster_lookup[right]
 
                 logger.error("There is link from clusters A to cluster B, and from cluster B to cluster A. "
-                             "This is create a cyclic graph, which is not allowed.")
+                                      "This is create a cyclic graph, which is not allowed.")
                 logger.error("Cluster A contains: %s." % ",".join(gold_clusters[left_cluster]))
                 logger.error("Cluster B contains: %s." % ",".join(gold_clusters[right_cluster]))
 
@@ -378,69 +382,68 @@ class TemporalEval:
     Interpreting the Temporal Aspects of Language, Naushad UzZaman, 2012
     """
 
-    def __init__(self, doc_id, g2s_mapping, gold_nugget_table, raw_gold_links,
-                 sys_nugget_table, raw_sys_links, gold_corefs, sys_corefs):
+    def __init__(self, g2s_mapping, gold_nugget_table, raw_gold_links, sys_nugget_table,
+                 raw_sys_links, gold_corefs, sys_corefs):
+        self.gold_nugget_table = gold_nugget_table
+        self.sys_nugget_table = sys_nugget_table
 
         # Store how the event nugget ids.
-        gold_nuggets = [nugget[2] for nugget in gold_nugget_table]
-        sys_nuggets = [nugget[2] for nugget in sys_nugget_table]
+        self.gold_nuggets = [nugget[2] for nugget in gold_nugget_table]
+        self.sys_nuggets = [nugget[2] for nugget in sys_nugget_table]
 
-        gold_nodes, sys_nodes, gold_nugget_to_node, system_nugget_to_node = store_nugget_nodes(
-            gold_nuggets, sys_nuggets, g2s_mapping)
+        self.g2s_mapping = g2s_mapping
 
-        gold_clusters, gold_cluster_lookup = find_equivalent_sets(gold_corefs, gold_nuggets)
-        sys_clusters, sys_cluster_lookup = find_equivalent_sets(sys_corefs, sys_nuggets)
+        self.gold_nodes, self.sys_nodes, self.gold_nugget_to_node, self.system_nugget_to_node = store_nugget_nodes(
+            self.gold_nuggets, self.sys_nuggets, g2s_mapping)
+
+        self.gold_clusters, self.gold_cluster_lookup = find_equivalent_sets(gold_corefs, self.gold_nuggets)
+        self.sys_clusters, self.sys_cluster_lookup = find_equivalent_sets(sys_corefs, self.sys_nuggets)
 
         # Propagate mention level gold and system links.
-        gold_links_by_type = propagate_through_equivalence(raw_gold_links, gold_clusters, gold_cluster_lookup)
-        sys_links_by_type = propagate_through_equivalence(raw_sys_links, sys_clusters, sys_cluster_lookup)
+        self.gold_links_by_type = propagate_through_equivalence(raw_gold_links, self.gold_clusters,
+                                                                self.gold_cluster_lookup)
+        self.sys_links_by_type = propagate_through_equivalence(raw_sys_links, self.sys_clusters,
+                                                               self.sys_cluster_lookup)
 
-        # Store another set of time ML nodes that represents clusters.
-        gold_cluster_nodes, sys_cluster_nodes, gold_cluster_to_node, sys_cluster_to_node, rewritten_lookup \
-            = store_cluster_nodes(gold_clusters, gold_cluster_lookup, gold_nuggets, sys_nuggets, g2s_mapping)
+    def validate_gold(self):
+        return validate(set([nugget[2] for nugget in self.gold_nugget_table]), self.gold_links_by_type,
+                        self.gold_cluster_lookup, self.gold_clusters)
 
-        gold_cluster_links = convert_to_cluster_links(gold_links_by_type, gold_cluster_lookup)
-        sys_cluster_links = convert_to_cluster_links(sys_links_by_type, rewritten_lookup)
+    def validate_sys(self):
+        return validate(set([nugget[2] for nugget in self.sys_nugget_table]), self.sys_links_by_type,
+                        self.gold_cluster_lookup, self.gold_clusters)
 
-        # import sys
-        # print gold_clusters
-        # print gold_cluster_lookup
-        # print gold_links_by_type
-        # sys.stdin.readline()
-
-        if not Config.no_script_validation:
-            if not validate(set([nugget[2] for nugget in gold_nugget_table]), gold_links_by_type,
-                            gold_cluster_lookup, gold_clusters):
-                raise RuntimeError("The gold standard edges cannot form a valid script graph.")
-
-            if not validate(set([nugget[2] for nugget in sys_nugget_table]), sys_links_by_type,
-                            gold_cluster_lookup, gold_clusters):
-                raise RuntimeError("The system edges cannot form a valid script graph.")
-
-        self.gold_time_ml = self.make_all_time_ml(convert_links(gold_links_by_type), gold_nugget_to_node,
-                                                  gold_nodes)
-        self.sys_time_ml = self.make_all_time_ml(convert_links(sys_links_by_type), system_nugget_to_node,
-                                                 sys_nodes)
-
-        self.gold_cluster_time_ml = self.make_all_time_ml(convert_links(gold_cluster_links), gold_cluster_to_node,
-                                                          gold_cluster_nodes)
-        self.sys_cluster_time_ml = self.make_all_time_ml(convert_links(sys_cluster_links), sys_cluster_to_node,
-                                                         sys_cluster_nodes)
-
-        self.doc_id = doc_id
-
-    def write_time_ml(self):
+    def write_time_ml(self, doc_id):
         """
         Write the TimeML file to disk.
         :return:
         """
-        self.write(self.gold_time_ml, Config.script_gold_dir)
-        self.write(self.sys_time_ml, Config.script_sys_dir)
+        # Store another set of time ML nodes that represents clusters.
+        gold_cluster_nodes, sys_cluster_nodes, gold_cluster_to_node, sys_cluster_to_node, rewritten_lookup \
+            = store_cluster_nodes(self.gold_clusters, self.gold_cluster_lookup, self.gold_nuggets,
+                                  self.sys_nuggets, self.g2s_mapping)
 
-        self.write(self.gold_cluster_time_ml, Config.script_gold_dir + "_cluster")
-        self.write(self.sys_cluster_time_ml, Config.script_sys_dir + "_cluster")
+        gold_cluster_links = convert_to_cluster_links(self.gold_links_by_type, self.gold_cluster_lookup)
+        sys_cluster_links = convert_to_cluster_links(self.sys_links_by_type, rewritten_lookup)
 
-    def write(self, time_ml_data, subdir):
+        gold_time_ml = self.make_all_time_ml(convert_links(self.gold_links_by_type), self.gold_nugget_to_node,
+                                             self.gold_nodes)
+        sys_time_ml = self.make_all_time_ml(convert_links(self.sys_links_by_type), self.system_nugget_to_node,
+                                            self.sys_nodes)
+
+        gold_cluster_time_ml = self.make_all_time_ml(convert_links(gold_cluster_links), gold_cluster_to_node,
+                                                     gold_cluster_nodes)
+        sys_cluster_time_ml = self.make_all_time_ml(convert_links(sys_cluster_links), sys_cluster_to_node,
+                                                    sys_cluster_nodes)
+
+        TemporalEval.write(gold_time_ml, Config.script_gold_dir, doc_id)
+        TemporalEval.write(sys_time_ml, Config.script_sys_dir, doc_id)
+
+        TemporalEval.write(gold_cluster_time_ml, Config.script_gold_dir + "_cluster", doc_id)
+        TemporalEval.write(sys_cluster_time_ml, Config.script_sys_dir + "_cluster", doc_id)
+
+    @staticmethod
+    def write(time_ml_data, subdir, doc_id):
         """
         Write out time ml files into sub directories.
         :param time_ml_data:
@@ -452,7 +455,7 @@ class TemporalEval:
             output_dir = os.path.join(Config.script_result_dir, name, subdir)
             utils.supermakedirs(output_dir)
 
-            temp_file = open(os.path.join(output_dir, "%s.tml" % self.doc_id), 'w')
+            temp_file = open(os.path.join(output_dir, "%s.tml" % doc_id), 'w')
             temp_file.write(pretty_xml(time_ml))
             temp_file.close()
 

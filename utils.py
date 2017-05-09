@@ -5,7 +5,7 @@ import sys
 import os
 import errno
 from collections import defaultdict
-import glob
+from config import Config, EvalMethod, EvalState
 
 logger = logging.getLogger(__name__)
 
@@ -152,6 +152,127 @@ def create_parent_dir(p):
     except OSError as exception:
         if exception.errno != errno.EEXIST:
             raise
+
+
+def exit_on_fail():
+    logger.error("Validation failed.")
+    logger.error("Please fix the warnings/errors.")
+    sys.exit(255)
+
+
+def parse_relation_lines(g_relation_lines, remaining_gold_ids):
+    # Parse relations.
+    g_relations = [parse_relation_line(l) for l in g_relation_lines]
+
+    if EvalState.white_listed_types:
+        g_relations = filter_relations(g_relations, remaining_gold_ids)
+
+    gold_relations_by_type = separate_relations(g_relations)
+
+    # Evaluate other directed links.
+    gold_directed_relations = {}
+
+    for name in Config.directed_relations:
+        if name in gold_relations_by_type:
+            gold_directed_relations[name] = gold_relations_by_type[name]
+
+    gold_corefs = []
+    if Config.coreference_relation_name in gold_relations_by_type:
+        gold_corefs = gold_relations_by_type[Config.coreference_relation_name]
+
+    return gold_directed_relations, gold_corefs
+
+
+# def parse_relation_lines(g_relation_lines, remaining_gold_ids, coref_mapping):
+#     # Parse relations.
+#     g_relations = [parse_relation_line(l) for l in g_relation_lines]
+#     s_relations = [parse_relation_line(l) for l in s_relation_lines]
+#
+#     if EvalState.white_listed_types:
+#         g_relations = filter_relations(g_relations, remaining_gold_ids)
+#         s_relations = filter_relations(s_relations, remaining_sys_ids)
+#
+#     gold_relations_by_type = separate_relations(g_relations)
+#     sys_relations_by_type = separate_relations(s_relations)
+#
+#     # Evaluate other directed links.
+#     gold_directed_relations = {}
+#     sys_directed_relations = {}
+#
+#     for name in Config.directed_relations:
+#         if name in gold_relations_by_type:
+#             gold_directed_relations[name] = gold_relations_by_type[name]
+#
+#         if name in sys_relations_by_type:
+#             sys_directed_relations[name] = sys_relations_by_type[name]
+#
+#     gold_corefs = []
+#     if Config.coreference_relation_name in gold_relations_by_type:
+#         gold_corefs = gold_relations_by_type[Config.coreference_relation_name]
+#
+#     sys_corefs = []
+#     if Config.coreference_relation_name in sys_relations_by_type:
+#         sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
+
+
+def separate_relations(relations):
+    relations_by_type = {}
+    for r in relations:
+        try:
+            relations_by_type[r[0]].append(r)
+        except KeyError:
+            relations_by_type[r[0]] = [r]
+    return relations_by_type
+
+
+def filter_relations(relations, remaining_ids):
+    results = []
+    for r in relations:
+        filtered = filter_relation_by_mention_id(r, remaining_ids)
+        if filtered:
+            results.append(filtered)
+    return results
+
+
+def filter_relation_by_mention_id(relation, remaining_ids):
+    r, r_id, ids = relation
+
+    filtered_ids = []
+    for id in ids:
+        if id in remaining_ids:
+            filtered_ids.append(id)
+
+    # We don't take singleton relations, and clearly we ignore empty relations.
+    if len(filtered_ids) > 1:
+        return [r, r_id, filtered_ids]
+    else:
+        return None
+
+
+def parse_relation_line(relation_line):
+    """
+    Parse the relation as a tuple.
+    :param relation_line: the relation line from annotation
+    :return:
+    """
+    parts = relation_line.split("\t")
+
+    if not len(parts) == 3:
+        logger.error("Incorrect format of relation line, it should have 3 fields:")
+        logger.error(relation_line)
+        exit_on_fail()
+
+    relation_arguments = parts[2].split(",")
+
+    if len(relation_arguments) < 2:
+        if parts[0] == "Coreference":
+            logger.warn("Singleton clusters are not necessary")
+        else:
+            logger.error("A relation should have at least two arguments, maybe incorrect formatted:")
+            logger.error(relation_line)
+            exit_on_fail()
+
+    return parts[0], parts[1], relation_arguments
 
 
 class DisjointSet(object):

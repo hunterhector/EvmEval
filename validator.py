@@ -13,6 +13,9 @@ import logging
 import os
 import re
 import sys
+from temporal import TemporalEval
+from config import Config, EvalMethod, MutableConfig
+import utils
 
 logger = logging.getLogger()
 
@@ -20,7 +23,6 @@ comment_marker = "#"
 bod_marker = "#BeginOfDocument"  # mark begin of a document
 eod_marker = "#EndOfDocument"  # mark end of a document
 relation_marker = "@"  # mark start of a relation
-coreference_relation_name = "Coreference"  # mark coreference
 
 conll_bod_marker = "#begin document"
 conll_eod_marker = "#end document"
@@ -49,10 +51,6 @@ total_mentions = 0
 
 unrecognized_relation_count = 0
 total_tokens_not_found = 0
-
-
-class EvalMethod:
-    Token, Char = range(2)
 
 
 def exit_on_fail():
@@ -122,10 +120,10 @@ def main():
         logger.setLevel(logging.INFO)
 
     # token based eval mode
-    eval_mode = EvalMethod.Token if args.token_mode else  EvalMethod.Char
+    MutableConfig.eval_mode = EvalMethod.Token if args.token_mode else  EvalMethod.Char
 
     token_dir = "."
-    if eval_mode == EvalMethod.Token:
+    if MutableConfig.eval_mode == EvalMethod.Token:
         if args.token_path is not None:
             if os.path.isdir(args.token_path):
                 logger.debug("Will search token files in " + args.token_path)
@@ -146,7 +144,7 @@ def main():
 
     validation_success = True
     while has_next_doc():
-        if not validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offset_fields,
+        if not validate_next(doc_lengths, possible_types, token_dir, token_offset_fields,
                              args.token_table_extension):
             validation_success = False
             break
@@ -270,6 +268,7 @@ def has_next_doc():
 
 
 def get_next_doc():
+    global gold_docs
     global evaluating_index
     if evaluating_index < len(doc_ids_to_score):
         doc_id = doc_ids_to_score[evaluating_index]
@@ -309,7 +308,7 @@ def parse_characters(s):
     return characters
 
 
-def parse_line(l, eval_mode, invisible_ids):
+def parse_line(l, invisible_ids):
     fields = l.split("\t")
     num_attributes = len(attribute_names)
     min_len = num_attributes + 5
@@ -317,7 +316,7 @@ def parse_line(l, eval_mode, invisible_ids):
         logger.error("System line has too few fields:\n ---> %s" % l)
         exit_on_fail()
 
-    if eval_mode == EvalMethod.Token:
+    if MutableConfig.eval_mode == EvalMethod.Token:
         spans, original_spans = parse_token_ids(fields[3], invisible_ids)
         if len(spans) == 0:
             logger.warn("Find mention with only invisible words, will not be mapped to anything")
@@ -327,14 +326,14 @@ def parse_line(l, eval_mode, invisible_ids):
     return fields[2], spans, fields[5:]
 
 
-def parse_relation(relation_line):
-    parts = relation_line.split("\t")
-    if len(parts) < 3:
-        logger.error("Relation should have at least 3 fields, found the following:")
-        logger.error(parts)
-        exit_on_fail()
-    relation_arguments = parts[2].split(",")
-    return parts[0], parts[1], relation_arguments
+# def parse_relation(relation_line):
+#     parts = relation_line.split("\t")
+#     if len(parts) < 3:
+#         logger.error("Relation should have at least 3 fields, found the following:")
+#         logger.error(parts)
+#         exit_on_fail()
+#     relation_arguments = parts[2].split(",")
+#     return parts[0], parts[1], relation_arguments
 
 
 def natural_order(key):
@@ -360,7 +359,7 @@ def get_eid_2_character_span(mention_table):
     return event_mention_id_2_span
 
 
-def validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offset_fields, token_file_ext):
+def validate_next(doc_lengths, possible_types, token_dir, token_offset_fields, token_file_ext):
     global total_mentions
     global unrecognized_relation_count
 
@@ -374,7 +373,7 @@ def validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offse
         else:
             max_length = doc_lengths[doc_id]
 
-    if eval_mode == EvalMethod.Token:
+    if MutableConfig.eval_mode == EvalMethod.Token:
         invisible_ids, id2token_map, id2span_map = read_token_ids(token_dir, doc_id, token_file_ext,
                                                                   token_offset_fields)
     else:
@@ -385,9 +384,10 @@ def validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offse
     gold_mention_table = []
 
     mention_ids = []
+    remaining_gold_ids = set()
+
     for gl in g_mention_lines:
-        gold_mention_id, gold_spans, gold_attributes = parse_line(
-            gl, eval_mode, invisible_ids)
+        gold_mention_id, gold_spans, gold_attributes = parse_line(gl, invisible_ids)
 
         if max_length is not None and not check_range(gold_spans, max_length):
             logger.error(
@@ -404,6 +404,7 @@ def validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offse
         gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
         mention_ids.append(gold_mention_id)
         all_possible_types.add(gold_attributes[0])
+        remaining_gold_ids.add(gold_mention_id)
 
     total_mentions += len(gold_mention_table)
 
@@ -411,7 +412,7 @@ def validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offse
         logger.error("Duplicated mention id for doc %s" % doc_id)
         return False
 
-    if eval_mode == EvalMethod.Token and has_invented_token(id2token_map, gold_mention_table):
+    if MutableConfig.eval_mode == EvalMethod.Token and has_invented_token(id2token_map, gold_mention_table):
         logger.error("Invented token id was found for doc %s" % doc_id)
         logger.error("Tokens not in tbf not found in token map : %d" % total_tokens_not_found)
         return False
@@ -419,14 +420,14 @@ def validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offse
     clusters = {}
     cluster_id = 0
     for l in g_relation_lines:
-        relation = parse_relation(l)
-        if relation[0] == coreference_relation_name:
+        relation = utils.parse_relation_line(l)
+        if relation[0] == Config.coreference_relation_name:
             clusters[cluster_id] = set(relation[2])
             cluster_id += 1
-        else:
+        elif relation[0] not in Config.all_relations:
             unrecognized_relation_count += 1
-            logger.warning("Relation [%s] is not recognized, this task only takes [%s]", relation[0],
-                           coreference_relation_name)
+            logger.warning("Relation [%s] is not recognized, this task only takes: [%s]", relation[0],
+                           ";".join(Config.all_relations))
 
     if unrecognized_relation_count > 10:
         logger.error("Too many unrecognized relations : %d" % unrecognized_relation_count)
@@ -447,10 +448,12 @@ def validate_next(eval_mode, doc_lengths, possible_types, token_dir, token_offse
             logger.error("Found invented id in clusters at doc [%s]" % doc_id)
             return False
 
-            # if within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
-            #     logger.error("Please remove span duplicates before submitting")
-            #     logger.error("Problem was found in file %s" % doc_id)
-            #     return False
+    gold_directed_relations, gold_corefs = utils.parse_relation_lines(g_relation_lines, remaining_gold_ids)
+
+    seq_eval = TemporalEval([], gold_mention_table, gold_directed_relations, [], {}, gold_corefs, [])
+    if not seq_eval.validate_gold():
+        logger.error("The edges cannot form a valid script graph.")
+        utils.exit_on_fail()
 
     return True
 

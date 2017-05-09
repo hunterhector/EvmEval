@@ -147,15 +147,13 @@ def main():
         if not validate_next(doc_lengths, possible_types, token_dir, token_offset_fields,
                              args.token_table_extension):
             validation_success = False
-            break
-
-    logger.info("Submission contains %d files, %d mentions" % (len(gold_docs), total_mentions))
 
     if not validation_success:
         exit_on_fail()
     else:
         logger.info("Validation did not find obvious errors.")
 
+    logger.info("Submission contains %d files, %d mentions" % (len(gold_docs), total_mentions))
     logger.info("Validation Finished.")
 
 
@@ -363,13 +361,15 @@ def validate_next(doc_lengths, possible_types, token_dir, token_offset_fields, t
     global total_mentions
     global unrecognized_relation_count
 
-    res, (g_mention_lines, g_relation_lines), (s_mention_lines, s_relation_lines), doc_id = get_next_doc()
+    success = True
+
+    res, (mention_lines, relation_lines), (_, _), doc_id = get_next_doc()
 
     max_length = None
     if doc_lengths is not None:
         if doc_id not in doc_lengths:
             logger.error("Document id not listed in evaluation set : %s", doc_id)
-            return False
+            success = False
         else:
             max_length = doc_lengths[doc_id]
 
@@ -381,45 +381,45 @@ def validate_next(doc_lengths, possible_types, token_dir, token_offset_fields, t
         id2token_map = {}
 
     # Parse the lines in file.
-    gold_mention_table = []
+    mention_table = []
 
     mention_ids = []
     remaining_gold_ids = set()
 
-    for gl in g_mention_lines:
-        gold_mention_id, gold_spans, gold_attributes = parse_line(gl, invisible_ids)
+    for l in mention_lines:
+        mention_id, spans, attributes = parse_line(l, invisible_ids)
 
-        if max_length is not None and not check_range(gold_spans, max_length):
+        if max_length is not None and not check_range(spans, max_length):
             logger.error(
                 "The following mention line exceed the character range %d of document [%s]" % (max_length, doc_id))
-            logger.error(gl)
-            return False
+            logger.error(l)
+            success = False
 
         if possible_types is not None:
-            mtype = canonicalize_string(gold_attributes[0])
+            mtype = canonicalize_string(attributes[0])
             if not check_type(possible_types, mtype):
                 logger.error("Submission contains type [%s] that is not in evaluation." % mtype)
-                return False
+                success = False
 
-        gold_mention_table.append((gold_spans, gold_attributes, gold_mention_id))
-        mention_ids.append(gold_mention_id)
-        all_possible_types.add(gold_attributes[0])
-        remaining_gold_ids.add(gold_mention_id)
+        mention_table.append((spans, attributes, mention_id))
+        mention_ids.append(mention_id)
+        all_possible_types.add(attributes[0])
+        remaining_gold_ids.add(mention_id)
 
-    total_mentions += len(gold_mention_table)
+    total_mentions += len(mention_table)
 
     if not check_unique(mention_ids):
         logger.error("Duplicated mention id for doc %s" % doc_id)
-        return False
+        success = False
 
-    if MutableConfig.eval_mode == EvalMethod.Token and has_invented_token(id2token_map, gold_mention_table):
+    if MutableConfig.eval_mode == EvalMethod.Token and has_invented_token(id2token_map, mention_table):
         logger.error("Invented token id was found for doc %s" % doc_id)
         logger.error("Tokens not in tbf not found in token map : %d" % total_tokens_not_found)
-        return False
+        success = False
 
     clusters = {}
     cluster_id = 0
-    for l in g_relation_lines:
+    for l in relation_lines:
         relation = utils.parse_relation_line(l)
         if relation[0] == Config.coreference_relation_name:
             clusters[cluster_id] = set(relation[2])
@@ -431,31 +431,31 @@ def validate_next(doc_lengths, possible_types, token_dir, token_offset_fields, t
 
     if unrecognized_relation_count > 10:
         logger.error("Too many unrecognized relations : %d" % unrecognized_relation_count)
-        return False
+        success = False
 
     if transitive_not_resolved(clusters):
         logger.error("Coreference transitive closure is not resolved! Please resolve before submitting.")
         logger.error("Problem was found in file %s" % doc_id)
-        return False
+        success = False
 
     if EvalMethod.Char:
-        event_mention_id_2_span = get_eid_2_character_span(gold_mention_table)
+        event_mention_id_2_span = get_eid_2_character_span(mention_table)
     else:
-        event_mention_id_2_span = get_eid_2_sorted_token_map(gold_mention_table)
+        event_mention_id_2_span = get_eid_2_sorted_token_map(mention_table)
 
     for cluster_id, cluster in clusters.iteritems():
         if invented_mention_check(cluster, event_mention_id_2_span):
             logger.error("Found invented id in clusters at doc [%s]" % doc_id)
-            return False
+            success = False
 
-    gold_directed_relations, gold_corefs = utils.parse_relation_lines(g_relation_lines, remaining_gold_ids)
+    directed_relations, corefs = utils.parse_relation_lines(relation_lines, remaining_gold_ids)
 
-    seq_eval = TemporalEval([], gold_mention_table, gold_directed_relations, [], {}, gold_corefs, [])
+    seq_eval = TemporalEval([], mention_table, directed_relations, [], {}, corefs, [])
     if not seq_eval.validate_gold():
         logger.error("The edges cannot form a valid script graph.")
         utils.exit_on_fail()
 
-    return True
+    return success
 
 
 def canonicalize_string(str):

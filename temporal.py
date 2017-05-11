@@ -50,8 +50,6 @@ def validate(nuggets, edges_by_type, gold_cluster_lookup, gold_clusters):
                 logger.error("Cluster A contains: %s." % ",".join(gold_clusters[left_cluster]))
                 logger.error("Cluster B contains: %s." % ",".join(gold_clusters[right_cluster]))
 
-                # logger.error("There is a link from %s to %s and %s to %s, this is not allowed."
-                #              % (left, right, right, left))
                 return False
             reverse_edges.add((right, left, t))
 

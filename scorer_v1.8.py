@@ -1122,11 +1122,11 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
                                 sys_directed_relations, gold_corefs, sys_corefs)
 
         if not Config.no_script_validation:
-            if seq_eval.validate_gold():
+            if not seq_eval.validate_gold():
                 logger.error("The gold edges cannot form a valid script graph.")
                 utils.exit_on_fail()
 
-            if seq_eval.validate_sys():
+            if not seq_eval.validate_sys():
                 logger.error("The system edges cannot form a valid script graph.")
                 utils.exit_on_fail()
 
@@ -1157,40 +1157,6 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     write_if_provided(diff_out, Config.eod_marker + " " + "\n")
 
     return True
-
-
-# def separate_relations(relations):
-#     relations_by_type = {}
-#     for r in relations:
-#         try:
-#             relations_by_type[r[0]].append(r)
-#         except KeyError:
-#             relations_by_type[r[0]] = [r]
-#     return relations_by_type
-#
-#
-# def filter_relations(relations, remaining_ids):
-#     results = []
-#     for r in relations:
-#         filtered = filter_relation_by_mention_id(r, remaining_ids)
-#         if filtered:
-#             results.append(filtered)
-#     return results
-#
-#
-# def filter_relation_by_mention_id(relation, remaining_ids):
-#     r, r_id, ids = relation
-#
-#     filtered_ids = []
-#     for id in ids:
-#         if id in remaining_ids:
-#             filtered_ids.append(id)
-#
-#     # We don't take singleton relations, and clearly we ignore empty relations.
-#     if len(filtered_ids) > 1:
-#         return [r, r_id, filtered_ids]
-#     else:
-#         return None
 
 
 def natural_order(key):

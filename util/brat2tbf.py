@@ -77,7 +77,7 @@ def main():
 
     # Optional arguments now.
     parser.add_argument("-t", "--token_path", help="provide directory to search for the corresponding token files if "
-                                                  "you use the token based format.")
+                                                   "you use the token based format.")
 
     parser.add_argument(
         "-o", "--out",
@@ -202,7 +202,7 @@ def rchop(s, ending):
 
 
 def parse_annotation_file(file_path, token_dir, of):
-    # otherwise use the provided directory to search for it
+    # Otherwise use the provided directory to search for it.
     basename = os.path.basename(file_path)
     logger.debug("Processing file " + basename)
 
@@ -225,6 +225,23 @@ def parse_annotation_file(file_path, token_dir, of):
         eids.sort(key=natural_order)
 
         eid2sorted_tokens = {}
+
+        # Check relations.
+        filtered_rels = {}
+        for rel_name, relations in rels.iteritems():
+            filtered = []
+            for rel_id, a1, a2 in relations:
+                if a1 not in eids:
+                    logger.warning("Removing relations %s with invented mention [%s] from doc %s."
+                                   % (rel_id, a1, basename))
+                    continue
+                elif a2 not in eids:
+                    logger.warning("Removing relations %s with invented mention [%s] from doc %s."
+                                   % (rel_id, a2, basename))
+                    continue
+                else:
+                    filtered.append((rel_id, a1, a2))
+            filtered_rels[rel_name] = filtered
 
         # write begin of document
         of.write(outputBodMarker + " " + text_id + "\n")
@@ -260,13 +277,14 @@ def parse_annotation_file(file_path, token_dir, of):
             of.write("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
                 engine_id, text_id, eid, span_str, text, event_type, realis_status))
 
-        for rel_name, relations in rels.iteritems():
+        for rel_name, relations in filtered_rels.iteritems():
             if rel_name != coreference_relation_name:
                 for relation in relations:
-                    of.write(
-                        "%s%s\t%s\t%s,%s\n" % (
-                            outputRelationMarker, rel_name, relation[0], relation[1],
-                            relation[2]))
+                    if relation[1] in eids and relation[2] in eids:
+                        of.write(
+                            "%s%s\t%s\t%s,%s\n" % (
+                                outputRelationMarker, rel_name, relation[0], relation[1],
+                                relation[2]))
             else:
                 logger.debug("Resolving coreference")
                 resolved_coref_chains = resolve_transitive_closure_and_duplicates(relations, eid2sorted_tokens)

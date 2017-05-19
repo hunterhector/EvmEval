@@ -36,6 +36,10 @@ def complete_links(src_file):
                 arg1 = r_content[1].split(":")[1]
                 arg2 = r_content[2].split(":")[1]
 
+                if arg1 not in event_to_span or arg2 not in event_to_span:
+                    print("[Warning] Relation argument %s is not found in events for file %s." % (arg1, src_file.name))
+                    continue
+
                 arg1_span = event_to_span[arg1]
                 arg2_span = event_to_span[arg2]
 
@@ -91,7 +95,7 @@ def find_same_span(lines):
 
 
 if len(sys.argv) != 3:
-    print "Usage: python after_link_completion.py [Brat Annotation Directory] [Output Directory]"
+    print("Usage: python after_link_completion.py [Brat Annotation Directory] [Output Directory]")
     sys.exit(1)
 
 input_dir = sys.argv[1]

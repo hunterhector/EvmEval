@@ -389,7 +389,7 @@ def validate_next(doc_lengths, possible_types, token_dir, token_offset_fields, t
     for l in mention_lines:
         mention_id, spans, attributes = parse_line(l, invisible_ids)
 
-        if max_length is not None and not check_range(spans, max_length):
+        if found_invalid_range(spans, max_length):
             logger.error(
                 "The following mention line exceed the character range %d of document [%s]" % (max_length, doc_id))
             logger.error(l)
@@ -429,6 +429,10 @@ def validate_next(doc_lengths, possible_types, token_dir, token_offset_fields, t
             logger.warning("Relation [%s] is not recognized, this task only takes: [%s]", relation[0],
                            ";".join(Config.all_relations))
 
+        if has_invented_mentions(relation[2], set(mention_ids)):
+            logger.error("This relation was found in file %s" % doc_id)
+            success = False
+
     if unrecognized_relation_count > 10:
         logger.error("Too many unrecognized relations : %d" % unrecognized_relation_count)
         success = False
@@ -443,16 +447,16 @@ def validate_next(doc_lengths, possible_types, token_dir, token_offset_fields, t
     else:
         event_mention_id_2_span = get_eid_2_sorted_token_map(mention_table)
 
-    for cluster_id, cluster in clusters.iteritems():
-        if invented_mention_check(cluster, event_mention_id_2_span):
-            logger.error("Found invented id in clusters at doc [%s]" % doc_id)
-            success = False
+    # for cluster_id, cluster in clusters.iteritems():
+    #     if invented_mention_check(cluster, event_mention_id_2_span):
+    #         logger.error("Found invented id in clusters at doc [%s]" % doc_id)
+    #         success = False
 
     directed_relations, corefs = utils.parse_relation_lines(relation_lines, remaining_gold_ids)
 
     seq_eval = TemporalEval([], mention_table, directed_relations, [], {}, corefs, [])
     if not seq_eval.validate_gold():
-        logger.error("The edges cannot form a valid script graph.")
+        logger.error("The edges cannot form a valid script graph at doc [%s]." % doc_id)
         utils.exit_on_fail()
 
     return success
@@ -468,11 +472,16 @@ def check_type(possible_types, mtype):
     return True
 
 
-def check_range(spans, max_length):
+def found_invalid_range(spans, max_length):
     for span in spans:
-        if span < 0 or span >= max_length:
-            return False
-    return True
+        if span < 0:
+            return True
+
+        if max_length is not None:
+            if span >= max_length:
+                return True
+
+    return False
 
 
 def has_invented_token(id2token_map, gold_mention_table):
@@ -485,13 +494,20 @@ def has_invented_token(id2token_map, gold_mention_table):
     return False
 
 
-def invented_mention_check(cluster, event_mention_id_2_sorted_tokens):
-    for eid in cluster:
-        if not eid in event_mention_id_2_sorted_tokens:
-            logger.error("Cluster contains ID not in event mention list [%s]" % eid)
+def has_invented_mentions(relation_args, mentions_ids):
+    for a in relation_args:
+        if a not in mentions_ids:
+            logger.error("Mention [%s] in relations is not found in event mention list", a)
             return True
-        else:
-            return False
+    return False
+
+
+# def invented_mention_check(cluster, event_mention_id_2_sorted_tokens):
+#     for eid in cluster:
+#         if not eid in event_mention_id_2_sorted_tokens:
+#             logger.error("Cluster contains ID not in event mention list [%s]" % eid)
+#             return True
+#     return False
 
 
 def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
@@ -507,6 +523,8 @@ def within_cluster_span_duplicate(cluster, event_mention_id_2_sorted_tokens):
             return True
         else:
             span_map[span] = eid
+
+    return False
 
 
 def transitive_not_resolved(clusters):

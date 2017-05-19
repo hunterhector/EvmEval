@@ -46,7 +46,7 @@ def validate(nuggets, edges_by_type, gold_cluster_lookup, gold_clusters):
                 right_cluster = gold_cluster_lookup[right]
 
                 logger.error("There is link from clusters A to cluster B, and from cluster B to cluster A. "
-                                      "This is create a cyclic graph, which is not allowed.")
+                             "This is create a cyclic graph, which is not allowed.")
                 logger.error("Cluster A contains: %s." % ",".join(gold_clusters[left_cluster]))
                 logger.error("Cluster B contains: %s." % ",".join(gold_clusters[right_cluster]))
 
@@ -194,6 +194,15 @@ def propagate_through_equivalence(links_by_name, set_2_nodes, node_2_set):
         for link in links:
             relation = link[0]
             arg1, arg2 = link[2]
+
+            if arg1 not in node_2_set:
+                logger.error("Relation argument %s is not found in node set for file." % arg1)
+                continue
+
+            if arg2 not in node_2_set:
+                logger.error("Relation argument %s is not found in node set for file." % arg2)
+                continue
+
             set1 = node_2_set[arg1]
             set2 = node_2_set[arg2]
 

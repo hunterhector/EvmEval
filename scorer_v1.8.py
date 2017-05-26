@@ -283,6 +283,7 @@ def main():
     close_if_not_none(diff_out)
 
     logger.info("Evaluation Done.")
+    return 0
 
 
 def close_if_not_none(f):
@@ -1085,37 +1086,6 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
 
     gold_directed_relations, gold_corefs = utils.parse_relation_lines(g_relation_lines, remaining_gold_ids)
     sys_directed_relations, sys_corefs = utils.parse_relation_lines(s_relation_lines, remaining_sys_ids)
-
-    # # Parse relations.
-    # g_relations = [utils.parse_relation_line(l) for l in g_relation_lines]
-    # s_relations = [utils.parse_relation_line(l) for l in s_relation_lines]
-    #
-    # if EvalState.white_listed_types:
-    #     g_relations = filter_relations(g_relations, remaining_gold_ids)
-    #     s_relations = filter_relations(s_relations, remaining_sys_ids)
-    #
-    #
-    # gold_relations_by_type = separate_relations(g_relations)
-    # sys_relations_by_type = separate_relations(s_relations)
-    #
-    # # Evaluate other directed links.
-    # gold_directed_relations = {}
-    # sys_directed_relations = {}
-    #
-    # for name in Config.directed_relations:
-    #     if name in gold_relations_by_type:
-    #         gold_directed_relations[name] = gold_relations_by_type[name]
-    #
-    #     if name in sys_relations_by_type:
-    #         sys_directed_relations[name] = sys_relations_by_type[name]
-    #
-    # gold_corefs = []
-    # if Config.coreference_relation_name in gold_relations_by_type:
-    #     gold_corefs = gold_relations_by_type[Config.coreference_relation_name]
-    #
-    # sys_corefs = []
-    # if Config.coreference_relation_name in sys_relations_by_type:
-    #     sys_corefs = sys_relations_by_type[Config.coreference_relation_name]
 
     if Config.script_result_dir:
         seq_eval = TemporalEval(mention_mapping, gold_mention_table, gold_directed_relations, system_mention_table,

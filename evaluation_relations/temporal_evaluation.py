@@ -4,7 +4,7 @@
 # tlink -> temporal links
 
 # foreach f (24-a-gold-tlinks/data/ABC19980108.1830.0711.tml); do
-# python evaluation-relations/code/temporal_evaluation.py $f $(echo $f | p 's/24-a-gold-tlinks/30-b-trips-relations/g')
+# python evaluation_relations/code/temporal_evaluation.py $f $(echo $f | p 's/24-a-gold-tlinks/30-b-trips-relations/g')
 # done
 
 # DURING relations are changed to SIMULTANEOUS
@@ -15,10 +15,9 @@ import re
 import sys
 import time
 
-
-def get_arg(index):
-    # for arg in sys.argv:
-    return sys.argv[index]
+# def get_arg(index):
+#     # for arg in sys.argv:
+#     return sys.argv[index]
 
 
 global_prec_matched = 0
@@ -26,17 +25,11 @@ global_rec_matched = 0
 global_system_total = 0
 global_gold_total = 0
 
-basedir = re.sub('relation_to_timegraph.py', '', get_arg(0))
-debug = float(get_arg(3))
-if len(sys.argv) > 4:
-    evaluation_method = get_arg(4).strip()
-else:
-    evaluation_method = ''
-
-cmd_folder = os.path.dirname(basedir)
-if cmd_folder not in sys.path:
-    sys.path.insert(0, cmd_folder)
 import relation_to_timegraph
+
+base_dir = None
+debug = None
+evaluation_method = None
 
 consider_DURING_as_SIMULTANEOUS = relation_to_timegraph.consider_DURING_as_SIMULTANEOUS
 
@@ -556,15 +549,31 @@ def final_score():
 
 # take input from command line and give error messages
 # call appropriate functions to evaluate 
-def input_and_evaluate():
+def input_and_evaluate(argv):
+    global basedir
+    global debug
+    global evaluation_method
+
+    basedir = re.sub('relation_to_timegraph.py', '', argv[0])
+    debug = float(argv[3])
+
+    if len(argv) > 4:
+        evaluation_method = argv[4].strip()
+    else:
+        evaluation_method = ''
+
+    cmd_folder = os.path.dirname(basedir)
+    if cmd_folder not in sys.path:
+        sys.path.insert(0, cmd_folder)
+
     invalid = 'false'
-    if len(sys.argv) < 3:
+    if len(argv) < 3:
         invalid = 'true'
     else:
-        arg1 = get_arg(1)
-        arg2 = get_arg(2)
+        arg1 = argv[1]
+        arg2 = argv[2]
         global directory_path
-        directory_path = get_directory_path(sys.argv[0])
+        directory_path = get_directory_path(argv[0])
 
         # both arguments are directories
     if invalid == 'false' and os.path.isdir(arg1) and os.path.isdir(arg2):
@@ -596,7 +605,8 @@ def input_and_evaluate():
         final_score()
 
 
-input_and_evaluate()
+if __name__ == "__main__":
+    input_and_evaluate(sys.argv)
 
 
 # print count_time, count_relation, count_node, count_chains

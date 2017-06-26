@@ -1020,7 +1020,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
     logger.debug("Computing overlap scores.")
     for system_index, (sys_spans, sys_attributes, sys_mention_id, _, _) in enumerate(system_mention_table):
         if print_score_matrix:
-            print system_index, sys_mention_id,
+            print("%d %s" % (system_index, sys_mention_id))
         for index, (gold_spans, gold_attributes, gold_mention_id, _, _) in enumerate(gold_mention_table):
             if len(gold_spans) == 0:
                 logger.warning("Found empty span gold standard at doc : %s, mention : %s" % (doc_id, gold_mention_id))
@@ -1030,7 +1030,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
             overlap = compute_overlap_score(gold_spans, sys_spans)
 
             if print_score_matrix:
-                print "%.1f" % overlap,
+                sys.stdout.write("%.1f " % overlap)
 
             if overlap > 0:
                 # maintaining a max heap based on overlap score

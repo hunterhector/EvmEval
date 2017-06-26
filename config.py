@@ -77,7 +77,11 @@ class Config:
 
     script_out_cluster = "seq_cluster.out"
 
-    temp_eval_executable = os.path.dirname(os.path.realpath(__file__)) + "/evaluation-relations/temporal_evaluation.py"
+    time_eval_path = os.path.dirname(os.path.realpath(__file__)) + "/evaluation_relations/"
+
+    time_eval_script_name = "temporal_evaluation.py"
+
+    temp_eval_executable = os.path.dirname(os.path.realpath(__file__)) + "/evaluation_relations/temporal_evaluation.py"
 
     no_script_validation = False
 

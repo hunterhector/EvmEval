@@ -265,10 +265,17 @@ def run_eval(link_type, script_output, gold_dir, sys_dir):
     gold_sub_dir = os.path.join(Config.script_result_dir, link_type, gold_dir)
     sys_sub_dir = os.path.join(Config.script_result_dir, link_type, sys_dir)
 
+    import evaluation_relations.temporal_evaluation as eval
+    import sys
+
+    old_stdout = sys.stdout
+
     with open(script_output, 'wb', 0) as out_file:
         logger.info("Evaluating directory: %s" % sys_sub_dir)
-        subprocess.call(["python", Config.temp_eval_executable, gold_sub_dir, sys_sub_dir,
-                         '0', "implicit_in_recall"], stdout=out_file)
+        sys.stdout = out_file
+        eval.input_and_evaluate([Config.temp_eval_executable, gold_sub_dir, sys_sub_dir, 0, "implicit_in_recall"])
+
+    sys.stdout = old_stdout
 
 
 def store_cluster_nodes(gold_clusters, gold_cluster_lookup, gold_nuggets, sys_nuggets, g2s_mapping):
@@ -297,14 +304,18 @@ def store_cluster_nodes(gold_clusters, gold_cluster_lookup, gold_nuggets, sys_nu
     gold_id_2_system_id = {}
     mapped_system_nuggets = set()
     for gold_index, (sys_index, _) in enumerate(g2s_mapping):
+        if sys_index < 0:
+            # When the gold mention is not mapped, the system mention id is -1.
+            continue
         gold_nugget_id = gold_nuggets[gold_index]
         sys_nugget_id = sys_nuggets[sys_index]
         gold_id_2_system_id[gold_nugget_id] = sys_nugget_id
 
     for gold_nugget_id, cluster_id in gold_cluster_lookup.iteritems():
-        sys_nugget_id = gold_id_2_system_id[gold_nugget_id]
-        rewritten_lookup[sys_nugget_id] = cluster_id
-        mapped_system_nuggets.add(sys_nugget_id)
+        if gold_nugget_id in gold_id_2_system_id:
+            sys_nugget_id = gold_id_2_system_id[gold_nugget_id]
+            rewritten_lookup[sys_nugget_id] = cluster_id
+            mapped_system_nuggets.add(sys_nugget_id)
 
     tid = 0
     max_cluster_id = 0

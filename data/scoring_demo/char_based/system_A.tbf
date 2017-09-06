@@ -1,0 +1,14 @@
+#BeginOfDocument example1
+brat_conversion	example1	E1	5,9;10,13	made way	Movement_Transport-Person	Actual
+#EndOfDocument
+#BeginOfDocument example2
+brat_conversion	example2	E1	32,33	nominating	Personnel_Nominate	Actual
+brat_conversion	example2	E2	45,57	created jobs	Personnel_Start-Position	Generic
+brat_conversion	example2	E3	80,87	created	Personnel_Start-Position	Generic
+brat_conversion	example2	E4	100,106	resign	Personnel_End-Position	Generic
+brat_conversion	example2	E5	139,146	new job	Personnel_Start-Position	Generic
+@Coreference	R1	E2,E3
+@After	A1	E1,E2
+@After	A2	E3,E4
+@After	A3	E4,E5
+#EndOfDocument

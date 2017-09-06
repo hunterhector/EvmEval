@@ -134,9 +134,9 @@ def main():
     parser.add_argument("-ct", "--coreference_threshold", type=float, help="Threshold for coreference mention mapping")
     parser.add_argument("-b", "--debug", help="turn debug mode on", action="store_true")
 
-    parser.add_argument("--eval_mode", choices=["char", "token"], default="char",
-                        help="Use Span or Token mode. The Span mode will take a span as range [start:end], while the "
-                             "Token mode consider each token is provided as a single id.")
+    # parser.add_argument("--eval_mode", choices=["char", "token"], default="char",
+    #                     help="Use Span or Token mode. The Span mode will take a span as range [start:end], while the "
+    #                          "Token mode consider each token is provided as a single id.")
 
     parser.add_argument("-wl", "--type_white_list", type=argparse.FileType('r'),
                         help="Provide a file, where each line list a mention type subtype pair to be evaluated. Types "
@@ -164,10 +164,6 @@ def main():
             logger.info(line.strip())
             EvalState.white_listed_types.add(canonicalize_string(line))
 
-    if args.eval_mode == "char":
-        MutableConfig.eval_mode = EvalMethod.Char
-    else:
-        MutableConfig.eval_mode = EvalMethod.Token
 
     if args.output is not None:
         out_path = args.output
@@ -233,14 +229,17 @@ def main():
 
     token_dir = "."
     if args.token_path is not None:
-        if args.eval_mode == EvalMethod.Token:
-            utils.terminate_with_error("Token table (-t) must be provided in token mode")
+        MutableConfig.eval_mode = EvalMethod.Token
+        logger.info("Eval mode is set to token.")
         if os.path.isdir(args.token_path):
             logger.debug("Will search token files in " + args.token_path)
             token_dir = args.token_path
         else:
             logger.debug("Cannot find given token directory at [%s], "
                          "will try search for current directory" % args.token_path)
+    else:
+        MutableConfig.eval_mode = EvalMethod.Char
+
 
     token_offset_fields = Config.default_token_offset_fields
     if args.offset_field is not None:

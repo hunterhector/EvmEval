@@ -51,7 +51,13 @@ def complete_links(src_file):
         for event1 in span_to_events[span1]:
             for event2 in span_to_events[span2]:
                 if (t, event1, event2) not in event_based_relations:
-                    new_line = "R%d\t%s Arg1:%s Arg2:%s" % (rid, t, event1, event2)
+                    arg1="Arg1"
+                    arg2="Arg2"
+                    if t == "Subevent":
+                        arg1="Parent"
+                        arg2="Child"
+
+                    new_line = "R%d\t%s %s:%s %s:%s" % (rid, t, arg1, event1, arg2, event2)
                     print "Adding new line: %s to file %s." % (new_line, basename)
                     result_lines.append(new_line)
 

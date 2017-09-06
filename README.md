@@ -64,8 +64,7 @@ In such case, the file extension is ".tab", both the converter and scorer assume
 
 scorer.py
 ----------
-The current scorer can score event mention detection and coreference based on the (.tbf) format. It also require the token table files to detect invisible words and to generate
-CoNLL style coreference files.
+The current scorer can score event mention detection and coreference based on the (.tbf) format. The current scorer consider mentions as character based. The old token based evaluation is still available, which will be triggered when the token table files are provided.
 
 ### *Features*
 1. Produce F1-like scoring by mapping system mentions to gold standard mentions,
@@ -75,6 +74,16 @@ read the scoring documentation for more details.
   b. A web based comparison output using Brat's embedded visualization (-v option)
 3. If specified, it will generate temporary conll format files, and use the conll reference-scorer to produce coreference scores
 4. Be able to conduct temporal evaluation as well if specified with the "-a" argument.
+5. Support discontinuous span mentions.
+
+### Discontinuous Span Support
+If your annotated data contains mentions that covers discontinous spans, it can be represented in TBF files and scored correctly. For example:
+
+	He made his way home. 
+
+The two tokens "made way" may be annotated as a mention, instead of the full "made his way" span. In this case, one can specify the span as: 4,8;13,16  , where 4,8 is the span for "made" and 13,16 is the span for "way". These two spans are connected by a semicolon, the full line will be something like the following:
+
+	system_a example1        E1      4,8;13,16       made way        Movement_Transport-Person       Actual
 
 ### *Usage*
     usage: scorer_v1.8.py [-h] -g GOLD -s SYSTEM [-d COMPARISON_OUTPUT]

@@ -265,13 +265,17 @@ def run_eval(link_type, script_output, gold_dir, sys_dir):
     gold_sub_dir = os.path.join(Config.script_result_dir, link_type, gold_dir)
     sys_sub_dir = os.path.join(Config.script_result_dir, link_type, sys_dir)
 
-    import evaluation_relations.temporal_evaluation as eval
     import sys
-
     old_stdout = sys.stdout
+    import evaluation_relations.temporal_evaluation as eval
+    eval.global_prec_matched = 0
+    eval.global_rec_matched = 0
+    eval.global_system_total = 0
+    eval.global_gold_total = 0
 
     with open(script_output, 'wb', 0) as out_file:
         logger.info("Evaluating directory: %s" % sys_sub_dir)
+        print(eval.global_prec_matched)
         sys.stdout = out_file
         eval.input_and_evaluate([Config.temp_eval_executable, gold_sub_dir, sys_sub_dir, 0, "implicit_in_recall"])
 

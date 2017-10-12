@@ -1024,7 +1024,7 @@ def evaluate(token_dir, coref_out, all_attribute_combinations, token_offset_fiel
             if len(gold_spans) == 0:
                 logger.warning("Found empty span gold standard at doc : %s, mention : %s" % (doc_id, gold_mention_id))
             if len(sys_spans) == 0:
-                logger.warning("Found empty span system standard at doc : %s, mention : %s" % (doc_id, sys_mention_id))
+                logger.warning("Found empty span system at doc : %s, mention : %s" % (doc_id, sys_mention_id))
 
             overlap = compute_overlap_score(gold_spans, sys_spans)
 

@@ -12,56 +12,58 @@
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/visualize_setup.js"></script>
     <script>
-		$(document).ready(
-		    function(){
-		        showClusterOnly = false
-		        fileChanged = true
-                toggleCluster()
-                syncScroll()
+        $(document).ready(
+            function () {
+                showClusterOnly = false;
+                fileChanged = true;
+                toggleCluster();
+                syncScroll();
 
                 // Control resize.
-                var resize= $("#left-panel");
+                var resize = $("#left-panel");
                 var containerWidth = $("#container").width();
 
                 $(resize).resizable({
-                      handles: 'e',
-                      minWidth: 120,
-                      resize: function(event, ui){
-                          var currentWidth = ui.size.width;
+                    handles: 'e',
+                    minWidth: 120,
+                    resize: function (event, ui) {
+                        var currentWidth = ui.size.width;
 
-                          // this accounts for padding in the panels +
-                          // borders, you could calculate this using jQuery
-                          var padding = 12;
+                        // this accounts for padding in the panels +
+                        // borders, you could calculate this using jQuery
+                        var padding = 12;
 
-                          // this accounts for some lag in the ui.size value, if you take this away
-                          // you'll get some instable behaviour
-                          $(this).width(currentWidth);
+                        // this accounts for some lag in the ui.size value, if you take this away
+                        // you'll get some instable behaviour
+                        $(this).width(currentWidth);
 
-                          // set the content panel width
-                          var rightWidth = containerWidth - currentWidth - padding;
-                          $("#right-panel").width(rightWidth);
+                        // set the content panel width
+                        var rightWidth = containerWidth - currentWidth - padding;
+                        $("#right-panel").width(rightWidth);
 
-                          // Remove content in the data holder and attributes.
-                          $('#left').empty();
-                          $('#right').empty();
-                          $('#left').removeClass("hasSVG");
-                          $('#right').removeClass("hasSVG");
+                        // Remove content in the data holder and attributes.
+                        $('#left').empty();
+                        $('#right').empty();
+                        $('#left').removeClass("hasSVG");
+                        $('#right').removeClass("hasSVG");
 
-                          // Resize to fit the width.
-                          $("#left").children().width($("#left").width());
-                          $("#right").children().width($("#right").width());
+                        // Resize to fit the width.
+                        $("#left").children().width($("#left").width());
+                        $("#right").children().width($("#right").width());
 
-                          embed();
-                      },
+                        embed();
+                    },
                 });
             }
-		);
-		var collData = loadJson("json/config/annotation_config.json");
+        );
+
+        var corpusList = loadJson("json/config/corpus_ids.json")
+        var collData = loadJson("json/config/annotation_config.json");
         var fileList = loadJson("json/config/doc_ids.json");
     </script>
 
     <style>
-        .container{
+        .container {
             width: 100%;
             /* Disable selection so it doesn't get annoying when dragging. */
             -webkit-touch-callout: none;
@@ -71,43 +73,51 @@
             -ms-user-select: none;
             user-select: none;
         }
-        #left-panel{
-        width: 49%;
-        float: left;
+
+        #left-panel {
+            width: 49%;
+            float: left;
         }
-        #right-panel{
-        width: 49%;
-        float: left;
+
+        #right-panel {
+            width: 49%;
+            float: left;
         }
-        .left{
-        float:left;
-        width:50%;
-        overflow:hidden;
+
+        .left {
+            float: left;
+            width: 50%;
+            overflow: hidden;
         }
-        .right{
-        float:right;
-        width:50%;
-        overflow:hidden;
+
+        .right {
+            float: right;
+            width: 50%;
+            overflow: hidden;
         }
-        .bar{
-        width:100%;
-        overflow:hidden;
+
+        .bar {
+            width: 100%;
+            overflow: hidden;
         }
+
         .color-box {
-        width: 50px;
-        height: 20px;
-        display: inline-block;
-        position: relative;
-        left: 5px;
-        top: 5px;
-        margin-left: 8px;
-        margin-right: 8px;
+            width: 50px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+            left: 5px;
+            top: 5px;
+            margin-left: 8px;
+            margin-right: 8px;
         }
-        .hidden{
-        display:none;
+
+        .hidden {
+            display: none;
         }
-        .clear{
-        clear:both;
+
+        .clear {
+            clear: both;
         }
     </style>
 </head>
@@ -115,6 +125,12 @@
 
 <!-- load all the libraries upfront, which takes forever. -->
 <script type="text/javascript" src="js/brat_loader.js"></script>
+
+<div>
+    <p>Select a corpus first.</p>
+    <select name="corpus_selector" id="corpus_selector" size="10" style="width:100%" onchange="onCorpusChange()">
+    </select>
+</div>
 
 <div class="left">
     <p>Select a document when Brat loaded...</p>
@@ -150,32 +166,35 @@
 
 
 <div class="bar" id="main-tool-bar">
-    <input type="checkbox" name="main-tool" value="show_clusters" id="show-cluster-checkbox" onchange="onFileChange()"/> Use Cluster Selectors
+    <input type="checkbox" name="main-tool" value="show_clusters" id="show-cluster-checkbox" onchange="onFileChange()"/>
+    Use Cluster Selectors
 </div>
 
 <div class="left hidden" id="left-cluster-div">
     <p>Select Left Clusters (hold Ctrl/Command for multiple):</p>
-    <select name="left-cluster-selector" id="left-cluster-selector" size="10" style="width:100%" onchange="updateData()" multiple>
+    <select name="left-cluster-selector" id="left-cluster-selector" size="10" style="width:100%" onchange="updateData()"
+            multiple>
     </select>
 </div>
 <div class='right hidden' id="right-cluster-div">
     <p>Select Right Clusters (hold Ctrl/Command for multiple):</p>
-    <select name="right-cluster-selector" id="right-cluster-selector" size="10" style="width:100%" onchange="updateData()" multiple>
+    <select name="right-cluster-selector" id="right-cluster-selector" size="10" style="width:100%"
+            onchange="updateData()" multiple>
     </select>
 </div>
 
 <div id="container">
-<div id='left-panel'>
-    <h2>Gold Standard</h2>
-    <div id='left'>
+    <div id='left-panel'>
+        <h2>Gold Standard</h2>
+        <div id='left'>
+        </div>
     </div>
-</div>
-<div id='right-panel'>
-    <h2>System</h2>
-    <div id='right'>
+    <div id='right-panel'>
+        <h2>System</h2>
+        <div id='right'>
+        </div>
     </div>
-</div>
-<div class="clear"></div>
+    <div class="clear"></div>
 </div>
 
 <script type="text/javascript">
@@ -185,15 +204,18 @@
     var systemDataDisplay;
     var goldDataDisplay;
 
-    var currentFileName
-    var fileChanged
-    var coref
+    var currentCorpusName;
+    var currentFileName;
+    var fileChanged;
+    var corpusChanged;
+    var coref;
 
     setSelectorOptions("selector", fileList);
+    setSelectorOptions("corpus_selector", corpusList)
 
     var leftDispatcher;
     var rightDispatcher;
-    head.ready(function() {
+    head.ready(function () {
         loadDisplayData();
         embed();
     });

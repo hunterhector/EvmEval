@@ -34,8 +34,6 @@ type_mismatch_attr = "type_wrong"
 
 token_file_ext = ".tab"
 source_file_ext = ".txt"
-visualization_path = "visualization"
-visualization_json_data_subpath = "json"
 
 config_subpath = "config"
 span_subpath = "span"
@@ -58,11 +56,18 @@ doc_ids_to_score = []
 all_possible_mention_types = set()
 all_possible_realis_types = set()
 
-append_json = False
 
-char_based = False
+class Config:
+    append_json = False
+    token_based = False
+    visualization_config_subpath = "json"
+    corpus_parent_path = "corpus"
+    corpus_base_path = None
+    visualization_path = "visualization"
 
-use_server = True
+    def __init__(self):
+        pass
+
 
 logger = logging.getLogger()
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -75,8 +80,6 @@ logger.setLevel(logging.INFO)
 def main():
     global token_file_ext
     global source_file_ext
-    global visualization_path
-    global visualization_json_data_subpath
     global token_offset_fields
     global text_dir
     global token_dir
@@ -94,10 +97,12 @@ def main():
     parser.add_argument(
         "-x", "--text", help="Path to the directory containing the original text", required=True
     )
-
+    parser.add_argument(
+        "-c", "--corpus", help="Corpus name", required=True
+    )
     parser.add_argument("-v", "--visualization_html_path",
                         help="The Path to find visualization web pages, default path is [%s]" %
-                             visualization_path)
+                             Config.visualization_path)
     parser.add_argument(
         "-of", "--offset_field", help="A pair of integer indicates which column we should "
                                       "read the offset in the token mapping file, index starts"
@@ -114,7 +119,7 @@ def main():
         "-se", "--source_file_extension",
         help="any extension appended after docid of source files."
              "Default is [%s]" % source_file_ext)
-    parser.add_argument("--char_based", action="store_true")
+    parser.add_argument("--token_based", action="store_true")
     parser.add_argument("-ns", "--no_server", action="store_false")
 
     args = parser.parse_args()
@@ -122,10 +127,9 @@ def main():
     if args.text is not None:
         text_dir = args.text
 
-    char_based = args.char_based
-    use_server = args.no_server
+    Config.token_based = args.token_based
 
-    if not char_based:
+    if Config.token_based:
         if args.tokenPath is not None:
             if os.path.isdir(args.tokenPath):
                 logger.debug("Will search token files in " + args.tokenPath)
@@ -138,7 +142,7 @@ def main():
             logger.warn("Tokens not provided")
 
     if args.visualization_html_path is not None:
-        visualization_path = args.visualization_html_path
+        Config.visualization_path = args.visualization_html_path
 
     if args.offset_field is not None:
         try:
@@ -153,34 +157,31 @@ def main():
         source_file_ext = args.source_file_extension
 
     if args.append:
-        append_json = True
+        Config.append_json = True
+
+    Config.corpus_base_path = args.corpus
 
     validate()
     parse_mapping_file(open(args.comparison_output))
 
-    prepare_diff_setting(doc_ids_to_score, all_possible_mention_types, all_possible_realis_types,
-                         os.path.join(visualization_path, visualization_json_data_subpath))
-    if use_server:
+    corpus_names = set(os.listdir(os.path.join(Config.visualization_path, Config.corpus_parent_path)))
+    corpus_names.add(args.corpus)
+
+    print(corpus_names)
+
+    prepare_diff_setting(doc_ids_to_score, corpus_names, all_possible_mention_types, all_possible_realis_types,
+                         os.path.join(Config.visualization_path, Config.visualization_config_subpath))
+    if args.no_server:
         start_server()
 
 
 def validate():
     if not os.path.isdir(text_dir):
         logger.error("Cannot find text directory : [%s], cannot do visualization." % text_dir)
-    if not char_based and not os.path.isdir(token_dir):
+    if Config.token_based and not os.path.isdir(token_dir):
         logger.error("Cannot find token directory : [%s], cannot do visualization." % text_dir)
-    if os.path.isdir(visualization_path):
-        json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
-        config_dir = os.path.join(json_dir, config_subpath)
-        span_dir = os.path.join(json_dir, span_subpath)
-        coref_dir = os.path.join(json_dir, coref_subpath)
-        surface_dir = os.path.join(json_dir, surface_subpath)
-
-        mkdirs(config_dir)
-        mkdirs(span_dir)
-        mkdirs(coref_dir)
-        mkdirs(surface_dir)
-        logger.info("Generating Brat annotation at " + visualization_path)
+    if os.path.isdir(Config.visualization_path):
+        logger.info("Generating Brat annotation at " + Config.visualization_path)
     else:
         logger.error("Visualization directory does not exists! Cannot do visualization. You could specify with -v.")
         sys.exit(1)
@@ -191,23 +192,21 @@ def mkdirs(p):
         os.makedirs(p)
 
 
-def prepare_diff_setting(all_doc_ids, all_mention_types, all_realis_types, json_path):
+def prepare_diff_setting(all_doc_ids, corpus_names, all_mention_types, all_realis_types, json_path):
     unique_doc_ids = set()
-    if append_json:
+    if Config.append_json:
+        # Take the original ids and load.
         current_doc_id_path = os.path.join(json_path, config_subpath, "doc_ids.json")
         if os.path.exists(current_doc_id_path):
             unique_doc_ids.update(json.load(open(current_doc_id_path)))
+
     unique_doc_ids.update(all_doc_ids)
-    doc_id_data = sorted(unique_doc_ids)
 
-    # doc_id_list_json_out = open(os.path.join(json_path, config_subpath, "doc_ids.json"), 'w')
-    # json.dump(doc_id_data, doc_id_list_json_out)
-    # doc_id_list_json_out.close()
-
-    dump_json(doc_id_data, os.path.join(json_path, config_subpath), "doc_ids.json")
+    dump_json(sorted(unique_doc_ids), os.path.join(json_path, config_subpath), "doc_ids.json")
+    dump_json(sorted(corpus_names), os.path.join(json_path, config_subpath), "corpus_ids.json")
 
     old_config_data = {}
-    if append_json:
+    if Config.append_json:
         current_config_path = os.path.join(json_path, config_subpath, "annotation_config.json")
         if os.path.exists(current_config_path):
             old_config_data = json.load(open(current_config_path))
@@ -277,8 +276,8 @@ def generate_mention_annotation_setting(all_mention_types, all_realis_types):
 def start_server():
     print("Please use the following URL for visualization, interrupt to stop: ")
     print("http://localhost:%s/" % PORT)
-    print("Server log stored at : %s" % os.path.join(visualization_path, log_path))
-    os.chdir(visualization_path)
+    print("Server log stored at : %s" % os.path.join(Config.visualization_path, log_path))
+    os.chdir(Config.visualization_path)
     log_file = open(log_path, 'w')
     sys.stderr = log_file
     handler = SimpleHTTPServer.SimpleHTTPRequestHandler
@@ -362,7 +361,7 @@ def create_mention_json(text, all_annotations, token_map, span_matching_score, r
     attribute_id_record = [{}, 1]
     # event_id_record = [{}, 1]
 
-    for index, (id_based_annotations, (mention_type, realis), event_id) in enumerate(all_annotations):
+    for index, (id_based_annotations, (mention_type, realis, mention_text), event_id) in enumerate(all_annotations):
         text_bound_id, annotation = parse_as_char_annotation(id_based_annotations, token_map, text_bound_id_record)
         span_status = span_matching_score[index]
 
@@ -429,22 +428,10 @@ def get_character_annotation(id_based_annotations, token_map):
     :param token_map: Token id to character span mapping
     :return: The result character based annotation
     """
-    # spans = []
-    # last_id = -1
-    #
-    # for sorted_token in sorted(token_based_annotations, key=natural_key):
-    #     this_id = int(''.join(str(x) for x in natural_key(sorted_token)))
-    #     if last_id == -1 or this_id != last_id + 1:
-    #         spans.append([])
-    #     last_id = this_id
-    #
-    #     spans[-1].append(sorted_token)
-    # return [[token_map[s[0]][0], token_map[s[-1]][1] - 1] for s in spans]
-    #
-    if char_based:
-        return get_char_annotation_from_chars(id_based_annotations)
-    else:
+    if Config.token_based:
         return get_char_annotation_from_tokens(id_based_annotations, token_map)
+    else:
+        return get_char_annotation_from_chars(id_based_annotations)
 
 
 def get_char_annotation_from_chars(char_based_annotations):
@@ -604,7 +591,7 @@ def prepare_coref_data(doc_id, coref_lines):
     gold_clusters, gold_surface = generate_coref_json(gold_corefs)
     sys_clusters, sys_surface = generate_coref_json(sys_corefs)
 
-    json_dir = os.path.join(visualization_path, visualization_json_data_subpath)
+    json_dir = os.path.join(Config.visualization_path, Config.corpus_parent_path, Config.corpus_base_path)
     coref_dir = os.path.join(json_dir, coref_subpath)
     surface_dir = os.path.join(json_dir, surface_subpath)
 
@@ -664,8 +651,8 @@ def parse_mapping(doc_id, doc_lines):
         return
 
     write_mention_diff_data(text, gold_annotations, system_annotations, token_map,
-                            os.path.join(visualization_path, visualization_json_data_subpath), doc_id,
-                            assigned_gold_2_system_mapping)
+                            os.path.join(Config.visualization_path, Config.corpus_parent_path, Config.corpus_base_path),
+                            doc_id, assigned_gold_2_system_mapping)
 
     doc_ids_to_score.append(doc_id)
 

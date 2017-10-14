@@ -1,0 +1,49 @@
+{
+    "text": "\n                           \n            \n                     \n\n\n\nconvicted rapist and max factor heir andrew luster is back in\ncalifornia. luster returned to los angeles yesterday from mexico\nfollowing his capture tuesday by american bounlty hunters. luster\nskipped bail during his trial in january for raping and drugging three\nwomen. he was sentenced in an sten shah to 124 years in prison.\u3002\n\n\n                     \n\n", 
+    "attributes": [
+        [
+            "A1", 
+            "actual", 
+            "E1"
+        ], 
+        [
+            "A2", 
+            "actual", 
+            "E2"
+        ]
+    ], 
+    "events": [
+        [
+            "E1", 
+            "T1", 
+            []
+        ], 
+        [
+            "E2", 
+            "T2", 
+            []
+        ]
+    ], 
+    "triggers": [
+        [
+            "T1", 
+            "justicetrialhearing", 
+            [
+                [
+                    284, 
+                    289
+                ]
+            ]
+        ], 
+        [
+            "T2", 
+            "justicesentence", 
+            [
+                [
+                    345, 
+                    354
+                ]
+            ]
+        ]
+    ]
+}

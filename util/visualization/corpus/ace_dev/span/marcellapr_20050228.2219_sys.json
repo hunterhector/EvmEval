@@ -1,0 +1,29 @@
+{
+    "text": "\n                          \n          \n                     \n\n                     \n\n\n                  \n                                 \n Sock Painting Party \u3002\nHowdy PR,\u3002\nWe are going to be having a sock painting party at my house instead of\nthe normal meeting at St. Mary's. It is going to be Wednesday from 5\ntill 10. Come and go as you need to. We need lots and lots of help\nbecause there are tons of socks to do. We have already made one pair\nand they look awesome! Everyone from the campaign in invited! If you\ncan please bring... junky clothes (wear shorts), scissors, blowdryers,\nduck tape and plastic bags. The directions to my house are...\u3002\n- Start on Texas Ave. and head away from Bryan\n- Go down Texas Ave. until you come to South West Parkway\n- Take right on SW Parkway\n- Go down SW Parkway until you come to Welsh (stoplight)\n- Take right on Welsh\n- The apartment complex is called Renaissance Park and is on the\nimmediate left\n- Go into second entrance of the complex on left (mailbox should be on\nright side)\n- Park anywhere\n- I am in building 24 apartment #241\n- We will possibly be out back around pool if no one answers door\u3002\n\n\n\n\n", 
+    "attributes": [
+        [
+            "A1", 
+            "actual", 
+            "E1"
+        ]
+    ], 
+    "events": [
+        [
+            "E1", 
+            "T1", 
+            []
+        ]
+    ], 
+    "triggers": [
+        [
+            "T1", 
+            "contactmeet", 
+            [
+                [
+                    255, 
+                    262
+                ]
+            ]
+        ]
+    ]
+}

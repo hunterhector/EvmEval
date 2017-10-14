@@ -1,0 +1,54 @@
+{
+    "text": "\n                              \n            \n                     \n\n\n\npolice in pennsylvania a student fatally shot a principal before\nkilling himself this morning. it happened in the cafeteria of red lion\narea junior high school about 30 miles southeast of harrisburg. it\nhappened at 7:30 this morning. students then were moved across the\nstreet to a senior high school.\u3002\n\n\n                     \n\n", 
+    "attributes": [
+        [
+            "A2", 
+            "type_wrong", 
+            "E1"
+        ], 
+        [
+            "A1", 
+            "actual", 
+            "E1"
+        ], 
+        [
+            "A3", 
+            "actual", 
+            "E2"
+        ]
+    ], 
+    "events": [
+        [
+            "E1", 
+            "T1", 
+            []
+        ], 
+        [
+            "E2", 
+            "T2", 
+            []
+        ]
+    ], 
+    "triggers": [
+        [
+            "T1", 
+            "conflictattack_wrong_status", 
+            [
+                [
+                    111, 
+                    115
+                ]
+            ]
+        ], 
+        [
+            "T2", 
+            "movementtransport", 
+            [
+                [
+                    323, 
+                    328
+                ]
+            ]
+        ]
+    ]
+}

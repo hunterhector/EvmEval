@@ -1,0 +1,69 @@
+{
+    "text": "\n                            \n            \n                     \n\n\n\ni just want to update you on kofi annan's remarks. the u.n.\nsecretary-general did not answer questions on iraq as a\nresult. there's nothing to report on that front. we have\njust gotten word from the ninth circuit court of appeals\nthat that court has now put on hold its ruling banning the\npledge of allegiance in public classrooms. schools in nine\nwestern states would have been prohibited from having\nstudents say the pledge starting monday. the stay was\ngranted to give the school districts involved in the\ninitial cases 90 days to appeal to the u.s. supreme court\nhere in washington. the appeals court ruled last summer,\nbut the phrase under god which was ad ded to the pledge in\nthe 1950s is an unconstitutional endorsement of religion.\nwe'll continue to follow this court ruling as well. here's\nhow you're weighing in on our web question of the day.\nremember when we've been asking you this question. who is\nthe number one threat facing the u.s.? is it saddam\nhussein, kim jong il or osama bin laden? look at the\nresults. 13%% of you say saddam hussein. 14% of you who\nvoted say kim jong il, 41% say osama bin laden. remember,\nthis is not, not a 13, 46, 4 1, those are the numbers. you\nsee them, 13% for saddam hussein, 46% for kim jong il, 41%\nfor osama bin laden. remember this, ask not a scientific\npoll,\u3002\n\n\n                     \n\n", 
+    "attributes": [
+        [
+            "A2", 
+            "realis_wrong", 
+            "E1"
+        ], 
+        [
+            "A3", 
+            "type_wrong", 
+            "E1"
+        ], 
+        [
+            "A1", 
+            "actual", 
+            "E1"
+        ], 
+        [
+            "A5", 
+            "realis_wrong", 
+            "E2"
+        ], 
+        [
+            "A6", 
+            "type_wrong", 
+            "E2"
+        ], 
+        [
+            "A4", 
+            "actual", 
+            "E2"
+        ]
+    ], 
+    "events": [
+        [
+            "E1", 
+            "T1", 
+            []
+        ], 
+        [
+            "E2", 
+            "T2", 
+            []
+        ]
+    ], 
+    "triggers": [
+        [
+            "T1", 
+            "justiceappeal_miss", 
+            [
+                [
+                    602, 
+                    608
+                ]
+            ]
+        ], 
+        [
+            "T2", 
+            "justiceappeal_miss", 
+            [
+                [
+                    845, 
+                    851
+                ]
+            ]
+        ]
+    ]
+}

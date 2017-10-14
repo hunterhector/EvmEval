@@ -1,0 +1,69 @@
+{
+    "text": "\n                              \n            \n                     \n\n\n\ni'm alisha davis. used to be the king of pop. now you could call him\nthe king of lawsuits. michael jackson filed suit against universal\nmusic, the parent company of motown records saying he owe him for\nmusic he recorded with the jackson five back in the 1970s. the gloved\none claims the label has been releasing new albums and jackson five\nmerchandise without giving him \"a single dollar.\" jackson has been in\nand out of courtrooms lately. in recent months, he's been sued by an\nauction house for non-payment, and by a concert promoter for allegedly\nbacking out of two millennium performances.\u3002\n\n\n                     \n\n", 
+    "attributes": [
+        [
+            "A1", 
+            "actual", 
+            "E1"
+        ], 
+        [
+            "A2", 
+            "actual", 
+            "E2"
+        ], 
+        [
+            "A3", 
+            "actual", 
+            "E3"
+        ]
+    ], 
+    "events": [
+        [
+            "E1", 
+            "T1", 
+            []
+        ], 
+        [
+            "E2", 
+            "T2", 
+            []
+        ], 
+        [
+            "E3", 
+            "T3", 
+            []
+        ]
+    ], 
+    "triggers": [
+        [
+            "T1", 
+            "justicesue", 
+            [
+                [
+                    151, 
+                    159
+                ]
+            ]
+        ], 
+        [
+            "T2", 
+            "justicesue", 
+            [
+                [
+                    183, 
+                    187
+                ]
+            ]
+        ], 
+        [
+            "T3", 
+            "justicesue", 
+            [
+                [
+                    538, 
+                    542
+                ]
+            ]
+        ]
+    ]
+}

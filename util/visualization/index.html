@@ -75,12 +75,12 @@
             user-select: none;
         }
 
-        #left-panel {
+        .left-panel {
             width: 49%;
             float: left;
         }
 
-        #right-panel {
+        .right-panel {
             width: 49%;
             float: left;
         }
@@ -171,26 +171,28 @@
     Use Cluster Selectors
 </div>
 
-<div class="left hidden" id="left-cluster-div">
+<div class="container">
+<div class="left-panel hidden" id="left-cluster-div">
     <p>Select Left Clusters (hold Ctrl/Command for multiple):</p>
     <select name="left-cluster-selector" id="left-cluster-selector" size="10" style="width:100%" onchange="updateData()"
             multiple>
     </select>
 </div>
-<div class='right hidden' id="right-cluster-div">
+<div class="right-panel hidden" id="right-cluster-div">
     <p>Select Right Clusters (hold Ctrl/Command for multiple):</p>
     <select name="right-cluster-selector" id="right-cluster-selector" size="10" style="width:100%"
             onchange="updateData()" multiple>
     </select>
 </div>
+</div>
 
-<div id="container">
-    <div id='left-panel'>
+<div class="container">
+    <div class='left-panel'>
         <h2>Gold Standard</h2>
         <div id='left'>
         </div>
     </div>
-    <div id='right-panel'>
+    <div class='right-panel'>
         <h2>System</h2>
         <div id='right'>
         </div>

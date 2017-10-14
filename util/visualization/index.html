@@ -70,7 +70,7 @@
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
-            -moz-user-select: moz-none;
+            -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
         }
@@ -92,7 +92,7 @@
         }
 
         .right {
-            float: right;
+            float: left;
             width: 49%;
             overflow: hidden;
         }
@@ -172,13 +172,13 @@
 </div>
 
 <div class="container">
-<div class="left-panel hidden" id="left-cluster-div">
+<div class="left hidden" id="left-cluster-div">
     <p>Select Left Clusters (hold Ctrl/Command for multiple):</p>
     <select name="left-cluster-selector" id="left-cluster-selector" size="10" style="width:100%" onchange="updateData()"
             multiple>
     </select>
 </div>
-<div class="right-panel hidden" id="right-cluster-div">
+<div class="right hidden" id="right-cluster-div">
     <p>Select Right Clusters (hold Ctrl/Command for multiple):</p>
     <select name="right-cluster-selector" id="right-cluster-selector" size="10" style="width:100%"
             onchange="updateData()" multiple>

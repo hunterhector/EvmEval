@@ -168,12 +168,12 @@ function selectSubset() {
     if (fileChanged) {
         coref = loadCoref();
         setClusterList(coref.goldCoref, coref.sysCoref)
-        fileChanged = false
+        fileChanged = false;
         corpusChanged = false
     }
 
     if (document.getElementById("show-cluster-checkbox").checked) {
-        var clusterSelected = loadEventClusterSelected()
+        var clusterSelected = loadEventClusterSelected();
         goldDataDisplay = filterEvents(goldData, coref.goldCoref, clusterSelected.goldCluster)
         systemDataDisplay = filterEvents(systemData, coref.sysCoref, clusterSelected.sysCluster)
     } else {

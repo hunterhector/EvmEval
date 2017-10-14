@@ -1,0 +1,870 @@
+{
+    "event_types": [
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "justicetrialhearing", 
+                "justicetrialhearing"
+            ], 
+            "type": "justicetrialhearing"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "justicetrialhearing", 
+                "justicetrialhearing"
+            ], 
+            "type": "justicetrialhearing_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "justicetrialhearing", 
+                "justicetrialhearing"
+            ], 
+            "type": "justicetrialhearing_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "justicetrialhearing", 
+                "justicetrialhearing"
+            ], 
+            "type": "justicetrialhearing_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "contactphonewrite", 
+                "contactphonewrite"
+            ], 
+            "type": "contactphonewrite"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "contactphonewrite", 
+                "contactphonewrite"
+            ], 
+            "type": "contactphonewrite_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "contactphonewrite", 
+                "contactphonewrite"
+            ], 
+            "type": "contactphonewrite_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "contactphonewrite", 
+                "contactphonewrite"
+            ], 
+            "type": "contactphonewrite_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "businessdeclarebankruptcy", 
+                "businessdeclarebankruptcy"
+            ], 
+            "type": "businessdeclarebankruptcy"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "businessdeclarebankruptcy", 
+                "businessdeclarebankruptcy"
+            ], 
+            "type": "businessdeclarebankruptcy_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "businessdeclarebankruptcy", 
+                "businessdeclarebankruptcy"
+            ], 
+            "type": "businessdeclarebankruptcy_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "businessdeclarebankruptcy", 
+                "businessdeclarebankruptcy"
+            ], 
+            "type": "businessdeclarebankruptcy_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "personnelendposition", 
+                "personnelendposition"
+            ], 
+            "type": "personnelendposition"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "personnelendposition", 
+                "personnelendposition"
+            ], 
+            "type": "personnelendposition_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "personnelendposition", 
+                "personnelendposition"
+            ], 
+            "type": "personnelendposition_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "personnelendposition", 
+                "personnelendposition"
+            ], 
+            "type": "personnelendposition_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "transactiontransfermoney", 
+                "transactiontransfermoney"
+            ], 
+            "type": "transactiontransfermoney"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "transactiontransfermoney", 
+                "transactiontransfermoney"
+            ], 
+            "type": "transactiontransfermoney_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "transactiontransfermoney", 
+                "transactiontransfermoney"
+            ], 
+            "type": "transactiontransfermoney_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "transactiontransfermoney", 
+                "transactiontransfermoney"
+            ], 
+            "type": "transactiontransfermoney_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "personnelelect", 
+                "personnelelect"
+            ], 
+            "type": "personnelelect"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "personnelelect", 
+                "personnelelect"
+            ], 
+            "type": "personnelelect_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "personnelelect", 
+                "personnelelect"
+            ], 
+            "type": "personnelelect_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "personnelelect", 
+                "personnelelect"
+            ], 
+            "type": "personnelelect_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "transactiontransferownership", 
+                "transactiontransferownership"
+            ], 
+            "type": "transactiontransferownership"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "transactiontransferownership", 
+                "transactiontransferownership"
+            ], 
+            "type": "transactiontransferownership_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "transactiontransferownership", 
+                "transactiontransferownership"
+            ], 
+            "type": "transactiontransferownership_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "transactiontransferownership", 
+                "transactiontransferownership"
+            ], 
+            "type": "transactiontransferownership_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "personnelstartposition", 
+                "personnelstartposition"
+            ], 
+            "type": "personnelstartposition"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "personnelstartposition", 
+                "personnelstartposition"
+            ], 
+            "type": "personnelstartposition_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "personnelstartposition", 
+                "personnelstartposition"
+            ], 
+            "type": "personnelstartposition_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "personnelstartposition", 
+                "personnelstartposition"
+            ], 
+            "type": "personnelstartposition_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "conflictattack", 
+                "conflictattack"
+            ], 
+            "type": "conflictattack"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "conflictattack", 
+                "conflictattack"
+            ], 
+            "type": "conflictattack_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "conflictattack", 
+                "conflictattack"
+            ], 
+            "type": "conflictattack_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "conflictattack", 
+                "conflictattack"
+            ], 
+            "type": "conflictattack_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "businessstartorg", 
+                "businessstartorg"
+            ], 
+            "type": "businessstartorg"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "businessstartorg", 
+                "businessstartorg"
+            ], 
+            "type": "businessstartorg_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "businessstartorg", 
+                "businessstartorg"
+            ], 
+            "type": "businessstartorg_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "businessstartorg", 
+                "businessstartorg"
+            ], 
+            "type": "businessstartorg_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "conflictdemonstrate", 
+                "conflictdemonstrate"
+            ], 
+            "type": "conflictdemonstrate"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "conflictdemonstrate", 
+                "conflictdemonstrate"
+            ], 
+            "type": "conflictdemonstrate_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "conflictdemonstrate", 
+                "conflictdemonstrate"
+            ], 
+            "type": "conflictdemonstrate_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "conflictdemonstrate", 
+                "conflictdemonstrate"
+            ], 
+            "type": "conflictdemonstrate_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "justicesue", 
+                "justicesue"
+            ], 
+            "type": "justicesue"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "justicesue", 
+                "justicesue"
+            ], 
+            "type": "justicesue_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "justicesue", 
+                "justicesue"
+            ], 
+            "type": "justicesue_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "justicesue", 
+                "justicesue"
+            ], 
+            "type": "justicesue_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "lifedie", 
+                "lifedie"
+            ], 
+            "type": "lifedie"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "lifedie", 
+                "lifedie"
+            ], 
+            "type": "lifedie_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "lifedie", 
+                "lifedie"
+            ], 
+            "type": "lifedie_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "lifedie", 
+                "lifedie"
+            ], 
+            "type": "lifedie_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "movementtransport", 
+                "movementtransport"
+            ], 
+            "type": "movementtransport"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "movementtransport", 
+                "movementtransport"
+            ], 
+            "type": "movementtransport_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "movementtransport", 
+                "movementtransport"
+            ], 
+            "type": "movementtransport_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "movementtransport", 
+                "movementtransport"
+            ], 
+            "type": "movementtransport_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "justicearrestjail", 
+                "justicearrestjail"
+            ], 
+            "type": "justicearrestjail"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "justicearrestjail", 
+                "justicearrestjail"
+            ], 
+            "type": "justicearrestjail_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "justicearrestjail", 
+                "justicearrestjail"
+            ], 
+            "type": "justicearrestjail_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "justicearrestjail", 
+                "justicearrestjail"
+            ], 
+            "type": "justicearrestjail_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "justicesentence", 
+                "justicesentence"
+            ], 
+            "type": "justicesentence"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "justicesentence", 
+                "justicesentence"
+            ], 
+            "type": "justicesentence_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "justicesentence", 
+                "justicesentence"
+            ], 
+            "type": "justicesentence_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "justicesentence", 
+                "justicesentence"
+            ], 
+            "type": "justicesentence_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "justiceappeal", 
+                "justiceappeal"
+            ], 
+            "type": "justiceappeal"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "justiceappeal", 
+                "justiceappeal"
+            ], 
+            "type": "justiceappeal_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "justiceappeal", 
+                "justiceappeal"
+            ], 
+            "type": "justiceappeal_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "justiceappeal", 
+                "justiceappeal"
+            ], 
+            "type": "justiceappeal_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "lifeinjure", 
+                "lifeinjure"
+            ], 
+            "type": "lifeinjure"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "lifeinjure", 
+                "lifeinjure"
+            ], 
+            "type": "lifeinjure_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "lifeinjure", 
+                "lifeinjure"
+            ], 
+            "type": "lifeinjure_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "lifeinjure", 
+                "lifeinjure"
+            ], 
+            "type": "lifeinjure_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "contactmeet", 
+                "contactmeet"
+            ], 
+            "type": "contactmeet"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "contactmeet", 
+                "contactmeet"
+            ], 
+            "type": "contactmeet_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "contactmeet", 
+                "contactmeet"
+            ], 
+            "type": "contactmeet_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "contactmeet", 
+                "contactmeet"
+            ], 
+            "type": "contactmeet_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "businessendorg", 
+                "businessendorg"
+            ], 
+            "type": "businessendorg"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "businessendorg", 
+                "businessendorg"
+            ], 
+            "type": "businessendorg_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "businessendorg", 
+                "businessendorg"
+            ], 
+            "type": "businessendorg_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "businessendorg", 
+                "businessendorg"
+            ], 
+            "type": "businessendorg_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "justiceconvict", 
+                "justiceconvict"
+            ], 
+            "type": "justiceconvict"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "justiceconvict", 
+                "justiceconvict"
+            ], 
+            "type": "justiceconvict_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "justiceconvict", 
+                "justiceconvict"
+            ], 
+            "type": "justiceconvict_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "justiceconvict", 
+                "justiceconvict"
+            ], 
+            "type": "justiceconvict_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "justicechargeindict", 
+                "justicechargeindict"
+            ], 
+            "type": "justicechargeindict"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "justicechargeindict", 
+                "justicechargeindict"
+            ], 
+            "type": "justicechargeindict_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "justicechargeindict", 
+                "justicechargeindict"
+            ], 
+            "type": "justicechargeindict_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "justicechargeindict", 
+                "justicechargeindict"
+            ], 
+            "type": "justicechargeindict_wrong_status"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "lightgreen", 
+            "labels": [
+                "justiceexecute", 
+                "justiceexecute"
+            ], 
+            "type": "justiceexecute"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#aea0d6", 
+            "labels": [
+                "justiceexecute", 
+                "justiceexecute"
+            ], 
+            "type": "justiceexecute_part"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#ffccaa", 
+            "labels": [
+                "justiceexecute", 
+                "justiceexecute"
+            ], 
+            "type": "justiceexecute_miss"
+        }, 
+        {
+            "borderColor": "darken", 
+            "bgColor": "#1E90FF", 
+            "labels": [
+                "justiceexecute", 
+                "justiceexecute"
+            ], 
+            "type": "justiceexecute_wrong_status"
+        }
+    ], 
+    "event_attribute_types": [
+        {
+            "values": {
+                "NOT_ANNOTATED": {
+                    "glyph": "N/A"
+                }
+            }, 
+            "bool": "NOT_ANNOTATED", 
+            "type": "NOT_ANNOTATED"
+        }, 
+        {
+            "values": {
+                "realis_wrong": {
+                    "glyph": " \u2605 "
+                }
+            }, 
+            "bool": "realis_wrong", 
+            "type": "realis_wrong"
+        }, 
+        {
+            "values": {
+                "type_wrong": {
+                    "glyph": " \u2718 "
+                }
+            }, 
+            "bool": "type_wrong", 
+            "type": "type_wrong"
+        }, 
+        {
+            "values": {
+                "Actual": {
+                    "glyph": "Actual"
+                }
+            }, 
+            "bool": "Actual", 
+            "type": "actual"
+        }
+    ]
+}

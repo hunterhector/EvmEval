@@ -196,18 +196,18 @@ def prepare_diff_setting(all_doc_ids, corpus_names, all_mention_types, all_reali
     unique_doc_ids = set()
     if Config.append_json:
         # Take the original ids and load.
-        current_doc_id_path = os.path.join(json_path, config_subpath, "doc_ids.json")
+        current_doc_id_path = os.path.join(json_path, Config.corpus_base_path, "doc_ids.json")
         if os.path.exists(current_doc_id_path):
             unique_doc_ids.update(json.load(open(current_doc_id_path)))
 
     unique_doc_ids.update(all_doc_ids)
+    dump_json(sorted(unique_doc_ids), os.path.join(json_path, Config.corpus_base_path), "doc_ids.json")
 
-    dump_json(sorted(unique_doc_ids), os.path.join(json_path, config_subpath), "doc_ids.json")
     dump_json(sorted(corpus_names), os.path.join(json_path, config_subpath), "corpus_ids.json")
 
     old_config_data = {}
     if Config.append_json:
-        current_config_path = os.path.join(json_path, config_subpath, "annotation_config.json")
+        current_config_path = os.path.join(json_path, Config.corpus_base_path, "annotation_config.json")
         if os.path.exists(current_config_path):
             old_config_data = json.load(open(current_config_path))
 
@@ -220,11 +220,7 @@ def prepare_diff_setting(all_doc_ids, corpus_names, all_mention_types, all_reali
             if old_mention_type not in new_mention_types:
                 mention_config["event_types"].append(mention_anno)
 
-    # annotation_config_json_out = open(os.path.join(json_path, config_subpath, "annotation_config.json"), 'w')
-    # json.dump(mention_config, annotation_config_json_out, indent=4)
-    # annotation_config_json_out.close()
-
-    dump_json(mention_config, os.path.join(json_path, config_subpath), "annotation_config.json")
+    dump_json(mention_config, os.path.join(json_path, Config.corpus_base_path), "annotation_config.json")
 
 
 def generate_mention_annotation_setting(all_mention_types, all_realis_types):

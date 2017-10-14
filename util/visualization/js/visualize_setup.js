@@ -12,6 +12,15 @@ function loadJson(relativePath) {
     return jsonData
 }
 
+function loadFileList() {
+    fileList = loadJson("json/" + currentCorpusName + "/doc_ids.json");
+    setSelectorOptions("selector", fileList);
+}
+
+function loadAnnotationConfig() {
+    annoConfig = loadJson("json/" + currentCorpusName + "/annotation_config.json");
+}
+
 function toggleCluster() {
     $('#show-cluster-checkbox').change(function () {
         $('#left-cluster-div').fadeToggle();
@@ -95,7 +104,6 @@ function getAnnotationJson(subpath, data_name) {
 }
 
 function loadSelectedFile() {
-    currentCorpusName = getSelectorText("corpus_selector");
     currentFileName = getSelectorText("selector");
     goldData = getAnnotationJson("span", currentFileName + "_gold");
     systemData = getAnnotationJson("span", currentFileName + "_sys");
@@ -108,6 +116,8 @@ function onFileChange() {
 
 function onCorpusChange() {
     corpusChanged = true;
+    loadAnnotationConfig();
+    loadFileList();
     updateData();
 }
 
@@ -159,6 +169,7 @@ function selectSubset() {
         coref = loadCoref();
         setClusterList(coref.goldCoref, coref.sysCoref)
         fileChanged = false
+        corpusChanged = false
     }
 
     if (document.getElementById("show-cluster-checkbox").checked) {
@@ -166,12 +177,17 @@ function selectSubset() {
         goldDataDisplay = filterEvents(goldData, coref.goldCoref, clusterSelected.goldCluster)
         systemDataDisplay = filterEvents(systemData, coref.sysCoref, clusterSelected.sysCluster)
     } else {
-        goldDataDisplay = goldData
+        goldDataDisplay = goldData;
         systemDataDisplay = systemData
     }
 }
 
 function loadDisplayData() {
+    if (corpusChanged) {
+        currentCorpusName = getSelectorText("corpus_selector");
+        loadAnnotationConfig();
+        loadFileList();
+    }
     if (corpusChanged || fileChanged) {
         loadSelectedFile()
     }
@@ -190,9 +206,9 @@ function updateData() {
 
 function embed() {
     leftDispatcher = Util.embed('left',
-        $.extend({'collection': null}, collData),
+        $.extend({'collection': null}, annoConfig),
         $.extend({}, goldDataDisplay), webFontURLs);
     rightDispatcher = Util.embed('right',
-        $.extend({'collection': null}, collData),
+        $.extend({'collection': null}, annoConfig),
         $.extend({}, systemDataDisplay), webFontURLs);
 }

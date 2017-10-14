@@ -16,6 +16,7 @@
             function () {
                 showClusterOnly = false;
                 fileChanged = true;
+                corpusChanged = true;
                 toggleCluster();
                 syncScroll();
 
@@ -58,8 +59,8 @@
         );
 
         var corpusList = loadJson("json/config/corpus_ids.json")
-        var collData = loadJson("json/config/annotation_config.json");
-        var fileList = loadJson("json/config/doc_ids.json");
+        var annoConfig;
+        var fileList;
     </script>
 
     <style>
@@ -86,13 +87,13 @@
 
         .left {
             float: left;
-            width: 50%;
+            width: 49%;
             overflow: hidden;
         }
 
         .right {
             float: right;
-            width: 50%;
+            width: 49%;
             overflow: hidden;
         }
 
@@ -210,12 +211,15 @@
     var corpusChanged;
     var coref;
 
-    setSelectorOptions("selector", fileList);
-    setSelectorOptions("corpus_selector", corpusList)
+    console.log("Setting selector options");
+    //    setSelectorOptions("selector", fileList);
+    setSelectorOptions("corpus_selector", corpusList);
+    console.log("Done selector options");
 
     var leftDispatcher;
     var rightDispatcher;
     head.ready(function () {
+        console.log("Head is ready");
         loadDisplayData();
         embed();
     });

@@ -275,7 +275,6 @@ def run_eval(link_type, script_output, gold_dir, sys_dir):
 
     with open(script_output, 'wb', 0) as out_file:
         logger.info("Evaluating directory: %s" % sys_sub_dir)
-        print(eval.global_prec_matched)
         sys.stdout = out_file
         eval.input_and_evaluate([Config.temp_eval_executable, gold_sub_dir, sys_sub_dir, 0, "implicit_in_recall"])
 
@@ -461,8 +460,9 @@ class TemporalEval:
         TemporalEval.write(gold_time_ml, Config.script_gold_dir, doc_id)
         TemporalEval.write(sys_time_ml, Config.script_sys_dir, doc_id)
 
-        TemporalEval.write(gold_cluster_time_ml, Config.script_gold_dir + "_cluster", doc_id)
-        TemporalEval.write(sys_cluster_time_ml, Config.script_sys_dir + "_cluster", doc_id)
+        if Config.eval_cluster_level_links:
+            TemporalEval.write(gold_cluster_time_ml, Config.script_gold_dir + "_cluster", doc_id)
+            TemporalEval.write(sys_cluster_time_ml, Config.script_sys_dir + "_cluster", doc_id)
 
     @staticmethod
     def write(time_ml_data, subdir, doc_id):

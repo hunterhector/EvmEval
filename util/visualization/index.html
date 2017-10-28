@@ -213,15 +213,12 @@
     var corpusChanged;
     var coref;
 
-    console.log("Setting selector options");
     //    setSelectorOptions("selector", fileList);
     setSelectorOptions("corpus_selector", corpusList);
-    console.log("Done selector options");
 
     var leftDispatcher;
     var rightDispatcher;
     head.ready(function () {
-        console.log("Head is ready");
         loadDisplayData();
         embed();
     });

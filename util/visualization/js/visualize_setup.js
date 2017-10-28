@@ -19,6 +19,7 @@ function loadFileList() {
 
 function loadAnnotationConfig() {
     annoConfig = loadJson("json/" + currentCorpusName + "/annotation_config.json");
+	console.log("Loading config of corpus " + currentCorpusName);
 }
 
 function toggleCluster() {
@@ -115,10 +116,15 @@ function onFileChange() {
 }
 
 function onCorpusChange() {
+	console.log("Changing corpus")
     corpusChanged = true;
     loadAnnotationConfig();
     loadFileList();
     updateData();
+	console.log(annoConfig);
+	// Reset dispatcher's annotation setting.
+    leftDispatcher.post('collectionLoaded',[$.extend({'collection': null}, annoConfig)]);
+    rightDispatcher.post('collectionLoaded',[$.extend({'collection': null}, annoConfig)]);
 }
 
 function loadCoref() {
@@ -146,7 +152,6 @@ function getEventSubset(coref, indices) {
     }
     return subsetMap
 }
-
 
 function filterEvents(data, coref, indices) {
     eventSubsetMap = getEventSubset(coref, indices);
@@ -212,3 +217,5 @@ function embed() {
         $.extend({'collection': null}, annoConfig),
         $.extend({}, systemDataDisplay), webFontURLs);
 }
+
+

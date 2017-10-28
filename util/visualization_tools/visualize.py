@@ -167,8 +167,6 @@ def main():
     corpus_names = set(os.listdir(os.path.join(Config.visualization_path, Config.corpus_parent_path)))
     corpus_names.add(args.corpus)
 
-    print(corpus_names)
-
     prepare_diff_setting(doc_ids_to_score, corpus_names, all_possible_mention_types, all_possible_realis_types,
                          os.path.join(Config.visualization_path, Config.visualization_config_subpath))
     if args.no_server:
